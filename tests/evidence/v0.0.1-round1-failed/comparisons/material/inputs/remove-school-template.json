@@ -1,0 +1,7 @@
+{
+  "ablation": "remove-school-template",
+  "case_id": "P01",
+  "original_material": "学校模板明确要求依次使用‘选题依据、研究目标、研究内容、研究方法、进度安排、预期成果’六个栏目。",
+  "ablated_material": "未提供学校或导师模板，也没有指定栏目与顺序；只提供题目、已有政策文本、拟访谈、计划收集时间和预期产出。"
+}
+

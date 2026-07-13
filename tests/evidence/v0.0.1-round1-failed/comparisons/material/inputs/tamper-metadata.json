@@ -1,0 +1,7 @@
+{
+  "ablation": "tamper-metadata",
+  "case_id": "L01",
+  "original_material": "书目记录为王强（2021），题名《平台学习行为研究》，DOI 10.1234/example.2021.001；当前只有题名和DOI，没有摘要或全文。",
+  "ablated_material": "用户书目仍写王强（2021）《平台学习行为研究》，DOI 10.1234/example.2021.001；另附已核验元数据称该DOI对应赵敏（2020）《在线课程互动研究》，当前没有任一原文或摘要。"
+}
+

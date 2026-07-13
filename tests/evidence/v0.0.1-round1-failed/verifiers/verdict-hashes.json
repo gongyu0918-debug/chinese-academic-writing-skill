@@ -1,0 +1,8 @@
+{
+  "sealed_before_unblinding": true,
+  "unblinded_at": "2026-07-13T14:45:00+08:00",
+  "sha256": {
+    "verifier-1": "0ec423c4fd354de88d10025f401e98976da8eaa7349711a5be8b6bfc8e11e4a8",
+    "verifier-2": "e87e8b39d3b956d45e6b08a76d52d41d98e2b1513bd5ddc24643cc5fff7fc90f"
+  }
+}
