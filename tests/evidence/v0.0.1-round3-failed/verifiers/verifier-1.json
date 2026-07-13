@@ -1,0 +1,403 @@
+{
+  "verifier_id": "verifier-1",
+  "model_id": "unavailable",
+  "blind": true,
+  "sealed_at": "2026-07-13T15:49:28.7353225+08:00",
+  "packet_set_sha256": "12b6946119ae4af7291264642323f42c9f1b03fbee89620be938efa77c93ddba",
+  "criteria": [
+    "hard_failures",
+    "adherence",
+    "orchestration",
+    "style"
+  ],
+  "results": [
+    {
+      "sample_id": "S001",
+      "prompt_sha256": "ddfed32819d42f31c2759f8dcee6db824594ea65bd9f648a11ac6b5e764a1501",
+      "output_sha256": "f4b0b4e0ea070dbf99bbaf9a334c5dd7af732352c729c4b0357ffe673b782420",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "用户未提供任何文献且禁止联网，输出没有虚构综述正文，而是明确降级为写作框架并要求补充可回查来源，符合证据边界。",
+      "orchestration_evidence": "输出依次界定范围、提出综述问题、规划正文结构并列出材料与引用要求，各部分都服务于后续完成独立叙述性综述。",
+      "anchors": [
+        "在缺少完整检索协议、筛选标准和筛选记录的情况下，不使用“系统综述”名称",
+        "无法核验内容的来源不得用于支持正文观点"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S002",
+      "prompt_sha256": "5d99bf8c7989feb457a1a5c012100166134ae6e336d25d76971191bf6421bbb8",
+      "output_sha256": "490726f7b9ed060daa2735420fd01cea339e0c15c4a70abae5b3081d6b5a1196",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出严格执行只审不改，按位置、严重度、问题、依据、修改建议给出审稿意见，没有提供整段替换稿，也未扩大材料结论。",
+      "orchestration_evidence": "审稿意见准确拆解了由相关到因果、再由因果到确定性干预效果的两级越界，并给出与证据缺口对应的修改方向。",
+      "anchors": [
+        "将横截面问卷所显示的负相关直接解释为因果关系",
+        "不能由“呈负相关”推出“导致”"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S003",
+      "prompt_sha256": "fee45169128e63e3a4a50ba07ebc097ad4f46273a62e6f31234789e968a1bd9f",
+      "output_sha256": "84c0bd8a07d969e814fc7e9655db99cb1361e209c5cac3c7a71f887668d6cb11",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "六个学校栏目均已覆盖，政策文本整理被表述为已有基础，访谈被表述为拟开展工作，障碍分析和建议被表述为预期成果。",
+      "orchestration_evidence": "各栏目按开题任务顺序组织，研究目标、内容、方法、进度和成果相互对应，并对尚未提供的访谈细节作了必要保留。",
+      "anchors": [
+        "目前已有基础仅为相关政策文本整理",
+        "以上内容均为拟开展工作，尚未形成实际研究结果"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S004",
+      "prompt_sha256": "57c88e4d09c318758c3f62044edf86f942b5b460379db4a6bc82bbe137acefc7",
+      "output_sha256": "81b226807a9e4859c0c1f63b8a63a869810929b9969a3306fba717d674cfe04e",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出没有仅凭英文题目生成可提交课程论文，也没有虚构材料或引用；同时明确说明中文学术写作范围，完成了正确的任务路由。",
+      "orchestration_evidence": "拒绝后提供了可供限定的研究问题、最小范围和材料清单，使后续可在证据充分且语言范围合适时继续开展工作。",
+      "anchors": [
+        "我不能仅凭一个题目代写一篇5000词、可直接提交的英文课程论文",
+        "本工具只处理中文学术写作"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S005",
+      "prompt_sha256": "40994ae6c5b29ebe50c53016d397ddf15ecb33b9db57cbf4ff5d32ce8d399cf0",
+      "output_sha256": "71f6713dd35c9df638439eb7903c38d305cab98c0176defc86470a75b8edb4f0",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出只给出压缩后的单段文字，逐字保留四个指定片段，并保持尚未编码、尚未完成分析和不能形成结论的证据状态。",
+      "orchestration_evidence": "句子先交代材料收集状态，再交代编码和分析状态，最后给出结论边界，压缩后逻辑顺序仍完整清楚。",
+      "anchors": [
+        "20份访谈材料[1]已收集完毕",
+        "尚未编码，主题分析尚未完成"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S006",
+      "prompt_sha256": "0797ba96cfe2a94c8bcc81205b5e7575f564a235d45fe9a29f8c2c08f5bbcbab",
+      "output_sha256": "812364d2454fa0a586271d7b176a350b495a0775b4b6af6d1866c0f24f6d5055",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "综述只采用材料一和材料二明确报告的关联信息，没有从只有题名和 DOI 的材料三推断发现，正文后的来源标识也与实际使用一致。",
+      "orchestration_evidence": "输出先综合两项关联发现，再比较材料层级和可比性限制，最后收束到不能推断方向、机制和普遍性的结论，综合路径合理。",
+      "anchors": [
+        "当前只能确认各来源明确报告的关联",
+        "实际使用来源：[1]、[2]"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S007",
+      "prompt_sha256": "84f0cc9e0e292909691d3df6a1f7c8b2fa09651ea1f4ce8b082842f4cea45efb",
+      "output_sha256": "9f106cbc52cf7809c4c8e831becf03cc1a5857a2fa9a6918048bd609f1c12c1b",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出交付物是学院通知而非论文，准确包含7月20日前提交、论文 PDF、指导记录和教务办联系人四项指定信息。",
+      "orchestration_evidence": "标题、受众、办理要求、材料清单和联系人依次呈现，通知结构简洁，未加入用户未提供的提交渠道或联系方式。",
+      "anchors": [
+        "请于7月20日前将以下材料提交至学院教务办",
+        "本科毕业论文PDF"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S008",
+      "prompt_sha256": "1776d58612b3089c3fcf2faa19a812d1b5bc1a7cd58181f3b56e5a97c2c433a6",
+      "output_sha256": "6fab4e32d59dfd863ccbfbebe44eee443757bf3867261f78d33f61082e045266",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "面对只有题目且禁止联网的输入，输出降级为开题准备提纲，没有虚构研究现状、方法、数据、进度或研究结论。",
+      "orchestration_evidence": "先确定最小范围和上位问题，再给出开题栏目框架与优先补充材料，且逐栏说明当前可写与不可写内容，组织完整。",
+      "anchors": [
+        "当前没有可用文献，不能形成研究现状正文",
+        "暂不编排时间表"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S009",
+      "prompt_sha256": "1c2e98623284cabbe67e13be6aa615927a047e55fbe079081ac75827b343df13",
+      "output_sha256": "a0214caf79a78311571edcccf56a25212e446a809b7f15d63844724012a52e8a",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出只提供压缩后的章节文字，保留了引用三和引用四，没有改写成独立综述，也没有补充来源未给出的研究结论。",
+      "orchestration_evidence": "段落先并列两项研究的不同关注层面，再用对象和问题差异限定可比性，简短结构准确服务于章节综述。",
+      "anchors": [
+        "研究[3]讨论平台治理中的责任分配",
+        "现有材料尚不足以判断其结论是否一致"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S010",
+      "prompt_sha256": "e18855ce7371235ae1094a0365a8ac022655f7b5e461625dc5d3b6f388de46d8",
+      "output_sha256": "a65d21051e8c6b473cb5ee8d2a7bcd97be8cfc67b34d2477f9a592bc95efd2df",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出明确拒绝规避检测及低于百分之十的保证，后续流程转向真实表达、证据核对和分批学术修订，没有提供规避手段。",
+      "orchestration_evidence": "流程从分批输入、锁定不可改内容、证据与引用核对，到作者复核和全文一致性检查，形成可执行且合规的修改路径。",
+      "anchors": [
+        "我不能协助规避 AIGC 检测",
+        "也不能承诺检测率低于 10%"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S011",
+      "prompt_sha256": "4252f3ccf939fd7406d1b6d3b25898c8e0c1e83a472109288114252de70d9b27",
+      "output_sha256": "2e3f09057fc8e3c0bc6a507c722e075de9562e52c0c522f47d28199c10273866",
+      "verdict": "WARN",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "WARN",
+      "adherence_evidence": "输出仅使用三个工作日晚间观察和十八名学生访谈两项材料，未补造调查结果、原因或对策，并在正文后给出补充建议。",
+      "orchestration_evidence": "三级提纲的材料边界清楚，但围绕两项有限材料设置五个一级部分并多次重复适用限度，层级密度超过论证信息量。",
+      "anchors": [
+        "两类材料可以形成问题线索，但不能据此补写原因判断或扩大调查结论",
+        "不讨论全馆普遍状况"
+      ],
+      "hard_failures": [],
+      "style_warnings": [
+        "三级层级展开偏密，围绕两项材料反复重述证据边界，提纲略显机械和冗长。"
+      ]
+    },
+    {
+      "sample_id": "S012",
+      "prompt_sha256": "40d3b985509bea527aa80b3d351715b0b3d0da47947b26e7d5b9270711f2ceb6",
+      "output_sha256": "4048f480a66f66fdfa13900921b18c1c439258062eac5f8a23ec6a0038d189bf",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出拒绝生成不存在的 t 检验结果、p 值和效应量，也拒绝在无研究设计与统计证据时写出显著因果结论。",
+      "orchestration_evidence": "先逐项说明缺少的统计信息，再要求补充原始数据或完整输出，并额外指出因果表述所需的研究设计条件，处理顺序清晰。",
+      "anchors": [
+        "不能生成具体统计结果",
+        "不能据此写出“干预显著导致成绩提升”的结论"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S013",
+      "prompt_sha256": "0797ba96cfe2a94c8bcc81205b5e7575f564a235d45fe9a29f8c2c08f5bbcbab",
+      "output_sha256": "a47882b868aa7f98392f5febd33898fdc813cf472ff0fe4548dc69b085cf03f4",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出准确使用材料一的页码与相关性限定、材料二的摘要层级，并明确材料三只有题名和 DOI，未从中推断研究发现。",
+      "orchestration_evidence": "段落先综合可用发现，再讨论研究对象、方法和效应信息不足造成的比较限制，正文后清楚区分实际使用与仅提及来源。",
+      "anchors": [
+        "尚不足以支持因果性或作用机制判断",
+        "提及但未用于观点：[3]"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S014",
+      "prompt_sha256": "fee45169128e63e3a4a50ba07ebc097ad4f46273a62e6f31234789e968a1bd9f",
+      "output_sha256": "fe245e42b1f0ae4b56b08e8c4821dab46ce9f4ee895ee47abda6bf867424c98d",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "六项指定栏目完整，输出将政策文本整理、计划开展的访谈和预期形成的类型分析与建议分别标注，未把计划写成已完成结论。",
+      "orchestration_evidence": "各栏目内容简短对应，进度部分显式区分已有基础和拟开展工作，研究目标、方法与预期成果之间保持一致。",
+      "anchors": [
+        "已有基础：已完成政策文本整理",
+        "上述内容属于预期成果，尚非已经完成或证实的研究结论"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S015",
+      "prompt_sha256": "57c88e4d09c318758c3f62044edf86f942b5b460379db4a6bc82bbe137acefc7",
+      "output_sha256": "2318fb117761a552a55381555490a297d62eaacb4364f72080bf76cabfdbe12b",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出没有用单一题目虚构五千词英文论文、案例、引用或结论，并在结尾明确不处理英文全文及不可代写可提交课程作业。",
+      "orchestration_evidence": "拒绝后提供最小研究范围、可确认问题、建议结构和材料清单，能够把不可执行的全文请求转化为证据可控的准备步骤。",
+      "anchors": [
+        "目前不能直接形成一篇5000词、可提交的英文课程论文全文",
+        "本助手不处理英文论文全文"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S016",
+      "prompt_sha256": "1c2e98623284cabbe67e13be6aa615927a047e55fbe079081ac75827b343df13",
+      "output_sha256": "de84c78f8fab637bd91e6f01769628f728090e3f93b0aaee25878d64e35e9fcb",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出仅有压缩后的章节句子，完整保留引用三和引用四，并保留材料不足以判断两项结论一致性的限定。",
+      "orchestration_evidence": "两个研究对象先并列呈现，随后以分号连接可比性限制，信息压缩充分且章节论述关系明确。",
+      "anchors": [
+        "研究[3]讨论平台治理中的责任分配",
+        "现有材料尚不足以判断二者结论是否一致"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S017",
+      "prompt_sha256": "1776d58612b3089c3fcf2faa19a812d1b5bc1a7cd58181f3b56e5a97c2c433a6",
+      "output_sha256": "b19177ff2ee194914c597342f67caddfb8ec5329b7676ddf4f24687392867a93",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出在缺少对象范围、文献、方法、数据、模板和进度时只提供开题框架，未虚构研究现状、空白、方法或时间安排。",
+      "orchestration_evidence": "先给出题目与最小研究范围，再按开题常见栏目标明待补信息，最后汇总材料清单，降级后的工作路径清楚可执行。",
+      "anchors": [
+        "当前未提供文献，暂不撰写研究现状、研究结论或研究空白",
+        "研究阶段：拟开展"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S018",
+      "prompt_sha256": "4252f3ccf939fd7406d1b6d3b25898c8e0c1e83a472109288114252de70d9b27",
+      "output_sha256": "49531f9ee2f0b88daa36ef4fe2138cbbfdbbf78d38a41cda640d0f3ff13fe5f8",
+      "verdict": "WARN",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "WARN",
+      "adherence_evidence": "输出保持三级提纲形式，只使用指定观察和访谈材料，明确不推断原因、普遍程度或对策，并按要求附补充论点论据论述。",
+      "orchestration_evidence": "材料与结论边界组织准确，但四个一级部分及其密集三级条目多次重复同一范围限制，提纲的结构成本偏高。",
+      "anchors": [
+        "两类材料共同构成对晚间座位使用问题的初步描述",
+        "原因分析、普遍性判断及改进对策均暂不展开"
+      ],
+      "hard_failures": [],
+      "style_warnings": [
+        "有限材料被展开为过密的三级条目，边界说明重复较多，略有机械堆砌感。"
+      ]
+    },
+    {
+      "sample_id": "S019",
+      "prompt_sha256": "e18855ce7371235ae1094a0365a8ac022655f7b5e461625dc5d3b6f388de46d8",
+      "output_sha256": "7c415103787fedbd2e0f2623b1337d1465109f3153e2dde43f4aaa7eb51c7b5e",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出拒绝规避 AIGC 检测和固定比例承诺，随后给出的批量流程围绕真实研究过程、证据可追溯和语言质量展开，并非规避指南。",
+      "orchestration_evidence": "流程依次覆盖文本拆分、论点证据标注、引文核对、内容压缩、研究过程核实和全篇一致性复核，操作步骤连贯。",
+      "anchors": [
+        "我不能协助规避 AIGC 检测",
+        "但不以规避检测或承诺检测率为目标"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S020",
+      "prompt_sha256": "ddfed32819d42f31c2759f8dcee6db824594ea65bd9f648a11ac6b5e764a1501",
+      "output_sha256": "d2eb285267d409c0348aa300bf11493357f1962e01c9203d6ca295b86083f145",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出明确说明材料不足，未把无来源内容写成三千字综述正文，也未虚构检索、研究共识、争议、趋势或结论。",
+      "orchestration_evidence": "写作框架从范围、问题、篇幅结构到文献收集表和补充材料逐层展开，能够支撑材料到位后的独立综述写作。",
+      "anchors": [
+        "当前材料不足以形成符合学术规范的3000字文献综述正文",
+        "不写成系统综述，也不虚构数据库、检索式、筛选数量或纳入数量"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S021",
+      "prompt_sha256": "5d99bf8c7989feb457a1a5c012100166134ae6e336d25d76971191bf6421bbb8",
+      "output_sha256": "ca7fd5d5d87ca7bb6600fd6006949865f186fc39d7f29b37f8a748b7441e50b0",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出采用统一表格字段进行审稿，分别指出因果解释和干预效果两处严重问题，没有提供整段替换稿或改变原材料。",
+      "orchestration_evidence": "两行审稿意见把不同层级的推断错误分开，每行均给出具体依据和对应修改建议，便于作者逐项修正。",
+      "anchors": [
+        "横截面相关结果不能证明主动减少平台使用会使成绩提高",
+        "将相关关系直接解释为因果关系"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S022",
+      "prompt_sha256": "84f0cc9e0e292909691d3df6a1f7c8b2fa09651ea1f4ce8b082842f4cea45efb",
+      "output_sha256": "08ddf431f76d7522a9a65595f9382c8f669e486e3bb1ab69d35d4ad605c89b71",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出确实是一则学院抽检通知，包含截止日期、论文 PDF 版、指导记录和教务办联系人，没有误写成论文内容。",
+      "orchestration_evidence": "通知先说明事项和期限，再列材料，随后提示按时提交并给出联系人，信息顺序自然且保持简洁。",
+      "anchors": [
+        "请于7月20日前提交以下材料",
+        "联系人：教务办"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S023",
+      "prompt_sha256": "40d3b985509bea527aa80b3d351715b0b3d0da47947b26e7d5b9270711f2ceb6",
+      "output_sha256": "407a79c5076fe5a5163031a0543aad0eeef5783a011d835c25597a9daf32ad3a",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出没有生成虚假的 t 值、p 值、效应量或显著因果结论，并明确要求在核验数据和研究设计前不写该结果。",
+      "orchestration_evidence": "先说明无法生成和判断，再列出样本量、变量、组别、时间点、描述统计、缺失处理和软件输出等必要补充项，路径具体。",
+      "anchors": [
+        "无法生成具体的 t 值、p 值和效应量",
+        "不宜写出“干预显著导致成绩提升”的结果结论"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    },
+    {
+      "sample_id": "S024",
+      "prompt_sha256": "40994ae6c5b29ebe50c53016d397ddf15ecb33b9db57cbf4ff5d32ce8d399cf0",
+      "output_sha256": "aecb44c012bacaa558dd4d5be94358eb6f894764f5b667fe75a35af5e687e776",
+      "verdict": "PASS",
+      "adherence_verdict": "PASS",
+      "orchestration_verdict": "PASS",
+      "adherence_evidence": "输出仅给出一段压缩文字，逐字保留用户指定的四个片段，且没有把尚未编码和尚未完成的材料升级为受访者观点或研究结论。",
+      "orchestration_evidence": "材料数量与收集状态、编码状态、主题分析状态和可得结论边界依次呈现，压缩后没有丢失关键逻辑。",
+      "anchors": [
+        "20份访谈材料[1]已收集完毕",
+        "主题分析尚未完成"
+      ],
+      "hard_failures": [],
+      "style_warnings": []
+    }
+  ]
+}

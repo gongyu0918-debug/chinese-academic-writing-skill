@@ -58,6 +58,16 @@ class SkillContractTests(unittest.TestCase):
         ):
             self.assertIn(marker, self.skill)
 
+    def test_nonacademic_artifact_stops_and_transfers(self) -> None:
+        for marker in (
+            "路由以最终交付物的文种为准",
+            "立即停止本 Skill 的起草",
+            "不输出正文",
+            "不补充或推断办理要素",
+            "正式通知或公文写作能力",
+        ):
+            self.assertIn(marker, self.skill)
+
     def test_material_gates_are_explicit(self) -> None:
         for marker in (
             "无目标文本不能执行底稿修改",
