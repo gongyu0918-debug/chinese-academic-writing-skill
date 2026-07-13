@@ -41,7 +41,7 @@ class SkillContractTests(unittest.TestCase):
         self.assertGreater(len(fields["description"]), 40)
 
     def test_openai_metadata_uses_new_invocation_name(self) -> None:
-        self.assertIn('display_name: "中文论文助手"', self.openai)
+        self.assertIn('display_name: "中文论文写作"', self.openai)
         self.assertIn("$chinese-academic-writing-assistant", self.openai)
         self.assertNotRegex(
             self.openai,
