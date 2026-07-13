@@ -30,6 +30,8 @@ PROTECTED_PATHS = (
     "chinese-academic-writing-assistant/references/academic-proposal.md",
     "chinese-academic-writing-assistant/references/academic-literature-review.md",
     "chinese-academic-writing-assistant/references/anti-ai-writing.md",
+    "chinese-academic-writing-assistant/references/citation-research.md",
+    "chinese-academic-writing-assistant/scripts/citation_audit.py",
     "chinese-academic-writing-assistant/scripts/prose_lint.py",
     "tests/fixtures/language-hygiene-smoke.jsonl",
     "tests/test_language_hygiene.py",

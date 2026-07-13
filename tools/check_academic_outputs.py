@@ -44,6 +44,8 @@ RUNTIME_FILES = (
     "references/academic-proposal.md",
     "references/academic-literature-review.md",
     "references/anti-ai-writing.md",
+    "references/citation-research.md",
+    "scripts/citation_audit.py",
     "scripts/prose_lint.py",
 )
 STRICT_COMPARISONS: set[str] = set()
@@ -275,7 +277,7 @@ def git_binding_errors(
 
     runtime_hashes = manifest.get("runtime_sha256")
     if not isinstance(runtime_hashes, dict) or set(runtime_hashes) != set(RUNTIME_FILES):
-        errors.append("manifest.runtime_sha256 must cover the exact seven runtime files")
+        errors.append("manifest.runtime_sha256 must cover the exact nine runtime files")
     else:
         for relative in RUNTIME_FILES:
             try:

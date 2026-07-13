@@ -23,7 +23,7 @@ def load_cases() -> list[dict]:
 
 
 class ContextAndRuntimeTests(unittest.TestCase):
-    def test_runtime_directory_has_exactly_seven_files(self) -> None:
+    def test_runtime_directory_has_exactly_nine_files(self) -> None:
         actual = {
             path.relative_to(SKILL_DIR).as_posix()
             for path in SKILL_DIR.rglob("*")
@@ -36,6 +36,8 @@ class ContextAndRuntimeTests(unittest.TestCase):
             "references/academic-proposal.md",
             "references/academic-literature-review.md",
             "references/anti-ai-writing.md",
+            "references/citation-research.md",
+            "scripts/citation_audit.py",
             "scripts/prose_lint.py",
         }
         self.assertEqual(expected, actual)
@@ -60,6 +62,24 @@ class ContextAndRuntimeTests(unittest.TestCase):
                     entry_length + unicode_length(REFERENCE_DIR / name) + anti_ai_length,
                     8_000,
                 )
+
+    def test_entry_task_leaf_and_citation_layer_stay_within_separate_phase_budget(self) -> None:
+        entry_length = unicode_length(SKILL_PATH)
+        citation_length = unicode_length(REFERENCE_DIR / "citation-research.md")
+        for name in (
+            "academic-writing.md",
+            "academic-proposal.md",
+            "academic-literature-review.md",
+        ):
+            with self.subTest(leaf=name):
+                self.assertLessEqual(
+                    entry_length + unicode_length(REFERENCE_DIR / name) + citation_length,
+                    8_000,
+                )
+
+    def test_cross_cutting_layers_are_not_coloaded(self) -> None:
+        skill = SKILL_PATH.read_text(encoding="utf-8")
+        self.assertIn("来源层与 ANTI-AI 层不在同一原子阶段共同加载", skill)
 
     def test_leaf_bodies_do_not_embed_other_leaf_files(self) -> None:
         for leaf in REFERENCE_DIR.glob("*.md"):

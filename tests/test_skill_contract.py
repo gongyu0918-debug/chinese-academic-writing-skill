@@ -10,6 +10,7 @@ SKILL_PATH = SKILL_DIR / "SKILL.md"
 OPENAI_YAML = SKILL_DIR / "agents" / "openai.yaml"
 REFERENCE_DIR = SKILL_DIR / "references"
 PROSE_LINT = SKILL_DIR / "scripts" / "prose_lint.py"
+CITATION_AUDIT = SKILL_DIR / "scripts" / "citation_audit.py"
 TASK_REFERENCES = {
     "academic-writing.md",
     "academic-proposal.md",
@@ -41,6 +42,7 @@ class SkillContractTests(unittest.TestCase):
             for path in sorted(REFERENCE_DIR.glob("*.md"))
         }
         cls.prose_lint = PROSE_LINT.read_text(encoding="utf-8")
+        cls.citation_audit = CITATION_AUDIT.read_text(encoding="utf-8")
         cls.handoff = HANDOFF_PATH.read_text(encoding="utf-8")
 
     def test_frontmatter_has_only_name_and_description(self) -> None:
@@ -121,6 +123,30 @@ class SkillContractTests(unittest.TestCase):
         ):
             self.assertIn(marker, self.skill)
 
+    def test_citation_research_is_explicitly_authorized_and_progressive(self) -> None:
+        citation = self.references["citation-research.md"]
+        for marker in (
+            "默认不联网",
+            "题目含“最新、当前、近年”，出现 DOI、URL，或者材料不足，都不构成授权",
+            "授权只覆盖本次约定的主题、范围和轮次",
+            "来源层与 ANTI-AI 层不在同一原子阶段共同加载",
+            "不自设统一合格比例",
+            "不用无关来源抬高数字",
+        ):
+            self.assertIn(marker, self.skill + citation)
+        self.assertIn("scripts/citation_audit.py", self.skill)
+
+    def test_source_authority_and_coverage_contract_is_not_a_black_box_score(self) -> None:
+        citation = self.references["citation-research.md"]
+        for marker in (
+            "匹配性和内容支持优先于名气",
+            "期刊名、被引量和作者声望只作辅助信号",
+            "获得有效支持的应引用论断数 / 应引用论断总数（N/M）",
+            "高风险论断",
+            "不能单独证明权威或质量",
+        ):
+            self.assertIn(marker, citation)
+
     def test_integrity_standards_and_review_interface_are_explicit(self) -> None:
         for marker in (
             "不得代写整篇提交稿",
@@ -142,7 +168,7 @@ class SkillContractTests(unittest.TestCase):
 
     def test_leaf_specific_contracts_exist_without_global_rule_copies(self) -> None:
         self.assertEqual(
-            TASK_REFERENCES | {"anti-ai-writing.md"},
+            TASK_REFERENCES | {"anti-ai-writing.md", "citation-research.md"},
             set(self.references),
         )
         writing = self.references["academic-writing.md"]
@@ -214,6 +240,17 @@ class SkillContractTests(unittest.TestCase):
             self.assertIn(marker, self.prose_lint)
         for forbidden in ("--fix", "AI 算力", "主送机关", "发文字号", "项目卡片"):
             self.assertNotIn(forbidden, self.prose_lint)
+
+    def test_citation_audit_is_read_only_and_has_no_default_quota(self) -> None:
+        for marker in (
+            "Read-only citation coverage",
+            "never rewrites",
+            "--minimum-coverage",
+            "no default is assumed",
+        ):
+            self.assertIn(marker, self.citation_audit)
+        for forbidden in ("--fix", "write_text(", "write_bytes("):
+            self.assertNotIn(forbidden, self.citation_audit)
 
     def test_runtime_prompt_has_no_version_or_legacy_invocation(self) -> None:
         runtime = self.skill + self.openai + "".join(self.references.values())
