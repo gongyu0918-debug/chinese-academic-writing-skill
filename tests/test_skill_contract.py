@@ -77,6 +77,16 @@ class SkillContractTests(unittest.TestCase):
         ):
             self.assertIn(marker, self.skill + "".join(self.references.values()))
 
+    def test_final_copy_check_removes_repeated_explanations_and_tail_notes(self) -> None:
+        for marker in (
+            "同一材料或证据边界只在首次必要位置说明",
+            "研究状态用“已、拟、尚未”等正文时态和语气表达",
+            "删除制作回合或版本标签、写作控制旁白",
+            "必要的结论限制应就近融入对应论断",
+            "不另作小字式尾注",
+        ):
+            self.assertIn(marker, self.skill)
+
     def test_material_gates_are_explicit(self) -> None:
         for marker in (
             "无目标文本不能执行底稿修改",
