@@ -1,0 +1,34 @@
+{
+  "verifier_id": "citation-output-cold-verifier-1",
+  "model_id": "unavailable",
+  "blind": true,
+  "source_check": "live metadata and abstract cross-check",
+  "overall": "WARN",
+  "counts": {"PASS": 11, "WARN": 1, "FAIL": 0},
+  "hard_failures": [],
+  "common_issue_candidates": [],
+  "results": [
+    {"sample": "A/M1-T1", "verdict": "PASS"},
+    {"sample": "B/M1-T1", "verdict": "PASS"},
+    {"sample": "A/M1-T2", "verdict": "PASS"},
+    {"sample": "B/M1-T2", "verdict": "PASS"},
+    {"sample": "A/M1-T3", "verdict": "WARN", "evidence": "末句将具体任务写成已证实的制约因素；已读摘要只足以支持谨慎外推。仅见于一个输出。"},
+    {"sample": "B/M1-T3", "verdict": "PASS"},
+    {"sample": "A/M2-T1", "verdict": "PASS"},
+    {"sample": "B/M2-T1", "verdict": "PASS"},
+    {"sample": "A/M2-T2", "verdict": "PASS"},
+    {"sample": "B/M2-T2", "verdict": "PASS"},
+    {"sample": "A/M2-T3", "verdict": "PASS"},
+    {"sample": "B/M2-T3", "verdict": "PASS"}
+  ],
+  "source_findings": [
+    "Roediger and Karpicke 2006 DOI, title, authors, experiment type, and abstract-level delay results verified",
+    "Karpicke and Roediger 2008 DOI, title, authors, experiment type, and abstract-level retrieval results verified",
+    "Rowland 2014 DOI, title, author, meta-analysis type, and abstract-level conclusions verified"
+  ],
+  "fix_threshold": {"minimum_outputs": 3, "minimum_tasks": 2, "minimum_writers": 2, "reached": false},
+  "remaining_risks": [
+    "writer reports cannot independently prove the absence of unrecorded network calls",
+    "source verification remained at publisher metadata and abstract level"
+  ]
+}

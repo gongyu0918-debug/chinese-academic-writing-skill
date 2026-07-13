@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_commit": "a3d2519fb9279e006970594eb21c64556bea7778",
+  "fixture": {
+    "path": "tests/fixtures/v0.0.3-citation-sanity.md",
+    "sha256_normalized_lf": "fc68a72ab860023efb567d26b336f1a90356962763c2ce994d48c3eb5ab5a30b"
+  },
+  "writers": [
+    {"writer_id": "writer-a", "model_id": "unavailable", "continuous_context": true, "outputs": 6},
+    {"writer_id": "writer-b", "model_id": "unavailable", "continuous_context": true, "outputs": 6}
+  ],
+  "web_authorization": {
+    "allowed_turns": ["M1-T2"],
+    "writer_a_reported_web_turns": ["M1-T2"],
+    "writer_b_reported_web_turns": ["M1-T2"]
+  },
+  "output_sha256_normalized_lf": {
+    "writers/writer-a/M1-T1.md": "7884eb451831cb072e9ac70d0cb9d99987352bf5cba5773c494688dac480a6f9",
+    "writers/writer-a/M1-T2.md": "b1faf1e2f1d45a084be13a029ba0a23d3f5e3b8dc8b476521b7c49695585ea8a",
+    "writers/writer-a/M1-T3.md": "3a8fab0dda9fefd850e1d74856ae9267467074f1460e5efad4fc479d1263a3af",
+    "writers/writer-a/M2-T1.md": "e578284c64b60fbd85a6e2590b0b8678bee7c41b8292d4611dc2a24994439ac1",
+    "writers/writer-a/M2-T2.md": "645457b25319372e40b8f37d122e0acb8fb0eb50d8178742468ef1ea03257065",
+    "writers/writer-a/M2-T3.md": "0cafdbb67e12c79b6a828c82d03548334fd5626ddd9bba60fa8bab9fd804793a",
+    "writers/writer-b/M1-T1.md": "29e4365a82f08fd9c6bfc10c1739f56a3211c92edf48ae8db7dd823d58172daf",
+    "writers/writer-b/M1-T2.md": "edbf9ad384c4d877c7618b68bb2a126b1b31f61662a071f3e7cbabed3f5fdb13",
+    "writers/writer-b/M1-T3.md": "8bf456c4803db45729826e680ef0a89c72527370e7922a0fc587d37467f0fe86",
+    "writers/writer-b/M2-T1.md": "e30feedce256212990661969b4059afb93b799829a02d8b9fcf589154d2b20d1",
+    "writers/writer-b/M2-T2.md": "8027101a69d613af43de760b14e719382b2c0af26b28fb74e7edaf66ae0b45e7",
+    "writers/writer-b/M2-T3.md": "1a8d57215fdc3f1844f8ea5b095aae073216499e055790e4987d132af89ef42f"
+  },
+  "verifiers": ["blind/verifier-1.json", "blind/verifier-2.json"],
+  "verdict": {
+    "overall": "WARN",
+    "hard_failures": 0,
+    "common_issue_candidates": 0,
+    "repeated_warning": "writer-a/M1-T3 only"
+  },
+  "fix_threshold": {"minimum_outputs": 3, "minimum_tasks": 2, "minimum_writers": 2, "prompt_changed_from_output_sanity": false},
+  "claim_limit": "Model IDs were unavailable; this is a two-writer, two-verifier sanity, not a cross-model statistical result."
+}

@@ -1,0 +1,34 @@
+{
+  "verifier_id": "citation-output-cold-verifier-2",
+  "model_id": "unavailable",
+  "blind": true,
+  "source_check": "live metadata and abstract cross-check",
+  "overall": "WARN",
+  "counts": {"PASS": 11, "WARN": 1, "FAIL": 0},
+  "hard_failures": [],
+  "common_issue_candidates": [],
+  "results": [
+    {"sample": "A/M1-T1", "verdict": "PASS"},
+    {"sample": "B/M1-T1", "verdict": "PASS"},
+    {"sample": "A/M1-T2", "verdict": "PASS"},
+    {"sample": "B/M1-T2", "verdict": "PASS"},
+    {"sample": "A/M1-T3", "verdict": "WARN", "evidence": "具体任务制约的表达略强于摘要可直接支持的边界；未构成引用错配硬失败。仅见于一个输出。"},
+    {"sample": "B/M1-T3", "verdict": "PASS"},
+    {"sample": "A/M2-T1", "verdict": "PASS"},
+    {"sample": "B/M2-T1", "verdict": "PASS"},
+    {"sample": "A/M2-T2", "verdict": "PASS"},
+    {"sample": "B/M2-T2", "verdict": "PASS"},
+    {"sample": "A/M2-T3", "verdict": "PASS"},
+    {"sample": "B/M2-T3", "verdict": "PASS"}
+  ],
+  "source_findings": [
+    "Roediger and Karpicke 2006 record and abstract claims verified via PubMed",
+    "Karpicke and Roediger 2008 record and abstract claims verified via Science",
+    "Rowland 2014 record, meta-analysis type, and abstract claims verified via PubMed"
+  ],
+  "fix_threshold": {"minimum_outputs": 3, "minimum_tasks": 2, "minimum_writers": 2, "reached": false},
+  "remaining_risks": [
+    "static artifacts cannot prove the complete browser call history",
+    "full-text methods and result tables were not read"
+  ]
+}
