@@ -14,7 +14,7 @@
 - 本仓库从 `chinese-official-writing-skill` 的论文叶拆分而来，展示名为“中文论文助手”，skill name 为 `chinese-academic-writing-assistant`。
 - 当前已完成独立入口、三条互斥专项叶、材料与引用门禁、成品残留终检、论文适配的 ANTI-AI 表达复核和本地只读测试工具；0.0.1 已完成 24 份真实写稿和 48 条匿名复核，结果以仓库最新提交和 `tests/evidence/` 为准。
 - 当前能力仍限定中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。英文论文、投稿、统计分析、答辩、排版和检测规避尚未纳入。
-- 仓库采用 MIT-0 许可证；运行目录仍只含 5 个文件，许可证和测试证据不进入 Skill 运行包。
+- GitHub 完整仓库采用 MIT 许可证；ClawHub 与 skillhub.cn 的精简 Skill 包采用 MIT-0。运行目录仍只含 5 个文件，测试证据不进入 Skill 包。
 
 ## 迁移来源
 

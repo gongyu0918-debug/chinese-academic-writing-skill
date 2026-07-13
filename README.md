@@ -27,4 +27,4 @@ Skill 运行目录严格保留 5 个文件：总入口、OpenAI 元数据和普�
 
 ## 许可证
 
-[MIT-0](LICENSE)
+GitHub 完整仓库采用 [MIT](LICENSE)。ClawHub 与 skillhub.cn 的精简 Skill 发行包采用 MIT-0。
