@@ -1,0 +1,32 @@
+{
+  "candidate_commit": "834f12cb00686107b90305773a9dba6d6c799b05",
+  "date": "2026-07-13",
+  "model_id": "unavailable",
+  "verdict": "FAIL",
+  "reason": "Retrieval and structural mapping passed, but cold verification found two semantic citation failures and one incompletely reproducible retraction-status claim.",
+  "files": {
+    "cold-verifier.md": "15cad409a1937d38a6ecc45858ab5dee7593e3a16ee8458c41f67497789eee07",
+    "metadata-only-output.md": "d42394ee92f211c4fb4b22fed225878317aa0c6ee3621ba3fe960bd797fe0718",
+    "noauth-output.md": "9e0d602e7784dcb5696d5573c6ae829b62495eadb8941e1918cf8062f40bc24b",
+    "REPORT.md": "c08b844dfc0c27d2eef3d4d84c3394ac0d4c8a2149e34eb7c6eeb81b1d200f7f",
+    "retrieval-output.md": "8fa92213b8b85358091f87602c91a16e6a9876163a355d79b7ba32cb7f1d5ac6",
+    "writer-output.md": "2c267dd4d7bb29f25599ce8d0e6be772805797b24ddb2a1af9e76bfbca27f255"
+  },
+  "source_dois": [
+    "10.1080/02602938.2018.1545896",
+    "10.1016/j.learninstruc.2009.08.006",
+    "10.1080/02602938.2018.1424318",
+    "10.1016/j.stueduc.2023.101252"
+  ],
+  "results": {
+    "default_offline": "PASS",
+    "explicit_retrieval": "PASS",
+    "access_layering": "PASS",
+    "metadata_boundary": "PASS",
+    "isolated_writing_no_second_web": "PASS",
+    "numeric_reference_mapping": "PASS",
+    "semantic_support": "FAIL",
+    "retraction_status_reproducibility": "FAIL",
+    "delivery_hygiene": "PASS"
+  }
+}
