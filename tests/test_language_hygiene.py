@@ -236,18 +236,22 @@ class LanguageHygieneTests(unittest.TestCase):
 
     def test_runtime_prompt_defines_contextual_local_rewrite_layer(self) -> None:
         skill = SKILL_PATH.read_text(encoding="utf-8")
+        anti_ai = (
+            SKILL_PATH.parent / "references" / "anti-ai-writing.md"
+        ).read_text(encoding="utf-8")
+        runtime = skill + anti_ai
         for marker in (
-            "先按段落和全文统计高频词组",
-            "词频和命中只提供复核线索",
-            "否定对象未由前文、用户材料或真实争议提出",
-            "只对确认有问题的局部",
-            "不逐词替换或随机换词",
+            "先看全文分布，再看单处语义",
+            "命中和次数只用于定位，不能直接判错",
+            "前文、材料和真实学术争议均未提出被否定对象",
+            "只改确认存在问题的局部",
+            "不得增加 `--fix` 或依据 finding 批量替换",
             "研究状态、否定范围和论断强度",
-            "无法安全改写时保留原句",
-            "本层不改变交付模式",
-            "默认不输出词频、命中项、阈值、检查过程",
+            "若无法确认问题或无法安全改写，保留原句",
+            "不是第四种任务叶",
+            "不输出候选、词频、检查名、前后对照或过程说明",
         ):
-            self.assertIn(marker, skill)
+            self.assertIn(marker, runtime)
 
     def test_candidate_frequency_is_observation_not_failure(self) -> None:
         text = (

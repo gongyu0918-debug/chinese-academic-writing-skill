@@ -23,7 +23,7 @@ def load_cases() -> list[dict]:
 
 
 class ContextAndRuntimeTests(unittest.TestCase):
-    def test_runtime_directory_has_exactly_five_files(self) -> None:
+    def test_runtime_directory_has_exactly_seven_files(self) -> None:
         actual = {
             path.relative_to(SKILL_DIR).as_posix()
             for path in SKILL_DIR.rglob("*")
@@ -35,6 +35,8 @@ class ContextAndRuntimeTests(unittest.TestCase):
             "references/academic-writing.md",
             "references/academic-proposal.md",
             "references/academic-literature-review.md",
+            "references/anti-ai-writing.md",
+            "scripts/prose_lint.py",
         }
         self.assertEqual(expected, actual)
 
@@ -44,6 +46,20 @@ class ContextAndRuntimeTests(unittest.TestCase):
         for leaf in REFERENCE_DIR.glob("*.md"):
             with self.subTest(leaf=leaf.name):
                 self.assertLessEqual(entry_length + unicode_length(leaf), 8_000)
+
+    def test_entry_task_leaf_and_anti_ai_layer_stay_within_runtime_budget(self) -> None:
+        entry_length = unicode_length(SKILL_PATH)
+        anti_ai_length = unicode_length(REFERENCE_DIR / "anti-ai-writing.md")
+        for name in (
+            "academic-writing.md",
+            "academic-proposal.md",
+            "academic-literature-review.md",
+        ):
+            with self.subTest(leaf=name):
+                self.assertLessEqual(
+                    entry_length + unicode_length(REFERENCE_DIR / name) + anti_ai_length,
+                    8_000,
+                )
 
     def test_leaf_bodies_do_not_embed_other_leaf_files(self) -> None:
         for leaf in REFERENCE_DIR.glob("*.md"):

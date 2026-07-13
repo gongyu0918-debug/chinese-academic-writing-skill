@@ -4,10 +4,17 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+HANDOFF_PATH = ROOT / "HANDOFF.md"
 SKILL_DIR = ROOT / "chinese-academic-writing-assistant"
 SKILL_PATH = SKILL_DIR / "SKILL.md"
 OPENAI_YAML = SKILL_DIR / "agents" / "openai.yaml"
 REFERENCE_DIR = SKILL_DIR / "references"
+PROSE_LINT = SKILL_DIR / "scripts" / "prose_lint.py"
+TASK_REFERENCES = {
+    "academic-writing.md",
+    "academic-proposal.md",
+    "academic-literature-review.md",
+}
 
 
 def parse_frontmatter(text: str) -> dict[str, str]:
@@ -33,6 +40,8 @@ class SkillContractTests(unittest.TestCase):
             path.name: path.read_text(encoding="utf-8")
             for path in sorted(REFERENCE_DIR.glob("*.md"))
         }
+        cls.prose_lint = PROSE_LINT.read_text(encoding="utf-8")
+        cls.handoff = HANDOFF_PATH.read_text(encoding="utf-8")
 
     def test_frontmatter_has_only_name_and_description(self) -> None:
         fields = parse_frontmatter(self.skill)
@@ -126,18 +135,14 @@ class SkillContractTests(unittest.TestCase):
         categories = {"可补充论点", "可补充论据", "可补充论述", "其他修改建议"}
         for category in categories:
             self.assertIn(category, self.skill)
-            for content in self.references.values():
-                self.assertIn(category, content)
+            for name in TASK_REFERENCES:
+                self.assertIn(category, self.references[name])
         self.assertIn("按实际需要给出", self.skill)
         self.assertIn("没有实际建议的类别不输出", self.skill)
 
     def test_leaf_specific_contracts_exist_without_global_rule_copies(self) -> None:
         self.assertEqual(
-            {
-                "academic-writing.md",
-                "academic-proposal.md",
-                "academic-literature-review.md",
-            },
+            TASK_REFERENCES | {"anti-ai-writing.md"},
             set(self.references),
         )
         writing = self.references["academic-writing.md"]
@@ -169,6 +174,46 @@ class SkillContractTests(unittest.TestCase):
             self.assertNotIn("默认不扩展检索", content)
             self.assertNotIn("位置—严重度—问题—依据—修改建议", content)
             self.assertNotIn("GB/T 7714", content)
+
+    def test_anti_ai_reference_is_progressive_cross_cutting_layer(self) -> None:
+        anti_ai = self.references["anti-ai-writing.md"]
+        for marker in (
+            "在唯一专项叶完成内容与证据复核后",
+            "不是第四种任务叶",
+            "最终只交付提纲、材料清单、范围说明、原始摘录或越界转交时不读取",
+            "即使材料仅有摘录，也读取",
+            "scripts/prose_lint.py",
+        ):
+            self.assertIn(marker, self.skill)
+        for marker in (
+            "候选，不是证明文本有错或由 AI 生成",
+            "没有能指出具体位置、上下文依据和语义问题的候选时，保持原文",
+            "第二遍不应为了“更像人写”继续换词或重排",
+            "不强行注入观点、情绪或口语",
+        ):
+            self.assertIn(marker, anti_ai)
+        self.assertIn("至少三个独立输出", self.handoff)
+        self.assertIn("单例和未达阈值的问题只记录", self.handoff)
+
+    def test_process_leak_exceptions_never_cover_the_models_own_workflow(self) -> None:
+        for marker in (
+            "只有用户明确要求逐字保留的待审原文",
+            "任务本身确需讨论这些词的测试记录",
+            "该例外不允许说明模型自身的处理过程",
+        ):
+            self.assertIn(marker, self.skill)
+
+    def test_prose_lint_is_report_only_and_academically_adapted(self) -> None:
+        for marker in (
+            "without rewriting",
+            "user-owned",
+            "Matches and frequencies are review candidates",
+            "--delivery-mode",
+            "--strict",
+        ):
+            self.assertIn(marker, self.prose_lint)
+        for forbidden in ("--fix", "AI 算力", "主送机关", "发文字号", "项目卡片"):
+            self.assertNotIn(forbidden, self.prose_lint)
 
     def test_runtime_prompt_has_no_version_or_legacy_invocation(self) -> None:
         runtime = self.skill + self.openai + "".join(self.references.values())

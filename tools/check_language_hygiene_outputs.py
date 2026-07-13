@@ -29,10 +29,13 @@ PROTECTED_PATHS = (
     "chinese-academic-writing-assistant/references/academic-writing.md",
     "chinese-academic-writing-assistant/references/academic-proposal.md",
     "chinese-academic-writing-assistant/references/academic-literature-review.md",
+    "chinese-academic-writing-assistant/references/anti-ai-writing.md",
+    "chinese-academic-writing-assistant/scripts/prose_lint.py",
     "tests/fixtures/language-hygiene-smoke.jsonl",
     "tests/test_language_hygiene.py",
     "tools/check_language_hygiene_outputs.py",
 )
+CASES_PATH = "tests/fixtures/language-hygiene-smoke.jsonl"
 FIX_THRESHOLD = {
     "minimum_outputs": 3,
     "minimum_cases": 2,
@@ -305,7 +308,7 @@ def git_binding_errors(
         return ["strict evidence validation requires repo_root and cases_path"]
     errors: list[str] = []
     repo_root = repo_root.resolve()
-    expected_cases = (repo_root / PROTECTED_PATHS[5]).resolve()
+    expected_cases = (repo_root / CASES_PATH).resolve()
     if cases_path.resolve() != expected_cases:
         errors.append("strict cases path must be the protected language-hygiene fixture")
     candidate = manifest.get("candidate_commit")
