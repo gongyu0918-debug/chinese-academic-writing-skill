@@ -1,0 +1,264 @@
+{
+  "verifier_id": "verifier-2",
+  "blind": true,
+  "packet_set_sha256": "1a7a4bc92b3d8e9e7e0e5bbf535332e7abcd7dea30c23919b9a23ea54e7dd858",
+  "criteria": [
+    "semantic_fidelity",
+    "contextual_style",
+    "output_hygiene",
+    "mode_adherence",
+    "overediting"
+  ],
+  "results": [
+    {
+      "sample_id": "S001",
+      "prompt_sha256": "7b00946437ad52921facc84e75868b10e3f270c8f23155be2c9d9f2796441d65",
+      "output_sha256": "cf74a2ac37d24de733d3820b1a72d8b6ec24fc43e3dcee55f9705ec347448f53",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "两组样本均值、引用编号和作者直接引语均完整保留，相关分析的论断边界未被改写，输出也严格保持单段落模式。",
+      "anchors": [
+        "甲方案样本均值为80，乙方案样本均值为120[3]。",
+        "‘这是一项相关分析，而不是因果识别’"
+      ]
+    },
+    {
+      "sample_id": "S002",
+      "prompt_sha256": "c05bd50acc58d9a44a9bdcb47f9b4ad7e40949a2b268dcf796bfb9f228071663",
+      "output_sha256": "513f896df64d07ef5d38450d4e37b5beac405b035e7f35d3ec3841428f1d5ead",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "访谈人数、引用及受访者陈述均原样保留，无依据的否定和面向所有学生的过度概括已局部收束，未泄露内部统计过程。",
+      "anchors": [
+        "访谈共涉及18名学生[1]",
+        "本研究据此讨论插座位置与受访学生选座的关系。"
+      ]
+    },
+    {
+      "sample_id": "S003",
+      "prompt_sha256": "3f7f8f68b4d62659541e5b93be07b74d6828d9175a01c9b8ed4a913ca4b3a24b",
+      "output_sha256": "ebd81cf0c5427f549ce304e7b5ce5cb21ffd8e2f4cb4e63098721a4368b2f6c0",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "已编码十二份访谈、未编码材料排除及结论适用范围均得到保留，重复边界被合并，制作说明和联系尾注已清除。",
+      "anchors": [
+        "已完成编码的12份访谈[5]",
+        "结论仅限于这12份访谈。"
+      ]
+    },
+    {
+      "sample_id": "S004",
+      "prompt_sha256": "f64ab33f4d9362914f0c294f8e6bbb67beca9d15647136b7b2c8abb76884ec26",
+      "output_sha256": "b673191292ee89dfff7a32fca116a9f0f341f0e58d46da707d05e1fbcf48c7b0",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "相关关系、引用和两项否定边界均逐字保留，仅以分号压缩句间衔接，没有把横截面相关拔高为因果结论。",
+      "anchors": [
+        "横截面相关不能证明因果关系",
+        "不得据此声称平台使用导致成绩下降。"
+      ]
+    },
+    {
+      "sample_id": "S005",
+      "prompt_sha256": "c05bd50acc58d9a44a9bdcb47f9b4ad7e40949a2b268dcf796bfb9f228071663",
+      "output_sha256": "edda9c823461ec75c01122017aaba02ca826c9d9b5f7972930e1f3997af53cde",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "样本数量、引用和插座位置影响选座的受访者陈述均未改变，新增范围限定恰当消除了代表所有学生的越界结论。",
+      "anchors": [
+        "多名受访者提到插座位置会影响选座。",
+        "限定在受访学生范围内。"
+      ]
+    },
+    {
+      "sample_id": "S006",
+      "prompt_sha256": "fd63c2de553c3ec17622fd5a6987d5bd94d1c7e59bbbf62b83eabb3de70c2718",
+      "output_sha256": "8a425c3063cd50e147005a355aca7287b4d85618a00b7f472f0d4fe0bd612dc5",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "研究时间、样本对象、初步整理状态及引用均准确保留，受众标签、版本说明、内部门禁和检测文字全部删除。",
+      "anchors": [
+        "2025年3月完成样本A的初步整理[4]。"
+      ]
+    },
+    {
+      "sample_id": "S007",
+      "prompt_sha256": "2354fffa0d3cf62c9706a2b438dd79708138748538a1f01377c9c153ee9cda63",
+      "output_sha256": "7eee24d8b95ad372e98e79f5f6e6b4042447e0d16e0dc169e45a8ea000ffd811",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "输出按一致字段分别识别无依据否定、虚假对比、递进越界和机械句式风险，并用材料边界论证，未把候选词命中直接判错。",
+      "anchors": [
+        "问题：无依据否定。",
+        "风险不来自候选词命中本身"
+      ]
+    },
+    {
+      "sample_id": "S008",
+      "prompt_sha256": "4474aeb8d21601238a72e04e84daf09020eeffd18fe4e537715e390f23e20809",
+      "output_sha256": "b2f5a40f7b222d1c048e942d0205e98d34a600de687719fcff0996027bc4f087",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "观察月份、连续三晚及座位紧张事实完整保留，四项后续内容被统一标明为待研究议题，未新增原因、数据或对策。",
+      "anchors": [
+        "连续三个工作日晚间观察到二层靠窗座位紧张。",
+        "均有待进一步研究。"
+      ]
+    },
+    {
+      "sample_id": "S009",
+      "prompt_sha256": "f64ab33f4d9362914f0c294f8e6bbb67beca9d15647136b7b2c8abb76884ec26",
+      "output_sha256": "ec68d48f587b35534bfe9c073ff296d911cfc141bb155c618dc5f8be458d15eb",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "相关性事实、编号引用以及两个指定否定边界全部逐字保留，逗号连接未改变证据限制，也没有加入正文外解释。",
+      "anchors": [
+        "问卷数据仅显示平台使用时长与成绩存在相关关系[2]",
+        "不得据此声称平台使用导致成绩下降。"
+      ]
+    },
+    {
+      "sample_id": "S010",
+      "prompt_sha256": "2354fffa0d3cf62c9706a2b438dd79708138748538a1f01377c9c153ee9cda63",
+      "output_sha256": "2d5fe8b162c79b781f227fc58c2859bebe6380a7cc45d6c43bd4dcf0ac29596b",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "四类指定风险均以位置、严重度、问题、依据和建议报告，相关证据的边界解释准确，并明确排除了仅凭候选词判定。",
+      "anchors": [
+        "问题：递进越界。",
+        "该判断来自句式与论证内容不匹配，并非因为候选词本身出现。"
+      ]
+    },
+    {
+      "sample_id": "S011",
+      "prompt_sha256": "4474aeb8d21601238a72e04e84daf09020eeffd18fe4e537715e390f23e20809",
+      "output_sha256": "4ecd452b89af69e23b6da7f73c51d11463664a54064f71173064c172130ce350",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "首句观察事实与时间范围保持不变，重复的进一步提示被合并为后续研究范围，研究状态清楚且未引入任何新解释。",
+      "anchors": [
+        "2025年4月，连续三个工作日晚间观察到二层靠窗座位紧张。",
+        "后续研究可围绕开放时间、插座配置、座位布局和座位管理展开。"
+      ]
+    },
+    {
+      "sample_id": "S012",
+      "prompt_sha256": "7b00946437ad52921facc84e75868b10e3f270c8f23155be2c9d9f2796441d65",
+      "output_sha256": "45fab0e3a962249673fa1fd740ecd7726d554852f473fe944d5ac513c51b9e2e",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "两项数值、样本均值属性、引用和直接引语均准确无改，新增衔接只说明材料与研究性质，没有增强论断强度。",
+      "anchors": [
+        "甲方案样本均值为80，乙方案样本均值为120[3]。",
+        "作者明确指出：‘这是一项相关分析，而不是因果识别’。"
+      ]
+    },
+    {
+      "sample_id": "S013",
+      "prompt_sha256": "fd63c2de553c3ec17622fd5a6987d5bd94d1c7e59bbbf62b83eabb3de70c2718",
+      "output_sha256": "8a425c3063cd50e147005a355aca7287b4d85618a00b7f472f0d4fe0bd612dc5",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "唯一有材料依据的日期、样本整理事实和引用被完整保留，面向领导、脱敏版本、内部校验、门禁及检测标签均未残留。",
+      "anchors": [
+        "2025年3月完成样本A的初步整理[4]。"
+      ]
+    },
+    {
+      "sample_id": "S014",
+      "prompt_sha256": "3f7f8f68b4d62659541e5b93be07b74d6828d9175a01c9b8ed4a913ca4b3a24b",
+      "output_sha256": "976cdc52bd4686392ec48f838bd4e763c2553031b8926a84961de0fba15bed48",
+      "verdict": "PASS",
+      "semantic_fidelity_verdict": "PASS",
+      "contextual_style_verdict": "PASS",
+      "output_hygiene_verdict": "PASS",
+      "mode_adherence_verdict": "PASS",
+      "overediting_verdict": "PASS",
+      "hard_failures": [],
+      "issue_codes": [],
+      "rationale": "十二份已编码访谈、未编码材料排除及结论边界均被就近整合，重复表达、修改版说明和联系作者尾注已删除。",
+      "anchors": [
+        "未编码材料不纳入本次分析",
+        "所得结论仅限于上述12份访谈。"
+      ]
+    }
+  ]
+}

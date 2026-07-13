@@ -1,0 +1,144 @@
+{
+  "samples": [
+    {
+      "sample_id": "S001",
+      "writer_id": "writer-b",
+      "case_id": "H04",
+      "output": "writers/writer-b/H04.md",
+      "output_sha256": "cf74a2ac37d24de733d3820b1a72d8b6ec24fc43e3dcee55f9705ec347448f53",
+      "prompt_sha256": "7b00946437ad52921facc84e75868b10e3f270c8f23155be2c9d9f2796441d65",
+      "packet": "blind/packets/S001.md",
+      "packet_sha256": "a530e8464a7880c1e40d3fe153d9687a87c41ae7efb8cb1438db851da1a3f218"
+    },
+    {
+      "sample_id": "S002",
+      "writer_id": "writer-a",
+      "case_id": "H01",
+      "output": "writers/writer-a/H01.md",
+      "output_sha256": "513f896df64d07ef5d38450d4e37b5beac405b035e7f35d3ec3841428f1d5ead",
+      "prompt_sha256": "c05bd50acc58d9a44a9bdcb47f9b4ad7e40949a2b268dcf796bfb9f228071663",
+      "packet": "blind/packets/S002.md",
+      "packet_sha256": "46124bfd78a96d48ec8d965b8dc42599c4893726796fc69798d7d2a839b3803f"
+    },
+    {
+      "sample_id": "S003",
+      "writer_id": "writer-b",
+      "case_id": "H06",
+      "output": "writers/writer-b/H06.md",
+      "output_sha256": "ebd81cf0c5427f549ce304e7b5ce5cb21ffd8e2f4cb4e63098721a4368b2f6c0",
+      "prompt_sha256": "3f7f8f68b4d62659541e5b93be07b74d6828d9175a01c9b8ed4a913ca4b3a24b",
+      "packet": "blind/packets/S003.md",
+      "packet_sha256": "8fc8c2c821cac7920ae6d06fdc8e3fb3598c24b7bec47cb4fd909e83938f9a01"
+    },
+    {
+      "sample_id": "S004",
+      "writer_id": "writer-a",
+      "case_id": "H03",
+      "output": "writers/writer-a/H03.md",
+      "output_sha256": "b673191292ee89dfff7a32fca116a9f0f341f0e58d46da707d05e1fbcf48c7b0",
+      "prompt_sha256": "f64ab33f4d9362914f0c294f8e6bbb67beca9d15647136b7b2c8abb76884ec26",
+      "packet": "blind/packets/S004.md",
+      "packet_sha256": "1c64ff7a7a0773b753ec6dee1b8fc885c1a1645c6cf2b2817a01884e4273172c"
+    },
+    {
+      "sample_id": "S005",
+      "writer_id": "writer-b",
+      "case_id": "H01",
+      "output": "writers/writer-b/H01.md",
+      "output_sha256": "edda9c823461ec75c01122017aaba02ca826c9d9b5f7972930e1f3997af53cde",
+      "prompt_sha256": "c05bd50acc58d9a44a9bdcb47f9b4ad7e40949a2b268dcf796bfb9f228071663",
+      "packet": "blind/packets/S005.md",
+      "packet_sha256": "65679496ede0dc79231d66e9bd93df68069cbdec074c54e047fcc0ed37bf4ac6"
+    },
+    {
+      "sample_id": "S006",
+      "writer_id": "writer-a",
+      "case_id": "H05",
+      "output": "writers/writer-a/H05.md",
+      "output_sha256": "8a425c3063cd50e147005a355aca7287b4d85618a00b7f472f0d4fe0bd612dc5",
+      "prompt_sha256": "fd63c2de553c3ec17622fd5a6987d5bd94d1c7e59bbbf62b83eabb3de70c2718",
+      "packet": "blind/packets/S006.md",
+      "packet_sha256": "f589ad7062660a64e7b2b624cbecb54e07721017b07979c3499e9790cb94f5a7"
+    },
+    {
+      "sample_id": "S007",
+      "writer_id": "writer-b",
+      "case_id": "H07",
+      "output": "writers/writer-b/H07.md",
+      "output_sha256": "7eee24d8b95ad372e98e79f5f6e6b4042447e0d16e0dc169e45a8ea000ffd811",
+      "prompt_sha256": "2354fffa0d3cf62c9706a2b438dd79708138748538a1f01377c9c153ee9cda63",
+      "packet": "blind/packets/S007.md",
+      "packet_sha256": "dbaac1932f28809ac333b75a463441ba99162e0e15374892d1ea2c48fe1afd61"
+    },
+    {
+      "sample_id": "S008",
+      "writer_id": "writer-a",
+      "case_id": "H02",
+      "output": "writers/writer-a/H02.md",
+      "output_sha256": "b2f5a40f7b222d1c048e942d0205e98d34a600de687719fcff0996027bc4f087",
+      "prompt_sha256": "4474aeb8d21601238a72e04e84daf09020eeffd18fe4e537715e390f23e20809",
+      "packet": "blind/packets/S008.md",
+      "packet_sha256": "2e869935546c979afabeff9a8eae70262b42117462e052304f72f518a3895886"
+    },
+    {
+      "sample_id": "S009",
+      "writer_id": "writer-b",
+      "case_id": "H03",
+      "output": "writers/writer-b/H03.md",
+      "output_sha256": "ec68d48f587b35534bfe9c073ff296d911cfc141bb155c618dc5f8be458d15eb",
+      "prompt_sha256": "f64ab33f4d9362914f0c294f8e6bbb67beca9d15647136b7b2c8abb76884ec26",
+      "packet": "blind/packets/S009.md",
+      "packet_sha256": "7506a98489306959dbb7e11eda4f555142765e549565e245e0391a8b0804972c"
+    },
+    {
+      "sample_id": "S010",
+      "writer_id": "writer-a",
+      "case_id": "H07",
+      "output": "writers/writer-a/H07.md",
+      "output_sha256": "2d5fe8b162c79b781f227fc58c2859bebe6380a7cc45d6c43bd4dcf0ac29596b",
+      "prompt_sha256": "2354fffa0d3cf62c9706a2b438dd79708138748538a1f01377c9c153ee9cda63",
+      "packet": "blind/packets/S010.md",
+      "packet_sha256": "9e130851cdf5690186ba2284dbe9bc5917387fcdc6d5dd1eb9031555658b92a4"
+    },
+    {
+      "sample_id": "S011",
+      "writer_id": "writer-b",
+      "case_id": "H02",
+      "output": "writers/writer-b/H02.md",
+      "output_sha256": "4ecd452b89af69e23b6da7f73c51d11463664a54064f71173064c172130ce350",
+      "prompt_sha256": "4474aeb8d21601238a72e04e84daf09020eeffd18fe4e537715e390f23e20809",
+      "packet": "blind/packets/S011.md",
+      "packet_sha256": "ddb865aaf78995da2475eec5698a3d56834d4e2f5e73e3526fbefbc5b5a03027"
+    },
+    {
+      "sample_id": "S012",
+      "writer_id": "writer-a",
+      "case_id": "H04",
+      "output": "writers/writer-a/H04.md",
+      "output_sha256": "45fab0e3a962249673fa1fd740ecd7726d554852f473fe944d5ac513c51b9e2e",
+      "prompt_sha256": "7b00946437ad52921facc84e75868b10e3f270c8f23155be2c9d9f2796441d65",
+      "packet": "blind/packets/S012.md",
+      "packet_sha256": "c33457c75409d62de86a6eafe52961fff349d6053de04e617d38a8e6d0e32767"
+    },
+    {
+      "sample_id": "S013",
+      "writer_id": "writer-b",
+      "case_id": "H05",
+      "output": "writers/writer-b/H05.md",
+      "output_sha256": "8a425c3063cd50e147005a355aca7287b4d85618a00b7f472f0d4fe0bd612dc5",
+      "prompt_sha256": "fd63c2de553c3ec17622fd5a6987d5bd94d1c7e59bbbf62b83eabb3de70c2718",
+      "packet": "blind/packets/S013.md",
+      "packet_sha256": "a4117b6eb7b6ee7728b30cd76dc0527a678ad0c09fd783c65ebcc99f460d8b12"
+    },
+    {
+      "sample_id": "S014",
+      "writer_id": "writer-a",
+      "case_id": "H06",
+      "output": "writers/writer-a/H06.md",
+      "output_sha256": "976cdc52bd4686392ec48f838bd4e763c2553031b8926a84961de0fba15bed48",
+      "prompt_sha256": "3f7f8f68b4d62659541e5b93be07b74d6828d9175a01c9b8ed4a913ca4b3a24b",
+      "packet": "blind/packets/S014.md",
+      "packet_sha256": "ec0e5758d1687e599f6a0da16756ced22f5eecc450dcfaac9c4d5da11d17fb1e"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "candidate_commit": "f2f3e893d094b826922e1e6a7fdecf182bfb129a",
+  "tested_paths": [
+    "chinese-academic-writing-assistant",
+    "tests/fixtures/academic-smoke.jsonl",
+    "tests/test_context_and_runtime.py",
+    "tests/test_output_checker.py",
+    "tests/test_skill_contract.py",
+    "tools/check_academic_outputs.py"
+  ],
+  "fixture_sha256": "037ce03b39017bf6654a98c5892e11bb2f3f5ef297fd2ffd10cbd1c4399795df",
+  "runtime_sha256": {
+    "SKILL.md": "672ab924944f0d104a1c02a99c39fa2680c856cfc3a5864d1b8b363e1a5e9f2a",
+    "agents/openai.yaml": "226592f6c0447bae167709ae4402b6b30a9ecf55a895249ea2fd1553d51b9472",
+    "references/academic-writing.md": "0a37ceadca726ef29a82a4c0ebe73d712f4715cc3622dd9e1042894a83cd131a",
+    "references/academic-proposal.md": "98e3d238bfcf703752554129222d55dec0007fac35c8346bd3f43be1b5c7e352",
+    "references/academic-literature-review.md": "c9d2964365fc497b48bfaff2f443c4d336a88ea695317b8135f196ffbf1843db"
+  },
+  "writers": [
+    {
+      "writer_id": "writer-a",
+      "model_id": "unavailable",
+      "outputs": {
+        "A01": "writers/writer-a/A01.md",
+        "A02": "writers/writer-a/A02.md",
+        "A03": "writers/writer-a/A03.md",
+        "P01": "writers/writer-a/P01.md",
+        "P02": "writers/writer-a/P02.md",
+        "L01": "writers/writer-a/L01.md",
+        "L02": "writers/writer-a/L02.md",
+        "R01": "writers/writer-a/R01.md",
+        "X01": "writers/writer-a/X01.md",
+        "X02": "writers/writer-a/X02.md",
+        "X03": "writers/writer-a/X03.md",
+        "X04": "writers/writer-a/X04.md"
+      },
+      "contexts": {
+        "A01": "/root/core_a01_a",
+        "A02": "/root/core_a02_a",
+        "A03": "/root/core_a03_a",
+        "P01": "/root/core_p01_a",
+        "P02": "/root/core_p02_a",
+        "L01": "/root/core_l01_a",
+        "L02": "/root/core_l02_a",
+        "R01": "/root/core_r01_a",
+        "X01": "/root/core_x01_a",
+        "X02": "/root/core_x02_a",
+        "X03": "/root/core_x03_a",
+        "X04": "/root/core_x04_a"
+      }
+    },
+    {
+      "writer_id": "writer-b",
+      "model_id": "unavailable",
+      "outputs": {
+        "A01": "writers/writer-b/A01.md",
+        "A02": "writers/writer-b/A02.md",
+        "A03": "writers/writer-b/A03.md",
+        "P01": "writers/writer-b/P01.md",
+        "P02": "writers/writer-b/P02.md",
+        "L01": "writers/writer-b/L01.md",
+        "L02": "writers/writer-b/L02.md",
+        "R01": "writers/writer-b/R01.md",
+        "X01": "writers/writer-b/X01.md",
+        "X02": "writers/writer-b/X02.md",
+        "X03": "writers/writer-b/X03.md",
+        "X04": "writers/writer-b/X04.md"
+      },
+      "contexts": {
+        "A01": "/root/core_a01_b",
+        "A02": "/root/core_a02_b",
+        "A03": "/root/core_a03_b",
+        "P01": "/root/core_p01_b",
+        "P02": "/root/core_p02_b",
+        "L01": "/root/core_l01_b",
+        "L02": "/root/core_l02_b",
+        "R01": "/root/core_r01_b",
+        "X01": "/root/core_x01_b",
+        "X02": "/root/core_x02_b",
+        "X03": "/root/core_x03_b",
+        "X04": "/root/core_x04_b"
+      }
+    }
+  ],
+  "blind_map": "blind/anonymous-map.json",
+  "verifiers": [
+    {
+      "verifier_id": "verifier-1",
+      "model_id": "unavailable",
+      "context_id": "/root/core_blind_verifier3",
+      "results": "blind/verifiers/verifier-1.json"
+    },
+    {
+      "verifier_id": "verifier-2",
+      "model_id": "unavailable",
+      "context_id": "/root/core_blind_verifier4",
+      "results": "blind/verifiers/verifier-2.json"
+    }
+  ],
+  "verdict_hashes": "blind/verifiers/verdict-hashes.json",
+  "comparisons": {},
+  "summary": "summary.json",
+  "report": "REPORT.md"
+}

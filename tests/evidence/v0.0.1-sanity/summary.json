@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "candidate_commit": "f2f3e893d094b826922e1e6a7fdecf182bfb129a",
+  "cases": 12,
+  "writer_outputs": 24,
+  "blind_samples": 24,
+  "verdicts": 48,
+  "hard_failures": 0,
+  "adherence_failures": 0,
+  "orchestration_failures": 0,
+  "style_warnings": 0,
+  "comparisons": {}
+}
