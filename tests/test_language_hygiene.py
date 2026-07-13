@@ -228,6 +228,11 @@ class LanguageHygieneTests(unittest.TestCase):
             "review-only",
         ):
             self.assertIn(expected, focuses)
+        self.assertIn("未编码材料", self.cases["H06"]["immutable_literals"])
+        self.assertNotIn(
+            "未编码材料不进入本次分析",
+            self.cases["H06"]["immutable_literals"],
+        )
 
     def test_runtime_prompt_defines_contextual_local_rewrite_layer(self) -> None:
         skill = SKILL_PATH.read_text(encoding="utf-8")
