@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "candidate_commit": "f2f3e893d094b826922e1e6a7fdecf182bfb129a",
+  "candidate_commit": "bd20f464c15d2237df158dc90939c616b775e7d4",
   "cases": 12,
   "writer_outputs": 24,
   "blind_samples": 24,

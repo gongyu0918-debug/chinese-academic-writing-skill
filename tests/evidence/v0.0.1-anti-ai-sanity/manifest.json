@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "candidate_commit": "b4ba558e3132199f408a7625d6dc2489d88316f5",
+  "candidate_commit": "bd20f464c15d2237df158dc90939c616b775e7d4",
   "tested_paths": [
     "chinese-academic-writing-assistant/SKILL.md",
     "chinese-academic-writing-assistant/agents/openai.yaml",
@@ -12,8 +12,8 @@
     "tools/check_language_hygiene_outputs.py"
   ],
   "protected_sha256": {
-    "chinese-academic-writing-assistant/SKILL.md": "672ab924944f0d104a1c02a99c39fa2680c856cfc3a5864d1b8b363e1a5e9f2a",
-    "chinese-academic-writing-assistant/agents/openai.yaml": "226592f6c0447bae167709ae4402b6b30a9ecf55a895249ea2fd1553d51b9472",
+    "chinese-academic-writing-assistant/SKILL.md": "1213ed038ca00041012d5d7048b7e6d5025b9475288c36b798b11d1890451e97",
+    "chinese-academic-writing-assistant/agents/openai.yaml": "24ccebb5b46137f0c961196c2f131326304b51dae2cf070b71c6f5b05ded2892",
     "chinese-academic-writing-assistant/references/academic-writing.md": "0a37ceadca726ef29a82a4c0ebe73d712f4715cc3622dd9e1042894a83cd131a",
     "chinese-academic-writing-assistant/references/academic-proposal.md": "98e3d238bfcf703752554129222d55dec0007fac35c8346bd3f43be1b5c7e352",
     "chinese-academic-writing-assistant/references/academic-literature-review.md": "c9d2964365fc497b48bfaff2f443c4d336a88ea695317b8135f196ffbf1843db",
