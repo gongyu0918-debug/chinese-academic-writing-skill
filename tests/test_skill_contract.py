@@ -68,12 +68,21 @@ class SkillContractTests(unittest.TestCase):
         ):
             self.assertIn(marker, self.skill)
 
+    def test_user_facing_copy_hides_process_and_audience_labels(self) -> None:
+        for marker in (
+            "用户给出的受众定位、版本用途和制作要求只作为写作约束",
+            "不把“本轮未提供”“需作者确认”等制作回合标签写进正文",
+            "没有材料依据，不写进开题正文",
+            "确需提醒时移到正文后建议",
+        ):
+            self.assertIn(marker, self.skill + "".join(self.references.values()))
+
     def test_material_gates_are_explicit(self) -> None:
         for marker in (
             "无目标文本不能执行底稿修改",
             "只有题目时，不形成完整论文或完整开题设计",
             "常识性判断都不是事实证据",
-            "本轮未提供”只说明输入缺失",
+            "输入中没有某项内容，只能说明现有材料不含该项",
             "不扩写招募、访谈提纲、编码、分析步骤、写作环节、进度任务或成果范围",
             "不预选统计检验、结果方向、显著性表达或因果模板",
             "独立综述没有可用来源且用户未授权检索时，不写综述正文",
@@ -131,7 +140,7 @@ class SkillContractTests(unittest.TestCase):
         for marker in (
             "不补行业趋势",
             "不先替后续材料分类",
-            "不写成项目尚未确定的事实",
+            "输入缺失不等于项目尚未确定",
             "进度与成果不得超出作者明确给出的任务和时间",
         ):
             self.assertIn(marker, proposal)
