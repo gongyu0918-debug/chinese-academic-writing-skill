@@ -1,0 +1,56 @@
+{
+  "writer_id": "writer-b",
+  "model_id": "unavailable",
+  "continuous_context": {
+    "M1": true,
+    "M2": true
+  },
+  "rounds": {
+    "M1-T1": {
+      "web_used": false,
+      "skill_files": [
+        "chinese-academic-writing-assistant/SKILL.md",
+        "chinese-academic-writing-assistant/references/academic-writing.md"
+      ]
+    },
+    "M1-T2": {
+      "web_used": true,
+      "skill_files": [
+        "chinese-academic-writing-assistant/SKILL.md",
+        "chinese-academic-writing-assistant/references/citation-research.md"
+      ]
+    },
+    "M1-T3": {
+      "web_used": false,
+      "skill_files": [
+        "chinese-academic-writing-assistant/SKILL.md",
+        "chinese-academic-writing-assistant/references/academic-literature-review.md",
+        "chinese-academic-writing-assistant/references/anti-ai-writing.md"
+      ]
+    },
+    "M2-T1": {
+      "web_used": false,
+      "skill_files": [
+        "chinese-academic-writing-assistant/SKILL.md",
+        "chinese-academic-writing-assistant/references/academic-writing.md",
+        "chinese-academic-writing-assistant/references/anti-ai-writing.md"
+      ]
+    },
+    "M2-T2": {
+      "web_used": false,
+      "skill_files": [
+        "chinese-academic-writing-assistant/SKILL.md",
+        "chinese-academic-writing-assistant/references/academic-writing.md",
+        "chinese-academic-writing-assistant/references/anti-ai-writing.md"
+      ]
+    },
+    "M2-T3": {
+      "web_used": false,
+      "skill_files": [
+        "chinese-academic-writing-assistant/SKILL.md",
+        "chinese-academic-writing-assistant/references/academic-writing.md",
+        "chinese-academic-writing-assistant/references/anti-ai-writing.md"
+      ]
+    }
+  }
+}

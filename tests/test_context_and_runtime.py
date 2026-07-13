@@ -79,7 +79,9 @@ class ContextAndRuntimeTests(unittest.TestCase):
 
     def test_cross_cutting_layers_are_not_coloaded(self) -> None:
         skill = SKILL_PATH.read_text(encoding="utf-8")
-        self.assertIn("来源层与 ANTI-AI 层不在同一原子阶段共同加载", skill)
+        self.assertIn("来源层与 ANTI-AI 层不得同阶段加载", skill)
+        self.assertIn("另开上下文或轮次读取", skill)
+        self.assertIn("只把紧凑证据账本传入专项叶", skill)
 
     def test_leaf_bodies_do_not_embed_other_leaf_files(self) -> None:
         for leaf in REFERENCE_DIR.glob("*.md"):

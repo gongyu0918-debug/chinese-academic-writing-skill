@@ -15,20 +15,40 @@ import sys
 from collections import Counter
 from dataclasses import asdict, dataclass
 
+sys.dont_write_bytecode = True
+
 from prose_lint import InputReadError, read_text
 
 
 REFERENCE_HEADING = re.compile(
-    r"^\s*(?:#{1,6}\s*)?(?:参考文献|主要参考文献|references|bibliography)\s*[:：]?\s*$",
+    r"^\s*(?:#{1,6}\s*)?(?:(?:[一二三四五六七八九十]+|\d+)[、.．]\s*)?"
+    r"(?:(?:主要)?参考文献(?:\s*[（(][^）)\n]{0,20}[）)])?(?:列表)?|references|bibliography)"
+    r"\s*[:：]?\s*$",
     re.IGNORECASE,
 )
 NUMERIC_CITATION = re.compile(
     r"\[((?:\d+\s*(?:[-–—]\s*\d+)?\s*[,，;；]?\s*)+)\](?!\()"
 )
 NUMERIC_REFERENCE = re.compile(r"^\s*\[(\d+)\]\s*(.+?)\s*$")
-AUTHOR_YEAR = re.compile(
-    r"[（(](?=[^()（）\n]{0,70}(?:19|20)\d{2}[a-z]?)[^()（）\n]{1,90}[）)]"
+AUTHOR_TOKEN = r"(?:[A-Z][A-Za-z'’.-]*(?:\s+(?:&|and)\s+[A-Z][A-Za-z'’.-]*)?|[\u4e00-\u9fff]{2,8}(?:等)?)"
+PARENTHETICAL_AUTHOR_YEAR = re.compile(
+    rf"[（(]{AUTHOR_TOKEN}\s*[,，]\s*(?:19|20)\d{{2}}[a-z]?"
+    rf"(?:\s*[;；]\s*{AUTHOR_TOKEN}\s*[,，]\s*(?:19|20)\d{{2}}[a-z]?)*[）)]"
 )
+NARRATIVE_AUTHOR_YEAR = re.compile(
+    rf"(?P<author>{AUTHOR_TOKEN})[（(](?:19|20)\d{{2}}[a-z]?[）)]"
+)
+GENERIC_NARRATIVE_AUTHORS = {
+    "本研究",
+    "该研究",
+    "已有研究",
+    "相关研究",
+    "国内研究",
+    "国外研究",
+    "研究结果",
+    "调查结果",
+    "项目报告",
+}
 LATEX_CITATION = re.compile(r"\\cite\w*\{[^{}\n]+\}")
 DOI = re.compile(r"\b10\.\d{4,9}/[-._;()/:A-Z0-9]+", re.IGNORECASE)
 SENTENCE = re.compile(r"[^。！？!?；;\n]+[。！？!?；;]?", re.MULTILINE)
@@ -43,7 +63,7 @@ HIGH_RISK = re.compile(
     r"首次|填补[^。！？!?；;]{0,12}空白|尚无研究|缺乏研究|普遍认为|一致认为)"
 )
 GENERAL_CLAIM = re.compile(
-    r"(?:表明|显示|说明|证实|发现|通常|往往|普遍|主要|核心|关键|有助于|影响|"
+    r"(?:表明|显示|说明|证实|发现|指出|认为|提出|通常|往往|普遍|主要|核心|关键|有助于|影响|"
     r"可分为|是指|定义为|包括|集中于|呈现|形成|构成)"
 )
 
@@ -90,11 +110,36 @@ def numeric_citations(text: str) -> list[int]:
     return values
 
 
+def narrative_author_year_matches(text: str) -> list[re.Match[str]]:
+    return [
+        match
+        for match in NARRATIVE_AUTHOR_YEAR.finditer(text)
+        if match.group("author") not in GENERIC_NARRATIVE_AUTHORS
+    ]
+
+
+def has_author_year_citation(text: str) -> bool:
+    return bool(PARENTHETICAL_AUTHOR_YEAR.search(text) or narrative_author_year_matches(text))
+
+
+def strip_author_year_citations(text: str) -> str:
+    stripped = PARENTHETICAL_AUTHOR_YEAR.sub("", text)
+
+    def keep_author(match: re.Match[str]) -> str:
+        return match.group("author") if match.group("author") not in GENERIC_NARRATIVE_AUTHORS else match.group(0)
+
+    return NARRATIVE_AUTHOR_YEAR.sub(keep_author, stripped)
+
+
+def has_citation_marker(text: str) -> bool:
+    return bool(NUMERIC_CITATION.search(text) or has_author_year_citation(text) or LATEX_CITATION.search(text))
+
+
 def citation_schemes(text: str) -> set[str]:
     schemes: set[str] = set()
     if NUMERIC_CITATION.search(text):
         schemes.add("numeric")
-    if AUTHOR_YEAR.search(text):
+    if has_author_year_citation(text):
         schemes.add("author-year")
     if LATEX_CITATION.search(text):
         schemes.add("latex")
@@ -142,17 +187,17 @@ def sentence_rows(body: str) -> list[tuple[int, str]]:
 
 def is_claim_candidate(sentence: str, mode: str) -> bool:
     visible = NUMERIC_CITATION.sub("", LATEX_CITATION.sub("", sentence))
-    visible = AUTHOR_YEAR.sub("", visible).strip()
+    visible = strip_author_year_citations(visible).strip()
     if OWN_STUDY.match(visible) and not EXTERNAL_ATTRIBUTION.search(visible):
         return False
     if EXTERNAL_ATTRIBUTION.search(visible) or HIGH_RISK.search(visible):
         return True
     if mode == "literature-review" and GENERAL_CLAIM.search(visible):
         return True
-    return bool((NUMERIC_CITATION.search(sentence) or AUTHOR_YEAR.search(sentence) or LATEX_CITATION.search(sentence)) and GENERAL_CLAIM.search(visible))
+    return bool(has_citation_marker(sentence) and GENERAL_CLAIM.search(visible))
 
 
-def analyze(text: str, *, mode: str = "general", minimum_coverage: float | None = None) -> dict:
+def analyze(text: str, *, mode: str = "general", minimum_marker_coverage: float | None = None) -> dict:
     body, references, heading_line = split_document(text)
     used = numeric_citations(body)
     entries, findings = reference_entries(references, heading_line)
@@ -168,15 +213,15 @@ def analyze(text: str, *, mode: str = "general", minimum_coverage: float | None 
     for line_no, sentence in sentence_rows(body):
         if not is_claim_candidate(sentence, mode):
             continue
-        cited = bool(NUMERIC_CITATION.search(sentence) or AUTHOR_YEAR.search(sentence) or LATEX_CITATION.search(sentence))
-        candidates.append((line_no, sentence, cited))
-        if not cited:
+        marker_present = has_citation_marker(sentence)
+        candidates.append((line_no, sentence, marker_present))
+        if not marker_present:
             findings.append(Finding(line_no, "medium", "claim-coverage", "uncited-claim-candidate", "该论断可能需要来源支持，请结合研究语境人工判断", sentence[:100]))
 
-    cited_candidates = sum(1 for _, _, cited in candidates if cited)
-    coverage = cited_candidates / len(candidates) if candidates else None
-    if minimum_coverage is not None and coverage is not None and coverage < minimum_coverage:
-        findings.append(Finding(1, "high", "claim-coverage", "below-explicit-minimum", f"候选论断覆盖率 {coverage:.1%} 低于明确口径 {minimum_coverage:.1%}", "仅在用户、学校或期刊明确给出口径时使用"))
+    marker_covered_candidates = sum(1 for _, _, marker_present in candidates if marker_present)
+    marker_coverage = marker_covered_candidates / len(candidates) if candidates else None
+    if minimum_marker_coverage is not None and marker_coverage is not None and marker_coverage < minimum_marker_coverage:
+        findings.append(Finding(1, "high", "citation-marker-coverage", "below-explicit-marker-minimum", f"候选论断的引用标记覆盖率 {marker_coverage:.1%} 低于明确结构口径 {minimum_marker_coverage:.1%}", "该值只表示引用标记存在；有效支持仍须核对原文和证据账本"))
 
     counts = Counter(used)
     top_share = max(counts.values()) / sum(counts.values()) if counts else None
@@ -186,14 +231,14 @@ def analyze(text: str, *, mode: str = "general", minimum_coverage: float | None 
             "mode": mode,
             "schemes": sorted(schemes),
             "claim_candidates": len(candidates),
-            "cited_claim_candidates": cited_candidates,
-            "claim_coverage": coverage,
+            "marker_covered_claim_candidates": marker_covered_candidates,
+            "citation_marker_coverage": marker_coverage,
             "citation_occurrences": len(used),
             "unique_numeric_citations": len(set(used)),
             "listed_numeric_references": len(entries),
             "numeric_reference_utilization": utilization,
             "top_numeric_reference_share": top_share,
-            "explicit_minimum_coverage": minimum_coverage,
+            "explicit_minimum_marker_coverage": minimum_marker_coverage,
         },
         "findings": [asdict(item) for item in findings],
     }
@@ -201,8 +246,9 @@ def analyze(text: str, *, mode: str = "general", minimum_coverage: float | None 
 
 def print_text_report(report: dict) -> None:
     summary = report["summary"]
-    coverage = summary["claim_coverage"]
-    print(f"CLAIM_COVERAGE={'n/a' if coverage is None else f'{coverage:.1%}'} ({summary['cited_claim_candidates']}/{summary['claim_candidates']})")
+    coverage = summary["citation_marker_coverage"]
+    print(f"CITATION_MARKER_COVERAGE={'n/a' if coverage is None else f'{coverage:.1%}'} ({summary['marker_covered_claim_candidates']}/{summary['claim_candidates']})")
+    print("NOTE=Marker coverage is structural only; it does not prove that a source supports the claim.")
     print(f"CITATIONS={summary['citation_occurrences']} UNIQUE={summary['unique_numeric_citations']} LISTED={summary['listed_numeric_references']}")
     for finding in report["findings"]:
         print(f"line {finding['line']}: {finding['severity']}: {finding['code']}: {finding['detail']}")
@@ -216,13 +262,13 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Read-only citation coverage and numeric-reference audit; never rewrites files.")
     parser.add_argument("files", nargs="+", help="Text/Markdown/DOCX files, or '-' for stdin.")
     parser.add_argument("--mode", choices=("general", "literature-review", "proposal"), default="general")
-    parser.add_argument("--minimum-coverage", type=float, help="Explicit user/institution threshold from 0 to 1; no default is assumed.")
+    parser.add_argument("--minimum-marker-coverage", type=float, help="Explicit structural marker threshold from 0 to 1; no default is assumed and semantic support is not inferred.")
     parser.add_argument("--encoding", help="Encoding for plain-text inputs.")
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--strict", action="store_true", help="Return 1 for high structural findings or an explicit threshold failure; never rewrites.")
     args = parser.parse_args(argv)
-    if args.minimum_coverage is not None and not 0 <= args.minimum_coverage <= 1:
-        parser.error("--minimum-coverage must be between 0 and 1")
+    if args.minimum_marker_coverage is not None and not 0 <= args.minimum_marker_coverage <= 1:
+        parser.error("--minimum-marker-coverage must be between 0 and 1")
 
     reports: list[dict] = []
     read_error = False
@@ -233,7 +279,7 @@ def main(argv: list[str] | None = None) -> int:
             print(f"ERROR: {exc}", file=sys.stderr)
             read_error = True
             continue
-        report = analyze(content, mode=args.mode, minimum_coverage=args.minimum_coverage)
+        report = analyze(content, mode=args.mode, minimum_marker_coverage=args.minimum_marker_coverage)
         report["path"] = path_label
         reports.append(report)
 

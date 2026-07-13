@@ -129,12 +129,24 @@ class SkillContractTests(unittest.TestCase):
             "默认不联网",
             "题目含“最新、当前、近年”，出现 DOI、URL，或者材料不足，都不构成授权",
             "授权只覆盖本次约定的主题、范围和轮次",
-            "来源层与 ANTI-AI 层不在同一原子阶段共同加载",
+            "来源层与 ANTI-AI 层不得同阶段加载",
             "不自设统一合格比例",
             "不用无关来源抬高数字",
         ):
             self.assertIn(marker, self.skill + citation)
         self.assertIn("scripts/citation_audit.py", self.skill)
+
+    def test_default_citation_style_has_inline_superscript_and_reference_list(self) -> None:
+        citation = self.references["citation-research.md"]
+        for marker in (
+            "正文以顺序编码上角标就近标注",
+            "富文本中的 `[1]` 设为上角标",
+            "纯文本和 Markdown 无法可靠保留上标格式时使用 `[1]`",
+            "文末设置“参考文献”",
+            "正文标号与文后条目双向对应",
+            "不得把全部标号机械堆在段末",
+        ):
+            self.assertIn(marker, self.skill + citation)
 
     def test_source_authority_and_coverage_contract_is_not_a_black_box_score(self) -> None:
         citation = self.references["citation-research.md"]
@@ -245,12 +257,13 @@ class SkillContractTests(unittest.TestCase):
         for marker in (
             "Read-only citation coverage",
             "never rewrites",
-            "--minimum-coverage",
+            "--minimum-marker-coverage",
             "no default is assumed",
         ):
             self.assertIn(marker, self.citation_audit)
         for forbidden in ("--fix", "write_text(", "write_bytes("):
             self.assertNotIn(forbidden, self.citation_audit)
+        self.assertIn("sys.dont_write_bytecode = True", self.citation_audit)
 
     def test_runtime_prompt_has_no_version_or_legacy_invocation(self) -> None:
         runtime = self.skill + self.openai + "".join(self.references.values())
