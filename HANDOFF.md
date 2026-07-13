@@ -11,7 +11,7 @@
 
 ## 当前状态
 
-- 本仓库从 `chinese-official-writing-skill` 的论文叶拆分而来，展示名暂定为“中文论文助手”，skill name 为 `chinese-academic-writing`。
+- 本仓库从 `chinese-official-writing-skill` 的论文叶拆分而来，展示名为“中文论文助手”，skill name 为 `chinese-academic-writing-assistant`。
 - 当前只完成独立入口和既有论文资料迁移，用于交给后续线程继续开发；尚未创建 GitHub 远端，也未发布到 ClawHub、SkillHub 或小红书 Red SkillHub。
 - 当前能力仍限定中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。英文论文、投稿、统计分析、答辩、排版和检测规避尚未纳入。
 
@@ -25,7 +25,7 @@
 
 ## 本次拆分修改
 
-1. 新建独立 `chinese-academic-writing` skill，不复用原仓库 slug、identifier 或发布回执。
+1. 新建独立 `chinese-academic-writing-assistant` skill，不复用原仓库 slug、identifier 或发布回执。
 2. 将三份论文专项资料原样迁移：普通论文、开题报告、独立文献综述。
 3. 新写完整 `SKILL.md`，用研究问题、证据状态、引用、论证和学术复核组织工作流，不引用公文文种、行文关系、办理要素或公文 reference。
 4. 保持“只按给定事实和已核验来源写、材料不足宁可短、不编数据和文献、正文后可给构造建议”的既有边界。
@@ -42,7 +42,7 @@
 
 ## 后续线程应先做的工作
 
-1. 冷审独立入口与三份 reference，确认是否保留 `chinese-academic-writing` 作为最终 slug。
+1. 冷审独立入口与三份 reference，确认 `chinese-academic-writing-assistant` 的路由、边界和本地验证证据。
 2. 若扩展英文论文，先单独设计语言路由和引用规范，不直接翻译中文 Prompt，也不要让中英文链同时加载。
 3. 补独立仓库测试、镜像同步、发行包白名单、上下文预算和真实 writer/verifier 流程。
 4. 创建远端和首次发布前，分别查询 GitHub、ClawHub、skillhub.cn 和 Red SkillHub 的 slug/identifier 可用性。
@@ -53,4 +53,3 @@
 - 不复制公文文种表、主送与落款规则、行文关系、办理要素、GB/T 9704 或 AI 算力专项。
 - 不用“不要像公文”“区别于公文”等反向提示组织论文规则。
 - 不把旧测试中的匿名样稿当成事实、模板或默认正文。
-
