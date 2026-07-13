@@ -1,0 +1,75 @@
+{
+  "model_id": "unavailable",
+  "context_id": "/root/v002_blind_verifier",
+  "blind": true,
+  "overall": "PASS",
+  "results": [
+    {
+      "sample_id": "X001",
+      "case_id": "S02",
+      "adherence": "PASS",
+      "orchestration": "PASS",
+      "semantic_fidelity": "PASS",
+      "output_hygiene": "PASS",
+      "hard_failures": [],
+      "style_warnings": [],
+      "evidence": "按 proposal/revise 任务直接交付正文并保持原文；直接引语、[7]、12份访谈、尚未完成编码、拟开展及未编码材料不能写成研究结论均完整保留，研究状态未升级，无流程或制作信息泄露。"
+    },
+    {
+      "sample_id": "X002",
+      "case_id": "S03",
+      "adherence": "PASS",
+      "orchestration": "PASS",
+      "semantic_fidelity": "PASS",
+      "output_hygiene": "PASS",
+      "hard_failures": [],
+      "style_warnings": [],
+      "evidence": "按 independent-literature-review/review-only 任务仅输出规定的五列表格，未重写全文且无表外说明；准确识别制作标签、交付说明、模糊归因、摘要外推、引用错配、论断过强、机械重复和尾注兜底，并正确保持[1]仅有摘要、[2]只讨论课程参与而不讨论就业的来源状态。"
+    },
+    {
+      "sample_id": "X003",
+      "case_id": "S01",
+      "adherence": "PASS",
+      "orchestration": "PASS",
+      "semantic_fidelity": "PASS",
+      "output_hygiene": "PASS",
+      "hard_failures": [],
+      "style_warnings": [],
+      "evidence": "按 ordinary-paper/revise 任务仅交付改写段落；保留18名学生、[1]、多名受访者和插座位置影响选座，删除无材料支持的否定既有研究、所有学生范围扩大、停留与空间评价论断及机械重复，未过度改写。"
+    },
+    {
+      "sample_id": "X004",
+      "case_id": "S02",
+      "adherence": "PASS",
+      "orchestration": "PASS",
+      "semantic_fidelity": "PASS",
+      "output_hygiene": "PASS",
+      "hard_failures": [],
+      "style_warnings": [],
+      "evidence": "按 proposal/revise 任务在无明确问题时保持原文；引用、访谈数量、初步整理状态、编码未完成状态、后续拟开展工作和结论边界均未改变，无模式错误或制作信息泄露。"
+    },
+    {
+      "sample_id": "X005",
+      "case_id": "S03",
+      "adherence": "PASS",
+      "orchestration": "PASS",
+      "semantic_fidelity": "PASS",
+      "output_hygiene": "PASS",
+      "hard_failures": [],
+      "style_warnings": [],
+      "evidence": "按 independent-literature-review/review-only 任务仅输出规定的五列表格；完整覆盖题名制作标签、交付说明、模糊归因、摘要证据边界、就业引用错配、强度失真、连接词重复和免责声明兜底，未将来源状态或研究结论升级。"
+    },
+    {
+      "sample_id": "X006",
+      "case_id": "S01",
+      "adherence": "PASS",
+      "orchestration": "PASS",
+      "semantic_fidelity": "PASS",
+      "output_hygiene": "PASS",
+      "hard_failures": [],
+      "style_warnings": [],
+      "evidence": "按 ordinary-paper/revise 任务仅保留材料能够支持的核心陈述；事实、引用位置、受访者范围和论断强度保持不变，虚设否定、范围扩大、无依据效果及重复均被删除，无流程泄露。"
+    }
+  ],
+  "common_issue_candidates": []
+}

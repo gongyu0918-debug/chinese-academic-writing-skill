@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-07-13T19:23:50+08:00",
+  "candidate_commit": "185e06ea7d9a84c66db53343ceccccdb007a2bfa",
+  "purpose": "0.0.2 progressive ANTI-AI adherence and orchestration sanity",
+  "fixture": {
+    "path": "tests/fixtures/v0.0.2-writing-sanity.jsonl",
+    "sha256_normalized_lf": "806078754083f953b0e5f685f5912f43a5eb54cb6591f3f33fee6858478ae3ee",
+    "cases": 3
+  },
+  "protected_sha256_normalized_lf": {
+    "chinese-academic-writing-assistant/SKILL.md": "6d86b182bd772236ca39c5d1236e4fc136a76832a3bce45577dea5efff79848f",
+    "chinese-academic-writing-assistant/references/anti-ai-writing.md": "0e5167156c8a47e29ab487f912bae6980ec97ffb204da41d5f082dadf71303ff",
+    "chinese-academic-writing-assistant/scripts/prose_lint.py": "10a15cad3ffbd9292f391f4188af484370c9c37049b9f6c95d3d56ec55549999"
+  },
+  "hash_mode": "UTF-8 text with CRLF and CR normalized to LF",
+  "writers": [
+    {
+      "writer_id": "writer-a",
+      "model_id": "unavailable",
+      "context_id": "/root/v002_writer_a",
+      "outputs": ["writers/writer-a/S01.md", "writers/writer-a/S02.md", "writers/writer-a/S03.md"]
+    },
+    {
+      "writer_id": "writer-b",
+      "model_id": "unavailable",
+      "context_id": "/root/v002_writer_b",
+      "outputs": ["writers/writer-b/S01.md", "writers/writer-b/S02.md", "writers/writer-b/S03.md"]
+    }
+  ],
+  "blind": {
+    "samples": "blind/anonymous-samples.md",
+    "verifier": "blind/verifier.json",
+    "unblinded_map": "blind/unblinded-map.json",
+    "verifier_count": 1,
+    "verdict_count": 6,
+    "overall": "PASS"
+  },
+  "coverage": [
+    "ordinary paper revise-only local rewrite",
+    "proposal no-op preservation",
+    "independent literature review review-only table",
+    "citation and research-state preservation",
+    "production-label and process-leak review",
+    "high-frequency phrase and unsupported contrast review"
+  ],
+  "fix_threshold": {
+    "minimum_outputs": 3,
+    "minimum_cases": 2,
+    "minimum_writers": 2,
+    "common_issue_candidates": [],
+    "prompt_changed_from_this_sanity": false
+  },
+  "claim_limit": "Model identifiers were unavailable; this is a fresh writer sanity with a blind verifier, not a cross-model statistical result."
+}

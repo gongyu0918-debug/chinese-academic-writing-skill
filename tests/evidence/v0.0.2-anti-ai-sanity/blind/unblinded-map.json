@@ -1,0 +1,12 @@
+{
+  "verifier_completed_before_unblinding": true,
+  "unblinded_at": "2026-07-13T19:23:50+08:00",
+  "samples": [
+    {"sample_id": "X001", "case_id": "S02", "writer_id": "writer-a", "output": "writers/writer-a/S02.md"},
+    {"sample_id": "X002", "case_id": "S03", "writer_id": "writer-b", "output": "writers/writer-b/S03.md"},
+    {"sample_id": "X003", "case_id": "S01", "writer_id": "writer-a", "output": "writers/writer-a/S01.md"},
+    {"sample_id": "X004", "case_id": "S02", "writer_id": "writer-b", "output": "writers/writer-b/S02.md"},
+    {"sample_id": "X005", "case_id": "S03", "writer_id": "writer-a", "output": "writers/writer-a/S03.md"},
+    {"sample_id": "X006", "case_id": "S01", "writer_id": "writer-b", "output": "writers/writer-b/S01.md"}
+  ]
+}
