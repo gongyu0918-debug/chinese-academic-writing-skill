@@ -159,6 +159,50 @@ class SkillContractTests(unittest.TestCase):
         ):
             self.assertIn(marker, citation)
 
+    def test_citation_identity_and_atomic_claim_contract_are_explicit(self) -> None:
+        citation = self.references["citation-research.md"]
+        for marker in (
+            "DOI 能解析仍须回读并匹配题名、第一作者、年份或版本族",
+            "指向其他论文即阻断",
+            "主体—关系—对象—方向或否定—范围",
+            "描述、相关、预测、中介、因果和机制不得互换",
+            "局部中介不得拼成未经检验的完整路径",
+            "否定结果必须保留原主语和关系对象",
+            "不能从“A 与 B 相关、B 与 C 不相关”推出“A 与 C 不相关”",
+            "允许措辞、禁止增强措辞",
+            "标题句、段首判断、过渡句和段末综合同样是待核验论断",
+            "只有来源明确检验整体路径时",
+            "降调词不能为未检验路径补足证据",
+            "不替它们新增方向、作用或路径",
+        ):
+            self.assertIn(marker, citation)
+
+    def test_post_writing_semantic_gate_precedes_citation_formatting(self) -> None:
+        citation = self.references["citation-research.md"]
+        for marker in (
+            "写后语义门禁",
+            "先逐句检查段首、过渡和段末综合",
+            "按每个引文反向提取原子论断及其来源 ID",
+            "主体、关系对象、方向、否定、强度、数字、样本和范围",
+            "支持、部分支持、含混、冲突、无法核验",
+            "只有“支持”可直接保留",
+            "该门禁先于角标与文后格式检查",
+        ):
+            self.assertIn(marker, citation)
+
+    def test_publication_status_check_never_upgrades_missing_records(self) -> None:
+        citation = self.references["citation-research.md"]
+        for marker in (
+            "出版状态记录实际核验渠道和日期",
+            "只有预定渠道均成功返回可识别的当前文献记录",
+            "本次未检出更新",
+            "不得写成“确认未撤稿”",
+            "任一渠道无记录、请求失败或只返回空关系时，优先记“未确认”",
+            "不能据此推断状态正常或被其他渠道的空结果抵消",
+            "OpenAlex 等聚合状态只作辅助",
+        ):
+            self.assertIn(marker, citation)
+
     def test_integrity_standards_and_review_interface_are_explicit(self) -> None:
         for marker in (
             "不得代写整篇提交稿",
