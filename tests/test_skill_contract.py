@@ -63,6 +63,8 @@ class SkillContractTests(unittest.TestCase):
             "无目标文本不能执行底稿修改",
             "只有题目时，不形成完整论文或完整开题设计",
             "常识性判断都不是事实证据",
+            "本轮未提供”只说明输入缺失",
+            "不扩写招募、访谈提纲、编码、分析步骤、写作环节、进度任务或成果范围",
             "不预选统计检验、结果方向、显著性表达或因果模板",
             "独立综述没有可用来源且用户未授权检索时，不写综述正文",
             "未完整读取时明确已覆盖和未覆盖部分",
@@ -116,11 +118,23 @@ class SkillContractTests(unittest.TestCase):
             self.assertIn(marker, writing)
         for marker in ("已有基础", "拟开展工作", "预期结果", "三种模式"):
             self.assertIn(marker, proposal)
-        for marker in ("不补行业趋势", "不先替后续材料分类"):
+        for marker in (
+            "不补行业趋势",
+            "不先替后续材料分类",
+            "不写成项目尚未确定的事实",
+            "进度与成果不得超出作者明确给出的任务和时间",
+        ):
             self.assertIn(marker, proposal)
         for marker in ("来源覆盖表", "普通叙述性综述", "PRISMA", "三种模式"):
             self.assertIn(marker, review)
-        for marker in ("实际使用来源", "提及但未用于观点", "静默遗漏"):
+        for marker in (
+            "实际使用来源",
+            "提及但未用于观点",
+            "静默遗漏",
+            "必须在对应论断后保留该 ID",
+            "不能替代正文中的就近标注",
+            "作者—年份表述不能替代用户要求保留的来源 ID",
+        ):
             self.assertIn(marker, review)
         for content in self.references.values():
             self.assertNotIn("默认不扩展检索", content)

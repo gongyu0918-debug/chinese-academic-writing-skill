@@ -1,0 +1,7 @@
+{
+  "ablation": "weaken-causal-evidence",
+  "case_id": "A03",
+  "original_material": "随机对照试验预先登记了主要结局，干预组与对照组由随机分配形成，追踪结束后估计了组间平均处理效应，并报告置信区间。",
+  "ablated_material": "横截面问卷只显示平台使用时长与课程成绩呈负相关，没有实验、追踪、时间先后证据或因果识别。"
+}
+
