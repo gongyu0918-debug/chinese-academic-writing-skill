@@ -60,6 +60,12 @@ class ContextAndRuntimeTests(unittest.TestCase):
             set(ids),
         )
 
+    def test_short_review_minimum_does_not_reward_filler(self) -> None:
+        cases = load_cases()
+        l01 = next(case for case in cases if case["id"] == "L01")
+        self.assertEqual("short-review", l01["scope"])
+        self.assertEqual(150, l01["minimum_output_chars"])
+
     def test_fixture_schema_and_route_mapping(self) -> None:
         expected_reference = {
             "ordinary-paper": "references/academic-writing.md",
