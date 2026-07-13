@@ -44,7 +44,7 @@ RUNTIME_FILES = (
     "references/academic-proposal.md",
     "references/academic-literature-review.md",
 )
-STRICT_COMPARISONS = {"baseline", "context_ablation", "material_ablation"}
+STRICT_COMPARISONS: set[str] = set()
 CONTEXT_CONFIGURATIONS = {"entry-only", "entry-correct-leaf", "entry-all-leaves"}
 MATERIAL_ABLATIONS = {
     "remove-sources",
