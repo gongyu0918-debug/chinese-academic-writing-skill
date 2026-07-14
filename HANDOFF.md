@@ -12,7 +12,7 @@
 ## 当前状态
 
 - 本仓库从 `chinese-official-writing-skill` 的论文叶拆分而来，展示名为“中文论文写作”，skill name 为 `chinese-academic-writing-assistant`。
-- 当前已完成独立入口、三条互斥专项叶、材料与引用门禁、成品残留终检、显式授权后的学术来源检索与引用覆盖层，以及渐进加载的论文 ANTI-AI reference；运行时提供只读 `citation_audit.py` 和 `prose_lint.py`。0.0.1 已完成 24 份真实写稿和 48 条匿名复核，0.0.2 另补语言脚本与渐进加载回归。
+- 当前已完成独立入口、三条互斥专项叶、材料与引用门禁、成品残留终检、显式授权后的学术来源检索与引用覆盖层，以及渐进加载的论文 ANTI-AI reference；运行时提供只读 `citation_audit.py` 和 `prose_lint.py`。0.0.1 已完成 24 份真实写稿和 48 条匿名复核，0.0.2 另补语言脚本与渐进加载回归，0.0.3 增加 DOI 身份回读、原子论断、写后引用语义和出版状态门禁。
 - 当前能力仍限定中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。英文论文、投稿、统计分析、答辩、排版和检测规避尚未纳入。
 - GitHub 完整仓库采用 MIT 许可证；ClawHub 与 skillhub.cn 的精简 Skill 包采用 MIT-0。运行目录只含 9 个必要文件，测试证据不进入 Skill 包。
 
@@ -49,7 +49,7 @@
 1. 冷审独立入口与三份 reference，确认 `chinese-academic-writing-assistant` 的路由、边界和本地验证证据。
 2. 若扩展英文论文，先单独设计语言路由和引用规范，不直接翻译中文 Prompt，也不要让中英文链同时加载。
 3. 运行仓库列明的单元测试、结构校验、严格证据检查和真实 writer/verifier 流程，不以旧证据替代当前候选验证。
-4. 首次发布前分别查询 GitHub、ClawHub 和 skillhub.cn 的 slug/identifier 与账号状态；小红书 Red SkillHub 不属于本项目发布目标。
+4. 每次发布前分别查询 GitHub、ClawHub 和 skillhub.cn 的 slug/identifier、账号状态与现有版本；小红书 Red SkillHub 不属于本项目发布目标。
 5. 不继承原公文 skill 的版本号、平台 ID、标签、审核结果和发布承诺；新产品从独立版本策略开始。
 6. 维护 Prompt、词表或阈值时，只修复在至少三个独立输出中复现、并跨至少两个任务和两个 writer 的共性问题；单例和未达阈值的问题只记录。确定性解析或保护区缺陷也应先用三个输入变体复现，再作窄修复。
 
