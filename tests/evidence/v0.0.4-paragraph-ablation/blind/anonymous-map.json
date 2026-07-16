@@ -1,0 +1,14 @@
+{
+  "baseline_ref": "cbc8b44",
+  "candidate": "working-tree-before-commit",
+  "judge-1": {
+    "T1": {"A": "no-skill", "B": "candidate", "C": "baseline"},
+    "T2": {"A": "baseline", "B": "no-skill", "C": "candidate"},
+    "T3": {"A": "candidate", "B": "baseline", "C": "no-skill"}
+  },
+  "judge-2": {
+    "T1": {"A": "candidate", "B": "baseline", "C": "no-skill"},
+    "T2": {"A": "candidate", "B": "baseline", "C": "no-skill"},
+    "T3": {"A": "no-skill", "B": "candidate", "C": "baseline"}
+  }
+}

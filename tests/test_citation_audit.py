@@ -122,10 +122,45 @@ class CitationAuditTests(unittest.TestCase):
                 self.assertNotIn("author-year", report["summary"]["schemes"])
                 self.assertEqual(0, report["summary"]["marker_covered_claim_candidates"])
 
+    def test_generic_noun_year_pairs_are_not_narrative_citations(self) -> None:
+        variants = (
+            "本项目（2024）进入第二阶段，主要任务包括材料整理。",
+            "本课题（2023）完成初步登记，后续安排尚未确定。",
+            "调查阶段（2022）只记录观察结果，未形成因果结论。",
+            "研究阶段（2024）显示，样本已完成登记。",
+            "项目阶段（2024）包括材料整理和编码。",
+            "调查期间（2024）发现3项记录缺失。",
+            "报告期内（2024）主要完成数据清洗。",
+            "实验阶段（2024）显示，样本已完成登记。",
+            "分析阶段（2024）包括材料整理和编码。",
+            "观察期间（2024）发现3项记录缺失。",
+            "访谈阶段（2024）主要完成数据清洗。",
+        )
+        for text in variants:
+            with self.subTest(text=text):
+                report = AUDIT.analyze(text, mode="literature-review")
+                self.assertNotIn("author-year", report["summary"]["schemes"])
+                self.assertEqual(0, report["summary"]["marker_covered_claim_candidates"])
+
     def test_narrative_author_year_citation_is_counted_and_author_is_preserved(self) -> None:
         report = AUDIT.analyze("张三（2022）指出，该方法存在局限。", mode="literature-review")
         self.assertIn("author-year", report["summary"]["schemes"])
         self.assertEqual(1, report["summary"]["claim_candidates"])
+        self.assertEqual(1, report["summary"]["marker_covered_claim_candidates"])
+
+    def test_narrative_author_year_with_research_possessive_is_counted(self) -> None:
+        report = AUDIT.analyze("张三（2022）的研究表明，该方法存在局限。", mode="literature-review")
+        self.assertIn("author-year", report["summary"]["schemes"])
+        self.assertEqual(1, report["summary"]["marker_covered_claim_candidates"])
+
+    def test_narrative_author_year_without_attribution_verb_is_counted(self) -> None:
+        report = AUDIT.analyze("张三（2022）的分类包括三类路径。", mode="literature-review")
+        self.assertIn("author-year", report["summary"]["schemes"])
+        self.assertEqual(1, report["summary"]["marker_covered_claim_candidates"])
+
+    def test_named_project_can_remain_a_narrative_source(self) -> None:
+        report = AUDIT.analyze("未来学习项目（2024）显示，相关比例为60%。", mode="literature-review")
+        self.assertIn("author-year", report["summary"]["schemes"])
         self.assertEqual(1, report["summary"]["marker_covered_claim_candidates"])
 
     def test_own_study_statements_are_not_forced_to_take_external_citations(self) -> None:

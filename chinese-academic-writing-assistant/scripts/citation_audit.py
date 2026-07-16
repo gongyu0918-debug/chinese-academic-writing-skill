@@ -48,7 +48,17 @@ GENERIC_NARRATIVE_AUTHORS = {
     "研究结果",
     "调查结果",
     "项目报告",
+    "本项目",
+    "该项目",
+    "本课题",
+    "该课题",
+    "调查阶段",
 }
+GENERIC_NARRATIVE_AUTHOR = re.compile(
+    r"^(?:(?:本|该|此)?(?:研究|项目|课题|调查|报告)(?:阶段|期间|期内)?|"
+    r"(?:本|该|此)?(?:阶段|期间|期内|年度|年份|学期))$"
+)
+GENERIC_NARRATIVE_PERIOD_SUFFIXES = ("阶段", "期间", "期内", "年度", "年份", "学期")
 LATEX_CITATION = re.compile(r"\\cite\w*\{[^{}\n]+\}")
 DOI = re.compile(r"\b10\.\d{4,9}/[-._;()/:A-Z0-9]+", re.IGNORECASE)
 SENTENCE = re.compile(r"[^。！？!?；;\n]+[。！？!?；;]?", re.MULTILINE)
@@ -114,8 +124,16 @@ def narrative_author_year_matches(text: str) -> list[re.Match[str]]:
     return [
         match
         for match in NARRATIVE_AUTHOR_YEAR.finditer(text)
-        if match.group("author") not in GENERIC_NARRATIVE_AUTHORS
+        if not is_generic_narrative_author(match.group("author"))
     ]
+
+
+def is_generic_narrative_author(author: str) -> bool:
+    return (
+        author in GENERIC_NARRATIVE_AUTHORS
+        or bool(GENERIC_NARRATIVE_AUTHOR.fullmatch(author))
+        or author.endswith(GENERIC_NARRATIVE_PERIOD_SUFFIXES)
+    )
 
 
 def has_author_year_citation(text: str) -> bool:
@@ -126,7 +144,9 @@ def strip_author_year_citations(text: str) -> str:
     stripped = PARENTHETICAL_AUTHOR_YEAR.sub("", text)
 
     def keep_author(match: re.Match[str]) -> str:
-        return match.group("author") if match.group("author") not in GENERIC_NARRATIVE_AUTHORS else match.group(0)
+        if not is_generic_narrative_author(match.group("author")):
+            return match.group("author")
+        return match.group(0)
 
     return NARRATIVE_AUTHOR_YEAR.sub(keep_author, stripped)
 

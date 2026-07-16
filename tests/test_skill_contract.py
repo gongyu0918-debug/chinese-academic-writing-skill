@@ -136,10 +136,9 @@ class SkillContractTests(unittest.TestCase):
             self.assertIn(marker, self.skill + citation)
         self.assertIn("scripts/citation_audit.py", self.skill)
 
-    def test_default_citation_style_has_inline_superscript_and_reference_list(self) -> None:
+    def test_default_citation_style_distinguishes_rich_text_from_markdown(self) -> None:
         citation = self.references["citation-research.md"]
         for marker in (
-            "正文以顺序编码上角标就近标注",
             "富文本中的 `[1]` 设为上角标",
             "纯文本和 Markdown 无法可靠保留上标格式时使用 `[1]`",
             "文末设置“参考文献”",
@@ -186,6 +185,8 @@ class SkillContractTests(unittest.TestCase):
             "主体、关系对象、方向、否定、强度、数字、样本和范围",
             "支持、部分支持、含混、冲突、无法核验",
             "只有“支持”可直接保留",
+            "任一例即阻断相应正文交付",
+            "不因尚未跨任务复现而放行",
             "该门禁先于角标与文后格式检查",
         ):
             self.assertIn(marker, citation)
@@ -230,7 +231,13 @@ class SkillContractTests(unittest.TestCase):
         writing = self.references["academic-writing.md"]
         proposal = self.references["academic-proposal.md"]
         review = self.references["academic-literature-review.md"]
-        for marker in ("单段润色", "段落主导任务", "摘要与结论"):
+        for marker in (
+            "单段润色",
+            "段落是最小可充分论证单元",
+            "不要求固定句序、句数、首句位置、收束句或等长段落",
+            "同学科、同层级、同类范文",
+            "摘要、结论和研究不足",
+        ):
             self.assertIn(marker, writing)
         for marker in ("已有基础", "拟开展工作", "预期结果", "三种模式"):
             self.assertIn(marker, proposal)
@@ -262,8 +269,8 @@ class SkillContractTests(unittest.TestCase):
         for marker in (
             "在唯一专项叶完成内容与证据复核后",
             "不是第四种任务叶",
-            "最终只交付提纲、材料清单、范围说明、原始摘录或越界转交时不读取",
-            "即使材料仅有摘录，也读取",
+            "只有用户明确要求文风、去模板化或语言质量复核",
+            "普通起草、事实审查",
             "scripts/prose_lint.py",
         ):
             self.assertIn(marker, self.skill)
@@ -276,6 +283,20 @@ class SkillContractTests(unittest.TestCase):
             self.assertIn(marker, anti_ai)
         self.assertIn("至少三个独立输出", self.handoff)
         self.assertIn("单例和未达阈值的问题只记录", self.handoff)
+        self.assertIn("不适用于事实、数据、引用", self.handoff)
+
+    def test_review_contract_keeps_fields_but_allows_scale_appropriate_forms(self) -> None:
+        for marker in (
+            "位置—严重度—问题—依据—修改建议",
+            "承载形式服从用户和文本规模",
+            "短段可用表格",
+            "长稿可用总评、阻断项和分节问题",
+        ):
+            self.assertIn(marker, self.skill)
+
+    def test_sample_identity_cannot_be_inferred_from_context(self) -> None:
+        self.assertIn("样本称谓按原文保留", self.skill)
+        self.assertIn("不从场景推定身份", self.skill)
 
     def test_process_leak_exceptions_never_cover_the_models_own_workflow(self) -> None:
         for marker in (
