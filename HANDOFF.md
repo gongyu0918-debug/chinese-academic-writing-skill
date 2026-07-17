@@ -12,7 +12,7 @@
 ## 当前状态
 
 - 本仓库从 `chinese-official-writing-skill` 的论文叶拆分而来，展示名为“中文论文写作”，skill name 为 `chinese-academic-writing-assistant`。
-- 当前已完成独立入口、三条互斥专项叶、材料与引用门禁、成品残留终检、显式授权后的学术来源检索与引用覆盖层，以及渐进加载的论文 ANTI-AI 和长稿一致性 reference；运行时提供只读 `citation_audit.py`、`prose_lint.py` 和 `manuscript_audit.py`。0.0.4 已取消段落句序、句数、句位和等长控制；0.0.5 新增长稿状态、分节简报和阶段化全文复核，但同材料旧基线也能识别核心问题，不得声称一次性审查质量已经提高。
+- 当前已完成独立入口、三条互斥专项叶、材料与引用门禁、成品残留终检、显式授权后的学术来源检索与引用覆盖层，以及渐进加载的论文 ANTI-AI 和长稿一致性 reference；运行时提供只读 `citation_audit.py`、`prose_lint.py` 和 `manuscript_audit.py`。公开版本 0.0.4 合并段落控制放宽与长稿一致性两轮改进，但同材料旧基线也能识别核心问题，不得声称一次性审查质量已经提高。
 - 当前能力仍限定中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。英文论文、投稿、统计分析、答辩、排版和检测规避尚未纳入。
 - GitHub 完整仓库采用 MIT 许可证；ClawHub 与 skillhub.cn 的精简 Skill 包采用 MIT-0。运行目录只含 11 个必要文件，测试证据不进入 Skill 包。
 
