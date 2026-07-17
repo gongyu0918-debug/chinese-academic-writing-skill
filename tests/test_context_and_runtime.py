@@ -23,7 +23,7 @@ def load_cases() -> list[dict]:
 
 
 class ContextAndRuntimeTests(unittest.TestCase):
-    def test_runtime_directory_has_exactly_nine_files(self) -> None:
+    def test_runtime_directory_has_expected_files(self) -> None:
         actual = {
             path.relative_to(SKILL_DIR).as_posix()
             for path in SKILL_DIR.rglob("*")
@@ -37,7 +37,9 @@ class ContextAndRuntimeTests(unittest.TestCase):
             "references/academic-literature-review.md",
             "references/anti-ai-writing.md",
             "references/citation-research.md",
+            "references/long-form-consistency.md",
             "scripts/citation_audit.py",
+            "scripts/manuscript_audit.py",
             "scripts/prose_lint.py",
         }
         self.assertEqual(expected, actual)
@@ -82,6 +84,37 @@ class ContextAndRuntimeTests(unittest.TestCase):
         self.assertIn("来源层与 ANTI-AI 层不得同阶段加载", skill)
         self.assertIn("另开上下文或轮次读取", skill)
         self.assertIn("只把紧凑证据账本传入专项叶", skill)
+
+    def test_long_form_layer_is_progressive_and_not_loaded_for_short_work(self) -> None:
+        skill = SKILL_PATH.read_text(encoding="utf-8")
+        long_form = (REFERENCE_DIR / "long-form-consistency.md").read_text(encoding="utf-8")
+        for marker in (
+            "多章节、跨轮次续写或明确全文一致性筛查时",
+            "单段、单节和提纲任务不读",
+            "未读全稿不得声称完成全文筛查",
+            "scripts/manuscript_audit.py",
+        ):
+            self.assertIn(marker, skill)
+        for marker in (
+            "本层只协调长稿状态和全文语义复核",
+            "再按入口单独加载来源层核对引用",
+            "最后按需单独加载 ANTI-AI 层",
+            "不同时加载三份渐进 reference",
+        ):
+            self.assertIn(marker, long_form)
+
+        entry_length = unicode_length(SKILL_PATH)
+        long_form_length = unicode_length(REFERENCE_DIR / "long-form-consistency.md")
+        for name in (
+            "academic-writing.md",
+            "academic-proposal.md",
+            "academic-literature-review.md",
+        ):
+            with self.subTest(leaf=name):
+                self.assertLessEqual(
+                    entry_length + unicode_length(REFERENCE_DIR / name) + long_form_length,
+                    8_000,
+                )
 
     def test_leaf_bodies_do_not_embed_other_leaf_files(self) -> None:
         for leaf in REFERENCE_DIR.glob("*.md"):

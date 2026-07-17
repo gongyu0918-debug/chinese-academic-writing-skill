@@ -1,0 +1,1 @@
+使用 `F:\Workspaces\chinese-academic-writing-skill\chinese-academic-writing-assistant` 中的中文论文写作 Skill，对 `forward` 目录下 `01-introduction.md` 至 `04-discussion.md` 做全文一致性审查。`source-material.md` 是作者确认材料，优先于各章底稿。只审不改，不重写全文；按问题严重程度组织报告，每项给出位置、问题、依据和修改建议。不要读取该 evidence 目录下的其他文件。

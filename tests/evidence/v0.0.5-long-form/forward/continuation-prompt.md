@@ -1,0 +1,1 @@
+使用 `F:\Workspaces\chinese-academic-writing-skill\chinese-academic-writing-assistant` 中的中文论文写作 Skill。依据 `source-material.md`、`01-introduction.md`、`02-method.md` 和 `03-results.md`，为论文第四章起草一个约450—600字的“研究局限”小节。只输出可直接放入论文的正文，不加标题、列表、建议、检查说明或写作过程；不得沿用已有底稿中与作者确认材料冲突的内容，也不要形成固定句数、固定段落长度或政策建议。不要读取该 evidence 目录下的其他文件。

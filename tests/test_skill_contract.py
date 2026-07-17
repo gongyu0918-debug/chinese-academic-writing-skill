@@ -11,6 +11,7 @@ OPENAI_YAML = SKILL_DIR / "agents" / "openai.yaml"
 REFERENCE_DIR = SKILL_DIR / "references"
 PROSE_LINT = SKILL_DIR / "scripts" / "prose_lint.py"
 CITATION_AUDIT = SKILL_DIR / "scripts" / "citation_audit.py"
+MANUSCRIPT_AUDIT = SKILL_DIR / "scripts" / "manuscript_audit.py"
 TASK_REFERENCES = {
     "academic-writing.md",
     "academic-proposal.md",
@@ -43,6 +44,7 @@ class SkillContractTests(unittest.TestCase):
         }
         cls.prose_lint = PROSE_LINT.read_text(encoding="utf-8")
         cls.citation_audit = CITATION_AUDIT.read_text(encoding="utf-8")
+        cls.manuscript_audit = MANUSCRIPT_AUDIT.read_text(encoding="utf-8")
         cls.handoff = HANDOFF_PATH.read_text(encoding="utf-8")
 
     def test_frontmatter_has_only_name_and_description(self) -> None:
@@ -225,7 +227,7 @@ class SkillContractTests(unittest.TestCase):
 
     def test_leaf_specific_contracts_exist_without_global_rule_copies(self) -> None:
         self.assertEqual(
-            TASK_REFERENCES | {"anti-ai-writing.md", "citation-research.md"},
+            TASK_REFERENCES | {"anti-ai-writing.md", "citation-research.md", "long-form-consistency.md"},
             set(self.references),
         )
         writing = self.references["academic-writing.md"]
@@ -293,6 +295,39 @@ class SkillContractTests(unittest.TestCase):
             "长稿可用总评、阻断项和分节问题",
         ):
             self.assertIn(marker, self.skill)
+
+    def test_long_form_state_and_global_review_contract_is_explicit(self) -> None:
+        long_form = self.references["long-form-consistency.md"]
+        for marker in (
+            "paper-state.md",
+            "section-briefs/<章节标识>.md",
+            "状态包只恢复上下文，不能替代阅读最新版稿件或作为事实证据",
+            "不规定段落微结构",
+            "每次只向写作轮次提供全文状态、本节简报、相关证据和相邻章节摘要",
+            "统计只用于描述和发现明显漂移",
+            "不转成平均句长、被动语态比例、固定段数、高频词配额或禁词阈值",
+            "只有实际读取纳入范围的全部正文、图表信息和参考文献后",
+            "硬边界",
+            "研究闭合",
+            "稿内一致",
+            "章节关系",
+            "文体漂移",
+            "涉及论点取舍、概念合并、矛盾解释或作者声音的问题先报告",
+        ):
+            self.assertIn(marker, long_form)
+
+    def test_manuscript_audit_is_read_only_and_candidate_only(self) -> None:
+        for marker in (
+            "Read-only whole-manuscript consistency candidate audit",
+            "never rewrites",
+            "--term-group",
+            "--abbreviation",
+            "--strict",
+            "sys.dont_write_bytecode = True",
+        ):
+            self.assertIn(marker, self.manuscript_audit)
+        for forbidden in ("--fix", "write_text(", "write_bytes("):
+            self.assertNotIn(forbidden, self.manuscript_audit)
 
     def test_sample_identity_cannot_be_inferred_from_context(self) -> None:
         self.assertIn("样本称谓按原文保留", self.skill)
