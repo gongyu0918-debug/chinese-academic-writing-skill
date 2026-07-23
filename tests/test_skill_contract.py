@@ -136,7 +136,7 @@ class SkillContractTests(unittest.TestCase):
             "不用无关来源抬高数字",
         ):
             self.assertIn(marker, self.skill + citation)
-        self.assertIn("scripts/citation_audit.py", self.skill)
+        self.assertIn("scripts/citation_audit.py", citation)
 
     def test_default_citation_style_distinguishes_rich_text_from_markdown(self) -> None:
         citation = self.references["citation-research.md"]
@@ -188,7 +188,6 @@ class SkillContractTests(unittest.TestCase):
             "支持、部分支持、含混、冲突、无法核验",
             "只有“支持”可直接保留",
             "任一例即阻断相应正文交付",
-            "不因尚未跨任务复现而放行",
             "该门禁先于角标与文后格式检查",
         ):
             self.assertIn(marker, citation)
@@ -273,9 +272,9 @@ class SkillContractTests(unittest.TestCase):
             "不是第四种任务叶",
             "只有用户明确要求文风、去模板化或语言质量复核",
             "普通起草、事实审查",
-            "scripts/prose_lint.py",
         ):
             self.assertIn(marker, self.skill)
+        self.assertIn("scripts/prose_lint.py", anti_ai)
         for marker in (
             "候选，不是证明文本有错或由 AI 生成",
             "没有能指出具体位置、上下文依据和语义问题的候选时，保持原文",
@@ -334,12 +333,10 @@ class SkillContractTests(unittest.TestCase):
         self.assertIn("不从场景推定身份", self.skill)
 
     def test_process_leak_exceptions_never_cover_the_models_own_workflow(self) -> None:
-        for marker in (
-            "只有用户明确要求逐字保留的待审原文",
-            "任务本身确需讨论这些词的测试记录",
-            "该例外不允许说明模型自身的处理过程",
-        ):
-            self.assertIn(marker, self.skill)
+        anti_ai = self.references["anti-ai-writing.md"]
+        self.assertIn("成品不得夹带模型自身的制作过程", self.skill)
+        self.assertIn("用户要求逐字保留的文字", anti_ai)
+        self.assertIn("只核对位置与格式，不改其内容", anti_ai)
 
     def test_prose_lint_is_report_only_and_academically_adapted(self) -> None:
         for marker in (

@@ -92,9 +92,9 @@ class ContextAndRuntimeTests(unittest.TestCase):
             "多章节、跨轮次续写或明确全文一致性筛查时",
             "单段、单节和提纲任务不读",
             "未读全稿不得声称完成全文筛查",
-            "scripts/manuscript_audit.py",
         ):
             self.assertIn(marker, skill)
+        self.assertIn(r"scripts\manuscript_audit.py", long_form)
         for marker in (
             "本层只协调长稿状态和全文语义复核",
             "再按入口单独加载来源层核对引用",
