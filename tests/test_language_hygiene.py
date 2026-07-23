@@ -249,8 +249,7 @@ class LanguageHygieneTests(unittest.TestCase):
             "研究状态、否定范围和论断强度",
             "无法确认或无法安全改写时保留原句",
             "不是第四种任务叶",
-            "只输出正文时",
-            "检查过程",
+            "只输出正文时，不输出候选或检查过程",
         ):
             self.assertIn(marker, runtime)
 
