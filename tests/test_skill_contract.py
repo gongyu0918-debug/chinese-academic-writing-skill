@@ -335,8 +335,8 @@ class SkillContractTests(unittest.TestCase):
     def test_process_leak_exceptions_never_cover_the_models_own_workflow(self) -> None:
         anti_ai = self.references["anti-ai-writing.md"]
         self.assertIn("成品不得夹带模型自身的制作过程", self.skill)
-        self.assertIn("逐字保留的待审原文", anti_ai)
-        self.assertIn("不得附带模型自身的处理过程", anti_ai)
+        self.assertIn("用户要求逐字保留的文字", anti_ai)
+        self.assertIn("只核对位置与格式，不改其内容", anti_ai)
 
     def test_prose_lint_is_report_only_and_academically_adapted(self) -> None:
         for marker in (
