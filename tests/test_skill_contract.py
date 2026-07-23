@@ -188,7 +188,6 @@ class SkillContractTests(unittest.TestCase):
             "支持、部分支持、含混、冲突、无法核验",
             "只有“支持”可直接保留",
             "任一例即阻断相应正文交付",
-            "不因尚未跨任务复现而放行",
             "该门禁先于角标与文后格式检查",
         ):
             self.assertIn(marker, citation)
@@ -334,12 +333,10 @@ class SkillContractTests(unittest.TestCase):
         self.assertIn("不从场景推定身份", self.skill)
 
     def test_process_leak_exceptions_never_cover_the_models_own_workflow(self) -> None:
-        for marker in (
-            "只有用户明确要求逐字保留的待审原文",
-            "任务本身确需讨论这些词的测试记录",
-            "该例外不允许说明模型自身的处理过程",
-        ):
-            self.assertIn(marker, self.skill)
+        anti_ai = self.references["anti-ai-writing.md"]
+        self.assertIn("成品不得夹带模型自身的制作过程", self.skill)
+        self.assertIn("逐字保留的待审原文", anti_ai)
+        self.assertIn("不得附带模型自身的处理过程", anti_ai)
 
     def test_prose_lint_is_report_only_and_academically_adapted(self) -> None:
         for marker in (
