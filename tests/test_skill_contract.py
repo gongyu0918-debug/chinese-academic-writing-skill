@@ -136,7 +136,7 @@ class SkillContractTests(unittest.TestCase):
             "不用无关来源抬高数字",
         ):
             self.assertIn(marker, self.skill + citation)
-        self.assertIn("scripts/citation_audit.py", self.skill)
+        self.assertIn("scripts/citation_audit.py", citation)
 
     def test_default_citation_style_distinguishes_rich_text_from_markdown(self) -> None:
         citation = self.references["citation-research.md"]
@@ -273,9 +273,9 @@ class SkillContractTests(unittest.TestCase):
             "不是第四种任务叶",
             "只有用户明确要求文风、去模板化或语言质量复核",
             "普通起草、事实审查",
-            "scripts/prose_lint.py",
         ):
             self.assertIn(marker, self.skill)
+        self.assertIn("scripts/prose_lint.py", anti_ai)
         for marker in (
             "候选，不是证明文本有错或由 AI 生成",
             "没有能指出具体位置、上下文依据和语义问题的候选时，保持原文",
