@@ -64,7 +64,7 @@
 对纯文本、Markdown、LaTeX 或可提取文本的 DOCX，可按需运行：
 
 ```powershell
-python -B scripts\manuscript_audit.py chapter1.md chapter2.md --term-group "学习分析系统|学习分析平台" --abbreviation LA --json
+python -B scripts\manuscript_audit.py chapter1.md chapter2.md --json
 ```
 
-脚本只定位稿内或跨文件完全重复段落、显式给定术语组的混用、指定缩写的未定义或先用后定义，以及 LaTeX 标签重复或引用缺失。命中只是回读候选；脚本不判断数字是否属于同一口径、论点是否矛盾、文体是否合适，也不改写文件。`--strict` 只让明确的 LaTeX 交叉引用结构错误返回非零，不把重复段落或术语候选升级为确定错误。
+脚本只定位稿内或跨文件完全重复段落、显式给定术语组的混用、指定缩写的未定义或先用后定义，以及 LaTeX 标签重复或引用缺失。命中只是回读候选；脚本不判断数字是否属于同一口径、论点是否矛盾、文体是否合适，也不改写文件。
