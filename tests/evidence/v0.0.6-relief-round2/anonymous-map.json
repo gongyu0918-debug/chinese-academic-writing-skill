@@ -1,0 +1,23 @@
+{
+  "baseline": "3ef5703e0328fcfb5aa1e1392cf0df46cf7fdf48",
+  "candidates": {
+    "entry-summary": "9972aef",
+    "leaf-suggestion-schema": "c256536",
+    "anti-ai-summary": "ba5f145"
+  },
+  "entry": {
+    "P02": {"A": "baseline", "B": "entry-summary"},
+    "L02": {"A": "entry-summary", "B": "baseline"},
+    "X03": {"A": "baseline", "B": "entry-summary"}
+  },
+  "leaf": {
+    "A01": {"A": "baseline", "B": "leaf-suggestion-schema"},
+    "P01": {"A": "leaf-suggestion-schema", "B": "baseline"},
+    "L01": {"A": "baseline", "B": "leaf-suggestion-schema"}
+  },
+  "anti": {
+    "H01": {"A": "anti-ai-summary", "B": "baseline"},
+    "H02": {"A": "baseline", "B": "anti-ai-summary"},
+    "H03": {"A": "anti-ai-summary", "B": "baseline"}
+  }
+}
