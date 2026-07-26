@@ -215,14 +215,16 @@ class SkillContractTests(unittest.TestCase):
         ):
             self.assertIn(marker, self.skill)
 
-    def test_optional_post_text_suggestion_categories_are_complete(self) -> None:
+    def test_optional_post_text_suggestion_categories_are_centralized(self) -> None:
         categories = {"可补充论点", "可补充论据", "可补充论述", "其他修改建议"}
         for category in categories:
             self.assertIn(category, self.skill)
             for name in TASK_REFERENCES:
-                self.assertIn(category, self.references[name])
+                self.assertNotIn(category, self.references[name])
         self.assertIn("按实际需要给出", self.skill)
         self.assertIn("没有实际建议的类别不输出", self.skill)
+        for name in TASK_REFERENCES:
+            self.assertIn("补充与修改建议按入口分类", self.references[name])
 
     def test_leaf_specific_contracts_exist_without_global_rule_copies(self) -> None:
         self.assertEqual(
