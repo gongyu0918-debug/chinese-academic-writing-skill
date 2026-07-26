@@ -12,7 +12,7 @@
 ## 当前状态
 
 - 本仓库从 `chinese-official-writing-skill` 的论文叶拆分而来，展示名为“中文论文写作”，skill name 为 `chinese-academic-writing-assistant`。
-- 当前已完成独立入口、三条互斥专项叶、材料与引用门禁、成品残留终检、显式授权后的学术来源检索与引用覆盖层，以及渐进加载的论文 ANTI-AI 和长稿一致性 reference；运行时提供只读 `citation_audit.py`、`prose_lint.py` 和 `manuscript_audit.py`。公开版本 0.0.5 在段落控制放宽与长稿一致性层之上，清理入口和 reference 中重复、过密、偏评测口吻的运行规则；重复盲审未发现相对清理前基线的稳定退化，但不得声称一次性审查质量已经提高。
+- 当前已完成独立入口、三条互斥专项叶、材料与引用门禁、成品残留终检、显式授权后的学术来源检索与引用覆盖层，以及渐进加载的论文 ANTI-AI 和长稿一致性 reference；运行时提供只读 `citation_audit.py`、`prose_lint.py` 和 `manuscript_audit.py。公开版本 0.0.6 在 0.0.5 基础上继续删除由详细门禁或上层入口完整承接的重复说明；入口和专项叶减载通过重复盲审，ANTI-AI 摘要减载因基线稳定占优而未合并。不得据此声称一次性审查质量已经提高。
 - 当前能力仍限定中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。英文论文、投稿、统计分析、答辩、排版和检测规避尚未纳入。
 - GitHub 完整仓库采用 MIT 许可证；ClawHub 与 skillhub.cn 的精简 Skill 包采用 MIT-0。运行目录只含 11 个必要文件，测试证据不进入 Skill 包。
 
@@ -49,7 +49,7 @@
 1. 冷审独立入口与三份 reference，确认 `chinese-academic-writing-assistant` 的路由、边界和本地验证证据。
 2. 若扩展英文论文，先单独设计语言路由和引用规范，不直接翻译中文 Prompt，也不要让中英文链同时加载。
 3. 运行仓库列明的单元测试、结构校验、严格证据检查和真实 writer/verifier 流程，不以旧证据替代当前候选验证。
-4. 每次发布前分别查询 GitHub、ClawHub 和 skillhub.cn 的 slug/identifier、账号状态与现有版本；skillhub.cn 通过 Red Skill Upload CLI 发布，但不得沿用其他项目的平台 ID、标签或发布回执。
+4. 每次发布前分别查询 GitHub、ClawHub 和 skillhub.cn 的 slug/identifier、账号状态与现有版本；skillhub.cn 使用本机 SkillHub CLI（`C:\Users\admin\.skillhub\skills_store_cli.py`）发布，小红书 Red SkillHub 不属于本项目发布目标。不得沿用其他项目的平台 ID、标签或发布回执。
 5. 不继承原公文 skill 的版本号、平台 ID、标签、审核结果和发布承诺；新产品从独立版本策略开始。
 6. 维护文风 Prompt、词表或启发式阈值时，只修复在至少三个独立输出中复现、并跨至少两个任务和两个 writer 的共性问题；单例和未达阈值的问题只记录。该阈值不适用于事实、数据、引用、归因、因果、否定范围和研究状态等硬边界，经复核确认的单例也必须阻断相应交付。确定性解析或保护区缺陷应先用三个输入变体复现，再作窄修复。
 7. 长稿层下一步优先做真正跨会话、跨学科的旧基线/候选配对消融，验证 `paper-state.md` 的状态更新、冲突合并、旧状态淘汰和文体漂移控制；不要因当前单组四章前向任务继续增加段落级规则。
