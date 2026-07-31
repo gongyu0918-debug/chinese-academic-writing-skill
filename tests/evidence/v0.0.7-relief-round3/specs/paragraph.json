@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "judges": [
+    "judge-1",
+    "judge-2"
+  ],
+  "tasks": [
+    {
+      "task_id": "P01",
+      "min_han": 1600,
+      "max_han": 2000,
+      "min_visible": 1750,
+      "max_visible": 2700,
+      "expected_part_count": 1,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "15",
+        "9",
+        "22%"
+      ]
+    },
+    {
+      "task_id": "P02",
+      "min_han": 1600,
+      "max_han": 2000,
+      "min_visible": 1750,
+      "max_visible": 2700,
+      "expected_part_count": 1,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "第三根木桩",
+        "七次钟声",
+        "绳结"
+      ]
+    },
+    {
+      "task_id": "P03",
+      "min_han": 2600,
+      "max_han": 3200,
+      "min_visible": 2900,
+      "max_visible": 4400,
+      "required_headings": [
+        "3.2 试验结果",
+        "3.3 误差分析",
+        "4.1 工程适用边界",
+        "4.2 本章小结"
+      ],
+      "expected_part_count": 4,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "41.4",
+        "55.4",
+        "73.5",
+        "82.7",
+        "70.4",
+        "±0.3"
+      ]
+    },
+    {
+      "task_id": "P04",
+      "min_han": 1200,
+      "max_han": 1500,
+      "min_visible": 1350,
+      "max_visible": 2100,
+      "required_headings": [
+        "社区步行观察的证据边界"
+      ],
+      "expected_part_count": 1,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "312",
+        "46"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "judges": [
+    "judge-1",
+    "judge-2"
+  ],
+  "tasks": [
+    {
+      "task_id": "L01",
+      "min_han": 500,
+      "max_han": 1200,
+      "min_visible": 600,
+      "max_visible": 1800,
+      "required_headings": [
+        "总评",
+        "阻断项",
+        "分节问题",
+        "可保留处",
+        "补充与修改建议"
+      ],
+      "expected_part_count": 5,
+      "forbid_process_leak": true
+    },
+    {
+      "task_id": "L02",
+      "min_han": 1100,
+      "max_han": 1400,
+      "min_visible": 1200,
+      "max_visible": 1900,
+      "required_headings": [
+        "选题依据",
+        "研究问题与目标",
+        "研究内容",
+        "研究方法与材料",
+        "进度安排",
+        "预期成果"
+      ],
+      "expected_part_count": 6,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "86",
+        "2026",
+        "甲县"
+      ]
+    },
+    {
+      "task_id": "L03",
+      "min_han": 1200,
+      "max_han": 1500,
+      "min_visible": 1350,
+      "max_visible": 2100,
+      "required_headings": [
+        "问题与范围",
+        "主要解释路径",
+        "证据差异与研究限制",
+        "述评"
+      ],
+      "expected_part_count": 4,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "[S1]",
+        "[S2]",
+        "[S4]"
+      ]
+    },
+    {
+      "task_id": "L04",
+      "min_han": 300,
+      "max_han": 1000,
+      "min_visible": 380,
+      "max_visible": 1500,
+      "expected_part_count": 1,
+      "forbid_process_leak": true
+    }
+  ]
+}

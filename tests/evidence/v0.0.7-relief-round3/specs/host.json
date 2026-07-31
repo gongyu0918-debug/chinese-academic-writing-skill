@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "judges": [
+    "judge-1",
+    "judge-2"
+  ],
+  "tasks": [
+    {
+      "task_id": "H01",
+      "min_han": 1800,
+      "max_han": 2200,
+      "min_visible": 2000,
+      "max_visible": 3000,
+      "required_headings": [
+        "4.3 讨论",
+        "结论"
+      ],
+      "expected_part_count": 2,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "148",
+        "82",
+        "66",
+        "49",
+        "21",
+        "18"
+      ],
+      "forbidden_literals": [
+        "150份"
+      ]
+    },
+    {
+      "task_id": "H02",
+      "min_han": 1200,
+      "max_han": 2400,
+      "min_visible": 1450,
+      "max_visible": 3600,
+      "required_headings": [
+        "总评",
+        "阻断项",
+        "全文问题表",
+        "可保留处",
+        "补充与修改建议"
+      ],
+      "expected_part_count": 5,
+      "forbid_process_leak": true
+    },
+    {
+      "task_id": "H03-R1",
+      "min_han": 1200,
+      "max_han": 1500,
+      "min_visible": 1350,
+      "max_visible": 2100,
+      "required_headings": [
+        "3.2 结果",
+        "4.1 讨论"
+      ],
+      "expected_part_count": 2,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "108",
+        "78",
+        "30",
+        "13.1",
+        "15.4",
+        "15.8",
+        "14.3"
+      ]
+    },
+    {
+      "task_id": "H03-R2",
+      "min_han": 1200,
+      "max_han": 1500,
+      "min_visible": 1350,
+      "max_visible": 2100,
+      "required_headings": [
+        "3.2 结果",
+        "4.1 讨论"
+      ],
+      "expected_part_count": 2,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "104",
+        "75",
+        "29",
+        "13.0",
+        "15.2",
+        "15.6",
+        "14.2"
+      ],
+      "forbidden_literals": [
+        "108",
+        "78",
+        "30",
+        "13.1",
+        "15.4",
+        "15.8",
+        "14.3"
+      ]
+    },
+    {
+      "task_id": "H03-R3",
+      "min_han": 900,
+      "max_han": 1200,
+      "min_visible": 1000,
+      "max_visible": 1700,
+      "required_headings": [
+        "结论"
+      ],
+      "expected_part_count": 1,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "104",
+        "13.0",
+        "15.2"
+      ],
+      "forbidden_literals": [
+        "108",
+        "78",
+        "30",
+        "13.1",
+        "15.4",
+        "15.8",
+        "14.3",
+        "显著提升",
+        "验证效果",
+        "减少事故",
+        "普遍适用"
+      ]
+    },
+    {
+      "task_id": "H04",
+      "min_han": 900,
+      "max_han": 1200,
+      "min_visible": 1000,
+      "max_visible": 1700,
+      "expected_part_count": 1,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "67",
+        "28",
+        "19",
+        "12",
+        "8"
+      ]
+    }
+  ]
+}
