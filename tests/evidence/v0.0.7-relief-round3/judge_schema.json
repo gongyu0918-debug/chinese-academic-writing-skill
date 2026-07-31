@@ -13,6 +13,7 @@
   ],
   "properties": {
     "schema_version": {
+      "type": "integer",
       "const": 1
     },
     "judge_id": {
@@ -20,13 +21,10 @@
       "minLength": 1
     },
     "blind": {
+      "type": "boolean",
       "const": true
     },
     "mapping_sha256": {
-      "type": "string",
-      "pattern": "^[0-9a-f]{64}$"
-    },
-    "packet_set_sha256": {
       "type": "string",
       "pattern": "^[0-9a-f]{64}$"
     },
@@ -44,10 +42,12 @@
       "additionalProperties": false,
       "required": [
         "verdict",
-        "hard_failures"
+        "hard_failures",
+        "notes"
       ],
       "properties": {
         "verdict": {
+          "type": "string",
           "enum": [
             "PASS",
             "WARN",
@@ -59,41 +59,12 @@
           "items": {
             "type": "string",
             "minLength": 1
-          },
-          "uniqueItems": true
+          }
         },
         "notes": {
           "type": "string"
         }
-      },
-      "allOf": [
-        {
-          "if": {
-            "properties": {
-              "verdict": {
-                "const": "FAIL"
-              }
-            },
-            "required": [
-              "verdict"
-            ]
-          },
-          "then": {
-            "properties": {
-              "hard_failures": {
-                "minItems": 1
-              }
-            }
-          },
-          "else": {
-            "properties": {
-              "hard_failures": {
-                "maxItems": 0
-              }
-            }
-          }
-        }
-      ]
+      }
     },
     "result": {
       "type": "object",
@@ -104,7 +75,8 @@
         "left",
         "right",
         "winner",
-        "rationale"
+        "rationale",
+        "anchors"
       ],
       "properties": {
         "task_id": {
@@ -122,6 +94,7 @@
           "$ref": "#/$defs/side"
         },
         "winner": {
+          "type": "string",
           "enum": [
             "left",
             "right",
@@ -137,8 +110,7 @@
           "items": {
             "type": "string",
             "minLength": 1
-          },
-          "uniqueItems": true
+          }
         }
       }
     }

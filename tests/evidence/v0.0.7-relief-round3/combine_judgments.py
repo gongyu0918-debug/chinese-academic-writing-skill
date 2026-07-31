@@ -67,7 +67,40 @@ def extract_single_result(payload: Any, path: Path) -> tuple[str, str, dict[str,
         result = results[0]
     if not isinstance(result, dict):
         raise CombineError(f"result must be an object: {path}")
+    validate_result(result, path)
     return judge_id, mapping_sha256, result
+
+
+def validate_result(result: dict[str, Any], path: Path) -> None:
+    for side_name in ("left", "right"):
+        side = result.get(side_name)
+        if not isinstance(side, dict):
+            raise CombineError(f"{side_name} must be an object: {path}")
+        verdict = side.get("verdict")
+        hard_failures = side.get("hard_failures")
+        if verdict not in {"PASS", "WARN", "FAIL"}:
+            raise CombineError(f"invalid {side_name} verdict: {path}")
+        if not isinstance(hard_failures, list) or any(
+            not isinstance(item, str) or not item
+            for item in hard_failures
+        ):
+            raise CombineError(f"invalid {side_name} hard_failures: {path}")
+        if len(hard_failures) != len(set(hard_failures)):
+            raise CombineError(f"duplicate {side_name} hard_failures: {path}")
+        if verdict == "FAIL" and not hard_failures:
+            raise CombineError(f"{side_name} FAIL requires a hard failure: {path}")
+        if verdict != "FAIL" and hard_failures:
+            raise CombineError(
+                f"{side_name} {verdict} cannot contain hard failures: {path}"
+            )
+    anchors = result.get("anchors", [])
+    if not isinstance(anchors, list) or any(
+        not isinstance(item, str) or not item
+        for item in anchors
+    ):
+        raise CombineError(f"invalid anchors: {path}")
+    if len(anchors) != len(set(anchors)):
+        raise CombineError(f"duplicate anchors: {path}")
 
 
 def main() -> int:
