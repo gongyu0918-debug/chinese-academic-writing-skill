@@ -1,6 +1,6 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.0.6-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.0.6)
+[![Version](https://img.shields.io/badge/version-0.0.7-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.0.7)
 [![ClawHub](https://img.shields.io/badge/ClawHub-chinese--academic--writing--assistant-2f80ed)](https://clawhub.ai/gongyu0918-debug/skills/chinese-academic-writing-assistant)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -54,7 +54,7 @@
 
 ## 安装与调用
 
-当前公开版本：`chinese-academic-writing-assistant@0.0.6`
+当前公开版本：`chinese-academic-writing-assistant@0.0.7`
 
 平台入口：[ClawHub](https://clawhub.ai/gongyu0918-debug/skills/chinese-academic-writing-assistant) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 
@@ -82,6 +82,12 @@ $chinese-academic-writing-assistant 请根据我提供的材料续写第三章�
 | `scripts/*.py` | 引用、表达和长稿的只读候选扫描 |
 
 运行包共 11 个文件。测试、评测材料和发布证据保存在 `tests/`，不进入平台发行包。
+
+## 版本 0.0.7
+
+本次不修改运行规则，集中封存第三轮入口与 reference 减载、竞品借鉴和真实写作对比证据。叶子契约、段落边界、宿主中性表达和变更影响候选均在短稿或长稿中出现可复现回退，未合并；引用忠实度候选虽然在两项已决任务中胜出，但第三项未形成多数，样本未达到预注册门槛，也未合并。
+
+因此，0.0.7 的 11 个运行文件与 0.0.6 保持一致，只增加冻结任务、原始成品、机械门禁、匿名判决、评分工具和研究记录。确定性测试 122 项通过；本版本用于公开验证结论和后续迭代边界，不宣称写作质量较 0.0.6 提升。
 
 ## 版本 0.0.6
 
