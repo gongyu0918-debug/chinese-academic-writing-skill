@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "judge_id": "judge-2",
-  "task_specs_sha256": "9f824a82357c48ceef7f0d9d5099393d52c5aed7ca88533917a656bc75a9d207",
+  "task_specs_sha256": "ae57ff8091796ce71353c227f24f0fdfcd7516b4ce1ace1cfda7b14a9f036f8a",
   "seed_sha256": "15bce3e2d972923def9b89b78fa63a69ff3ffb390102b5af77523e0fdd232af6",
   "mappings": [
     {
