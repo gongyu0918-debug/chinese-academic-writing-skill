@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "judges": [
+    "judge-1",
+    "judge-2"
+  ],
+  "tasks": [
+    {
+      "task_id": "BF01",
+      "min_han": 700,
+      "max_han": 900,
+      "min_visible": 780,
+      "max_visible": 1300,
+      "expected_part_count": 1,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "[S1]",
+        "[S2]",
+        "[S3]",
+        "412",
+        "20"
+      ]
+    },
+    {
+      "task_id": "BF02",
+      "min_han": 1800,
+      "max_han": 2200,
+      "min_visible": 2000,
+      "max_visible": 3100,
+      "required_headings": [
+        "研究对象与指标",
+        "主要发现及其差异",
+        "证据限制与述评"
+      ],
+      "expected_part_count": 3,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "[S1]",
+        "[S2]",
+        "[S3]",
+        "[S4]",
+        "[S5]",
+        "728",
+        "183",
+        "26",
+        "96"
+      ]
+    },
+    {
+      "task_id": "BF03",
+      "min_han": 500,
+      "min_visible": 650,
+      "required_headings": [
+        "一、总评",
+        "二、阻断项",
+        "三、引用问题表",
+        "四、可保留处",
+        "五、补充与修改建议"
+      ],
+      "expected_part_count": 5,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "[S6]"
+      ]
+    }
+  ]
+}
