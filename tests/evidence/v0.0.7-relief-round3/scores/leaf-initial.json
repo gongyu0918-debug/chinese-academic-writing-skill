@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "candidate": "candidate",
+  "baseline": "baseline",
+  "judges": [
+    "judge-1",
+    "judge-2"
+  ],
+  "totals": {
+    "tasks": 4,
+    "decided": 3,
+    "candidate_wins": 1,
+    "baseline_wins": 2,
+    "ties": 0,
+    "need_third": 1,
+    "decided_win_rate": 0.3333333333333333
+  },
+  "candidate_only_hard_fail": true,
+  "gate_pass": false,
+  "blockers": [
+    "candidate wins 1 below minimum 2",
+    "candidate wins 1 are not strictly greater than baseline wins 2",
+    "decided win rate 33.3% is not strictly above 50%",
+    "candidate has at least one candidate-only hard FAIL",
+    "1 task(s) still require a third judge"
+  ],
+  "tasks": [
+    {
+      "task_id": "L01",
+      "status": "DECIDED",
+      "winner": "baseline",
+      "votes": [
+        "baseline",
+        "baseline"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "candidate_only_hard_fail": false
+    },
+    {
+      "task_id": "L02",
+      "status": "DECIDED",
+      "winner": "candidate",
+      "votes": [
+        "candidate",
+        "candidate"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [],
+        "baseline": [
+          "judge-1",
+          "judge-2"
+        ]
+      },
+      "candidate_only_hard_fail": false
+    },
+    {
+      "task_id": "L03",
+      "status": "DECIDED",
+      "winner": "baseline",
+      "votes": [
+        "baseline",
+        "baseline"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [
+          "judge-1"
+        ],
+        "baseline": []
+      },
+      "candidate_only_hard_fail": true
+    },
+    {
+      "task_id": "L04",
+      "status": "NEED_THIRD",
+      "winner": null,
+      "votes": [
+        "tie",
+        "baseline"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "candidate_only_hard_fail": false
+    }
+  ]
+}

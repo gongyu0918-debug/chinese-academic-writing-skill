@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "candidate": "candidate",
+  "baseline": "baseline",
+  "judges": [
+    "judge-1",
+    "judge-2",
+    "judge-3"
+  ],
+  "totals": {
+    "tasks": 6,
+    "decided": 6,
+    "candidate_wins": 2,
+    "baseline_wins": 4,
+    "ties": 0,
+    "need_third": 0,
+    "decided_win_rate": 0.3333333333333333
+  },
+  "candidate_only_hard_fail": true,
+  "gate_pass": false,
+  "blockers": [
+    "candidate wins 2 below minimum 3",
+    "candidate wins 2 are not strictly greater than baseline wins 4",
+    "decided win rate 33.3% is not strictly above 50%",
+    "candidate has at least one candidate-only hard FAIL"
+  ],
+  "tasks": [
+    {
+      "task_id": "H01",
+      "status": "DECIDED",
+      "winner": "candidate",
+      "votes": [
+        "candidate",
+        "baseline",
+        "candidate"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [
+          "judge-2"
+        ],
+        "baseline": []
+      },
+      "candidate_only_hard_fail": true
+    },
+    {
+      "task_id": "H02",
+      "status": "DECIDED",
+      "winner": "candidate",
+      "votes": [
+        "baseline",
+        "candidate",
+        "candidate"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "candidate_only_hard_fail": false
+    },
+    {
+      "task_id": "H03-R1",
+      "status": "DECIDED",
+      "winner": "baseline",
+      "votes": [
+        "tie",
+        "baseline",
+        "baseline"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "candidate_only_hard_fail": false
+    },
+    {
+      "task_id": "H03-R2",
+      "status": "DECIDED",
+      "winner": "baseline",
+      "votes": [
+        "baseline",
+        "baseline",
+        "baseline"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "candidate_only_hard_fail": false
+    },
+    {
+      "task_id": "H03-R3",
+      "status": "DECIDED",
+      "winner": "baseline",
+      "votes": [
+        "baseline",
+        "candidate",
+        "baseline"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [
+          "judge-1"
+        ],
+        "baseline": []
+      },
+      "candidate_only_hard_fail": true
+    },
+    {
+      "task_id": "H04",
+      "status": "DECIDED",
+      "winner": "baseline",
+      "votes": [
+        "baseline",
+        "baseline",
+        "baseline"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [
+          "judge-2",
+          "judge-3"
+        ],
+        "baseline": [
+          "judge-2",
+          "judge-3"
+        ]
+      },
+      "candidate_only_hard_fail": false
+    }
+  ]
+}

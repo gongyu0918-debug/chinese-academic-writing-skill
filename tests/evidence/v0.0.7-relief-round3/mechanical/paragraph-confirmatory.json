@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "specs": "tests/evidence/v0.0.7-relief-round3/specs/paragraph-confirmatory.json",
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "results": [
+    {
+      "task_id": "PC01",
+      "arm": "baseline",
+      "output": "baseline/PC01.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1069,
+        "visible_count": 1197,
+        "heading_count": 1,
+        "part_count": 1,
+        "required_heading_count": 1
+      }
+    },
+    {
+      "task_id": "PC01",
+      "arm": "candidate",
+      "output": "candidate/PC01.md",
+      "passed": false,
+      "hard_failures": [
+        "han_count 1161 above maximum 1100"
+      ],
+      "metrics": {
+        "han_count": 1161,
+        "visible_count": 1285,
+        "heading_count": 1,
+        "part_count": 1,
+        "required_heading_count": 1
+      }
+    },
+    {
+      "task_id": "PC02",
+      "arm": "baseline",
+      "output": "baseline/PC02.md",
+      "passed": false,
+      "hard_failures": [
+        "han_count 2246 above maximum 2200"
+      ],
+      "metrics": {
+        "han_count": 2246,
+        "visible_count": 2457,
+        "heading_count": 3,
+        "part_count": 3,
+        "required_heading_count": 3
+      }
+    },
+    {
+      "task_id": "PC02",
+      "arm": "candidate",
+      "output": "candidate/PC02.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2108,
+        "visible_count": 2309,
+        "heading_count": 3,
+        "part_count": 3,
+        "required_heading_count": 3
+      }
+    }
+  ],
+  "passed": false
+}
