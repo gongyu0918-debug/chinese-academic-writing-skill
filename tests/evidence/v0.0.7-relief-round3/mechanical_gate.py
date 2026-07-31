@@ -117,7 +117,13 @@ def load_specs(path: Path) -> tuple[list[str], list[dict[str, Any]]]:
         if task_id in seen:
             raise GateError(f"duplicate task_id: {task_id}")
         seen.add(task_id)
-        for key in ("required_headings", "required_literals", "forbidden_literals", "forbidden_patterns"):
+        for key in (
+            "required_headings",
+            "optional_headings",
+            "required_literals",
+            "forbidden_literals",
+            "forbidden_patterns",
+        ):
             value = task.get(key, [])
             if not isinstance(value, list) or not all(isinstance(item, str) for item in value):
                 raise GateError(f"{task_id}.{key} must be a list of strings")
@@ -185,6 +191,7 @@ def check_output(task: dict[str, Any], text: str) -> tuple[list[str], dict[str, 
         failures.append(f"visible_count {visible_count} above maximum {max_visible}")
 
     required = [normalize_heading(item) for item in task.get("required_headings", [])]
+    optional = [normalize_heading(item) for item in task.get("optional_headings", [])]
     heading_level = task.get("heading_level", 2)
     headings: list[dict[str, Any]] = []
     for line_number, line in enumerate(text.splitlines(), start=1):
@@ -216,14 +223,18 @@ def check_output(task: dict[str, Any], text: str) -> tuple[list[str], dict[str, 
     if required and not ordered_subsequence(required, actual_texts):
         failures.append("required headings are out of order")
 
-    part_headings = [item for item in headings if item["level"] == heading_level]
+    part_headings = [
+        item
+        for item in headings
+        if item["level"] == heading_level and item["text"] not in optional
+    ]
     expected_parts = task.get("expected_part_count")
     actual_parts = len(part_headings) if part_headings else (1 if text.strip() else 0)
     if expected_parts is not None and actual_parts != expected_parts:
         failures.append(f"output part count {actual_parts} does not equal {expected_parts}")
 
     if task.get("body_only", False):
-        allowed = set(required)
+        allowed = set(required + optional)
         extra = [item["text"] for item in headings if item["text"] not in allowed]
         if extra:
             failures.append("body-only output has extra headings: " + ", ".join(extra))

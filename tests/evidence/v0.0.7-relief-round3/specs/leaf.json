@@ -59,6 +59,9 @@
         "证据差异与研究限制",
         "述评"
       ],
+      "optional_headings": [
+        "大学生在线讨论沉默的研究进展"
+      ],
       "expected_part_count": 4,
       "body_only": true,
       "forbid_lists": true,
