@@ -192,7 +192,8 @@ def check_output(task: dict[str, Any], text: str) -> tuple[list[str], dict[str, 
 
     required = [normalize_heading(item) for item in task.get("required_headings", [])]
     optional = [normalize_heading(item) for item in task.get("optional_headings", [])]
-    heading_level = task.get("heading_level", 2)
+    configured_heading_level = task.get("heading_level")
+    plain_heading_level = configured_heading_level if configured_heading_level is not None else 2
     headings: list[dict[str, Any]] = []
     for line_number, line in enumerate(text.splitlines(), start=1):
         match = re.match(r"^(#{1,6})[ \t]+(.+?)[ \t]*$", line)
@@ -210,7 +211,7 @@ def check_output(task: dict[str, Any], text: str) -> tuple[list[str], dict[str, 
         if normalized and normalized in required:
             headings.append(
                 {
-                    "level": heading_level,
+                    "level": plain_heading_level,
                     "text": normalized,
                     "plain": True,
                     "line": line_number,
@@ -223,6 +224,15 @@ def check_output(task: dict[str, Any], text: str) -> tuple[list[str], dict[str, 
     if required and not ordered_subsequence(required, actual_texts):
         failures.append("required headings are out of order")
 
+    if configured_heading_level is not None:
+        heading_level = configured_heading_level
+    else:
+        matching_levels = [
+            item["level"]
+            for item in headings
+            if item["text"] in required and not item["plain"]
+        ]
+        heading_level = min(matching_levels) if matching_levels else plain_heading_level
     part_headings = [
         item
         for item in headings

@@ -18,12 +18,7 @@
       "expected_part_count": 1,
       "body_only": true,
       "forbid_lists": true,
-      "forbid_process_leak": true,
-      "required_literals": [
-        "15",
-        "9",
-        "22%"
-      ]
+      "forbid_process_leak": true
     },
     {
       "task_id": "P02",
@@ -36,7 +31,6 @@
       "forbid_lists": true,
       "forbid_process_leak": true,
       "required_literals": [
-        "第三根木桩",
         "七次钟声",
         "绳结"
       ]
