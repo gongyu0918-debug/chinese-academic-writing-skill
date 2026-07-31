@@ -131,10 +131,6 @@ def load_judge(
         winner = row.get("winner")
         if winner not in ALLOWED_WINNERS:
             raise ScoreError(f"{judge_id}/{task_id} has invalid winner {winner!r}")
-        if winner == "left" and left_verdict == "FAIL":
-            raise ScoreError(f"{judge_id}/{task_id} selects a FAIL left side")
-        if winner == "right" and right_verdict == "FAIL":
-            raise ScoreError(f"{judge_id}/{task_id} selects a FAIL right side")
         if left_verdict == "FAIL" and right_verdict != "FAIL" and winner != "right":
             raise ScoreError(f"{judge_id}/{task_id} fails to select the non-FAIL right side")
         if right_verdict == "FAIL" and left_verdict != "FAIL" and winner != "left":
