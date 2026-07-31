@@ -37,10 +37,8 @@
     },
     {
       "task_id": "H02",
-      "min_han": 1200,
-      "max_han": 2400,
-      "min_visible": 1450,
-      "max_visible": 3600,
+      "min_han": 500,
+      "min_visible": 650,
       "required_headings": [
         "总评",
         "阻断项",

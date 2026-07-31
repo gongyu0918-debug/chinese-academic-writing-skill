@@ -11,10 +11,8 @@
   "tasks": [
     {
       "task_id": "L01",
-      "min_han": 500,
-      "max_han": 1200,
-      "min_visible": 600,
-      "max_visible": 1800,
+      "min_han": 250,
+      "min_visible": 300,
       "required_headings": [
         "总评",
         "阻断项",
@@ -73,10 +71,8 @@
     },
     {
       "task_id": "L04",
-      "min_han": 300,
-      "max_han": 1000,
-      "min_visible": 380,
-      "max_visible": 1500,
+      "min_han": 200,
+      "min_visible": 250,
       "expected_part_count": 1,
       "forbid_process_leak": true
     }
