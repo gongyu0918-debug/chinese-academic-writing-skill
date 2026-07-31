@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "judges": [
+    "judge-1",
+    "judge-2"
+  ],
+  "tasks": [
+    {
+      "task_id": "PC01",
+      "min_han": 900,
+      "max_han": 1100,
+      "min_visible": 1000,
+      "max_visible": 1600,
+      "required_headings": [
+        "校园导视使用观察的证据边界"
+      ],
+      "expected_part_count": 1,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "480",
+        "83",
+        "61",
+        "18"
+      ]
+    },
+    {
+      "task_id": "PC02",
+      "min_han": 1800,
+      "max_han": 2200,
+      "min_visible": 2000,
+      "max_visible": 3100,
+      "required_headings": [
+        "主要发现的解释",
+        "替代解释与研究限制",
+        "研究启示"
+      ],
+      "expected_part_count": 3,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "326",
+        "0.31",
+        "209",
+        "14",
+        "12"
+      ]
+    }
+  ]
+}
