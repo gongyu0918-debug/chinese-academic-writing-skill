@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "judge_id": "judge-1",
+  "task_specs_sha256": "704543b87644d074f82a2b6d812510de6c78e38048890a136637d40b0499fbb7",
+  "seed_sha256": "055fdb114f08b90a94fbb21cd11d37981ee9e2476c1c194ab7dad962c79a1fa8",
+  "mappings": [
+    {
+      "task_id": "PC01",
+      "pair_id": "J01-P001",
+      "left": "candidate",
+      "right": "baseline"
+    },
+    {
+      "task_id": "PC02",
+      "pair_id": "J01-P002",
+      "left": "baseline",
+      "right": "candidate"
+    }
+  ]
+}

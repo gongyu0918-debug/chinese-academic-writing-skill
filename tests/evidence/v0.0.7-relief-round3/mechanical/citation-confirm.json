@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "specs": "tests/evidence/v0.0.7-relief-round3/specs/citation-confirm.json",
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "results": [
+    {
+      "task_id": "BF01",
+      "arm": "baseline",
+      "output": "baseline/BF01.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 724,
+        "visible_count": 797,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "BF01",
+      "arm": "candidate",
+      "output": "candidate/BF01.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 767,
+        "visible_count": 865,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "BF02",
+      "arm": "baseline",
+      "output": "baseline/BF02.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2110,
+        "visible_count": 2443,
+        "heading_count": 3,
+        "part_count": 3,
+        "required_heading_count": 3
+      }
+    },
+    {
+      "task_id": "BF02",
+      "arm": "candidate",
+      "output": "candidate/BF02.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2018,
+        "visible_count": 2370,
+        "heading_count": 3,
+        "part_count": 3,
+        "required_heading_count": 3
+      }
+    },
+    {
+      "task_id": "BF03",
+      "arm": "baseline",
+      "output": "baseline/BF03.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2971,
+        "visible_count": 3787,
+        "heading_count": 5,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    },
+    {
+      "task_id": "BF03",
+      "arm": "candidate",
+      "output": "candidate/BF03.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 3353,
+        "visible_count": 4348,
+        "heading_count": 5,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "judge_id": "judge-2",
+  "task_specs_sha256": "505ecfcf5dbd6a839e591ac5c66da7d8204b30ac28512ba557c8272d6d56e339",
+  "seed_sha256": "c8ec28c0a1d50065e28920005eede968f6997fc1b09fc79fc70fef31bce4b9a0",
+  "mappings": [
+    {
+      "task_id": "H01",
+      "pair_id": "J02-P001",
+      "left": "candidate",
+      "right": "baseline"
+    },
+    {
+      "task_id": "H02",
+      "pair_id": "J02-P002",
+      "left": "baseline",
+      "right": "candidate"
+    },
+    {
+      "task_id": "H03-R1",
+      "pair_id": "J02-P003",
+      "left": "baseline",
+      "right": "candidate"
+    },
+    {
+      "task_id": "H03-R2",
+      "pair_id": "J02-P004",
+      "left": "baseline",
+      "right": "candidate"
+    },
+    {
+      "task_id": "H03-R3",
+      "pair_id": "J02-P005",
+      "left": "candidate",
+      "right": "baseline"
+    },
+    {
+      "task_id": "H04",
+      "pair_id": "J02-P006",
+      "left": "candidate",
+      "right": "baseline"
+    }
+  ]
+}

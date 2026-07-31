@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "candidate": "candidate",
+  "baseline": "baseline",
+  "judges": [
+    "judge-1",
+    "judge-2",
+    "judge-3"
+  ],
+  "totals": {
+    "tasks": 3,
+    "decided": 2,
+    "candidate_wins": 2,
+    "baseline_wins": 0,
+    "ties": 0,
+    "need_third": 1,
+    "decided_win_rate": 1.0
+  },
+  "candidate_only_hard_fail": false,
+  "gate_pass": false,
+  "blockers": [
+    "decided 2 below minimum 3",
+    "1 task(s) still require a third judge"
+  ],
+  "tasks": [
+    {
+      "task_id": "BF01",
+      "status": "DECIDED",
+      "winner": "candidate",
+      "votes": [
+        "candidate",
+        "candidate",
+        "candidate"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [],
+        "baseline": [
+          "judge-2"
+        ]
+      },
+      "candidate_only_hard_fail": false
+    },
+    {
+      "task_id": "BF02",
+      "status": "NEED_THIRD",
+      "winner": null,
+      "votes": [
+        "tie",
+        "candidate",
+        "baseline"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [
+          "judge-1",
+          "judge-3"
+        ],
+        "baseline": [
+          "judge-1",
+          "judge-2",
+          "judge-3"
+        ]
+      },
+      "candidate_only_hard_fail": false
+    },
+    {
+      "task_id": "BF03",
+      "status": "DECIDED",
+      "winner": "candidate",
+      "votes": [
+        "candidate",
+        "candidate",
+        "candidate"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [],
+        "baseline": [
+          "judge-2",
+          "judge-3"
+        ]
+      },
+      "candidate_only_hard_fail": false
+    }
+  ]
+}

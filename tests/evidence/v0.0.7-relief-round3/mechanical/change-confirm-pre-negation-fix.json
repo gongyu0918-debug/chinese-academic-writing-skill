@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "specs": "tests/evidence/v0.0.7-relief-round3/specs/change-confirm.json",
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "results": [
+    {
+      "task_id": "BC01",
+      "arm": "baseline",
+      "output": "baseline/BC01.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 794,
+        "visible_count": 913,
+        "heading_count": 1,
+        "part_count": 1,
+        "required_heading_count": 1
+      }
+    },
+    {
+      "task_id": "BC01",
+      "arm": "candidate",
+      "output": "candidate/BC01.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 746,
+        "visible_count": 870,
+        "heading_count": 1,
+        "part_count": 1,
+        "required_heading_count": 1
+      }
+    },
+    {
+      "task_id": "BC02",
+      "arm": "baseline",
+      "output": "baseline/BC02.md",
+      "passed": false,
+      "hard_failures": [
+        "forbidden literal present: '实验组'",
+        "forbidden literal present: '控制组'"
+      ],
+      "metrics": {
+        "han_count": 1939,
+        "visible_count": 2156,
+        "heading_count": 2,
+        "part_count": 2,
+        "required_heading_count": 2
+      }
+    },
+    {
+      "task_id": "BC02",
+      "arm": "candidate",
+      "output": "candidate/BC02.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1807,
+        "visible_count": 2011,
+        "heading_count": 2,
+        "part_count": 2,
+        "required_heading_count": 2
+      }
+    },
+    {
+      "task_id": "BC03",
+      "arm": "baseline",
+      "output": "baseline/BC03.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2420,
+        "visible_count": 3082,
+        "heading_count": 5,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    },
+    {
+      "task_id": "BC03",
+      "arm": "candidate",
+      "output": "candidate/BC03.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 3114,
+        "visible_count": 3869,
+        "heading_count": 5,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    }
+  ],
+  "passed": false
+}

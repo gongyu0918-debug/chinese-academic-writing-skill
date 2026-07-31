@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "specs": "tests/evidence/v0.0.7-relief-round3/specs/host.json",
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "results": [
+    {
+      "task_id": "H01",
+      "arm": "baseline",
+      "output": "baseline/H01.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1928,
+        "visible_count": 2161,
+        "heading_count": 2,
+        "part_count": 2,
+        "required_heading_count": 2
+      }
+    },
+    {
+      "task_id": "H01",
+      "arm": "candidate",
+      "output": "candidate/H01.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2030,
+        "visible_count": 2280,
+        "heading_count": 2,
+        "part_count": 2,
+        "required_heading_count": 2
+      }
+    },
+    {
+      "task_id": "H02",
+      "arm": "baseline",
+      "output": "baseline/H02.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 5402,
+        "visible_count": 7076,
+        "heading_count": 11,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    },
+    {
+      "task_id": "H02",
+      "arm": "candidate",
+      "output": "candidate/H02.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 4136,
+        "visible_count": 5522,
+        "heading_count": 5,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    },
+    {
+      "task_id": "H03-R1",
+      "arm": "baseline",
+      "output": "baseline/H03-R1.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1334,
+        "visible_count": 1541,
+        "heading_count": 2,
+        "part_count": 2,
+        "required_heading_count": 2
+      }
+    },
+    {
+      "task_id": "H03-R1",
+      "arm": "candidate",
+      "output": "candidate/H03-R1.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1342,
+        "visible_count": 1580,
+        "heading_count": 2,
+        "part_count": 2,
+        "required_heading_count": 2
+      }
+    },
+    {
+      "task_id": "H03-R2",
+      "arm": "baseline",
+      "output": "baseline/H03-R2.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1455,
+        "visible_count": 1656,
+        "heading_count": 2,
+        "part_count": 2,
+        "required_heading_count": 2
+      }
+    },
+    {
+      "task_id": "H03-R2",
+      "arm": "candidate",
+      "output": "candidate/H03-R2.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1340,
+        "visible_count": 1542,
+        "heading_count": 2,
+        "part_count": 2,
+        "required_heading_count": 2
+      }
+    },
+    {
+      "task_id": "H03-R3",
+      "arm": "baseline",
+      "output": "baseline/H03-R3.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1002,
+        "visible_count": 1128,
+        "heading_count": 1,
+        "part_count": 1,
+        "required_heading_count": 1
+      }
+    },
+    {
+      "task_id": "H03-R3",
+      "arm": "candidate",
+      "output": "candidate/H03-R3.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1000,
+        "visible_count": 1136,
+        "heading_count": 1,
+        "part_count": 1,
+        "required_heading_count": 1
+      }
+    },
+    {
+      "task_id": "H04",
+      "arm": "baseline",
+      "output": "baseline/H04.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1125,
+        "visible_count": 1235,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "H04",
+      "arm": "candidate",
+      "output": "candidate/H04.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1106,
+        "visible_count": 1208,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    }
+  ],
+  "passed": true
+}

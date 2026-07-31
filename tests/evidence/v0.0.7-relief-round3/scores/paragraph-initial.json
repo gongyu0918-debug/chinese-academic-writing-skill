@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "candidate": "candidate",
+  "baseline": "baseline",
+  "judges": [
+    "judge-1",
+    "judge-2"
+  ],
+  "totals": {
+    "tasks": 4,
+    "decided": 3,
+    "candidate_wins": 2,
+    "baseline_wins": 1,
+    "ties": 0,
+    "need_third": 0,
+    "decided_win_rate": 0.6666666666666666
+  },
+  "candidate_only_hard_fail": true,
+  "gate_pass": false,
+  "blockers": [
+    "candidate has at least one candidate-only hard FAIL"
+  ],
+  "tasks": [
+    {
+      "task_id": "P01",
+      "status": "DECIDED",
+      "winner": "candidate",
+      "votes": [
+        "candidate",
+        "candidate"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [],
+        "baseline": []
+      },
+      "candidate_only_hard_fail": false
+    },
+    {
+      "task_id": "P02",
+      "status": "DECIDED",
+      "winner": "candidate",
+      "votes": [
+        "candidate",
+        "candidate"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [],
+        "baseline": [
+          "han_count 2012 above maximum 2000"
+        ]
+      },
+      "judge_failures": {
+        "candidate": [],
+        "baseline": [
+          "judge-2"
+        ]
+      },
+      "candidate_only_hard_fail": false
+    },
+    {
+      "task_id": "P03",
+      "status": "BOTH_HARD_FAIL",
+      "winner": null,
+      "votes": [
+        "candidate",
+        "candidate"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [
+          "han_count 3306 above maximum 3200"
+        ],
+        "baseline": [
+          "han_count 3269 above maximum 3200"
+        ]
+      },
+      "judge_failures": {
+        "candidate": [
+          "judge-1",
+          "judge-2"
+        ],
+        "baseline": [
+          "judge-1",
+          "judge-2"
+        ]
+      },
+      "candidate_only_hard_fail": false
+    },
+    {
+      "task_id": "P04",
+      "status": "DECIDED",
+      "winner": "baseline",
+      "votes": [
+        "baseline",
+        "baseline"
+      ],
+      "mechanical_hard_failures": {
+        "candidate": [
+          "han_count 1564 above maximum 1500"
+        ],
+        "baseline": []
+      },
+      "judge_failures": {
+        "candidate": [
+          "judge-1",
+          "judge-2"
+        ],
+        "baseline": []
+      },
+      "candidate_only_hard_fail": true
+    }
+  ]
+}

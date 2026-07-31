@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "judges": [
+    "judge-1",
+    "judge-2"
+  ],
+  "tasks": [
+    {
+      "task_id": "BC01",
+      "min_han": 700,
+      "max_han": 900,
+      "min_visible": 800,
+      "max_visible": 1300,
+      "required_headings": [
+        "夜间自习空间选择的观察结果"
+      ],
+      "expected_part_count": 1,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "160",
+        "124",
+        "144",
+        "86",
+        "16"
+      ]
+    },
+    {
+      "task_id": "BC02",
+      "min_han": 1800,
+      "max_han": 2200,
+      "min_visible": 2000,
+      "max_visible": 3100,
+      "required_headings": [
+        "4.1 结果",
+        "4.2 讨论"
+      ],
+      "expected_part_count": 2,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "118",
+        "59",
+        "4.0",
+        "3.8",
+        "49",
+        "45",
+        "83.1",
+        "76.3"
+      ],
+      "forbidden_literals": [
+        "128",
+        "64",
+        "3.6",
+        "87.5",
+        "71.9"
+      ]
+    },
+    {
+      "task_id": "BC03",
+      "min_han": 500,
+      "min_visible": 650,
+      "required_headings": [
+        "一、总评",
+        "二、阻断项",
+        "三、全文问题表",
+        "四、可保留处",
+        "五、补充与修改建议"
+      ],
+      "expected_part_count": 5,
+      "forbid_process_leak": true
+    }
+  ]
+}
