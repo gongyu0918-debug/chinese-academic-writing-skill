@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "specs": "specs/release.json",
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "results": [
+    {
+      "task_id": "R1",
+      "arm": "baseline",
+      "output": "baseline/R1.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 453,
+        "visible_count": 519,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "R1",
+      "arm": "candidate",
+      "output": "candidate/R1.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 430,
+        "visible_count": 500,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "R2",
+      "arm": "baseline",
+      "output": "baseline/R2.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 649,
+        "visible_count": 816,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "R2",
+      "arm": "candidate",
+      "output": "candidate/R2.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 639,
+        "visible_count": 812,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "R3",
+      "arm": "baseline",
+      "output": "baseline/R3.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1190,
+        "visible_count": 1384,
+        "heading_count": 6,
+        "part_count": 6,
+        "required_heading_count": 6
+      }
+    },
+    {
+      "task_id": "R3",
+      "arm": "candidate",
+      "output": "candidate/R3.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1298,
+        "visible_count": 1505,
+        "heading_count": 6,
+        "part_count": 6,
+        "required_heading_count": 6
+      }
+    },
+    {
+      "task_id": "R4",
+      "arm": "baseline",
+      "output": "baseline/R4.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2439,
+        "visible_count": 3072,
+        "heading_count": 7,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    },
+    {
+      "task_id": "R4",
+      "arm": "candidate",
+      "output": "candidate/R4.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1888,
+        "visible_count": 2353,
+        "heading_count": 7,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    }
+  ],
+  "passed": true
+}
