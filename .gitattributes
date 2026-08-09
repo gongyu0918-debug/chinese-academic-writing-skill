@@ -1,3 +1,4 @@
 tests/evidence/v0.0.3-live-citation/** text eol=lf
 tests/evidence/v0.0.7-relief-round3/** text eol=lf
 tests/evidence/v0.0.8-upgrade/** text eol=lf
+tests/evidence/v0.0.8-release-gate/** text eol=lf

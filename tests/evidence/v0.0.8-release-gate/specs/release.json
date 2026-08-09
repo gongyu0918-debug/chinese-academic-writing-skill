@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "judges": [
+    "judge-1",
+    "judge-2"
+  ],
+  "tasks": [
+    {
+      "task_id": "R1",
+      "min_han": 420,
+      "max_han": 1050,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "95",
+        "丁县",
+        "S1"
+      ]
+    },
+    {
+      "task_id": "R2",
+      "min_han": 120,
+      "max_han": 1400,
+      "forbid_process_leak": true
+    },
+    {
+      "task_id": "R3",
+      "min_han": 1100,
+      "max_han": 1400,
+      "min_visible": 1200,
+      "max_visible": 2300,
+      "required_headings": [
+        "选题依据",
+        "研究问题与目标",
+        "研究内容",
+        "研究方法与材料",
+        "进度安排",
+        "预期成果"
+      ],
+      "expected_part_count": 6,
+      "body_only": true,
+      "forbid_lists": true,
+      "forbid_process_leak": true,
+      "required_literals": [
+        "28",
+        "14",
+        "戊县",
+        "M1",
+        "M2",
+        "M3",
+        "S1"
+      ]
+    },
+    {
+      "task_id": "R4",
+      "min_han": 300,
+      "required_headings": [
+        "总评",
+        "阻断项",
+        "分节问题",
+        "可保留处",
+        "补充与修改建议"
+      ],
+      "expected_part_count": 5,
+      "forbid_process_leak": true
+    }
+  ]
+}
