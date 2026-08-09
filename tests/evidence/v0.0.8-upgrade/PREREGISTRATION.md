@@ -4,8 +4,8 @@
 
 ## 固定版本
 
-- Baseline：`4d36a40`（main；运行包与 v0.0.6/v0.0.7 相同）。
-- Candidate：worktree `.release/worktrees/v0.0.8`，分支 `codex/v0.0.8`。writer 开跑前冻结 candidate 提交 hash 并回填本节。
+- Baseline：`4d36a40`（main；运行包与 v0.0.6/v0.0.7 相同），writer 在 detached worktree `.release/worktrees/ab-v008-baseline` 运行。
+- Candidate：worktree `.release/worktrees/v0.0.8`，分支 `codex/v0.0.8`。冻结：运行包改动为 `dca0287`（脚本）与 `dd9bc98`（Prompt）；writer 开跑时 worktree HEAD 为 `c2ab05c`（仅多出证据与文档提交，writer 不读取）。
 - 两侧 writer 使用同一 Codex CLI 版本、默认模型和只读沙箱；每个“任务 × arm”使用全新会话。writer 只读取所在 worktree 的入口和按路由需要的 reference，不读取 Git 历史、其他 worktree、评测说明或候选差异。
 
 ## 候选原子（来源：公文 skill 1.5.40 已验证更新，论文场景适配，不复制公文词表）
