@@ -1,0 +1,278 @@
+Reading additional input from stdin...
+2026-08-09T08:06:12.070020Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="browser-use@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\browser-use
+2026-08-09T08:06:12.070046Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="browser@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\browser
+2026-08-09T08:06:12.070051Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="chinese-official-writing@chinese-official-writing-local" path=C:\Users\admin\.codex-writer-v008\plugins\cache\chinese-official-writing-local\chinese-official-writing
+2026-08-09T08:06:12.070056Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="chrome@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\chrome
+2026-08-09T08:06:12.070059Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="computer-use@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\computer-use
+2026-08-09T08:06:12.070063Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="documents@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\documents
+2026-08-09T08:06:12.070067Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="pdf@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\pdf
+2026-08-09T08:06:12.070071Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="presentations@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\presentations
+2026-08-09T08:06:12.070075Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="sites@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\sites
+2026-08-09T08:06:12.070078Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="spreadsheets@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\spreadsheets
+2026-08-09T08:06:12.070082Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="template-creator@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\template-creator
+2026-08-09T08:06:12.070088Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="visualize@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\visualize
+2026-08-09T08:06:12.153331Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+OpenAI Codex v0.144.6
+--------
+workdir: F:\Workspaces\chinese-academic-writing-skill\.release\worktrees\v0.0.8
+model: gpt-5.6-sol
+provider: openai
+approval: on-request
+sandbox: read-only
+reasoning effort: ultra
+reasoning summaries: none
+session id: 019fe58e-d95e-7771-afd2-ccd47d8563ac
+--------
+user
+# Writer 外层说明
+
+你在完成一个真实中文论文写作任务。先完整读取当前工作区的 `chinese-academic-writing-assistant/SKILL.md`，再严格按入口只读取完成当前任务需要的 reference；不得读取 `tests/evidence`、`.release`、Git 历史或当前工作区之外的文件。不要分析 Skill，不要评价规则，不要说明读取过程。随后把所附任务文本视为用户的完整需求，只输出用户要求的最终成品。
+
+
+【任务】
+
+# T2 纯检测
+
+最终交付物是对一门教育学课程论文的一节草稿做表达问题检测。只检测，不修改。
+
+【材料】
+
+M1 调查数据：2025 年 9 月在某高职院校 2 个班级发放问卷 58 份，回收有效问卷 54 份；问卷围绕数字素养自评与自主学习习惯。
+
+M2 已核验文献 [S1]：对 3 所高职院校 780 名学生的调查显示，数字素养自评得分与自主学习行为频率呈正相关。
+
+【草稿】
+
+随着数字化进程的不断加快，高职院校学生的数字素养培养日益受到关注。随着数字化进程的不断加快，课堂教学方式也在发生深刻变化。调查数据显示，本次调查共回收有效问卷 54 份，覆盖 2 个班级 [M1]。已有调查显示，数字素养自评得分与自主学习行为频率呈正相关 [S1]。因此，进一步提升学生数字素养，不仅是提高课堂教学质量的需要，更是促进学生全面发展的需要。当前高职院校数字素养培养尚未形成成熟的模式，尚不能据此得出明确结论，也没有形成统一的看法。数字素养培养对高职学生的未来发展具有深远意义。随着数字化进程的不断加快，相关研究与实践还将继续深化。需要说明的是，本次调查仅覆盖一所高职院校的 2 个班级，样本量为 54 份，调查结果不能直接推广到其他院校。
+
+【要求】
+
+只检测这份草稿的 AI 味和模板化问题：逐条给出位置、严重度和修改建议。不要修改草稿文字，不要输出改写后的全文。材料中真实存在的研究限制不属于表达问题。
+
+
+2026-08-09T08:06:12.396027Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-08-09T08:06:12.396108Z  WARN codex_core::client: falling back to HTTP
+2026-08-09T08:06:14.135914Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-08-09T08:06:14.135998Z  WARN codex_core::client: falling back to HTTP
+codex
+我会按要求仅做表达问题检测，并保留草稿原文不作改写。
+exec
+"C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.4.0_x64__8wekyb3d8bbwe\\pwsh.exe" -Command "Get-Content -Raw -LiteralPath 'chinese-academic-writing-assistant/SKILL.md'" in F:\Workspaces\chinese-academic-writing-skill\.release\worktrees\v0.0.8
+ succeeded in 662ms:
+---
+name: chinese-academic-writing-assistant
+description: 用于依据作者材料、文献、学校要求或明确授权检索的来源，协作完成中文本科、硕士或课程论文、开题报告及独立文献综述的提纲、章节起草、修改和审稿；在组织论证、核对论点与证据、校准文体、处理多章节或跨轮次长稿、筛查全文一致性、核验来源或降低模板化表达时使用。材料不足时降级交付，不编造研究过程、数据、文献、引用、结果或结论，不处理统计有效性、投稿、排版、答辩及检测规避。
+---
+
+# 中文论文写作
+
+## 写作边界
+
+- 支持中文本科论文、硕士学位论文、课程论文、开题报告和最终交付物为独立文献综述的任务。
+- 不处理英文论文全文、投稿全流程、科研伦理审批、统计分析或有效性判定、答辩材料、排版、查重率预测和 AIGC 检测规避。给定输入与公式均可核对时，可做简单算术，但不据此补充统计或因果结论。
+- 作者应在导师指导和所在机构规则下独立完成学术工作。不得替作者形成其未提供的核心学术贡献，不得代写整篇提交稿、拼贴或隐去来源，不得伪造研究过程、数据、案例、方法、文献、引用、结果或结论。
+- 直接引语保留引号、来源与定位；转述仍保留来源。正常写作不机械附加免责声明，但不承诺通过答辩、达到发表水平、符合全部规范或降低检测指标。
+
+## 四维路由
+
+先判断“最终交付物 × 操作模式 × 材料状态 × 研究阶段”。模式为提纲构造、据材料起草、底稿修改或只审不改；材料状态区分题目、底稿、全文来源、摘要、元数据、数据与模板；阶段区分拟开展、进行中和已完成。
+
+| 最终交付物 | 唯一专项叶 |
+| --- | --- |
+| 普通论文或论文中的文献综述章节 | `references/academic-writing.md` |
+| 开题报告及其中的研究现状、研究述评 | `references/academic-proposal.md` |
+| 最终交付物本身为独立文献综述 | `references/academic-literature-review.md` |
+
+组合任务按所需顺序拆成原子任务；每个原子任务只读取一个专项叶，完成后再处理下一项，不同时加载另外两个叶。路由以最终交付物的文种为准，不按“毕业论文”等主题词触发。若交付物是通知、申请等非学术文稿，立即停止本 Skill 的起草，不输出正文，不补充或推断办理要素；简要说明超出范围并建议改用正式通知或公文写作能力。
+
+## 材料门禁与优先级
+
+- 无目标文本不能执行底稿修改，可先请用户提供原文或只给修改检查表。
+- 只有题目时，不形成完整论文或完整开题设计；只给可成立的结构、研究问题、最小范围和补充材料建议。
+- 题目、概念、研究意图和常识性判断都不是事实证据；不得把领域惯例、通用背景、典型问题或示例写成已有事实、研究发现、已确定维度或机制。提纲或正文后可将其列为待选择和验证的候选，但不自动进入正文。只知道“已整理某类材料”而未读内容时，只记录材料状态，不概括主张。
+- 输入中没有某项内容，只能说明现有材料不含该项，不能据此判断作者或研究项目是否尚未确定。直接起草可用正文时，省略无依据缺项；确需提醒的，移到正文后建议，说明应补充的位置和材料，不把“本轮未提供”“需作者确认”等制作回合标签写进正文。除用户明确给出的安排外，不扩写招募、访谈提纲、编码、分析步骤、写作环节、进度任务或成果范围。
+- 独立综述没有可用来源且用户未授权检索时，不写综述正文；改交范围界定、来源收集清单或提纲。
+- 没有数据、方法记录或研究结果时，不生成统计值、显著性、因果关系或已完成结论。
+- 缺少变量结构和研究设计时，只列出需要补充的信息，不预选统计检验、结果方向、显著性表达或因果模板。
+- 执行优先级为：用户明确要求 > 学校或导师明确模板 > 用户指定的最新版底稿 > 旧稿与参考材料。题目、事实、数字、术语、引用和证据状态不得静默改变；只有用户提供更正依据时才更新。
+- 默认不联网。只有用户明确要求或同意检索、核验、补充公开来源，才可在约定范围和本轮任务内联网；“最新、当前、近年”、DOI、URL 和材料不足都不构成授权。采用内容时保留来源、定位和正文位置。
+- 大材料先登记文件、版本与实际覆盖范围，再分批处理。未完整读取时明确已覆盖和未覆盖部分，不声称完成全文复核。
+
+## 内部证据账本
+
+写作前记录材料 ID、来源层级、定位、核验状态、可支持论点、允许强度和计划位置；单句或单段语言任务可简化为不可变项。用户提供材料不等于来源已核验。账本默认不展示，修改、审稿和分批续写时保持一致。
+
+- 已读原文：可在原文证据范围内转述；直接引语必须保留可回查定位。
+- 已读摘要：只支持摘要明确陈述的有限结论，不生成直接引语、页码或摘要以外的细节。
+- 仅有元数据：只能证明作者、题名、年份、载体、DOI 等书目信息，不能证明论文观点。
+- 待核验来源：不进入最终正文，只可出现在审稿意见或正文后“其他修改建议”的核验项中。
+
+引用检查分别判断：来源是否存在、元数据是否一致、原文是否支持当前论断、著录格式是否符合要求。DOI 存在不等于论点获得支持。学校或导师模板优先；无模板且用户明确要求国家标准时，可将现行 GB/T 7714-2025 作为参考文献著录候选，将 GB/T 7713.1-2025 作为学位论文编写参考。未实际读取规范正文时，不得声称“完全符合”。
+
+多章节、跨轮次续写或明确全文一致性筛查时，另读 `references/long-form-consistency.md`；单段、单节和提纲任务不读。维护全文状态与分节简报，合稿后复核全文；未读全稿不得声称完成全文筛查。
+
+## 执行与交付
+
+1. 锁定交付物、模式、阶段、模板、材料和不可变项；样本称谓按原文保留，不从场景推定身份。
+2. 在规划层建立“研究问题—章节任务—论点—证据—结论回应”关系并分配篇幅；段落以完成当前最小论证单元为准，所需动作可省略、重排或跨段展开，不规定句数、句位或统一长度。
+3. 读取唯一专项叶，按论证关系和学科惯例自主成段；缺口收缩正文或移到建议，不用套话或材料外内容补篇幅。
+4. 逐项核对事实、研究状态、引用映射、章节关系、输出模式和已覆盖范围。完成后做成品残留终检：同一材料或证据边界只在首次必要位置说明，后文只有在主导任务改变且确有必要时再限定；研究状态用“已、拟、尚未”等正文时态和语气表达；删除制作回合或版本标签、写作控制旁白，以及段末或文末“以上、上述内容不作为结论”一类重复兜底说明。必要的结论限制应就近融入对应论断，不另作小字式尾注。可执行本地 Python 时，终稿扫描可用 `scripts/prose_lint.py` 的 `body-only` 模式（允许正文后建议时用 `body-with-suggestions`），finding 只是候选。
+
+## 渐进式来源检索与引用覆盖
+
+授权检索或核验时，另开上下文或轮次读取 `references/citation-research.md`，只把紧凑证据账本传入专项叶；来源层与 ANTI-AI 层不得同阶段加载。经复核确认的来源错配、关系升级、因果化、数字或否定范围错误，任一例即阻断相应正文交付。
+
+## 渐进式 ANTI-AI 复核
+
+只有用户明确要求文风、去模板化或语言质量复核，或在唯一专项叶完成内容与证据复核后已定位到具体模板化问题时，才读取 `references/anti-ai-writing.md`；它不是第四种任务叶，不允许借此加载另外两个专项叶。普通起草、事实审查，以及只交付提纲、材料清单、范围说明、原始摘录或越界转交时不读取。
+
+复核只处理已确认的问题，无明确问题则保持原文。用户只要求检测时，按 `references/anti-ai-writing.md` 的纯检测模式输出检测结果，不改写正文。只输出正文时，不输出候选或检查过程。
+
+最终交付不输出隐藏推理、加载、规则复述或模板旁白；材料范围与核验状态仅在影响可靠性时说明。用户给出的受众定位、版本用途和制作要求只作为写作约束，不自动写入正文；成品不得夹带模型自身的制作过程。
+
+只审不改必须覆盖“位置—严重度—问题—依据—修改建议”，但承载形式服从用户和文本规模：短段可用表格，长稿可用总评、阻断项和分节问题，不默认重写全文。用户要求只输出正文、只输出修改后的文字或不解释时，只交付相应文本；该要求不放宽材料、证据和诚信门禁。
+
+用户未限制只输出正文时，可在正文后单列“补充与修改建议”，按实际需要给出：`可补充论点`、`可补充论据`、`可补充论述`、`其他修改建议`。建议应说明补充位置、所需材料或展开方向，不把待补内容写成已有事实、证据、研究过程或完成结论；没有实际建议的类别不输出。
+
+profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+Microsoft.PowerShell_profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+
+exec
+"C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.4.0_x64__8wekyb3d8bbwe\\pwsh.exe" -Command "Get-Content -Raw -LiteralPath 'chinese-academic-writing-assistant/references/academic-writing.md'" in F:\Workspaces\chinese-academic-writing-skill\.release\worktrees\v0.0.8
+exec
+"C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.4.0_x64__8wekyb3d8bbwe\\pwsh.exe" -Command "Get-Content -Raw -LiteralPath 'chinese-academic-writing-assistant/references/anti-ai-writing.md'" in F:\Workspaces\chinese-academic-writing-skill\.release\worktrees\v0.0.8
+ succeeded in 795ms:
+# 普通中文论文专项叶
+
+仅在最终交付物为普通本科论文、硕士学位论文、课程论文，或修改论文内部章节时读取。论文中的文献综述章节仍属于本叶；只有最终交付物本身为独立综述才进入独立综述叶。本叶只补充普通论文任务差异。
+
+## 规划、成段与文体
+
+全文或章节先规划研究问题、章节任务、论点与证据。规划层负责材料和篇幅，正文按论证关系成段；摘要、结论和研究不足只概括正文，不新增数据、方法、贡献或结果。
+
+段落是最小可充分论证单元，不是预填格式。按需选择陈述、举证、解释、比较、反例、边界或衔接；动作可省略、重排或跨段展开，不要求固定句序、句数、首句位置、收束句或等长段落。同一子主张的证据、解释和限定保持在一起；对象、关系或立场改变时再分段，彼此依赖的短段应合并。
+
+学校、导师与载体规范优先。无模板时，理论研究重推理与反驳；文学历史重文本、史料与解释；法学重规范、解释与异议；实证研究重设计、结果与局限；理工研究重复现条件、误差和边界。只作线索，不作模板。
+
+有既有稿或同学科、同层级、同类范文时，只校准术语、引证方式、限制语和节奏；不复制措辞、论证、观点或来源，观点与来源仍须核验。无样本时使用准确、朴实、克制的现代汉语。
+
+单段润色、压缩或引文核对可直接处理，先锁定上下文、术语、事实、数字、引文、图表和公式。成稿后检查篇幅：偏短只展开已有证据，偏长先删重复、旁白和无贡献铺垫，不增添材料外事实凑字数。
+
+## 四种模式
+
+### 提纲构造
+
+- 从题目、研究问题、材料和学校模板提取章节任务；无模板时只按论证需要设置层级，不强凑常见章数。
+- 材料稀疏时收缩结构，不用近义标题跨章重复背景、意义、现状、问题或对策。
+- 对每章标明可用材料和缺失证据，不提前写入未给结论。
+
+### 据材料起草
+
+- 围绕本节问题、证据及其与论点的关系组织正文，不把三者改写成逐段固定句位。
+- 引用汇总章节只归纳已给或已核验来源的共识、差异和限制，不把题名列表改写成研究发现。
+- 结论强度随证据收缩；只有论证关系需要时才设置章节收束或过渡，不重复已写边界。
+
+### 底稿修改
+
+- 只在用户要求范围内调整顺序、论证和语言；保留学校模板、章节层级、核心术语、数据、引用、图表编号和公式。
+- 导师意见和旧稿仅作为修改依据，不把旧结论、旧数据、旧引用或建议内容自动带回最新版正文。
+- 用户要求扩展时，只使用已经提供或核验的补充材料；没有证据的扩展转入正文后建议。
+
+### 只审不改
+
+- 先审研究问题、章节任务、论点、证据、方法、结果和结论是否闭合，再审术语、语言和格式。
+- 没有原始材料或专业依据时，不断言方法正确、统计有效、文献真实或论文可以通过。
+- 按入口统一审稿接口列问题，不重写被审文本。
+
+## 正文后建议焦点
+
+补充与修改建议按入口分类，优先关注中心判断、证据缺口、论证关系以及章节、术语、图表公式和引用一致性。
+
+## 专项复核
+
+- 段落是否推进当前论证单元，证据是否得到必要解释，是否出现同义反复或无依据强评价。
+- 小节是否完成上级任务，标题、论点、材料和小结是否一致，是否与相邻小节重复。
+- 研究问题、章节任务和结论是否逐级回应；摘要与结论是否只概括正文。
+- 术语、研究对象、人称、方法、结果、图表、公式、引文序号和参考文献是否稿内一致。
+
+profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+Microsoft.PowerShell_profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+
+ succeeded in 795ms:
+# 论文 ANTI-AI 语义复核
+
+本文件是三类任务共用的可选成品质量层，不是第四种任务叶；加载条件以入口的渐进式 ANTI-AI 复核为准。目标是减少已确认的模板化、机械重复和制作残留，使论述贴合研究问题与证据。不得以“像人写”或规避检测为目标，不加入故意口语、情绪、反问、残缺句或无依据细节。
+
+## 复核顺序
+
+1. 锁定题目、事实、数字、公式、专名、术语、引用及位置、研究状态、否定范围和论断强度。
+2. 可执行本地 Python 时，可用 `scripts/prose_lint.py` 生成候选；脚本 finding 只是候选，不是证明文本有错或由 AI 生成，也不改写文件。
+3. 逐条回读候选所在句、前后段、材料依据和章节任务；命中和次数只用于定位，不能直接判错。
+4. 只改确认存在问题的局部及必要衔接，再复核锁定项和引用映射。
+5. 再扫一遍修改处；若没有新的明确问题即停止，第二遍不应为了“更像人写”继续换词或重排。
+
+本地草稿可运行：
+
+```powershell
+python -B scripts\prose_lint.py draft.md --format --structure --delivery-mode body-only --json
+```
+
+允许正文后建议时将模式改为 `body-with-suggestions`；检查审稿表自身时使用 `review-only`。无法执行脚本时按本文件人工复核，不得声称脚本已经运行。不得增加 `--fix` 或依据 finding 批量替换。
+
+## 保护区与不变量
+
+- 直接引语、用户要求逐字保留的文字、参考文献表、脚注和尾注中的书目信息只核对位置与格式，不改其内容。
+- `[1]`、`[2-4]`、作者—年份标注、DOI、URL、公式、LaTeX、代码、文件路径和英文题名中的符号不参与普通句式或标点改写。
+- 必要否定、真实比较、概念辨析、反证、研究限制和材料明确记载的争议可以保留。专业术语允许自然重复，不为降低词频而换成含义不等的同义词。
+- `本文将`、`本研究`、`本节讨论` 等学术元话语具有真实导读、方法交代或篇章衔接功能时可以保留；只有集中重复且删去不损害结构时才调整。
+- 作者既有论文或认可章节可作为术语、句法、第一人称和节奏的相对基线；无样本时不虚构“个人风格”，也不强行注入观点、情绪或口语。
+- 改写不得新增事实、文献、因果、评价或研究过程，不得把“可能、提示、相关”提升为“必然、证明、导致”，也不得移动否定对象或扩大结论适用范围。
+
+## 高频句式与词组
+
+先看全文分布，再回到单处语义。重点定位反复出现的否定/对照、递进/并列、提示语、抽象名词和段首。只确认四类问题：材料没有被否定对象却用先否定后肯定包装结论；固定搭配制造证据不支持的关系；同一词组、句式或段落功能集中机械复现；连续否定式收口，即段尾或句尾堆叠“尚未形成最终结论”“尚不能据此认定”“现有材料不足以作出判断”一类泛化否定句。材料确有未决状态时，保留未决含义，但直接写具体研究事项和当前研究状态，例如“样本仍在收集”“编码工作尚未完成”“现有材料仅支持相关关系”；没有论证作用时删除，不机械照抄这些尾句。修订时直接陈述材料支持的主张、恢复真实关系、合并同义重复或按上述方式承接否定收口；无法确认或无法安全改写时保留原句。
+
+## 论文场景的成簇风险
+
+- **连接替代论证**：连接词没有对应的并列、因果或递进关系。
+- **同构段落**：多个段落以相同短语、长度和收束方式重复；不得为追求变化改成另一套固定骨架。
+- **清单替代展开**：只列态度或概念，未说明论点、依据与推理关系。
+- **空泛或模糊归因**：抽象词互相解释，或“有研究表明”等没有可回查来源。
+- **评价升级与角色混淆**：强词超出证据，或摘要、综述、结论、开题承担了错误功能。
+
+这些风险须结合研究对象和证据账本判断。段落动作是可选集合，不得反向要求每段包含主张、证据、解释、限制或过渡。单个词、一次排比、一次转折或真实比较不足以触发改写。没有能指出具体位置、上下文依据和语义问题的候选时，保持原文。
+
+## 纯检测模式
+
+用户只要求检测（只查找 AI 味、模板化或文风问题，不要求改写）时，严格服从用户指定的字段、顺序和格式；未指定时按位置、严重度、问题、依据和修改建议输出。可按需引用原句和问题依据，不代写全文，也不把候选写进正文。真实研究限制和必要否定不计为表达问题。
+
+## 格式候选
+
+标点脚本只提示重复或冲突标点、中文句内异常半角标点、未闭合引号或括号、意外 Emoji 等候选。引用规范、公式标点、英文摘要和学校模板优先，不能据静态命中直接修改。
+
+profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+Microsoft.PowerShell_profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+
+2026-08-09T08:06:33.066555Z  WARN codex_core_plugins::manager: failed to refresh remote installed plugins cache error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/installed: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/installed?scope=USER)
+2026-08-09T08:07:13.254227Z  WARN codex_core_plugins::remote::remote_installed_plugin_sync: failed to download remote installed plugin bundle remote_plugin_id=plugin_connector_1p_2330815c823c8191941e5dc465bb899f plugin=openai-templates marketplace=openai-curated-remote error=failed to read remote plugin bundle download response from https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-9268-81f7-8926-83f58a34537f/raw?se=2026-08-09T08%3A11%3A12Z&sp=r&sv=2026-02-06&sr=b&scid=18186a05-a53b-44d4-8aac-be3981835b27&skoid=80e81ea6-3c08-46f9-bd84-b87176742bcd&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-08T16%3A25%3A17Z&ske=2026-08-09T16%3A25%3A17Z&sks=b&skv=2026-02-06&sig=LfNRSZEszJ0UcAg7c8tLv/Lkfd/8xQZoDIzmBhaznVE%3D: error decoding response body
+codex
+| 位置 | 严重度 | 问题及依据 | 修改建议 |
+|---|---|---|---|
+| 第1、2、8句：“随着数字化进程的不断加快” | 高 | 同一开场句式在短段内出现三次，机械重复明显，形成模板化起势。 | 只保留一次必要的背景交代，其余位置直接进入调查、论点或具体研究内容。 |
+| 第1—2句：“日益受到关注”“发生深刻变化” | 中 | 均为宽泛的背景判断，表述抽象，未说明受到何种关注、发生何种变化，具有通用背景套话特征。 | 删除与本节论证无直接作用的背景句；确需保留时，应限定具体对象和变化内容。 |
+| 第3—4句：“调查数据显示”“已有调查显示” | 低 | 相邻两句采用近似的材料引述句式，呈现连续罗列信息的清单感。 | 区分两句的论证功能，明确本次调查信息与已有研究结论之间的关系，避免同构引述。 |
+| 第5句：“因此……不仅是……更是……” | 高 | “因此”与“不仅……更是……”叠加使用，以连接词替代论证；由相关关系直接转向“课堂教学质量”和“全面发展”的宏观价值判断，递进幅度过大。 | 拆除固定递进框架，将结论限定在现有材料能够支持的范围内；缺少依据的价值判断应删除或另行补充论证。 |
+| 第6句：“尚未形成成熟的模式，尚不能据此得出明确结论，也没有形成统一的看法” | 高 | 三个泛化否定连续堆叠，彼此含义重叠；“据此”“明确结论”“统一的看法”所指不清，具有模板化否定收口特征。 | 明确每项判断针对的具体对象及依据；无法落实具体所指的否定句应删减，避免用多重否定制造审慎感。 |
+| 第7句：“对高职学生的未来发展具有深远意义” | 中 | “未来发展”“深远意义”属于空泛评价，未指明具体发展维度，带有口号式收束色彩。 | 指明可由材料支持的具体影响维度；若无相应依据，删除该概括性评价。 |
+| 第8句：“相关研究与实践还将继续深化” | 中 | “相关研究与实践”指代模糊，“还将继续深化”属于常见展望套语，没有提供实质信息。 | 明确后续需要研究的具体问题或实践方向；若本节无需展望，可直接删除该句。 |
+| 位置 | 严重度 | 问题及依据 | 修改建议 |
+|---|---|---|---|
+| 第1、2、8句：“随着数字化进程的不断加快” | 高 | 同一开场句式在短段内出现三次，机械重复明显，形成模板化起势。 | 只保留一次必要的背景交代，其余位置直接进入调查、论点或具体研究内容。 |
+| 第1—2句：“日益受到关注”“发生深刻变化” | 中 | 均为宽泛的背景判断，表述抽象，未说明受到何种关注、发生何种变化，具有通用背景套话特征。 | 删除与本节论证无直接作用的背景句；确需保留时，应限定具体对象和变化内容。 |
+| 第3—4句：“调查数据显示”“已有调查显示” | 低 | 相邻两句采用近似的材料引述句式，呈现连续罗列信息的清单感。 | 区分两句的论证功能，明确本次调查信息与已有研究结论之间的关系，避免同构引述。 |
+tokens used
+15,646
+| 第5句：“因此……不仅是……更是……” | 高 | “因此”与“不仅……更是……”叠加使用，以连接词替代论证；由相关关系直接转向“课堂教学质量”和“全面发展”的宏观价值判断，递进幅度过大。 | 拆除固定递进框架，将结论限定在现有材料能够支持的范围内；缺少依据的价值判断应删除或另行补充论证。 |
+| 第6句：“尚未形成成熟的模式，尚不能据此得出明确结论，也没有形成统一的看法” | 高 | 三个泛化否定连续堆叠，彼此含义重叠；“据此”“明确结论”“统一的看法”所指不清，具有模板化否定收口特征。 | 明确每项判断针对的具体对象及依据；无法落实具体所指的否定句应删减，避免用多重否定制造审慎感。 |
+| 第7句：“对高职学生的未来发展具有深远意义” | 中 | “未来发展”“深远意义”属于空泛评价，未指明具体发展维度，带有口号式收束色彩。 | 指明可由材料支持的具体影响维度；若无相应依据，删除该概括性评价。 |
+| 第8句：“相关研究与实践还将继续深化” | 中 | “相关研究与实践”指代模糊，“还将继续深化”属于常见展望套语，没有提供实质信息。 | 明确后续需要研究的具体问题或实践方向；若本节无需展望，可直接删除该句。 |

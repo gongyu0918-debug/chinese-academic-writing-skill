@@ -39,6 +39,10 @@ from typing import Any
 
 HAN_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]")
 HEADING_RE = re.compile(r"^(#{1,6})[ \t]+(.+?)[ \t]*$", re.MULTILINE)
+HEADING_NUMBER_PREFIX = re.compile(
+    r"^(?:[一二三四五六七八九十]+、|\d+[.、．]|[（(][一二三四五六七八九十\d]+[)）]|"
+    r"第[一二三四五六七八九十百\d]+[章节部分])[ \t]*"
+)
 LIST_RE = re.compile(
     r"^[ \t]*(?:"
     r"[-+*][ \t]+|"
@@ -46,7 +50,6 @@ LIST_RE = re.compile(
     r"\d+\.(?!\d)[ \t]*\S|"
     r"[一二三四五六七八九十]+[、）)][ \t]*\S"
     r")",
-    re.MULTILINE,
 )
 REVISION_NOTE_PATTERNS = (
     re.compile(
@@ -68,7 +71,7 @@ PROCESS_LEAK_PATTERNS = (
     re.compile(r"(?:候选|基线)(?:版本|分支|样稿|输出)"),
     re.compile(r"(?:本模型|本助手|我)(?:已|将|需要)?(?:读取|加载|调用|遵循|生成|改写)"),
     re.compile(r"(?:按|根据)(?:上述|所给|该)(?:规则|门禁|Skill|reference)"),
-    re.compile(r"(?:评测|盲评|打分|判定)(?:结果|过程|标准|门槛)"),
+    re.compile(r"(?:评测|盲评|打分)(?:结果|过程|标准|门槛)|判定门槛"),
 )
 
 
@@ -162,7 +165,8 @@ def load_specs(path: Path) -> tuple[list[str], list[dict[str, Any]]]:
 
 
 def normalize_heading(value: str) -> str:
-    return re.sub(r"\s+", " ", value.strip().lstrip("#").strip())
+    text = re.sub(r"\s+", " ", value.strip().lstrip("#").strip())
+    return HEADING_NUMBER_PREFIX.sub("", text).strip()
 
 
 def ordered_subsequence(required: list[str], actual: list[str]) -> bool:
@@ -195,6 +199,7 @@ def check_output(task: dict[str, Any], text: str) -> tuple[list[str], dict[str, 
     configured_heading_level = task.get("heading_level")
     plain_heading_level = configured_heading_level if configured_heading_level is not None else 2
     headings: list[dict[str, Any]] = []
+    heading_lines: set[int] = set()
     for line_number, line in enumerate(text.splitlines(), start=1):
         match = re.match(r"^(#{1,6})[ \t]+(.+?)[ \t]*$", line)
         if match:
@@ -206,6 +211,7 @@ def check_output(task: dict[str, Any], text: str) -> tuple[list[str], dict[str, 
                     "line": line_number,
                 }
             )
+            heading_lines.add(line_number)
             continue
         normalized = normalize_heading(line)
         if normalized and normalized in required:
@@ -217,6 +223,7 @@ def check_output(task: dict[str, Any], text: str) -> tuple[list[str], dict[str, 
                     "line": line_number,
                 }
             )
+            heading_lines.add(line_number)
     actual_texts = [item["text"] for item in headings]
     missing = [item for item in required if item not in actual_texts]
     if missing:
@@ -253,8 +260,13 @@ def check_output(task: dict[str, Any], text: str) -> tuple[list[str], dict[str, 
         if re.search(r"^[ \t]*---+[ \t]*$", text, re.MULTILINE):
             failures.append("body-only output contains a horizontal separator")
 
-    if task.get("forbid_lists", False) and LIST_RE.search(text):
-        failures.append("output contains a forbidden list")
+    if task.get("forbid_lists", False):
+        for line_number, line in enumerate(text.splitlines(), start=1):
+            if line_number in heading_lines:
+                continue
+            if LIST_RE.match(line):
+                failures.append(f"output contains a forbidden list at line {line_number}")
+                break
     if task.get("forbid_revision_notes", task.get("body_only", False)):
         if any(pattern.search(text) for pattern in REVISION_NOTE_PATTERNS):
             failures.append("output contains a revision or writing note")

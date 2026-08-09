@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "specs": "specs/v008.json",
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "results": [
+    {
+      "task_id": "T1",
+      "arm": "baseline",
+      "output": "baseline/T1.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 494,
+        "visible_count": 585,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "T1",
+      "arm": "candidate",
+      "output": "candidate/T1.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 477,
+        "visible_count": 564,
+        "heading_count": 1,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "T2",
+      "arm": "baseline",
+      "output": "baseline/T2.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 682,
+        "visible_count": 853,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "T2",
+      "arm": "candidate",
+      "output": "candidate/T2.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 636,
+        "visible_count": 812,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "T3",
+      "arm": "baseline",
+      "output": "baseline/T3.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1186,
+        "visible_count": 1392,
+        "heading_count": 6,
+        "part_count": 6,
+        "required_heading_count": 6
+      }
+    },
+    {
+      "task_id": "T3",
+      "arm": "candidate",
+      "output": "candidate/T3.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1186,
+        "visible_count": 1389,
+        "heading_count": 6,
+        "part_count": 6,
+        "required_heading_count": 6
+      }
+    },
+    {
+      "task_id": "T4",
+      "arm": "baseline",
+      "output": "baseline/T4.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1763,
+        "visible_count": 2239,
+        "heading_count": 7,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    },
+    {
+      "task_id": "T4",
+      "arm": "candidate",
+      "output": "candidate/T4.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2468,
+        "visible_count": 3087,
+        "heading_count": 7,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    }
+  ],
+  "passed": true
+}

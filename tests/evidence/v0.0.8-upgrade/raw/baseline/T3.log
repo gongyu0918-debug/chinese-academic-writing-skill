@@ -1,0 +1,254 @@
+Reading additional input from stdin...
+2026-08-09T08:02:30.261011Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="browser-use@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\browser-use
+2026-08-09T08:02:30.261044Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="browser@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\browser
+2026-08-09T08:02:30.261050Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="chinese-official-writing@chinese-official-writing-local" path=C:\Users\admin\.codex-writer-v008\plugins\cache\chinese-official-writing-local\chinese-official-writing
+2026-08-09T08:02:30.261056Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="chrome@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\chrome
+2026-08-09T08:02:30.261061Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="computer-use@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\computer-use
+2026-08-09T08:02:30.261067Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="documents@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\documents
+2026-08-09T08:02:30.261071Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="pdf@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\pdf
+2026-08-09T08:02:30.261076Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="presentations@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\presentations
+2026-08-09T08:02:30.261081Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="sites@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\sites
+2026-08-09T08:02:30.261085Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="spreadsheets@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\spreadsheets
+2026-08-09T08:02:30.261090Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="template-creator@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\template-creator
+2026-08-09T08:02:30.261094Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="visualize@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\visualize
+2026-08-09T08:02:30.462372Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+OpenAI Codex v0.144.6
+--------
+workdir: F:\Workspaces\chinese-academic-writing-skill\.release\worktrees\ab-v008-baseline
+model: gpt-5.6-sol
+provider: openai
+approval: on-request
+sandbox: read-only
+reasoning effort: ultra
+reasoning summaries: none
+session id: 019fe58b-76c5-7522-a767-2b800d47e96a
+--------
+user
+# Writer 外层说明
+
+你在完成一个真实中文论文写作任务。先完整读取当前工作区的 `chinese-academic-writing-assistant/SKILL.md`，再严格按入口只读取完成当前任务需要的 reference；不得读取 `tests/evidence`、`.release`、Git 历史或当前工作区之外的文件。不要分析 Skill，不要评价规则，不要说明读取过程。随后把所附任务文本视为用户的完整需求，只输出用户要求的最终成品。
+
+
+【任务】
+
+# T3 开题据材料起草
+
+最终交付物是一份本科毕业论文开题报告。
+
+【材料】
+
+M1 访谈记录：2026 年 2—3 月在乙区对 60 岁及以上老年人开展半结构访谈 32 人，其中使用社区助餐服务的 18 人，未使用的 14 人；访谈围绕就餐方式、外出频率和社会交往。
+
+M2 乙区民政局《2025 年老年助餐服务实施方案》摘录：全区已建成助餐点 12 个，对符合条件的老年人按每人每餐 8 元标准给予就餐补助。
+
+M3 已核验文献 [S1]：一项横断面调查（N=416）显示，使用社区助餐服务的老年人社会参与频率高于未使用者，作者提示该关联可能受健康状态影响。
+
+M4 作者已完成文献梳理提纲和访谈提纲初稿；论文计划于 2026 年 12 月前完成。
+
+【要求】
+
+1. 据以上材料起草开题报告，栏目依次为：选题依据、研究问题与目标、研究内容、研究方法与材料、进度安排、预期成果。
+2. 正文 1100—1400 个汉字；保留材料给出的数字和来源标注；没有材料依据的内容不写进正文。
+3. 只输出开题报告正文，不附说明。
+
+
+2026-08-09T08:02:31.026126Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-08-09T08:02:31.026243Z  WARN codex_core::client: falling back to HTTP
+2026-08-09T08:02:34.180142Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-08-09T08:02:34.180235Z  WARN codex_core::client: falling back to HTTP
+codex
+我将按指定写作技能完成开题报告。
+exec
+"C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.4.0_x64__8wekyb3d8bbwe\\pwsh.exe" -Command "Get-Content -Raw -LiteralPath 'chinese-academic-writing-assistant/SKILL.md'" in F:\Workspaces\chinese-academic-writing-skill\.release\worktrees\ab-v008-baseline
+ succeeded in 637ms:
+---
+name: chinese-academic-writing-assistant
+description: 用于依据作者材料、文献、学校要求或明确授权检索的来源，协作完成中文本科、硕士或课程论文、开题报告及独立文献综述的提纲、章节起草、修改和审稿；在组织论证、核对论点与证据、校准文体、处理多章节或跨轮次长稿、筛查全文一致性、核验来源或降低模板化表达时使用。材料不足时降级交付，不编造研究过程、数据、文献、引用、结果或结论，不处理统计有效性、投稿、排版、答辩及检测规避。
+---
+
+# 中文论文写作
+
+## 写作边界
+
+- 支持中文本科论文、硕士学位论文、课程论文、开题报告和最终交付物为独立文献综述的任务。
+- 不处理英文论文全文、投稿全流程、科研伦理审批、统计分析或有效性判定、答辩材料、排版、查重率预测和 AIGC 检测规避。给定输入与公式均可核对时，可做简单算术，但不据此补充统计或因果结论。
+- 作者应在导师指导和所在机构规则下独立完成学术工作。不得替作者形成其未提供的核心学术贡献，不得代写整篇提交稿、拼贴或隐去来源，不得伪造研究过程、数据、案例、方法、文献、引用、结果或结论。
+- 直接引语保留引号、来源与定位；转述仍保留来源。正常写作不机械附加免责声明，但不承诺通过答辩、达到发表水平、符合全部规范或降低检测指标。
+
+## 四维路由
+
+先判断“最终交付物 × 操作模式 × 材料状态 × 研究阶段”。模式为提纲构造、据材料起草、底稿修改或只审不改；材料状态区分题目、底稿、全文来源、摘要、元数据、数据与模板；阶段区分拟开展、进行中和已完成。
+
+| 最终交付物 | 唯一专项叶 |
+| --- | --- |
+| 普通论文或论文中的文献综述章节 | `references/academic-writing.md` |
+| 开题报告及其中的研究现状、研究述评 | `references/academic-proposal.md` |
+| 最终交付物本身为独立文献综述 | `references/academic-literature-review.md` |
+
+组合任务按所需顺序拆成原子任务；每个原子任务只读取一个专项叶，完成后再处理下一项，不同时加载另外两个叶。路由以最终交付物的文种为准，不按“毕业论文”等主题词触发。若交付物是通知、申请等非学术文稿，立即停止本 Skill 的起草，不输出正文，不补充或推断办理要素；简要说明超出范围并建议改用正式通知或公文写作能力。
+
+## 材料门禁与优先级
+
+- 无目标文本不能执行底稿修改，可先请用户提供原文或只给修改检查表。
+- 只有题目时，不形成完整论文或完整开题设计；只给可成立的结构、研究问题、最小范围和补充材料建议。
+- 题目、概念、研究意图和常识性判断都不是事实证据；不得把领域惯例、通用背景、典型问题或示例写成已有事实、研究发现、已确定维度或机制。提纲或正文后可将其列为待选择和验证的候选，但不自动进入正文。只知道“已整理某类材料”而未读内容时，只记录材料状态，不概括主张。
+- 输入中没有某项内容，只能说明现有材料不含该项，不能据此判断作者或研究项目是否尚未确定。直接起草可用正文时，省略无依据缺项；确需提醒的，移到正文后建议，说明应补充的位置和材料，不把“本轮未提供”“需作者确认”等制作回合标签写进正文。除用户明确给出的安排外，不扩写招募、访谈提纲、编码、分析步骤、写作环节、进度任务或成果范围。
+- 独立综述没有可用来源且用户未授权检索时，不写综述正文；改交范围界定、来源收集清单或提纲。
+- 没有数据、方法记录或研究结果时，不生成统计值、显著性、因果关系或已完成结论。
+- 缺少变量结构和研究设计时，只列出需要补充的信息，不预选统计检验、结果方向、显著性表达或因果模板。
+- 执行优先级为：用户明确要求 > 学校或导师明确模板 > 用户指定的最新版底稿 > 旧稿与参考材料。题目、事实、数字、术语、引用和证据状态不得静默改变；只有用户提供更正依据时才更新。
+- 默认不联网。只有用户明确要求或同意检索、核验、补充公开来源，才可在约定范围和本轮任务内联网；“最新、当前、近年”、DOI、URL 和材料不足都不构成授权。采用内容时保留来源、定位和正文位置。
+- 大材料先登记文件、版本与实际覆盖范围，再分批处理。未完整读取时明确已覆盖和未覆盖部分，不声称完成全文复核。
+
+## 内部证据账本
+
+写作前记录材料 ID、来源层级、定位、核验状态、可支持论点、允许强度和计划位置；单句或单段语言任务可简化为不可变项。用户提供材料不等于来源已核验。账本默认不展示，修改、审稿和分批续写时保持一致。
+
+- 已读原文：可在原文证据范围内转述；直接引语必须保留可回查定位。
+- 已读摘要：只支持摘要明确陈述的有限结论，不生成直接引语、页码或摘要以外的细节。
+- 仅有元数据：只能证明作者、题名、年份、载体、DOI 等书目信息，不能证明论文观点。
+- 待核验来源：不进入最终正文，只可出现在审稿意见或正文后“其他修改建议”的核验项中。
+
+引用检查分别判断：来源是否存在、元数据是否一致、原文是否支持当前论断、著录格式是否符合要求。DOI 存在不等于论点获得支持。学校或导师模板优先；无模板且用户明确要求国家标准时，可将现行 GB/T 7714-2025 作为参考文献著录候选，将 GB/T 7713.1-2025 作为学位论文编写参考。未实际读取规范正文时，不得声称“完全符合”。
+
+多章节、跨轮次续写或明确全文一致性筛查时，另读 `references/long-form-consistency.md`；单段、单节和提纲任务不读。维护全文状态与分节简报，合稿后复核全文；未读全稿不得声称完成全文筛查。
+
+## 执行与交付
+
+1. 锁定交付物、模式、阶段、模板、材料和不可变项；样本称谓按原文保留，不从场景推定身份。
+2. 在规划层建立“研究问题—章节任务—论点—证据—结论回应”关系并分配篇幅；段落以完成当前最小论证单元为准，所需动作可省略、重排或跨段展开，不规定句数、句位或统一长度。
+3. 读取唯一专项叶，按论证关系和学科惯例自主成段；缺口收缩正文或移到建议，不用套话或材料外内容补篇幅。
+4. 逐项核对事实、研究状态、引用映射、章节关系、输出模式和已覆盖范围。完成后做成品残留终检：同一材料或证据边界只在首次必要位置说明，后文只有在主导任务改变且确有必要时再限定；研究状态用“已、拟、尚未”等正文时态和语气表达；删除制作回合或版本标签、写作控制旁白，以及段末或文末“以上、上述内容不作为结论”一类重复兜底说明。必要的结论限制应就近融入对应论断，不另作小字式尾注。
+
+## 渐进式来源检索与引用覆盖
+
+授权检索或核验时，另开上下文或轮次读取 `references/citation-research.md`，只把紧凑证据账本传入专项叶；来源层与 ANTI-AI 层不得同阶段加载。经复核确认的来源错配、关系升级、因果化、数字或否定范围错误，任一例即阻断相应正文交付。
+
+## 渐进式 ANTI-AI 复核
+
+只有用户明确要求文风、去模板化或语言质量复核，或在唯一专项叶完成内容与证据复核后已定位到具体模板化问题时，才读取 `references/anti-ai-writing.md`；它不是第四种任务叶，不允许借此加载另外两个专项叶。普通起草、事实审查，以及只交付提纲、材料清单、范围说明、原始摘录或越界转交时不读取。
+
+复核只处理已确认的问题，无明确问题则保持原文。只输出正文时，不输出候选或检查过程。
+
+最终交付不输出隐藏推理、加载、规则复述或模板旁白；材料范围与核验状态仅在影响可靠性时说明。用户给出的受众定位、版本用途和制作要求只作为写作约束，不自动写入正文；成品不得夹带模型自身的制作过程。
+
+只审不改必须覆盖“位置—严重度—问题—依据—修改建议”，但承载形式服从用户和文本规模：短段可用表格，长稿可用总评、阻断项和分节问题，不默认重写全文。用户要求只输出正文、只输出修改后的文字或不解释时，只交付相应文本；该要求不放宽材料、证据和诚信门禁。
+
+用户未限制只输出正文时，可在正文后单列“补充与修改建议”，按实际需要给出：`可补充论点`、`可补充论据`、`可补充论述`、`其他修改建议`。建议应说明补充位置、所需材料或展开方向，不把待补内容写成已有事实、证据、研究过程或完成结论；没有实际建议的类别不输出。
+
+profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+Microsoft.PowerShell_profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+
+2026-08-09T08:02:51.215668Z  WARN codex_core_plugins::manager: failed to refresh remote installed plugins cache error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/installed: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/installed?scope=USER)
+exec
+"C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.4.0_x64__8wekyb3d8bbwe\\pwsh.exe" -Command "Get-Content -Raw -LiteralPath 'chinese-academic-writing-assistant/references/academic-proposal.md'" in F:\Workspaces\chinese-academic-writing-skill\.release\worktrees\ab-v008-baseline
+ succeeded in 664ms:
+# 中文论文开题报告专项叶
+
+仅在最终交付物为中文论文开题报告时读取。开题中的国内外研究现状、文献综述和研究述评仍属于本叶；若用户另要一份独立综述，由入口拆成下一原子任务。本叶只补充开题任务差异。
+
+## 状态与任务链
+
+严格区分三类表述：`已有基础`只写已经完成且有材料支持的工作，`拟开展工作`只写作者已经提出的研究安排，`预期结果`只写计划希望获得的产出，不写成已经证实的发现。
+
+围绕“中心问题—研究目标—子问题—研究内容—方法与材料来源—进度与已有条件—预期产出”建立对应关系；正文栏目和顺序服从学校或导师模板。题目、研究对象或中心问题不足时，只给最小范围说明、栏目框架和材料清单，不补造方法、进度、可行性或成果。
+
+## 三种模式
+
+### 据材料起草
+
+- 先把用户已给内容分别归入已有、拟开展和预期三种状态，再映射到模板栏目。
+- 选题依据同样受材料门禁约束。未提供政策正文、文献或事实材料时，不补行业趋势、价值影响、典型困难、障碍类别或作用机制；只知道已经整理政策文本时，只写该项基础已经存在，不概括政策内容。
+- 直接使用正文中的研究问题、访谈维度和分析类别只采用作者已经提出或材料能够支持的内容。提纲或正文后建议可列出明确标为“候选、待选择、待验证”的备选维度，但不得写成作者已经确定的方案，也不先替后续材料分类。
+- 对象范围、数量、提纲、招募、编码、分析步骤和后续写作若没有材料依据，不写进开题正文，也不按常见研究流程代拟；确需提醒时移到正文后建议，写明补充位置和所需材料。输入缺失不等于项目尚未确定，进度与成果不得超出作者明确给出的任务和时间。
+- 研究现状只综合已提供或已核验来源；不从题名、元数据或摘要未明确陈述之处推测发现。
+- 方法、进度和可行性只写作者已经给出的方案或条件；不能成立的部分缩短或移到建议。
+
+### 底稿修改
+
+- 保留原稿中的计划状态和已确认栏目，不把导师建议、旧方案或待讨论方法写成最终确定安排。
+- 调整问题、目标、内容与方法的对应关系时，不补入作者未提供的研究对象、样本、工具、时间表或成果。
+- 发现前后版本冲突时指出冲突并请求确认，不自行选择更“完整”的方案。
+
+### 只审不改
+
+- 检查已有、拟开展和预期是否混淆，研究问题是否导向目标、内容和方法。
+- 检查方法是否有材料依据，进度是否与已有条件匹配，预期产出是否被写成结论。
+- 按入口统一审稿接口列问题，不重写开题正文。
+
+## 正文后建议焦点
+
+补充与修改建议按入口分类，优先检查问题—目标—内容—方法—进度关系及计划状态；不得生成拟真研究设计、拟真数据或可被误当成既有事实的示例。
+
+## 专项复核
+
+- 题目、对象、范围、中心问题、目标、内容、方法、进度、条件和预期产出是否逐级对应。
+- 已有事实是否有材料支撑，拟开展事项是否保持计划状态，预期结果是否被误写成既成成果。
+- 研究现状是否与开题问题相关，是否出现无来源发现、伪研究空白或与方法脱节的堆叠。
+
+profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+Microsoft.PowerShell_profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+
+2026-08-09T08:03:35.279725Z  WARN codex_core_plugins::remote::remote_installed_plugin_sync: failed to download remote installed plugin bundle remote_plugin_id=plugin_connector_1p_2330815c823c8191941e5dc465bb899f plugin=openai-templates marketplace=openai-curated-remote error=failed to read remote plugin bundle download response from https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-9268-81f7-8926-83f58a34537f/raw?se=2026-08-09T08%3A07%3A31Z&sp=r&sv=2026-02-06&sr=b&scid=ad44eaba-14f5-43fe-bdb9-41414939eb84&skoid=80e81ea6-3c08-46f9-bd84-b87176742bcd&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-08T15%3A39%3A18Z&ske=2026-08-09T15%3A39%3A18Z&sks=b&skv=2026-02-06&sig=OvT%2BSDU7R2g%2B0rtZu8UWX2fsht0a1uy3I04BRhtQBzU%3D: error decoding response body
+2026-08-09T08:03:36.415832Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="browser-use@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\browser-use
+2026-08-09T08:03:36.415857Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="browser@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\browser
+2026-08-09T08:03:36.415861Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="chinese-official-writing@chinese-official-writing-local" path=C:\Users\admin\.codex-writer-v008\plugins\cache\chinese-official-writing-local\chinese-official-writing
+2026-08-09T08:03:36.415866Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="chrome@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\chrome
+2026-08-09T08:03:36.415869Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="computer-use@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\computer-use
+2026-08-09T08:03:36.415873Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="documents@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\documents
+2026-08-09T08:03:36.415877Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="pdf@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\pdf
+2026-08-09T08:03:36.415880Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="presentations@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\presentations
+2026-08-09T08:03:36.415884Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="sites@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\sites
+2026-08-09T08:03:36.415888Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="spreadsheets@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\spreadsheets
+2026-08-09T08:03:36.415891Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="template-creator@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\template-creator
+2026-08-09T08:03:36.415895Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="visualize@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\visualize
+2026-08-09T08:03:51.641046Z  WARN codex_core_plugins::manager: failed to warm remote plugin catalog cache error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/list: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/list?scope=GLOBAL&limit=200&pageToken=eyJzY29wZSI6IkdMT0JBTCIsIndvcmtzcGFjZV9pZCI6bnVsbCwiY3JlYXRvcl9hY2NvdW50X3VzZXJfaWQiOm51bGwsImNvbGxlY3Rpb24iOm51bGwsImluY2x1ZGVfcmVzdHJpY3RlZF9wbHVnaW5zIjp0cnVlLCJpbmNsdWRlX3VubGlzdGVkX2dsb2JhbF9wbHVnaW5zIjp0cnVlLCJlbGlnaWJsZV9wbGFuX3R5cGUiOiJwcm8iLCJlbmZvcmNlX3BsYW5fZWxpZ2liaWxpdHkiOmZhbHNlLCJyYW5rX2J5X3BvcHVsYXJpdHkiOnRydWUsImNvbnRpbnVhdGlvbiI6eyJkZXBsb3ltZW50X3R5cGUiOiJwcmltYXJ5IiwicXVlcnlfaWQiOiJyczQ6OWI4YjEyYjctZjIyMC00NzczLTgwMzQtZmRjODg2OTZiNGVhOllGV2hEdFM6MDpsZWFmLTA0NDU3YmY1LWRmMmEtNGU0MC1iN2ZhLWEyMGMyZjUzOWI5YSIsImN1cnNvciI6IlpINjlkWEM0Z0x2dmVITHBoSlVLNmZqaTJOR2pQTlMwR3NWQ3BKVlpnX3ZVTmVFRmNaNWNkalM0Q0pncFJaWmdlXzRkWFluQk4tUDFTU2I3ei1WclhkU1dPc1VlOGRvUi1XNk1VY1VRcWVXa3JVdUF4Tk5PTHhZd0NrdGE4SjJzNGwxaTVxYlB3THpmdF9tcmFuN1ZEclA3YXNaZmYtTlNIcDVEWWExN1NaQWNxWXBQZ3l3M3JrYUMzLTc0b1VGdWE1WU5EU2kzNW5FPSJ9fQ)
+codex
+选题依据
+
+乙区老年助餐服务已有明确的政策和设施基础。乙区民政局《2025年老年助餐服务实施方案》显示，全区已建成助餐点12个，对符合条件的老年人按每人每餐8元标准给予就餐补助（M2）。助餐点及补助与老年人的日常就餐选择相联系，也为从具体生活情境观察其外出和交往提供了切入点。2026年2—3月，已在乙区完成对60岁及以上老年人的半结构访谈32人，其中使用社区助餐服务的18人，未使用的14人；访谈集中于就餐方式、外出频率和社会交往（M1）。这批材料可用于对照两类老年人的相关生活叙述。已核验文献[S1]的一项横断面调查（N=416）显示，使用社区助餐服务的老年人社会参与频率高于未使用者，但作者同时提示，这一关联可能受到健康状态影响（M3）。因此，本研究以乙区访谈记录为主要材料，在政策和已核验文献提供的范围内考察助餐服务使用与社会交往的关系，并谨慎区分材料所呈现的关联与因果解释。
+
+研究问题与目标
+
+本研究围绕三个问题展开：第一，乙区使用社区助餐服务与未使用服务的老年人，在就餐方式、外出频率和社会交往方面分别呈现出哪些相同点与不同点；第二，受访者关于就餐、外出和交往的陈述，呈现出社区助餐服务使用与日常社会交往之间怎样的联系；第三，乙区访谈材料与文献[S1]所报告的关联能否形成相互参照，以及在解释这种联系时应当保持怎样的证据边界。研究目标是系统整理现有访谈信息，形成对两类受访者相关生活情形的清晰描述，并结合乙区政策背景和已核验研究审慎认识助餐服务使用与老年人社会交往之间的关系，不将现有材料不足以支持的内容表述为因果结论。
+
+研究内容
+
+研究首先梳理乙区助餐点建设及就餐补助安排，明确访谈发生的政策背景。其次，以使用情况为区分，对18名服务使用者和14名未使用者的访谈记录进行整理，内容限定为就餐方式、外出频率和社会交往三个既定方面，呈现两类受访者陈述中的共同情况和差异。再次，将访谈材料所能支持的认识与文献[S1]的调查结果进行参照，关注“服务使用”与“社会参与或社会交往”的关联，同时保留文献作者关于健康状态可能影响该关联的提示。最后，在现有材料范围内归纳研究问题的回应，说明能够得到的描述性认识及其解释限度，不扩展到访谈未涉及的因素，也不依据横断面关联推导因果关系。
+
+研究方法与材料
+
+研究采用材料梳理、文献参照和半结构访谈。政策材料为乙区民政局《2025年老年助餐服务实施方案》摘录，用于确认助餐点数量和补助标准（M2）；文献材料为已核验文献[S1]，用于提供已有横断面调查结果及其解释提示（M3）；访谈材料为2026年2—3月在乙区获得的32份半结构访谈记录，受访者均为60岁及以上老年人，其中服务使用者18人、未使用者14人（M1）。访谈记录将依照就餐方式、外出频率和社会交往三个既有主题加以整理，并在两类受访者之间进行对照。研究以访谈陈述的描述和比较为主，政策摘录与已核验文献用于界定背景和参照关系。
+
+进度安排
+
+目前已完成文献梳理提纲和访谈提纲初稿（M4），并已于2026年2—3月完成32人的半结构访谈（M1）。论文计划于2026年12月前完成（M4）。
+
+预期成果
+
+预期形成一篇本科毕业论文。论文将依据政策摘录、已核验文献和乙区访谈记录，系统呈现两类受访者在就餐方式、外出频率和社会交往方面的相关情况，回应社区助餐服务使用与老年人社会交往之间呈现何种联系，并明确现有材料可以支持的认识范围。
+选题依据
+tokens used
+
+28,833
+乙区老年助餐服务已有明确的政策和设施基础。乙区民政局《2025年老年助餐服务实施方案》显示，全区已建成助餐点12个，对符合条件的老年人按每人每餐8元标准给予就餐补助（M2）。助餐点及补助与老年人的日常就餐选择相联系，也为从具体生活情境观察其外出和交往提供了切入点。2026年2—3月，已在乙区完成对60岁及以上老年人的半结构访谈32人，其中使用社区助餐服务的18人，未使用的14人；访谈集中于就餐方式、外出频率和社会交往（M1）。这批材料可用于对照两类老年人的相关生活叙述。已核验文献[S1]的一项横断面调查（N=416）显示，使用社区助餐服务的老年人社会参与频率高于未使用者，但作者同时提示，这一关联可能受到健康状态影响（M3）。因此，本研究以乙区访谈记录为主要材料，在政策和已核验文献提供的范围内考察助餐服务使用与社会交往的关系，并谨慎区分材料所呈现的关联与因果解释。
+
+研究问题与目标
+
+本研究围绕三个问题展开：第一，乙区使用社区助餐服务与未使用服务的老年人，在就餐方式、外出频率和社会交往方面分别呈现出哪些相同点与不同点；第二，受访者关于就餐、外出和交往的陈述，呈现出社区助餐服务使用与日常社会交往之间怎样的联系；第三，乙区访谈材料与文献[S1]所报告的关联能否形成相互参照，以及在解释这种联系时应当保持怎样的证据边界。研究目标是系统整理现有访谈信息，形成对两类受访者相关生活情形的清晰描述，并结合乙区政策背景和已核验研究审慎认识助餐服务使用与老年人社会交往之间的关系，不将现有材料不足以支持的内容表述为因果结论。
+
+研究内容
+
+研究首先梳理乙区助餐点建设及就餐补助安排，明确访谈发生的政策背景。其次，以使用情况为区分，对18名服务使用者和14名未使用者的访谈记录进行整理，内容限定为就餐方式、外出频率和社会交往三个既定方面，呈现两类受访者陈述中的共同情况和差异。再次，将访谈材料所能支持的认识与文献[S1]的调查结果进行参照，关注“服务使用”与“社会参与或社会交往”的关联，同时保留文献作者关于健康状态可能影响该关联的提示。最后，在现有材料范围内归纳研究问题的回应，说明能够得到的描述性认识及其解释限度，不扩展到访谈未涉及的因素，也不依据横断面关联推导因果关系。
+
+研究方法与材料
+
+研究采用材料梳理、文献参照和半结构访谈。政策材料为乙区民政局《2025年老年助餐服务实施方案》摘录，用于确认助餐点数量和补助标准（M2）；文献材料为已核验文献[S1]，用于提供已有横断面调查结果及其解释提示（M3）；访谈材料为2026年2—3月在乙区获得的32份半结构访谈记录，受访者均为60岁及以上老年人，其中服务使用者18人、未使用者14人（M1）。访谈记录将依照就餐方式、外出频率和社会交往三个既有主题加以整理，并在两类受访者之间进行对照。研究以访谈陈述的描述和比较为主，政策摘录与已核验文献用于界定背景和参照关系。
+
+进度安排
+
+目前已完成文献梳理提纲和访谈提纲初稿（M4），并已于2026年2—3月完成32人的半结构访谈（M1）。论文计划于2026年12月前完成（M4）。
+
+预期成果
+
+预期形成一篇本科毕业论文。论文将依据政策摘录、已核验文献和乙区访谈记录，系统呈现两类受访者在就餐方式、外出频率和社会交往方面的相关情况，回应社区助餐服务使用与老年人社会交往之间呈现何种联系，并明确现有材料可以支持的认识范围。
