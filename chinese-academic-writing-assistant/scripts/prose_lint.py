@@ -177,6 +177,42 @@ DELIVERY_PATTERNS: tuple[Pattern, ...] = (
     ),
 )
 
+# Final-body candidates for negative wrap-up tails.  Loaded only in body-only and
+# body-with-suggestions modes so that quoted materials, review output and the
+# suggestion section are never scanned as final-body text.  Findings are candidates
+# for semantic review; genuine research limits and necessary boundaries are kept.
+FINAL_BODY_PATTERNS: tuple[Pattern, ...] = (
+    (
+        "medium",
+        "semantic-review",
+        "unresolved-state-tail",
+        r"(?:尚未|仍未|暂未|还未|尚不|未(?![对就经按在]))[^。！？；\n]{0,24}"
+        r"(?:形成|作出|达成)[^。！？；\n]{0,28}"
+        r"(?:结论|定论|共识|一致意见)(?=[。！？]|\s|$)",
+        "若为泛化未决状态：保留未决含义，直接写具体研究事项与当前研究状态；"
+        "无论证作用则删除。针对具体对象的真实研究限制应保留。",
+    ),
+    (
+        "medium",
+        "semantic-review",
+        "protective-negative-inference",
+        r"(?:尚|仍|还|目前)?(?:不能|无法|不足以)(?:仅凭|单凭|据此|直接据此|由此)?[^。！？；\n]{0,70}"
+        r"(?:推定|判定|认定|判断|说明|证明|得出|确定)"
+        r"|(?:尚|仍|还|目前)?(?:不能|无法|不足以)[^。！？；\n]{0,40}形成[^。！？；\n]{0,24}(?:结论|定论|共识)"
+        r"|(?:尚|仍|还|目前)?(?:不能|无法|不足以)[^。！？；\n]{0,40}作为[^。！？；\n]{0,20}依据",
+        "回读前文与材料：针对具体对象的真实研究限制应保留；只在无对象泛化、"
+        "成簇复现或段末兜底时考虑改为事项与状态的直接陈述。",
+    ),
+    (
+        "low",
+        "semantic-review",
+        "negative-boundary-tail",
+        r"[，；](?:但|但这|这|也|并|同时|并且|而且)?(?:也|并)?不(?:直接)?"
+        r"(?:代表|等同于|意味着|构成)[^。！？\n]{2,70}(?=[。！？]|\s|$)",
+        "相关不等于因果等真实边界应保留；只复核无对象泛化或成簇复现的句末否定收束。",
+    ),
+)
+
 FORMAT_PATTERNS: tuple[Pattern, ...] = (
     (
         "medium",
@@ -653,6 +689,117 @@ def structure_findings(
     return findings
 
 
+SIGNIFICANCE_TAIL_RE = re.compile(
+    r"为[^。！？；\n]{2,52}提供(?:了)?[^。！？；\n]{0,10}"
+    r"(?:理论支撑|实践支撑|实证支撑|支撑|依据|基础|参考|借鉴|启示|条件)[。！？]?$"
+)
+MIN_SUBSTANTIVE_PARAGRAPH = 45
+SIGNIFICANCE_WINDOW = 5
+SIGNIFICANCE_CLUSTER_MIN = 3
+
+
+def significance_tail_cluster_findings(
+    path_label: str,
+    lines: list[str],
+    visible: list[str],
+    line_limit: int,
+) -> list[Finding]:
+    """Report windows where significance-support tails cluster as paragraph closers."""
+    findings: list[Finding] = []
+    window: list[tuple[int, str | None]] = []
+    section = None
+    for line_no, text, block_section in paragraph_blocks(visible, line_limit):
+        if block_section != section:
+            section = block_section
+            window = []
+        compact = re.sub(r"\s+", "", text)
+        if len(compact) < MIN_SUBSTANTIVE_PARAGRAPH:
+            continue
+        tail = SIGNIFICANCE_TAIL_RE.search(text.rstrip())
+        window.append((line_no, tail.group(0) if tail else None))
+        if len(window) > SIGNIFICANCE_WINDOW:
+            window.pop(0)
+        hits = [(hit_line, hit_text) for hit_line, hit_text in window if hit_text]
+        if len(hits) >= SIGNIFICANCE_CLUSTER_MIN:
+            hit_line, hit_text = hits[-1]
+            hit_lines = ", ".join(str(item[0]) for item in hits)
+            findings.append(
+                Finding(
+                    path=path_label,
+                    line=hit_line,
+                    column=1,
+                    severity="low",
+                    category="structure-review",
+                    pattern_id="significance-tail-cluster",
+                    match=hit_text,
+                    count=len(hits),
+                    excerpt=lines[hit_line - 1].strip()[:56],
+                    advice=(
+                        f"近窗口 {len(window)} 个实质段中 {len(hits)} 段以同类意义支撑句尾收束"
+                        f"（约第 {hit_lines} 行）；结合章节功能核对是否拔高或凑意义，"
+                        "单次命中不构成问题。"
+                    ),
+                )
+            )
+            window = []
+    return findings
+
+
+EXTERNAL_NOTE_TITLES = (
+    "待确认事项",
+    "需确认事项",
+    "待补充事项",
+    "需补充信息",
+    "待补充材料",
+    "风险提醒",
+    "核验提示",
+    "写作说明",
+    "材料缺口",
+)
+EXTERNAL_NOTE_PREFIX = re.compile(
+    r"^(?:#{1,6}\s*|[一二三四五六七八九十]+、|\d+[.、．]|第[一二三四五六七八九十百\d]+[章节部分]|[（(][一二三四五六七八九十\d]+[)）])\s*"
+)
+EXTERNAL_NOTE_BOUNDARY = "：:，,。（()）【】 \t"
+
+
+def unexpected_external_note_findings(
+    path_label: str,
+    visible: list[str],
+    delivery_mode: str,
+    line_limit: int,
+) -> list[Finding]:
+    """Flag production-note headings inside a final body delivered without them."""
+    if delivery_mode not in ("body-only", "body-with-suggestions"):
+        return []
+    for line_index, line in enumerate(visible[:line_limit]):
+        stripped = line.strip()
+        if not stripped:
+            continue
+        remainder = EXTERNAL_NOTE_PREFIX.sub("", stripped, count=1).strip()
+        remainder = re.sub(r"^[（(][一二三四五六七八九十\d]+[)）]\s*", "", remainder)
+        for title in EXTERNAL_NOTE_TITLES:
+            if not remainder.startswith(title):
+                continue
+            tail = remainder[len(title) :].strip()
+            if tail and tail[0] not in EXTERNAL_NOTE_BOUNDARY:
+                continue
+            return [
+                Finding(
+                    path=path_label,
+                    line=line_index + 1,
+                    column=1,
+                    severity="high",
+                    category="production-residue",
+                    pattern_id="unexpected-external-note",
+                    match=stripped,
+                    count=1,
+                    excerpt=stripped[:56],
+                    advice="只交付正文的终稿不应附带待确认、需补充、风险提醒等制作性说明；移出正文或并入正文后建议。",
+                )
+            ]
+    return []
+
+
 def unbalanced_findings(
     path_label: str,
     lines: list[str],
@@ -704,6 +851,11 @@ def scan(
     if delivery_mode != "review-only":
         add_pattern_findings(findings, path_label, lines, visible, SEMANTIC_PATTERNS, line_limit)
         findings.extend(frequency_findings(path_label, lines, visible, line_limit))
+    if delivery_mode in ("body-only", "body-with-suggestions"):
+        add_pattern_findings(findings, path_label, lines, visible, FINAL_BODY_PATTERNS, line_limit)
+        findings.extend(
+            unexpected_external_note_findings(path_label, visible, delivery_mode, line_limit)
+        )
     add_pattern_findings(findings, path_label, lines, visible, DELIVERY_PATTERNS, len(lines))
 
     if include_format:
@@ -711,6 +863,7 @@ def scan(
         findings.extend(unbalanced_findings(path_label, lines, visible, len(lines)))
     if include_structure and delivery_mode != "review-only":
         findings.extend(structure_findings(path_label, lines, visible, line_limit))
+        findings.extend(significance_tail_cluster_findings(path_label, lines, visible, line_limit))
 
     unique: list[Finding] = []
     seen: set[tuple[str, int, int, str, str]] = set()
@@ -742,7 +895,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--encoding", help="Encoding for plain-text inputs.")
     parser.add_argument("--json", action="store_true", help="Emit a JSON array of findings.")
     parser.add_argument("--format", action="store_true", help="Also report punctuation and format candidates.")
-    parser.add_argument("--structure", action="store_true", help="Also report repeated starts, overlap, and uniform rhythm.")
+    parser.add_argument(
+        "--structure",
+        action="store_true",
+        help="Also report repeated starts, overlap, uniform rhythm, and clustered significance tails.",
+    )
     parser.add_argument(
         "--delivery-mode",
         choices=DELIVERY_MODES,
