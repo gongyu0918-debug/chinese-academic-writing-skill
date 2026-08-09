@@ -1,6 +1,6 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.0.7-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.0.7)
+[![Version](https://img.shields.io/badge/version-0.0.8-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.0.8)
 [![ClawHub](https://img.shields.io/badge/ClawHub-chinese--academic--writing--assistant-2f80ed)](https://clawhub.ai/gongyu0918-debug/skills/chinese-academic-writing-assistant)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -54,7 +54,7 @@
 
 ## 安装与调用
 
-当前公开版本：`chinese-academic-writing-assistant@0.0.7`
+当前公开版本：`chinese-academic-writing-assistant@0.0.8`
 
 平台入口：[ClawHub](https://clawhub.ai/gongyu0918-debug/skills/chinese-academic-writing-assistant) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 
@@ -89,7 +89,7 @@ $chinese-academic-writing-assistant 请根据我提供的材料续写第三章�
 
 验证按预注册真实写稿 A/B 执行：4 任务双臂写作加双盲评审，首轮两起候选独有硬失败经全新任务确认轮检验均不具候选臂特异性，按与 DIFF 无关的波动排除；重算后已决定任务 Candidate 3 胜、Baseline 2 胜，无可复现候选独有硬失败。确定性测试 142 项通过。
 
-0.0.8 为本地构建版本，尚未发布到 GitHub、ClawHub 或 skillhub.cn；平台公开版本仍为 0.0.7。
+发布前另做全新任务 R1–R4、全新会话的门禁轮（对 v0.0.7）：机械门禁 8/8 通过；双盲裁判一致，已决定任务 Candidate 3 胜、Baseline 1 胜，全程零硬 FAIL，判定无回退。0.0.8 已发布到 GitHub（tag v0.0.8）、ClawHub 与 skillhub.cn，运行包 11 个文件与 tag v0.0.8 运行树逐文件哈希一致；skillhub.cn 版本 0.0.8 已受理，审核与公开 latest 传播以平台回执为准。
 
 ## 版本 0.0.7
 
