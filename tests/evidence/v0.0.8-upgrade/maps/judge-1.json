@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "judge_id": "judge-1",
+  "task_specs_sha256": "be4041e41f86b47e412e853638e96594821d0facc8338f6f96e920d0d2bd229b",
+  "seed_sha256": "a9f1b128bddb1bfab3692f3041e767be221df6cc892c2d59406d983d604d11b1",
+  "mappings": [
+    {
+      "task_id": "T1",
+      "pair_id": "J01-P001",
+      "left": "candidate",
+      "right": "baseline"
+    },
+    {
+      "task_id": "T2",
+      "pair_id": "J01-P002",
+      "left": "candidate",
+      "right": "baseline"
+    },
+    {
+      "task_id": "T3",
+      "pair_id": "J01-P003",
+      "left": "baseline",
+      "right": "candidate"
+    },
+    {
+      "task_id": "T4",
+      "pair_id": "J01-P004",
+      "left": "baseline",
+      "right": "candidate"
+    }
+  ]
+}

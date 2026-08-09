@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "judge_schema.json",
+  "title": "Blind paired writing judgment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "judge_id",
+    "blind",
+    "mapping_sha256",
+    "results"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "judge_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "blind": {
+      "type": "boolean",
+      "const": true
+    },
+    "mapping_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "results": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/result"
+      }
+    }
+  },
+  "$defs": {
+    "side": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "hard_failures",
+        "notes"
+      ],
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL"
+          ]
+        },
+        "hard_failures": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_id",
+        "pair_id",
+        "left",
+        "right",
+        "winner",
+        "rationale",
+        "anchors"
+      ],
+      "properties": {
+        "task_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pair_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "left": {
+          "$ref": "#/$defs/side"
+        },
+        "right": {
+          "$ref": "#/$defs/side"
+        },
+        "winner": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right",
+            "tie"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "anchors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,354 @@
+Reading additional input from stdin...
+2026-08-09T08:40:07.469936Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="browser-use@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\browser-use
+2026-08-09T08:40:07.469960Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="browser@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\browser
+2026-08-09T08:40:07.469965Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="chinese-official-writing@chinese-official-writing-local" path=C:\Users\admin\.codex-writer-v008\plugins\cache\chinese-official-writing-local\chinese-official-writing
+2026-08-09T08:40:07.469970Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="chrome@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\chrome
+2026-08-09T08:40:07.469974Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="computer-use@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\computer-use
+2026-08-09T08:40:07.469977Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="documents@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\documents
+2026-08-09T08:40:07.469981Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="pdf@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\pdf
+2026-08-09T08:40:07.469985Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="presentations@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\presentations
+2026-08-09T08:40:07.469989Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="sites@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\sites
+2026-08-09T08:40:07.469993Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="spreadsheets@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\spreadsheets
+2026-08-09T08:40:07.469997Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="template-creator@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\template-creator
+2026-08-09T08:40:07.470004Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="visualize@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\visualize
+2026-08-09T08:40:07.555927Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+OpenAI Codex v0.144.6
+--------
+workdir: F:\Workspaces\chinese-academic-writing-skill\.release\worktrees\ab-v008-baseline
+model: gpt-5.6-sol
+provider: openai
+approval: on-request
+sandbox: read-only
+reasoning effort: ultra
+reasoning summaries: none
+session id: 019fe5ad-e826-75a1-b32d-b206701686e6
+--------
+user
+# Writer 外层说明
+
+你在完成一个真实中文论文写作任务。先完整读取当前工作区的 `chinese-academic-writing-assistant/SKILL.md`，再严格按入口只读取完成当前任务需要的 reference；不得读取 `tests/evidence`、`.release`、Git 历史或当前工作区之外的文件。不要分析 Skill，不要评价规则，不要说明读取过程。随后把所附任务文本视为用户的完整需求，只输出用户要求的最终成品。
+
+
+【任务】
+
+# T6 只审不改（确认轮）
+
+最终交付物是对一篇公共卫生课程论文的一节草稿只审不改。
+
+【材料】
+
+M1 县卫生健康局 2025 年统计：全县有县级医院 2 家，卫生技术人员 1240 人，全年诊疗 86 万人次。
+
+M2 已核验文献 [S1]：对东部某省县级医院的研究显示，引入智能分诊系统后，患者平均候诊时间下降。
+
+M3 已核验文献 [S2]：对中部某地区 3 个县的调查发现，县级医院设备运维培训次数与设备故障报修处理速度呈正相关。
+
+M4 作者实习记录（2026 年）：某县人民医院门诊大厅的智能分诊终端在一周内出现故障 3 次。
+
+【待审草稿】
+
+## 一、智能分诊系统的引入与候诊变化
+
+如上所述，本节先说明设备情况，再分析候诊数据。近年来，智能分诊系统显著缩短了本县县级医院的患者候诊时间 [S1]。县卫生健康局 2025 年统计显示，全县有县级医院 2 家，卫生技术人员 1240 人 [M1]，说明医疗人力资源已经充足。有研究表明，智能分诊系统的引入使患者候诊时间下降 [S1]，这说明数字化转型是解决看病难的根本途径。
+
+## 二、设备配置与运维能力
+
+县级医院的数字化投入与设备运维能力呈正相关 [S2]。作者 2026 年实习观察发现，某县人民医院门诊大厅的智能分诊终端一周内出现故障 3 次 [M4]。综合来看，本县县级医院的数字化设备已经全面普及，设备故障只是个别现象。今后应进一步加大投入，推动县级医院数字化转型再上新台阶。
+
+【要求】
+
+1. 对这份草稿只审不改，不要重写或改写草稿文字。
+2. 依次输出：总评、阻断项、分节问题、可保留处、补充与修改建议。
+3. 问题要给出位置、严重度、依据和修改建议；没有依据的判断要明确说明。
+
+
+2026-08-09T08:40:07.850582Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-08-09T08:40:07.850653Z  WARN codex_core::client: falling back to HTTP
+2026-08-09T08:40:08.740590Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="browser-use@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\browser-use
+2026-08-09T08:40:08.740612Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="browser@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\browser
+2026-08-09T08:40:08.740622Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="chinese-official-writing@chinese-official-writing-local" path=C:\Users\admin\.codex-writer-v008\plugins\cache\chinese-official-writing-local\chinese-official-writing
+2026-08-09T08:40:08.740626Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="chrome@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\chrome
+2026-08-09T08:40:08.740630Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="computer-use@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\computer-use
+2026-08-09T08:40:08.740634Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="documents@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\documents
+2026-08-09T08:40:08.740638Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="pdf@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\pdf
+2026-08-09T08:40:08.740642Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="presentations@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\presentations
+2026-08-09T08:40:08.740647Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="sites@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\sites
+2026-08-09T08:40:08.740650Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="spreadsheets@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\spreadsheets
+2026-08-09T08:40:08.740654Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="template-creator@openai-primary-runtime" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-primary-runtime\template-creator
+2026-08-09T08:40:08.740657Z  WARN codex_core_plugins::loader: failed to load plugin: plugin is not installed plugin="visualize@openai-bundled" path=C:\Users\admin\.codex-writer-v008\plugins\cache\openai-bundled\visualize
+2026-08-09T08:40:09.050948Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-08-09T08:40:09.051011Z  WARN codex_core::client: falling back to HTTP
+codex
+我将按要求完成“只审不改”的确认轮。
+exec
+"C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.4.0_x64__8wekyb3d8bbwe\\pwsh.exe" -Command "Get-Content -Raw -LiteralPath 'chinese-academic-writing-assistant/SKILL.md'" in F:\Workspaces\chinese-academic-writing-skill\.release\worktrees\ab-v008-baseline
+ succeeded in 672ms:
+---
+name: chinese-academic-writing-assistant
+description: 用于依据作者材料、文献、学校要求或明确授权检索的来源，协作完成中文本科、硕士或课程论文、开题报告及独立文献综述的提纲、章节起草、修改和审稿；在组织论证、核对论点与证据、校准文体、处理多章节或跨轮次长稿、筛查全文一致性、核验来源或降低模板化表达时使用。材料不足时降级交付，不编造研究过程、数据、文献、引用、结果或结论，不处理统计有效性、投稿、排版、答辩及检测规避。
+---
+
+# 中文论文写作
+
+## 写作边界
+
+- 支持中文本科论文、硕士学位论文、课程论文、开题报告和最终交付物为独立文献综述的任务。
+- 不处理英文论文全文、投稿全流程、科研伦理审批、统计分析或有效性判定、答辩材料、排版、查重率预测和 AIGC 检测规避。给定输入与公式均可核对时，可做简单算术，但不据此补充统计或因果结论。
+- 作者应在导师指导和所在机构规则下独立完成学术工作。不得替作者形成其未提供的核心学术贡献，不得代写整篇提交稿、拼贴或隐去来源，不得伪造研究过程、数据、案例、方法、文献、引用、结果或结论。
+- 直接引语保留引号、来源与定位；转述仍保留来源。正常写作不机械附加免责声明，但不承诺通过答辩、达到发表水平、符合全部规范或降低检测指标。
+
+## 四维路由
+
+先判断“最终交付物 × 操作模式 × 材料状态 × 研究阶段”。模式为提纲构造、据材料起草、底稿修改或只审不改；材料状态区分题目、底稿、全文来源、摘要、元数据、数据与模板；阶段区分拟开展、进行中和已完成。
+
+| 最终交付物 | 唯一专项叶 |
+| --- | --- |
+| 普通论文或论文中的文献综述章节 | `references/academic-writing.md` |
+| 开题报告及其中的研究现状、研究述评 | `references/academic-proposal.md` |
+| 最终交付物本身为独立文献综述 | `references/academic-literature-review.md` |
+
+组合任务按所需顺序拆成原子任务；每个原子任务只读取一个专项叶，完成后再处理下一项，不同时加载另外两个叶。路由以最终交付物的文种为准，不按“毕业论文”等主题词触发。若交付物是通知、申请等非学术文稿，立即停止本 Skill 的起草，不输出正文，不补充或推断办理要素；简要说明超出范围并建议改用正式通知或公文写作能力。
+
+## 材料门禁与优先级
+
+- 无目标文本不能执行底稿修改，可先请用户提供原文或只给修改检查表。
+- 只有题目时，不形成完整论文或完整开题设计；只给可成立的结构、研究问题、最小范围和补充材料建议。
+- 题目、概念、研究意图和常识性判断都不是事实证据；不得把领域惯例、通用背景、典型问题或示例写成已有事实、研究发现、已确定维度或机制。提纲或正文后可将其列为待选择和验证的候选，但不自动进入正文。只知道“已整理某类材料”而未读内容时，只记录材料状态，不概括主张。
+- 输入中没有某项内容，只能说明现有材料不含该项，不能据此判断作者或研究项目是否尚未确定。直接起草可用正文时，省略无依据缺项；确需提醒的，移到正文后建议，说明应补充的位置和材料，不把“本轮未提供”“需作者确认”等制作回合标签写进正文。除用户明确给出的安排外，不扩写招募、访谈提纲、编码、分析步骤、写作环节、进度任务或成果范围。
+- 独立综述没有可用来源且用户未授权检索时，不写综述正文；改交范围界定、来源收集清单或提纲。
+- 没有数据、方法记录或研究结果时，不生成统计值、显著性、因果关系或已完成结论。
+- 缺少变量结构和研究设计时，只列出需要补充的信息，不预选统计检验、结果方向、显著性表达或因果模板。
+- 执行优先级为：用户明确要求 > 学校或导师明确模板 > 用户指定的最新版底稿 > 旧稿与参考材料。题目、事实、数字、术语、引用和证据状态不得静默改变；只有用户提供更正依据时才更新。
+- 默认不联网。只有用户明确要求或同意检索、核验、补充公开来源，才可在约定范围和本轮任务内联网；“最新、当前、近年”、DOI、URL 和材料不足都不构成授权。采用内容时保留来源、定位和正文位置。
+- 大材料先登记文件、版本与实际覆盖范围，再分批处理。未完整读取时明确已覆盖和未覆盖部分，不声称完成全文复核。
+
+## 内部证据账本
+
+写作前记录材料 ID、来源层级、定位、核验状态、可支持论点、允许强度和计划位置；单句或单段语言任务可简化为不可变项。用户提供材料不等于来源已核验。账本默认不展示，修改、审稿和分批续写时保持一致。
+
+- 已读原文：可在原文证据范围内转述；直接引语必须保留可回查定位。
+- 已读摘要：只支持摘要明确陈述的有限结论，不生成直接引语、页码或摘要以外的细节。
+- 仅有元数据：只能证明作者、题名、年份、载体、DOI 等书目信息，不能证明论文观点。
+- 待核验来源：不进入最终正文，只可出现在审稿意见或正文后“其他修改建议”的核验项中。
+
+引用检查分别判断：来源是否存在、元数据是否一致、原文是否支持当前论断、著录格式是否符合要求。DOI 存在不等于论点获得支持。学校或导师模板优先；无模板且用户明确要求国家标准时，可将现行 GB/T 7714-2025 作为参考文献著录候选，将 GB/T 7713.1-2025 作为学位论文编写参考。未实际读取规范正文时，不得声称“完全符合”。
+
+多章节、跨轮次续写或明确全文一致性筛查时，另读 `references/long-form-consistency.md`；单段、单节和提纲任务不读。维护全文状态与分节简报，合稿后复核全文；未读全稿不得声称完成全文筛查。
+
+## 执行与交付
+
+1. 锁定交付物、模式、阶段、模板、材料和不可变项；样本称谓按原文保留，不从场景推定身份。
+2. 在规划层建立“研究问题—章节任务—论点—证据—结论回应”关系并分配篇幅；段落以完成当前最小论证单元为准，所需动作可省略、重排或跨段展开，不规定句数、句位或统一长度。
+3. 读取唯一专项叶，按论证关系和学科惯例自主成段；缺口收缩正文或移到建议，不用套话或材料外内容补篇幅。
+4. 逐项核对事实、研究状态、引用映射、章节关系、输出模式和已覆盖范围。完成后做成品残留终检：同一材料或证据边界只在首次必要位置说明，后文只有在主导任务改变且确有必要时再限定；研究状态用“已、拟、尚未”等正文时态和语气表达；删除制作回合或版本标签、写作控制旁白，以及段末或文末“以上、上述内容不作为结论”一类重复兜底说明。必要的结论限制应就近融入对应论断，不另作小字式尾注。
+
+## 渐进式来源检索与引用覆盖
+
+授权检索或核验时，另开上下文或轮次读取 `references/citation-research.md`，只把紧凑证据账本传入专项叶；来源层与 ANTI-AI 层不得同阶段加载。经复核确认的来源错配、关系升级、因果化、数字或否定范围错误，任一例即阻断相应正文交付。
+
+## 渐进式 ANTI-AI 复核
+
+只有用户明确要求文风、去模板化或语言质量复核，或在唯一专项叶完成内容与证据复核后已定位到具体模板化问题时，才读取 `references/anti-ai-writing.md`；它不是第四种任务叶，不允许借此加载另外两个专项叶。普通起草、事实审查，以及只交付提纲、材料清单、范围说明、原始摘录或越界转交时不读取。
+
+复核只处理已确认的问题，无明确问题则保持原文。只输出正文时，不输出候选或检查过程。
+
+最终交付不输出隐藏推理、加载、规则复述或模板旁白；材料范围与核验状态仅在影响可靠性时说明。用户给出的受众定位、版本用途和制作要求只作为写作约束，不自动写入正文；成品不得夹带模型自身的制作过程。
+
+只审不改必须覆盖“位置—严重度—问题—依据—修改建议”，但承载形式服从用户和文本规模：短段可用表格，长稿可用总评、阻断项和分节问题，不默认重写全文。用户要求只输出正文、只输出修改后的文字或不解释时，只交付相应文本；该要求不放宽材料、证据和诚信门禁。
+
+用户未限制只输出正文时，可在正文后单列“补充与修改建议”，按实际需要给出：`可补充论点`、`可补充论据`、`可补充论述`、`其他修改建议`。建议应说明补充位置、所需材料或展开方向，不把待补内容写成已有事实、证据、研究过程或完成结论；没有实际建议的类别不输出。
+
+profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+Microsoft.PowerShell_profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+
+2026-08-09T08:40:30.389032Z  WARN codex_exec_server::client::http_client::reqwest_http_client: http/request send failed http_method="POST" error_is_timeout=true error_is_connect=true error=error sending request error_sources=Some("client error (Connect): tcp connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (os error 10060)")
+2026-08-09T08:40:30.389112Z  WARN codex_rmcp_client::http_client_adapter: streamable HTTP post_message failed endpoint_scheme="https" endpoint_host="chatgpt.com" endpoint_path="/backend-api/ps/mcp" endpoint_has_query=false mcp_method="tools/list" mcp_request_id="1" has_session_id=false has_authorization_header=true
+2026-08-09T08:40:30.389174Z  WARN codex_rmcp_client::rmcp_client: streamable HTTP MCP tools/list failed with a retryable error; retrying attempt=1 max_attempts=3 delay_ms=250 error=Transport send error: Transport [rmcp::transport::worker::WorkerTransport<rmcp::transport::streamable_http_client::StreamableHttpClientWorker<codex_rmcp_client::http_client_adapter::StreamableHttpClientAdapter>>] error: Client error: HTTP request failed: http/request failed: error sending request for url (https://chatgpt.com/backend-api/ps/mcp)
+2026-08-09T08:40:30.782977Z  WARN codex_core_plugins::manager: failed to warm remote plugin catalog cache error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/list: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/list?scope=GLOBAL&limit=200&pageToken=eyJzY29wZSI6IkdMT0JBTCIsIndvcmtzcGFjZV9pZCI6bnVsbCwiY3JlYXRvcl9hY2NvdW50X3VzZXJfaWQiOm51bGwsImNvbGxlY3Rpb24iOm51bGwsImluY2x1ZGVfcmVzdHJpY3RlZF9wbHVnaW5zIjp0cnVlLCJpbmNsdWRlX3VubGlzdGVkX2dsb2JhbF9wbHVnaW5zIjp0cnVlLCJlbGlnaWJsZV9wbGFuX3R5cGUiOiJwcm8iLCJlbmZvcmNlX3BsYW5fZWxpZ2liaWxpdHkiOmZhbHNlLCJyYW5rX2J5X3BvcHVsYXJpdHkiOnRydWUsImNvbnRpbnVhdGlvbiI6eyJkZXBsb3ltZW50X3R5cGUiOiJwcmltYXJ5IiwicXVlcnlfaWQiOiJyczQ6OGYwM2I1YTgtM2FkNS00NWY0LWE3MGMtMzg3NDdmNWY5MThiOmYwZ3pQWnY6MDpsZWFmLTg5MDIzM2FkLTNlMzUtNGM3YS05NjE2LTZmMjgwMjU3NzI1MSIsImN1cnNvciI6IlpINjlkWEM0Z0x2dmVITHBoSlVLNmZqaTJOR2pQTlMwR3NWQ3BKVlpnX3ZVTmVFRmNaNWNkalM0Q0pncFJaWmdsYTNUZHVqQWlGekNNdzlJMTBVNEsyMjM2ZV9RMjE2Y2RHRUFpb2VYQVlPVTd6OG9ETERVdGhMN0RWaG90NTlLbE9vLTZmeUpfNS1vOVF5NFhaY25IVTZaMVBBc0E0YWdhRTNWQ2g0b2pRUFJZcXR6dkhWczMyNU1WaHNSbVhKRjFYY1JDRm9Tb2RjPSJ9fQ)
+exec
+"C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.6.4.0_x64__8wekyb3d8bbwe\\pwsh.exe" -Command "Get-Content -Raw -LiteralPath 'chinese-academic-writing-assistant/references/academic-writing.md'" in F:\Workspaces\chinese-academic-writing-skill\.release\worktrees\ab-v008-baseline
+ succeeded in 667ms:
+# 普通中文论文专项叶
+
+仅在最终交付物为普通本科论文、硕士学位论文、课程论文，或修改论文内部章节时读取。论文中的文献综述章节仍属于本叶；只有最终交付物本身为独立综述才进入独立综述叶。本叶只补充普通论文任务差异。
+
+## 规划、成段与文体
+
+全文或章节先规划研究问题、章节任务、论点与证据。规划层负责材料和篇幅，正文按论证关系成段；摘要、结论和研究不足只概括正文，不新增数据、方法、贡献或结果。
+
+段落是最小可充分论证单元，不是预填格式。按需选择陈述、举证、解释、比较、反例、边界或衔接；动作可省略、重排或跨段展开，不要求固定句序、句数、首句位置、收束句或等长段落。同一子主张的证据、解释和限定保持在一起；对象、关系或立场改变时再分段，彼此依赖的短段应合并。
+
+学校、导师与载体规范优先。无模板时，理论研究重推理与反驳；文学历史重文本、史料与解释；法学重规范、解释与异议；实证研究重设计、结果与局限；理工研究重复现条件、误差和边界。只作线索，不作模板。
+
+有既有稿或同学科、同层级、同类范文时，只校准术语、引证方式、限制语和节奏；不复制措辞、论证、观点或来源，观点与来源仍须核验。无样本时使用准确、朴实、克制的现代汉语。
+
+单段润色、压缩或引文核对可直接处理，先锁定上下文、术语、事实、数字、引文、图表和公式。成稿后检查篇幅：偏短只展开已有证据，偏长先删重复、旁白和无贡献铺垫，不增添材料外事实凑字数。
+
+## 四种模式
+
+### 提纲构造
+
+- 从题目、研究问题、材料和学校模板提取章节任务；无模板时只按论证需要设置层级，不强凑常见章数。
+- 材料稀疏时收缩结构，不用近义标题跨章重复背景、意义、现状、问题或对策。
+- 对每章标明可用材料和缺失证据，不提前写入未给结论。
+
+### 据材料起草
+
+- 围绕本节问题、证据及其与论点的关系组织正文，不把三者改写成逐段固定句位。
+- 引用汇总章节只归纳已给或已核验来源的共识、差异和限制，不把题名列表改写成研究发现。
+- 结论强度随证据收缩；只有论证关系需要时才设置章节收束或过渡，不重复已写边界。
+
+### 底稿修改
+
+- 只在用户要求范围内调整顺序、论证和语言；保留学校模板、章节层级、核心术语、数据、引用、图表编号和公式。
+- 导师意见和旧稿仅作为修改依据，不把旧结论、旧数据、旧引用或建议内容自动带回最新版正文。
+- 用户要求扩展时，只使用已经提供或核验的补充材料；没有证据的扩展转入正文后建议。
+
+### 只审不改
+
+- 先审研究问题、章节任务、论点、证据、方法、结果和结论是否闭合，再审术语、语言和格式。
+- 没有原始材料或专业依据时，不断言方法正确、统计有效、文献真实或论文可以通过。
+- 按入口统一审稿接口列问题，不重写被审文本。
+
+## 正文后建议焦点
+
+补充与修改建议按入口分类，优先关注中心判断、证据缺口、论证关系以及章节、术语、图表公式和引用一致性。
+
+## 专项复核
+
+- 段落是否推进当前论证单元，证据是否得到必要解释，是否出现同义反复或无依据强评价。
+- 小节是否完成上级任务，标题、论点、材料和小结是否一致，是否与相邻小节重复。
+- 研究问题、章节任务和结论是否逐级回应；摘要与结论是否只概括正文。
+- 术语、研究对象、人称、方法、结果、图表、公式、引文序号和参考文献是否稿内一致。
+
+profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+Microsoft.PowerShell_profile.ps1: Cannot dot-source this command because it was defined in a different language mode. To invoke this command without importing its contents, omit the '.' operator.
+
+2026-08-09T08:40:45.727149Z  WARN codex_analytics::client: failed to send events request: error sending request for url (https://chatgpt.com/backend-api/codex/analytics-events/events)
+codex
+## 总评
+
+草稿已形成“候诊变化—设备运维”两条分析线索，M1、M4中的部分事实转述准确，但核心论点与证据尚未闭合。S1、S2均为外地研究，不能直接证明本县整体情况；“显著缩短”“人力资源已经充足”“根本途径”“数字化投入与运维能力呈正相关”“全面普及”“故障只是个别现象”等判断均超出材料支持范围。
+
+第一节没有本县智能分诊系统的配置及候诊数据，第二节没有本县设备普及率、运维培训和维修效率数据，现有版本不宜直接提交。材料仅提供S1、S2的核验结论，未提供研究设计、统计结果和完整著录信息，因此无法判断统计显著性、因果关系及引文格式是否合规。
+
+## 阻断项
+
+| 位置 | 严重度 | 问题 | 依据 | 修改建议 |
+|---|---|---|---|---|
+| 第一节第2句“近年来……显著缩短了本县……”及第4句“引入使……” | 阻断 | 将外地研究结论直接套用于本县，并增加“近年来”“显著”和因果关系 | S1仅表明东部某省一所县级医院引入系统后平均候诊时间下降，不能证明本县情况；材料未提供显著性检验，也未说明研究设计足以识别因果关系 | 将S1严格限定为外部案例；如需保留本县、显著或因果判断，应补充本县实施前后候诊数据、比较方法及统计结果 |
+| 第一节第3句“说明医疗人力资源已经充足” | 阻断 | 由人员总量直接推断人力资源充足，判断依据不足 | M1只提供2家医院、1240名卫生技术人员和86万人次诊疗量，未提供服务人口、人员结构、配置标准、岗位缺口和工作负荷等信息 | 保留客观统计时删除充分性判断；如需评价是否充足，应补充适用标准、比较口径和人员结构数据 |
+| 第一节末句“数字化转型是解决看病难的根本途径” | 阻断 | 从单项候诊结果外推至“看病难”的根本解决途径，结论范围和强度过大 | S1只涉及一所县级医院的平均候诊时间变化，不能覆盖医疗可及性、费用、服务能力等“看病难”的其他方面，也不能证明数字化转型具有根本性或唯一性 | 删除或显著收缩该结论；如需讨论“看病难”，应先界定概念并补充多维指标和比较证据 |
+| 第二节首句“数字化投入与设备运维能力呈正相关” | 阻断 | 替换了S2的研究变量 | S2支持的是“运维培训次数”与“故障报修处理速度”呈正相关，不是“数字化投入”与整体“运维能力”呈正相关 | 按S2实际变量和调查范围表述；如需讨论数字化投入，应另补直接研究投入与运维能力关系的证据 |
+| 第二节第3句“已经全面普及，设备故障只是个别现象” | 阻断 | “全面普及”和“个别现象”均无证据支持 | 现有材料没有本县设备数量、覆盖率或故障率。M4只记录一台终端一周内故障3次，既不能证明全面普及，也不能据此判断故障是普遍还是个别；M4中的“某县”是否就是M1所指本县也未明确 | 删除整体性结论，先核实观察地点；补充设备总量、覆盖范围、运行时长、故障次数和故障率后再作判断 |
+| 第二节末句“进一步加大投入……” | 阻断 | 对策与前文证据缺少直接对应关系 | 材料未提供本县投入不足、资金缺口或新增投入效果的证据；S2直接涉及的是培训与报修处理速度 | 根据本县实际问题区分设备购置、人员培训、维护制度和报修流程，避免以笼统增加投入替代具体论证 |
+
+## 分节问题
+
+### 第一节
+
+| 位置 | 严重度 | 问题 | 依据 | 修改建议 |
+|---|---|---|---|---|
+| 首句“如上所述，本节先说明……再分析……” | 一般 | 属于写作过程旁白，且与后文内容不符 | 当前材料未提供前文，无法核实“如上所述”；后文也没有设备配置情况和本县候诊数据 | 删除过程性说明，改由实质内容直接进入论证；如保留该结构，应先补齐对应材料 |
+| M1统计所在句 | 严重 | 人员数量与本节“智能分诊—候诊变化”的关系没有建立 | M1不包含智能分诊设备或候诊时间信息 | 说明该统计为何与候诊分析有关，或将其调整至承担医疗资源背景分析的适当位置 |
+| 两次引用S1的句子 | 一般 | 同一证据重复出现，第二次没有增加新的解释 | 两处均围绕智能分诊引入后候诊时间下降，论证功能基本相同 | 合并重复内容，将篇幅用于说明研究对象、适用边界及其与本县情况的差异 |
+| “候诊时间”转向“看病难”处 | 严重 | 概念范围突然扩大，缺少中间论证 | 材料只涉及候诊时间，没有给出“看病难”的定义和其他衡量指标 | 限定讨论对象，或补充候诊时间与“看病难”之间的概念关系及其他必要指标 |
+
+### 第二节
+
+| 位置 | 严重度 | 问题 | 依据 | 修改建议 |
+|---|---|---|---|---|
+| 小节标题及全节 | 严重 | 标题要求讨论“设备配置与运维能力”，正文却没有配置规模和运维能力指标 | M4只有单台终端的短期故障记录，S2只有外地培训次数与报修处理速度的相关关系 | 补充本县设备配置、使用和运维数据；若无法补充，应收缩本节任务和结论范围 |
+| M4观察句 | 一般 | 事实可用，但记录方法和代表性不清 | 材料未说明终端总数、故障定义、观察日期、运行时长、故障类型及恢复时间 | 补充实习记录的时间、对象、记录方式和故障明细，并明确其仅为个案观察 |
+| M4与全县结论之间 | 严重 | 从一所医院、一个终端、一周观察推及全县县级医院 | 缺少多医院、多设备和较长时间的数据 | 将个案作为问题线索，不承担全县普遍性判断；普遍性结论需另有覆盖性数据 |
+| 末句“再上新台阶” | 一般 | 表述笼统，缺乏可检验的行动目标 | 现有材料没有明确投入对象、实施措施和预期指标 | 将建议落实到有证据对应的培训、维护、报修响应或设备管理环节，并明确目标 |
+
+## 可保留处
+
+1. “全县有县级医院2家，卫生技术人员1240人”的事实与M1一致，可作为县域医疗资源背景保留，但不能据此推断资源已经充足。
+
+2. S1所支持的核心信息，即某外地县级医院引入智能分诊系统后平均候诊时间下降，可以作为外部研究发现保留，但必须限定研究地域、对象和结论强度。
+
+3. M4关于某县人民医院一台智能分诊终端一周内故障3次的记录与材料一致，可作为个案观察保留，但不能直接外推至全县。
+
+4. S2可用于讨论运维培训与报修处理速度的关系，但必须恢复其实际变量，不能改写为数字化投入与整体运维能力的关系。
+
+5. 将候诊体验和设备运维分别设节，基本符合现有材料的两个证据方向；需要相应收缩标题和结论，或补齐本地数据。
+
+## 补充与修改建议
+
+1. 第一节优先补充本县智能分诊系统的启用时间、覆盖科室、实施前后候诊时间、统计口径、样本范围和同期其他变化。没有这些数据时，只能介绍外部研究，不能确认本县候诊变化。
+
+2. 评价医疗人力资源是否充足，应补充全县服务人口、86万人次诊疗量的具体口径、卫生技术人员专业结构、配置标准、岗位缺口及院际分布。M1中的86万人次可用于交代服务规模，但不能单独证明人员充足或不足。
+
+3. 第二节应补充设备总数、医院覆盖率、终端使用率、运行时长、故障次数、停机时长、平均修复时间、运维人员配置和培训次数，以区分“设备配置”“设备普及”“故障情况”和“运维能力”。
+
+4. 核实M4所述医院是否属于M1统计的同一县，并为实习记录补充可回查的日期、故障类型、记录载体和处理结果。未核实前，不宜使用“本县”归属。
+
+5. 统一S1、S2、M1、M4的引注方式。由于未提供课程论文的引用规范和完整来源信息，目前无法判断这些编号能否作为正式引文；如其仅为材料代号，提交前应改为符合学校要求的文内引用和参考文献著录。
+
+6. 删除重复引证、写作流程旁白和口号式结语，使每段集中完成“提出有限判断—给出对应证据—说明适用边界”的论证任务。
+tokens used
+23,118
+## 总评
+
+草稿已形成“候诊变化—设备运维”两条分析线索，M1、M4中的部分事实转述准确，但核心论点与证据尚未闭合。S1、S2均为外地研究，不能直接证明本县整体情况；“显著缩短”“人力资源已经充足”“根本途径”“数字化投入与运维能力呈正相关”“全面普及”“故障只是个别现象”等判断均超出材料支持范围。
+
+第一节没有本县智能分诊系统的配置及候诊数据，第二节没有本县设备普及率、运维培训和维修效率数据，现有版本不宜直接提交。材料仅提供S1、S2的核验结论，未提供研究设计、统计结果和完整著录信息，因此无法判断统计显著性、因果关系及引文格式是否合规。
+
+## 阻断项
+
+| 位置 | 严重度 | 问题 | 依据 | 修改建议 |
+|---|---|---|---|---|
+| 第一节第2句“近年来……显著缩短了本县……”及第4句“引入使……” | 阻断 | 将外地研究结论直接套用于本县，并增加“近年来”“显著”和因果关系 | S1仅表明东部某省一所县级医院引入系统后平均候诊时间下降，不能证明本县情况；材料未提供显著性检验，也未说明研究设计足以识别因果关系 | 将S1严格限定为外部案例；如需保留本县、显著或因果判断，应补充本县实施前后候诊数据、比较方法及统计结果 |
+| 第一节第3句“说明医疗人力资源已经充足” | 阻断 | 由人员总量直接推断人力资源充足，判断依据不足 | M1只提供2家医院、1240名卫生技术人员和86万人次诊疗量，未提供服务人口、人员结构、配置标准、岗位缺口和工作负荷等信息 | 保留客观统计时删除充分性判断；如需评价是否充足，应补充适用标准、比较口径和人员结构数据 |
+| 第一节末句“数字化转型是解决看病难的根本途径” | 阻断 | 从单项候诊结果外推至“看病难”的根本解决途径，结论范围和强度过大 | S1只涉及一所县级医院的平均候诊时间变化，不能覆盖医疗可及性、费用、服务能力等“看病难”的其他方面，也不能证明数字化转型具有根本性或唯一性 | 删除或显著收缩该结论；如需讨论“看病难”，应先界定概念并补充多维指标和比较证据 |
+| 第二节首句“数字化投入与设备运维能力呈正相关” | 阻断 | 替换了S2的研究变量 | S2支持的是“运维培训次数”与“故障报修处理速度”呈正相关，不是“数字化投入”与整体“运维能力”呈正相关 | 按S2实际变量和调查范围表述；如需讨论数字化投入，应另补直接研究投入与运维能力关系的证据 |
+| 第二节第3句“已经全面普及，设备故障只是个别现象” | 阻断 | “全面普及”和“个别现象”均无证据支持 | 现有材料没有本县设备数量、覆盖率或故障率。M4只记录一台终端一周内故障3次，既不能证明全面普及，也不能据此判断故障是普遍还是个别；M4中的“某县”是否就是M1所指本县也未明确 | 删除整体性结论，先核实观察地点；补充设备总量、覆盖范围、运行时长、故障次数和故障率后再作判断 |
+| 第二节末句“进一步加大投入……” | 阻断 | 对策与前文证据缺少直接对应关系 | 材料未提供本县投入不足、资金缺口或新增投入效果的证据；S2直接涉及的是培训与报修处理速度 | 根据本县实际问题区分设备购置、人员培训、维护制度和报修流程，避免以笼统增加投入替代具体论证 |
+
+## 分节问题
+
+### 第一节
+
+| 位置 | 严重度 | 问题 | 依据 | 修改建议 |
+|---|---|---|---|---|
+| 首句“如上所述，本节先说明……再分析……” | 一般 | 属于写作过程旁白，且与后文内容不符 | 当前材料未提供前文，无法核实“如上所述”；后文也没有设备配置情况和本县候诊数据 | 删除过程性说明，改由实质内容直接进入论证；如保留该结构，应先补齐对应材料 |
+| M1统计所在句 | 严重 | 人员数量与本节“智能分诊—候诊变化”的关系没有建立 | M1不包含智能分诊设备或候诊时间信息 | 说明该统计为何与候诊分析有关，或将其调整至承担医疗资源背景分析的适当位置 |
+| 两次引用S1的句子 | 一般 | 同一证据重复出现，第二次没有增加新的解释 | 两处均围绕智能分诊引入后候诊时间下降，论证功能基本相同 | 合并重复内容，将篇幅用于说明研究对象、适用边界及其与本县情况的差异 |
+| “候诊时间”转向“看病难”处 | 严重 | 概念范围突然扩大，缺少中间论证 | 材料只涉及候诊时间，没有给出“看病难”的定义和其他衡量指标 | 限定讨论对象，或补充候诊时间与“看病难”之间的概念关系及其他必要指标 |
+
+### 第二节
+
+| 位置 | 严重度 | 问题 | 依据 | 修改建议 |
+|---|---|---|---|---|
+| 小节标题及全节 | 严重 | 标题要求讨论“设备配置与运维能力”，正文却没有配置规模和运维能力指标 | M4只有单台终端的短期故障记录，S2只有外地培训次数与报修处理速度的相关关系 | 补充本县设备配置、使用和运维数据；若无法补充，应收缩本节任务和结论范围 |
+| M4观察句 | 一般 | 事实可用，但记录方法和代表性不清 | 材料未说明终端总数、故障定义、观察日期、运行时长、故障类型及恢复时间 | 补充实习记录的时间、对象、记录方式和故障明细，并明确其仅为个案观察 |
+| M4与全县结论之间 | 严重 | 从一所医院、一个终端、一周观察推及全县县级医院 | 缺少多医院、多设备和较长时间的数据 | 将个案作为问题线索，不承担全县普遍性判断；普遍性结论需另有覆盖性数据 |
+| 末句“再上新台阶” | 一般 | 表述笼统，缺乏可检验的行动目标 | 现有材料没有明确投入对象、实施措施和预期指标 | 将建议落实到有证据对应的培训、维护、报修响应或设备管理环节，并明确目标 |
+
+## 可保留处
+
+1. “全县有县级医院2家，卫生技术人员1240人”的事实与M1一致，可作为县域医疗资源背景保留，但不能据此推断资源已经充足。
+
+2. S1所支持的核心信息，即某外地县级医院引入智能分诊系统后平均候诊时间下降，可以作为外部研究发现保留，但必须限定研究地域、对象和结论强度。
+
+3. M4关于某县人民医院一台智能分诊终端一周内故障3次的记录与材料一致，可作为个案观察保留，但不能直接外推至全县。
+
+4. S2可用于讨论运维培训与报修处理速度的关系，但必须恢复其实际变量，不能改写为数字化投入与整体运维能力的关系。
+
+5. 将候诊体验和设备运维分别设节，基本符合现有材料的两个证据方向；需要相应收缩标题和结论，或补齐本地数据。
+
+## 补充与修改建议
+
+1. 第一节优先补充本县智能分诊系统的启用时间、覆盖科室、实施前后候诊时间、统计口径、样本范围和同期其他变化。没有这些数据时，只能介绍外部研究，不能确认本县候诊变化。
+
+2. 评价医疗人力资源是否充足，应补充全县服务人口、86万人次诊疗量的具体口径、卫生技术人员专业结构、配置标准、岗位缺口及院际分布。M1中的86万人次可用于交代服务规模，但不能单独证明人员充足或不足。
+
+3. 第二节应补充设备总数、医院覆盖率、终端使用率、运行时长、故障次数、停机时长、平均修复时间、运维人员配置和培训次数，以区分“设备配置”“设备普及”“故障情况”和“运维能力”。
+
+4. 核实M4所述医院是否属于M1统计的同一县，并为实习记录补充可回查的日期、故障类型、记录载体和处理结果。未核实前，不宜使用“本县”归属。
+
+5. 统一S1、S2、M1、M4的引注方式。由于未提供课程论文的引用规范和完整来源信息，目前无法判断这些编号能否作为正式引文；如其仅为材料代号，提交前应改为符合学校要求的文内引用和参考文献著录。
+
+6. 删除重复引证、写作流程旁白和口号式结语，使每段集中完成“提出有限判断—给出对应证据—说明适用边界”的论证任务。
