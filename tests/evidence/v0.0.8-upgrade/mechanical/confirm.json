@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "specs": "specs/confirm.json",
+  "arms": [
+    "b1",
+    "b2",
+    "c1",
+    "c2"
+  ],
+  "results": [
+    {
+      "task_id": "T5",
+      "arm": "b1",
+      "output": "b1/T5.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1149,
+        "visible_count": 1362,
+        "heading_count": 6,
+        "part_count": 6,
+        "required_heading_count": 6
+      }
+    },
+    {
+      "task_id": "T5",
+      "arm": "b2",
+      "output": "b2/T5.md",
+      "passed": false,
+      "hard_failures": [
+        "missing required literal: 'M1'",
+        "missing required literal: 'M2'",
+        "missing required literal: 'M3'"
+      ],
+      "metrics": {
+        "han_count": 1322,
+        "visible_count": 1509,
+        "heading_count": 6,
+        "part_count": 6,
+        "required_heading_count": 6
+      }
+    },
+    {
+      "task_id": "T5",
+      "arm": "c1",
+      "output": "c1/T5.md",
+      "passed": false,
+      "hard_failures": [
+        "missing required literal: 'M3'"
+      ],
+      "metrics": {
+        "han_count": 1150,
+        "visible_count": 1346,
+        "heading_count": 6,
+        "part_count": 6,
+        "required_heading_count": 6
+      }
+    },
+    {
+      "task_id": "T5",
+      "arm": "c2",
+      "output": "c2/T5.md",
+      "passed": false,
+      "hard_failures": [
+        "missing required literal: 'M1'",
+        "missing required literal: 'M2'",
+        "missing required literal: 'M3'"
+      ],
+      "metrics": {
+        "han_count": 1319,
+        "visible_count": 1508,
+        "heading_count": 6,
+        "part_count": 6,
+        "required_heading_count": 6
+      }
+    },
+    {
+      "task_id": "T6",
+      "arm": "b1",
+      "output": "b1/T6.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2435,
+        "visible_count": 2965,
+        "heading_count": 7,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    },
+    {
+      "task_id": "T6",
+      "arm": "b2",
+      "output": "b2/T6.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2434,
+        "visible_count": 2989,
+        "heading_count": 7,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    },
+    {
+      "task_id": "T6",
+      "arm": "c1",
+      "output": "c1/T6.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2783,
+        "visible_count": 3502,
+        "heading_count": 7,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    },
+    {
+      "task_id": "T6",
+      "arm": "c2",
+      "output": "c2/T6.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 2712,
+        "visible_count": 3387,
+        "heading_count": 7,
+        "part_count": 5,
+        "required_heading_count": 5
+      }
+    }
+  ],
+  "passed": false
+}
