@@ -90,7 +90,7 @@ SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，
 
 SkillHub 发布元数据改为简短用途说明，省去重复 `summary` 和 `homepage`。项目与发布包统一采用 MIT，SkillHub/GitHub 发布资产包含 11 个运行文件和独立 `LICENSE.md`，共 12 个文件；封面图继续作为 GitHub 资产维护，不进入运行包。0.0.9 只发布至 GitHub 与 skillhub.cn，不更新 ClawHub。
 
-扩大化真实写稿曾检验两行“来源可比性与综合边界”候选，但归因复测既未确认受控伤害，也未确认受控收益；该候选已经撤回，不在 0.0.9 运行规则中。本版本不据此声称论文质量或去 AI 味效果获得提升。发布前确定性测试 159 项通过，标准 Skill 校验及 SkillHub 目录包、zip 包 dry-run 均通过。
+扩大化真实写稿曾检验两行“来源可比性与综合边界”候选，但归因复测既未确认受控伤害，也未确认受控收益；该候选已经撤回，不在 0.0.9 运行规则中。本版本不据此声称论文质量或去 AI 味效果获得提升。发布前全量确定性测试 164 项通过，标准 Skill 校验及 SkillHub 目录包、zip 包 dry-run 均通过。GitHub Release 已发布；skillhub.cn 已受理 0.0.9，当前仍处安全与内容审核阶段，公开 latest 传播以平台审核结果为准。
 
 ## 版本 0.0.8
 

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "version": "0.0.9",
+  "recorded_at": "2026-08-11T14:19:20.6618701Z",
+  "release_commit": "31d3beac65f6e33663463476f0110f65e08fd821",
+  "tag": {
+    "name": "v0.0.9",
+    "annotated_object": "830354bf05e98cb54233ad72ad12490a94a75334",
+    "dereferenced_commit": "31d3beac65f6e33663463476f0110f65e08fd821"
+  },
+  "package": {
+    "name": "chinese-academic-writing-assistant-0.0.9-skillhub.zip",
+    "file_count": 12,
+    "runtime_file_count": 11,
+    "license": "MIT",
+    "license_file": "LICENSE.md",
+    "zip_size": 43150,
+    "zip_sha256": "e3873160e4806f1192df3a1afbf256d515b18523af679524fe161f5c2901fe5f",
+    "entries": [
+      "LICENSE.md",
+      "SKILL.md",
+      "agents/openai.yaml",
+      "references/academic-literature-review.md",
+      "references/academic-proposal.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md",
+      "references/citation-research.md",
+      "references/long-form-consistency.md",
+      "scripts/citation_audit.py",
+      "scripts/manuscript_audit.py",
+      "scripts/prose_lint.py"
+    ]
+  },
+  "github": {
+    "repository": "gongyu0918-debug/chinese-academic-writing-skill",
+    "release_id": 368620368,
+    "release_url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.0.9",
+    "published_at": "2026-08-11T14:11:09Z",
+    "asset_id": 510216291,
+    "asset_url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/download/v0.0.9/chinese-academic-writing-assistant-0.0.9-skillhub.zip",
+    "asset_digest": "sha256:e3873160e4806f1192df3a1afbf256d515b18523af679524fe161f5c2901fe5f",
+    "download_recheck": "PASS"
+  },
+  "skillhub": {
+    "source": "community",
+    "namespace": "user_f3d82da7",
+    "slug": "chinese-academic-writing-assistant",
+    "skill_id": 98987,
+    "version_id": 229892,
+    "version": "0.0.9",
+    "file_count": 12,
+    "fingerprint": "b6363b0fa848d32f86c7d504a53aad2d3dcdfb289620a026d213161cdf3634f8",
+    "review_status": "pending",
+    "security_scan_status": "pending",
+    "content_audit_status": "pending",
+    "dashboard_status": "安全审核中",
+    "public_search_visible_version": "0.0.8",
+    "signature_verify_status": "not_found_while_pending",
+    "tags": {
+      "academic": "0.0.9",
+      "chinese": "0.0.9",
+      "latest": "0.0.9"
+    }
+  },
+  "cover": {
+    "source": "assets/skillhub-icon.png",
+    "included_in_package": false,
+    "uploaded_to_skillhub": false,
+    "decision": "本轮不通过浏览器重新上传；下次如需封面，从发布起点采用浏览器完整上传流程。"
+  },
+  "excluded_publish_targets": [
+    "clawhub"
+  ],
+  "validation": {
+    "full_unittest_count": 164,
+    "full_unittest_status": "PASS",
+    "focused_release_test_count": 17,
+    "focused_release_test_status": "PASS",
+    "skill_structure_validation": "PASS",
+    "public_v009_log_scan": "PASS",
+    "skillhub_directory_dry_run": "PASS",
+    "skillhub_zip_dry_run": "PASS",
+    "reproducible_zip_build": "PASS"
+  },
+  "remaining_risks": [
+    "skillhub.cn 0.0.9 尚在安全、内容与总体审核阶段；公开搜索和签名校验仍显示或仅能解析 0.0.8。",
+    "0.0.9 新增公开证据已脱敏；远端既有 v0.0.8 Git 历史仍含内部请求分页与查询标识，未发现 API key、Bearer、密码或邮箱。彻底清除需重写并强推既有公开历史，本次未执行。"
+  ]
+}

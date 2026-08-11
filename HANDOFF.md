@@ -13,6 +13,7 @@
 
 - 本仓库从 `chinese-official-writing-skill` 的论文叶拆分而来，展示名为“中文论文写作”，skill name 为 `chinese-academic-writing-assistant`。
 - 当前已完成独立入口、三条互斥专项叶、材料与引用门禁、成品残留终检、显式授权后的学术来源检索与引用覆盖层，以及渐进加载的论文 ANTI-AI 和长稿一致性 reference；运行时提供只读 `citation_audit.py`、`prose_lint.py` 和 `manuscript_audit.py`。
+- 版本 0.0.9 已在提交 `31d3beac65f6e33663463476f0110f65e08fd821` 发布至 GitHub（tag `v0.0.9`），同一份 12 文件 ZIP 已上传 skillhub.cn（skillId `98987`、versionId `229892`），未更新 ClawHub。上传回执显示安全扫描、内容审核和总体审核均为 `pending`，个人中心显示“安全审核中”；公开搜索与签名校验尚未传播至 0.0.9。发布包 SHA-256 为 `e3873160e4806f1192df3a1afbf256d515b18523af679524fe161f5c2901fe5f`，回执见 `tests/evidence/v0.0.9-release-gate/RELEASE-RECEIPT.json`。封面源图保留在 GitHub，本轮按用户决定不再通过浏览器重发或补传。
 - 版本 0.0.8 已发布至 GitHub（tag v0.0.8）、ClawHub 与 skillhub.cn。升级内容依据公文 skill 1.5.40 已验证更新：终稿模式新增三类否定式句尾候选、意义支撑句尾成簇与正文外制作性注记标题检测；ANTI-AI 复核新增连续否定式收口与正向状态承接、纯检测模式输出约定；入口增加终稿 lint 短指针；ANTI-AI 首段加载条件减载为入口指针。开发轮真实写稿 A/B（4 任务双臂＋确认轮 T5/T6）未发现可复现候选独有硬失败，首轮两起候选独有失败经确认轮判定为双臂共有噪声。发布门禁轮（全新任务 R1–R4、全新会话，对 v0.0.7）机械门禁 8/8 通过，双盲裁判一致，已决定任务 Candidate 3 胜、Baseline 1 胜，零硬 FAIL，判定无回退；证据在 `tests/evidence/v0.0.8-release-gate`，回执在 `.release/release-v0.0.8-receipts.json`（未跟踪）。skillhub.cn 0.0.8 已受理，审核与公开 latest 传播以平台为准。
 - 当前能力仍限定中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。英文论文、投稿、统计分析、答辩、排版和检测规避尚未纳入。
 - 项目统一采用 MIT 许可证。后续版本只发布至 GitHub 与 skillhub.cn，不再向 ClawHub 发布或更新；0.0.8 及更早的 ClawHub 记录作为历史证据保留。skillhub.cn 包含 11 个必要运行文件和 1 份与根许可证语义一致的 Markdown `LICENSE.md`，共 12 个文件；派生 frontmatter 不含 `summary` 和 `homepage`。README、HANDOFF、封面源图、测试、工具、评测证据和脱敏回执均留在 GitHub 仓库。

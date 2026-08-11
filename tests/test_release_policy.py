@@ -9,6 +9,7 @@ LICENSE_PATH = ROOT / "LICENSE"
 README_PATH = ROOT / "README.md"
 HANDOFF_PATH = ROOT / "HANDOFF.md"
 RELEASE_NOTES_PATH = ROOT / "tests" / "evidence" / "v0.0.9-release-gate" / "RELEASE-NOTES.md"
+RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.0.9-release-gate" / "RELEASE-RECEIPT.json"
 
 
 class ReleasePolicyTests(unittest.TestCase):
@@ -20,6 +21,7 @@ class ReleasePolicyTests(unittest.TestCase):
         cls.readme = README_PATH.read_text(encoding="utf-8")
         cls.handoff = HANDOFF_PATH.read_text(encoding="utf-8")
         cls.release_notes = RELEASE_NOTES_PATH.read_text(encoding="utf-8")
+        cls.release_receipt = json.loads(RELEASE_RECEIPT_PATH.read_text(encoding="utf-8"))
 
     def test_only_github_and_skillhub_are_future_publish_targets(self) -> None:
         self.assertEqual(["github", "skillhub.cn"], self.policy["publish_targets"])
@@ -121,6 +123,29 @@ class ReleasePolicyTests(unittest.TestCase):
             "公开评测 stderr 中的内部请求标识已替换为固定占位符",
         ):
             self.assertIn(marker, combined)
+
+    def test_v009_public_receipt_binds_both_release_surfaces(self) -> None:
+        receipt = self.release_receipt
+        self.assertEqual("0.0.9", receipt["version"])
+        self.assertEqual(
+            "31d3beac65f6e33663463476f0110f65e08fd821",
+            receipt["release_commit"],
+        )
+        self.assertEqual("MIT", receipt["package"]["license"])
+        self.assertEqual("LICENSE.md", receipt["package"]["license_file"])
+        self.assertEqual(12, receipt["package"]["file_count"])
+        self.assertEqual(
+            "e3873160e4806f1192df3a1afbf256d515b18523af679524fe161f5c2901fe5f",
+            receipt["package"]["zip_sha256"],
+        )
+        self.assertEqual(368620368, receipt["github"]["release_id"])
+        self.assertEqual(98987, receipt["skillhub"]["skill_id"])
+        self.assertEqual(229892, receipt["skillhub"]["version_id"])
+        self.assertEqual("pending", receipt["skillhub"]["review_status"])
+        self.assertEqual(["clawhub"], receipt["excluded_publish_targets"])
+        self.assertFalse(receipt["cover"]["included_in_package"])
+        self.assertFalse(receipt["cover"]["uploaded_to_skillhub"])
+        self.assertEqual(164, receipt["validation"]["full_unittest_count"])
 
 
 if __name__ == "__main__":
