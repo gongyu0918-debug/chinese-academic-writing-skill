@@ -1,0 +1,19 @@
+2026-08-11T11:02:47.366424Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=alibaba-token-plan/deepseek-v4-flash-0731 personality=pragmatic
+2026-08-11T11:02:47.368239Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-08-11T11:02:48.874471Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-08-11T11:02:48.874592Z  WARN codex_core::client: falling back to HTTP
+2026-08-11T11:02:51.333743Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=alibaba-token-plan/deepseek-v4-flash-0731 personality=pragmatic
+2026-08-11T11:02:53.301253Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=alibaba-token-plan/deepseek-v4-flash-0731 personality=pragmatic
+2026-08-11T11:02:55.236553Z ERROR codex_core::tools::router: error=Exit code: 1
+Wall time: 0.7 seconds
+Output:
+[31;1mGet-Content: [0m
+[31;1m[36;1mLine |[0m
+[31;1m[36;1m[36;1m   2 | [0m [36;1mGet-Content -Raw -LiteralPath 'chinese-academic-writing-skill\referen[0m …[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mCannot find path 'chinese-academic-writing-skill\references\anti-ai-writing.md' because it does not exist.[0m
+
+2026-08-11T11:02:55.238675Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=alibaba-token-plan/deepseek-v4-flash-0731 personality=pragmatic
+2026-08-11T11:02:57.606367Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=alibaba-token-plan/deepseek-v4-flash-0731 personality=pragmatic
+2026-08-11T11:03:00.039163Z  WARN codex_core_plugins::manager: failed to warm remote plugin catalog cache error=failed to send remote plugin catalog request to <redacted-chatgpt-internal-url> error sending request for url (<redacted-chatgpt-internal-url>)
+2026-08-11T11:03:35.642816Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=alibaba-token-plan/deepseek-v4-flash-0731 personality=pragmatic

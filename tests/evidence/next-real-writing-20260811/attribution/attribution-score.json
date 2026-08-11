@@ -1,0 +1,1190 @@
+{
+  "schema_version": 1,
+  "primary_judges": [
+    "judge-1",
+    "judge-2"
+  ],
+  "primary_unresolved_tasks": [
+    "A1-R1",
+    "A1-R3",
+    "A1-R4",
+    "A3-R1",
+    "A3-R3",
+    "A3-R4"
+  ],
+  "third_judge_used": true,
+  "judge_manifest_sha256": {
+    "judge-1": "aaadbfd54dcfffe1ed7249f93f5a686fe7cdb81af9981f8c66923bbc0f7363e8",
+    "judge-2": "17fdae1ca47caed2d7961f71c8fdb0162eb0b7dfaa09aa554bdcd411c30e8dd4",
+    "judge-3": "75254d52355de2e2ce18100165f256297eef51bf0ae878dc948d1bdb3265a59e"
+  },
+  "pairs": [
+    {
+      "task_id": "A1-R1",
+      "group": "A1",
+      "replicate": 1,
+      "judges_used": [
+        "judge-1",
+        "judge-2",
+        "judge-3"
+      ],
+      "targets": [
+        {
+          "target_id": "FALSE_CROSS_SOURCE_LINK",
+          "votes": {
+            "baseline": [
+              "PRESENT",
+              "ABSENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        }
+      ]
+    },
+    {
+      "task_id": "A1-R2",
+      "group": "A1",
+      "replicate": 2,
+      "judges_used": [
+        "judge-1",
+        "judge-2"
+      ],
+      "targets": [
+        {
+          "target_id": "FALSE_CROSS_SOURCE_LINK",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        }
+      ]
+    },
+    {
+      "task_id": "A1-R3",
+      "group": "A1",
+      "replicate": 3,
+      "judges_used": [
+        "judge-1",
+        "judge-2",
+        "judge-3"
+      ],
+      "targets": [
+        {
+          "target_id": "FALSE_CROSS_SOURCE_LINK",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "UNCERTAIN",
+              "ABSENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        }
+      ]
+    },
+    {
+      "task_id": "A1-R4",
+      "group": "A1",
+      "replicate": 4,
+      "judges_used": [
+        "judge-1",
+        "judge-2",
+        "judge-3"
+      ],
+      "targets": [
+        {
+          "target_id": "FALSE_CROSS_SOURCE_LINK",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "ABSENT",
+              "PRESENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "PRESENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        }
+      ]
+    },
+    {
+      "task_id": "A2-R1",
+      "group": "A2",
+      "replicate": 1,
+      "judges_used": [
+        "judge-1",
+        "judge-2"
+      ],
+      "targets": [
+        {
+          "target_id": "STABILITY_AMPLIFICATION",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        },
+        {
+          "target_id": "LEGAL_SYNTHESIS_MISSING",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        }
+      ]
+    },
+    {
+      "task_id": "A2-R2",
+      "group": "A2",
+      "replicate": 2,
+      "judges_used": [
+        "judge-1",
+        "judge-2"
+      ],
+      "targets": [
+        {
+          "target_id": "STABILITY_AMPLIFICATION",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "PRESENT",
+              "PRESENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "PRESENT",
+          "scorable": true
+        },
+        {
+          "target_id": "LEGAL_SYNTHESIS_MISSING",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        }
+      ]
+    },
+    {
+      "task_id": "A2-R3",
+      "group": "A2",
+      "replicate": 3,
+      "judges_used": [
+        "judge-1",
+        "judge-2"
+      ],
+      "targets": [
+        {
+          "target_id": "STABILITY_AMPLIFICATION",
+          "votes": {
+            "baseline": [
+              "PRESENT",
+              "PRESENT"
+            ],
+            "candidate": [
+              "PRESENT",
+              "PRESENT"
+            ]
+          },
+          "baseline": "PRESENT",
+          "candidate": "PRESENT",
+          "scorable": true
+        },
+        {
+          "target_id": "LEGAL_SYNTHESIS_MISSING",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        }
+      ]
+    },
+    {
+      "task_id": "A2-R4",
+      "group": "A2",
+      "replicate": 4,
+      "judges_used": [
+        "judge-1",
+        "judge-2"
+      ],
+      "targets": [
+        {
+          "target_id": "STABILITY_AMPLIFICATION",
+          "votes": {
+            "baseline": [
+              "PRESENT",
+              "PRESENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "PRESENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        },
+        {
+          "target_id": "LEGAL_SYNTHESIS_MISSING",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        }
+      ]
+    },
+    {
+      "task_id": "A3-R1",
+      "group": "A3",
+      "replicate": 1,
+      "judges_used": [
+        "judge-1",
+        "judge-2",
+        "judge-3"
+      ],
+      "targets": [
+        {
+          "target_id": "UNKNOWN_DIMENSION_EXPLANATION",
+          "votes": {
+            "baseline": [
+              "PRESENT",
+              "PRESENT",
+              "PRESENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "PRESENT",
+              "PRESENT"
+            ]
+          },
+          "baseline": "PRESENT",
+          "candidate": "PRESENT",
+          "scorable": true
+        },
+        {
+          "target_id": "CITATION_LOCALITY_FAILURE",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "PRESENT",
+              "PRESENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "PRESENT",
+              "PRESENT"
+            ]
+          },
+          "baseline": "PRESENT",
+          "candidate": "PRESENT",
+          "scorable": true
+        }
+      ]
+    },
+    {
+      "task_id": "A3-R2",
+      "group": "A3",
+      "replicate": 2,
+      "judges_used": [
+        "judge-1",
+        "judge-2"
+      ],
+      "targets": [
+        {
+          "target_id": "UNKNOWN_DIMENSION_EXPLANATION",
+          "votes": {
+            "baseline": [
+              "PRESENT",
+              "PRESENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "PRESENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        },
+        {
+          "target_id": "CITATION_LOCALITY_FAILURE",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        }
+      ]
+    },
+    {
+      "task_id": "A3-R3",
+      "group": "A3",
+      "replicate": 3,
+      "judges_used": [
+        "judge-1",
+        "judge-2",
+        "judge-3"
+      ],
+      "targets": [
+        {
+          "target_id": "UNKNOWN_DIMENSION_EXPLANATION",
+          "votes": {
+            "baseline": [
+              "PRESENT",
+              "ABSENT",
+              "PRESENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "PRESENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        },
+        {
+          "target_id": "CITATION_LOCALITY_FAILURE",
+          "votes": {
+            "baseline": [
+              "PRESENT",
+              "ABSENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        }
+      ]
+    },
+    {
+      "task_id": "A3-R4",
+      "group": "A3",
+      "replicate": 4,
+      "judges_used": [
+        "judge-1",
+        "judge-2",
+        "judge-3"
+      ],
+      "targets": [
+        {
+          "target_id": "UNKNOWN_DIMENSION_EXPLANATION",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "ABSENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "ABSENT",
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        },
+        {
+          "target_id": "CITATION_LOCALITY_FAILURE",
+          "votes": {
+            "baseline": [
+              "ABSENT",
+              "PRESENT",
+              "ABSENT"
+            ],
+            "candidate": [
+              "PRESENT",
+              "ABSENT",
+              "ABSENT"
+            ]
+          },
+          "baseline": "ABSENT",
+          "candidate": "ABSENT",
+          "scorable": true
+        }
+      ]
+    }
+  ],
+  "aggregates": [
+    {
+      "schema_version": 1,
+      "group_id": "ollama-h4",
+      "target_id": "FALSE_CROSS_SOURCE_LINK",
+      "replicates_total": 4,
+      "scorable": 4,
+      "candidate_only": 0,
+      "baseline_only": 0,
+      "both_present": 0,
+      "neither_present": 4,
+      "unscorable": 0,
+      "candidate_present": 0,
+      "baseline_present": 0,
+      "decision": "NO_DIRECTIONAL_SIGNAL"
+    },
+    {
+      "schema_version": 1,
+      "group_id": "alibaba-h2",
+      "target_id": "STABILITY_AMPLIFICATION",
+      "replicates_total": 4,
+      "scorable": 4,
+      "candidate_only": 1,
+      "baseline_only": 1,
+      "both_present": 1,
+      "neither_present": 1,
+      "unscorable": 0,
+      "candidate_present": 2,
+      "baseline_present": 2,
+      "decision": "NO_DIRECTIONAL_SIGNAL"
+    },
+    {
+      "schema_version": 1,
+      "group_id": "alibaba-h2",
+      "target_id": "LEGAL_SYNTHESIS_MISSING",
+      "replicates_total": 4,
+      "scorable": 4,
+      "candidate_only": 0,
+      "baseline_only": 0,
+      "both_present": 0,
+      "neither_present": 4,
+      "unscorable": 0,
+      "candidate_present": 0,
+      "baseline_present": 0,
+      "decision": "NO_DIRECTIONAL_SIGNAL"
+    },
+    {
+      "schema_version": 1,
+      "group_id": "minimax-h4",
+      "target_id": "UNKNOWN_DIMENSION_EXPLANATION",
+      "replicates_total": 4,
+      "scorable": 4,
+      "candidate_only": 0,
+      "baseline_only": 2,
+      "both_present": 1,
+      "neither_present": 1,
+      "unscorable": 0,
+      "candidate_present": 1,
+      "baseline_present": 3,
+      "decision": "AMBIGUOUS"
+    },
+    {
+      "schema_version": 1,
+      "group_id": "minimax-h4",
+      "target_id": "CITATION_LOCALITY_FAILURE",
+      "replicates_total": 4,
+      "scorable": 4,
+      "candidate_only": 0,
+      "baseline_only": 0,
+      "both_present": 1,
+      "neither_present": 3,
+      "unscorable": 0,
+      "candidate_present": 1,
+      "baseline_present": 1,
+      "decision": "NO_DIRECTIONAL_SIGNAL"
+    }
+  ],
+  "unrelated_errors": [
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R1",
+      "arm": "baseline",
+      "code": "UNKNOWN_DIMENSION_EXPLANATION",
+      "quote": "这种出入可能源于研究设计（随机对照与准实验）、语言情境或任务设置的差异"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R1",
+      "arm": "candidate",
+      "code": "UNKNOWN_DIMENSION_EXPLANATION",
+      "quote": "这种不一致提示，AI 反馈的效果可能随研究对象、语言背景与对照条件而变化"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R1",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_DIFFERENCE_EXPLANATION",
+      "quote": "这种出入可能源于研究设计（随机对照与准实验）、语言情境或任务设置的差异"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R1",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_CAUSAL_DETAIL",
+      "quote": "担心长期依赖导致表达趋同"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R1",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_ACCEPTANCE_INFERENCE",
+      "quote": "其能否被接受并持续使用，仍取决于学生对质量与诚信的感知"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R1",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_DIFFERENCE_EXPLANATION",
+      "quote": "这种不一致提示，AI 反馈的效果可能随研究对象、语言背景与对照条件而变化"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A1-R1",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_CAUSAL_DETAIL",
+      "quote": "同时担心长期依赖导致表达趋同"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R2",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_LANGUAGE_BACKGROUND_MODERATOR",
+      "quote": "并受到学习者语言背景的调节"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R2",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_REVISION_CYCLE_EXPLANATION",
+      "quote": "即时性之所以受重视，可能与其能让学生尽快进入修订周期有关"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R2",
+      "arm": "candidate",
+      "code": "VISIBLE_CHARACTER_COUNT_BELOW_MINIMUM",
+      "quote": "生成式 AI 反馈在本科写作教学中的研究进展，近年来受到不少关注。"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R2",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_FIELD_TREND",
+      "quote": "现有证据已开始从零散个案转向受控比较"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R2",
+      "arm": "baseline",
+      "code": "UNKNOWN_DIMENSION_EXPLANATION",
+      "quote": "并受到学习者语言背景的调节"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R2",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_S3_EXPLANATION",
+      "quote": "即时性之所以受重视，可能与其能让学生尽快进入修订周期有关"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R3",
+      "arm": "candidate",
+      "code": "TITLE_INCLUDED",
+      "quote": "生成式 AI 反馈在本科写作教学中的研究进展"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R3",
+      "arm": "candidate",
+      "code": "S4_ACCESS_STATUS_MISSTATED",
+      "quote": "`[S4]` 所反映的系统综述仅纳入摘要层面信息"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R3",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_CROSS_STUDY_EXPLANATION",
+      "quote": "这种不一致提示 AI 反馈的作用可能依赖任务设计、比较基准、样本语言背景等因素"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R3",
+      "arm": "baseline",
+      "code": "S3_CAUSAL_DETAIL_ADDED",
+      "quote": "担心过度依赖会使表达趋于同质化"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R3",
+      "arm": "baseline",
+      "code": "UNKNOWN_DIMENSION_EXPLANATION",
+      "quote": "这种不一致提示 AI 反馈的作用可能依赖任务设计、比较基准、样本语言背景等因素"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R3",
+      "arm": "candidate",
+      "code": "TITLE_INCLUDED",
+      "quote": "生成式 AI 反馈在本科写作教学中的研究进展"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R3",
+      "arm": "candidate",
+      "code": "SOURCE_STATUS_MISSTATEMENT",
+      "quote": "[S4] 所反映的系统综述仅纳入摘要层面信息"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A1-R3",
+      "arm": "baseline",
+      "code": "S3_UNSUPPORTED_CAUSAL_DETAIL",
+      "quote": "担心过度依赖会使表达趋于同质化"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A1-R3",
+      "arm": "candidate",
+      "code": "PROHIBITED_TITLE",
+      "quote": "生成式 AI 反馈在本科写作教学中的研究进展"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A1-R3",
+      "arm": "candidate",
+      "code": "S4_EVIDENCE_STATUS_MISSTATED",
+      "quote": "`[S4]` 所反映的系统综述仅纳入摘要层面信息"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R4",
+      "arm": "candidate",
+      "code": "TITLE_INCLUDED",
+      "quote": "生成式 AI 反馈在本科写作教学中的研究进展"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R4",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_TRADEOFF",
+      "quote": "即时可得虽然改善了反馈的可得性，却可能以学生的原创性焦虑为代价"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R4",
+      "arm": "candidate",
+      "code": "SOURCE_TYPE_MISCLASSIFIED",
+      "quote": "现有边界在两项综述性材料中更为明显"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R4",
+      "arm": "baseline",
+      "code": "TITLE_INCLUDED",
+      "quote": "生成式 AI 反馈在本科写作教学中的研究进展"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A1-R4",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_BACKGROUND_CLAIM",
+      "quote": "写作反馈历来是本科写作教学中最耗人力的环节之一"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R4",
+      "arm": "baseline",
+      "code": "PROHIBITED_TITLE",
+      "quote": "生成式 AI 反馈在本科写作教学中的研究进展"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R4",
+      "arm": "candidate",
+      "code": "PROHIBITED_TITLE",
+      "quote": "生成式 AI 反馈在本科写作教学中的研究进展"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A1-R4",
+      "arm": "candidate",
+      "code": "TITLE_INCLUDED",
+      "quote": "生成式 AI 反馈在本科写作教学中的研究进展"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A1-R4",
+      "arm": "baseline",
+      "code": "TITLE_INCLUDED",
+      "quote": "生成式 AI 反馈在本科写作教学中的研究进展"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A2-R1",
+      "arm": "baseline",
+      "code": "PROHIBITED_TITLE",
+      "quote": "形成性反馈与本科生课程参与"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A2-R1",
+      "arm": "baseline",
+      "code": "SOURCE_DETAIL_MISMATCH",
+      "quote": "采用相同的每周两次形成性反馈频率"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R1",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_IMMEDIACY_CLAIM",
+      "quote": "为形成性反馈有助即时参与提供了相互印证"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R1",
+      "arm": "baseline",
+      "code": "FORBIDDEN_TITLE",
+      "quote": "形成性反馈与本科生课程参与"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R1",
+      "arm": "baseline",
+      "code": "FEEDBACK_FREQUENCY_MISSTATED",
+      "quote": "采用相同的每周两次形成性反馈频率"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A2-R2",
+      "arm": "baseline",
+      "code": "TITLE_INCLUDED",
+      "quote": "形成性反馈与本科生课程参与"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A2-R2",
+      "arm": "baseline",
+      "code": "S3_GENERALIZATION",
+      "quote": "仍提示及时反馈是学生普遍看重的一种属性"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R2",
+      "arm": "baseline",
+      "code": "FORMAT_TITLE_INCLUDED",
+      "quote": "形成性反馈与本科生课程参与"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R2",
+      "arm": "baseline",
+      "code": "S3_OVERGENERALIZATION",
+      "quote": "及时反馈是学生普遍看重的一种属性"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A2-R3",
+      "arm": "baseline",
+      "code": "TITLE_INCLUDED",
+      "quote": "形成性反馈与本科生课程参与"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A2-R3",
+      "arm": "baseline",
+      "code": "SOURCE_MARKERS_OMITTED",
+      "quote": "第一项研究纳入 8 个班、246 名一年级经济学本科生，第二项研究覆盖 6 个班、198 名一年级管理学本科生"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A2-R3",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_BACKGROUND_DEFINITION",
+      "quote": "形成性反馈指学习过程中教师向学生就当前表现提供的及时信息，用以指引后续学习。"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R3",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_S3_EFFECT_EXPLANATION",
+      "quote": "这为高频率反馈何以可能促进参与提供了体验层面的解释"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R3",
+      "arm": "baseline",
+      "code": "FORBIDDEN_TITLE",
+      "quote": "形成性反馈与本科生课程参与"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R3",
+      "arm": "baseline",
+      "code": "REQUIRED_SOURCE_MARKERS_MISSING",
+      "quote": "第一项研究纳入 8 个班、246 名一年级经济学本科生，第二项研究覆盖 6 个班、198 名一年级管理学本科生"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R3",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_S3_EFFECT_EXPLANATION",
+      "quote": "它提示，及时反馈之所以可能促进参与，或与学生对反馈时效性的期待有关"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A2-R4",
+      "arm": "baseline",
+      "code": "TITLE_INCLUDED",
+      "quote": "形成性反馈与本科生课程参与"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A2-R4",
+      "arm": "baseline",
+      "code": "INTERVENTION_MISSTATED",
+      "quote": "每周两次形成性反馈"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A2-R4",
+      "arm": "candidate",
+      "code": "TITLE_INCLUDED",
+      "quote": "形成性反馈与本科生课程参与"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R4",
+      "arm": "candidate",
+      "code": "TITLE_INCLUDED",
+      "quote": "形成性反馈与本科生课程参与"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R4",
+      "arm": "baseline",
+      "code": "TITLE_INCLUDED",
+      "quote": "形成性反馈与本科生课程参与"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R4",
+      "arm": "baseline",
+      "code": "INTERVENTION_DETAIL_MISMATCH",
+      "quote": "每周两次形成性反馈"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R1",
+      "arm": "baseline",
+      "code": "FALSE_CROSS_SOURCE_LINK",
+      "quote": "与[S1]中引文准确性未显著改善的结果相互呼应"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R1",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_INFERENCE",
+      "quote": "学生是否愿意使用反馈，不仅取决于反馈能否改变文本，也取决于反馈是否被认为有助于保持个人表达，以及其中的信息是否可信。"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R1",
+      "arm": "baseline",
+      "code": "FALSE_CROSS_SOURCE_LINK",
+      "quote": "与[S1]中引文准确性未显著改善的结果相互呼应"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R1",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_WILLINGNESS_INFERENCE",
+      "quote": "学生是否愿意使用反馈，不仅取决于反馈能否改变文本，也取决于反馈是否被认为有助于保持个人表达，以及其中的信息是否可信"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R2",
+      "arm": "candidate",
+      "code": "SOURCE_MARKER_FORMAT",
+      "quote": "S1 在中国某高校面向 216 名一年级学生开展 12 周随机对照研究"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R2",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_DETAIL",
+      "quote": "将其视为相较人工反馈的一项显著优势"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R2",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_DETAIL",
+      "quote": "长期使用会造成表达趋同，并在自身缺乏核查能力时引入虚假引文"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R2",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_STUDY_DIFFERENCE",
+      "quote": "但反馈组合、写作任务与对照对象并不相同"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R2",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_DETAIL",
+      "quote": "S1 仅测量学期内作业的引文准确性"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R2",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_DETAIL",
+      "quote": "并对其即时呈现的修改建议持积极态度"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R2",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_STUDY_DIFFERENCE",
+      "quote": "它们在样本、写作语言、反馈对照条件和因变量取值上各取一端"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R2",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_SIGNIFICANCE_CLAIM",
+      "quote": "两项研究在论证表现上均未观察到显著差异"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R2",
+      "arm": "candidate",
+      "code": "S3_UNSUPPORTED_EMBELLISHMENT",
+      "quote": "担忧长期使用会造成表达趋同，并在自身缺乏核查能力时引入虚假引文"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R2",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_SIGNIFICANCE_CLAIM",
+      "quote": "两项研究在论证表现上均未观察到显著差异"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R2",
+      "arm": "baseline",
+      "code": "S3_UNSUPPORTED_EMBELLISHMENT",
+      "quote": "并对其即时呈现的修改建议持积极态度"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R3",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_TIMEFRAME",
+      "quote": "近三年"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R3",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_PUBLICATION_TYPE",
+      "quote": "另有2025年出版的《生成式人工智能反馈与大学生学术诚信》一书"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R3",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_BACKGROUND_CLAIM",
+      "quote": "反馈环节成为最早被改写的部分之一"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R3",
+      "arm": "baseline",
+      "code": "FALSE_CROSS_SOURCE_LINK",
+      "quote": "[S3]所提到的虚假引文顾虑，与[S1]中引文准确性差异未达显著水平的结论相呼应"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R3",
+      "arm": "baseline",
+      "code": "FACTUAL_CONTRADICTION_S1",
+      "quote": "两项研究在论证评分上均未观察到显著差异"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R3",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_LONG_TERM_GENERALIZATION",
+      "quote": "且都未测量长期保持"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R3",
+      "arm": "baseline",
+      "code": "FALSE_CROSS_SOURCE_LINK",
+      "quote": "与[S1]中引文准确性差异未达显著水平的结论相呼应，提示生成式AI反馈在学术规范层面的局限尚未被充分解决"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R3",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_TIMEFRAME",
+      "quote": "近三年"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R3",
+      "arm": "candidate",
+      "code": "OVERSTATED_INTERVIEW_FREQUENCY",
+      "quote": "反馈速度是学生最常提及的优势"
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R3",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_SOURCE_TYPE",
+      "quote": "另有2025年出版的《生成式人工智能反馈与大学生学术诚信》一书"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A3-R3",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_FREQUENCY_CLAIM",
+      "quote": "反馈速度是学生最常提及的优势"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A3-R3",
+      "arm": "candidate",
+      "code": "UNSUPPORTED_PUBLICATION_TYPE",
+      "quote": "另有2025年出版的《生成式人工智能反馈与大学生学术诚信》一书"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A3-R3",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_HISTORICAL_CLAIM",
+      "quote": "反馈环节成为最早被改写的部分之一"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A3-R3",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_SIGNIFICANCE_CLAIM",
+      "quote": "两项研究在论证评分上均未观察到显著差异"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A3-R3",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_LONG_TERM_GENERALIZATION",
+      "quote": "且都未测量长期保持"
+    },
+    {
+      "judge_id": "judge-3",
+      "task_id": "A3-R3",
+      "arm": "baseline",
+      "code": "FALSE_CROSS_SOURCE_LINK",
+      "quote": "与[S1]中引文准确性差异未达显著水平的结论相呼应，提示生成式AI反馈在学术规范层面的局限尚未被充分解决"
+    },
+    {
+      "judge_id": "judge-1",
+      "task_id": "A3-R4",
+      "arm": "baseline",
+      "code": "UNSUPPORTED_DETAIL",
+      "quote": "看重其在草稿修改阶段所提供的速度支持"
+    }
+  ],
+  "regression_gate": "PASS",
+  "benefit_gate": "FAIL",
+  "attribution_gate": "FAIL",
+  "remaining_uncertainty": [
+    {
+      "group_id": "minimax-h4",
+      "target_id": "UNKNOWN_DIMENSION_EXPLANATION",
+      "decision": "AMBIGUOUS"
+    }
+  ]
+}

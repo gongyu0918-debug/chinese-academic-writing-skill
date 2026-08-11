@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "specs": "tests/evidence/next-real-writing-20260811/attribution_specs.json",
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "results": [
+    {
+      "task_id": "A1-R1",
+      "arm": "baseline",
+      "output": "baseline/A1-R1.md",
+      "passed": false,
+      "hard_failures": [
+        "visible_count 926 below minimum 1000"
+      ],
+      "metrics": {
+        "han_count": 767,
+        "visible_count": 926,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A1-R1",
+      "arm": "candidate",
+      "output": "candidate/A1-R1.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 928,
+        "visible_count": 1072,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A1-R2",
+      "arm": "baseline",
+      "output": "baseline/A1-R2.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1067,
+        "visible_count": 1211,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A1-R2",
+      "arm": "candidate",
+      "output": "candidate/A1-R2.md",
+      "passed": false,
+      "hard_failures": [
+        "visible_count 782 below minimum 1000"
+      ],
+      "metrics": {
+        "han_count": 673,
+        "visible_count": 782,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A1-R3",
+      "arm": "baseline",
+      "output": "baseline/A1-R3.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 957,
+        "visible_count": 1105,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A1-R3",
+      "arm": "candidate",
+      "output": "candidate/A1-R3.md",
+      "passed": false,
+      "hard_failures": [
+        "visible_count 948 below minimum 1000"
+      ],
+      "metrics": {
+        "han_count": 786,
+        "visible_count": 948,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A1-R4",
+      "arm": "baseline",
+      "output": "baseline/A1-R4.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 917,
+        "visible_count": 1043,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A1-R4",
+      "arm": "candidate",
+      "output": "candidate/A1-R4.md",
+      "passed": false,
+      "hard_failures": [
+        "visible_count 920 below minimum 1000"
+      ],
+      "metrics": {
+        "han_count": 792,
+        "visible_count": 920,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A2-R1",
+      "arm": "baseline",
+      "output": "baseline/A2-R1.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 537,
+        "visible_count": 682,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A2-R1",
+      "arm": "candidate",
+      "output": "candidate/A2-R1.md",
+      "passed": false,
+      "hard_failures": [
+        "visible_count 626 below minimum 650"
+      ],
+      "metrics": {
+        "han_count": 481,
+        "visible_count": 626,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A2-R2",
+      "arm": "baseline",
+      "output": "baseline/A2-R2.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 569,
+        "visible_count": 689,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A2-R2",
+      "arm": "candidate",
+      "output": "candidate/A2-R2.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 552,
+        "visible_count": 695,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A2-R3",
+      "arm": "baseline",
+      "output": "baseline/A2-R3.md",
+      "passed": false,
+      "hard_failures": [
+        "visible_count 883 above maximum 850",
+        "missing required literal: '[S1]'",
+        "missing required literal: '[S2]'",
+        "missing required literal: '[S3]'"
+      ],
+      "metrics": {
+        "han_count": 744,
+        "visible_count": 883,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A2-R3",
+      "arm": "candidate",
+      "output": "candidate/A2-R3.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 553,
+        "visible_count": 692,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A2-R4",
+      "arm": "baseline",
+      "output": "baseline/A2-R4.md",
+      "passed": false,
+      "hard_failures": [
+        "missing required literal: '[S1]'",
+        "missing required literal: '[S2]'",
+        "missing required literal: '[S3]'"
+      ],
+      "metrics": {
+        "han_count": 596,
+        "visible_count": 736,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A2-R4",
+      "arm": "candidate",
+      "output": "candidate/A2-R4.md",
+      "passed": false,
+      "hard_failures": [
+        "visible_count 639 below minimum 650"
+      ],
+      "metrics": {
+        "han_count": 491,
+        "visible_count": 639,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A3-R1",
+      "arm": "baseline",
+      "output": "baseline/A3-R1.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 899,
+        "visible_count": 1036,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A3-R1",
+      "arm": "candidate",
+      "output": "candidate/A3-R1.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 1075,
+        "visible_count": 1238,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A3-R2",
+      "arm": "baseline",
+      "output": "baseline/A3-R2.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 881,
+        "visible_count": 1054,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A3-R2",
+      "arm": "candidate",
+      "output": "candidate/A3-R2.md",
+      "passed": false,
+      "hard_failures": [
+        "missing required literal: '[S1]'",
+        "missing required literal: '[S2]'",
+        "missing required literal: '[S3]'",
+        "missing required literal: '[S4]'",
+        "missing required literal: '[S5]'"
+      ],
+      "metrics": {
+        "han_count": 944,
+        "visible_count": 1093,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A3-R3",
+      "arm": "baseline",
+      "output": "baseline/A3-R3.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 873,
+        "visible_count": 1020,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A3-R3",
+      "arm": "candidate",
+      "output": "candidate/A3-R3.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 997,
+        "visible_count": 1114,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A3-R4",
+      "arm": "baseline",
+      "output": "baseline/A3-R4.md",
+      "passed": true,
+      "hard_failures": [],
+      "metrics": {
+        "han_count": 919,
+        "visible_count": 1049,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    },
+    {
+      "task_id": "A3-R4",
+      "arm": "candidate",
+      "output": "candidate/A3-R4.md",
+      "passed": false,
+      "hard_failures": [
+        "visible_count 1343 above maximum 1300"
+      ],
+      "metrics": {
+        "han_count": 1149,
+        "visible_count": 1343,
+        "heading_count": 0,
+        "part_count": 1,
+        "required_heading_count": 0
+      }
+    }
+  ],
+  "passed": false
+}

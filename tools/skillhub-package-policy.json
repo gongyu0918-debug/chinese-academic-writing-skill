@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "license": "MIT",
+  "publish_targets": [
+    "github",
+    "skillhub.cn"
+  ],
+  "excluded_publish_targets": [
+    "clawhub"
+  ],
+  "skillhub_package": {
+    "root": "chinese-academic-writing-assistant",
+    "runtime_file_count": 11,
+    "file_count": 12,
+    "markdown_license": "LICENSE.md",
+    "license_source": "LICENSE",
+    "files": [
+      "LICENSE.md",
+      "SKILL.md",
+      "agents/openai.yaml",
+      "references/academic-literature-review.md",
+      "references/academic-proposal.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md",
+      "references/citation-research.md",
+      "references/long-form-consistency.md",
+      "scripts/citation_audit.py",
+      "scripts/manuscript_audit.py",
+      "scripts/prose_lint.py"
+    ],
+    "derived_frontmatter": {
+      "field_order": [
+        "name",
+        "description",
+        "slug",
+        "version",
+        "displayName",
+        "tags",
+        "license"
+      ],
+      "name": "chinese-academic-writing-assistant",
+      "description_source": "policy",
+      "description": "依据作者材料、文献或授权来源，协助起草、改写和审阅中文论文、开题报告及文献综述，并核对论证、证据与引用。",
+      "slug": "chinese-academic-writing-assistant",
+      "displayName": "中文论文写作",
+      "tags": [
+        "chinese",
+        "academic"
+      ],
+      "license": "MIT",
+      "omitted_optional_fields": [
+        "summary",
+        "homepage"
+      ]
+    }
+  },
+  "github_only_surfaces": [
+    "LICENSE",
+    "README.md",
+    "HANDOFF.md",
+    "assets/**",
+    "tests/**",
+    "tools/**"
+  ],
+  "public_receipt_path_template": "tests/evidence/{version}-release-gate/RELEASE-RECEIPT.json",
+  "local_only_surfaces": [
+    ".release/**"
+  ]
+}

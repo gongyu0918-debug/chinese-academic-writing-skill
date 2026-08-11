@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "judge_id": "judge-2",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "run_inputs": {
+    "writer_manifest_sha256": "d06e5ded256e598cbf267dd2dcd5e130c6f321e063088c2816ee8c418acc4a6f",
+    "writer_input_identity": {
+      "runtime": {
+        "baseline": [
+          "09b89a6f49f0d97f5bdd983fe29354636a0f5008",
+          "0b649ff5a1fb0e3cfca3c25f8a1ecd5c8fc652ab4489cb63fc5531a5dec8e3d3"
+        ],
+        "candidate": [
+          "66ea04b18d066ac3f2ed075cb91b5a1659c1a131",
+          "18ea87efe5a7fcf79803e4d5c1b235ec54be37431b0b71704119dec2810b0cc3"
+        ]
+      },
+      "source_ab_specs_sha256": "aad99c0b051187337cc1a6cc6dab5e7733dfcb65d539beaba6610fa14f12453a",
+      "attribution_specs_sha256": "bc67d484c28e414b4b68951e993a5053e7e6217a5a54dbfcc47b958ec5e6ebdf",
+      "attribution_tasks": [
+        "A1-R1",
+        "A1-R2",
+        "A1-R3",
+        "A1-R4",
+        "A2-R1",
+        "A2-R2",
+        "A2-R3",
+        "A2-R4",
+        "A3-R1",
+        "A3-R2",
+        "A3-R3",
+        "A3-R4"
+      ],
+      "task_sha256": {
+        "H2": "713066a338a1064941b59214de13026c56d9b7712c9b6fdd2722f14d5e054236",
+        "H4": "49885dcccdf47ad5a2a0f5be73c6fa575a0cf2f6c7314259fef1665daf7bc166"
+      },
+      "prompt_sha256": {
+        "H2": "aeb244e10585e23665ac43ddc7faf6ec505fe624033d6acf9abf9b862e2f1c91",
+        "H4": "589e36edd5acdd70e5badcab8319ce5e4df96ba02c7266029765e906c55d6c60"
+      },
+      "providers": [
+        {
+          "name": "alibaba",
+          "model": "alibaba-token-plan/deepseek-v4-flash-0731"
+        },
+        {
+          "name": "ollama",
+          "model": "ollama-cloud/deepseek-v4-flash:0731"
+        },
+        {
+          "name": "minimax",
+          "model": "minimax-cn/MiniMax-M3"
+        }
+      ]
+    },
+    "specs_sha256": "bc67d484c28e414b4b68951e993a5053e7e6217a5a54dbfcc47b958ec5e6ebdf",
+    "schema_sha256": "c927da9cb5e50fb358f3515f05274906bbf1bd002dbf0b038d7a051bccef7c49",
+    "instructions_sha256": "bb67d1093a29c200cf3decaaec3b02e20e4a6cb7c2a7366e34ea60c87d917115",
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max",
+    "retry_count": 0
+  },
+  "map_sha256": "c7b6c52ee1fc95112accd18bce6067aaaef69147226ca06011ae145dd7acf61b",
+  "tasks": [
+    "A1-R1",
+    "A1-R2",
+    "A1-R3",
+    "A1-R4",
+    "A2-R1",
+    "A2-R2",
+    "A2-R3",
+    "A2-R4",
+    "A3-R1",
+    "A3-R2",
+    "A3-R3",
+    "A3-R4"
+  ],
+  "packets": {
+    "A1-R1": {
+      "pair_id": "J02-P001",
+      "file_sha256": "0d65b0f317cca116a0a4d8ca86c85d8fb1563048fee53b37154f7847f5d5529b",
+      "content_sha256": "7ec9db64d1131c623b7b2acdcb6ba72e948530aafe8815cf96febda4f34a6644"
+    },
+    "A1-R2": {
+      "pair_id": "J02-P002",
+      "file_sha256": "79ed4c62bf034f6c7d4433ae3b83938d8ad407dec16f16aea52b4b02d60389cd",
+      "content_sha256": "d0de8fc03cc7b76ae36bdf48f8f2f68abbec76b3cab5bed8ca2ec1439093a721"
+    },
+    "A1-R3": {
+      "pair_id": "J02-P003",
+      "file_sha256": "24f4832116052cab114c859801c94eed1b3e34b545686fdb23d9d9ffbb79cd51",
+      "content_sha256": "4c50a375fd8afb8a118a770e8cfd870cf7654b40602e544c51bcc8955e91491f"
+    },
+    "A1-R4": {
+      "pair_id": "J02-P004",
+      "file_sha256": "e7018aee315ccf721138c91eb2227a7ae714237e43df4567cd570eb7f26a3ed3",
+      "content_sha256": "0f2ba93180bd3df8a5fe441fd187fed45fea5be1dfb96c2d8b2367933f2b83ac"
+    },
+    "A2-R1": {
+      "pair_id": "J02-P005",
+      "file_sha256": "2f8a6dc1e03ea42c4450e22bbeadd90e067b82eff22e32fa2f0f337438146868",
+      "content_sha256": "0175b27abc2e0cae6ae652375a079a80a218625648fe3a76430dd1a489d7d83c"
+    },
+    "A2-R2": {
+      "pair_id": "J02-P006",
+      "file_sha256": "8a3a6b31316d00174a105f0871fb3e97a1f6e981c79e9a524cdbdd0b0f6040bd",
+      "content_sha256": "9ebd89e6bf72998ac3e877f876f737758e506c71a3eaa6a96ed686322bfda721"
+    },
+    "A2-R3": {
+      "pair_id": "J02-P007",
+      "file_sha256": "a88f174806aeb3b2d59612089bdab5391b572d472841ff4be78f3c66a2b21754",
+      "content_sha256": "6594a76c7ae0d6eca675a3aa55b2e5b6d62e3a43d7884710dbbcf95649c0207a"
+    },
+    "A2-R4": {
+      "pair_id": "J02-P008",
+      "file_sha256": "35705d34d03725d5d92fa8bcf9eff2e76213fcf0fd2c274ce195731d9a00aa5d",
+      "content_sha256": "f6decd110e4515817702b262d9cae92341d0a088d7b0649bae7f859819860852"
+    },
+    "A3-R1": {
+      "pair_id": "J02-P009",
+      "file_sha256": "82062af248694fba6651ecb7a1b022f1f501e9a9688408f1b5338618c8dd039a",
+      "content_sha256": "77e1482cd1e907648c9868ead0b23736632a9aecac0066125f6a138b2b2010f5"
+    },
+    "A3-R2": {
+      "pair_id": "J02-P010",
+      "file_sha256": "4f79ebb58dd5802893ae1f9ee94dd0141a39d4966790197a4bbdb7fc08758ed3",
+      "content_sha256": "2e1305cfe22808aa172806de9cfd3f9dc2de31e4416a0c2fd6d8850439246148"
+    },
+    "A3-R3": {
+      "pair_id": "J02-P011",
+      "file_sha256": "eadf0ff10e4c05e7ab2fbc43cb846deca56683674e349a495ea20d14d0c231dc",
+      "content_sha256": "8ebcfd16cfba47f0ab19a83c16f4f014b0e961a24f2fcb43accd24800144ccde"
+    },
+    "A3-R4": {
+      "pair_id": "J02-P012",
+      "file_sha256": "b6672f1d16533d117a9aae926907bdd809a8a29ef6b64168227f6136ef75b486",
+      "content_sha256": "bfc80fcfb2d152ad1b8ea1fce4fabbdf4c3012e462c5f6e3a5239a12a5deec90"
+    }
+  },
+  "calls_planned": 12,
+  "inputs_stable": true,
+  "postflight_error": null,
+  "records": [
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R1",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 81.14,
+      "retry_count": 0,
+      "prompt_sha256": "0d65b0f317cca116a0a4d8ca86c85d8fb1563048fee53b37154f7847f5d5529b",
+      "final_file": "judgments/judge-2/per-task/A1-R1.json",
+      "final_sha256": "d14d425a473acdcf6ade3a0254968da75ae7d3b71b37fcac4459a624d47f832c",
+      "trace_file": "judgments/judge-2/per-task/A1-R1.trace.jsonl",
+      "trace_sha256": "68718c7a60fe1307aa1a12750c55f99ae8f377c2a1a07240c420d18ffe970dec",
+      "stderr_file": "judgments/judge-2/per-task/A1-R1.stderr.txt",
+      "stderr_sha256": "347b06bd9a7e28a85dad317541d5bd317b4ccf5b6067960a1805517f89738f68",
+      "issues": [],
+      "valid": true
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R2",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 77.938,
+      "retry_count": 0,
+      "prompt_sha256": "79ed4c62bf034f6c7d4433ae3b83938d8ad407dec16f16aea52b4b02d60389cd",
+      "final_file": "judgments/judge-2/per-task/A1-R2.json",
+      "final_sha256": "31d4355658dff54added656a7158f89a556fcea537bcb3f7f5131bec234df815",
+      "trace_file": "judgments/judge-2/per-task/A1-R2.trace.jsonl",
+      "trace_sha256": "84ff2b5aebc18d2d0e51b5b0d7ec4d42ed322540792fb9efd3a1502c942d0d44",
+      "stderr_file": "judgments/judge-2/per-task/A1-R2.stderr.txt",
+      "stderr_sha256": "2bee876cbc50c767f0689146e14e8b4f12aa701ec7c729817abe6d9bc7540d76",
+      "issues": [],
+      "valid": true
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R3",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 204.468,
+      "retry_count": 0,
+      "prompt_sha256": "24f4832116052cab114c859801c94eed1b3e34b545686fdb23d9d9ffbb79cd51",
+      "final_file": "judgments/judge-2/per-task/A1-R3.json",
+      "final_sha256": "1577ffde242f032fd2138cd5ada3b4ce27c229c2ff90546cc1d782788cae5940",
+      "trace_file": "judgments/judge-2/per-task/A1-R3.trace.jsonl",
+      "trace_sha256": "c3593a503aa4d77714bdbcaa0ed423cae3cbb7af934090b708373922dbc50399",
+      "stderr_file": "judgments/judge-2/per-task/A1-R3.stderr.txt",
+      "stderr_sha256": "a5a748aefa88d785ec77b1a9972706ebc62f24e04abd0c4df15dedfb8af09c12",
+      "issues": [],
+      "valid": true
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A1-R4",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 132.578,
+      "retry_count": 0,
+      "prompt_sha256": "e7018aee315ccf721138c91eb2227a7ae714237e43df4567cd570eb7f26a3ed3",
+      "final_file": "judgments/judge-2/per-task/A1-R4.json",
+      "final_sha256": "5e7a4dbed0ccc401ab35077709b8cb30b6b4ead6a683fbf67fd0e824139bad35",
+      "trace_file": "judgments/judge-2/per-task/A1-R4.trace.jsonl",
+      "trace_sha256": "7e035b5689f9d8eca5b66bff791b967ab8f48817253f4b05a68410889bba05e8",
+      "stderr_file": "judgments/judge-2/per-task/A1-R4.stderr.txt",
+      "stderr_sha256": "d9a7282fb2ec653966911fcf8ca52d098ac3d253ab108be7fd16f90b7435aae6",
+      "issues": [],
+      "valid": true
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R1",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 56.797,
+      "retry_count": 0,
+      "prompt_sha256": "2f8a6dc1e03ea42c4450e22bbeadd90e067b82eff22e32fa2f0f337438146868",
+      "final_file": "judgments/judge-2/per-task/A2-R1.json",
+      "final_sha256": "8a1d5d99aa9dd0f8f5b59e10a8dfbe1471cf221f9ed8912eaa62ee2d0fd01f51",
+      "trace_file": "judgments/judge-2/per-task/A2-R1.trace.jsonl",
+      "trace_sha256": "ac020fae8418426c14f324ea4a698017e98f38b0818b5b9eaa8e9dd8c819ffb8",
+      "stderr_file": "judgments/judge-2/per-task/A2-R1.stderr.txt",
+      "stderr_sha256": "5b0b7272229a8356c1e16b9ce79a14daa2687e5a582b1c770bd9e48519695ca9",
+      "issues": [],
+      "valid": true
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R2",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 62.828,
+      "retry_count": 0,
+      "prompt_sha256": "8a3a6b31316d00174a105f0871fb3e97a1f6e981c79e9a524cdbdd0b0f6040bd",
+      "final_file": "judgments/judge-2/per-task/A2-R2.json",
+      "final_sha256": "4fc401c8e6ce703ee27cf5d6a551035f0dea4b0f50ace8181b6e2b129a0aec3c",
+      "trace_file": "judgments/judge-2/per-task/A2-R2.trace.jsonl",
+      "trace_sha256": "ecb658296a336bab97d51a5168e1101b5b6bfcad80e57af1b79a14aed70000ec",
+      "stderr_file": "judgments/judge-2/per-task/A2-R2.stderr.txt",
+      "stderr_sha256": "5137f0f0c8725241cf7dd5a2d9454668577b173716e0a3da114c827d25baa5b7",
+      "issues": [],
+      "valid": true
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R3",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 59.703,
+      "retry_count": 0,
+      "prompt_sha256": "a88f174806aeb3b2d59612089bdab5391b572d472841ff4be78f3c66a2b21754",
+      "final_file": "judgments/judge-2/per-task/A2-R3.json",
+      "final_sha256": "e42f8a82f3e699e919208b89d861d42caf7b24924881ed6694e9924d0e02d6ca",
+      "trace_file": "judgments/judge-2/per-task/A2-R3.trace.jsonl",
+      "trace_sha256": "62dec5be735091be3e5ba84da43aee070d820ac7244fe373c0ba94a7697b8964",
+      "stderr_file": "judgments/judge-2/per-task/A2-R3.stderr.txt",
+      "stderr_sha256": "bacf9095afca9133526b46a9ef55a8d0cd20e251ff8f56a8b2cda124b0791921",
+      "issues": [],
+      "valid": true
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A2-R4",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 45.125,
+      "retry_count": 0,
+      "prompt_sha256": "35705d34d03725d5d92fa8bcf9eff2e76213fcf0fd2c274ce195731d9a00aa5d",
+      "final_file": "judgments/judge-2/per-task/A2-R4.json",
+      "final_sha256": "0172da8872d158d4d5de8d41cb8dbc13c7448577211b4dfa2fd222ddf1db1654",
+      "trace_file": "judgments/judge-2/per-task/A2-R4.trace.jsonl",
+      "trace_sha256": "ecc657a328b0f7bb14a7ba0edc58f03973151a8c57234a528d347a455a535219",
+      "stderr_file": "judgments/judge-2/per-task/A2-R4.stderr.txt",
+      "stderr_sha256": "f8af72cda2394150111deb63a4835f9f46fecc355856f8d8eb31d30d3ea518f0",
+      "issues": [],
+      "valid": true
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R1",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 178.234,
+      "retry_count": 0,
+      "prompt_sha256": "82062af248694fba6651ecb7a1b022f1f501e9a9688408f1b5338618c8dd039a",
+      "final_file": "judgments/judge-2/per-task/A3-R1.json",
+      "final_sha256": "fd06c90596b03da8da8406d7136e758681147bfac4dd29c1bc465f4996544dd8",
+      "trace_file": "judgments/judge-2/per-task/A3-R1.trace.jsonl",
+      "trace_sha256": "69f5cae37343650d761dc6d30c8480d2b1553df258c1aa1a54b5164654135e9a",
+      "stderr_file": "judgments/judge-2/per-task/A3-R1.stderr.txt",
+      "stderr_sha256": "b95c473255b4f9426390dbc490759c0d07aa088c672f6de2244536a98d1f1e9d",
+      "issues": [],
+      "valid": true
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R2",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 106.453,
+      "retry_count": 0,
+      "prompt_sha256": "4f79ebb58dd5802893ae1f9ee94dd0141a39d4966790197a4bbdb7fc08758ed3",
+      "final_file": "judgments/judge-2/per-task/A3-R2.json",
+      "final_sha256": "771aa5235e98d08aff160158a037a69556685851ccbb9682774194bfde057679",
+      "trace_file": "judgments/judge-2/per-task/A3-R2.trace.jsonl",
+      "trace_sha256": "c54d336ff549271719ed95bf190ea8822a1707412625ba17639d8a44ec4fbc72",
+      "stderr_file": "judgments/judge-2/per-task/A3-R2.stderr.txt",
+      "stderr_sha256": "fcfbbca03d4e15abd721ad7ab2346ecd615181c60a28b3e3010398d4ae8c521e",
+      "issues": [],
+      "valid": true
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R3",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 214.828,
+      "retry_count": 0,
+      "prompt_sha256": "eadf0ff10e4c05e7ab2fbc43cb846deca56683674e349a495ea20d14d0c231dc",
+      "final_file": "judgments/judge-2/per-task/A3-R3.json",
+      "final_sha256": "1a6f92bb9ff9d428d790f038bcde9624b07d6161abc66ccdb5f77c521c9d67ee",
+      "trace_file": "judgments/judge-2/per-task/A3-R3.trace.jsonl",
+      "trace_sha256": "1ce7191a20043527548f324343d61e4b5676c5d54530734a0c28fe91e645e1b9",
+      "stderr_file": "judgments/judge-2/per-task/A3-R3.stderr.txt",
+      "stderr_sha256": "8b2b5333f57402c49bb2520c1e6fed0d8353d463b70793af1fc906d9344dbf5a",
+      "issues": [],
+      "valid": true
+    },
+    {
+      "judge_id": "judge-2",
+      "task_id": "A3-R4",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "return_code": 0,
+      "timeout": false,
+      "duration_seconds": 163.61,
+      "retry_count": 0,
+      "prompt_sha256": "b6672f1d16533d117a9aae926907bdd809a8a29ef6b64168227f6136ef75b486",
+      "final_file": "judgments/judge-2/per-task/A3-R4.json",
+      "final_sha256": "2582d0a467c6f59bc4bfb426278828118d6cd2a49d33ebd74b7b1ed004335240",
+      "trace_file": "judgments/judge-2/per-task/A3-R4.trace.jsonl",
+      "trace_sha256": "2e7f27fac4f3b4e2ef6f0897d80cf8d7fda4cc4f727d6f3e1365f7bc7e70bc4e",
+      "stderr_file": "judgments/judge-2/per-task/A3-R4.stderr.txt",
+      "stderr_sha256": "6d3362c108f6ef91cdd13fd28b7a0454a1d066a726eb99c293508cda534268d3",
+      "issues": [],
+      "valid": true
+    }
+  ],
+  "valid_calls": 12,
+  "validation_correction": {
+    "original_manifest_sha256": "737900deaf45ceaa919c7a9967ae4b952bbc4ff69bab28043fc2f6a0451060c4",
+    "rule": "unrelated_error_quote_is_non_directional_log_not_target_vote_gate",
+    "target": {
+      "judge_id": "judge-2",
+      "task_id": "A1-R3"
+    },
+    "before": {
+      "issues": [
+        "unrelated_errors:right:quote_not_verbatim"
+      ],
+      "valid": false
+    },
+    "after": {
+      "issues": [],
+      "valid": true
+    },
+    "immutable_artifact_count": 72
+  }
+}

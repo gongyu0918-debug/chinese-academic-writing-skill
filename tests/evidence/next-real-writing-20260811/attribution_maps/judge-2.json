@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "judge_id": "judge-2",
+  "task_specs_sha256": "bc67d484c28e414b4b68951e993a5053e7e6217a5a54dbfcc47b958ec5e6ebdf",
+  "seed_sha256": "6348ad7dd95aacc547db0d7d009a749632d7c31d6704a93a008c5a3f2d6f7cce",
+  "mappings": [
+    {
+      "task_id": "A1-R1",
+      "pair_id": "J02-P001",
+      "left": "baseline",
+      "right": "candidate"
+    },
+    {
+      "task_id": "A1-R2",
+      "pair_id": "J02-P002",
+      "left": "candidate",
+      "right": "baseline"
+    },
+    {
+      "task_id": "A1-R3",
+      "pair_id": "J02-P003",
+      "left": "baseline",
+      "right": "candidate"
+    },
+    {
+      "task_id": "A1-R4",
+      "pair_id": "J02-P004",
+      "left": "baseline",
+      "right": "candidate"
+    },
+    {
+      "task_id": "A2-R1",
+      "pair_id": "J02-P005",
+      "left": "candidate",
+      "right": "baseline"
+    },
+    {
+      "task_id": "A2-R2",
+      "pair_id": "J02-P006",
+      "left": "baseline",
+      "right": "candidate"
+    },
+    {
+      "task_id": "A2-R3",
+      "pair_id": "J02-P007",
+      "left": "candidate",
+      "right": "baseline"
+    },
+    {
+      "task_id": "A2-R4",
+      "pair_id": "J02-P008",
+      "left": "candidate",
+      "right": "baseline"
+    },
+    {
+      "task_id": "A3-R1",
+      "pair_id": "J02-P009",
+      "left": "baseline",
+      "right": "candidate"
+    },
+    {
+      "task_id": "A3-R2",
+      "pair_id": "J02-P010",
+      "left": "candidate",
+      "right": "baseline"
+    },
+    {
+      "task_id": "A3-R3",
+      "pair_id": "J02-P011",
+      "left": "baseline",
+      "right": "candidate"
+    },
+    {
+      "task_id": "A3-R4",
+      "pair_id": "J02-P012",
+      "left": "candidate",
+      "right": "baseline"
+    }
+  ]
+}

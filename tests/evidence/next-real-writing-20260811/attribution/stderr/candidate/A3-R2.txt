@@ -1,0 +1,6 @@
+2026-08-11T11:32:32.854867Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=minimax-cn/MiniMax-M3 personality=pragmatic
+2026-08-11T11:32:32.856342Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-08-11T11:32:35.274457Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-08-11T11:32:35.274575Z  WARN codex_core::client: falling back to HTTP
+2026-08-11T11:32:49.216802Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=minimax-cn/MiniMax-M3 personality=pragmatic
+2026-08-11T11:36:55.100320Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=minimax-cn/MiniMax-M3 personality=pragmatic

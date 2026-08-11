@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "attribution-judge-schema.json",
+  "title": "Blind target-specific attribution judgment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "judge_id",
+    "blind",
+    "mapping_sha256",
+    "packet_sha256",
+    "task_id",
+    "pair_id",
+    "targets",
+    "unrelated_errors"
+  ],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "judge_id": {"type": "string", "enum": ["judge-1", "judge-2", "judge-3"]},
+    "blind": {"type": "boolean", "const": true},
+    "mapping_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "packet_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "task_id": {"type": "string", "pattern": "^A[123]-R[1-4]$"},
+    "pair_id": {"type": "string", "pattern": "^J[0-9]{2}-P[0-9]{3}$"},
+    "targets": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2,
+      "items": {"$ref": "#/$defs/target"}
+    },
+    "unrelated_errors": {"$ref": "#/$defs/unrelated"}
+  },
+  "$defs": {
+    "anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["quote", "reason"],
+      "properties": {
+        "quote": {"type": "string", "minLength": 1},
+        "reason": {"type": "string", "minLength": 1}
+      }
+    },
+    "side": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "anchors"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": ["PRESENT", "ABSENT", "UNCERTAIN", "UNJUDGEABLE"]
+        },
+        "anchors": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/anchor"}
+        }
+      }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_id", "left", "right"],
+      "properties": {
+        "target_id": {
+          "type": "string",
+          "enum": [
+            "FALSE_CROSS_SOURCE_LINK",
+            "STABILITY_AMPLIFICATION",
+            "LEGAL_SYNTHESIS_MISSING",
+            "UNKNOWN_DIMENSION_EXPLANATION",
+            "CITATION_LOCALITY_FAILURE"
+          ]
+        },
+        "left": {"$ref": "#/$defs/side"},
+        "right": {"$ref": "#/$defs/side"}
+      }
+    },
+    "unrelated_error": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "quote"],
+      "properties": {
+        "code": {"type": "string", "minLength": 1},
+        "quote": {"type": "string", "minLength": 1}
+      }
+    },
+    "unrelated": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["left", "right"],
+      "properties": {
+        "left": {"type": "array", "items": {"$ref": "#/$defs/unrelated_error"}},
+        "right": {"type": "array", "items": {"$ref": "#/$defs/unrelated_error"}}
+      }
+    }
+  }
+}

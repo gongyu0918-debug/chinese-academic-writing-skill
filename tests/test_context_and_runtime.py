@@ -30,6 +30,7 @@ class ContextAndRuntimeTests(unittest.TestCase):
             if path.is_file()
         }
         expected = {
+            "LICENSE.md",
             "SKILL.md",
             "agents/openai.yaml",
             "references/academic-writing.md",

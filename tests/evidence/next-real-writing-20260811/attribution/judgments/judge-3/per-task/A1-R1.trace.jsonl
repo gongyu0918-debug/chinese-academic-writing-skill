@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"019ff0d3-9a0a-70c2-9370-5ee6f27bf2ca"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"schema_version\":1,\"judge_id\":\"judge-3\",\"blind\":true,\"mapping_sha256\":\"b52d186aa3a33681521c399025722a1bb5c90c54f204d60e606eda89dbb16391\",\"packet_sha256\":\"d4c233cbab7885e07c9f8cf2f2b86d88f4dac686467b7345295adab19a610e87\",\"task_id\":\"A1-R1\",\"pair_id\":\"J03-P001\",\"targets\":[{\"target_id\":\"FALSE_CROSS_SOURCE_LINK\",\"left\":{\"label\":\"ABSENT\",\"anchors\":[]},\"right\":{\"label\":\"ABSENT\",\"anchors\":[]}}],\"unrelated_errors\":{\"left\":[{\"code\":\"UNSUPPORTED_CAUSAL_DETAIL\",\"quote\":\"同时担心长期依赖导致表达趋同\"}],\"right\":[]}}"}}
+{"type":"turn.completed","usage":{"input_tokens":18479,"cached_input_tokens":0,"output_tokens":1100,"reasoning_output_tokens":906}}

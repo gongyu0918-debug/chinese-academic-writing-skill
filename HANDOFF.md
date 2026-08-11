@@ -15,7 +15,7 @@
 - 当前已完成独立入口、三条互斥专项叶、材料与引用门禁、成品残留终检、显式授权后的学术来源检索与引用覆盖层，以及渐进加载的论文 ANTI-AI 和长稿一致性 reference；运行时提供只读 `citation_audit.py`、`prose_lint.py` 和 `manuscript_audit.py`。
 - 版本 0.0.8 已发布至 GitHub（tag v0.0.8）、ClawHub 与 skillhub.cn。升级内容依据公文 skill 1.5.40 已验证更新：终稿模式新增三类否定式句尾候选、意义支撑句尾成簇与正文外制作性注记标题检测；ANTI-AI 复核新增连续否定式收口与正向状态承接、纯检测模式输出约定；入口增加终稿 lint 短指针；ANTI-AI 首段加载条件减载为入口指针。开发轮真实写稿 A/B（4 任务双臂＋确认轮 T5/T6）未发现可复现候选独有硬失败，首轮两起候选独有失败经确认轮判定为双臂共有噪声。发布门禁轮（全新任务 R1–R4、全新会话，对 v0.0.7）机械门禁 8/8 通过，双盲裁判一致，已决定任务 Candidate 3 胜、Baseline 1 胜，零硬 FAIL，判定无回退；证据在 `tests/evidence/v0.0.8-release-gate`，回执在 `.release/release-v0.0.8-receipts.json`（未跟踪）。skillhub.cn 0.0.8 已受理，审核与公开 latest 传播以平台为准。
 - 当前能力仍限定中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。英文论文、投稿、统计分析、答辩、排版和检测规避尚未纳入。
-- GitHub 完整仓库采用 MIT 许可证；ClawHub 与 skillhub.cn 的精简 Skill 包采用 MIT-0。运行目录只含 11 个必要文件，测试证据不进入 Skill 包。
+- 项目统一采用 MIT 许可证。后续版本只发布至 GitHub 与 skillhub.cn，不再向 ClawHub 发布或更新；0.0.8 及更早的 ClawHub 记录作为历史证据保留。skillhub.cn 包含 11 个必要运行文件和 1 份与根许可证语义一致的 Markdown `LICENSE.md`，共 12 个文件；派生 frontmatter 不含 `summary` 和 `homepage`。README、HANDOFF、封面源图、测试、工具、评测证据和脱敏回执均留在 GitHub 仓库。
 
 ## 迁移来源
 
@@ -50,10 +50,11 @@
 1. 冷审独立入口与三份 reference，确认 `chinese-academic-writing-assistant` 的路由、边界和本地验证证据。
 2. 若扩展英文论文，先单独设计语言路由和引用规范，不直接翻译中文 Prompt，也不要让中英文链同时加载。
 3. 运行仓库列明的单元测试、结构校验、严格证据检查和真实 writer/verifier 流程，不以旧证据替代当前候选验证。
-4. 每次发布前分别查询 GitHub、ClawHub 和 skillhub.cn 的 slug/identifier、账号状态与现有版本；skillhub.cn 使用本机 SkillHub CLI（`C:\Users\admin\.skillhub\skills_store_cli.py`）发布，小红书 Red SkillHub 不属于本项目发布目标。不得沿用其他项目的平台 ID、标签或发布回执。
-5. 不继承原公文 skill 的版本号、平台 ID、标签、审核结果和发布承诺；新产品从独立版本策略开始。
-6. 维护文风 Prompt、词表或启发式阈值时，只修复在至少三个独立输出中复现、并跨至少两个任务和两个 writer 的共性问题；单例和未达阈值的问题只记录。该阈值不适用于事实、数据、引用、归因、因果、否定范围和研究状态等硬边界，经复核确认的单例也必须阻断相应交付。确定性解析或保护区缺陷应先用三个输入变体复现，再作窄修复。
-7. 长稿层下一步优先做真正跨会话、跨学科的旧基线/候选配对消融，验证 `paper-state.md` 的状态更新、冲突合并、旧状态淘汰和文体漂移控制；不要因当前单组四章前向任务继续增加段落级规则。
+4. 每次发布前分别核对 GitHub 和 skillhub.cn 的 slug/identifier、账号状态与现有版本；不得构建、检查、上传或更新 ClawHub 包。skillhub.cn 使用本机 SkillHub CLI（`C:\Users\admin\.skillhub\skills_store_cli.py`）发布，小红书 Red SkillHub 不属于本项目发布目标。不得沿用其他项目的平台 ID、标签或发布回执。
+5. skillhub.cn 包用 `tools/build_skillhub_package.py` 按 `tools/skillhub-package-policy.json` 的 12 文件白名单构建，其中 11 个运行文件，另含 `LICENSE.md`；派生发布元数据只保留必要字段并使用 MIT。`assets/skillhub-icon.png` 是平台页面的单独封面源图，不得塞入运行包。先执行本地构建和 SkillHub CLI `--dry-run`，获得用户明确发布确认后才可上传。发布成功后将不含凭据的 GitHub 与 skillhub.cn 回执写入对应 `tests/evidence/<version>-release-gate/`；原始包、临时目录和本机回执只留在 `.release/`。
+6. 不继承原公文 skill 的版本号、平台 ID、标签、审核结果和发布承诺；新产品从独立版本策略开始。
+7. 维护文风 Prompt、词表或启发式阈值时，只修复在至少三个独立输出中复现、并跨至少两个任务和两个 writer 的共性问题；单例和未达阈值的问题只记录。该阈值不适用于事实、数据、引用、归因、因果、否定范围和研究状态等硬边界，经复核确认的单例也必须阻断相应交付。确定性解析或保护区缺陷应先用三个输入变体复现，再作窄修复。
+8. 长稿层下一步优先做真正跨会话、跨学科的旧基线/候选配对消融，验证 `paper-state.md` 的状态更新、冲突合并、旧状态淘汰和文体漂移控制；不要因当前单组四章前向任务继续增加段落级规则。
 
 ## 不应回流的内容
 

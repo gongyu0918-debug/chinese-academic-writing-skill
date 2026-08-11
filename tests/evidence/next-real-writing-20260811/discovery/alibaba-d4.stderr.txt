@@ -1,0 +1,8 @@
+2026-08-11T07:44:00.216738Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=alibaba-token-plan/deepseek-v4-flash-0731 personality=pragmatic
+2026-08-11T07:44:00.218235Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-08-11T07:44:01.965977Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-08-11T07:44:01.966060Z  WARN codex_core::client: falling back to HTTP
+2026-08-11T07:44:05.719283Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=alibaba-token-plan/deepseek-v4-flash-0731 personality=pragmatic
+2026-08-11T07:44:07.894421Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=alibaba-token-plan/deepseek-v4-flash-0731 personality=pragmatic
+2026-08-11T07:44:10.335970Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=alibaba-token-plan/deepseek-v4-flash-0731 personality=pragmatic
+2026-08-11T07:44:24.822169Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=alibaba-token-plan/deepseek-v4-flash-0731 personality=pragmatic

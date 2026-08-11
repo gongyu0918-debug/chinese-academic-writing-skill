@@ -1,0 +1,2 @@
+2026-08-11T12:14:02.479258Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-08-11T12:14:31.475176Z  WARN codex_core_plugins::manager: failed to warm remote plugin catalog cache error=failed to send remote plugin catalog request to <redacted-chatgpt-internal-url> error sending request for url (<redacted-chatgpt-internal-url>)

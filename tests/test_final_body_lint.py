@@ -56,6 +56,24 @@ class FinalBodyNegativeTailTests(unittest.TestCase):
         matches = [item for item in findings if item.pattern_id == "protective-negative-inference"]
         self.assertEqual(3, len(matches))
 
+    def test_protective_negative_inference_locates_two_clauses_in_one_sentence(self) -> None:
+        text = "该结果不能说明干预有效，也不能据此认定机制成立。"
+        findings = LINT.scan("draft.md", text, delivery_mode="body-only")
+        match = next(item for item in findings if item.pattern_id == "protective-negative-inference")
+        self.assertIn("不能说明", match.match)
+        self.assertIn("不能据此认定", match.match)
+
+    def test_protective_negative_inference_locates_adjacent_sentences(self) -> None:
+        text = "该结果不能说明干预有效。现有材料也不能据此认定机制成立。"
+        findings = LINT.scan("draft.md", text, delivery_mode="body-only")
+        matches = [item for item in findings if item.pattern_id == "protective-negative-inference"]
+        self.assertEqual(2, len(matches))
+
+    def test_necessary_negative_facts_are_not_protective_inference(self) -> None:
+        text = "其余样本未发现同类现象，原始数据未发生缺失。"
+        findings = LINT.scan("draft.md", text, delivery_mode="body-only")
+        self.assertNotIn("protective-negative-inference", pattern_ids(findings))
+
     def test_negative_boundary_tail_is_low_candidate(self) -> None:
         text = "两项指标存在相关，但这并不意味着存在因果关系。"
         findings = LINT.scan("draft.md", text, delivery_mode="body-only")

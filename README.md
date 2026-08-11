@@ -1,7 +1,6 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.0.8-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.0.8)
-[![ClawHub](https://img.shields.io/badge/ClawHub-chinese--academic--writing--assistant-2f80ed)](https://clawhub.ai/gongyu0918-debug/skills/chinese-academic-writing-assistant)
+[![Version](https://img.shields.io/badge/version-0.0.9-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.0.9)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -54,9 +53,9 @@
 
 ## 安装与调用
 
-当前公开版本：`chinese-academic-writing-assistant@0.0.8`
+当前公开版本：`chinese-academic-writing-assistant@0.0.9`
 
-平台入口：[ClawHub](https://clawhub.ai/gongyu0918-debug/skills/chinese-academic-writing-assistant) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant)
+发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant)。自后续版本起不再向 ClawHub 发布或更新；既有 ClawHub 版本只作为历史记录保留。
 
 通用 Agent Skills 安装器：
 
@@ -81,7 +80,17 @@ $chinese-academic-writing-assistant 请根据我提供的材料续写第三章�
 | `references/long-form-consistency.md` | 长稿状态、分节简报和全文一致性检查 |
 | `scripts/*.py` | 引用、表达和长稿的只读候选扫描 |
 
-运行包共 11 个文件。测试、评测材料和发布证据保存在 `tests/`，不进入平台发行包。
+skillhub.cn 包固定为上述 11 个必要运行文件和 1 份 Markdown MIT 许可证 `LICENSE.md`，共 12 个文件。发布用 `SKILL.md` 只派生 `name`、精简 `description`、`slug`、`version`、`displayName`、`tags` 和 `license: MIT`；不重复写 `summary`，不附 `homepage`。README、HANDOFF、测试、工具、评测证据和脱敏发布回执保存在 GitHub 仓库，不进入 skillhub.cn 包；本地临时包和原始回执保存在 `.release/`，不提交。
+
+SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，并在平台支持的页面入口单独上传或关联；图片不进入运行包。
+
+## 版本 0.0.9
+
+本版本直接适配中文公文写作 Skill 1.6.0 已验证的连续否定减载规则：不再只看句尾，改为复核句中或相邻句连续出现的否定分句；保留材料明确、与当前论证直接相关的必要否定、真实研究限制和未决状态。最终交付边界改用正向成品说明，隐藏推理、加载、规则复述和模板旁白仍不进入成品。
+
+SkillHub 发布元数据改为简短用途说明，省去重复 `summary` 和 `homepage`。项目与发布包统一采用 MIT，SkillHub/GitHub 发布资产包含 11 个运行文件和独立 `LICENSE.md`，共 12 个文件；封面图继续作为 GitHub 资产维护，不进入运行包。0.0.9 只发布至 GitHub 与 skillhub.cn，不更新 ClawHub。
+
+扩大化真实写稿曾检验两行“来源可比性与综合边界”候选，但归因复测既未确认受控伤害，也未确认受控收益；该候选已经撤回，不在 0.0.9 运行规则中。本版本不据此声称论文质量或去 AI 味效果获得提升。发布前确定性测试 159 项通过，标准 Skill 校验及 SkillHub 目录包、zip 包 dry-run 均通过。
 
 ## 版本 0.0.8
 
@@ -89,7 +98,7 @@ $chinese-academic-writing-assistant 请根据我提供的材料续写第三章�
 
 验证按预注册真实写稿 A/B 执行：4 任务双臂写作加双盲评审，首轮两起候选独有硬失败经全新任务确认轮检验均不具候选臂特异性，按与 DIFF 无关的波动排除；重算后已决定任务 Candidate 3 胜、Baseline 2 胜，无可复现候选独有硬失败。确定性测试 142 项通过。
 
-发布前另做全新任务 R1–R4、全新会话的门禁轮（对 v0.0.7）：机械门禁 8/8 通过；双盲裁判一致，已决定任务 Candidate 3 胜、Baseline 1 胜，全程零硬 FAIL，判定无回退。0.0.8 已发布到 GitHub（tag v0.0.8）、ClawHub 与 skillhub.cn，运行包 11 个文件与 tag v0.0.8 运行树逐文件哈希一致；skillhub.cn 版本 0.0.8 已受理，审核与公开 latest 传播以平台回执为准。
+发布前另做全新任务 R1–R4、全新会话的门禁轮（对 v0.0.7）：机械门禁 8/8 通过；双盲裁判一致，已决定任务 Candidate 3 胜、Baseline 1 胜，全程零硬 FAIL，判定无回退。0.0.8 已发布到 GitHub（tag v0.0.8）、ClawHub 与 skillhub.cn；GitHub、ClawHub 的 11 个运行文件与 tag 运行树一致，skillhub.cn 派生 `SKILL.md` 另含平台元数据。skillhub.cn 版本 0.0.8 已受理，审核与公开 latest 传播以平台回执为准。
 
 ## 版本 0.0.7
 
@@ -117,4 +126,4 @@ $chinese-academic-writing-assistant 请根据我提供的材料续写第三章�
 
 ## 开源许可
 
-GitHub 完整仓库采用 [MIT](LICENSE)。ClawHub 与 skillhub.cn 的精简运行包采用 MIT-0。
+项目统一采用 [MIT](LICENSE)。skillhub.cn 发布元数据声明 `MIT`，包内 `LICENSE.md` 与 GitHub 根许可证语义一致；除许可证外，包内只含 11 个必要运行文件。可用 `python -B tools/build_skillhub_package.py --version <version> --output-dir <dir> --zip <file>` 构建白名单包，再交给 SkillHub CLI 做 `--dry-run`，该工具不会发布。

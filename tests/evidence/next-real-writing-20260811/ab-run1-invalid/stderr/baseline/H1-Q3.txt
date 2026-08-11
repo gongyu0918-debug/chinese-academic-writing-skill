@@ -1,0 +1,9 @@
+2026-08-11T08:48:29.748531Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=minimax-cn/MiniMax-M3 personality=pragmatic
+2026-08-11T08:48:29.749999Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-08-11T08:48:32.784076Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-08-11T08:48:32.784167Z  WARN codex_core::client: falling back to HTTP
+2026-08-11T08:48:39.901913Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=minimax-cn/MiniMax-M3 personality=pragmatic
+2026-08-11T08:48:42.319817Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=minimax-cn/MiniMax-M3 personality=pragmatic
+2026-08-11T08:48:44.512052Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=minimax-cn/MiniMax-M3 personality=pragmatic
+2026-08-11T08:48:51.784539Z  WARN codex_core_plugins::manager: failed to warm remote plugin catalog cache error=failed to send remote plugin catalog request to <redacted-chatgpt-internal-url> error sending request for url (<redacted-chatgpt-internal-url>)
+2026-08-11T08:50:08.431090Z  WARN codex_protocol::openai_models: Model personality requested but model_messages is missing, falling back to base instructions. model=minimax-cn/MiniMax-M3 personality=pragmatic

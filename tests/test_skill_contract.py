@@ -52,6 +52,10 @@ class SkillContractTests(unittest.TestCase):
         self.assertEqual({"name", "description"}, set(fields))
         self.assertEqual("chinese-academic-writing-assistant", fields["name"])
         self.assertGreater(len(fields["description"]), 40)
+        self.assertIn("依据作者材料、文献或明确授权来源", fields["description"])
+        self.assertNotIn("材料不足时降级交付", fields["description"])
+        self.assertNotIn("不处理统计有效性", fields["description"])
+        self.assertNotIn("投稿、排版、答辩及检测规避", fields["description"])
 
     def test_openai_metadata_uses_new_invocation_name(self) -> None:
         self.assertIn('display_name: "中文论文写作"', self.openai)
@@ -83,7 +87,7 @@ class SkillContractTests(unittest.TestCase):
 
     def test_user_facing_copy_hides_process_and_audience_labels(self) -> None:
         for marker in (
-            "用户给出的受众定位、版本用途和制作要求只作为写作约束",
+            "受众定位和制作要求只作内部约束",
             "不把“本轮未提供”“需作者确认”等制作回合标签写进正文",
             "没有材料依据，不写进开题正文",
             "确需提醒时移到正文后建议",
@@ -288,6 +292,28 @@ class SkillContractTests(unittest.TestCase):
         self.assertIn("单例和未达阈值的问题只记录", self.handoff)
         self.assertIn("不适用于事实、数据、引用", self.handoff)
 
+    def test_v160_continuous_negation_rule_is_position_independent(self) -> None:
+        anti_ai = self.references["anti-ai-writing.md"]
+        for marker in (
+            "句中或相邻句出现两个以上否定分句",
+            "与当前论证直接相关的必要否定",
+            "具体对象、否定范围与论断强度",
+            "省去论证外围的否定说明",
+        ):
+            self.assertIn(marker, anti_ai)
+        self.assertNotIn("连续否定式收口", anti_ai)
+        self.assertNotIn("段尾或句尾堆叠", anti_ai)
+
+    def test_final_delivery_boundary_is_positive_and_keeps_exception(self) -> None:
+        for marker in (
+            "最终交付仅包含用户要求的学术文本或审稿结果",
+            "隐藏推理、加载、规则复述和模板旁白均省去",
+            "受众定位和制作要求只作内部约束",
+            "用户明确要求显示的版本、声明或机构要求标识除外",
+        ):
+            self.assertIn(marker, self.skill)
+        self.assertNotIn("制作要求只作内部约束，用户明确要求作为成品内容时除外", self.skill)
+
     def test_review_contract_keeps_fields_but_allows_scale_appropriate_forms(self) -> None:
         for marker in (
             "位置—严重度—问题—依据—修改建议",
@@ -336,7 +362,7 @@ class SkillContractTests(unittest.TestCase):
 
     def test_process_leak_exceptions_never_cover_the_models_own_workflow(self) -> None:
         anti_ai = self.references["anti-ai-writing.md"]
-        self.assertIn("成品不得夹带模型自身的制作过程", self.skill)
+        self.assertIn("隐藏推理、加载、规则复述和模板旁白均省去", self.skill)
         self.assertIn("用户要求逐字保留的文字", anti_ai)
         self.assertIn("只核对位置与格式，不改其内容", anti_ai)
 

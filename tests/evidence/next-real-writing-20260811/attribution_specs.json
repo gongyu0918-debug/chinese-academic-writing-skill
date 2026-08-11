@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "arms": ["baseline", "candidate"],
+  "judges": ["judge-1", "judge-2", "judge-3"],
+  "tasks": [
+    {"task_id": "A1-R1", "group": "A1", "replicate": 1, "source_task": "H4", "provider": "ollama", "min_visible": 1000, "max_visible": 1300, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]", "[S4]", "[S5]"]},
+    {"task_id": "A1-R2", "group": "A1", "replicate": 2, "source_task": "H4", "provider": "ollama", "min_visible": 1000, "max_visible": 1300, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]", "[S4]", "[S5]"]},
+    {"task_id": "A1-R3", "group": "A1", "replicate": 3, "source_task": "H4", "provider": "ollama", "min_visible": 1000, "max_visible": 1300, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]", "[S4]", "[S5]"]},
+    {"task_id": "A1-R4", "group": "A1", "replicate": 4, "source_task": "H4", "provider": "ollama", "min_visible": 1000, "max_visible": 1300, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]", "[S4]", "[S5]"]},
+    {"task_id": "A2-R1", "group": "A2", "replicate": 1, "source_task": "H2", "provider": "alibaba", "min_visible": 650, "max_visible": 850, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]"]},
+    {"task_id": "A2-R2", "group": "A2", "replicate": 2, "source_task": "H2", "provider": "alibaba", "min_visible": 650, "max_visible": 850, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]"]},
+    {"task_id": "A2-R3", "group": "A2", "replicate": 3, "source_task": "H2", "provider": "alibaba", "min_visible": 650, "max_visible": 850, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]"]},
+    {"task_id": "A2-R4", "group": "A2", "replicate": 4, "source_task": "H2", "provider": "alibaba", "min_visible": 650, "max_visible": 850, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]"]},
+    {"task_id": "A3-R1", "group": "A3", "replicate": 1, "source_task": "H4", "provider": "minimax", "min_visible": 1000, "max_visible": 1300, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]", "[S4]", "[S5]"]},
+    {"task_id": "A3-R2", "group": "A3", "replicate": 2, "source_task": "H4", "provider": "minimax", "min_visible": 1000, "max_visible": 1300, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]", "[S4]", "[S5]"]},
+    {"task_id": "A3-R3", "group": "A3", "replicate": 3, "source_task": "H4", "provider": "minimax", "min_visible": 1000, "max_visible": 1300, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]", "[S4]", "[S5]"]},
+    {"task_id": "A3-R4", "group": "A3", "replicate": 4, "source_task": "H4", "provider": "minimax", "min_visible": 1000, "max_visible": 1300, "body_only": true, "forbid_lists": true, "forbid_process_leak": true, "required_literals": ["[S1]", "[S2]", "[S3]", "[S4]", "[S5]"]}
+  ]
+}

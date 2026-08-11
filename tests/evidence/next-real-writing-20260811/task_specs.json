@@ -1,0 +1,50 @@
+{
+  "D1": {
+    "task_file": "tasks/D1.md",
+    "required_reads": [
+      "chinese-academic-writing-assistant/SKILL.md",
+      "chinese-academic-writing-assistant/references/academic-writing.md",
+      "chinese-academic-writing-assistant/references/anti-ai-writing.md"
+    ],
+    "min_chars": 450,
+    "max_chars": 650,
+    "required_literals": ["[M1]", "[M2]", "[M3]", "[M4]"],
+    "forbidden_literals": ["修改说明", "补充与修改建议", "以下为修改后的"]
+  },
+  "D2": {
+    "task_file": "tasks/D2.md",
+    "required_reads": [
+      "chinese-academic-writing-assistant/SKILL.md",
+      "chinese-academic-writing-assistant/references/academic-proposal.md",
+      "chinese-academic-writing-assistant/references/anti-ai-writing.md"
+    ],
+    "min_chars": 750,
+    "max_chars": 1000,
+    "required_literals": ["一、已有基础", "二、研究问题与目标", "三、研究内容与方法", "四、进度与预期成果"],
+    "forbidden_literals": ["修改说明", "补充与修改建议", "本轮未提供"]
+  },
+  "D3": {
+    "task_file": "tasks/D3.md",
+    "required_reads": [
+      "chinese-academic-writing-assistant/SKILL.md",
+      "chinese-academic-writing-assistant/references/academic-literature-review.md",
+      "chinese-academic-writing-assistant/references/anti-ai-writing.md"
+    ],
+    "min_chars": 700,
+    "max_chars": 1000,
+    "required_literals": ["[S1]", "[S2]", "[S4]"],
+    "forbidden_literals": ["修改说明", "补充与修改建议"]
+  },
+  "D4": {
+    "task_file": "tasks/D4.md",
+    "required_reads": [
+      "chinese-academic-writing-assistant/SKILL.md",
+      "chinese-academic-writing-assistant/references/academic-writing.md",
+      "chinese-academic-writing-assistant/references/anti-ai-writing.md"
+    ],
+    "min_chars": 80,
+    "max_chars": 1800,
+    "required_literals": ["位置", "严重度", "问题", "依据", "修改建议"],
+    "forbidden_literals": ["AI 概率", "AI概率", "检测率"]
+  }
+}

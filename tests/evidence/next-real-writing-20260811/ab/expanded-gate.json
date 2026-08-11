@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "gate_pass": false,
+  "blockers": [
+    "candidate decided win rate 58.3% is not above 60%",
+    "candidate has a candidate-only hard failure",
+    "at least one provider is candidate net-negative",
+    "only 0/3 H2 candidate outputs jointly synthesize S1 and S2",
+    "generic score: candidate has at least one candidate-only hard FAIL"
+  ],
+  "candidate_wins": 7,
+  "baseline_wins": 5,
+  "candidate_decided_win_rate": 0.5833333333333334,
+  "provider_net": {
+    "ollama": 2,
+    "alibaba": 2,
+    "minimax": -2
+  },
+  "h2_wins": {
+    "baseline": 1,
+    "candidate": 2
+  },
+  "h2_joint_synthesis_count": 0
+}

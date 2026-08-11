@@ -1,4 +1,4 @@
 interface:
   display_name: "中文论文写作"
-  short_description: "基于材料起草、改写和复核中文论文，经授权检索来源"
-  default_prompt: "使用 $chinese-academic-writing-assistant，先按交付物、操作模式、材料状态和研究阶段路由，再完成中文学术写作任务；仅在我明确授权时检索来源，不补造事实、研究过程或引用。"
+  short_description: "中文论文、开题报告与文献综述的起草、改写、审稿和证据核对"
+  default_prompt: "使用 $chinese-academic-writing-assistant，依据我提供或授权核验的材料完成中文论文写作、改写或审稿。"
