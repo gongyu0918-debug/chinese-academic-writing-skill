@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "version": "0.0.9",
-  "recorded_at": "2026-08-11T14:19:20.6618701Z",
+  "recorded_at": "2026-08-11T14:23:17.9761869Z",
   "release_commit": "31d3beac65f6e33663463476f0110f65e08fd821",
   "tag": {
     "name": "v0.0.9",
@@ -50,12 +50,22 @@
     "version": "0.0.9",
     "file_count": 12,
     "fingerprint": "b6363b0fa848d32f86c7d504a53aad2d3dcdfb289620a026d213161cdf3634f8",
-    "review_status": "pending",
-    "security_scan_status": "pending",
-    "content_audit_status": "pending",
-    "dashboard_status": "安全审核中",
-    "public_search_visible_version": "0.0.8",
-    "signature_verify_status": "not_found_while_pending",
+    "review_status_at_upload": "pending",
+    "security_scan_status_at_upload": "pending",
+    "content_audit_status_at_upload": "pending",
+    "dashboard_status_at_upload": "安全审核中",
+    "public_propagation_status": "visible_and_signature_verified",
+    "public_search_visible_version": "0.0.9",
+    "signature_verify_status": "PASS",
+    "signature": {
+      "issuer": "skillhub.cn",
+      "key_id": "skillhub-platform-v1",
+      "publisher_user_name": "user_f3d82da7",
+      "publisher_real_name_verified": true,
+      "content_hash": "b6363b0fa848d32f86c7d504a53aad2d3dcdfb289620a026d213161cdf3634f8",
+      "actual_content_hash": "b6363b0fa848d32f86c7d504a53aad2d3dcdfb289620a026d213161cdf3634f8",
+      "content_hash_match": true
+    },
     "tags": {
       "academic": "0.0.9",
       "chinese": "0.0.9",
@@ -83,7 +93,6 @@
     "reproducible_zip_build": "PASS"
   },
   "remaining_risks": [
-    "skillhub.cn 0.0.9 尚在安全、内容与总体审核阶段；公开搜索和签名校验仍显示或仅能解析 0.0.8。",
     "0.0.9 新增公开证据已脱敏；远端既有 v0.0.8 Git 历史仍含内部请求分页与查询标识，未发现 API key、Bearer、密码或邮箱。彻底清除需重写并强推既有公开历史，本次未执行。"
   ]
 }
