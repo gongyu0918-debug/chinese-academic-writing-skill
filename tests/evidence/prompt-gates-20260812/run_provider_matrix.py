@@ -34,6 +34,9 @@ LITERAL_PATH_RE = re.compile(rf"(?i)-literalpath\s+{QUOTED_OR_BARE_PATH}")
 DIRECT_READ_RE = re.compile(
     rf"(?i)^(?:get-content|cat)\s+{QUOTED_OR_BARE_PATH}(?:\s|$)"
 )
+GET_CONTENT_OPTION_PREFIX_RE = re.compile(
+    r"(?i)^get-content(?:\s+-(?:raw|encoding\s+(?:utf-?8|unicode|ascii|default|oem)))+\s+"
+)
 
 
 @dataclass(frozen=True)
@@ -267,7 +270,13 @@ def normalized_read_paths(command: str) -> list[str]:
         return []
     if not re.match(r"(?i)^(?:get-content|cat)\b", script):
         return []
-    match = LITERAL_PATH_RE.search(script) or DIRECT_READ_RE.match(script)
+    match = LITERAL_PATH_RE.search(script)
+    if match is None:
+        option_prefix = GET_CONTENT_OPTION_PREFIX_RE.match(script)
+        if option_prefix is not None:
+            match = re.match(QUOTED_OR_BARE_PATH, script[option_prefix.end():])
+        else:
+            match = DIRECT_READ_RE.match(script)
     if match is None:
         return []
     raw_path = next(group for group in match.groups() if group is not None)

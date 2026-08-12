@@ -151,6 +151,25 @@ class PromptGateProviderMatrixTests(unittest.TestCase):
         )
         self.assertEqual(list(skill_files), MODULE.observed_reads(trace, skill_files))
 
+    def test_observed_reads_supports_safe_get_content_options_before_path(self):
+        skill_files = ("SKILL.md", "references/academic-writing.md")
+        trace = "\n".join(
+            [
+                '{"item":{"type":"command_execution","command":"pwsh -Command \'Get-Content -Raw -Encoding UTF8 skill/SKILL.md\'","exit_code":0,"status":"completed"}}',
+                '{"item":{"type":"command_execution","command":"pwsh -Command \'Get-Content -Encoding utf-8 -Raw skill/references/academic-writing.md\'","exit_code":0,"status":"completed"}}',
+            ]
+        )
+        self.assertEqual(list(skill_files), MODULE.observed_reads(trace, skill_files))
+
+    def test_observed_reads_rejects_unknown_get_content_option_prefix(self):
+        skill_files = ("SKILL.md",)
+        trace = (
+            '{"item":{"type":"command_execution","command":"pwsh -Command '
+            "'Get-Content -ReadCount 1 skill/SKILL.md'\",\"exit_code\":0,"
+            '"status":"completed"}}'
+        )
+        self.assertEqual([], MODULE.observed_reads(trace, skill_files))
+
     def test_observed_reads_rejects_echo_and_compound_commands(self):
         skill_files = ("SKILL.md",)
         trace = "\n".join(
