@@ -98,8 +98,8 @@ class SkillContractTests(unittest.TestCase):
         for marker in (
             "同一材料或证据边界只在首次必要位置说明",
             "研究状态用“已、拟、尚未”等正文时态和语气表达",
-            "删除制作回合或版本标签、写作控制旁白",
-            "必要的结论限制应就近融入对应论断",
+            "删除制作回合、版本标签、写作控制旁白和重复兜底说明",
+            "必要的结论限制就近融入对应论断",
             "不另作小字式尾注",
         ):
             self.assertIn(marker, self.skill)
@@ -114,6 +114,14 @@ class SkillContractTests(unittest.TestCase):
             "不预选统计检验、结果方向、显著性表达或因果模板",
             "独立综述没有可用来源且用户未授权检索时，不写综述正文",
             "未完整读取时明确已覆盖和未覆盖部分",
+        ):
+            self.assertIn(marker, self.skill)
+
+    def test_chunking_cannot_bypass_the_cumulative_whole_draft_boundary(self) -> None:
+        for marker in (
+            "按章节、文件或轮次拆分不改变累计交付物性质",
+            "累计目标是替作者生成整篇可提交稿",
+            "提纲、局部示范、反馈和基于作者底稿的修改",
         ):
             self.assertIn(marker, self.skill)
 
@@ -135,12 +143,24 @@ class SkillContractTests(unittest.TestCase):
             "默认不联网",
             "题目含“最新、当前、近年”，出现 DOI、URL，或者材料不足，都不构成授权",
             "授权只覆盖本次约定的主题、范围和轮次",
-            "来源层与 ANTI-AI 层不得同阶段加载",
+            "来源层与 ANTI-AI 层不得在同一处理阶段共同调用",
             "不自设统一合格比例",
             "不用无关来源抬高数字",
         ):
             self.assertIn(marker, self.skill + citation)
         self.assertIn("scripts/citation_audit.py", citation)
+
+    def test_citation_research_has_a_bounded_stop_condition(self) -> None:
+        citation = self.references["citation-research.md"]
+        for marker in (
+            "停止检索",
+            "高风险论断",
+            "删除、收窄或标为未确认",
+            "预定渠道",
+            "权限耗尽",
+            "不为提高 N/M",
+        ):
+            self.assertIn(marker, citation)
 
     def test_default_citation_style_distinguishes_rich_text_from_markdown(self) -> None:
         citation = self.references["citation-research.md"]
@@ -211,7 +231,7 @@ class SkillContractTests(unittest.TestCase):
 
     def test_integrity_standards_and_review_interface_are_explicit(self) -> None:
         for marker in (
-            "不得代写整篇提交稿",
+            "累计目标是替作者生成整篇可提交稿",
             "GB/T 7714-2025",
             "GB/T 7713.1-2025",
             "不得声称“完全符合”",
@@ -276,8 +296,8 @@ class SkillContractTests(unittest.TestCase):
         for marker in (
             "在唯一专项叶完成内容与证据复核后",
             "不是第四种任务叶",
-            "只有用户明确要求文风、去模板化或语言质量复核",
-            "普通起草、事实审查",
+            "正文或审稿结果明确提出文风、去模板化或语言质量目标",
+            "普通起草或事实审查未提出文风目标时不读取",
         ):
             self.assertIn(marker, self.skill)
         self.assertIn("scripts/prose_lint.py", anti_ai)
@@ -291,6 +311,22 @@ class SkillContractTests(unittest.TestCase):
         self.assertIn("至少三个独立输出", self.handoff)
         self.assertIn("单例和未达阈值的问题只记录", self.handoff)
         self.assertIn("不适用于事实、数据、引用", self.handoff)
+
+    def test_anti_ai_loading_precedence_is_deterministic(self) -> None:
+        for marker in (
+            "先按本轮对象判断",
+            "提纲、材料清单、范围说明和原始摘录不读取",
+            "正文或审稿结果",
+            "明确提出文风、去模板化或语言质量目标",
+            "普通起草或事实审查未提出文风目标时不读取",
+        ):
+            self.assertIn(marker, self.skill)
+
+    def test_skill_relative_script_paths_have_an_explicit_base(self) -> None:
+        self.assertIn(
+            "`scripts/...` 均相对包含本 `SKILL.md` 的 Skill 根目录解析",
+            self.skill,
+        )
 
     def test_v160_continuous_negation_rule_is_position_independent(self) -> None:
         anti_ai = self.references["anti-ai-writing.md"]

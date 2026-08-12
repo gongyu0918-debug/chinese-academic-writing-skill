@@ -82,16 +82,17 @@ class ContextAndRuntimeTests(unittest.TestCase):
 
     def test_cross_cutting_layers_are_not_coloaded(self) -> None:
         skill = SKILL_PATH.read_text(encoding="utf-8")
-        self.assertIn("来源层与 ANTI-AI 层不得同阶段加载", skill)
-        self.assertIn("另开上下文或轮次读取", skill)
+        self.assertIn("来源层与 ANTI-AI 层不得在同一处理阶段共同调用", skill)
+        self.assertIn("分处理阶段读取", skill)
         self.assertIn("只把紧凑证据账本传入专项叶", skill)
 
     def test_long_form_layer_is_progressive_and_not_loaded_for_short_work(self) -> None:
         skill = SKILL_PATH.read_text(encoding="utf-8")
         long_form = (REFERENCE_DIR / "long-form-consistency.md").read_text(encoding="utf-8")
         for marker in (
-            "多章节、跨轮次续写或明确全文一致性筛查时",
-            "单段、单节和提纲任务不读",
+            "长稿层先判断是否需要恢复跨章或跨轮状态",
+            "多章提纲仍不读取",
+            "单段或单节且不需要恢复其他章节状态时不读取",
             "未读全稿不得声称完成全文筛查",
         ):
             self.assertIn(marker, skill)
@@ -116,6 +117,28 @@ class ContextAndRuntimeTests(unittest.TestCase):
                     entry_length + unicode_length(REFERENCE_DIR / name) + long_form_length,
                     8_000,
                 )
+
+    def test_long_form_loading_precedence_resolves_crossing_conditions(self) -> None:
+        skill = SKILL_PATH.read_text(encoding="utf-8")
+        for marker in (
+            "先判断是否需要恢复跨章或跨轮状态",
+            "多章提纲仍不读取",
+            "单段或单节且不需要恢复其他章节状态时不读取",
+            "跨轮单节确需核对前文状态时读取",
+        ):
+            self.assertIn(marker, skill)
+
+    def test_long_form_persistence_requires_write_authority(self) -> None:
+        long_form = (REFERENCE_DIR / "long-form-consistency.md").read_text(
+            encoding="utf-8"
+        )
+        for marker in (
+            "明确要求跨轮次保存状态",
+            "已经授权写入当前项目",
+            "只审、只读或粘贴文本任务",
+            "不创建 `.academic-writing/`",
+        ):
+            self.assertIn(marker, long_form)
 
     def test_leaf_bodies_do_not_embed_other_leaf_files(self) -> None:
         for leaf in REFERENCE_DIR.glob("*.md"):
