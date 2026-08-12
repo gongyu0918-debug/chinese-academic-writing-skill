@@ -82,8 +82,8 @@ class ContextAndRuntimeTests(unittest.TestCase):
 
     def test_cross_cutting_layers_are_not_coloaded(self) -> None:
         skill = SKILL_PATH.read_text(encoding="utf-8")
-        self.assertIn("来源层与 ANTI-AI 层不得在同一处理阶段共同调用", skill)
-        self.assertIn("分处理阶段读取", skill)
+        self.assertIn("来源层与 ANTI-AI 层不得同阶段加载", skill)
+        self.assertIn("另开上下文或轮次读取", skill)
         self.assertIn("只把紧凑证据账本传入专项叶", skill)
 
     def test_long_form_layer_is_progressive_and_not_loaded_for_short_work(self) -> None:
