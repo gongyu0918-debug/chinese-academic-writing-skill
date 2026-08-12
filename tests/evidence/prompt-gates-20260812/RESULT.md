@@ -1,8 +1,8 @@
 # 中文论文写作 Prompt 门禁测试结果
 
-日期：2026-08-13  
-基线：`main@2eee3de1a3ba87a604637ec1929c695d5ae1c399`  
-初始候选：`ecf2d51aaae4bbe12ede6d3839569a3878ab1c30`  
+日期：2026-08-13
+基线：`main@2eee3de1a3ba87a604637ec1929c695d5ae1c399`
+初始候选：`ecf2d51aaae4bbe12ede6d3839569a3878ab1c30`
 测试模型：
 
 - `alibaba-token-plan/deepseek-v4-flash-0731`

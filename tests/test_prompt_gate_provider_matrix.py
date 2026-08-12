@@ -43,6 +43,27 @@ class PromptGateProviderMatrixTests(unittest.TestCase):
         self.assertEqual(12, len(routes))
         self.assertEqual({"river"}, {row["arm"] for row in routes})
 
+    def test_crossing_condition_schedule_is_twelve_paired_calls(self):
+        rows = MODULE.schedule(
+            (
+                "LONGFORM_OUTLINE_EXPLICIT_CONSISTENCY",
+                "PERSIST_AUTHORIZED_REVIEW",
+            )
+        )
+        self.assertEqual(12, len(rows))
+        self.assertEqual({"maple", "river"}, {row["arm"] for row in rows})
+        self.assertEqual(
+            6,
+            sum(
+                row["task_id"] == "LONGFORM_OUTLINE_EXPLICIT_CONSISTENCY"
+                for row in rows
+            ),
+        )
+        self.assertEqual(
+            6,
+            sum(row["task_id"] == "PERSIST_AUTHORIZED_REVIEW" for row in rows),
+        )
+
     def test_pair_order_is_balanced_across_providers(self):
         rows = MODULE.schedule()
         by_provider = {provider.name: [] for provider in MODULE.PROVIDERS}
@@ -155,6 +176,21 @@ class PromptGateProviderMatrixTests(unittest.TestCase):
                     {"maple": maple, "river": river},
                     ("CUMULATIVE_DRAFT",),
                 )
+
+    def test_bypass_scope_accepts_authorized_review_persistence_task(self):
+        MODULE.ISOLATED_ROOT.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=MODULE.ISOLATED_ROOT) as directory:
+            root = Path(directory)
+            maple = root / "maple"
+            river = root / "river"
+            maple.mkdir()
+            river.mkdir()
+            MODULE.validate_bypass_scope(
+                True,
+                root / "out",
+                {"maple": maple, "river": river},
+                ("PERSIST_AUTHORIZED_REVIEW",),
+            )
 
     def test_build_prompt_does_not_expose_arm_or_expected_behavior(self):
         prompt = MODULE.build_prompt("用户请求")

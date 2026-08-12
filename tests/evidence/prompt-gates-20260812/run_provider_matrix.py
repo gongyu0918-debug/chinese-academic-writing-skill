@@ -26,7 +26,9 @@ TIMEOUT_SECONDS = 1200
 REASONING_EFFORT = "max"
 REPO_ROOT = Path(__file__).resolve().parents[3]
 ISOLATED_ROOT = REPO_ROOT / ".release"
-PERSISTENCE_TASKS = frozenset({"PERSIST_UNAUTHORIZED", "PERSIST_AUTHORIZED"})
+PERSISTENCE_TASKS = frozenset(
+    {"PERSIST_UNAUTHORIZED", "PERSIST_AUTHORIZED", "PERSIST_AUTHORIZED_REVIEW"}
+)
 QUOTED_OR_BARE_PATH = r'(?:"([^"]+)"|\'([^\']+)\'|([^\s;|&]+))'
 LITERAL_PATH_RE = re.compile(rf"(?i)-literalpath\s+{QUOTED_OR_BARE_PATH}")
 DIRECT_READ_RE = re.compile(
@@ -71,6 +73,17 @@ TASKS: dict[str, dict[str, Any]] = {
 第一节：研究对象为2023级学生，共64人，核心变量统一称为“学习投入”。
 第二节：本节将核心变量写作“学习参与”，样本为68人。请检查术语和数字的一致性。""",
     },
+    "PERSIST_AUTHORIZED_REVIEW": {
+        "arms": ("maple", "river"),
+        "expected_reads": (
+            "SKILL.md",
+            "references/academic-writing.md",
+            "references/long-form-consistency.md",
+        ),
+        "request": """这是只审不改任务。我明确授权你在当前项目创建 `.academic-writing/` 并保存跨轮状态，供下一轮继续审稿。请审下面两节，只给问题清单，同时建立后续可恢复的状态记录：
+第一节：研究对象为2023级学生，共64人，核心变量统一称为“学习投入”。
+第二节：本节将核心变量写作“学习参与”，样本为68人。请检查术语和数字的一致性。""",
+    },
     "CUMULATIVE_DRAFT": {
         "arms": ("maple", "river"),
         "expected_reads": ("SKILL.md", "references/academic-writing.md"),
@@ -110,6 +123,16 @@ TASKS: dict[str, dict[str, Any]] = {
             "references/anti-ai-writing.md",
         ),
         "request": """以下是四章课程论文提纲。请只检查跨章逻辑、概念分工和术语一致性，按严重度给问题清单，不扩写正文：
+第一章 问题提出与概念界定；第二章 使用表现与情境差异；第三章 可能机制与条件；第四章 讨论、边界与建议。""",
+    },
+    "LONGFORM_OUTLINE_EXPLICIT_CONSISTENCY": {
+        "arms": ("maple", "river"),
+        "expected_reads": ("SKILL.md", "references/academic-writing.md"),
+        "forbidden_reads": (
+            "references/long-form-consistency.md",
+            "references/anti-ai-writing.md",
+        ),
+        "request": """下面只有四章论文提纲，不含任何正文。请对这个多章提纲做全文一致性筛查和跨章一致性检查，按严重度给出问题清单，不扩写正文：
 第一章 问题提出与概念界定；第二章 使用表现与情境差异；第三章 可能机制与条件；第四章 讨论、边界与建议。""",
     },
     "LONGFORM_CROSS_TURN": {
@@ -417,7 +440,7 @@ def validate_bypass_scope(
     if any(not source.resolve().is_relative_to(isolated_root) for source in sources.values()):
         raise SystemExit("sandbox bypass requires both arm sources under repository .release")
     if not selected_tasks or any(task not in PERSISTENCE_TASKS for task in selected_tasks):
-        raise SystemExit("sandbox bypass is limited to the two persistence tasks")
+        raise SystemExit("sandbox bypass is limited to registered persistence tasks")
 
 
 def main() -> int:
