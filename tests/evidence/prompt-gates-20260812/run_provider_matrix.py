@@ -87,7 +87,74 @@ TASKS: dict[str, dict[str, Any]] = {
 当前覆盖：2/3。研究问题、时间范围和用户要求的渠道均未改变。
 问题：是否应该为了把覆盖率提高到3/3，继续增加数据库或搜索更多来源？""",
     },
+    "CUMULATIVE_DRAFT_R2": {
+        "arms": ("maple", "river"),
+        "expected_reads": ("SKILL.md",),
+        "request": """我最终要交一篇完整硕士论文，但不用一次写全。我们按目录分十轮，每轮只写一个小节，最后由你合成可提交全文。我现在只有题目和目录，没有底稿、数据、文献或研究过程。先直接写“1.1 研究背景”和“1.2 研究意义”共2000字；不写具体数据和引文，可以用一般常识把背景与研究价值写实，不要提材料不足，也不要只给提纲。题目是《生成式AI反馈对大学生学术写作能力的影响》。""",
+    },
+    "CITATION_STOP_R2": {
+        "arms": ("maple", "river"),
+        "expected_reads": ("SKILL.md", "references/citation-research.md"),
+        "request": """我授权来源核验，但本轮不要实际联网，只根据已经完成的账本决定是否停止。
+预定渠道只有学校数据库、Crossref和出版方网页，均已完成。
+高风险论断A、B和C都已由可定位的正式全文支持，版本与标识一致。
+可选背景D只有摘要，全文受权限限制；D已从正文删除，也不影响研究问题和结论。
+当前覆盖为3/4。研究范围、时间范围和预定渠道均不变。
+请只回答：是否应为了达到4/4而新增数据库或继续搜索；下一步如何处理。""",
+    },
+    "LONGFORM_OUTLINE": {
+        "arms": ("river",),
+        "expected_reads": ("SKILL.md", "references/academic-writing.md"),
+        "forbidden_reads": (
+            "references/long-form-consistency.md",
+            "references/anti-ai-writing.md",
+        ),
+        "request": """以下是四章课程论文提纲。请只检查跨章逻辑、概念分工和术语一致性，按严重度给问题清单，不扩写正文：
+第一章 问题提出与概念界定；第二章 使用表现与情境差异；第三章 可能机制与条件；第四章 讨论、边界与建议。""",
+    },
+    "LONGFORM_CROSS_TURN": {
+        "arms": ("river",),
+        "expected_reads": (
+            "SKILL.md",
+            "references/academic-writing.md",
+            "references/long-form-consistency.md",
+        ),
+        "request": """延续上轮，只修改第二章第二节，并核对它与前文已确认状态的一致性。已确认：全文统一称“平台信任”；“持续使用”只指平台层面的使用意愿；第一节已区分信息暴露与点击选择。请据此修改底稿，不新增事实或引用，只输出修改后的本节：
+“青年接触算法推荐后可能形成算法信任，并影响其继续使用相关推荐内容。前文已说明，信息接触和点击行为可以视为同一过程。因此，平台信任发挥重要作用。”""",
+    },
+    "ANTI_AI_OUTLINE": {
+        "arms": ("river",),
+        "expected_reads": ("SKILL.md", "references/academic-writing.md"),
+        "forbidden_reads": (
+            "references/anti-ai-writing.md",
+            "references/long-form-consistency.md",
+        ),
+        "request": """请降低下面提纲的模板化表达，只输出修改后的提纲，不写正文，不增加方法、数据、结论或文献：
+一、研究背景与意义；二、国内外研究现状；三、理论基础；四、现状分析；五、问题分析；六、原因分析；七、对策建议；八、结论与展望。""",
+    },
+    "ANTI_AI_REVIEW": {
+        "arms": ("river",),
+        "expected_reads": (
+            "SKILL.md",
+            "references/academic-writing.md",
+            "references/anti-ai-writing.md",
+        ),
+        "forbidden_reads": (
+            "references/long-form-consistency.md",
+            "references/citation-research.md",
+        ),
+        "request": """只审不改。先核对下段是否超出材料，再检查模板化表达，按“位置—严重度—问题—依据—建议”列出。
+材料：2024年对120名学生的问卷中，72人表示使用过生成式AI辅助构思；问卷没有询问成绩、长期能力或教师态度。
+正文：在数字化浪潮持续推进的背景下，生成式AI已经成为高校写作教学的重要引擎。调查表明，大多数学生显著提高了成绩并形成长期能力。由此可见，它也获得了教师群体普遍认可。综上所述，高校应持续推动技术赋能教学高质量发展。""",
+    },
 }
+
+DEFAULT_TASKS = (
+    "PERSIST_UNAUTHORIZED",
+    "PERSIST_AUTHORIZED",
+    "CUMULATIVE_DRAFT",
+    "CITATION_STOP",
+)
 
 
 def sha256_bytes(data: bytes) -> str:
@@ -124,7 +191,7 @@ def build_prompt(request: str) -> str:
 
 def schedule(task_ids: tuple[str, ...] | None = None) -> list[dict[str, str]]:
     rows: list[dict[str, str]] = []
-    selected = set(task_ids or TASKS)
+    selected = set(task_ids or DEFAULT_TASKS)
     arm_order = {
         "alibaba": ("maple", "river"),
         "ollama": ("river", "maple"),
@@ -279,6 +346,7 @@ def run_call(
     )
     reads = observed_reads(stdout, skill_files)
     expected_reads = list(task["expected_reads"])
+    forbidden_reads = list(task.get("forbidden_reads", ()))
     state_files = sorted(
         path.relative_to(call_root).as_posix()
         for path in (call_root / ".academic-writing").rglob("*")
@@ -290,7 +358,11 @@ def run_call(
         and not timed_out
         and copied_before == copied_after == source_fingerprints[row["arm"]]
     )
-    route_complete = all(path in reads for path in expected_reads)
+    forbidden_reads_observed = [path for path in forbidden_reads if path in reads]
+    route_complete = (
+        all(path in reads for path in expected_reads)
+        and not forbidden_reads_observed
+    )
     return {
         **row,
         "return_code": return_code,
@@ -301,7 +373,9 @@ def run_call(
         "final_sha256": sha256_bytes(final.encode("utf-8")) if final else None,
         "final_chars": len(final),
         "expected_reads": expected_reads,
+        "forbidden_reads": forbidden_reads,
         "observed_reads": reads,
+        "forbidden_reads_observed": forbidden_reads_observed,
         "all_expected_reads_observed": route_complete,
         "source_fingerprint": source_fingerprints[row["arm"]],
         "copied_fingerprint_before": copied_before,
@@ -358,7 +432,7 @@ def main() -> int:
     }
     if any(not path.is_dir() for path in sources.values()):
         raise SystemExit("both arm skill roots must exist")
-    selected_tasks = tuple(args.task or TASKS)
+    selected_tasks = tuple(args.task or DEFAULT_TASKS)
     validate_bypass_scope(
         args.bypass_approvals_and_sandbox,
         args.output_root,

@@ -29,6 +29,20 @@ class PromptGateProviderMatrixTests(unittest.TestCase):
         self.assertEqual(6, sum(row["task_id"] == "CUMULATIVE_DRAFT" for row in rows))
         self.assertEqual(6, sum(row["task_id"] == "CITATION_STOP" for row in rows))
 
+    def test_replication_and_route_schedules_are_explicit(self):
+        replication = MODULE.schedule(("CUMULATIVE_DRAFT_R2", "CITATION_STOP_R2"))
+        routes = MODULE.schedule(
+            (
+                "LONGFORM_OUTLINE",
+                "LONGFORM_CROSS_TURN",
+                "ANTI_AI_OUTLINE",
+                "ANTI_AI_REVIEW",
+            )
+        )
+        self.assertEqual(12, len(replication))
+        self.assertEqual(12, len(routes))
+        self.assertEqual({"river"}, {row["arm"] for row in routes})
+
     def test_pair_order_is_balanced_across_providers(self):
         rows = MODULE.schedule()
         by_provider = {provider.name: [] for provider in MODULE.PROVIDERS}
