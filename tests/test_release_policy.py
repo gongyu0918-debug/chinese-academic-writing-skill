@@ -44,6 +44,18 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertTrue(root_license.startswith("MIT License\n"))
         self.assertEqual(root_license, package_license.removeprefix("# "))
         self.assertNotIn("MIT-0", self.readme + self.handoff)
+        self.assertEqual("[MIT](LICENSE)", self.readme.partition("## 开源许可")[2].strip())
+
+    def test_public_copy_does_not_expose_release_commands(self) -> None:
+        public_copy = self.readme + self.handoff + self.release_notes
+        for marker in (
+            "build_skillhub_package.py",
+            "skills_store_cli.py",
+            "--dry-run",
+            "--output-dir",
+            "--zip",
+        ):
+            self.assertNotIn(marker, public_copy)
 
     def test_skillhub_frontmatter_is_minimal_and_has_no_homepage(self) -> None:
         metadata = self.package["derived_frontmatter"]
@@ -118,8 +130,7 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertIn("chinese-academic-writing-assistant@0.1.0", self.readme)
         combined = self.readme + self.release_notes
         for marker in (
-            "11 个运行文件和独立 `LICENSE.md`",
-            "使用 MIT",
+            "许可证：MIT",
             "不更新 ClawHub",
             "修正前 0/3，修正后 3/3",
             "两臂均 3/3 真实落盘",

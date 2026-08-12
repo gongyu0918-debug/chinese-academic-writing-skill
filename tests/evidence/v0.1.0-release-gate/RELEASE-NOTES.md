@@ -5,7 +5,7 @@
 - 收窄长稿渐进加载：提纲即使要求全文或跨章一致性检查，也不读取用于恢复正文状态的长稿叶；只对已提供正文的跨章、跨轮或合稿任务按需加载。
 - 收窄 ANTI-AI 渐进加载：提纲、材料清单、范围说明和原始摘录不读取 ANTI-AI 叶；正文或审稿结果有明确文风目标时再加载。
 - 收紧长稿状态落盘：只有明确要求跨轮保存或授权写入项目时，才创建 `.academic-writing/`；授权对只审、只读或粘贴文本任务同样有效。
-- 项目与 SkillHub 包继续使用 MIT。GitHub Release 资产与 SkillHub 使用同一份 12 文件包：11 个运行文件和独立 `LICENSE.md`。
+- 许可证：MIT。
 - 0.1.0 只发布到 GitHub 与 skillhub.cn，不更新 ClawHub。SkillHub 页面使用 `assets/skillhub-icon.png` 作为新图标，图标不进入运行包。
 
 ## 验证结论

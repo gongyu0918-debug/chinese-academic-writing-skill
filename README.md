@@ -80,8 +80,6 @@ $chinese-academic-writing-assistant 请根据我提供的材料续写第三章�
 | `references/long-form-consistency.md` | 长稿状态、分节简报和全文一致性检查 |
 | `scripts/*.py` | 引用、表达和长稿的只读候选扫描 |
 
-skillhub.cn 包固定为上述 11 个必要运行文件和 1 份 Markdown MIT 许可证 `LICENSE.md`，共 12 个文件。发布用 `SKILL.md` 只派生 `name`、精简 `description`、`slug`、`version`、`displayName`、`tags` 和 `license: MIT`；不重复写 `summary`，不附 `homepage`。README、HANDOFF、测试、工具、评测证据和脱敏发布回执保存在 GitHub 仓库，不进入 skillhub.cn 包；本地临时包和原始回执保存在 `.release/`，不提交。
-
 SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，并在平台支持的页面入口单独上传或关联；图片不进入运行包。
 
 ## 版本 0.1.0
@@ -90,13 +88,13 @@ SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，
 
 长稿状态文件只在用户明确要求跨轮保存或授权写入项目时创建。“只审不改＋明确授权保存”复测中两臂均 3/3 真实落盘，因此只记为权限语义消歧，不声称候选独有收益。本轮 24 次独立前向使用和 90 次三模型调用还证伪并撤回了累计分段整稿边界句、引用停止提示和脚本路径说明。
 
-0.1.0 继续只发布到 GitHub 与 skillhub.cn，不更新 ClawHub。项目和 12 文件 SkillHub 包继续使用 MIT，包内保留独立 `LICENSE.md`；SkillHub 页面单独上传新图标，图片不进入运行包。本版本没有证明 ANTI-AI 叶必然改善正文文风，分轮逐节生成完整论文的绕过风险仍待解决。
+0.1.0 继续只发布到 GitHub 与 skillhub.cn，不更新 ClawHub。许可证为 MIT。SkillHub 页面单独上传新图标，图片不进入运行包。本版本没有证明 ANTI-AI 叶必然改善正文文风，分轮逐节生成完整论文的绕过风险仍待解决。
 
 ## 版本 0.0.9
 
 本版本直接适配中文公文写作 Skill 1.6.0 已验证的连续否定减载规则：不再只看句尾，改为复核句中或相邻句连续出现的否定分句；保留材料明确、与当前论证直接相关的必要否定、真实研究限制和未决状态。最终交付边界改用正向成品说明，隐藏推理、加载、规则复述和模板旁白仍不进入成品。
 
-SkillHub 发布元数据改为简短用途说明，省去重复 `summary` 和 `homepage`。项目与发布包统一采用 MIT，SkillHub/GitHub 发布资产包含 11 个运行文件和独立 `LICENSE.md`，共 12 个文件；封面图继续作为 GitHub 资产维护，不进入运行包。0.0.9 只发布至 GitHub 与 skillhub.cn，不更新 ClawHub。
+SkillHub 发布元数据改为简短用途说明，省去重复 `summary` 和 `homepage`。许可证改为 MIT。0.0.9 只发布至 GitHub 与 skillhub.cn，不更新 ClawHub。
 
 扩大化真实写稿曾检验两行“来源可比性与综合边界”候选，但归因复测既未确认受控伤害，也未确认受控收益；该候选已经撤回，不在 0.0.9 运行规则中。本版本不据此声称论文质量或去 AI 味效果获得提升。发布前全量确定性测试 164 项通过，标准 Skill 校验及 SkillHub 目录包、zip 包 dry-run 均通过。GitHub Release 与 skillhub.cn 0.0.9 均已发布；skillhub.cn 公开搜索已显示 0.0.9，平台签名校验通过且内容指纹与发布 ZIP 完全匹配。
 
@@ -134,4 +132,4 @@ SkillHub 发布元数据改为简短用途说明，省去重复 `summary` 和 `h
 
 ## 开源许可
 
-项目统一采用 [MIT](LICENSE)。skillhub.cn 发布元数据声明 `MIT`，包内 `LICENSE.md` 与 GitHub 根许可证语义一致；除许可证外，包内只含 11 个必要运行文件。可用 `python -B tools/build_skillhub_package.py --version <version> --output-dir <dir> --zip <file>` 构建白名单包，再交给 SkillHub CLI 做 `--dry-run`，该工具不会发布。
+[MIT](LICENSE)
