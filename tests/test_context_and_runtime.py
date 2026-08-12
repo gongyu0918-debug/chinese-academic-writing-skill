@@ -91,8 +91,9 @@ class ContextAndRuntimeTests(unittest.TestCase):
         long_form = (REFERENCE_DIR / "long-form-consistency.md").read_text(encoding="utf-8")
         for marker in (
             "长稿层先判断是否需要恢复跨章或跨轮状态",
-            "多章提纲仍不读取",
+            "提纲任务不读取，即使要求跨章或全文一致性检查",
             "单段或单节且不需要恢复其他章节状态时不读取",
+            "对已提供正文做明确全文一致性筛查时",
             "未读全稿不得声称完成全文筛查",
         ):
             self.assertIn(marker, skill)
@@ -122,7 +123,7 @@ class ContextAndRuntimeTests(unittest.TestCase):
         skill = SKILL_PATH.read_text(encoding="utf-8")
         for marker in (
             "先判断是否需要恢复跨章或跨轮状态",
-            "多章提纲仍不读取",
+            "提纲任务不读取，即使要求跨章或全文一致性检查",
             "单段或单节且不需要恢复其他章节状态时不读取",
             "跨轮单节确需核对前文状态时读取",
         ):
@@ -135,7 +136,8 @@ class ContextAndRuntimeTests(unittest.TestCase):
         for marker in (
             "明确要求跨轮次保存状态",
             "已经授权写入当前项目",
-            "只审、只读或粘贴文本任务",
+            "该授权对只审、只读或粘贴文本任务同样有效",
+            "未获上述授权时，所有任务只在当前上下文",
             "不创建 `.academic-writing/`",
         ):
             self.assertIn(marker, long_form)
