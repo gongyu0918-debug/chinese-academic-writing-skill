@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "version": "0.1.0",
+  "recorded_at": "2026-08-12T17:05:01.8767244Z",
+  "release_commit": "932c1cb00063011dc7b8fd1333745df9a01616d7",
+  "tag": {
+    "name": "v0.1.0",
+    "annotated_object": "6a2e3fc49018a28fd95237daa09ed699a179e6df",
+    "dereferenced_commit": "932c1cb00063011dc7b8fd1333745df9a01616d7"
+  },
+  "package": {
+    "name": "chinese-academic-writing-assistant-0.1.0-skillhub.zip",
+    "file_count": 12,
+    "runtime_file_count": 11,
+    "license": "MIT",
+    "license_file": "LICENSE.md",
+    "zip_size": 43320,
+    "zip_sha256": "ad7032020153f6769874078eadf9372c3708c8e983b596b798ed3d85702e9fbf",
+    "entries": [
+      "LICENSE.md",
+      "SKILL.md",
+      "agents/openai.yaml",
+      "references/academic-literature-review.md",
+      "references/academic-proposal.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md",
+      "references/citation-research.md",
+      "references/long-form-consistency.md",
+      "scripts/citation_audit.py",
+      "scripts/manuscript_audit.py",
+      "scripts/prose_lint.py"
+    ]
+  },
+  "github": {
+    "repository": "gongyu0918-debug/chinese-academic-writing-skill",
+    "release_id": 369394032,
+    "release_url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.0",
+    "published_at": "2026-08-12T16:53:09Z",
+    "asset_id": 511832075,
+    "asset_url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/download/v0.1.0/chinese-academic-writing-assistant-0.1.0-skillhub.zip",
+    "asset_digest": "sha256:ad7032020153f6769874078eadf9372c3708c8e983b596b798ed3d85702e9fbf",
+    "download_recheck": "PASS"
+  },
+  "skillhub": {
+    "source": "community",
+    "namespace": "user_f3d82da7",
+    "slug": "chinese-academic-writing-assistant",
+    "skill_id": 98987,
+    "version_id": 232176,
+    "submitted_version": "0.1.0",
+    "latest_approved_version_at_recording": "0.0.9",
+    "review_status_at_upload": "pending",
+    "status": "listed",
+    "security_scan_status_at_upload": {
+      "sanbu": "benign",
+      "keen": "scanning"
+    },
+    "public_propagation_status": "pending_review",
+    "public_search_visible_version_at_recording": "0.0.9"
+  },
+  "cover": {
+    "source": "assets/skillhub-icon.png",
+    "source_sha256": "df66c9e5095ece4d8d587772ce833bc3e67738610006de1098f7df85e5ac664a",
+    "included_in_package": false,
+    "uploaded_to_skillhub": true,
+    "platform_url": "https://skillhub-1388575217.cos.accelerate.myqcloud.com/skill-icons/uploads/437097/e712e50352ae492dbaa96f3e0e6fefbe.png",
+    "platform_sha256": "cf04fa5478a2833ecb2fc43e2206e71af81a9edfbc17c4ca640e6d734ad15cf2",
+    "platform_dimensions": "1024x1024",
+    "visual_recheck": "PASS",
+    "note": "平台将 1254x1254 RGB 源图规范化为 1024x1024 RGBA，构图和颜色保持正确。"
+  },
+  "excluded_publish_targets": [
+    "clawhub"
+  ],
+  "validation": {
+    "full_unittest_count": 183,
+    "full_unittest_status": "PASS",
+    "focused_release_test_count": 42,
+    "focused_release_test_status": "PASS",
+    "skill_structure_validation": "PASS",
+    "skillhub_zip_dry_run": "PASS",
+    "reproducible_zip_build": "PASS",
+    "github_asset_download_recheck": "PASS"
+  },
+  "remaining_risks": [
+    "SkillHub 0.1.0 已提交但仍在审核，公开 latest 仍为 0.0.9；不将 pending 回执表述为已完成公开传播。",
+    "分轮逐节生成完整论文的绕过风险仍未解决。",
+    "ANTI-AI 叶的加载路由已改善，但本轮没有证明它必然改善真实论文文风。"
+  ]
+}

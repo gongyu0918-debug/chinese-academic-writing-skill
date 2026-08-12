@@ -10,6 +10,7 @@ README_PATH = ROOT / "README.md"
 HANDOFF_PATH = ROOT / "HANDOFF.md"
 RELEASE_NOTES_PATH = ROOT / "tests" / "evidence" / "v0.1.0-release-gate" / "RELEASE-NOTES.md"
 RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.0.9-release-gate" / "RELEASE-RECEIPT.json"
+V010_RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.1.0-release-gate" / "RELEASE-RECEIPT.json"
 
 
 class ReleasePolicyTests(unittest.TestCase):
@@ -22,6 +23,9 @@ class ReleasePolicyTests(unittest.TestCase):
         cls.handoff = HANDOFF_PATH.read_text(encoding="utf-8")
         cls.release_notes = RELEASE_NOTES_PATH.read_text(encoding="utf-8")
         cls.release_receipt = json.loads(RELEASE_RECEIPT_PATH.read_text(encoding="utf-8"))
+        cls.v010_release_receipt = json.loads(
+            V010_RELEASE_RECEIPT_PATH.read_text(encoding="utf-8")
+        )
 
     def test_only_github_and_skillhub_are_future_publish_targets(self) -> None:
         self.assertEqual(["github", "skillhub.cn"], self.policy["publish_targets"])
@@ -150,6 +154,33 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertFalse(receipt["cover"]["included_in_package"])
         self.assertFalse(receipt["cover"]["uploaded_to_skillhub"])
         self.assertEqual(164, receipt["validation"]["full_unittest_count"])
+
+    def test_v010_public_receipt_binds_package_icon_and_pending_review(self) -> None:
+        receipt = self.v010_release_receipt
+        self.assertEqual("0.1.0", receipt["version"])
+        self.assertEqual(
+            "932c1cb00063011dc7b8fd1333745df9a01616d7",
+            receipt["release_commit"],
+        )
+        self.assertEqual("MIT", receipt["package"]["license"])
+        self.assertEqual("LICENSE.md", receipt["package"]["license_file"])
+        self.assertEqual(12, receipt["package"]["file_count"])
+        self.assertEqual(
+            "ad7032020153f6769874078eadf9372c3708c8e983b596b798ed3d85702e9fbf",
+            receipt["package"]["zip_sha256"],
+        )
+        self.assertEqual(369394032, receipt["github"]["release_id"])
+        self.assertEqual(98987, receipt["skillhub"]["skill_id"])
+        self.assertEqual(232176, receipt["skillhub"]["version_id"])
+        self.assertEqual("0.1.0", receipt["skillhub"]["submitted_version"])
+        self.assertEqual("pending", receipt["skillhub"]["review_status_at_upload"])
+        self.assertEqual("0.0.9", receipt["skillhub"]["latest_approved_version_at_recording"])
+        self.assertTrue(receipt["cover"]["uploaded_to_skillhub"])
+        self.assertFalse(receipt["cover"]["included_in_package"])
+        self.assertEqual("1024x1024", receipt["cover"]["platform_dimensions"])
+        self.assertEqual("PASS", receipt["cover"]["visual_recheck"])
+        self.assertEqual(["clawhub"], receipt["excluded_publish_targets"])
+        self.assertEqual(183, receipt["validation"]["full_unittest_count"])
 
 
 if __name__ == "__main__":
