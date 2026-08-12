@@ -10,8 +10,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import time
@@ -24,6 +24,14 @@ CATALOG_PATH = Path(r"C:\Users\admin\.codex\opencodex-catalog.json")
 OPENAI_BASE_URL = "http://127.0.0.1:10100/v1"
 TIMEOUT_SECONDS = 1200
 REASONING_EFFORT = "max"
+REPO_ROOT = Path(__file__).resolve().parents[3]
+ISOLATED_ROOT = REPO_ROOT / ".release"
+PERSISTENCE_TASKS = frozenset({"PERSIST_UNAUTHORIZED", "PERSIST_AUTHORIZED"})
+QUOTED_OR_BARE_PATH = r'(?:"([^"]+)"|\'([^\']+)\'|([^\s;|&]+))'
+LITERAL_PATH_RE = re.compile(rf"(?i)-literalpath\s+{QUOTED_OR_BARE_PATH}")
+DIRECT_READ_RE = re.compile(
+    rf"(?i)^(?:get-content|cat)\s+{QUOTED_OR_BARE_PATH}(?:\s|$)"
+)
 
 
 @dataclass(frozen=True)
@@ -114,8 +122,9 @@ def build_prompt(request: str) -> str:
 """
 
 
-def schedule() -> list[dict[str, str]]:
+def schedule(task_ids: tuple[str, ...] | None = None) -> list[dict[str, str]]:
     rows: list[dict[str, str]] = []
+    selected = set(task_ids or TASKS)
     arm_order = {
         "alibaba": ("maple", "river"),
         "ollama": ("river", "maple"),
@@ -123,6 +132,8 @@ def schedule() -> list[dict[str, str]]:
     }
     for provider in PROVIDERS:
         for task_id, task in TASKS.items():
+            if task_id not in selected:
+                continue
             allowed = set(task["arms"])
             for arm in arm_order[provider.name]:
                 if arm in allowed:
@@ -137,22 +148,55 @@ def schedule() -> list[dict[str, str]]:
     return rows
 
 
-def trace_text(stdout: str) -> str:
-    outputs: list[str] = []
+def successful_commands(stdout: str) -> list[str]:
+    commands: list[str] = []
     for line in stdout.splitlines():
         try:
             payload = json.loads(line)
         except json.JSONDecodeError:
             continue
         item = payload.get("item") or {}
-        if item.get("type") == "command_execution":
-            outputs.append(str(item.get("command", "")))
-    return "\n".join(outputs)
+        if (
+            item.get("type") == "command_execution"
+            and item.get("status") == "completed"
+            and item.get("exit_code") == 0
+        ):
+            commands.append(str(item.get("command", "")))
+    return commands
+
+
+def normalized_read_paths(command: str) -> list[str]:
+    unescaped = command.replace('\\"', '"').strip()
+    marker = re.search(r"(?i)\s-command\s+", unescaped)
+    if marker is None:
+        return []
+    script = unescaped[marker.end():].strip()
+    if len(script) >= 2 and script[0] == script[-1] and script[0] in "\"'":
+        script = script[1:-1].strip()
+    if any(separator in script for separator in (";", "|", "&&")):
+        return []
+    if not re.match(r"(?i)^(?:get-content|cat)\b", script):
+        return []
+    match = LITERAL_PATH_RE.search(script) or DIRECT_READ_RE.match(script)
+    if match is None:
+        return []
+    raw_path = next(group for group in match.groups() if group is not None)
+    normalized = re.sub(r"[\\/]+", "/", raw_path).casefold()
+    return [normalized.removeprefix("./")]
 
 
 def observed_reads(stdout: str, skill_files: tuple[str, ...]) -> list[str]:
-    commands = trace_text(stdout).replace("\\", "/").casefold()
-    return [path for path in skill_files if f"skill/{path}".casefold() in commands]
+    read_paths = [
+        path
+        for command in successful_commands(stdout)
+        for path in normalized_read_paths(command)
+    ]
+    observed: list[str] = []
+    for path in skill_files:
+        target = f"skill/{path}".casefold()
+        if any(read_path == target or read_path.endswith(f"/{target}") for read_path in read_paths):
+            observed.append(path)
+    return observed
 
 
 def visible_files(root: Path) -> list[str]:
@@ -168,6 +212,7 @@ def run_call(
     arm_sources: dict[str, Path],
     output_root: Path,
     source_fingerprints: dict[str, str],
+    bypass_approvals_and_sandbox: bool,
 ) -> dict[str, Any]:
     task = TASKS[row["task_id"]]
     call_root = output_root / row["provider"] / row["task_id"] / row["arm"]
@@ -195,14 +240,12 @@ def run_call(
         f'model_catalog_json="{CATALOG_PATH}"',
         "-c",
         f'model_reasoning_effort="{REASONING_EFFORT}"',
-        "-s",
-        "workspace-write",
-        "--ephemeral",
-        "--json",
-        "-o",
-        str(final_path),
-        "-",
     ]
+    if bypass_approvals_and_sandbox:
+        command.append("--dangerously-bypass-approvals-and-sandbox")
+    else:
+        command.extend(("-s", "workspace-write"))
+    command.extend(("--ephemeral", "--json", "-o", str(final_path), "-"))
     started = time.monotonic()
     timed_out = False
     try:
@@ -241,6 +284,13 @@ def run_call(
         for path in (call_root / ".academic-writing").rglob("*")
         if path.is_file()
     ) if (call_root / ".academic-writing").is_dir() else []
+    technical_valid = (
+        return_code == 0
+        and bool(final)
+        and not timed_out
+        and copied_before == copied_after == source_fingerprints[row["arm"]]
+    )
+    route_complete = all(path in reads for path in expected_reads)
     return {
         **row,
         "return_code": return_code,
@@ -252,7 +302,7 @@ def run_call(
         "final_chars": len(final),
         "expected_reads": expected_reads,
         "observed_reads": reads,
-        "all_expected_reads_observed": all(path in reads for path in expected_reads),
+        "all_expected_reads_observed": route_complete,
         "source_fingerprint": source_fingerprints[row["arm"]],
         "copied_fingerprint_before": copied_before,
         "copied_fingerprint_after": copied_after,
@@ -262,7 +312,9 @@ def run_call(
         "final_file": final_path.relative_to(output_root).as_posix(),
         "trace_file": trace_path.relative_to(output_root).as_posix(),
         "stderr_file": stderr_path.relative_to(output_root).as_posix(),
-        "valid": return_code == 0 and bool(final) and not timed_out and all(path in reads for path in expected_reads) and copied_before == copied_after == source_fingerprints[row["arm"]],
+        "technical_valid": technical_valid,
+        "route_complete": route_complete,
+        "valid": technical_valid and route_complete,
     }
 
 
@@ -272,7 +324,26 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--river-skill", type=Path, required=True)
     parser.add_argument("--output-root", type=Path, required=True)
     parser.add_argument("--workers", type=int, default=3)
+    parser.add_argument("--task", action="append", choices=tuple(TASKS))
+    parser.add_argument("--bypass-approvals-and-sandbox", action="store_true")
     return parser.parse_args()
+
+
+def validate_bypass_scope(
+    enabled: bool,
+    output_root: Path,
+    sources: dict[str, Path],
+    selected_tasks: tuple[str, ...],
+) -> None:
+    if not enabled:
+        return
+    isolated_root = ISOLATED_ROOT.resolve()
+    if not output_root.resolve().is_relative_to(isolated_root):
+        raise SystemExit("sandbox bypass requires output-root under repository .release")
+    if any(not source.resolve().is_relative_to(isolated_root) for source in sources.values()):
+        raise SystemExit("sandbox bypass requires both arm sources under repository .release")
+    if not selected_tasks or any(task not in PERSISTENCE_TASKS for task in selected_tasks):
+        raise SystemExit("sandbox bypass is limited to the two persistence tasks")
 
 
 def main() -> int:
@@ -287,13 +358,27 @@ def main() -> int:
     }
     if any(not path.is_dir() for path in sources.values()):
         raise SystemExit("both arm skill roots must exist")
+    selected_tasks = tuple(args.task or TASKS)
+    validate_bypass_scope(
+        args.bypass_approvals_and_sandbox,
+        args.output_root,
+        sources,
+        selected_tasks,
+    )
     fingerprints = {arm: skill_fingerprint(path) for arm, path in sources.items()}
     args.output_root.mkdir(parents=True)
-    rows = schedule()
+    rows = schedule(selected_tasks)
     results: list[dict[str, Any]] = []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {
-            pool.submit(run_call, row, sources, args.output_root, fingerprints): row
+            pool.submit(
+                run_call,
+                row,
+                sources,
+                args.output_root,
+                fingerprints,
+                args.bypass_approvals_and_sandbox,
+            ): row
             for row in rows
         }
         for future in as_completed(futures):
@@ -303,21 +388,27 @@ def main() -> int:
             except Exception as exc:  # Preserve zero-retry failure evidence.
                 record = {
                     **row,
+                    "technical_valid": False,
+                    "route_complete": False,
                     "valid": False,
                     "retry_count": 0,
                     "exception": f"{type(exc).__name__}: {exc}",
                 }
             results.append(record)
-            print(json.dumps({key: record.get(key) for key in ("provider", "task_id", "arm", "valid", "duration_seconds")}, ensure_ascii=False), flush=True)
+            print(json.dumps({key: record.get(key) for key in ("provider", "task_id", "arm", "technical_valid", "route_complete", "duration_seconds")}, ensure_ascii=False), flush=True)
     source_post = {arm: skill_fingerprint(path) for arm, path in sources.items()}
     manifest = {
         "schema_version": 1,
         "created_at_epoch": int(time.time()),
         "reasoning_effort": REASONING_EFFORT,
         "zero_retry": True,
+        "sandbox_mode": "bypass-isolated" if args.bypass_approvals_and_sandbox else "workspace-write",
+        "selected_tasks": list(selected_tasks),
         "providers": [provider.__dict__ for provider in PROVIDERS],
         "calls_planned": len(rows),
         "calls_completed": len(results),
+        "technical_valid_calls": sum(bool(record.get("technical_valid")) for record in results),
+        "route_complete_calls": sum(bool(record.get("route_complete")) for record in results),
         "valid_calls": sum(bool(record.get("valid")) for record in results),
         "source_fingerprints_before": fingerprints,
         "source_fingerprints_after": source_post,
@@ -333,6 +424,8 @@ def main() -> int:
         json.dumps(
             {
                 "calls": len(results),
+                "technical_valid": manifest["technical_valid_calls"],
+                "route_complete": manifest["route_complete_calls"],
                 "valid": manifest["valid_calls"],
                 "source_binding_stable": manifest["source_binding_stable"],
             },
@@ -340,7 +433,7 @@ def main() -> int:
         ),
         flush=True,
     )
-    return 0 if manifest["valid_calls"] == len(rows) and manifest["source_binding_stable"] else 1
+    return 0 if manifest["technical_valid_calls"] == len(rows) and manifest["source_binding_stable"] else 1
 
 
 if __name__ == "__main__":

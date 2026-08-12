@@ -1,4 +1,5 @@
 import importlib.util
+import json
 from pathlib import Path
 import sys
 import tempfile
@@ -38,6 +39,14 @@ class PromptGateProviderMatrixTests(unittest.TestCase):
         self.assertEqual(["river", "maple"], by_provider["ollama"])
         self.assertEqual(["maple", "river"], by_provider["minimax"])
 
+    def test_filtered_persistence_schedule_has_nine_calls(self):
+        rows = MODULE.schedule(("PERSIST_UNAUTHORIZED", "PERSIST_AUTHORIZED"))
+        self.assertEqual(9, len(rows))
+        self.assertEqual(
+            {"PERSIST_UNAUTHORIZED", "PERSIST_AUTHORIZED"},
+            {row["task_id"] for row in rows},
+        )
+
     def test_skill_fingerprint_binds_relative_paths_and_bytes(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -51,15 +60,87 @@ class PromptGateProviderMatrixTests(unittest.TestCase):
     def test_observed_reads_reports_each_exact_skill_relative_path(self):
         skill_files = ("SKILL.md", "references/academic-writing.md", "references/other.md")
         trace = "\n".join(
-            [
-                '{"item":{"type":"command_execution","command":"Get-Content -Raw -LiteralPath \'skill\\\\SKILL.md\'"}}',
-                '{"item":{"type":"command_execution","command":"Get-Content -Raw -LiteralPath \'skill\\\\references\\\\academic-writing.md\'"}}',
-            ]
+            json.dumps(
+                {
+                    "item": {
+                        "type": "command_execution",
+                        "command": command,
+                        "exit_code": 0,
+                        "status": "completed",
+                    }
+                }
+            )
+            for command in (
+                "pwsh -Command \"Get-Content -Raw -LiteralPath 'skill\\SKILL.md'\"",
+                "pwsh -Command \"Get-Content -Raw -LiteralPath 'skill\\references\\academic-writing.md'\"",
+            )
         )
         self.assertEqual(
             ["SKILL.md", "references/academic-writing.md"],
             MODULE.observed_reads(trace, skill_files),
         )
+
+    def test_observed_reads_supports_absolute_windows_path_and_rejects_failed_read(self):
+        skill_files = ("SKILL.md", "references/academic-writing.md")
+        trace = "\n".join(
+            json.dumps(
+                {
+                    "item": {
+                        "type": "command_execution",
+                        "command": command,
+                        "exit_code": exit_code,
+                        "status": "completed",
+                    }
+                }
+            )
+            for command, exit_code in (
+                (
+                    "pwsh -Command \"Get-Content -LiteralPath 'F:\\run\\skill\\SKILL.md' -Raw\"",
+                    0,
+                ),
+                (
+                    "pwsh -Command \"Get-Content -LiteralPath 'skill/references/academic-writing.md' -Raw\"",
+                    1,
+                ),
+            )
+        )
+        self.assertEqual(["SKILL.md"], MODULE.observed_reads(trace, skill_files))
+
+    def test_observed_reads_supports_cat_and_direct_get_content(self):
+        skill_files = ("SKILL.md", "references/citation-research.md")
+        trace = "\n".join(
+            [
+                '{"item":{"type":"command_execution","command":"pwsh -Command \'cat skill/SKILL.md\'","exit_code":0,"status":"completed"}}',
+                '{"item":{"type":"command_execution","command":"pwsh -Command \'Get-Content skill/references/citation-research.md -Raw\'","exit_code":0,"status":"completed"}}',
+            ]
+        )
+        self.assertEqual(list(skill_files), MODULE.observed_reads(trace, skill_files))
+
+    def test_observed_reads_rejects_echo_and_compound_commands(self):
+        skill_files = ("SKILL.md",)
+        trace = "\n".join(
+            [
+                '{"item":{"type":"command_execution","command":"pwsh -Command \'Write-Output skill/SKILL.md\'","exit_code":0,"status":"completed"}}',
+                '{"item":{"type":"command_execution","command":"pwsh -Command \'Get-Content skill/SKILL.md; Write-Output done\'","exit_code":0,"status":"completed"}}',
+            ]
+        )
+        self.assertEqual([], MODULE.observed_reads(trace, skill_files))
+
+    def test_bypass_scope_rejects_non_persistence_task(self):
+        MODULE.ISOLATED_ROOT.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=MODULE.ISOLATED_ROOT) as directory:
+            root = Path(directory)
+            maple = root / "maple"
+            river = root / "river"
+            maple.mkdir()
+            river.mkdir()
+            with self.assertRaises(SystemExit):
+                MODULE.validate_bypass_scope(
+                    True,
+                    root / "out",
+                    {"maple": maple, "river": river},
+                    ("CUMULATIVE_DRAFT",),
+                )
 
     def test_build_prompt_does_not_expose_arm_or_expected_behavior(self):
         prompt = MODULE.build_prompt("用户请求")
