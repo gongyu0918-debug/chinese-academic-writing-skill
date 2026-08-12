@@ -1,6 +1,6 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.0.9-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.0.9)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.0)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -53,7 +53,7 @@
 
 ## 安装与调用
 
-当前公开版本：`chinese-academic-writing-assistant@0.0.9`
+当前公开版本：`chinese-academic-writing-assistant@0.1.0`
 
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant)。自后续版本起不再向 ClawHub 发布或更新；既有 ClawHub 版本只作为历史记录保留。
 
@@ -83,6 +83,14 @@ $chinese-academic-writing-assistant 请根据我提供的材料续写第三章�
 skillhub.cn 包固定为上述 11 个必要运行文件和 1 份 Markdown MIT 许可证 `LICENSE.md`，共 12 个文件。发布用 `SKILL.md` 只派生 `name`、精简 `description`、`slug`、`version`、`displayName`、`tags` 和 `license: MIT`；不重复写 `summary`，不附 `homepage`。README、HANDOFF、测试、工具、评测证据和脱敏发布回执保存在 GitHub 仓库，不进入 skillhub.cn 包；本地临时包和原始回执保存在 `.release/`，不提交。
 
 SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，并在平台支持的页面入口单独上传或关联；图片不进入运行包。
+
+## 版本 0.1.0
+
+本版本收窄长稿与 ANTI-AI 渐进加载：提纲、材料清单和原始摘录不误载长稿或 ANTI-AI 叶；跨轮单节只在确需恢复前文状态时读取长稿叶。多章提纲明确要求全文／跨章一致性检查的交叉复测中，修正前三家模型 3/3 误载长稿叶，修正后 3/3 不再误载。
+
+长稿状态文件只在用户明确要求跨轮保存或授权写入项目时创建。“只审不改＋明确授权保存”复测中两臂均 3/3 真实落盘，因此只记为权限语义消歧，不声称候选独有收益。本轮 24 次独立前向使用和 90 次三模型调用还证伪并撤回了累计分段整稿边界句、引用停止提示和脚本路径说明。
+
+0.1.0 继续只发布到 GitHub 与 skillhub.cn，不更新 ClawHub。项目和 12 文件 SkillHub 包继续使用 MIT，包内保留独立 `LICENSE.md`；SkillHub 页面单独上传新图标，图片不进入运行包。本版本没有证明 ANTI-AI 叶必然改善正文文风，分轮逐节生成完整论文的绕过风险仍待解决。
 
 ## 版本 0.0.9
 

@@ -8,7 +8,7 @@ POLICY_PATH = ROOT / "tools" / "skillhub-package-policy.json"
 LICENSE_PATH = ROOT / "LICENSE"
 README_PATH = ROOT / "README.md"
 HANDOFF_PATH = ROOT / "HANDOFF.md"
-RELEASE_NOTES_PATH = ROOT / "tests" / "evidence" / "v0.0.9-release-gate" / "RELEASE-NOTES.md"
+RELEASE_NOTES_PATH = ROOT / "tests" / "evidence" / "v0.1.0-release-gate" / "RELEASE-NOTES.md"
 RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.0.9-release-gate" / "RELEASE-RECEIPT.json"
 
 
@@ -109,18 +109,19 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertIn(historical, self.readme)
         self.assertIn("版本 0.0.8 已发布至 GitHub（tag v0.0.8）、ClawHub 与 skillhub.cn", self.handoff)
 
-    def test_v009_release_copy_matches_the_package_and_evidence_boundary(self) -> None:
-        self.assertIn("version-0.0.9-blue", self.readme)
-        self.assertIn("chinese-academic-writing-assistant@0.0.9", self.readme)
+    def test_v010_release_copy_matches_the_package_and_evidence_boundary(self) -> None:
+        self.assertIn("version-0.1.0-blue", self.readme)
+        self.assertIn("chinese-academic-writing-assistant@0.1.0", self.readme)
         combined = self.readme + self.release_notes
         for marker in (
             "11 个运行文件和独立 `LICENSE.md`",
-            "统一采用 MIT",
+            "使用 MIT",
             "不更新 ClawHub",
-            "省去重复 `summary` 和 `homepage`",
-            "已经撤回，不在 0.0.9 运行规则中",
-            "不据此声称论文质量或去 AI 味效果获得提升",
-            "公开评测 stderr 中的内部请求标识已替换为固定占位符",
+            "修正前 0/3，修正后 3/3",
+            "两臂均 3/3 真实落盘",
+            "不计候选独有收益",
+            "不声称 ANTI-AI 叶必然改善正文文风",
+            "图标不进入运行包",
         ):
             self.assertIn(marker, combined)
 
