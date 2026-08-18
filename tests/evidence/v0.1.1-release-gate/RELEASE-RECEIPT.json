@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "version": "0.1.1",
+  "recorded_at": "2026-08-18T06:33:00.3044488Z",
+  "runtime_change_commit": "6e7db83cd6125f714039b9b4e41121e753b2a2cf",
+  "release_commit": "8d36c258e3d2867146a5d44d58db847a8c22b226",
+  "tag": {
+    "name": "v0.1.1",
+    "annotated_object": "b58fce7bae786f04f36b1648f169ac933dcd0483",
+    "dereferenced_commit": "8d36c258e3d2867146a5d44d58db847a8c22b226"
+  },
+  "package": {
+    "name": "chinese-academic-writing-assistant-0.1.1-skillhub.zip",
+    "file_count": 12,
+    "runtime_file_count": 11,
+    "license": "MIT",
+    "license_file": "LICENSE.md",
+    "zip_size": 43309,
+    "zip_sha256": "f2083b4284daab9973f43d9e59f1f245b9cd9e244cba1b6505e50521e009ca08",
+    "entries": [
+      "LICENSE.md",
+      "SKILL.md",
+      "agents/openai.yaml",
+      "references/academic-literature-review.md",
+      "references/academic-proposal.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md",
+      "references/citation-research.md",
+      "references/long-form-consistency.md",
+      "scripts/citation_audit.py",
+      "scripts/manuscript_audit.py",
+      "scripts/prose_lint.py"
+    ],
+    "file_sha256": {
+      "LICENSE.md": "7182fd4c6281db93871ce4941eb4443e2230a4e33680a3b7f99510bcf0a9d023",
+      "SKILL.md": "32008e7f7acce76f0b33d0ad1997c2da0884b3e8d454a2785676edd41ba43a5c",
+      "agents/openai.yaml": "6aa3fabd7184401be8c09f0e235b78ea066ccd6837929aa57b742b800856ed13",
+      "references/academic-literature-review.md": "9115fef69151dd516066992e6c36534bb7a839047657f038053dfa37052ed0c0",
+      "references/academic-proposal.md": "94984ef5c516c05590c784e221f4caf32d7be3a525c87eb3020b9553a79ef2b7",
+      "references/academic-writing.md": "958cb23108ba6282abfa442c785f6c577090e840c747b85f97264fbfc0b636a0",
+      "references/anti-ai-writing.md": "f76bdae1ef86a7b216282df3a109d30e97487e4ec45d005def48b18ea118d9e9",
+      "references/citation-research.md": "da5a284208fd91fb038b22e606b01d2df0e3225fd65218c8ca5b87756fe89840",
+      "references/long-form-consistency.md": "66650228e1e4f389ee251166e43f9565d85114482b222f5e4535dc969e62cce6",
+      "scripts/citation_audit.py": "cb39e959dc20b1d45adf25c1939a9c42383ac880a2082140e4c851f7baef188d",
+      "scripts/manuscript_audit.py": "cbcffaa1acb41b66e556366319aa37c6c43d6934e583691c5699a6817bb803d5",
+      "scripts/prose_lint.py": "9442537ecf44c32c47418000451e958959d2fd1705671c9043de12e96dd8c4e5"
+    }
+  },
+  "github": {
+    "repository": "gongyu0918-debug/chinese-academic-writing-skill",
+    "release_id": 372129584,
+    "release_url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.1",
+    "published_at": "2026-08-18T06:29:07Z",
+    "asset_id": 519042142,
+    "asset_url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/download/v0.1.1/chinese-academic-writing-assistant-0.1.1-skillhub.zip",
+    "asset_digest": "sha256:f2083b4284daab9973f43d9e59f1f245b9cd9e244cba1b6505e50521e009ca08",
+    "asset_hash_match": true
+  },
+  "skillhub": {
+    "source": "community",
+    "namespace": "user_f3d82da7",
+    "slug": "chinese-academic-writing-assistant",
+    "skill_id": 98987,
+    "version_id": 243739,
+    "submitted_version": "0.1.1",
+    "upload_file_count": 12,
+    "upload_fingerprint": "21ff92bae1c7348991270ba13d86d19874dddf21921355c339aa2a926a372bb0",
+    "review_status_at_upload": "pending",
+    "content_audit_status_at_upload": "pending",
+    "security_scan_status_at_upload": "pending",
+    "tags_at_upload": {
+      "academic": "0.1.1",
+      "chinese": "0.1.1",
+      "latest": "0.1.1"
+    },
+    "public_latest_version_at_recording": "0.1.0",
+    "public_tags_at_recording": {
+      "academic": "0.1.1",
+      "chinese": "0.1.1",
+      "latest": "0.1.1"
+    },
+    "public_version_count_at_recording": 11,
+    "signature_verify_status": "pending_review_version_not_found"
+  },
+  "clawhub": {
+    "owner": "gongyu0918-debug",
+    "slug": "chinese-academic-writing-assistant",
+    "version_id": "k97csn1x5xm82ybrt2655w7fsh8cpgnz",
+    "submitted_version": "0.1.1",
+    "source_ref": "v0.1.1",
+    "source_commit": "8d36c258e3d2867146a5d44d58db847a8c22b226",
+    "license": "MIT-0",
+    "publish_status": "published",
+    "latest_version_at_recheck": "0.1.1",
+    "remote_file_count": 11,
+    "fingerprint": "3544017421aab8a99325e5ea146a16d12b33a7099a86e37696f38ef9301fd7db",
+    "content_hash_match": true,
+    "security_status": "clean",
+    "moderation_verdict": "clean"
+  },
+  "cover": {
+    "source": "assets/skillhub-icon.png",
+    "source_sha256": "df66c9e5095ece4d8d587772ce833bc3e67738610006de1098f7df85e5ac664a",
+    "included_in_package": false,
+    "uploaded_this_release": false,
+    "platform_url": "https://skillhub-1388575217.cos.accelerate.myqcloud.com/skill-icons/uploads/437097/e712e50352ae492dbaa96f3e0e6fefbe.png",
+    "platform_sha256": "cf04fa5478a2833ecb2fc43e2206e71af81a9edfbc17c4ca640e6d734ad15cf2",
+    "platform_dimensions": "1024x1024",
+    "visual_recheck": "PASS"
+  },
+  "excluded_publish_targets": [],
+  "validation": {
+    "real_writing_calls": 6,
+    "real_writing_status": "PASS",
+    "pre_release_unittest_count": 186,
+    "pre_release_unittest_status": "PASS",
+    "post_receipt_unittest_count": 187,
+    "skill_structure_validation": "PASS",
+    "skillhub_reproducible_zip_build": "PASS",
+    "skillhub_zip_dry_run": "PASS",
+    "skillhub_publish": "PASS",
+    "skillhub_signature_recheck": "PENDING",
+    "github_asset_download_recheck": "PASS",
+    "clawhub_dry_run": "PASS",
+    "clawhub_publish": "PASS",
+    "clawhub_remote_hash_recheck": "PASS",
+    "clawhub_moderation_recheck": "PASS"
+  },
+  "remaining_risks": [
+    "skillhub.cn 已受理 0.1.1 且 latest 标签已更新，但公开已审核版本在记录时仍为 0.1.0，签名接口尚未提供 0.1.1；等待审核和索引传播，不重复发布。",
+    "本轮真实写稿只证明删除这一条开题叶自述未见可归因回退，不能外推为其他叶子自述可批量删除。",
+    "分轮逐节生成完整论文的绕过风险仍未解决；本版本也不声称 ANTI-AI 叶必然改善真实论文文风。"
+  ]
+}

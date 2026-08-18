@@ -94,6 +94,8 @@ SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，
 
 全量确定性测试 186 项通过，标准 Skill 校验通过。许可证：MIT；ClawHub 按平台规则使用 MIT-0。
 
+0.1.1 已发布至 GitHub、skillhub.cn 与 ClawHub。GitHub Release 资产与本地白名单包哈希一致；ClawHub 的 11 个远端文件逐项匹配，安全与审核均为 clean。skillhub.cn 已受理 0.1.1，`latest` 标签已更新，公开已审核版本在记录时仍为 0.1.0；等待平台审核与索引传播，不重复发布。
+
 ## 版本 0.1.0
 
 本版本收窄长稿与 ANTI-AI 渐进加载：提纲、材料清单和原始摘录不误载长稿或 ANTI-AI 叶；跨轮单节只在确需恢复前文状态时读取长稿叶。多章提纲明确要求全文／跨章一致性检查的交叉复测中，修正前三家模型 3/3 误载长稿叶，修正后 3/3 不再误载。

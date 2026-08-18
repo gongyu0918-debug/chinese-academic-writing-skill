@@ -11,6 +11,7 @@ HANDOFF_PATH = ROOT / "HANDOFF.md"
 RELEASE_NOTES_PATH = ROOT / "tests" / "evidence" / "v0.1.1-release-gate" / "RELEASE-NOTES.md"
 RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.0.9-release-gate" / "RELEASE-RECEIPT.json"
 V010_RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.1.0-release-gate" / "RELEASE-RECEIPT.json"
+V011_RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.1.1-release-gate" / "RELEASE-RECEIPT.json"
 
 
 class ReleasePolicyTests(unittest.TestCase):
@@ -25,6 +26,9 @@ class ReleasePolicyTests(unittest.TestCase):
         cls.release_receipt = json.loads(RELEASE_RECEIPT_PATH.read_text(encoding="utf-8"))
         cls.v010_release_receipt = json.loads(
             V010_RELEASE_RECEIPT_PATH.read_text(encoding="utf-8")
+        )
+        cls.v011_release_receipt = json.loads(
+            V011_RELEASE_RECEIPT_PATH.read_text(encoding="utf-8")
         )
 
     def test_three_release_targets_are_declared(self) -> None:
@@ -205,6 +209,42 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertTrue(receipt["clawhub"]["content_hash_match"])
         self.assertEqual("clean", receipt["clawhub"]["moderation_verdict"])
         self.assertEqual(183, receipt["validation"]["full_unittest_count"])
+
+    def test_v011_public_receipt_binds_three_release_surfaces(self) -> None:
+        receipt = self.v011_release_receipt
+        self.assertEqual("0.1.1", receipt["version"])
+        self.assertEqual(
+            "8d36c258e3d2867146a5d44d58db847a8c22b226",
+            receipt["release_commit"],
+        )
+        self.assertEqual("MIT", receipt["package"]["license"])
+        self.assertEqual("LICENSE.md", receipt["package"]["license_file"])
+        self.assertEqual(12, receipt["package"]["file_count"])
+        self.assertEqual(11, receipt["package"]["runtime_file_count"])
+        self.assertEqual(
+            "f2083b4284daab9973f43d9e59f1f245b9cd9e244cba1b6505e50521e009ca08",
+            receipt["package"]["zip_sha256"],
+        )
+        self.assertEqual(372129584, receipt["github"]["release_id"])
+        self.assertTrue(receipt["github"]["asset_hash_match"])
+        self.assertEqual(98987, receipt["skillhub"]["skill_id"])
+        self.assertEqual(243739, receipt["skillhub"]["version_id"])
+        self.assertEqual("pending", receipt["skillhub"]["review_status_at_upload"])
+        self.assertEqual("0.1.0", receipt["skillhub"]["public_latest_version_at_recording"])
+        self.assertEqual("0.1.1", receipt["skillhub"]["public_tags_at_recording"]["latest"])
+        self.assertFalse(receipt["cover"]["uploaded_this_release"])
+        self.assertFalse(receipt["cover"]["included_in_package"])
+        self.assertEqual("PASS", receipt["cover"]["visual_recheck"])
+        self.assertEqual(
+            "k97csn1x5xm82ybrt2655w7fsh8cpgnz",
+            receipt["clawhub"]["version_id"],
+        )
+        self.assertEqual("0.1.1", receipt["clawhub"]["latest_version_at_recheck"])
+        self.assertEqual("MIT-0", receipt["clawhub"]["license"])
+        self.assertEqual(11, receipt["clawhub"]["remote_file_count"])
+        self.assertTrue(receipt["clawhub"]["content_hash_match"])
+        self.assertEqual("clean", receipt["clawhub"]["moderation_verdict"])
+        self.assertEqual([], receipt["excluded_publish_targets"])
 
 
 if __name__ == "__main__":
