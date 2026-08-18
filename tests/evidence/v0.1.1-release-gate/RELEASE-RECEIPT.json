@@ -2,6 +2,7 @@
   "schema_version": 1,
   "version": "0.1.1",
   "recorded_at": "2026-08-18T06:33:00.3044488Z",
+  "rechecked_at": "2026-08-18T06:37:05.5662964Z",
   "runtime_change_commit": "6e7db83cd6125f714039b9b4e41121e753b2a2cf",
   "release_commit": "8d36c258e3d2867146a5d44d58db847a8c22b226",
   "tag": {
@@ -80,7 +81,18 @@
       "latest": "0.1.1"
     },
     "public_version_count_at_recording": 11,
-    "signature_verify_status": "pending_review_version_not_found"
+    "signature_verify_status_at_recording": "pending_review_version_not_found",
+    "public_search_visible_version_at_recheck": "0.1.1",
+    "public_latest_version_at_recheck": "0.1.1",
+    "signature_verify_status_at_recheck": "PASS",
+    "signature": {
+      "issuer": "skillhub.cn",
+      "key_id": "skillhub-platform-v1",
+      "publisher_user_name": "user_f3d82da7",
+      "publisher_real_name_verified": true,
+      "content_hash": "21ff92bae1c7348991270ba13d86d19874dddf21921355c339aa2a926a372bb0",
+      "content_hash_match": true
+    }
   },
   "clawhub": {
     "owner": "gongyu0918-debug",
@@ -119,7 +131,7 @@
     "skillhub_reproducible_zip_build": "PASS",
     "skillhub_zip_dry_run": "PASS",
     "skillhub_publish": "PASS",
-    "skillhub_signature_recheck": "PENDING",
+    "skillhub_signature_recheck": "PASS",
     "github_asset_download_recheck": "PASS",
     "clawhub_dry_run": "PASS",
     "clawhub_publish": "PASS",
@@ -127,7 +139,6 @@
     "clawhub_moderation_recheck": "PASS"
   },
   "remaining_risks": [
-    "skillhub.cn 已受理 0.1.1 且 latest 标签已更新，但公开已审核版本在记录时仍为 0.1.0，签名接口尚未提供 0.1.1；等待审核和索引传播，不重复发布。",
     "本轮真实写稿只证明删除这一条开题叶自述未见可归因回退，不能外推为其他叶子自述可批量删除。",
     "分轮逐节生成完整论文的绕过风险仍未解决；本版本也不声称 ANTI-AI 叶必然改善真实论文文风。"
   ]

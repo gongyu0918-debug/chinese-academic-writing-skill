@@ -94,7 +94,7 @@ SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，
 
 全量确定性测试 186 项通过，标准 Skill 校验通过。许可证：MIT；ClawHub 按平台规则使用 MIT-0。
 
-0.1.1 已发布至 GitHub、skillhub.cn 与 ClawHub。GitHub Release 资产与本地白名单包哈希一致；ClawHub 的 11 个远端文件逐项匹配，安全与审核均为 clean。skillhub.cn 已受理 0.1.1，`latest` 标签已更新，公开已审核版本在记录时仍为 0.1.0；等待平台审核与索引传播，不重复发布。
+0.1.1 已发布至 GitHub、skillhub.cn 与 ClawHub。GitHub Release 资产与本地白名单包哈希一致；ClawHub 的 11 个远端文件逐项匹配，安全与审核均为 clean。skillhub.cn 上传时处于 pending，随后公开搜索与详情均显示 0.1.1，平台签名验证通过且内容指纹与本地 ZIP 完全一致。
 
 ## 版本 0.1.0
 
