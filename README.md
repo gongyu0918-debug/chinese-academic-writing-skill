@@ -55,7 +55,7 @@
 
 当前公开版本：`chinese-academic-writing-assistant@0.1.0`
 
-发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant)。自后续版本起不再向 ClawHub 发布或更新；既有 ClawHub 版本只作为历史记录保留。
+发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
 
 通用 Agent Skills 安装器：
 
@@ -68,6 +68,12 @@ npx skills add https://github.com/gongyu0918-debug/chinese-academic-writing-skil
 ```text
 $chinese-academic-writing-assistant 请根据我提供的材料续写第三章，并检查与前两章的术语和数据是否一致。
 ```
+
+## 迭代原则
+
+新候选先只改最小 Prompt 或 reference，并用既有工具做真实写稿 A/B；不先新增解析器、胶水代码或工程门。写稿判定只看正文硬边界、直接可用性、修改负担，以及问题是否能归因于本次 DIFF；无关的模型波动只记录，不判为回退。
+
+只有候选至少不劣于基线，并在全新任务中保留目标收益，才补最小确定性测试和发布门。写稿劣于基线或收益未复现时直接撤回候选，不继续叠加工程层。
 
 ## 运行文件
 
@@ -88,7 +94,7 @@ SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，
 
 长稿状态文件只在用户明确要求跨轮保存或授权写入项目时创建。“只审不改＋明确授权保存”复测中两臂均 3/3 真实落盘，因此只记为权限语义消歧，不声称候选独有收益。本轮 24 次独立前向使用和 90 次三模型调用还证伪并撤回了累计分段整稿边界句、引用停止提示和脚本路径说明。
 
-0.1.0 继续只发布到 GitHub 与 skillhub.cn，不更新 ClawHub。许可证为 MIT。SkillHub 页面单独上传新图标，图片不进入运行包。本版本没有证明 ANTI-AI 叶必然改善正文文风，分轮逐节生成完整论文的绕过风险仍待解决。
+0.1.0 已发布至 GitHub、skillhub.cn 与 ClawHub。ClawHub 版本的 11 个运行文件与冻结标签逐项哈希一致，审核结论为 clean；许可证按平台规则为 MIT-0。SkillHub 页面单独上传新图标，图片不进入运行包。本版本没有证明 ANTI-AI 叶必然改善正文文风，分轮逐节生成完整论文的绕过风险仍待解决。
 
 ## 版本 0.0.9
 

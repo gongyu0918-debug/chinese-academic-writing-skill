@@ -58,6 +58,27 @@
     "public_propagation_status": "pending_review",
     "public_search_visible_version_at_recording": "0.0.9"
   },
+  "clawhub": {
+    "owner": "gongyu0918-debug",
+    "slug": "chinese-academic-writing-assistant",
+    "version_id": "k97ecxj2kya3pkcgxpyadv8nn58cqsjh",
+    "submitted_version": "0.1.0",
+    "published_at": "2026-08-18T00:29:36.6150000Z",
+    "url": "https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant",
+    "source_ref": "v0.1.0",
+    "source_commit": "932c1cb00063011dc7b8fd1333745df9a01616d7",
+    "source_runtime_file_count": 11,
+    "source_archive_sha256": "68b417754cdc5d0cc2709dce60a4029c92b97523b31b95f604f7fa3a9fcf8ec6",
+    "fingerprint": "655a1bb072cb9c2fe82b061cb6c9e48c643cd2219f7f04e520bc2c190d83ad9a",
+    "license": "MIT-0",
+    "publish_status": "published",
+    "latest_version_at_recheck": "0.1.0",
+    "remote_file_count": 11,
+    "content_hash_match": true,
+    "security_status": "clean",
+    "moderation_verdict": "clean",
+    "moderation_engine": "v2.4.26"
+  },
   "cover": {
     "source": "assets/skillhub-icon.png",
     "source_sha256": "df66c9e5095ece4d8d587772ce833bc3e67738610006de1098f7df85e5ac664a",
@@ -69,9 +90,7 @@
     "visual_recheck": "PASS",
     "note": "平台将 1254x1254 RGB 源图规范化为 1024x1024 RGBA，构图和颜色保持正确。"
   },
-  "excluded_publish_targets": [
-    "clawhub"
-  ],
+  "excluded_publish_targets": [],
   "validation": {
     "full_unittest_count": 183,
     "full_unittest_status": "PASS",
@@ -80,10 +99,14 @@
     "skill_structure_validation": "PASS",
     "skillhub_zip_dry_run": "PASS",
     "reproducible_zip_build": "PASS",
-    "github_asset_download_recheck": "PASS"
+    "github_asset_download_recheck": "PASS",
+    "clawhub_dry_run": "PASS",
+    "clawhub_publish": "PASS",
+    "clawhub_remote_hash_recheck": "PASS",
+    "clawhub_moderation_recheck": "PASS"
   },
   "remaining_risks": [
-    "SkillHub 0.1.0 已提交但仍在审核，公开 latest 仍为 0.0.9；不将 pending 回执表述为已完成公开传播。",
+    "SkillHub 0.1.0 在 2026-08-12 初始回执中仍在审核，公开 latest 当时为 0.0.9；本次 ClawHub 同步未重新核验该状态。",
     "分轮逐节生成完整论文的绕过风险仍未解决。",
     "ANTI-AI 叶的加载路由已改善，但本轮没有证明它必然改善真实论文文风。"
   ]

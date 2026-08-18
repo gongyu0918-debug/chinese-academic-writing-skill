@@ -27,12 +27,13 @@ class ReleasePolicyTests(unittest.TestCase):
             V010_RELEASE_RECEIPT_PATH.read_text(encoding="utf-8")
         )
 
-    def test_only_github_and_skillhub_are_future_publish_targets(self) -> None:
-        self.assertEqual(["github", "skillhub.cn"], self.policy["publish_targets"])
-        self.assertEqual(["clawhub"], self.policy["excluded_publish_targets"])
-        self.assertNotIn("[![ClawHub]", self.readme)
-        self.assertIn("不再向 ClawHub 发布或更新", self.readme)
-        self.assertIn("不得构建、检查、上传或更新 ClawHub 包", self.handoff)
+    def test_three_release_targets_are_declared(self) -> None:
+        self.assertEqual(
+            ["github", "skillhub.cn", "clawhub"], self.policy["publish_targets"]
+        )
+        self.assertEqual([], self.policy["excluded_publish_targets"])
+        self.assertIn("clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant", self.readme)
+        self.assertIn("GitHub、skillhub.cn 与 ClawHub", self.handoff)
 
     def test_project_and_skillhub_metadata_use_mit(self) -> None:
         self.assertEqual("MIT", self.policy["license"])
@@ -43,8 +44,16 @@ class ReleasePolicyTests(unittest.TestCase):
         )
         self.assertTrue(root_license.startswith("MIT License\n"))
         self.assertEqual(root_license, package_license.removeprefix("# "))
-        self.assertNotIn("MIT-0", self.readme + self.handoff)
+        self.assertEqual(
+            {"github": "MIT", "skillhub.cn": "MIT", "clawhub": "MIT-0"},
+            self.policy["channel_licenses"],
+        )
         self.assertEqual("[MIT](LICENSE)", self.readme.partition("## 开源许可")[2].strip())
+
+    def test_real_writing_precedes_engineering_gates(self) -> None:
+        self.assertIn("不先新增解析器、胶水代码或工程门", self.readme)
+        self.assertIn("与 DIFF 无关的模型波动和技术故障只记录，不计候选回退", self.handoff)
+        self.assertIn("才补与已观察行为直接相关的最小确定性测试、胶水和发布门", self.handoff)
 
     def test_public_copy_does_not_expose_release_commands(self) -> None:
         public_copy = self.readme + self.handoff + self.release_notes
@@ -130,8 +139,8 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertIn("chinese-academic-writing-assistant@0.1.0", self.readme)
         combined = self.readme + self.release_notes
         for marker in (
-            "许可证：MIT",
-            "不更新 ClawHub",
+            "ClawHub 按平台规则采用 MIT-0",
+            "已发布到 GitHub、skillhub.cn 与 ClawHub",
             "修正前 0/3，修正后 3/3",
             "两臂均 3/3 真实落盘",
             "不计候选独有收益",
@@ -190,7 +199,13 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertFalse(receipt["cover"]["included_in_package"])
         self.assertEqual("1024x1024", receipt["cover"]["platform_dimensions"])
         self.assertEqual("PASS", receipt["cover"]["visual_recheck"])
-        self.assertEqual(["clawhub"], receipt["excluded_publish_targets"])
+        self.assertEqual([], receipt["excluded_publish_targets"])
+        self.assertEqual("k97ecxj2kya3pkcgxpyadv8nn58cqsjh", receipt["clawhub"]["version_id"])
+        self.assertEqual("0.1.0", receipt["clawhub"]["latest_version_at_recheck"])
+        self.assertEqual("MIT-0", receipt["clawhub"]["license"])
+        self.assertEqual(11, receipt["clawhub"]["remote_file_count"])
+        self.assertTrue(receipt["clawhub"]["content_hash_match"])
+        self.assertEqual("clean", receipt["clawhub"]["moderation_verdict"])
         self.assertEqual(183, receipt["validation"]["full_unittest_count"])
 
 

@@ -3,11 +3,15 @@
   "license": "MIT",
   "publish_targets": [
     "github",
-    "skillhub.cn"
-  ],
-  "excluded_publish_targets": [
+    "skillhub.cn",
     "clawhub"
   ],
+  "excluded_publish_targets": [],
+  "channel_licenses": {
+    "github": "MIT",
+    "skillhub.cn": "MIT",
+    "clawhub": "MIT-0"
+  },
   "skillhub_package": {
     "root": "chinese-academic-writing-assistant",
     "runtime_file_count": 11,

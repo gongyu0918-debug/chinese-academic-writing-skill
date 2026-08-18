@@ -13,11 +13,11 @@
 
 - 本仓库从 `chinese-official-writing-skill` 的论文叶拆分而来，展示名为“中文论文写作”，skill name 为 `chinese-academic-writing-assistant`。
 - 当前已完成独立入口、三条互斥专项叶、材料与引用门禁、成品残留终检、显式授权后的学术来源检索与引用覆盖层，以及渐进加载的论文 ANTI-AI 和长稿一致性 reference；运行时提供只读 `citation_audit.py`、`prose_lint.py` 和 `manuscript_audit.py`。
-- 版本 0.1.0 收窄了长稿与 ANTI-AI 叶的加载优先级，并将 `.academic-writing/` 落盘限于明确跨轮保存或项目写入授权。多章提纲交叉复测的目标原子由 0/3 改善为 3/3；授权只审任务两臂均 3/3 真实落盘，只作语义消歧。24 次独立前向使用和 90 次三模型调用的报告见 `tests/evidence/prompt-gates-20260812/RESULT.md`。
+- 版本 0.1.0 收窄了长稿与 ANTI-AI 叶的加载优先级，并将 `.academic-writing/` 落盘限于明确跨轮保存或项目写入授权。多章提纲交叉复测的目标原子由 0/3 改善为 3/3；授权只审任务两臂均 3/3 真实落盘，只作语义消歧。24 次独立前向使用和 90 次三模型调用的报告见 `tests/evidence/prompt-gates-20260812/RESULT.md`。ClawHub 0.1.0 已于 2026-08-18 同步发布，versionId 为 `k97ecxj2kya3pkcgxpyadv8nn58cqsjh`；11 个远端文件与 `v0.1.0` 标签逐项哈希一致，审核为 clean。
 - 版本 0.0.9 已在提交 `31d3beac65f6e33663463476f0110f65e08fd821` 发布至 GitHub（tag `v0.0.9`），同一份 12 文件 ZIP 已发布至 skillhub.cn（skillId `98987`、versionId `229892`），未更新 ClawHub。上传时安全扫描、内容审核和总体审核均为 `pending`；随后公开搜索已显示 0.0.9，平台签名校验通过且内容指纹完全匹配。发布包 SHA-256 为 `e3873160e4806f1192df3a1afbf256d515b18523af679524fe161f5c2901fe5f`，回执见 `tests/evidence/v0.0.9-release-gate/RELEASE-RECEIPT.json`。封面源图保留在 GitHub，本轮按用户决定不再通过浏览器重发或补传。
 - 版本 0.0.8 已发布至 GitHub（tag v0.0.8）、ClawHub 与 skillhub.cn。升级内容依据公文 skill 1.5.40 已验证更新：终稿模式新增三类否定式句尾候选、意义支撑句尾成簇与正文外制作性注记标题检测；ANTI-AI 复核新增连续否定式收口与正向状态承接、纯检测模式输出约定；入口增加终稿 lint 短指针；ANTI-AI 首段加载条件减载为入口指针。开发轮真实写稿 A/B（4 任务双臂＋确认轮 T5/T6）未发现可复现候选独有硬失败，首轮两起候选独有失败经确认轮判定为双臂共有噪声。发布门禁轮（全新任务 R1–R4、全新会话，对 v0.0.7）机械门禁 8/8 通过，双盲裁判一致，已决定任务 Candidate 3 胜、Baseline 1 胜，零硬 FAIL，判定无回退；证据在 `tests/evidence/v0.0.8-release-gate`，回执在 `.release/release-v0.0.8-receipts.json`（未跟踪）。skillhub.cn 0.0.8 已受理，审核与公开 latest 传播以平台为准。
 - 当前能力仍限定中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。英文论文、投稿、统计分析、答辩、排版和检测规避尚未纳入。
-- 许可证：MIT。后续版本只发布至 GitHub 与 skillhub.cn，不再向 ClawHub 发布或更新；0.0.8 及更早的 ClawHub 记录作为历史证据保留。
+- 项目与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。后续版本同步至 GitHub、skillhub.cn 与 ClawHub。
 
 ## 迁移来源
 
@@ -47,13 +47,20 @@
 - `tests/evidence/academic-leaf-isolation-20260713/`
 - `tests/evidence/minimal-fix-gate-20260713/`
 
+## 迭代顺序
+
+1. 先把候选压到最小 Prompt 或 reference DIFF，复用现有工具做小规模真实写稿 A/B，不先开发新解析器、胶水或工程门。
+2. 先按正文硬边界、直接可用性和修改负担盲审，再判断问题是否能由本次 DIFF 解释；与 DIFF 无关的模型波动和技术故障只记录，不计候选回退。
+3. 候选至少不劣于基线，并在全新任务中复现目标收益后，才补与已观察行为直接相关的最小确定性测试、胶水和发布门。
+4. 写稿劣于基线、收益未复现或无法归因时撤回候选，不靠增加工程层继续包装。
+
 ## 后续线程应先做的工作
 
 1. 冷审独立入口与三份 reference，确认 `chinese-academic-writing-assistant` 的路由、边界和本地验证证据。
 2. 若扩展英文论文，先单独设计语言路由和引用规范，不直接翻译中文 Prompt，也不要让中英文链同时加载。
 3. 运行仓库列明的单元测试、结构校验、严格证据检查和真实 writer/verifier 流程，不以旧证据替代当前候选验证。
-4. 每次发布前分别核对 GitHub 和 skillhub.cn 的 slug/identifier、账号状态与现有版本；不得构建、检查、上传或更新 ClawHub 包，也不得沿用其他项目的平台 ID、标签或发布回执。
-5. skillhub.cn 发布包遵循仓库机器策略，图标作为平台资料单独维护。发布后只提交不含凭据的 GitHub 与 skillhub.cn 回执；原始包、临时目录和本机回执只留在 `.release/`。
+4. 每次发布前分别核对 GitHub、skillhub.cn 与 ClawHub 的 slug/identifier、账号状态和现有版本，不得沿用其他项目的平台 ID、标签或发布回执。
+5. 各平台发布包遵循仓库机器策略，图标作为 SkillHub 平台资料单独维护。发布后只提交不含凭据的三平台回执；原始包、临时目录和本机回执只留在 `.release/`。
 6. 不继承原公文 skill 的版本号、平台 ID、标签、审核结果和发布承诺；新产品从独立版本策略开始。
 7. 维护文风 Prompt、词表或启发式阈值时，只修复在至少三个独立输出中复现、并跨至少两个任务和两个 writer 的共性问题；单例和未达阈值的问题只记录。该阈值不适用于事实、数据、引用、归因、因果、否定范围和研究状态等硬边界，经复核确认的单例也必须阻断相应交付。确定性解析或保护区缺陷应先用三个输入变体复现，再作窄修复。
 8. 长稿层下一步优先做真正跨会话、跨学科的旧基线/候选配对消融，验证 `paper-state.md` 的状态更新、冲突合并、旧状态淘汰和文体漂移控制；不要因当前单组四章前向任务继续增加段落级规则。
