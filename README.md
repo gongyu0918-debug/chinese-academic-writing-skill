@@ -1,6 +1,6 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.0)
+[![Version](https://img.shields.io/badge/version-0.1.1-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.1)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -53,7 +53,7 @@
 
 ## 安装与调用
 
-当前公开版本：`chinese-academic-writing-assistant@0.1.0`
+当前公开版本：`chinese-academic-writing-assistant@0.1.1`
 
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
 
@@ -87,6 +87,12 @@ $chinese-academic-writing-assistant 请根据我提供的材料续写第三章�
 | `scripts/*.py` | 引用、表达和长稿的只读候选扫描 |
 
 SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，并在平台支持的页面入口单独上传或关联；图片不进入运行包。
+
+## 版本 0.1.1
+
+本版本只删除开题报告专项叶中的一条重复自述，路由条件、材料门禁以及已有、拟开展、预期三类研究状态规则均保持不变。候选先完成 Alibaba、Ollama、MiniMax 三模型双臂真实写稿，6/6 调用技术有效且完整加载开题叶，未发现候选独有的状态升级或材料外结论。
+
+全量确定性测试 186 项通过，标准 Skill 校验通过。许可证：MIT；ClawHub 按平台规则使用 MIT-0。
 
 ## 版本 0.1.0
 
