@@ -12,6 +12,7 @@ RELEASE_NOTES_PATH = ROOT / "tests" / "evidence" / "v0.1.2-release-gate" / "RELE
 RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.0.9-release-gate" / "RELEASE-RECEIPT.json"
 V010_RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.1.0-release-gate" / "RELEASE-RECEIPT.json"
 V011_RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.1.1-release-gate" / "RELEASE-RECEIPT.json"
+V012_RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.1.2-release-gate" / "RELEASE-RECEIPT.json"
 
 
 class ReleasePolicyTests(unittest.TestCase):
@@ -29,6 +30,9 @@ class ReleasePolicyTests(unittest.TestCase):
         )
         cls.v011_release_receipt = json.loads(
             V011_RELEASE_RECEIPT_PATH.read_text(encoding="utf-8")
+        )
+        cls.v012_release_receipt = json.loads(
+            V012_RELEASE_RECEIPT_PATH.read_text(encoding="utf-8")
         )
 
     def test_three_release_targets_are_declared(self) -> None:
@@ -247,6 +251,45 @@ class ReleasePolicyTests(unittest.TestCase):
             receipt["clawhub"]["version_id"],
         )
         self.assertEqual("0.1.1", receipt["clawhub"]["latest_version_at_recheck"])
+        self.assertEqual("MIT-0", receipt["clawhub"]["license"])
+        self.assertEqual(11, receipt["clawhub"]["remote_file_count"])
+        self.assertTrue(receipt["clawhub"]["content_hash_match"])
+        self.assertEqual("clean", receipt["clawhub"]["moderation_verdict"])
+        self.assertEqual([], receipt["excluded_publish_targets"])
+
+    def test_v012_public_receipt_binds_three_release_surfaces(self) -> None:
+        receipt = self.v012_release_receipt
+        self.assertEqual("0.1.2", receipt["version"])
+        self.assertEqual(
+            "82c602b63818b556e72ef2e6f1b46f3ee49d1a44",
+            receipt["release_commit"],
+        )
+        self.assertEqual("MIT", receipt["package"]["license"])
+        self.assertEqual("LICENSE.md", receipt["package"]["license_file"])
+        self.assertEqual(12, receipt["package"]["file_count"])
+        self.assertEqual(11, receipt["package"]["runtime_file_count"])
+        self.assertEqual(
+            "4a46a27bd26d433d698c45158287f68cfbcae2cf2f19738644311eff0d1b8510",
+            receipt["package"]["zip_sha256"],
+        )
+        self.assertEqual(374593638, receipt["github"]["release_id"])
+        self.assertTrue(receipt["github"]["asset_hash_match"])
+        self.assertEqual(98987, receipt["skillhub"]["skill_id"])
+        self.assertEqual(260345, receipt["skillhub"]["version_id"])
+        self.assertEqual("pending", receipt["skillhub"]["review_status_at_upload"])
+        self.assertEqual("0.1.2", receipt["skillhub"]["public_tags_at_recording"]["latest"])
+        self.assertEqual(
+            "pending_review_version_not_found",
+            receipt["skillhub"]["signature_verify_status_at_recording"],
+        )
+        self.assertFalse(receipt["cover"]["uploaded_this_release"])
+        self.assertFalse(receipt["cover"]["included_in_package"])
+        self.assertEqual("1024x1024", receipt["cover"]["platform_dimensions"])
+        self.assertEqual(
+            "k974tymqnq7q8ty6vzfecp5h258cwgk2",
+            receipt["clawhub"]["version_id"],
+        )
+        self.assertEqual("0.1.2", receipt["clawhub"]["latest_version_at_recheck"])
         self.assertEqual("MIT-0", receipt["clawhub"]["license"])
         self.assertEqual(11, receipt["clawhub"]["remote_file_count"])
         self.assertTrue(receipt["clawhub"]["content_hash_match"])

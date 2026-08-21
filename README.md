@@ -96,7 +96,7 @@ SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，
 
 真实写稿覆盖 Alibaba Token Plan 2、Ollama Cloud、OpenCode Go 和 MiniMax 四个 provider：探索与扩大确认合计 19 个完整配对，候选 11 胜、基线 0 胜、8 平，未发现候选的事实、来源、结论强度或交付模式硬回退。一次 OpenCode 上游断流按技术缺样处理，并已用全新四平台任务完成 8/8 复测。运行包没有新增 Hook、自动改写器或解析器。
 
-0.1.2 面向 GitHub、skillhub.cn 与 ClawHub 发布。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则使用 MIT-0。
+0.1.2 已发布至 GitHub、skillhub.cn 与 ClawHub。GitHub Release 资产与本地白名单包哈希一致；ClawHub 的 11 个远程文件逐项匹配，安全与审核均为 clean。skillhub.cn 已受理 12 文件版本，`latest` 标签已指向 0.1.2，公开 latest、审核和平台签名仍按平台传播进度分开复核。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则使用 MIT-0。
 
 ## 版本 0.1.1
 
