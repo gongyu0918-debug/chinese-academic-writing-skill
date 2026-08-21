@@ -58,6 +58,9 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertIn("不先新增解析器、胶水代码或工程门", self.readme)
         self.assertIn("与 DIFF 无关的模型波动和技术故障只记录，不计候选回退", self.handoff)
         self.assertIn("才补与已观察行为直接相关的最小确定性测试、胶水和发布门", self.handoff)
+        self.assertIn("样本不足时增加全新真实写稿", self.readme)
+        self.assertIn("最终只作“合并”或“取消”", self.readme)
+        self.assertIn("拆出最小修正并用新鲜样本复测", self.handoff)
 
     def test_public_copy_does_not_expose_release_commands(self) -> None:
         public_copy = self.readme + self.handoff + self.release_notes

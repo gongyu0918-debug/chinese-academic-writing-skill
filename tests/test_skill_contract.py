@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 HANDOFF_PATH = ROOT / "HANDOFF.md"
+README_PATH = ROOT / "README.md"
 SKILL_DIR = ROOT / "chinese-academic-writing-assistant"
 SKILL_PATH = SKILL_DIR / "SKILL.md"
 OPENAI_YAML = SKILL_DIR / "agents" / "openai.yaml"
@@ -46,6 +47,7 @@ class SkillContractTests(unittest.TestCase):
         cls.citation_audit = CITATION_AUDIT.read_text(encoding="utf-8")
         cls.manuscript_audit = MANUSCRIPT_AUDIT.read_text(encoding="utf-8")
         cls.handoff = HANDOFF_PATH.read_text(encoding="utf-8")
+        cls.readme = README_PATH.read_text(encoding="utf-8")
 
     def test_frontmatter_has_only_name_and_description(self) -> None:
         fields = parse_frontmatter(self.skill)
@@ -301,6 +303,32 @@ class SkillContractTests(unittest.TestCase):
             "普通起草或事实审查未提出文风目标时不读取",
         ):
             self.assertIn(marker, self.skill)
+
+    def test_protective_expansion_review_is_delete_only_and_bounded(self) -> None:
+        anti_ai = self.references["anti-ai-writing.md"]
+        for marker in (
+            "保护性外扩删除式复核",
+            "用户提供完整底稿并明确要求",
+            "承担任一作用即保留",
+            "只处理没有独立论证作用的连续自证、未测事项链",
+            "删除只覆盖完整句或可与有依据前缀分离的最宽尾部",
+            "需要改写才能完整",
+            "用户另有字数要求时，只用已有事实、来源比较和论证关系承担",
+            "完成一次即停止",
+        ):
+            self.assertIn(marker, anti_ai)
+        self.assertNotIn("段末总括不能替代这类逐来源边界", anti_ai)
+
+    def test_iteration_policy_uses_real_outputs_and_terminal_decisions(self) -> None:
+        policy = self.readme + self.handoff
+        for marker in (
+            "合理推断、归因、比较、论点、论据、解释和建议不是新增事实",
+            "样本不足时增加全新真实写稿",
+            "不向用户交付 `HOLD`",
+            "拆出最小修正并用新鲜样本复测",
+            "最终只交付“合并”或“取消”",
+        ):
+            self.assertIn(marker, policy)
 
     def test_v160_continuous_negation_rule_is_position_independent(self) -> None:
         anti_ai = self.references["anti-ai-writing.md"]
