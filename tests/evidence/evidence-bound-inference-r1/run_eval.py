@@ -233,13 +233,53 @@ def run_one(
     }
 
 
+def run_provider_lane(
+    provider: Provider,
+    cases: list[dict[str, Any]],
+    arm: str,
+    skill_root: Path,
+    source_fingerprint: str,
+    output_root: Path,
+) -> list[dict[str, Any]]:
+    records: list[dict[str, Any]] = []
+    for case in cases:
+        try:
+            record = run_one(
+                provider,
+                case,
+                arm,
+                skill_root,
+                source_fingerprint,
+                output_root,
+            )
+        except Exception as exc:
+            record = {
+                "arm": arm,
+                "provider": provider.name,
+                "task_id": case["task_id"],
+                "retry_count": 0,
+                "technical_valid": False,
+                "valid": False,
+                "exception": f"{type(exc).__name__}: {exc}",
+            }
+        records.append(record)
+        print(
+            json.dumps(
+                {key: record.get(key) for key in ("provider", "task_id", "valid", "duration_seconds")},
+                ensure_ascii=False,
+            ),
+            flush=True,
+        )
+    return records
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--arm", choices=("baseline", "candidate"), required=True)
     parser.add_argument("--skill-root", type=Path, required=True)
     parser.add_argument("--output-root", type=Path, required=True)
     parser.add_argument("--provider", action="append", choices=tuple(item.name for item in PROVIDERS))
-    parser.add_argument("--workers", type=int, default=4)
+    parser.add_argument("--workers", type=int, default=5, help="parallel provider lanes; each lane is serial")
     return parser.parse_args()
 
 
@@ -250,6 +290,8 @@ def main() -> int:
     cases = load_cases(cases_path)
     skill_root = args.skill_root.resolve()
     output_root = args.output_root.resolve()
+    if args.workers < 1:
+        raise SystemExit("workers must be at least 1")
     if output_root.exists():
         raise SystemExit(f"output root already exists: {output_root}")
     if not skill_root.is_dir() or not CATALOG_PATH.is_file():
@@ -264,42 +306,26 @@ def main() -> int:
     source_fingerprint = skill_fingerprint(source_manifest)
     output_root.mkdir(parents=True)
     records: list[dict[str, Any]] = []
-    with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=min(args.workers, len(selected))) as pool:
         futures = {
             pool.submit(
-                run_one,
+                run_provider_lane,
                 provider,
-                case,
+                cases,
                 args.arm,
                 skill_root,
                 source_fingerprint,
                 output_root,
-            ): (provider.name, case["task_id"])
+            ): provider.name
             for provider in selected
-            for case in cases
         }
         for future in concurrent.futures.as_completed(futures):
-            provider_name, task_id = futures[future]
+            provider_name = futures[future]
             try:
-                record = future.result()
+                lane_records = future.result()
             except Exception as exc:
-                record = {
-                    "arm": args.arm,
-                    "provider": provider_name,
-                    "task_id": task_id,
-                    "retry_count": 0,
-                    "technical_valid": False,
-                    "valid": False,
-                    "exception": f"{type(exc).__name__}: {exc}",
-                }
-            records.append(record)
-            print(
-                json.dumps(
-                    {key: record.get(key) for key in ("provider", "task_id", "valid", "duration_seconds")},
-                    ensure_ascii=False,
-                ),
-                flush=True,
-            )
+                raise RuntimeError(f"provider lane failed before recording: {provider_name}") from exc
+            records.extend(lane_records)
     source_after = skill_fingerprint(skill_manifest(skill_root))
     records.sort(key=lambda row: (row["provider"], row["task_id"]))
     manifest = {
