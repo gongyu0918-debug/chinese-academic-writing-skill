@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "packet_sha256": "a4e810808f899dbda9d1239befb82cc4010c7127538a732e1f29273436f31814",
+  "mapping_sha256": "7ca9b1e30a94587de9460fdef4f335ed0c50b5862812d822b79457eac07b06cb",
+  "verdicts_sha256": "0c330a0e87dbb4446ab9e343b51da7b1fa520c1fcea14c4952db05984ee1b4d3",
+  "pair_count": 25,
+  "anonymous_counts": {
+    "A": 10,
+    "B": 14,
+    "TIE": 1,
+    "INVALID": 0
+  },
+  "candidate_wins": 16,
+  "baseline_wins": 8,
+  "ties": 1,
+  "invalid": 0,
+  "decided_pairs": 24,
+  "candidate_decided_win_rate_percent": 66.7
+}

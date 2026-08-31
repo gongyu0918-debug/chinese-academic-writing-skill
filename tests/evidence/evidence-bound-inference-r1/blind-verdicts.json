@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "packet_sha256": "a4e810808f899dbda9d1239befb82cc4010c7127538a732e1f29273436f31814",
+  "judge_mode": "independent cold subagent; packet.md only; mapping unavailable until all decisions were final",
+  "decisions": [
+    {"pair_id": "Q01", "decision": "B", "hard_failure": "有：把预约发起延伸为需求", "reason": "B 的边界、样本和人员配置限制更完整；A 将发起量直接解释为居民需求。"},
+    {"pair_id": "Q02", "decision": "A", "hard_failure": "无", "reason": "A 正确识别事实、作者推测和生产率边界；B 将合理候选解释过度列为问题。"},
+    {"pair_id": "Q03", "decision": "B", "hard_failure": "无", "reason": "A 把未提交二稿者写成未进入修改环节；B 的范围和限制更稳妥。"},
+    {"pair_id": "Q04", "decision": "A", "hard_failure": "无", "reason": "A 论证自然且范围清楚；B 将访谈意见和修改行为泛化并保留过多兜底。"},
+    {"pair_id": "Q05", "decision": "B", "hard_failure": "有：轻度将便利延伸为在职居民需求", "reason": "B 避免 A 的上班族实际需求表述，对完成率、排班和抽样限制更准确。"},
+    {"pair_id": "Q06", "decision": "B", "hard_failure": "有：末句因果升级", "reason": "B 抓住完成率因果结论且更简洁；A 重复列举并过度否定前两句。"},
+    {"pair_id": "Q07", "decision": "TIE", "hard_failure": "无", "reason": "两稿均保留 r=0.31 及横断面、时序和混杂限制。"},
+    {"pair_id": "Q08", "decision": "A", "hard_failure": "无", "reason": "A 的候选解释和边界更贴近材料；B 加入晋升机会等不必要外延。"},
+    {"pair_id": "Q09", "decision": "A", "hard_failure": "无", "reason": "A 完整克制；B 加入培训有助提升的普遍预期。"},
+    {"pair_id": "Q10", "decision": "B", "hard_failure": "有：末句因果升级", "reason": "B 准确抓住增加晚班人员即可提高完成率，并指出单月和访谈样本边界。"},
+    {"pair_id": "Q11", "decision": "A", "hard_failure": "有：登录峰与人工支持错配的推断较强", "reason": "A 未虚构完成登录或失败；B 多处把登录和支持时段推成需求和失败风险。"},
+    {"pair_id": "Q12", "decision": "B", "hard_failure": "无", "reason": "A 称工作坊触发修订并引入能力养成；B 严格限于行为和即时反馈。"},
+    {"pair_id": "Q13", "decision": "B", "hard_failure": "无", "reason": "B 区分预约发起、就诊完成和服务效果，避免归因于上班族需求。"},
+    {"pair_id": "Q14", "decision": "B", "hard_failure": "有：末句因果升级", "reason": "B 指出值守不足、到馆率提升及由此可见的跳跃；A 对集中分布表述过度挑剔。"},
+    {"pair_id": "Q15", "decision": "B", "hard_failure": "无", "reason": "A 虚构未设置对照组；B 保留相关而非因果及样本外推限制。"},
+    {"pair_id": "Q16", "decision": "B", "hard_failure": "有：交付模式不合规及越界审查", "reason": "A 未按表格输出并泄露读取过程；B 按要求给出问题表。"},
+    {"pair_id": "Q17", "decision": "A", "hard_failure": "无", "reason": "A 紧扣已给变量和因果边界；B 加入材料外的组织文化情境。"},
+    {"pair_id": "Q18", "decision": "B", "hard_failure": "有：末句因果升级", "reason": "B 定位失败率效果结论和支持不足前提；A 重复问题并把单周限定过度当作缺陷。"},
+    {"pair_id": "Q19", "decision": "B", "hard_failure": "无", "reason": "B 对预约、供给错位和便利抽样均作条件化表达。"},
+    {"pair_id": "Q20", "decision": "B", "hard_failure": "有：末句因果升级", "reason": "B 抓住完成率因果跳跃并补出单月、样本和供给证据缺口。"},
+    {"pair_id": "Q21", "decision": "A", "hard_failure": "无", "reason": "A 承认候选解释和结论边界；B 不当否定明确标注为推测或可能的解释。"},
+    {"pair_id": "Q22", "decision": "B", "hard_failure": "无", "reason": "B 将可选的证据收紧保持为轻微提示，未把合理作者推测判成实质问题。"},
+    {"pair_id": "Q23", "decision": "A", "hard_failure": "无", "reason": "A 完成有效讨论并保留限制；B 回显底稿、分隔线和规则。"},
+    {"pair_id": "Q24", "decision": "A", "hard_failure": "有：部分样本口径问题", "reason": "A 识别分布和样本衔接问题，并承认推测句可不改；B 过度否定合理候选解释。"},
+    {"pair_id": "Q25", "decision": "A", "hard_failure": "无", "reason": "A 区分过程性观察、自我报告与效果结论；B 将示例与建议写成推动行为。"}
+  ]
+}

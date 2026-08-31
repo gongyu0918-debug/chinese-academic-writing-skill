@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "overrides": [
+    {
+      "id": "baseline-ollama-p1-duplicate-allowed-read",
+      "manifest_file": ".release/evidence-bound-inference-r1/baseline/manifest.json",
+      "manifest_sha256": "f595ae9bf9488d72f6b5df4b39766d5f37ebc59ee835c6a666dbdb34791a375a",
+      "provider": "ollama",
+      "task_id": "P1_DISCUSSION",
+      "final_sha256": "7849999306ae1ac86587f54730ee9a3545a4e3ed5bcce8ff400dc33c58af2ff7",
+      "reason": "旧解析器将隔离副本内同一 SKILL.md 的绝对路径与相对路径重复读取误算为额外文件；归一后读取集合严格等于两份允许文件。"
+    }
+  ]
+}
