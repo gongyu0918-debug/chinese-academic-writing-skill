@@ -118,14 +118,18 @@ def completed_commands(trace: str) -> list[str]:
     return commands
 
 
-def observed_reads(trace: str) -> list[str]:
+def observed_reads(trace: str, copied_skill: Path) -> list[str]:
     reads: list[str] = []
+    copied_root = re.sub(r"[\\/]+", "/", str(copied_skill.resolve())).casefold().rstrip("/")
     for command in completed_commands(trace):
         match = READ_RE.search(command.replace('\\"', '"'))
         if match is None:
             continue
         normalized = re.sub(r"[\\/]+", "/", match.group(1)).casefold()
-        normalized = normalized.removeprefix("./").removeprefix("skill/")
+        if normalized.startswith(f"{copied_root}/"):
+            normalized = normalized[len(copied_root) + 1 :]
+        else:
+            normalized = normalized.removeprefix("./").removeprefix("skill/")
         reads.append(normalized)
     return sorted(set(reads))
 
@@ -198,9 +202,11 @@ def run_one(
     (call_root / "stderr.txt").write_text(stderr, encoding="utf-8", newline="\n")
     final = final_path.read_text(encoding="utf-8") if final_path.is_file() else ""
     copied_after = skill_fingerprint(skill_manifest(copied_skill))
-    reads = observed_reads(trace)
+    reads = observed_reads(trace, copied_skill)
     forbidden = trace_forbidden(trace)
-    route_complete = reads == sorted(path.casefold() for path in REQUIRED_READS)
+    required_reads = sorted(path.casefold() for path in REQUIRED_READS)
+    unexpected_reads = sorted(set(reads) - set(required_reads))
+    route_complete = reads == required_reads
     technical_valid = (
         return_code == 0
         and not timed_out
@@ -225,6 +231,7 @@ def run_one(
         "final_sha256": sha256_bytes(final.encode("utf-8")) if final else None,
         "final_chars": len(final),
         "observed_reads": reads,
+        "unexpected_reads": unexpected_reads,
         "route_complete": route_complete,
         "forbidden_trace_markers": forbidden,
         "skill_binding_stable": copied_before == copied_after == source_fingerprint,
@@ -278,6 +285,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--arm", choices=("baseline", "candidate"), required=True)
     parser.add_argument("--skill-root", type=Path, required=True)
     parser.add_argument("--output-root", type=Path, required=True)
+    parser.add_argument("--cases-file", type=Path)
+    parser.add_argument("--task-id", action="append")
     parser.add_argument("--provider", action="append", choices=tuple(item.name for item in PROVIDERS))
     parser.add_argument("--workers", type=int, default=5, help="parallel provider lanes; each lane is serial")
     return parser.parse_args()
@@ -286,8 +295,15 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     evidence_root = Path(__file__).resolve().parent
-    cases_path = evidence_root / "cases.json"
+    cases_path = args.cases_file.resolve() if args.cases_file else evidence_root / "cases.json"
     cases = load_cases(cases_path)
+    if args.task_id:
+        requested = set(args.task_id)
+        known = {case["task_id"] for case in cases}
+        unknown = sorted(requested - known)
+        if unknown:
+            raise SystemExit(f"unknown task IDs: {unknown}")
+        cases = [case for case in cases if case["task_id"] in requested]
     skill_root = args.skill_root.resolve()
     output_root = args.output_root.resolve()
     if args.workers < 1:
