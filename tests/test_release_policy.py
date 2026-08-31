@@ -332,10 +332,16 @@ class ReleasePolicyTests(unittest.TestCase):
         )
         self.assertEqual("0.1.3", receipt["clawhub"]["latest_version_at_recheck"])
         self.assertEqual("MIT-0", receipt["clawhub"]["platform_license"])
-        self.assertEqual(12, receipt["clawhub"]["remote_file_count"])
+        self.assertEqual(13, receipt["clawhub"]["remote_file_count"])
+        self.assertEqual(12, receipt["clawhub"]["uploaded_file_count"])
         self.assertEqual(11, receipt["clawhub"]["runtime_file_count"])
         self.assertTrue(receipt["clawhub"]["license_file_included"])
-        self.assertTrue(receipt["clawhub"]["content_hash_match"])
+        self.assertEqual(1, receipt["clawhub"]["platform_generated_file_count"])
+        self.assertEqual(
+            "4b80ca8b0092cfc63193c3ba493545e2e20e0331f72c93f76a2e70c1794c3107",
+            receipt["clawhub"]["platform_generated_files"]["skill-card.md"],
+        )
+        self.assertTrue(receipt["clawhub"]["uploaded_content_hash_match"])
         self.assertEqual("clean", receipt["clawhub"]["security_status"])
         self.assertEqual("clean", receipt["clawhub"]["moderation_verdict"])
         self.assertEqual([], receipt["excluded_publish_targets"])

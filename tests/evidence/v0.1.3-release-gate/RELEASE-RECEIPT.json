@@ -2,6 +2,7 @@
   "schema_version": 1,
   "version": "0.1.3",
   "recorded_at": "2026-08-31T04:27:52.3347338Z",
+  "propagation_rechecked_at": "2026-08-31T04:35:11.0881176Z",
   "runtime_change_commit": "f0f9ac8b3e7e67faf62b8890303c65b96cbff50a",
   "validation_commit": "718f119d2eb4c5dc370c7f57c9208fdffce59ab9",
   "release_commit": "d299186bd36ea090463b1f2fa3d67c46116a9950",
@@ -87,12 +88,18 @@
     "platform_license": "MIT-0",
     "publish_status": "published",
     "latest_version_at_recheck": "0.1.3",
-    "remote_file_count": 12,
+    "remote_file_count": 13,
+    "uploaded_file_count": 12,
     "runtime_file_count": 11,
     "license_file_included": true,
     "license_file_sha256": "7182fd4c6281db93871ce4941eb4443e2230a4e33680a3b7f99510bcf0a9d023",
+    "uploaded_skill_md_sha256": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "platform_generated_file_count": 1,
+    "platform_generated_files": {
+      "skill-card.md": "4b80ca8b0092cfc63193c3ba493545e2e20e0331f72c93f76a2e70c1794c3107"
+    },
     "fingerprint": "b604c12953ac764fe50ee21bfe22bfffcff6d0b688a9bda87482d21ee956c67f",
-    "content_hash_match": true,
+    "uploaded_content_hash_match": true,
     "security_status": "clean",
     "moderation_verdict": "clean",
     "publish_attempts": 1
@@ -122,12 +129,13 @@
     "github_asset_download_recheck": "PASS",
     "clawhub_dry_run": "PASS",
     "clawhub_publish": "PASS",
-    "clawhub_remote_hash_recheck": "PASS",
+    "clawhub_remote_hash_recheck": "PASS_12_UPLOADED_FILES",
+    "clawhub_platform_generated_file_recheck": "OBSERVED_1_SKILL_CARD",
     "clawhub_moderation_recheck": "PASS"
   },
   "remaining_risks": [
     "skillhub.cn 已受理 0.1.3 并将上传回执中的 latest 标签指向该版本，但公开搜索、审核结果和平台签名在记录时尚未传播完成。",
-    "ClawHub 0.1.3 由当前 CLI 一并上传 canonical LICENSE.md，平台版本元数据仍为 MIT-0；这与此前独立 11 文件 ClawHub staging 不同。本轮遵守一次提交边界，未删除或重复发布，后续版本须恢复 11 文件 staging。",
+    "ClawHub 0.1.3 由当前 CLI 一并上传 canonical LICENSE.md，平台版本元数据仍为 MIT-0；这与此前独立 11 文件 ClawHub staging 不同。12 个上传件均与本地匹配，平台审核后另生成 skill-card.md。本轮遵守一次提交边界，未删除或重复发布，后续版本须恢复 11 文件 staging。",
     "真实写稿已用全新同类任务排除已观察到的候选独有硬回退，但多 provider 输出仍具有随机性。"
   ]
 }
