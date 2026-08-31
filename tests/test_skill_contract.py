@@ -330,6 +330,18 @@ class SkillContractTests(unittest.TestCase):
         ):
             self.assertIn(marker, policy)
 
+    def test_academic_inference_is_bounded_without_becoming_source_literalism(self) -> None:
+        writing = self.references["academic-writing.md"]
+        for marker in (
+            "作者自己的归纳、比较、解释、候选原因或条件性意义",
+            "不因来源未逐字陈述同一句就视为新增事实",
+            "保留原主体、对象、样本、情境、时间、所测变量和研究状态",
+            "不把行为记录、相关关系、意向或感受改写为总体需求、效果、已验证机制或因果",
+            "多个解释均可成立时不作唯一归因",
+            "不能只因该构念未被直接测量就判为事实错误或强索次级材料",
+        ):
+            self.assertIn(marker, writing)
+
     def test_v160_continuous_negation_rule_is_position_independent(self) -> None:
         anti_ai = self.references["anti-ai-writing.md"]
         for marker in (
