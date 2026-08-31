@@ -8,7 +8,7 @@ POLICY_PATH = ROOT / "tools" / "skillhub-package-policy.json"
 LICENSE_PATH = ROOT / "LICENSE"
 README_PATH = ROOT / "README.md"
 HANDOFF_PATH = ROOT / "HANDOFF.md"
-RELEASE_NOTES_PATH = ROOT / "tests" / "evidence" / "v0.1.2-release-gate" / "RELEASE-NOTES.md"
+RELEASE_NOTES_PATH = ROOT / "tests" / "evidence" / "v0.1.3-release-gate" / "RELEASE-NOTES.md"
 RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.0.9-release-gate" / "RELEASE-RECEIPT.json"
 V010_RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.1.0-release-gate" / "RELEASE-RECEIPT.json"
 V011_RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.1.1-release-gate" / "RELEASE-RECEIPT.json"
@@ -146,15 +146,16 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertIn("版本 0.0.8 已发布至 GitHub（tag v0.0.8）、ClawHub 与 skillhub.cn", self.handoff)
 
     def test_current_release_copy_matches_the_package_and_evidence_boundary(self) -> None:
-        self.assertIn("version-0.1.2-blue", self.readme)
-        self.assertIn("chinese-academic-writing-assistant@0.1.2", self.readme)
+        self.assertIn("version-0.1.3-blue", self.readme)
+        self.assertIn("chinese-academic-writing-assistant@0.1.3", self.readme)
         combined = self.readme + self.release_notes
         for marker in (
             "ClawHub 按平台规则采用 MIT-0",
-            "保护性外扩删除式复核",
-            "19 个完整配对",
-            "候选 11 胜、基线 0 胜、8 平",
-            "没有新增 Hook、自动改写器或解析器",
+            "材料支持的作者分析与新增经验事实",
+            "25 个可比较逻辑配对",
+            "候选 16 胜、基线 8 胜、平 1",
+            "没有确认候选独有",
+            "只在普通论文专项叶增加 273 个字符",
             "图片不进入运行包",
         ):
             self.assertIn(marker, combined)
