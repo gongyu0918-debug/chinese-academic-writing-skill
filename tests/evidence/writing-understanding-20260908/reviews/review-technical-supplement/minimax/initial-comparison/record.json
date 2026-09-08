@@ -1,0 +1,17 @@
+{
+  "arm": "review-technical-supplement",
+  "task_id": "initial-comparison",
+  "kind": "review",
+  "provider": "minimax",
+  "requested_model": "minimax-cn/MiniMax-M3",
+  "reasoning_effort": "max",
+  "retry_count": 1,
+  "request_sha256": "b3c6fa9f622c54b3bffd2460836056d018431b17b11363f2cfa87393c56f524a",
+  "skill_files": {
+    "SKILL.md": "19a48579c2ef9d27e291ff5adcd7c341220457890d55e6e8ccf0ab5fc6d528b4",
+    "references/rubric.md": "1f0eb10ed6e4024bf590cee86e2dfe35c3473f7fbaf98de78aa2c2054f781194"
+  },
+  "valid": false,
+  "error": "HTTPError: HTTP Error 502: Bad Gateway",
+  "seconds": 200.05
+}

@@ -1,0 +1,2 @@
+我先读取独立文献综述的专项叶，然后基于三张来源卡片起草正文。</mm:think>Reading the专项叶 before drafting.]<]minimax[>[<tool_call>
+{"name": "read_file", "arguments": {"file_path": "/mnt/skills/chinese-academic-writing/references/academic-literature-review.md"}}

@@ -1,0 +1,42 @@
+[
+  {
+    "pair_id": "IE01",
+    "task_id": "E2",
+    "kind": "conclusion",
+    "provider": "alibaba2",
+    "A": "isolated-conclusion",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "IE02",
+    "task_id": "E2",
+    "kind": "conclusion",
+    "provider": "ollama",
+    "A": "baseline",
+    "B": "isolated-conclusion"
+  },
+  {
+    "pair_id": "IE03",
+    "task_id": "E2",
+    "kind": "conclusion",
+    "provider": "minimax",
+    "A": "isolated-conclusion",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "IE04",
+    "task_id": "fresh_recycled_concrete_conclusion_02",
+    "kind": "conclusion",
+    "provider": "alibaba2",
+    "A": "baseline",
+    "B": "isolated-conclusion"
+  },
+  {
+    "pair_id": "IE05",
+    "task_id": "fresh_recycled_concrete_conclusion_02",
+    "kind": "conclusion",
+    "provider": "ollama",
+    "A": "isolated-conclusion",
+    "B": "baseline"
+  }
+]

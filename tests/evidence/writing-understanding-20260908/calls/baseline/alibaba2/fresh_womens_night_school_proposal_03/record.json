@@ -1,0 +1,32 @@
+{
+  "arm": "baseline",
+  "task_id": "fresh_womens_night_school_proposal_03",
+  "kind": "proposal",
+  "provider": "alibaba2",
+  "requested_model": "alibaba-token-plan-2/deepseek-v4-flash-0731",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "45c855a5db5875543d1fc55ba64cecb6a776cb4c953b1f67d518579d081aec61",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-proposal.md": "c8bd193ba3220b9402a318eaf079987e3392b7534f039d366e3c4febaaf968eb"
+  },
+  "status": "completed",
+  "returned_model": "deepseek-v4-flash-0731",
+  "usage": {
+    "input_tokens": 3448,
+    "output_tokens": 8813,
+    "total_tokens": 12261,
+    "input_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 8392
+    }
+  },
+  "final_chars": 667,
+  "final_sha256": "75138be62676ffa313c88cf82cf65d077254c59f88020041670615ed85e6bc2f",
+  "response_sha256": "d85f5629608a0079be33cbe3bd3e344814fd25c4823cd0d85502bd365b96237e",
+  "valid": true,
+  "seconds": 89.47
+}

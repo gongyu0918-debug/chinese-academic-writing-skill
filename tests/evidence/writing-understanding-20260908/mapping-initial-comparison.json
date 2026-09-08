@@ -1,0 +1,42 @@
+[
+  {
+    "pair_id": "D01",
+    "task_id": "C1",
+    "kind": "comparison",
+    "provider": "alibaba2",
+    "A": "candidate",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "D02",
+    "task_id": "C1",
+    "kind": "comparison",
+    "provider": "ollama",
+    "A": "baseline",
+    "B": "candidate"
+  },
+  {
+    "pair_id": "D03",
+    "task_id": "C2",
+    "kind": "comparison",
+    "provider": "alibaba2",
+    "A": "candidate",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "D04",
+    "task_id": "C2",
+    "kind": "comparison",
+    "provider": "ollama",
+    "A": "baseline",
+    "B": "candidate"
+  },
+  {
+    "pair_id": "D05",
+    "task_id": "C2",
+    "kind": "comparison",
+    "provider": "minimax",
+    "A": "candidate",
+    "B": "baseline"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "arm": "review-fresh",
+  "task_id": "fresh-proposal",
+  "kind": "review",
+  "provider": "alibaba2",
+  "requested_model": "alibaba-token-plan-2/deepseek-v4-flash-0731",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "9c4be7edf9b344fc298d414cb6b578b9b998d1d90a2463db71001047c8f5ac96",
+  "skill_files": {
+    "SKILL.md": "19a48579c2ef9d27e291ff5adcd7c341220457890d55e6e8ccf0ab5fc6d528b4",
+    "references/rubric.md": "1f0eb10ed6e4024bf590cee86e2dfe35c3473f7fbaf98de78aa2c2054f781194"
+  },
+  "valid": false,
+  "error": "HTTPError: HTTP Error 502: Bad Gateway",
+  "seconds": 200.06
+}

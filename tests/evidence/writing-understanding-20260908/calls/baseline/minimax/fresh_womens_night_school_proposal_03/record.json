@@ -1,0 +1,32 @@
+{
+  "arm": "baseline",
+  "task_id": "fresh_womens_night_school_proposal_03",
+  "kind": "proposal",
+  "provider": "minimax",
+  "requested_model": "minimax-cn/MiniMax-M3",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "b0a0c3dd3a2a4d37b04a3367a4877323b402f5d7371862fe62fbd1ca8c77b6f8",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-proposal.md": "c8bd193ba3220b9402a318eaf079987e3392b7534f039d366e3c4febaaf968eb"
+  },
+  "status": "completed",
+  "returned_model": "MiniMax-M3",
+  "usage": {
+    "input_tokens": 3353,
+    "output_tokens": 8232,
+    "total_tokens": 11585,
+    "input_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 7677
+    }
+  },
+  "final_chars": 976,
+  "final_sha256": "06a56cf1c2ecbcdf4fe8793639e4986dd6cba6ce37d1d0e42ddd56e5eb18105b",
+  "response_sha256": "6920c22117bba35f5a73ae25a38d0503b1b7cf39bb8b0f49785c6622f444c704",
+  "valid": true,
+  "seconds": 125.6
+}

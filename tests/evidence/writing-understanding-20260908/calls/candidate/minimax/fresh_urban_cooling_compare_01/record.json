@@ -1,0 +1,32 @@
+{
+  "arm": "candidate",
+  "task_id": "fresh_urban_cooling_compare_01",
+  "kind": "comparison",
+  "provider": "minimax",
+  "requested_model": "minimax-cn/MiniMax-M3",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "260834d42a7c1487c438ba4d0414081054f4e7a5d165d0cc88709f2e1922e1c7",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-writing.md": "0bc74629361a341ee05673be2d3a0120de8e1126dcaeabfb2cfee2a7d5cee537"
+  },
+  "status": "completed",
+  "returned_model": "MiniMax-M3",
+  "usage": {
+    "input_tokens": 3736,
+    "output_tokens": 8191,
+    "total_tokens": 11927,
+    "input_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 7787
+    }
+  },
+  "final_chars": 659,
+  "final_sha256": "f571d31573c16c00dd9cfa5d05d37de884d8fb9128c1039d6672dba89f0e80a6",
+  "response_sha256": "6f1782b30b6a707a0097c43ddf40a8eab9a6f6bd3a5dc8e88832a88769430bbf",
+  "valid": true,
+  "seconds": 137.24
+}

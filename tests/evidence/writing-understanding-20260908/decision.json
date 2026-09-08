@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-08",
+  "baseline_commit": "e3a364f121eabda5b5d76c119ed938888e12bad7",
+  "runtime_version": "0.1.3",
+  "decision": "CANCEL_ALL_THREE_CURRENT_WORDINGS",
+  "runtime_changed": false,
+  "distinct_tasks": 13,
+  "writer_calls": 90,
+  "completed_nonempty_responses": 84,
+  "actual_manuscripts": 83,
+  "technical_invalid": 6,
+  "bound_pairs": 45,
+  "pairs_with_two_manuscripts": 44,
+  "quality_retries": 0,
+  "nominal_writer_model_families": 2,
+  "writer_routes": [
+    "alibaba-token-plan-2/deepseek-v4-flash-0731",
+    "ollama-cloud/deepseek-v4-flash:0731",
+    "minimax-cn/MiniMax-M3"
+  ],
+  "adjudicated_delivery_failures": [
+    {
+      "arm": "candidate",
+      "provider": "minimax",
+      "task_id": "C3",
+      "evidence_quote": "我先读取独立文献综述的专项叶",
+      "reason": "Completed nonempty response contains a tool stub and no manuscript; retained as delivery failure, not excluded as technical invalid."
+    }
+  ],
+  "atoms": [
+    {
+      "id": "comparison",
+      "decision": "CANCEL",
+      "reason": "Baselines already compare criteria and evidence roles. Isolated local gains in calibration did not establish a recurring missing writing ability; the final fresh task retained a concise gain on one route but introduced unsupported population transfer on two. Additional default prose guidance has not demonstrated stable net benefit."
+    },
+    {
+      "id": "conclusion",
+      "decision": "CANCEL",
+      "reason": "Baselines already state findings and interpretation. Isolation retained a useful concrete exception analysis on one route, but did not consistently reduce work-list repetition or revision burden across the fresh task and two writer families."
+    },
+    {
+      "id": "proposal",
+      "decision": "CANCEL",
+      "reason": "The observed-question versus available-material distinction produced useful local phrasing, but was already partly present in baseline rules and drafts; fresh work did not reliably gain this distinction and sometimes broadened a limited reading set into a field-wide claim."
+    }
+  ],
+  "review_policy": "Inspect original drafts and source cards; do not use raw reviewer majority or treat length as a factual error. Decisions concern these exact wording patches, not the value of the underlying writing distinctions.",
+  "limits": [
+    "Single first sample per task, route and arm; no repeated-sampling causal estimate.",
+    "Alibaba and Ollama 0731 routes are not independent model families; returned labels do not attest underlying weights.",
+    "Exact entry and one leaf supplied through a no-tool API context; routing, installation, Hook and long-form continuity were not tested.",
+    "Six technical failures and one delivery failure are retained; no success rate is reported as a prose-quality pass rate.",
+    "All source materials are synthetic."
+  ]
+}

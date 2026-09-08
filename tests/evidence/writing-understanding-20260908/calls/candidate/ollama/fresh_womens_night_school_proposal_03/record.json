@@ -1,0 +1,32 @@
+{
+  "arm": "candidate",
+  "task_id": "fresh_womens_night_school_proposal_03",
+  "kind": "proposal",
+  "provider": "ollama",
+  "requested_model": "ollama-cloud/deepseek-v4-flash:0731",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "5391181e5d37c833b1e28fef1296c2af29f2f8b5510ee0ca992ceaa927c5e6ce",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-proposal.md": "b585afa5813ddd8dd7e90da8c011edd6b7b51fbae84e8212769a3d9a8170daa9"
+  },
+  "status": "completed",
+  "returned_model": "deepseek-v4-flash:0731",
+  "usage": {
+    "input_tokens": 3514,
+    "output_tokens": 1234,
+    "total_tokens": 4748,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "final_chars": 672,
+  "final_sha256": "259ba938221dba0439c3cfea4df94bd9f7982acaef8c5d71b78dabe3a1148df4",
+  "response_sha256": "2e8f9960dfe58ab701163ebcaf18f29fc40a2481f1063c309bb33273811bab94",
+  "valid": true,
+  "seconds": 8.75
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "pair_id": "E01",
+    "task_id": "E1",
+    "kind": "conclusion",
+    "provider": "alibaba2",
+    "A": "candidate",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "E02",
+    "task_id": "E1",
+    "kind": "conclusion",
+    "provider": "ollama",
+    "A": "baseline",
+    "B": "candidate"
+  },
+  {
+    "pair_id": "E03",
+    "task_id": "E1",
+    "kind": "conclusion",
+    "provider": "minimax",
+    "A": "candidate",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "E04",
+    "task_id": "E2",
+    "kind": "conclusion",
+    "provider": "alibaba2",
+    "A": "baseline",
+    "B": "candidate"
+  },
+  {
+    "pair_id": "E05",
+    "task_id": "E2",
+    "kind": "conclusion",
+    "provider": "ollama",
+    "A": "candidate",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "E06",
+    "task_id": "E2",
+    "kind": "conclusion",
+    "provider": "minimax",
+    "A": "baseline",
+    "B": "candidate"
+  }
+]

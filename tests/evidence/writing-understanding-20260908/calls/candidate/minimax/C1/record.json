@@ -1,0 +1,17 @@
+{
+  "arm": "candidate",
+  "task_id": "C1",
+  "kind": "comparison",
+  "provider": "minimax",
+  "requested_model": "minimax-cn/MiniMax-M3",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "3a59c47ed01b16f29dc39547fb4e4a2684e098376fce61ffcc6a603caafc7563",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-writing.md": "0bc74629361a341ee05673be2d3a0120de8e1126dcaeabfb2cfee2a7d5cee537"
+  },
+  "valid": false,
+  "error": "HTTPError: HTTP Error 502: Bad Gateway",
+  "seconds": 200.08
+}

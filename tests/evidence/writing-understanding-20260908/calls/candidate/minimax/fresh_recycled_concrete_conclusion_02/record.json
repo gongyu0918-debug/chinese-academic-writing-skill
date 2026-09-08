@@ -1,0 +1,32 @@
+{
+  "arm": "candidate",
+  "task_id": "fresh_recycled_concrete_conclusion_02",
+  "kind": "conclusion",
+  "provider": "minimax",
+  "requested_model": "minimax-cn/MiniMax-M3",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "2b3d1de79d2e907796902f3cd51e21455ba56a6e3819e791eff6a2f3e189dc91",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-writing.md": "0bc74629361a341ee05673be2d3a0120de8e1126dcaeabfb2cfee2a7d5cee537"
+  },
+  "status": "incomplete",
+  "returned_model": "MiniMax-M3",
+  "usage": {
+    "input_tokens": 3764,
+    "output_tokens": 14000,
+    "total_tokens": 17764,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "final_chars": 0,
+  "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "response_sha256": "e47bfd700d82821802ac92e77ef98fd69bc46ef22382b665174607c0e6c0477b",
+  "valid": false,
+  "seconds": 139.78
+}

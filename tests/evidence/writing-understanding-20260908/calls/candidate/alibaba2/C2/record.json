@@ -1,0 +1,32 @@
+{
+  "arm": "candidate",
+  "task_id": "C2",
+  "kind": "comparison",
+  "provider": "alibaba2",
+  "requested_model": "alibaba-token-plan-2/deepseek-v4-flash-0731",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "cefcd4613930b09e3c77a525878f86717a34b9b1706a906d0626c5a55a993bec",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-literature-review.md": "f88c85de5cfeaa94c9d971d19d4324dfb0ec031bc19688ef038ee4c64af9cfb3"
+  },
+  "status": "completed",
+  "returned_model": "deepseek-v4-flash-0731",
+  "usage": {
+    "input_tokens": 3332,
+    "output_tokens": 8933,
+    "total_tokens": 12265,
+    "input_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 8590
+    }
+  },
+  "final_chars": 549,
+  "final_sha256": "dd92bd82ae618d5fbde84f14e54687711aa1d027d7b71cbff038ecef01f9ba0c",
+  "response_sha256": "8c4c81611ea7fa68b0526ceb84fc47eb7b31ce272a5a420482ce864e80547733",
+  "valid": true,
+  "seconds": 93.96
+}

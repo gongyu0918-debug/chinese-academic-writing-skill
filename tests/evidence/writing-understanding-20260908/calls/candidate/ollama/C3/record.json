@@ -1,0 +1,32 @@
+{
+  "arm": "candidate",
+  "task_id": "C3",
+  "kind": "comparison",
+  "provider": "ollama",
+  "requested_model": "ollama-cloud/deepseek-v4-flash:0731",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "01cc6a19f70611a5be07d086a10f32c64a2912cd31bbcfa920af478a5eff447a",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-literature-review.md": "f88c85de5cfeaa94c9d971d19d4324dfb0ec031bc19688ef038ee4c64af9cfb3"
+  },
+  "status": "completed",
+  "returned_model": "deepseek-v4-flash:0731",
+  "usage": {
+    "input_tokens": 3249,
+    "output_tokens": 4667,
+    "total_tokens": 7916,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "final_chars": 422,
+  "final_sha256": "e4acb78e830ad2dc8a226ca3f213ff41dd0e6395ddee43482b969e791734bb66",
+  "response_sha256": "ad30b256a17f3fa3e008162bb1b00aab425655cc1124390675156b1ae25ba90e",
+  "valid": true,
+  "seconds": 82.28
+}

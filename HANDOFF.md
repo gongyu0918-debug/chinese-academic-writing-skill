@@ -11,6 +11,8 @@
 
 ## 当前状态
 
+- 2026-09-08 完成社区比较写法、结论认识增量、公文依据/可行性区分三点的便宜模型真实写稿验证：DeepSeek V4 Flash 0731 的 Alibaba 与 Ollama 两渠道及 MiniMax M3，共90次请求、83份实际稿件、6次技术无效、1次非正文交付失败。联合候选、单条隔离及全新题未证明新增三条默认提示具有稳定净收益，三条当前文字均已取消，运行版本维持0.1.3。具体改善句、反例、精确模型ID与45个匿名配对见 `tests/evidence/writing-understanding-20260908/README.md`；不得将完成响应数当作质量通过数，或将两条0731渠道当作两个独立模型家族。
+
 - 本仓库从 `chinese-official-writing-skill` 的论文叶拆分而来，展示名为“中文论文写作”，skill name 为 `chinese-academic-writing-assistant`。
 - 当前已完成独立入口、三条互斥专项叶、材料与引用门禁、成品残留终检、显式授权后的学术来源检索与引用覆盖层，以及渐进加载的论文 ANTI-AI 和长稿一致性 reference；运行时提供只读 `citation_audit.py`、`prose_lint.py` 和 `manuscript_audit.py`。
 - 版本 0.1.3 在普通论文专项叶中区分材料支持的作者分析与新增经验事实，允许有限强度、范围受控的归纳、比较、解释和候选原因，同时禁止把行为、相关、意向或感受升级为总体需求、效果、机制或因果。五条 provider 路线完成 25 个逻辑配对，冷盲审为候选 16 胜、基线 8 胜、平 1；全新同类任务未确认候选独有硬回退，两个无稳定收益的后续原子已取消。该版本已发布至三平台：GitHub Release ID 为 `379508915`，skillhub.cn versionId 为 `277637`，ClawHub versionId 为 `k97b2cq66c2k0k6chpwrymh4qd8dgqsz`。ClawHub 公开 latest、安全与审核已通过；12 个用户上传文件逐项哈希一致，审核后另有 1 个平台生成的 `skill-card.md`。skillhub.cn 已受理并将上传回执中的 latest 指向 0.1.3，公开搜索和签名仍在传播。当前 ClawHub CLI 将 canonical `LICENSE.md` 一并上传，使该版本为 11 个运行文件加 1 个许可证文件，而平台版本元数据仍为 MIT-0；本轮未重复提交，后续发布须恢复独立的 11 文件 ClawHub staging。写稿证据见 `tests/evidence/evidence-bound-inference-r1/result.md`，发布回执见 `tests/evidence/v0.1.3-release-gate/RELEASE-RECEIPT.json`。

@@ -1,0 +1,29 @@
+{
+  "arm": "baseline",
+  "task_id": "C1",
+  "kind": "comparison",
+  "provider": "alibaba2",
+  "requested_model": "alibaba-token-plan-2/deepseek-v4-flash-0731",
+  "returned_model": "deepseek-v4-flash-0731",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "status": "completed",
+  "valid": true,
+  "seconds": 23.14,
+  "request_sha256": "2a9ebc2f36402fcbfd3bac68507b58e34c8760af49e72f424953a160c4e3fb44",
+  "response_sha256": "db11b6bc055d583642ed519db7852c425760d04a637bf3976add64b988fbbbfb",
+  "final_sha256": "e3146ecbfb6b23cf6a2449367d66adc55712f31f33a745d088a106520f640df1",
+  "final_chars": 577,
+  "usage": {
+    "input_tokens": 3550,
+    "output_tokens": 1977,
+    "total_tokens": 5527,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 1626
+    }
+  },
+  "note": "Initial direct transport pilot; exact saved request object was sent. Record completed from retained response and observed timing; no regeneration."
+}

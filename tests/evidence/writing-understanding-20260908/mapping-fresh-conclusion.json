@@ -1,0 +1,42 @@
+[
+  {
+    "pair_id": "FE01",
+    "task_id": "fresh_recycled_concrete_conclusion_02",
+    "kind": "conclusion",
+    "provider": "alibaba2",
+    "A": "candidate",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "FE02",
+    "task_id": "fresh_recycled_concrete_conclusion_02",
+    "kind": "conclusion",
+    "provider": "ollama",
+    "A": "baseline",
+    "B": "candidate"
+  },
+  {
+    "pair_id": "FE03",
+    "task_id": "E3",
+    "kind": "conclusion",
+    "provider": "alibaba2",
+    "A": "candidate",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "FE04",
+    "task_id": "E3",
+    "kind": "conclusion",
+    "provider": "ollama",
+    "A": "baseline",
+    "B": "candidate"
+  },
+  {
+    "pair_id": "FE05",
+    "task_id": "E3",
+    "kind": "conclusion",
+    "provider": "minimax",
+    "A": "candidate",
+    "B": "baseline"
+  }
+]

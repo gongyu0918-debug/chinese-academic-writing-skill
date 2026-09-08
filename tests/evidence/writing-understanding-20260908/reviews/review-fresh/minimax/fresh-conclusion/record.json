@@ -1,0 +1,32 @@
+{
+  "arm": "review-fresh",
+  "task_id": "fresh-conclusion",
+  "kind": "review",
+  "provider": "minimax",
+  "requested_model": "minimax-cn/MiniMax-M3",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "b5a909a0fe6963f2b9bc79ae6494a9a1fe1d757e2a2e8e63a46e01fe3006fddf",
+  "skill_files": {
+    "SKILL.md": "19a48579c2ef9d27e291ff5adcd7c341220457890d55e6e8ccf0ab5fc6d528b4",
+    "references/rubric.md": "1f0eb10ed6e4024bf590cee86e2dfe35c3473f7fbaf98de78aa2c2054f781194"
+  },
+  "status": "completed",
+  "returned_model": "MiniMax-M3",
+  "usage": {
+    "input_tokens": 5197,
+    "output_tokens": 12870,
+    "total_tokens": 18067,
+    "input_tokens_details": {
+      "cached_tokens": 146
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 11384
+    }
+  },
+  "final_chars": 2888,
+  "final_sha256": "48247f2af71ba5df7fe868befe184e125ba2abf12282bd9e5af5f43c020fc182",
+  "response_sha256": "56dd19776331ad5e909857de2b1c5271742f566dbb97ad0cb5b9fc69f5bc1193",
+  "valid": true,
+  "seconds": 87.8
+}

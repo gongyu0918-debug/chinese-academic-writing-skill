@@ -1,0 +1,26 @@
+[
+  {
+    "pair_id": "G01",
+    "task_id": "C4",
+    "kind": "comparison",
+    "provider": "alibaba2",
+    "A": "isolated-comparison",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "G02",
+    "task_id": "C4",
+    "kind": "comparison",
+    "provider": "ollama",
+    "A": "baseline",
+    "B": "isolated-comparison"
+  },
+  {
+    "pair_id": "G03",
+    "task_id": "C4",
+    "kind": "comparison",
+    "provider": "minimax",
+    "A": "isolated-comparison",
+    "B": "baseline"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "arm": "candidate",
+  "task_id": "P3",
+  "kind": "proposal",
+  "provider": "minimax",
+  "requested_model": "minimax-cn/MiniMax-M3",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "22517ec840dc85595aa0a5495a64d942fffb388712dc520a497c6cc45dc41c4b",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-proposal.md": "b585afa5813ddd8dd7e90da8c011edd6b7b51fbae84e8212769a3d9a8170daa9"
+  },
+  "status": "completed",
+  "returned_model": "MiniMax-M3",
+  "usage": {
+    "input_tokens": 3124,
+    "output_tokens": 10532,
+    "total_tokens": 13656,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 10369
+    }
+  },
+  "final_chars": 304,
+  "final_sha256": "bcef565edcee32959b99131d7a15e6d6c18c87190836a428cc40d05b89ba4d1c",
+  "response_sha256": "2916963fd57962eae9b5d3c4bc692d15b4bc8d68b85aad44b79ca448f234d854",
+  "valid": true,
+  "seconds": 123.95
+}

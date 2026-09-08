@@ -1,0 +1,32 @@
+{
+  "arm": "candidate",
+  "task_id": "P3",
+  "kind": "proposal",
+  "provider": "ollama",
+  "requested_model": "ollama-cloud/deepseek-v4-flash:0731",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "a0d8705d019b6f6911371a5e0e624af1a54d4321fdc085d8302d926318c2698f",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-proposal.md": "b585afa5813ddd8dd7e90da8c011edd6b7b51fbae84e8212769a3d9a8170daa9"
+  },
+  "status": "completed",
+  "returned_model": "deepseek-v4-flash:0731",
+  "usage": {
+    "input_tokens": 3226,
+    "output_tokens": 2573,
+    "total_tokens": 5799,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "final_chars": 245,
+  "final_sha256": "02bd94f2c99888d8808c60f669ecf5cea09735db81e601507c8afe9658bb67f2",
+  "response_sha256": "f237408c2abf40f51f0e10296307b0afaaa7cf85de43b7adb7649f5d1b72235a",
+  "valid": true,
+  "seconds": 14.69
+}

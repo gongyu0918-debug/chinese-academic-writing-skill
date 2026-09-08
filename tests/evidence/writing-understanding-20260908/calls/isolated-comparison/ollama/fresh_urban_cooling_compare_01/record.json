@@ -1,0 +1,32 @@
+{
+  "arm": "isolated-comparison",
+  "task_id": "fresh_urban_cooling_compare_01",
+  "kind": "comparison",
+  "provider": "ollama",
+  "requested_model": "ollama-cloud/deepseek-v4-flash:0731",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "c01e656b0f4d3b95b7847d64b123c1a1bd74e5d6a4c83376b018099efb02417e",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-writing.md": "aa8627489892bab8c80add138649bbf772d470bb26a555e468767c4f7b5ad3f7"
+  },
+  "status": "completed",
+  "returned_model": "deepseek-v4-flash:0731",
+  "usage": {
+    "input_tokens": 3786,
+    "output_tokens": 8100,
+    "total_tokens": 11886,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "final_chars": 729,
+  "final_sha256": "2b7702f00ca2573da8aebd24a0bf8c1cd2f9eb78fd201cec0f37753c0ba56b23",
+  "response_sha256": "3c4044180b391b1178e70a9a0bf1b4a959468109e59522e05b6844abd147dae3",
+  "valid": true,
+  "seconds": 39.25
+}

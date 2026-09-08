@@ -1,0 +1,32 @@
+{
+  "arm": "review-initial",
+  "task_id": "initial-comparison",
+  "kind": "review",
+  "provider": "alibaba2",
+  "requested_model": "alibaba-token-plan-2/deepseek-v4-flash-0731",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "ccdbf3496d0d87e219ac5ca91a537647a5d4b547599175abe33e24526e3916a8",
+  "skill_files": {
+    "SKILL.md": "19a48579c2ef9d27e291ff5adcd7c341220457890d55e6e8ccf0ab5fc6d528b4",
+    "references/rubric.md": "1f0eb10ed6e4024bf590cee86e2dfe35c3473f7fbaf98de78aa2c2054f781194"
+  },
+  "status": "completed",
+  "returned_model": "deepseek-v4-flash-0731",
+  "usage": {
+    "input_tokens": 5322,
+    "output_tokens": 3474,
+    "total_tokens": 8796,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 1737
+    }
+  },
+  "final_chars": 3531,
+  "final_sha256": "e9e5d1c96b45c2368884983098cab90ff04a8cca8c21615566bc7a05225fe080",
+  "response_sha256": "d66ebfba880260f44ddd82985ca104a29c4080f19f6271b5c3d84cb2b8b455a9",
+  "valid": true,
+  "seconds": 34.16
+}

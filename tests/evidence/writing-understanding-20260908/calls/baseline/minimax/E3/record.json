@@ -1,0 +1,32 @@
+{
+  "arm": "baseline",
+  "task_id": "E3",
+  "kind": "conclusion",
+  "provider": "minimax",
+  "requested_model": "minimax-cn/MiniMax-M3",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "b223c6f48b14b510fa76688ba48e55ac62ccfad728f64a4293c0a81c376a8e9c",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-writing.md": "7993feb0a640f65a510ccd604bf0bee3897aaf9a75b9cfffbfece040bb87810c"
+  },
+  "status": "completed",
+  "returned_model": "MiniMax-M3",
+  "usage": {
+    "input_tokens": 3364,
+    "output_tokens": 4492,
+    "total_tokens": 7856,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 4299
+    }
+  },
+  "final_chars": 331,
+  "final_sha256": "a569f309086be5e906749bd95ac9f32204d22b30e9810aecfe9f603d298cc97e",
+  "response_sha256": "e5124611fbe0a03db51be5133464495b8573184b5f091422e566d8f2faf5f294",
+  "valid": true,
+  "seconds": 37.65
+}

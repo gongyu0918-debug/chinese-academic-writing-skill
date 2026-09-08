@@ -1,0 +1,34 @@
+[
+  {
+    "pair_id": "FC01",
+    "task_id": "fresh_urban_cooling_compare_01",
+    "kind": "comparison",
+    "provider": "alibaba2",
+    "A": "candidate",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "FC02",
+    "task_id": "fresh_urban_cooling_compare_01",
+    "kind": "comparison",
+    "provider": "minimax",
+    "A": "baseline",
+    "B": "candidate"
+  },
+  {
+    "pair_id": "FC03",
+    "task_id": "C3",
+    "kind": "comparison",
+    "provider": "ollama",
+    "A": "candidate",
+    "B": "baseline"
+  },
+  {
+    "pair_id": "FC04",
+    "task_id": "C3",
+    "kind": "comparison",
+    "provider": "minimax",
+    "A": "baseline",
+    "B": "candidate"
+  }
+]

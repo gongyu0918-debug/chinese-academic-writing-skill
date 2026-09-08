@@ -1,0 +1,32 @@
+{
+  "arm": "baseline",
+  "task_id": "E1",
+  "kind": "conclusion",
+  "provider": "ollama",
+  "requested_model": "ollama-cloud/deepseek-v4-flash:0731",
+  "reasoning_effort": "max",
+  "retry_count": 0,
+  "request_sha256": "e2a4e86322dfe3fef46c5dcd53ed088b3e3f0693abfe8abc93acf01496c7635b",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-writing.md": "7993feb0a640f65a510ccd604bf0bee3897aaf9a75b9cfffbfece040bb87810c"
+  },
+  "status": "completed",
+  "returned_model": "deepseek-v4-flash:0731",
+  "usage": {
+    "input_tokens": 3541,
+    "output_tokens": 2136,
+    "total_tokens": 5677,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "final_chars": 490,
+  "final_sha256": "6390ba94f96aac05095bd3f74ab6f94952bd7a641e78e7c4216938d8bacc3d95",
+  "response_sha256": "cb5f6aa6502096fe5df3ffe9b2f43ff013a57872ea74fd5a5cd5928a9d80bfb3",
+  "valid": true,
+  "seconds": 69.29
+}
