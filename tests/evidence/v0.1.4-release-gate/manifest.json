@@ -1,13 +1,13 @@
 {
   "citation-fix-proof.json": "4ad3fd79f69bbf03d07eaf9db95f9bcadf619aaf3768c1d337fec6b795299f0b",
-  "final-tests.log": "357d83f97a74d4632598f1d909dd69d587debd0da354ab74c7c71e231e4d11fc",
+  "final-tests.log": "f730a2aec56ef1cc53e66340d0660622458038b19fb604e6b37173b5b09f400a",
   "independent-review.json": "7b280165a17cf9864889b07de4b223730840297bb24fed7281e091d6abf7d737",
   "manuscript-fix-proof.json": "8a192379049472023ef5f6aca22b781c17468ddc956af614412218c8282b4512",
   "prose-fix-proof.json": "a84c1342f5b176eb3cdbc286c63e1448b9fd755a7ec79a650efc66cf61a7c3c9",
   "RELEASE-NOTES.md": "1785bb6a410c024764e2abfc18ddc621f8e381ba04e2a434b929b659f278bf7f",
   "replay-comparison.json": "abf5df93ba8ba4758f43c3674f474a70546cdab30c39d332edd3fa9aedb7ed21",
   "replay_scanners.py": "85575afa8b1da09069e19084c9af85ade54baf6207f869eb259e0e28b9ef59d1",
-  "RESULT.md": "8345f18d240dee62f8e960c2ebbe3433412350be2267bd397c726187a3e7400e",
-  "validation.json": "d8e50149d0442afbf8b2be95b7763956ff76e212691e2611a76c9221f0b2dd21",
-  "workbuddy-proof.json": "c4a26f605aeecb68b08906a6707102c18c343988e9f3da79d1773edf5801cddb"
+  "RESULT.md": "005192a6ee8d946f9364547e3df7f0066b0fe520a033c7913044433f1b0aa453",
+  "validation.json": "2717ff70ce7249dfe6b0115a22582f27c3b302cd669e557ece68bfeb756ba18b",
+  "workbuddy-proof.json": "60da19530b7270cee4c7b119a6dc8bf92970a3ff4e88bbf1a0fec9416980674f"
 }

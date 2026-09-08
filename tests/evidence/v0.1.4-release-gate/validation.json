@@ -15,7 +15,7 @@
   },
   "skillhub_package": {
     "file_count": 12,
-    "zip_sha256": "2f12c84c74e31eedd595880426b19d20b3f90d62eae18b115cd7f93387590115",
+    "zip_sha256": "6e24ff724649e06d5489431cedec8916a9eafd7673d77d0243a598019884fb0f",
     "file_sha256": {
       "LICENSE.md": "7182fd4c6281db93871ce4941eb4443e2230a4e33680a3b7f99510bcf0a9d023",
       "SKILL.md": "36d80002b7a584e4d958529a882feba781c1a5b0b2112fb1dc6799dff5f8fe18",
@@ -26,9 +26,9 @@
       "references/anti-ai-writing.md": "ac7bc41725b98a9dd7dc4b43e8a6c5fda8e6c0ca4eed979cebd88c10c2cf6ce7",
       "references/citation-research.md": "883cf61e42124171727bba7f6868c6e442031339974cd103155a4b0dcce8c46a",
       "references/long-form-consistency.md": "66650228e1e4f389ee251166e43f9565d85114482b222f5e4535dc969e62cce6",
-      "scripts/citation_audit.py": "43f265e631cb3921e15adb40d75b754bd5c8db9bf9dd7aec2ca2b02d32b4d747",
-      "scripts/manuscript_audit.py": "9a4d6381d1f51e0be00f3137229d6fc159aa52c92b19bc9b692d866e1ff766d7",
-      "scripts/prose_lint.py": "4fccc1481848af73705f96146a3e1013d1647ba302659fdda7a3247927d39ca9"
+      "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
     },
     "reproducible_build": "PASS",
     "dry_run": "PASS"
@@ -46,13 +46,33 @@
   },
   "runtime_prompt_changes": false,
   "script_sha256": {
-    "manuscript_audit.py": "9a4d6381d1f51e0be00f3137229d6fc159aa52c92b19bc9b692d866e1ff766d7",
-    "citation_audit.py": "43f265e631cb3921e15adb40d75b754bd5c8db9bf9dd7aec2ca2b02d32b4d747",
-    "prose_lint.py": "4fccc1481848af73705f96146a3e1013d1647ba302659fdda7a3247927d39ca9"
+    "manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+    "citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+    "prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
   },
   "notes": [
     "Final unit tests ran with access to Windows temporary directories.",
     "Real-manuscript replay checks scanner stability, not writing quality improvement.",
     "Platform acceptance and propagation are recorded separately in RELEASE-RECEIPT.json."
-  ]
+  ],
+  "review_to_release_eol_binding": {
+    "manuscript_audit.py": {
+      "reviewed_sha256": "9a4d6381d1f51e0be00f3137229d6fc159aa52c92b19bc9b692d866e1ff766d7",
+      "release_sha256": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "git_blob": "76ff93f720b254c8a9b2e5fff9f40ab7d365f26a",
+      "change": "CRLF to LF only"
+    },
+    "citation_audit.py": {
+      "reviewed_sha256": "43f265e631cb3921e15adb40d75b754bd5c8db9bf9dd7aec2ca2b02d32b4d747",
+      "release_sha256": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "git_blob": "2a63160240e0482be15e26b91a615f8bba5269b4",
+      "change": "CRLF to LF only"
+    },
+    "prose_lint.py": {
+      "reviewed_sha256": "4fccc1481848af73705f96146a3e1013d1647ba302659fdda7a3247927d39ca9",
+      "release_sha256": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+      "git_blob": "51702b7bda1d8b63f4c37dbf25a32436d1669425",
+      "change": "CRLF to LF only"
+    }
+  }
 }

@@ -219,12 +219,12 @@ test_raw_live_outputs_and_cold_verdict_are_sealed (test_v003_live_citation.Versi
 test_retrieval_and_numeric_mapping_cover_four_real_dois (test_v003_live_citation.Version003LiveCitationTests.test_retrieval_and_numeric_mapping_cover_four_real_dois) ... ok
 
 ----------------------------------------------------------------------
-Ran 219 tests in 8.123s
+Ran 219 tests in 9.165s
 
 OK
 [
   {
-    "path": "C:\\Users\\admin\\AppData\\Local\\Temp\\tmpmcbr6fe_\\draft.md",
+    "path": "C:\\Users\\admin\\AppData\\Local\\Temp\\tmphjmj2lge\\draft.md",
     "line": 1,
     "column": 8,
     "severity": "medium",

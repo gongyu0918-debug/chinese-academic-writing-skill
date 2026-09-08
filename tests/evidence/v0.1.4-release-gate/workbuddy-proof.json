@@ -43,8 +43,8 @@
     "references/anti-ai-writing.md": "ac7bc41725b98a9dd7dc4b43e8a6c5fda8e6c0ca4eed979cebd88c10c2cf6ce7",
     "references/citation-research.md": "883cf61e42124171727bba7f6868c6e442031339974cd103155a4b0dcce8c46a",
     "references/long-form-consistency.md": "66650228e1e4f389ee251166e43f9565d85114482b222f5e4535dc969e62cce6",
-    "scripts/citation_audit.py": "43f265e631cb3921e15adb40d75b754bd5c8db9bf9dd7aec2ca2b02d32b4d747",
-    "scripts/manuscript_audit.py": "9a4d6381d1f51e0be00f3137229d6fc159aa52c92b19bc9b692d866e1ff766d7",
-    "scripts/prose_lint.py": "4fccc1481848af73705f96146a3e1013d1647ba302659fdda7a3247927d39ca9"
+    "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+    "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+    "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
   }
 }

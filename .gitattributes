@@ -7,3 +7,4 @@ tests/evidence/writing-understanding-20260908/** -text whitespace=blank-at-eol,b
 # Preserve the verbatim review response, including its original trailing space.
 tests/evidence/writing-understanding-20260908/reviews/luna-initial.json -whitespace
 tests/evidence/v0.1.4-release-gate/** text eol=lf
+chinese-academic-writing-assistant/scripts/*.py text eol=lf
