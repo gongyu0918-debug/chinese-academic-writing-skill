@@ -1,0 +1,281 @@
+{
+  "baseline": "da651700d2de1d7ae05198345d4e887f4f638652",
+  "before": [
+    {
+      "kind": "latex-body",
+      "variant": "document",
+      "input": "\\begin{document}\n以下为修改后的正文。\n\\end{document}",
+      "exit_code": 0,
+      "output": [],
+      "stderr": "",
+      "timeout": false,
+      "elapsed_seconds": 0.198058
+    },
+    {
+      "kind": "latex-body",
+      "variant": "abstract",
+      "input": "\\begin{abstract}\n以下为修改后的正文。\n\\end{abstract}",
+      "exit_code": 0,
+      "output": [],
+      "stderr": "",
+      "timeout": false,
+      "elapsed_seconds": 0.194757
+    },
+    {
+      "kind": "latex-body",
+      "variant": "enumerate",
+      "input": "\\begin{enumerate}\n以下为修改后的正文。\n\\end{enumerate}",
+      "exit_code": 0,
+      "output": [],
+      "stderr": "",
+      "timeout": false,
+      "elapsed_seconds": 0.200813
+    },
+    {
+      "kind": "numeric-citation",
+      "variant": "x",
+      "input": "[1111111111111111111111111111x]",
+      "exit_code": null,
+      "timeout": true,
+      "elapsed_seconds": 2.007366
+    },
+    {
+      "kind": "numeric-citation",
+      "variant": "z",
+      "input": "[1111111111111111111111111111z]",
+      "exit_code": null,
+      "timeout": true,
+      "elapsed_seconds": 2.006542
+    },
+    {
+      "kind": "numeric-citation",
+      "variant": "!",
+      "input": "[1111111111111111111111111111!]",
+      "exit_code": null,
+      "timeout": true,
+      "elapsed_seconds": 2.007073
+    }
+  ],
+  "after": [
+    {
+      "kind": "latex-body",
+      "variant": "document",
+      "input": "\\begin{document}\n以下为修改后的正文。\n\\end{document}",
+      "exit_code": 1,
+      "patterns": [
+        "delivery-preface"
+      ],
+      "stderr": "",
+      "timeout": false,
+      "elapsed_seconds": 0.210497
+    },
+    {
+      "kind": "latex-body",
+      "variant": "abstract",
+      "input": "\\begin{abstract}\n以下为修改后的正文。\n\\end{abstract}",
+      "exit_code": 1,
+      "patterns": [
+        "delivery-preface"
+      ],
+      "stderr": "",
+      "timeout": false,
+      "elapsed_seconds": 0.203347
+    },
+    {
+      "kind": "latex-body",
+      "variant": "enumerate",
+      "input": "\\begin{enumerate}\n以下为修改后的正文。\n\\end{enumerate}",
+      "exit_code": 1,
+      "patterns": [
+        "delivery-preface"
+      ],
+      "stderr": "",
+      "timeout": false,
+      "elapsed_seconds": 0.204129
+    },
+    {
+      "kind": "numeric-citation",
+      "variant": "x",
+      "input": "[1111111111111111111111111111x]",
+      "exit_code": 0,
+      "patterns": [],
+      "stderr": "",
+      "timeout": false,
+      "elapsed_seconds": 0.206822
+    },
+    {
+      "kind": "numeric-citation",
+      "variant": "z",
+      "input": "[1111111111111111111111111111z]",
+      "exit_code": 0,
+      "patterns": [],
+      "stderr": "",
+      "timeout": false,
+      "elapsed_seconds": 0.207713
+    },
+    {
+      "kind": "numeric-citation",
+      "variant": "!",
+      "input": "[1111111111111111111111111111!]",
+      "exit_code": 0,
+      "patterns": [],
+      "stderr": "",
+      "timeout": false,
+      "elapsed_seconds": 0.204998
+    }
+  ],
+  "negative_controls": [
+    {
+      "environment": "equation",
+      "patterns": []
+    },
+    {
+      "environment": "align",
+      "patterns": []
+    },
+    {
+      "environment": "verbatim",
+      "patterns": []
+    }
+  ],
+  "performance": [
+    {
+      "suffix": "x",
+      "digits": 10000,
+      "elapsed_seconds": 0.000954
+    },
+    {
+      "suffix": "z",
+      "digits": 10000,
+      "elapsed_seconds": 0.000957
+    },
+    {
+      "suffix": "!",
+      "digits": 10000,
+      "elapsed_seconds": 0.000957
+    }
+  ],
+  "equivalence": {
+    "marker_variants": 21845,
+    "alphabet": "1 ,x",
+    "max_inner_length": 7,
+    "matches_baseline": true
+  },
+  "tests": {
+    "command": "python -B -m unittest discover -s tests -p test_prose_lint.py -v",
+    "tests": 23,
+    "elapsed_seconds": 1.44,
+    "result": "PASS",
+    "execution": "Approved outside-sandbox rerun because existing tempfile tests fail with sandbox PermissionError."
+  },
+  "diff_check": {
+    "command": "git diff --check -- chinese-academic-writing-assistant/scripts/prose_lint.py tests/test_prose_lint.py",
+    "exit_code": 0
+  },
+  "files": {
+    "chinese-academic-writing-assistant/scripts/prose_lint.py": "4fccc1481848af73705f96146a3e1013d1647ba302659fdda7a3247927d39ca9",
+    "tests/test_prose_lint.py": "05bbd2cb0be7e4c30fed855a656ed9878b40bfe68a3d86225402157637521b48"
+  },
+  "remaining_limits": [
+    "LaTeX handling is a lexical protected-environment allowlist, not macro expansion; custom math/code environments need explicit support."
+  ],
+  "interaction_regression": {
+    "before": [
+      {
+        "variant": "verbatim-display",
+        "input": "\\begin{verbatim}$$\\end{verbatim} normal\n以下为修改后的正文。",
+        "baseline": [
+          {
+            "pattern_id": "delivery-preface",
+            "line": 2
+          }
+        ],
+        "candidate_before": []
+      },
+      {
+        "variant": "verbatim-quote",
+        "input": "example \\begin{verbatim}\"\\end{verbatim}\n以下为修改后的正文。\n\"",
+        "baseline": [
+          {
+            "pattern_id": "delivery-preface",
+            "line": 2
+          }
+        ],
+        "candidate_before": []
+      },
+      {
+        "variant": "equation-quote",
+        "input": "example \\begin{equation}“\\end{equation}\n以下为修改后的正文。\n”",
+        "baseline": [
+          {
+            "pattern_id": "delivery-preface",
+            "line": 2
+          }
+        ],
+        "candidate_before": []
+      }
+    ],
+    "after": [
+      {
+        "variant": "verbatim-display",
+        "findings": [
+          {
+            "pattern_id": "delivery-preface",
+            "line": 2
+          }
+        ],
+        "matches_baseline": true
+      },
+      {
+        "variant": "verbatim-quote",
+        "findings": [
+          {
+            "pattern_id": "delivery-preface",
+            "line": 2
+          }
+        ],
+        "matches_baseline": true
+      },
+      {
+        "variant": "equation-quote",
+        "findings": [
+          {
+            "pattern_id": "delivery-preface",
+            "line": 2
+          }
+        ],
+        "matches_baseline": true
+      }
+    ],
+    "quote_controls": [
+      {
+        "input": "\\begin{quote}\\verb|$$|\\end{quote} normal\n以下为修改后的正文。",
+        "findings": [
+          {
+            "pattern_id": "delivery-preface",
+            "line": 2
+          }
+        ]
+      },
+      {
+        "input": "example \\begin{quote}\"\\end{quote}\n以下为修改后的正文。\n\"",
+        "findings": [
+          {
+            "pattern_id": "delivery-preface",
+            "line": 2
+          }
+        ]
+      }
+    ],
+    "change": "Read only unprotected text for display-math opening/closing and quotation opening/closing/lookahead; keep the existing passes and masks."
+  },
+  "test_history": [
+    {
+      "command": "python -B -m unittest discover -s tests -p test_prose_lint.py -v",
+      "tests": 20,
+      "elapsed_seconds": 1.545,
+      "result": "PASS",
+      "execution": "Approved outside-sandbox rerun after tempfile PermissionError persisted both in default TEMP and worktree .release; no test changes for environment workaround."
+    }
+  ]
+}

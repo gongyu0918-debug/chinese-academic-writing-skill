@@ -25,8 +25,9 @@ LATEX_REF = re.compile(r"\\(?:ref|pageref|nameref|autoref|eqref|cref|Cref|vref|V
 HEADING = re.compile(r"^\s*#{1,6}\s+")
 TABLE_ROW = re.compile(r"^\s*\|")
 LATEX_CONTROL_LINE = re.compile(r"^\s*\\(?:label|ref|pageref|nameref|autoref|eqref|cref|Cref|vref|Vref)\{[^{}\n]+\}\s*$")
-FENCED_CODE = re.compile(r"(?ms)^\s*(?P<fence>`{3,}|~{3,})[^\n]*\n.*?^\s*(?P=fence)\s*$")
+FENCE_LINE = re.compile(r"^ {0,3}(?P<fence>`{3,}|~{3,})(?P<info>[^\r\n]*)$")
 LATEX_CODE_ENV = re.compile(r"(?s)\\begin\{(?:verbatim|Verbatim|lstlisting|minted|comment)\}.*?\\end\{(?:verbatim|Verbatim|lstlisting|minted|comment)\}")
+LATEX_CODE_TOKEN = re.compile(r"\\(?P<action>begin|end)\{(?P<name>verbatim|Verbatim|lstlisting|minted|comment)\}")
 INLINE_CODE = re.compile(r"`+[^`\n]*`+")
 LATEX_COMMENT = re.compile(r"(?m)(?<!\\)%[^\n]*$")
 
@@ -100,9 +101,56 @@ def mask_preserving_newlines(text: str, pattern: re.Pattern[str]) -> str:
     return pattern.sub(lambda match: re.sub(r"[^\n]", " ", match.group(0)), text)
 
 
+def mask_fenced_code(text: str) -> str:
+    """Mask top-level fences, including longer closers and unclosed blocks.
+
+    CommonMark 0.31.2 section 4.5: same marker, closing run at least as long,
+    up to three leading spaces, and no backticks in a backtick info string.
+    """
+    output: list[str] = []
+    marker = ""
+    minimum_length = 0
+    literal_environment = ""
+    for line in text.splitlines(keepends=True):
+        match = FENCE_LINE.fullmatch(line.rstrip("\r\n"))
+        if marker:
+            output.append(re.sub(r"[^\r\n]", " ", line))
+            if (match and match["fence"][0] == marker
+                    and len(match["fence"]) >= minimum_length
+                    and not match["info"].strip(" \t")):
+                marker = ""
+            continue
+        if not literal_environment and match and (match["fence"][0] == "~" or "`" not in match["info"]):
+            marker = match["fence"][0]
+            minimum_length = len(match["fence"])
+            output.append(re.sub(r"[^\r\n]", " ", line))
+        else:
+            output.append(line)
+            # A fence inside literal LaTeX is data. Conversely, the branch
+            # above ignores LaTeX commands inside a Markdown code fence.
+            position = 0
+            while position < len(line):
+                if literal_environment:
+                    end = re.search(r"\\end\{" + re.escape(literal_environment) + r"\}", line[position:])
+                    if not end:
+                        break
+                    position += end.end()
+                    literal_environment = ""
+                else:
+                    visible = mask_preserving_newlines(line[position:], INLINE_CODE)
+                    visible = mask_preserving_newlines(visible, LATEX_COMMENT)
+                    token = LATEX_CODE_TOKEN.search(visible)
+                    if not token:
+                        break
+                    position += token.end()
+                    if token["action"] == "begin":
+                        literal_environment = token["name"]
+    return "".join(output)
+
+
 def latex_scan_text(text: str) -> str:
-    masked = text
-    for pattern in (FENCED_CODE, LATEX_CODE_ENV, INLINE_CODE, LATEX_COMMENT):
+    masked = mask_fenced_code(text)
+    for pattern in (LATEX_CODE_ENV, INLINE_CODE, LATEX_COMMENT):
         masked = mask_preserving_newlines(masked, pattern)
     return masked
 

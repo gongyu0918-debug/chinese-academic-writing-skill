@@ -1,0 +1,485 @@
+{
+  "baseline": "da651700d2de1d7ae05198345d4e887f4f638652",
+  "before_script_sha256": "befe06be72533747fa48cc9f44fe35c3557cefb4f6049f99df05788bf7bcfa5c",
+  "before": [
+    {
+      "kind": "semicolon",
+      "input": "已有研究表明在线讨论能够改善同伴反馈[1;2]。\n参考文献\n[1] 文献甲。\n[2] 文献乙。",
+      "timeout": false,
+      "exit": 1,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "numeric"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 0,
+        "citation_marker_coverage": 0.0,
+        "citation_occurrences": 2,
+        "unique_numeric_citations": 2,
+        "listed_numeric_references": 2,
+        "numeric_reference_utilization": 1.0,
+        "top_numeric_reference_share": 0.5,
+        "explicit_minimum_marker_coverage": 1.0
+      },
+      "finding_codes": [
+        "uncited-claim-candidate",
+        "below-explicit-marker-minimum"
+      ],
+      "elapsed_seconds": 0.230572
+    },
+    {
+      "kind": "semicolon",
+      "input": "已有研究表明在线讨论能够改善同伴反馈[1；2]。\n参考文献\n[1] 文献甲。\n[2] 文献乙。",
+      "timeout": false,
+      "exit": 1,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "numeric"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 0,
+        "citation_marker_coverage": 0.0,
+        "citation_occurrences": 2,
+        "unique_numeric_citations": 2,
+        "listed_numeric_references": 2,
+        "numeric_reference_utilization": 1.0,
+        "top_numeric_reference_share": 0.5,
+        "explicit_minimum_marker_coverage": 1.0
+      },
+      "finding_codes": [
+        "uncited-claim-candidate",
+        "below-explicit-marker-minimum"
+      ],
+      "elapsed_seconds": 0.202186
+    },
+    {
+      "kind": "semicolon",
+      "input": "已有研究表明在线讨论能够改善同伴反馈（张三，2020；李四，2021）。\n参考文献\n[1] 文献甲。\n[2] 文献乙。",
+      "timeout": false,
+      "exit": 1,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "author-year"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 0,
+        "citation_marker_coverage": 0.0,
+        "citation_occurrences": 0,
+        "unique_numeric_citations": 0,
+        "listed_numeric_references": 2,
+        "numeric_reference_utilization": 0.0,
+        "top_numeric_reference_share": null,
+        "explicit_minimum_marker_coverage": 1.0
+      },
+      "finding_codes": [
+        "unused-reference-entry",
+        "unused-reference-entry",
+        "uncited-claim-candidate",
+        "below-explicit-marker-minimum"
+      ],
+      "elapsed_seconds": 0.204601
+    },
+    {
+      "kind": "range",
+      "input": "已有研究表明在线讨论能够改善同伴反馈[3-1]。",
+      "timeout": false,
+      "exit": 0,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "numeric"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 1,
+        "citation_marker_coverage": 1.0,
+        "citation_occurrences": 0,
+        "unique_numeric_citations": 0,
+        "listed_numeric_references": 0,
+        "numeric_reference_utilization": null,
+        "top_numeric_reference_share": null,
+        "explicit_minimum_marker_coverage": null
+      },
+      "finding_codes": [],
+      "elapsed_seconds": 0.195967
+    },
+    {
+      "kind": "range",
+      "input": "已有研究表明在线讨论能够改善同伴反馈[1-202]。",
+      "timeout": false,
+      "exit": 0,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "numeric"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 1,
+        "citation_marker_coverage": 1.0,
+        "citation_occurrences": 0,
+        "unique_numeric_citations": 0,
+        "listed_numeric_references": 0,
+        "numeric_reference_utilization": null,
+        "top_numeric_reference_share": null,
+        "explicit_minimum_marker_coverage": null
+      },
+      "finding_codes": [],
+      "elapsed_seconds": 0.187518
+    },
+    {
+      "kind": "range",
+      "input": "已有研究表明在线讨论能够改善同伴反馈[7—3]。",
+      "timeout": false,
+      "exit": 0,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "numeric"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 1,
+        "citation_marker_coverage": 1.0,
+        "citation_occurrences": 0,
+        "unique_numeric_citations": 0,
+        "listed_numeric_references": 0,
+        "numeric_reference_utilization": null,
+        "top_numeric_reference_share": null,
+        "explicit_minimum_marker_coverage": null
+      },
+      "finding_codes": [],
+      "elapsed_seconds": 0.218383
+    },
+    {
+      "kind": "regex",
+      "input": "[1111111111111111111111111111x]",
+      "timeout": true,
+      "exit": null,
+      "elapsed_seconds": 2.00644
+    },
+    {
+      "kind": "regex",
+      "input": "[1111111111111111111111111111z]",
+      "timeout": true,
+      "exit": null,
+      "elapsed_seconds": 2.007307
+    },
+    {
+      "kind": "regex",
+      "input": "[1111111111111111111111111111!]",
+      "timeout": true,
+      "exit": null,
+      "elapsed_seconds": 2.038351
+    }
+  ],
+  "after_script_sha256": "43f265e631cb3921e15adb40d75b754bd5c8db9bf9dd7aec2ca2b02d32b4d747",
+  "after": [
+    {
+      "kind": "semicolon",
+      "input": "已有研究表明在线讨论能够改善同伴反馈[1;2]。\n参考文献\n[1] 文献甲。\n[2] 文献乙。",
+      "timeout": false,
+      "exit": 0,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "numeric"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 1,
+        "citation_marker_coverage": 1.0,
+        "citation_occurrences": 2,
+        "unique_numeric_citations": 2,
+        "listed_numeric_references": 2,
+        "numeric_reference_utilization": 1.0,
+        "top_numeric_reference_share": 0.5,
+        "explicit_minimum_marker_coverage": 1.0
+      },
+      "finding_codes": [],
+      "elapsed_seconds": 0.227725
+    },
+    {
+      "kind": "semicolon",
+      "input": "已有研究表明在线讨论能够改善同伴反馈[1；2]。\n参考文献\n[1] 文献甲。\n[2] 文献乙。",
+      "timeout": false,
+      "exit": 0,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "numeric"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 1,
+        "citation_marker_coverage": 1.0,
+        "citation_occurrences": 2,
+        "unique_numeric_citations": 2,
+        "listed_numeric_references": 2,
+        "numeric_reference_utilization": 1.0,
+        "top_numeric_reference_share": 0.5,
+        "explicit_minimum_marker_coverage": 1.0
+      },
+      "finding_codes": [],
+      "elapsed_seconds": 0.227545
+    },
+    {
+      "kind": "semicolon",
+      "input": "已有研究表明在线讨论能够改善同伴反馈（张三，2020；李四，2021）。\n参考文献\n[1] 文献甲。\n[2] 文献乙。",
+      "timeout": false,
+      "exit": 0,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "author-year"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 1,
+        "citation_marker_coverage": 1.0,
+        "citation_occurrences": 0,
+        "unique_numeric_citations": 0,
+        "listed_numeric_references": 2,
+        "numeric_reference_utilization": 0.0,
+        "top_numeric_reference_share": null,
+        "explicit_minimum_marker_coverage": 1.0
+      },
+      "finding_codes": [
+        "unused-reference-entry",
+        "unused-reference-entry"
+      ],
+      "elapsed_seconds": 0.220558
+    },
+    {
+      "kind": "range",
+      "input": "已有研究表明在线讨论能够改善同伴反馈[3-1]。",
+      "timeout": false,
+      "exit": 1,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "numeric"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 1,
+        "citation_marker_coverage": 1.0,
+        "citation_occurrences": 0,
+        "unique_numeric_citations": 0,
+        "listed_numeric_references": 0,
+        "numeric_reference_utilization": null,
+        "top_numeric_reference_share": null,
+        "explicit_minimum_marker_coverage": null
+      },
+      "finding_codes": [
+        "unparsed-numeric-citation"
+      ],
+      "elapsed_seconds": 0.219857
+    },
+    {
+      "kind": "range",
+      "input": "已有研究表明在线讨论能够改善同伴反馈[1-202]。",
+      "timeout": false,
+      "exit": 1,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "numeric"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 1,
+        "citation_marker_coverage": 1.0,
+        "citation_occurrences": 0,
+        "unique_numeric_citations": 0,
+        "listed_numeric_references": 0,
+        "numeric_reference_utilization": null,
+        "top_numeric_reference_share": null,
+        "explicit_minimum_marker_coverage": null
+      },
+      "finding_codes": [
+        "unparsed-numeric-citation"
+      ],
+      "elapsed_seconds": 0.220158
+    },
+    {
+      "kind": "range",
+      "input": "已有研究表明在线讨论能够改善同伴反馈[7—3]。",
+      "timeout": false,
+      "exit": 1,
+      "summary": {
+        "mode": "general",
+        "schemes": [
+          "numeric"
+        ],
+        "claim_candidates": 1,
+        "marker_covered_claim_candidates": 1,
+        "citation_marker_coverage": 1.0,
+        "citation_occurrences": 0,
+        "unique_numeric_citations": 0,
+        "listed_numeric_references": 0,
+        "numeric_reference_utilization": null,
+        "top_numeric_reference_share": null,
+        "explicit_minimum_marker_coverage": null
+      },
+      "finding_codes": [
+        "unparsed-numeric-citation"
+      ],
+      "elapsed_seconds": 0.263384
+    },
+    {
+      "kind": "regex",
+      "input": "[1111111111111111111111111111x]",
+      "timeout": false,
+      "exit": 0,
+      "summary": {
+        "mode": "general",
+        "schemes": [],
+        "claim_candidates": 0,
+        "marker_covered_claim_candidates": 0,
+        "citation_marker_coverage": null,
+        "citation_occurrences": 0,
+        "unique_numeric_citations": 0,
+        "listed_numeric_references": 0,
+        "numeric_reference_utilization": null,
+        "top_numeric_reference_share": null,
+        "explicit_minimum_marker_coverage": null
+      },
+      "finding_codes": [],
+      "elapsed_seconds": 0.225384
+    },
+    {
+      "kind": "regex",
+      "input": "[1111111111111111111111111111z]",
+      "timeout": false,
+      "exit": 0,
+      "summary": {
+        "mode": "general",
+        "schemes": [],
+        "claim_candidates": 0,
+        "marker_covered_claim_candidates": 0,
+        "citation_marker_coverage": null,
+        "citation_occurrences": 0,
+        "unique_numeric_citations": 0,
+        "listed_numeric_references": 0,
+        "numeric_reference_utilization": null,
+        "top_numeric_reference_share": null,
+        "explicit_minimum_marker_coverage": null
+      },
+      "finding_codes": [],
+      "elapsed_seconds": 0.241424
+    },
+    {
+      "kind": "regex",
+      "input": "[1111111111111111111111111111!]",
+      "timeout": false,
+      "exit": 0,
+      "summary": {
+        "mode": "general",
+        "schemes": [],
+        "claim_candidates": 0,
+        "marker_covered_claim_candidates": 0,
+        "citation_marker_coverage": null,
+        "citation_occurrences": 0,
+        "unique_numeric_citations": 0,
+        "listed_numeric_references": 0,
+        "numeric_reference_utilization": null,
+        "top_numeric_reference_share": null,
+        "explicit_minimum_marker_coverage": null
+      },
+      "finding_codes": [],
+      "elapsed_seconds": 0.222778
+    }
+  ],
+  "scaling_cli": [
+    {
+      "digits": 20000,
+      "suffix": "x",
+      "exit": 0,
+      "elapsed_seconds": 0.231753,
+      "citation_occurrences": 0
+    },
+    {
+      "digits": 20000,
+      "suffix": "z",
+      "exit": 0,
+      "elapsed_seconds": 0.230142,
+      "citation_occurrences": 0
+    },
+    {
+      "digits": 20000,
+      "suffix": "!",
+      "exit": 0,
+      "elapsed_seconds": 0.22215,
+      "citation_occurrences": 0
+    },
+    {
+      "digits": 40000,
+      "suffix": "x",
+      "exit": 0,
+      "elapsed_seconds": 0.224953,
+      "citation_occurrences": 0
+    },
+    {
+      "digits": 40000,
+      "suffix": "z",
+      "exit": 0,
+      "elapsed_seconds": 0.224878,
+      "citation_occurrences": 0
+    },
+    {
+      "digits": 40000,
+      "suffix": "!",
+      "exit": 0,
+      "elapsed_seconds": 0.268096,
+      "citation_occurrences": 0
+    },
+    {
+      "digits": 80000,
+      "suffix": "x",
+      "exit": 0,
+      "elapsed_seconds": 0.241443,
+      "citation_occurrences": 0
+    },
+    {
+      "digits": 80000,
+      "suffix": "z",
+      "exit": 0,
+      "elapsed_seconds": 0.231584,
+      "citation_occurrences": 0
+    },
+    {
+      "digits": 80000,
+      "suffix": "!",
+      "exit": 0,
+      "elapsed_seconds": 0.234659,
+      "citation_occurrences": 0
+    }
+  ],
+  "additional_hotspot_before_fix": {
+    "function": "HIGH_RISK.search",
+    "measurements_seconds": {
+      "1000_digits": 0.013688,
+      "2000_digits": 0.060059,
+      "4000_digits": 0.227974
+    },
+    "fix": "Negative digit lookbehind prevents repeated starts within one numeric run; valid number contexts retain matching."
+  },
+  "verification": [
+    {
+      "command": "python -B -m unittest discover -s tests -p test_citation_audit.py -v",
+      "tests": 25,
+      "exit": 0,
+      "result": "OK",
+      "test_seconds": 2.9
+    },
+    {
+      "command": "python -B -m unittest discover -s tests -p test_v003_citation_sanity.py -v",
+      "tests": 5,
+      "exit": 0,
+      "result": "OK",
+      "test_seconds": 0.487
+    }
+  ],
+  "notes": [
+    "Each original issue reproduced with three inputs before editing.",
+    "Marker coverage remains structural only; unexpanded numeric ranges now emit high unparsed-numeric-citation and fail strict.",
+    "The existing 200 difference expansion budget remains; reference IDs are not capped.",
+    "The first sandbox test attempt encountered Windows tempfile permissions and the additional quadratic risk-number scan. Both were resolved before the passing test run."
+  ]
+}

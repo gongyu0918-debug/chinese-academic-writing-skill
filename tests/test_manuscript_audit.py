@@ -88,6 +88,82 @@ class ManuscriptAuditTests(unittest.TestCase):
         )
         self.assertIn("duplicate-paragraph-candidate", finding_codes(report))
 
+    def test_longer_closing_fences_and_unclosed_blocks_hide_example_refs(self) -> None:
+        for opening, closing in (("```tex", "````"), ("~~~tex", "~~~~"), ("```tex", "")):
+            with self.subTest(opening=opening, closing=closing):
+                text = f"正文见\\ref{{real-missing}}。\n{opening}\n\\ref{{example-only}}\n{closing}"
+                findings = AUDIT.analyze([("draft.md", text)])["findings"]
+                self.assertEqual(["real-missing"], [item["excerpt"] for item in findings])
+                self.assertEqual(1, findings[0]["line"])
+
+    def test_fence_marker_length_and_closing_suffix_preserve_boundaries(self) -> None:
+        text = (
+            "   ````tex\n\\ref{hidden-one}\n"
+            "~~~\n```\n````not-a-close\n\\ref{hidden-two}\n"
+            "  ````` \t\n正文见\\ref{real-missing}。\n"
+        )
+        findings = AUDIT.analyze([("draft.md", text)])["findings"]
+        self.assertEqual(["real-missing"], [item["excerpt"] for item in findings])
+        self.assertEqual(8, findings[0]["line"])
+
+    def test_invalid_backtick_info_does_not_hide_following_prose(self) -> None:
+        text = "```tex`invalid\n正文见\\ref{real-missing}。\n"
+        findings = AUDIT.analyze([("draft.md", text)])["findings"]
+        self.assertEqual(["real-missing"], [item["excerpt"] for item in findings])
+
+    def test_fence_in_latex_literal_does_not_hide_following_real_reference(self) -> None:
+        for environment, fence in (("verbatim", "```"), ("comment", "~~~"), ("minted", "```")):
+            with self.subTest(environment=environment):
+                text = f"\\begin{{{environment}}}\n{fence}\n\\end{{{environment}}}\n\\ref{{real}}"
+                findings = AUDIT.analyze([("draft.md", text)])["findings"]
+                self.assertEqual(["real"], [item["excerpt"] for item in findings])
+                self.assertEqual(4, findings[0]["line"])
+
+    def test_fake_latex_opener_in_fence_does_not_consume_following_literal(self) -> None:
+        text = (
+            "```tex\n\\begin{verbatim}\n```\n"
+            "\\begin{verbatim}\n~~~\n\\end{verbatim}\n\\ref{real}"
+        )
+        findings = AUDIT.analyze([("draft.md", text)])["findings"]
+        self.assertEqual(["real"], [item["excerpt"] for item in findings])
+        self.assertEqual(7, findings[0]["line"])
+
+    def test_commented_or_inline_latex_begin_does_not_disable_fence_protection(self) -> None:
+        for prefix in ("% \\begin{verbatim}", "`\\begin{verbatim}`", "说明 `\\begin{comment}`"):
+            with self.subTest(prefix=prefix):
+                text = prefix + "\n~~~tex\n\\ref{example}\n~~~\n\\ref{real}"
+                findings = AUDIT.analyze([("draft.md", text)])["findings"]
+                self.assertEqual(["real"], [item["excerpt"] for item in findings])
+                self.assertEqual(5, findings[0]["line"])
+
+    def test_comment_character_in_literal_does_not_hide_next_environment(self) -> None:
+        text = "\\begin{verbatim}%\\end{verbatim}\\begin{comment}\n~~~\n\\end{comment}\n\\ref{real}"
+        findings = AUDIT.analyze([("draft.md", text)])["findings"]
+        self.assertEqual(["real"], [item["excerpt"] for item in findings])
+        self.assertEqual(4, findings[0]["line"])
+
+    def test_fence_mask_preserves_offsets_for_lf_crlf_and_cr(self) -> None:
+        for newline in ("\n", "\r\n", "\r"):
+            with self.subTest(newline=repr(newline)):
+                text = newline.join(("~~~tex", "\\ref{hidden}", "~~~~", "正文\\ref{missing}"))
+                masked = AUDIT.mask_fenced_code(text)
+                self.assertEqual(len(text), len(masked))
+                self.assertEqual(text.count(newline), masked.count(newline))
+                self.assertNotIn("hidden", masked)
+                self.assertIn("missing", masked)
+
+    def test_strict_cli_ignores_fenced_examples_but_checks_following_prose(self) -> None:
+        example = "~~~tex\n\\ref{example-only}\n~~~~\n"
+        for text, expected in ((example, 0), (example + "\\ref{real-missing}", 1)):
+            with self.subTest(expected=expected):
+                result = subprocess.run(
+                    [sys.executable, "-B", str(SCRIPT_PATH), "-", "--json", "--strict"],
+                    input=text, capture_output=True, text=True, encoding="utf-8", check=False,
+                )
+                self.assertEqual(expected, result.returncode, result.stderr)
+                report = json.loads(result.stdout)
+                self.assertEqual(expected, report["summary"]["findings"])
+
     def test_strict_only_fails_high_structural_findings(self) -> None:
         repeated = "用于测试的完全重复长段。" * 10
         with tempfile.TemporaryDirectory() as directory:

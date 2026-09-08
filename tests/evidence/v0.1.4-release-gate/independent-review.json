@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "review": "v0.1.4 independent final scanner review",
+  "reviewed_at_utc": "2026-09-08T09:24:08Z",
+  "reviewer": "/root/review_v014_scanners",
+  "baseline": "da651700",
+  "worktree": "F:/Workspaces/chinese-academic-writing-skill/.release/worktrees/release-v0.1.4-cold-fixes",
+  "verdict": "PASS",
+  "conclusion": "All three reproduced candidate-only regression classes are resolved at the final hashes. No remaining blocking finding was observed within the requested narrow scanner changes.",
+  "review_scope": [
+    "manuscript_audit.py top-level Markdown fence boundaries and interaction with existing LaTeX literal, inline-code and comment protection",
+    "prose_lint.py body-environment visibility, preserved formula/code/quote protection, and protected-delimiter state isolation",
+    "citation_audit.py invalid numeric-range strict failures, citation-internal semicolon boundaries and long malformed numeric input"
+  ],
+  "final_files": {
+    "manuscript_audit.py": {
+      "sha256": "9a4d6381d1f51e0be00f3137229d6fc159aa52c92b19bc9b692d866e1ff766d7",
+      "git_blob": "76ff93f720b254c8a9b2e5fff9f40ab7d365f26a"
+    },
+    "citation_audit.py": {
+      "sha256": "43f265e631cb3921e15adb40d75b754bd5c8db9bf9dd7aec2ca2b02d32b4d747",
+      "git_blob": "2a63160240e0482be15e26b91a615f8bba5269b4"
+    },
+    "prose_lint.py": {
+      "sha256": "4fccc1481848af73705f96146a3e1013d1647ba302659fdda7a3247927d39ca9",
+      "git_blob": "51702b7bda1d8b63f4c37dbf25a32436d1669425"
+    }
+  },
+  "citation_final_blob_unchanged": true,
+  "open_findings": [],
+  "resolved_findings": [
+    {
+      "id": "IR-001",
+      "file": "manuscript_audit.py",
+      "problem": "A fence inside an existing LaTeX literal environment opened an unclosed Markdown block and hid following real references.",
+      "first_reproduced_blob": "7600f138333926f95ce04427a35c5b4e04d55b5d",
+      "status": "RESOLVED",
+      "final_verification": "Five literal environment names crossed with backtick and tilde fences: 10/10. Real reference remains at line 4. Markdown fake-LaTeX-begin followed by a real literal environment also passes."
+    },
+    {
+      "id": "IR-002",
+      "file": "prose_lint.py",
+      "problem": "Dollar or quote delimiters inside already protected partial lines changed surrounding scanner state and hid following prose.",
+      "first_reproduced_blob": "5b39b5e44c503a8854a2aa5d3fc29612eba8d546",
+      "status": "RESOLVED",
+      "final_verification": "Five protected environments crossed with dollar, ASCII quote and Chinese quote delimiters: 15/15. Three active surrounding spans ignore protected false closers and resume at the correct line."
+    },
+    {
+      "id": "IR-003",
+      "file": "manuscript_audit.py",
+      "problem": "The intermediate raw-line LaTeX token scan treated begin commands in inline code or comments as real environments and disabled later fence protection.",
+      "first_reproduced_blob": "702cddd",
+      "status": "RESOLVED",
+      "final_verification": "Three commented/inline-code fake-begin prefixes crossed with both fence markers: 6/6. Literal percent, next-environment and literal-backtick transition cases also pass."
+    }
+  ],
+  "actual_validation": {
+    "deterministic_tests": {
+      "command": "python -B - (in-memory unittest suite loading test_manuscript_audit, test_citation_audit and test_prose_lint; exclude the seven named file-writing tests)",
+      "executed": 58,
+      "passed": 58,
+      "failures": 0,
+      "errors": 0,
+      "by_group": {
+        "manuscript": 15,
+        "citation_and_prose": 43
+      },
+      "excluded_file_writing_tests": [
+        "test_manuscript_audit.ManuscriptAuditTests.test_cli_is_json_report_only_and_rejects_fix",
+        "test_manuscript_audit.ManuscriptAuditTests.test_strict_only_fails_high_structural_findings",
+        "test_citation_audit.CitationAuditTests.test_cli_is_read_only_for_markdown_docx_and_stdin_and_rejects_fix",
+        "test_citation_audit.CitationAuditTests.test_explicit_minimum_only_affects_strict_when_user_supplies_it",
+        "test_citation_audit.CitationAuditTests.test_script_itself_prevents_bytecode_writes_for_three_input_modes",
+        "test_prose_lint.ProseLintTests.test_cli_is_read_only_json_capable_and_strict_only_when_requested",
+        "test_prose_lint.ProseLintTests.test_docx_reads_only_main_body"
+      ]
+    },
+    "independent_probes": {
+      "command": "python -B - (in-memory direct analyze/scan assertions and citation strict stdin subprocesses)",
+      "executed": 81,
+      "passed": 81,
+      "manuscript_cases": 42,
+      "citation_and_prose_cases": 39,
+      "coverage": [
+        "same and longer fence closers; wrong marker, short closer, suffix, invalid info, zero-to-three-space indentation and rejected four-space/tab starts",
+        "consecutive and unclosed fences; literal/Markdown/inline-code/comment interactions; LF/CRLF/CR offset preservation; cross-file reset and LF line locations",
+        "body and protected environments; original delimiter leaks; active quote/math spans with protected false closers",
+        "12 internal/external citation-delimiter combinations preserve two claims and 0.5 coverage; three invalid range variants return strict exit 1"
+      ]
+    },
+    "malformed_numeric_performance": {
+      "input": "A bracketed digit run followed by x, z or !; both citation_audit.analyze and prose_lint.scan; three suffixes at each size.",
+      "samples": [
+        {
+          "digits": 20000,
+          "suffixes": [
+            "x",
+            "z",
+            "!"
+          ],
+          "both_scanners_seconds": 0.025616
+        },
+        {
+          "digits": 40000,
+          "suffixes": [
+            "x",
+            "z",
+            "!"
+          ],
+          "both_scanners_seconds": 0.051555
+        },
+        {
+          "digits": 80000,
+          "suffixes": [
+            "x",
+            "z",
+            "!"
+          ],
+          "both_scanners_seconds": 0.104572
+        }
+      ],
+      "result": "PASS; observed near-linear scaling across 20k, 40k and 80k digits"
+    },
+    "diff_check": {
+      "command": "git diff --check -- chinese-academic-writing-assistant/scripts/manuscript_audit.py chinese-academic-writing-assistant/scripts/citation_audit.py chinese-academic-writing-assistant/scripts/prose_lint.py tests/test_manuscript_audit.py tests/test_citation_audit.py tests/test_prose_lint.py",
+      "exit_code": 0
+    },
+    "final_hash_recheck": "All three SHA-256 values were re-read after testing and matched the tested snapshots."
+  },
+  "limitations": [
+    "This is an independent narrow code review and scanner verification, not an execution of the entire repository release gate or any publication action.",
+    "Seven file-writing tests were excluded to preserve the reviewer read-only boundary. An earlier attempt at the full manuscript module had two Temp-permission errors; those are not counted as passing.",
+    "No full Markdown or LaTeX parser conformance claim is made; historic unsupported nested containers and custom environments were not expanded.",
+    "CR-only masking offsets were checked; an improvement to the pre-existing CR-only location counter is not claimed.",
+    "The reviewer wrote only this requested review JSON and did not read the other agents' self-proof files."
+  ]
+}

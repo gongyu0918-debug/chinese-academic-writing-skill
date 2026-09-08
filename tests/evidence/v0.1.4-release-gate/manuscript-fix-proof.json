@@ -1,0 +1,98 @@
+[
+  {
+    "id": "longer-backtick-close",
+    "input": "```tex\n\\ref{example-only}\n````\n",
+    "before": {
+      "summary": {
+        "documents": 1,
+        "term_groups": 0,
+        "abbreviations": 0,
+        "findings": 1
+      },
+      "findings": [
+        {
+          "path": "draft.md",
+          "line": 2,
+          "severity": "high",
+          "category": "cross-reference",
+          "code": "missing-latex-label",
+          "detail": "引用的 LaTeX 标签 'example-only' 在已扫描文件中不存在",
+          "excerpt": "example-only"
+        }
+      ]
+    },
+    "after": {
+      "summary": {
+        "documents": 1,
+        "term_groups": 0,
+        "abbreviations": 0,
+        "findings": 0
+      },
+      "findings": []
+    }
+  },
+  {
+    "id": "longer-tilde-close",
+    "input": "~~~tex\n\\ref{example-only}\n~~~~\n",
+    "before": {
+      "summary": {
+        "documents": 1,
+        "term_groups": 0,
+        "abbreviations": 0,
+        "findings": 1
+      },
+      "findings": [
+        {
+          "path": "draft.md",
+          "line": 2,
+          "severity": "high",
+          "category": "cross-reference",
+          "code": "missing-latex-label",
+          "detail": "引用的 LaTeX 标签 'example-only' 在已扫描文件中不存在",
+          "excerpt": "example-only"
+        }
+      ]
+    },
+    "after": {
+      "summary": {
+        "documents": 1,
+        "term_groups": 0,
+        "abbreviations": 0,
+        "findings": 0
+      },
+      "findings": []
+    }
+  },
+  {
+    "id": "unclosed-to-eof",
+    "input": "```tex\n\\ref{example-only}\n",
+    "before": {
+      "summary": {
+        "documents": 1,
+        "term_groups": 0,
+        "abbreviations": 0,
+        "findings": 1
+      },
+      "findings": [
+        {
+          "path": "draft.md",
+          "line": 2,
+          "severity": "high",
+          "category": "cross-reference",
+          "code": "missing-latex-label",
+          "detail": "引用的 LaTeX 标签 'example-only' 在已扫描文件中不存在",
+          "excerpt": "example-only"
+        }
+      ]
+    },
+    "after": {
+      "summary": {
+        "documents": 1,
+        "term_groups": 0,
+        "abbreviations": 0,
+        "findings": 0
+      },
+      "findings": []
+    }
+  }
+]

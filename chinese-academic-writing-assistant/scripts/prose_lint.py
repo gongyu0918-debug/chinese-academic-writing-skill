@@ -283,6 +283,23 @@ POST_REFERENCE_HEADING = re.compile(
 )
 SUGGESTION_HEADING = re.compile(r"^\s*(?:#{1,6}\s*)?补充与修改建议\s*$")
 LIST_OR_HEADING = re.compile(r"^\s*(?:#{1,6}\s+|[-*+]\s+|\d+[.)、]\s+|[一二三四五六七八九十]+、)")
+# Each gap starts with punctuation or whitespace, never a digit.  Requiring a
+# gap between digit runs avoids ambiguous partitions on malformed long markers.
+NUMERIC_CITATION_GAP = r"(?:[-–—,，]\s*|\s+(?:[-–—,，]\s*)?)"
+LATEX_ENVIRONMENT = re.compile(r"\\(?P<action>begin|end)\{(?P<name>[A-Za-z]+\*?)\}")
+LATEX_LITERAL_ENVIRONMENTS = frozenset(
+    {"verbatim", "verbatim*", "Verbatim", "BVerbatim", "LVerbatim", "SaveVerbatim", "lstlisting", "minted", "comment"}
+)
+LATEX_PROTECTED_ENVIRONMENTS = LATEX_LITERAL_ENVIRONMENTS | frozenset(
+    {
+        "math", "displaymath", "equation", "equation*", "eqnarray", "eqnarray*",
+        "align", "align*", "alignat", "alignat*", "flalign", "flalign*",
+        "gather", "gather*", "multline", "multline*", "aligned", "alignedat",
+        "gathered", "split", "cases", "matrix", "pmatrix", "bmatrix", "Bmatrix",
+        "vmatrix", "Vmatrix", "smallmatrix", "array", "tabular", "tabular*",
+        "tikzpicture", "quote", "quotation", "thebibliography",
+    }
+)
 PROTECTED_INLINE = tuple(
     re.compile(pattern, re.IGNORECASE)
     for pattern in (
@@ -294,7 +311,7 @@ PROTECTED_INLINE = tuple(
         r"https?://[^\s<>，。；：！？、“”‘’（）【】]+",
         r"\b(?:doi:\s*)?10\.\d{4,9}/[-._;()/:A-Z0-9]+",
         r"\b[\w.+-]+@[\w.-]+\.[A-Z]{2,}\b",
-        r"\[(?:\d+\s*[-–—,，]?\s*)+\]",
+        rf"\[\d+(?:{NUMERIC_CITATION_GAP}\d+)*{NUMERIC_CITATION_GAP}?\]",
         r"[（(][^()（）\n]{0,36}(?:19|20)\d{2}[a-z]?[^()（）\n]{0,16}[）)]",
         r"[A-Za-z]:\\[^\s，。；：！？<>]+|(?<![\w\u4e00-\u9fff])/(?:[^/\s，。；：！？<>]+/)+[^/\s，。；：！？<>]+",
     )
@@ -372,7 +389,7 @@ def protected_masks(lines: list[str]) -> list[list[bool]]:
 
     in_fence = False
     in_display_math = False
-    in_latex_environment = False
+    latex_environments: list[str] = []
     in_references = False
     for line_index, line in enumerate(lines):
         stripped = line.strip()
@@ -392,30 +409,51 @@ def protected_masks(lines: list[str]) -> list[list[bool]]:
             mark(masks[line_index], 0, len(line))
             continue
 
-        if "\\begin{" in line:
-            in_latex_environment = True
-        if in_latex_environment:
-            mark(masks[line_index], 0, len(line))
-            if "\\end{" in line:
-                in_latex_environment = False
+        # Body containers (document, abstract, lists, etc.) leave their prose
+        # visible.  Only known non-prose environments protect their contents.
+        position = 0
+        for environment in LATEX_ENVIRONMENT.finditer(line):
+            action = environment.group("action")
+            name = environment.group("name")
+            if latex_environments:
+                mark(masks[line_index], position, environment.end())
+                if action == "end" and name == latex_environments[-1]:
+                    latex_environments.pop()
+                elif (
+                    action == "begin"
+                    and name in LATEX_PROTECTED_ENVIRONMENTS
+                    and latex_environments[-1] not in LATEX_LITERAL_ENVIRONMENTS
+                ):
+                    latex_environments.append(name)
+            else:
+                mark(masks[line_index], environment.start(), environment.end())
+                if action == "begin" and name in LATEX_PROTECTED_ENVIRONMENTS:
+                    latex_environments.append(name)
+            position = environment.end()
+        if latex_environments:
+            mark(masks[line_index], position, len(line))
+        if masks[line_index] and all(masks[line_index]):
             continue
 
+        # Formula and quote delimiters inside an already protected environment
+        # must not open or close a protection span in the surrounding prose.
+        available = visible_line(line, masks[line_index])
         if in_display_math:
             mark(masks[line_index], 0, len(line))
-            if "$$" in line:
+            if "$$" in available:
                 in_display_math = False
             continue
-        if line.count("$$") % 2 == 1:
-            first = line.find("$$")
+        if available.count("$$") % 2 == 1:
+            first = available.find("$$")
             mark(masks[line_index], first, len(line))
             in_display_math = True
-        elif "$$" in line:
+        elif "$$" in available:
             position = 0
             while True:
-                left = line.find("$$", position)
+                left = available.find("$$", position)
                 if left == -1:
                     break
-                right = line.find("$$", left + 2)
+                right = available.find("$$", left + 2)
                 if right == -1:
                     break
                 mark(masks[line_index], left, right + 2)
@@ -426,10 +464,11 @@ def protected_masks(lines: list[str]) -> list[list[bool]]:
     for line_index, line in enumerate(lines):
         if masks[line_index] and all(masks[line_index]):
             continue
+        available = visible_line(line, masks[line_index])
         index = 0
         while index < len(line):
             if active_close is not None:
-                right = line.find(active_close, index)
+                right = available.find(active_close, index)
                 if right == -1:
                     mark(masks[line_index], index, len(line))
                     break
@@ -438,21 +477,20 @@ def protected_masks(lines: list[str]) -> list[list[bool]]:
                 active_close = None
                 continue
 
-            openings = [(line.find(symbol, index), symbol) for symbol in quote_pairs]
+            openings = [(available.find(symbol, index), symbol) for symbol in quote_pairs]
             openings = [(position, symbol) for position, symbol in openings if position != -1]
             if not openings:
                 break
             left, symbol = min(openings)
             close = quote_pairs[symbol]
-            right = line.find(close, left + 1)
+            right = available.find(close, left + 1)
             if right != -1:
                 mark(masks[line_index], left, right + 1)
                 index = right + 1
                 continue
             future_close = any(
-                close in future
-                for future in lines[line_index + 1 : line_index + 9]
-                if future.strip()
+                close in visible_line(lines[future_index], masks[future_index])
+                for future_index in range(line_index + 1, min(len(lines), line_index + 9))
             )
             if future_close:
                 mark(masks[line_index], left, len(line))

@@ -11,6 +11,8 @@
 
 ## 当前状态
 
+- 版本0.1.4修复三个只读检查脚本中的引文分句、异常编号范围、LaTeX正文环境、Markdown围栏及异常数字耗时问题；入口与写作规则维持0.1.3，三条已取消提示不回流。最终219项测试通过，独立复核81个组合样本与58项只读测试通过，83份真实稿件的249个扫描结果与基线一致。发布包继续为GitHub/SkillHub的12文件与独立ClawHub的11运行文件；另按用户参考ZIP生成根目录入口、双语元数据及无Hooks的WorkBuddy包。证据及发布状态见 `tests/evidence/v0.1.4-release-gate/`。
+
 - 2026-09-08 完成社区比较写法、结论认识增量、公文依据/可行性区分三点的便宜模型真实写稿验证：DeepSeek V4 Flash 0731 的 Alibaba 与 Ollama 两渠道及 MiniMax M3，共90次请求、83份实际稿件、6次技术无效、1次非正文交付失败。联合候选、单条隔离及全新题未证明新增三条默认提示具有稳定净收益，三条当前文字均已取消，运行版本维持0.1.3。具体改善句、反例、精确模型ID与45个匿名配对见 `tests/evidence/writing-understanding-20260908/README.md`；不得将完成响应数当作质量通过数，或将两条0731渠道当作两个独立模型家族。
 
 - 本仓库从 `chinese-official-writing-skill` 的论文叶拆分而来，展示名为“中文论文写作”，skill name 为 `chinese-academic-writing-assistant`。

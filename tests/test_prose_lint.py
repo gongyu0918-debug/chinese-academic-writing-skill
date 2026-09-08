@@ -56,6 +56,121 @@ class ProseLintTests(unittest.TestCase):
         self.assertEqual("low", item.severity)
         self.assertIn("不按阈值自动换词", item.advice)
 
+    def test_latex_body_environments_leave_residues_visible(self) -> None:
+        for environment in ("document", "abstract", "enumerate", "itemize", "description"):
+            for separator in ("", "\n"):
+                with self.subTest(environment=environment, separator=separator):
+                    text = (
+                        f"\\begin{{{environment}}}{separator}"
+                        f"以下为修改后的正文。{separator}\\end{{{environment}}}"
+                    )
+                    self.assertIn("delivery-preface", pattern_ids(LINT.scan("draft.tex", text)))
+
+    def test_latex_math_code_and_quotes_remain_protected(self) -> None:
+        for environment in (
+            "equation", "equation*", "align", "align*", "verbatim", "Verbatim",
+            "lstlisting", "minted", "quote", "quotation", "thebibliography",
+        ):
+            for separator in ("", "\n"):
+                with self.subTest(environment=environment, separator=separator):
+                    text = (
+                        f"\\begin{{document}}\n\\begin{{{environment}}}{separator}"
+                        f"以下为修改后的正文。{separator}\\end{{{environment}}}\n"
+                        "\\end{document}"
+                    )
+                    self.assertFalse(LINT.scan("protected.tex", text, include_format=True))
+
+    def test_latex_protection_ends_only_at_the_matching_environment(self) -> None:
+        variants = (
+            "\\begin{equation}\\begin{aligned}\n以下为修改后的正文。\n"
+            "\\end{aligned}\n以下为修改后的正文。\n\\end{equation}",
+            "\\begin{align}\n\\end{document}\n以下为修改后的正文。\n\\end{align}",
+            "\\begin{verbatim}\n\\begin{equation}\n\\end{document}\n"
+            "以下为修改后的正文。\n\\end{verbatim}",
+        )
+        for protected in variants:
+            with self.subTest(protected=protected):
+                self.assertFalse(LINT.scan("protected.tex", protected))
+                for separator in ("", "\n"):
+                    text = protected + separator + "以下为修改后的正文。"
+                    findings = LINT.scan("draft.tex", text)
+                    self.assertEqual(["delivery-preface"], [item.pattern_id for item in findings])
+                    self.assertEqual(len(text.splitlines()), findings[0].line)
+
+    def test_numeric_citation_protection_preserves_marker_forms_and_long_numbers(self) -> None:
+        variants = (
+            "[1]", "[1, 2]", "[1-3, 5]", "[1 – 3，5—7]", "[1 2]", "[1, ]",
+            "[１２３]", "[" + "1" * 10000 + "]",
+        )
+        for marker in variants:
+            with self.subTest(marker=marker[:40]):
+                self.assertTrue(all(LINT.protected_masks([marker])[0]))
+                self.assertIn(
+                    "delivery-preface",
+                    pattern_ids(LINT.scan("draft.md", marker + "以下为修改后的正文。")),
+                )
+
+    def test_protected_latex_delimiters_do_not_hide_following_prose(self) -> None:
+        variants = (
+            r"\begin{verbatim}$$\end{verbatim} normal" + "\n以下为修改后的正文。",
+            r'example \begin{verbatim}"\end{verbatim}' + '\n以下为修改后的正文。\n"',
+            r"example \begin{equation}“\end{equation}" + "\n以下为修改后的正文。\n”",
+            r"\begin{quote}\verb|$$|\end{quote} normal" + "\n以下为修改后的正文。",
+            r'example \begin{quote}"\end{quote}' + '\n以下为修改后的正文。\n"',
+            r"example \begin{align}" + "\n" + r"$$\end{align} normal" + "\n以下为修改后的正文。",
+            r"example \begin{verbatim}" + "\n" + r'"\end{verbatim} normal' + '\n以下为修改后的正文。\n"',
+        )
+        for text in variants:
+            with self.subTest(text=text):
+                findings = LINT.scan("draft.tex", text)
+                self.assertEqual(["delivery-preface"], [item.pattern_id for item in findings])
+                self.assertEqual(text.splitlines().index("以下为修改后的正文。") + 1, findings[0].line)
+
+    def test_protected_delimiters_do_not_close_active_math_or_quotes(self) -> None:
+        variants = (
+            '$$\n' + r"example \begin{verbatim}$$\end{verbatim}" + "\n以下为修改后的正文。\n$$",
+            '"原始引文\n' + r'example \begin{verbatim}"\end{verbatim}' + '\n以下为修改后的正文。\n"',
+            "“原始引文\n" + r"example \begin{equation}”\end{equation}" + "\n以下为修改后的正文。\n”",
+        )
+        for text in variants:
+            with self.subTest(text=text):
+                self.assertFalse(LINT.scan("protected.tex", text))
+                findings = LINT.scan("draft.tex", text + "\n以下为修改后的正文。")
+                self.assertEqual(["delivery-preface"], [item.pattern_id for item in findings])
+                self.assertEqual(len(text.splitlines()) + 1, findings[0].line)
+
+    def test_quote_lookahead_ignores_protected_closing_delimiters(self) -> None:
+        for environment in ("verbatim", "equation", "align"):
+            with self.subTest(environment=environment):
+                text = (
+                    'unpaired "\n以下为修改后的正文。\n'
+                    f'example \\begin{{{environment}}}"\\end{{{environment}}}'
+                )
+                findings = LINT.scan("draft.tex", text)
+                self.assertEqual(["delivery-preface"], [item.pattern_id for item in findings])
+                self.assertEqual(2, findings[0].line)
+
+    def test_malformed_numeric_markers_do_not_become_protected(self) -> None:
+        for marker in ("[1x]", "[1z]", "[1!]", "[1,,2]", "[1--2]", "[ ]"):
+            with self.subTest(marker=marker):
+                self.assertFalse(any(LINT.protected_masks([marker])[0]))
+
+    def test_long_malformed_numeric_markers_finish_within_cli_timeout(self) -> None:
+        for suffix in ("x", "z", "!"):
+            with self.subTest(suffix=suffix):
+                text = "\n".join("[" + "1" * size + suffix + "]" for size in (28, 10000))
+                result = subprocess.run(
+                    [sys.executable, "-B", str(SCRIPT_PATH), "-", "--json"],
+                    input=text + "\n以下为修改后的正文。",
+                    check=False,
+                    capture_output=True,
+                    text=True,
+                    encoding="utf-8",
+                    timeout=5,
+                )
+                self.assertEqual(0, result.returncode, result.stderr)
+                self.assertEqual(["delivery-preface"], [item["pattern_id"] for item in json.loads(result.stdout)])
+
     def test_body_with_suggestions_excludes_suggestion_term_frequency(self) -> None:
         text = (
             "研究结果与材料一致。\n\n"

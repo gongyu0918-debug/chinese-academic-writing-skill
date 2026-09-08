@@ -42,6 +42,125 @@ class CitationAuditTests(unittest.TestCase):
         self.assertIn("uncited-claim-candidate", finding_codes(report))
         self.assertNotIn("below-explicit-marker-minimum", finding_codes(report))
 
+    def test_semicolons_inside_citations_preserve_coverage_in_three_variants(self) -> None:
+        for marker in ("[1;2]", "[1；2]", "（张三，2020；李四，2021）"):
+            with self.subTest(marker=marker):
+                text = f"已有研究表明在线讨论能够改善同伴反馈{marker}。\n参考文献\n[1] 文献甲。\n[2] 文献乙。"
+                report = AUDIT.analyze(text, minimum_marker_coverage=1)
+                self.assertEqual(1, report["summary"]["claim_candidates"])
+                self.assertEqual(1, report["summary"]["citation_marker_coverage"])
+                self.assertNotIn("uncited-claim-candidate", finding_codes(report))
+                self.assertNotIn("below-explicit-marker-minimum", finding_codes(report))
+
+    def test_sentence_semicolons_still_separate_claims_after_mixed_citations(self) -> None:
+        for delimiter in (";", "；"):
+            with self.subTest(delimiter=delimiter):
+                text = (
+                    "已有研究表明在线讨论能够改善同伴反馈[1,2–3；4]"
+                    "（张三，2020；Li, 2021）\\cite{a;b}"
+                    f"{delimiter}该方法显著提高所有学生的学习成绩。\n"
+                    "参考文献\n[1] 甲。\n[2] 乙。\n[3] 丙。\n[4] 丁。"
+                )
+                report = AUDIT.analyze(text, minimum_marker_coverage=0.5)
+                self.assertEqual(["author-year", "latex", "numeric"], report["summary"]["schemes"])
+                self.assertEqual(2, report["summary"]["claim_candidates"])
+                self.assertEqual(0.5, report["summary"]["citation_marker_coverage"])
+                self.assertEqual(4, report["summary"]["citation_occurrences"])
+                self.assertEqual({"uncited-claim-candidate"}, finding_codes(report))
+
+    def test_unparsed_ranges_report_high_structure_findings_in_three_variants(self) -> None:
+        for marker in ("[3-1]", "[1-202]", "[7—3]"):
+            with self.subTest(marker=marker):
+                text = f"# 正文\n已有研究表明在线讨论能够改善同伴反馈{marker}。"
+                report = AUDIT.analyze(text)
+                self.assertEqual(0, report["summary"]["citation_occurrences"])
+                # A visible marker remains structural coverage, not valid support.
+                self.assertEqual(1, report["summary"]["citation_marker_coverage"])
+                self.assertEqual({"unparsed-numeric-citation"}, finding_codes(report))
+                finding = report["findings"][0]
+                self.assertEqual("high", finding["severity"])
+                self.assertEqual(2, finding["line"])
+                self.assertEqual(marker, finding["excerpt"])
+                self.assertIn("未能完整解析", finding["detail"])
+
+    def test_partial_numeric_groups_keep_valid_mapping_and_report_unparsed_ranges(self) -> None:
+        report = AUDIT.analyze(
+            "已有研究表明在线讨论能够改善同伴反馈[1;3-1,5]。\n"
+            "参考文献\n[1] 甲。\n[5] 乙。"
+        )
+        self.assertEqual(2, report["summary"]["citation_occurrences"])
+        self.assertEqual(1, report["summary"]["numeric_reference_utilization"])
+        self.assertEqual({"unparsed-numeric-citation"}, finding_codes(report))
+
+    def test_range_budget_is_not_a_reference_number_ceiling(self) -> None:
+        identifier = 10**27
+        marker = f"[1-201;900–902，{identifier}—{identifier + 1}]"
+        expected = list(range(1, 202)) + list(range(900, 903)) + [identifier, identifier + 1]
+        references = "\n".join(f"[{value}] 文献。" for value in expected)
+        report = AUDIT.analyze(f"已有研究表明在线讨论能够改善同伴反馈{marker}。\n参考文献\n{references}")
+        self.assertEqual(len(expected), report["summary"]["citation_occurrences"])
+        self.assertEqual([], report["findings"])
+
+    def test_numeric_scanning_preserves_reference_and_markdown_link_boundaries(self) -> None:
+        for marker in ("[1;2]", "[3-1]", "[1-202]"):
+            with self.subTest(marker=marker):
+                text = (
+                    f"项目说明见{marker}(https://example.com)，材料仍待核对。\n"
+                    f"参考文献\n[1] 文献中含有{marker}及论断：该方法显著提高成绩。"
+                )
+                report = AUDIT.analyze(text)
+                self.assertEqual(0, report["summary"]["citation_occurrences"])
+                self.assertNotIn("numeric", report["summary"]["schemes"])
+                self.assertEqual({"unused-reference-entry"}, finding_codes(report))
+
+    def test_unparsed_ranges_fail_strict_without_an_implicit_coverage_threshold(self) -> None:
+        for marker in ("[3-1]", "[1-202]", "[7—3]"):
+            with self.subTest(marker=marker):
+                result = subprocess.run(
+                    [sys.executable, "-B", str(SCRIPT_PATH), "-", "--json", "--strict"],
+                    input=f"已有研究表明在线讨论能够改善同伴反馈{marker}。",
+                    check=False, capture_output=True, text=True, encoding="utf-8", timeout=5,
+                )
+                self.assertEqual(1, result.returncode, result.stderr)
+                report = json.loads(result.stdout)[0]
+                self.assertIsNone(report["summary"]["explicit_minimum_marker_coverage"])
+                self.assertEqual({"unparsed-numeric-citation"}, finding_codes(report))
+
+    def test_malformed_long_numeric_groups_complete_with_linear_scaling(self) -> None:
+        # A subprocess deadline prevents a restored pathological regex from
+        # hanging the test runner. Larger inputs also catch polynomial scans.
+        code = "\n".join((
+            "import json, sys, time",
+            "sys.path.insert(0, sys.argv[1])",
+            "import citation_audit as audit",
+            "timings = {}",
+            "for length in (28, 56, 112, 20000, 40000, 80000):",
+            "    started = time.perf_counter()",
+            "    for suffix in ('x', 'z', '!'):",
+            "        report = audit.analyze('[' + '1' * length + suffix + ']')",
+            "        assert report['summary']['citation_occurrences'] == 0",
+            "        assert 'numeric' not in report['summary']['schemes']",
+            "    timings[length] = time.perf_counter() - started",
+            "print(json.dumps(timings))",
+        ))
+        result = subprocess.run(
+            [sys.executable, "-B", "-c", code, str(SCRIPT_DIR)],
+            check=False, capture_output=True, text=True, encoding="utf-8", timeout=5,
+        )
+        self.assertEqual(0, result.returncode, result.stderr)
+        timings = json.loads(result.stdout)
+        self.assertLess(timings["80000"], timings["20000"] * 6 + 0.05)
+
+    def test_numeric_risk_matching_preserves_valid_number_contexts(self) -> None:
+        for quantity in ("12.5%", "100 ％", "3倍", "1200人", "2024年", "１２０项", "1" * 28 + "篇"):
+            with self.subTest(quantity=quantity):
+                text = f"材料记载相关数值为{quantity}。"
+                self.assertEqual(quantity, AUDIT.HIGH_RISK.search(text).group(0))
+                self.assertEqual(1, AUDIT.analyze(text)["summary"]["claim_candidates"])
+        for text, expected in (("编号A12.5%", "12.5%"), ("数值-12.5%", "12.5%"), ("比率.5%", "5%")):
+            with self.subTest(text=text):
+                self.assertEqual(expected, AUDIT.HIGH_RISK.search(text).group(0))
+
     def test_explicit_minimum_only_affects_strict_when_user_supplies_it(self) -> None:
         text = "已有研究表明甲结论[1]。乙方法显著提高成绩。\n参考文献\n[1] 甲文献。"
         with tempfile.TemporaryDirectory() as directory:

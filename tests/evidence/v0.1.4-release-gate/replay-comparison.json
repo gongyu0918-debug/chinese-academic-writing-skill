@@ -1,0 +1,9 @@
+{
+  "manuscripts": 83,
+  "scanner_comparisons": 249,
+  "changed": 0,
+  "diffs": [],
+  "source_bytes_unchanged": true,
+  "result": "PASS",
+  "basis": "Final candidate after mixed-format regression repairs"
+}

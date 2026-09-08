@@ -1,0 +1,50 @@
+{
+  "version": "0.1.4",
+  "file_count": 12,
+  "files": [
+    "LICENSE",
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references/academic-literature-review.md",
+    "references/academic-proposal.md",
+    "references/academic-writing.md",
+    "references/anti-ai-writing.md",
+    "references/citation-research.md",
+    "references/long-form-consistency.md",
+    "scripts/citation_audit.py",
+    "scripts/manuscript_audit.py",
+    "scripts/prose_lint.py"
+  ],
+  "template_sha256": "8510eccb837d25c3b9374478f647ec925ec6a5fe1608c84ae91b32634ced1147",
+  "metadata": {
+    "name": "chinese-academic-writing-assistant",
+    "version": "0.1.4",
+    "display_name": "中文论文写作",
+    "display_name_en": "Chinese Academic Writing",
+    "description_zh": "中文论文、开题报告与文献综述的起草、改写、审稿和证据核对",
+    "description_en": "Draft, revise, and review Chinese academic papers, research proposals, and literature reviews using author-provided materials and verified sources.",
+    "description": "用于依据作者材料、文献或明确授权来源，协作完成中文本科、硕士和课程论文、开题报告及文献综述的提纲、章节起草、改写和审稿；在组织论证、核对证据与引用、处理长稿一致性或降低模板化表达时使用。",
+    "metadata": {
+      "tags": "chinese, academic, writing, thesis, literature-review"
+    }
+  },
+  "metadata_field_order_matches_template": true,
+  "entry_body_matches_canonical": true,
+  "runtime_files_match_canonical": true,
+  "hooks_included": false,
+  "client_install_tested": false,
+  "file_sha256": {
+    "LICENSE": "4387f55888bbebe2dca51fb45650be63ee89e2c071c5dfc23a9b99498fe0a3b8",
+    "SKILL.md": "653d3819e568b431144777352b1cdcea66756b8f6b18e129db28de22b9153306",
+    "agents/openai.yaml": "6aa3fabd7184401be8c09f0e235b78ea066ccd6837929aa57b742b800856ed13",
+    "references/academic-literature-review.md": "9115fef69151dd516066992e6c36534bb7a839047657f038053dfa37052ed0c0",
+    "references/academic-proposal.md": "c8bd193ba3220b9402a318eaf079987e3392b7534f039d366e3c4febaaf968eb",
+    "references/academic-writing.md": "7993feb0a640f65a510ccd604bf0bee3897aaf9a75b9cfffbfece040bb87810c",
+    "references/anti-ai-writing.md": "ac7bc41725b98a9dd7dc4b43e8a6c5fda8e6c0ca4eed979cebd88c10c2cf6ce7",
+    "references/citation-research.md": "883cf61e42124171727bba7f6868c6e442031339974cd103155a4b0dcce8c46a",
+    "references/long-form-consistency.md": "66650228e1e4f389ee251166e43f9565d85114482b222f5e4535dc969e62cce6",
+    "scripts/citation_audit.py": "43f265e631cb3921e15adb40d75b754bd5c8db9bf9dd7aec2ca2b02d32b4d747",
+    "scripts/manuscript_audit.py": "9a4d6381d1f51e0be00f3137229d6fc159aa52c92b19bc9b692d866e1ff766d7",
+    "scripts/prose_lint.py": "4fccc1481848af73705f96146a3e1013d1647ba302659fdda7a3247927d39ca9"
+  }
+}

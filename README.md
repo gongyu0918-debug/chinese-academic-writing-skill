@@ -1,6 +1,6 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.1.3-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.3)
+[![Version](https://img.shields.io/badge/version-0.1.4-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.4)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -53,7 +53,7 @@
 
 ## 安装与调用
 
-当前公开版本：`chinese-academic-writing-assistant@0.1.3`
+当前版本：`chinese-academic-writing-assistant@0.1.4`
 
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
 
@@ -89,6 +89,12 @@ $chinese-academic-writing-assistant 请根据我提供的材料续写第三章�
 | `scripts/*.py` | 引用、表达和长稿的只读候选扫描 |
 
 SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，并在平台支持的页面入口单独上传或关联；图片不进入运行包。
+
+## 版本 0.1.4
+
+本版本修复只读检查中的五类问题：合并引用中的中英文分号不再影响覆盖计数；倒序及超出安全展开范围的引用会明确报告；LaTeX 普通正文环境恢复扫描；Markdown 更长结束围栏和未闭合围栏正确保护代码示例；异常长数字输入不再触发重复回溯。公式、代码和真实引用继续受到保护，脚本不自动改稿。
+
+本轮未证明三条候选写作提示具有稳定收益，因此入口与写作规则沿用0.1.3。更新证据及发布状态见 `tests/evidence/v0.1.4-release-gate/`。
 
 ## 版本 0.1.3
 

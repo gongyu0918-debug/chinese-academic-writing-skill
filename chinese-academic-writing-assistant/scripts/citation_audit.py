@@ -27,7 +27,9 @@ REFERENCE_HEADING = re.compile(
     re.IGNORECASE,
 )
 NUMERIC_CITATION = re.compile(
-    r"\[((?:\d+\s*(?:[-–—]\s*\d+)?\s*[,，;；]?\s*)+)\](?!\()"
+    # Scan a numeric-shaped bracket once; validate its tokens separately.
+    # Nested repetitions of optional separators can backtrack exponentially.
+    r"\[(\d[\d\s,，;；–—-]*)\](?!\()"
 )
 NUMERIC_REFERENCE = re.compile(r"^\s*\[(\d+)\]\s*(.+?)\s*$")
 AUTHOR_TOKEN = r"(?:[A-Z][A-Za-z'’.-]*(?:\s+(?:&|and)\s+[A-Z][A-Za-z'’.-]*)?|[\u4e00-\u9fff]{2,8}(?:等)?)"
@@ -68,7 +70,7 @@ EXTERNAL_ATTRIBUTION = re.compile(
     r"(?:根据|依据|按照)[^。！？!?；;]{0,24}(?:研究|报告|调查|标准|规范|政策|指南|统计)"
 )
 HIGH_RISK = re.compile(
-    r"(?:\d+(?:\.\d+)?\s*(?:%|％|倍|万|亿|人|项|篇|年|个月|天)|"
+    r"(?:(?<!\d)\d+(?:\.\d+)?\s*(?:%|％|倍|万|亿|人|项|篇|年|个月|天)|"
     r"导致|造成|促使|促进|提高|提升|降低|减少|优于|高于|低于|显著|相关性|因果|"
     r"首次|填补[^。！？!?；;]{0,12}空白|尚无研究|缺乏研究|普遍认为|一致认为)"
 )
@@ -96,28 +98,63 @@ def split_document(text: str) -> tuple[str, str, int | None]:
     return "\n".join(lines), "", None
 
 
-def expand_numeric_group(group: str) -> list[int]:
+def parse_numeric_group(group: str) -> tuple[list[int], list[str]]:
     result: list[int] = []
-    for part in re.split(r"[,，;；]", group):
+    unparsed: list[str] = []
+    parts = re.split(r"[,，;；]", group)
+    for index, part in enumerate(parts):
         token = part.strip()
         if not token:
+            if index != len(parts) - 1:
+                unparsed.append("存在空编号项")
             continue
         range_match = re.fullmatch(r"(\d+)\s*[-–—]\s*(\d+)", token)
         if range_match:
-            start, end = (int(value) for value in range_match.groups())
-            if start <= end and end - start <= 200:
+            try:
+                start, end = (int(value) for value in range_match.groups())
+            except ValueError:
+                unparsed.append(f"{token[:60]} 的数值无法转换")
+                continue
+            if start > end:
+                unparsed.append(f"{token[:60]} 的范围起点大于终点")
+            elif end - start > 200:
+                # This is an expansion budget, not a maximum reference ID.
+                unparsed.append(f"{token[:60]} 超出单个范围的展开预算")
+            else:
                 result.extend(range(start, end + 1))
             continue
         if token.isdigit():
-            result.append(int(token))
-    return result
+            try:
+                result.append(int(token))
+            except ValueError:
+                unparsed.append(f"{token[:60]} 的数值无法转换")
+        else:
+            unparsed.append(f"{token[:60]} 不是可解析的编号或范围")
+    return result, unparsed
+
+
+def expand_numeric_group(group: str) -> list[int]:
+    return parse_numeric_group(group)[0]
 
 
 def numeric_citations(text: str) -> list[int]:
+    return audit_numeric_citations(text)[0]
+
+
+def audit_numeric_citations(text: str) -> tuple[list[int], list[Finding]]:
     values: list[int] = []
+    findings: list[Finding] = []
+    line_no = 1
+    previous_end = 0
     for match in NUMERIC_CITATION.finditer(text):
-        values.extend(expand_numeric_group(match.group(1)))
-    return values
+        line_no += text.count("\n", previous_end, match.start())
+        parsed, unparsed = parse_numeric_group(match.group(1))
+        values.extend(parsed)
+        if unparsed:
+            findings.append(Finding(line_no, "high", "citation-structure", "unparsed-numeric-citation", "编号引文未能完整解析：" + "；".join(unparsed), match.group(0)[:100]))
+        line_no += text.count("\n", match.start(), match.end())
+        previous_end = match.end()
+    return values, findings
 
 
 def narrative_author_year_matches(text: str) -> list[re.Match[str]]:
@@ -198,8 +235,12 @@ def sentence_rows(body: str) -> list[tuple[int, str]]:
         stripped = line.strip()
         if not stripped or stripped.startswith("#") or stripped.startswith("|"):
             continue
-        for match in SENTENCE.finditer(line):
-            sentence = match.group(0).strip()
+        boundaries = list(line)
+        for pattern in (NUMERIC_CITATION, PARENTHETICAL_AUTHOR_YEAR, LATEX_CITATION):
+            for citation in pattern.finditer(line):
+                boundaries[citation.start() : citation.end()] = "x" * len(citation.group(0))
+        for match in SENTENCE.finditer("".join(boundaries)):
+            sentence = line[match.start() : match.end()].strip()
             if len(re.sub(r"\s+", "", sentence)) >= 8:
                 rows.append((line_no, sentence))
     return rows
@@ -219,8 +260,9 @@ def is_claim_candidate(sentence: str, mode: str) -> bool:
 
 def analyze(text: str, *, mode: str = "general", minimum_marker_coverage: float | None = None) -> dict:
     body, references, heading_line = split_document(text)
-    used = numeric_citations(body)
+    used, numeric_findings = audit_numeric_citations(body)
     entries, findings = reference_entries(references, heading_line)
+    findings.extend(numeric_findings)
     schemes = citation_schemes(body)
 
     for identifier in sorted(set(used) - set(entries)):

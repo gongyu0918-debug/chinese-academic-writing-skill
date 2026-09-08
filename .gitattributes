@@ -6,3 +6,4 @@ tests/evidence/next-real-writing-20260811/** text eol=lf
 tests/evidence/writing-understanding-20260908/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Preserve the verbatim review response, including its original trailing space.
 tests/evidence/writing-understanding-20260908/reviews/luna-initial.json -whitespace
+tests/evidence/v0.1.4-release-gate/** text eol=lf
