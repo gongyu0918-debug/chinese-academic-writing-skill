@@ -5,9 +5,10 @@
   "manuscript-fix-proof.json": "8a192379049472023ef5f6aca22b781c17468ddc956af614412218c8282b4512",
   "prose-fix-proof.json": "a84c1342f5b176eb3cdbc286c63e1448b9fd755a7ec79a650efc66cf61a7c3c9",
   "RELEASE-NOTES.md": "1785bb6a410c024764e2abfc18ddc621f8e381ba04e2a434b929b659f278bf7f",
+  "RELEASE-RECEIPT.json": "c0d76e303970abc1c407e2cf2582e0d4ab31d513716259e195d77335dcd54ccd",
   "replay-comparison.json": "abf5df93ba8ba4758f43c3674f474a70546cdab30c39d332edd3fa9aedb7ed21",
   "replay_scanners.py": "85575afa8b1da09069e19084c9af85ade54baf6207f869eb259e0e28b9ef59d1",
-  "RESULT.md": "005192a6ee8d946f9364547e3df7f0066b0fe520a033c7913044433f1b0aa453",
+  "RESULT.md": "6d8f384cb64e52d984eeb9661201e02475ccdea731bb3d427c6cdc9f027aa3aa",
   "validation.json": "2717ff70ce7249dfe6b0115a22582f27c3b302cd669e557ece68bfeb756ba18b",
   "workbuddy-proof.json": "60da19530b7270cee4c7b119a6dc8bf92970a3ff4e88bbf1a0fec9416980674f"
 }
