@@ -6,6 +6,8 @@
 
 发布前验证：166 项维护测试通过，Skill 元数据和差异检查通过。GitHub/SkillHub 同一份 12 文件 MIT ZIP 重建哈希一致；ClawHub 独立 11 文件 staging 的本地 dry-run 通过，许可证采用平台 MIT-0。逐文件哈希、包哈希、规范化来源与 dry-run 绑定见 `validation.json`。
 
-发布后另追加 `RELEASE-RECEIPT.json`，分别记录 GitHub 标签/资产、SkillHub 受理/签名/公开版本、ClawHub 受理/文件/公开审核。每个平台只提交一次；不因索引或审核延迟重复上传。后续回执提交不会移动产品标签。
+发布回执已保存为 `RELEASE-RECEIPT.json`，分别记录 GitHub 标签/资产、SkillHub 受理/签名/公开版本、ClawHub 受理/文件/公开审核。每个平台只提交一次；不因索引或审核延迟重复上传。后续回执提交不会移动产品标签。
 
 本轮不更新 WorkBuddy ZIP，也不进行客户端实装。所有运行文件来自已评审提交的 Git 字节；发布工作树 CRLF 显示差异仅规范化为对应 Git 字节。GitHub 与 SkillHub 派生入口元数据按现有打包策略生成。
+
+发布结果：GitHub 0.1.5 已公开，下载包哈希一致；SkillHub 与 ClawHub 各受理一次。SkillHub 公开版本已为 0.1.5，平台签名和包内容指纹核对通过；ClawHub 版本详情尚不可查，受理不冒充公开审核完成。

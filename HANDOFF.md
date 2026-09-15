@@ -11,9 +11,9 @@
 
 ## 当前状态
 
-- 2026-09-16 按用户授权准备 v0.1.5 三平台补丁发布，复用已合并的 `1242e414` 写稿/冷审证据，不另改写作规则。GitHub/SkillHub 使用 12 文件 MIT 包，ClawHub 使用 11 文件 MIT-0 staging；平台受理、公开可见与审核分别记录，完整发布回执在本次发布后追加。
+- 2026-09-16 已发布 v0.1.5：产品标签指向 `32950f07f1b257ab071ae1d202818e9a5100d3c4`，GitHub Release `389528303` 已公开且下载资产哈希匹配；SkillHub versionId `316954`、ClawHub versionId `k97amgvcq41pnd5f5g9mdzdyd58efaqh` 均已受理，各提交一次。SkillHub 公开版本已为 0.1.5，平台签名有效且内容指纹匹配；ClawHub 新版详情仍暂不可查，待平台审核/传播。复用 `1242e414` 写稿冷审证据，发布准备不改运行规则；166 项维护测试通过。GitHub/SkillHub 为同一 12 文件 MIT ZIP，ClawHub 为独立 11 文件 MIT-0 包。WorkBuddy 本轮未更新。详见 `tests/evidence/v0.1.5-release-gate/RELEASE-RECEIPT.json`。
 
-- 2026-09-16 开发更新：三主叶四模式、离线引用服务、长稿状态与逐段交付的入口/返回/终止已逐边审查；正文复核改为唤醒宿主未参与起草的 subagent，明确只读、有限返回、不递归及能力缺失回退。对成串否定的两版简化提示没有稳定净收益，取消，保留原有上下文判定段；另保留按结果段/讨论段职责审查结构的澄清。正式写稿沿用公文维护模型池与 Codex CLI `max`；原生子会话已核对精确便宜模型。Python 测试移除 53 项 Markdown/历史语义断言、拆分 13 项混合断言，保留 166 项行为、CLI、性能、只读、打包及证据完整性测试。详细取舍、原始稿件、模型偏差和审阅纠偏见 `tests/evidence/routing-paragraph-review-20260916/`。这是仓库开发更新，未发布新版，也未更新桌面的 WorkBuddy 包；不能将任意一批技术成功数当作质量通过数。
+- 2026-09-16 开发更新：三主叶四模式、离线引用服务、长稿状态与逐段交付的入口/返回/终止已逐边审查；正文复核改为唤醒宿主未参与起草的 subagent，明确只读、有限返回、不递归及能力缺失回退。对成串否定的两版简化提示没有稳定净收益，取消，保留原有上下文判定段；另保留按结果段/讨论段职责审查结构的澄清。正式写稿沿用公文维护模型池与 Codex CLI `max`；原生子会话已核对精确便宜模型。Python 测试移除 53 项 Markdown/历史语义断言、拆分 13 项混合断言，保留 166 项行为、CLI、性能、只读、打包及证据完整性测试。详细取舍、原始稿件、模型偏差和审阅纠偏见 `tests/evidence/routing-paragraph-review-20260916/`。该开发更新随后在 v0.1.5 发布，桌面的 WorkBuddy 包仍为 0.1.4；不能将任意一批技术成功数当作质量通过数。
 
 - v0.1.4 已于 2026-09-08 合并并发布：产品标签指向 `1245fb240d1f4fa69f42a9eb507ec3e5df7a6e72`，GitHub Release `384604774` 的下载资产哈希匹配；skillhub.cn versionId `299494` 与 ClawHub versionId `k975g5w71e3m83xwz08nj8da4s8e00pa` 均已受理且各提交一次。记录时 SkillHub 公开搜索仍为 0.1.3、签名尚不可查，ClawHub 新版本查询亦暂不可用，公开传播和审核结果尚未确认。WorkBuddy 无 Hooks ZIP 已交付桌面，格式与归档哈希通过，未做客户端实装测试。详见 `tests/evidence/v0.1.4-release-gate/RELEASE-RECEIPT.json`。
 
