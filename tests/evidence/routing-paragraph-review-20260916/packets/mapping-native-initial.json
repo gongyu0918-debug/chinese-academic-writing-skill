@@ -1,0 +1,162 @@
+[
+  {
+    "pair": "W01",
+    "side": "A",
+    "arm": "baseline",
+    "case": "P1_paragraph",
+    "model": "alibaba-token-plan/qwen3.8-flash",
+    "sha256": "5c58f6ae761cd70476940c7cbdff0713c65b86233934a0e93e024f2d43a72b2a"
+  },
+  {
+    "pair": "W01",
+    "side": "B",
+    "arm": "candidate",
+    "case": "P1_paragraph",
+    "model": "alibaba-token-plan/qwen3.8-flash",
+    "sha256": "854192a3e6de7e126582a8889f57b4f41e9a81130e0cc4602237929be75b25fe"
+  },
+  {
+    "pair": "W02",
+    "side": "A",
+    "arm": "candidate",
+    "case": "N2_rewrite",
+    "model": "alibaba-token-plan/qwen3.8-flash",
+    "sha256": "37c6f2e3c80ef65ad784de20774907082935a966d2a5dd65838fb9d77c44b7c8"
+  },
+  {
+    "pair": "W02",
+    "side": "B",
+    "arm": "baseline",
+    "case": "N2_rewrite",
+    "model": "alibaba-token-plan/qwen3.8-flash",
+    "sha256": "a8ff14774ba80820709fc18e00466293106e7b6abb331e95e1ef61ede8d07ee0"
+  },
+  {
+    "pair": "W03",
+    "side": "A",
+    "arm": "candidate",
+    "case": "P1_paragraph",
+    "model": "alibaba-token-plan-2/qwen3.8-flash",
+    "sha256": "39fb382dcf1aaca2c485302cc7f6706520aafba70a0aa7dc06a54ca72eaf9246"
+  },
+  {
+    "pair": "W03",
+    "side": "B",
+    "arm": "baseline",
+    "case": "P1_paragraph",
+    "model": "alibaba-token-plan-2/qwen3.8-flash",
+    "sha256": "2b8403e3528eeb15abb7ec5c357947715f4246a4d6dadc7762a3c12b0ea71fd9"
+  },
+  {
+    "pair": "W04",
+    "side": "A",
+    "arm": "candidate",
+    "case": "N2_rewrite",
+    "model": "alibaba-token-plan-2/qwen3.8-flash",
+    "sha256": "c14c5bd6f117729adfb34fe69b3e7ec328be66f84cbb724b2ab94cff23adfb31"
+  },
+  {
+    "pair": "W04",
+    "side": "B",
+    "arm": "baseline",
+    "case": "N2_rewrite",
+    "model": "alibaba-token-plan-2/qwen3.8-flash",
+    "sha256": "2522cea305d833e7a409774a86c2ac4139532dfe9279887beb2e62871e969f1e"
+  },
+  {
+    "pair": "W05",
+    "side": "A",
+    "arm": "baseline",
+    "case": "P1_paragraph",
+    "model": "command-code/deepseek-deepseek-v4.1-flash",
+    "sha256": "78ab8b10472e6888c609fc7cf5d900f81423a4b5de0c51f1196fb01bb709de9f"
+  },
+  {
+    "pair": "W05",
+    "side": "B",
+    "arm": "candidate",
+    "case": "P1_paragraph",
+    "model": "command-code/deepseek-deepseek-v4.1-flash",
+    "sha256": "d242f258e9ab289b77f065ccd92209cf19f978e78823f3267023f83ae3325dee"
+  },
+  {
+    "pair": "W06",
+    "side": "A",
+    "arm": "candidate",
+    "case": "N2_rewrite",
+    "model": "command-code/deepseek-deepseek-v4.1-flash",
+    "sha256": "b8be09ce3d576f1544327390ab00d2483338c2de1f9a38831921519f6639e3d0"
+  },
+  {
+    "pair": "W06",
+    "side": "B",
+    "arm": "baseline",
+    "case": "N2_rewrite",
+    "model": "command-code/deepseek-deepseek-v4.1-flash",
+    "sha256": "635109f870bc32ba87d60493e955c5f5c3558d8b9198be82aa853b580bc31db8"
+  },
+  {
+    "pair": "W07",
+    "side": "A",
+    "arm": "candidate",
+    "case": "P1_paragraph",
+    "model": "minimax-cn/MiniMax-M3",
+    "sha256": "b53cf5edfb6b664dbae4e2116e836a8f963a30e49b5e248795922576b45fb0d5"
+  },
+  {
+    "pair": "W07",
+    "side": "B",
+    "arm": "baseline",
+    "case": "P1_paragraph",
+    "model": "minimax-cn/MiniMax-M3",
+    "sha256": "df1a8877b9406c4ad6aea99d809f80827a26fcb052599d330c67b5b5e1f6f714"
+  },
+  {
+    "pair": "W08",
+    "side": "A",
+    "arm": "candidate",
+    "case": "N2_rewrite",
+    "model": "minimax-cn/MiniMax-M3",
+    "sha256": "1241558cd4d2dd11bc9c28dbb10f5ccb35a45dea4f11cadc9232bf269f5991a5"
+  },
+  {
+    "pair": "W08",
+    "side": "B",
+    "arm": "baseline",
+    "case": "N2_rewrite",
+    "model": "minimax-cn/MiniMax-M3",
+    "sha256": "d04ee6982e3a7ff2963637b0037bf9f89f9b6776f7b52f990181bd5c80a34c2b"
+  },
+  {
+    "pair": "W09",
+    "side": "A",
+    "arm": "candidate",
+    "case": "P1_paragraph",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "sha256": "ae250fdfca810f79979d6b5ae78a2e3503a4ab126ed2fa8da6942566f1c0e399"
+  },
+  {
+    "pair": "W09",
+    "side": "B",
+    "arm": "baseline",
+    "case": "P1_paragraph",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "sha256": "32d8a4bb0a42aad381154c58caa455c74292b5cdda5c859c390db7aaa6c59605"
+  },
+  {
+    "pair": "W10",
+    "side": "A",
+    "arm": "candidate",
+    "case": "N2_rewrite",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "sha256": "3f2913e5c86ddb35e9c61fdbe6905c1cb3af3160f15421bd2da3d7a4c6d8c8bc"
+  },
+  {
+    "pair": "W10",
+    "side": "B",
+    "arm": "baseline",
+    "case": "N2_rewrite",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "sha256": "a738b79b19208bf4f0e2bf94f99ece7b59dea9222f380454437985cf5701670c"
+  }
+]

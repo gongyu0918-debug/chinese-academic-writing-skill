@@ -1,0 +1,227 @@
+[
+  {
+    "batch": "native-formal-initial",
+    "case_parent": "m2-P1_paragraph-candidate",
+    "session_id": "01a0a716-6ace-7900-8682-722e9eda20ad",
+    "parent_thread_id": "01a0a715-8d32-7cd2-82ad-c0dd62911ef0",
+    "source": {
+      "subagent": {
+        "thread_spawn": {
+          "parent_thread_id": "01a0a715-8d32-7cd2-82ad-c0dd62911ef0",
+          "depth": 1,
+          "agent_path": null,
+          "agent_nickname": "Euclid",
+          "agent_role": null
+        }
+      }
+    },
+    "model_contexts": [
+      {
+        "model": "command-code/deepseek-deepseek-v4.1-flash",
+        "effort": "max",
+        "reasoning_effort": null
+      }
+    ],
+    "raw_session_sha256": "ffde0142c69dd0c924d73dfc1b719eba9bc38a1e4c7a6e9cf6a851033e50b342"
+  },
+  {
+    "batch": "native-formal-initial",
+    "case_parent": "m2-N2_rewrite-candidate",
+    "session_id": "01a0a717-a41a-7923-865d-a88cb60234a9",
+    "parent_thread_id": "01a0a716-042f-7681-8ba2-3431cd4d1c16",
+    "source": {
+      "subagent": {
+        "thread_spawn": {
+          "parent_thread_id": "01a0a716-042f-7681-8ba2-3431cd4d1c16",
+          "depth": 1,
+          "agent_path": null,
+          "agent_nickname": "Planck",
+          "agent_role": null
+        }
+      }
+    },
+    "model_contexts": [
+      {
+        "model": "command-code/deepseek-deepseek-v4.1-flash",
+        "effort": "max",
+        "reasoning_effort": null
+      }
+    ],
+    "raw_session_sha256": "33bbfd3adb50f7e0ad2afebf7135fcefafaffbb7407883b4193eeb38fa20ace0"
+  },
+  {
+    "batch": "native-v2-review",
+    "case_parent": "m0-N2_rewrite-candidate",
+    "session_id": "01a0a718-1d49-7822-b38d-c58675d4dfc3",
+    "parent_thread_id": "01a0a717-26bd-79c3-9d36-215e067e663c",
+    "source": {
+      "subagent": {
+        "thread_spawn": {
+          "parent_thread_id": "01a0a717-26bd-79c3-9d36-215e067e663c",
+          "depth": 1,
+          "agent_path": "/root/reviewer",
+          "agent_nickname": "Pasteur",
+          "agent_role": null
+        }
+      }
+    },
+    "model_contexts": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "reasoning_effort": null
+      }
+    ],
+    "raw_session_sha256": "e46e86550c3ff782137212dd290692f35e8b02ff438435486b621e9d5bea28a5"
+  },
+  {
+    "batch": "native-v2-review",
+    "case_parent": "m0-chain_scope-candidate",
+    "session_id": "01a0a71b-1d89-7d93-87f4-aaa5ebf5ed1a",
+    "parent_thread_id": "01a0a71a-0cba-7a22-95cb-efd669275888",
+    "source": {
+      "subagent": {
+        "thread_spawn": {
+          "parent_thread_id": "01a0a71a-0cba-7a22-95cb-efd669275888",
+          "depth": 1,
+          "agent_path": "/root/reviewer",
+          "agent_nickname": "Avicenna",
+          "agent_role": null
+        }
+      }
+    },
+    "model_contexts": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "reasoning_effort": null
+      }
+    ],
+    "raw_session_sha256": "6e086b24d37029bc0761dd8403968742caca32d6ef65c3da36b5a0549e8c20bf"
+  },
+  {
+    "batch": "native-v3-final",
+    "case_parent": "m0-P2_proposal-baseline",
+    "session_id": "01a0a71a-9351-73f1-89bc-750f460a5d61",
+    "parent_thread_id": "01a0a719-beb4-7ad2-a8eb-161ef668870f",
+    "source": {
+      "subagent": {
+        "thread_spawn": {
+          "parent_thread_id": "01a0a719-beb4-7ad2-a8eb-161ef668870f",
+          "depth": 1,
+          "agent_path": "/root/review_paragraph",
+          "agent_nickname": "Einstein",
+          "agent_role": null
+        }
+      }
+    },
+    "model_contexts": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "reasoning_effort": null
+      }
+    ],
+    "raw_session_sha256": "2ce223cd1196dfbf93281ac4ea1dd100f0ff5d3bc90caca4e251e798f8db0f99"
+  },
+  {
+    "batch": "native-v3-final",
+    "case_parent": "m0-P2_proposal-candidate",
+    "session_id": "01a0a71c-f548-7963-be9c-0254ee212517",
+    "parent_thread_id": "01a0a71c-02a9-78d3-a4ad-ed97c76fe9c2",
+    "source": {
+      "subagent": {
+        "thread_spawn": {
+          "parent_thread_id": "01a0a71c-02a9-78d3-a4ad-ed97c76fe9c2",
+          "depth": 1,
+          "agent_path": "/root/proposal_para_review",
+          "agent_nickname": "Nietzsche",
+          "agent_role": null
+        }
+      }
+    },
+    "model_contexts": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "reasoning_effort": null
+      }
+    ],
+    "raw_session_sha256": "0b9594e6570220a6dcafeb7090d378e64df19807318e31db1978d6de93c07910"
+  },
+  {
+    "batch": "native-v3-final",
+    "case_parent": "m0-P2_proposal-candidate",
+    "session_id": "01a0a724-f5d8-75f2-84aa-ef5c85daef2f",
+    "parent_thread_id": "01a0a71c-02a9-78d3-a4ad-ed97c76fe9c2",
+    "source": {
+      "subagent": {
+        "thread_spawn": {
+          "parent_thread_id": "01a0a71c-02a9-78d3-a4ad-ed97c76fe9c2",
+          "depth": 1,
+          "agent_path": "/root/method_para_review",
+          "agent_nickname": "Harvey",
+          "agent_role": null
+        }
+      }
+    },
+    "model_contexts": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "reasoning_effort": null
+      }
+    ],
+    "raw_session_sha256": "31dfb6fec62b14d10d533737b3c28a250a502a65a324b576de6f3a23a162ae41"
+  },
+  {
+    "batch": "native-final-closure",
+    "case_parent": "m0-T10-candidate",
+    "session_id": "01a0a72e-5e7c-7723-a3c7-f8686c899e66",
+    "parent_thread_id": "01a0a72d-969d-7d52-8779-344a91620687",
+    "source": {
+      "subagent": {
+        "thread_spawn": {
+          "parent_thread_id": "01a0a72d-969d-7d52-8779-344a91620687",
+          "depth": 1,
+          "agent_path": "/root/outline_review",
+          "agent_nickname": "Arendt",
+          "agent_role": null
+        }
+      }
+    },
+    "model_contexts": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "reasoning_effort": null
+      }
+    ],
+    "raw_session_sha256": "3639bcd3f98d11b0aaaf66fc62c29eee9001105c89cfaa080948280f4ab42339"
+  },
+  {
+    "batch": "native-final-closure",
+    "case_parent": "m0-T9-candidate",
+    "session_id": "01a0a72e-64d4-7530-b7d1-f8205d20705d",
+    "parent_thread_id": "01a0a72d-968c-7572-823c-057b7973101e",
+    "source": {
+      "subagent": {
+        "thread_spawn": {
+          "parent_thread_id": "01a0a72d-968c-7572-823c-057b7973101e",
+          "depth": 1,
+          "agent_path": "/root/review_para",
+          "agent_nickname": "Kierkegaard",
+          "agent_role": null
+        }
+      }
+    },
+    "model_contexts": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "reasoning_effort": null
+      }
+    ],
+    "raw_session_sha256": "91924466d53c86e687728a6e05029d3cd82dc2688cb612572bceb9ffc21b6639"
+  }
+]

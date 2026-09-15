@@ -1,0 +1,137 @@
+{
+  "baseline_commit": "46e7532c43c7f27a9a3a2f2d66bc37907064c428",
+  "decision": "merge routing, paragraph and native review changes; cancel both negation wording candidates",
+  "native_root_exec_calls": 91,
+  "native_root_technical_valid": 89,
+  "technical_invalid": [
+    {
+      "model": "minimax-cn/MiniMax-M3",
+      "effort": "max",
+      "case": "T1",
+      "arm": "baseline",
+      "returncode": 0,
+      "invalid": [
+        "missing_skill_read_trace"
+      ],
+      "seconds": 8.43,
+      "draft_sha256": "03a46ba4952f6c44332632acdef3bb0813f4f1d6717fd44b6f5bf725afb8f4f4"
+    },
+    {
+      "model": "minimax-cn/MiniMax-M3",
+      "effort": "max",
+      "case": "fresh_review",
+      "arm": "candidate",
+      "returncode": 0,
+      "invalid": [
+        "missing_final",
+        "missing_skill_read_trace"
+      ],
+      "seconds": 3.55,
+      "draft_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "resume_calls": 2,
+  "original_first_paragraph_files_unchanged": true,
+  "native_child_sessions": 9,
+  "formal_cold_review_calls": 7,
+  "unittest": {
+    "command": "py -3 -B -m unittest discover -s tests -v",
+    "count": 166,
+    "seconds": 9.112,
+    "result": "PASS",
+    "log_sha256": "809f8ef3b7bebfca597091d2877ec867a18658dd65b0c05bbefde45b46ce6ff8"
+  },
+  "quick_validate": "Skill is valid! (metadata only)",
+  "git_diff_check": "PASS",
+  "files": [
+    {
+      "path": "agents/openai.yaml",
+      "working_sha256": "6aa3fabd7184401be8c09f0e235b78ea066ccd6837929aa57b742b800856ed13",
+      "working_lf_sha256": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "baseline_git_sha256": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675"
+    },
+    {
+      "path": "LICENSE.md",
+      "working_sha256": "7182fd4c6281db93871ce4941eb4443e2230a4e33680a3b7f99510bcf0a9d023",
+      "working_lf_sha256": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812",
+      "baseline_git_sha256": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812"
+    },
+    {
+      "path": "references/academic-literature-review.md",
+      "working_sha256": "796ae43a15a50af5d7b5f6cfc3aeccd21800fc06e4fadbd9a330b0cd5526d033",
+      "working_lf_sha256": "c95277d78926e8634102ef9e3d1d15a6e6b758fafe5ee411e34e8e5effaa125a",
+      "baseline_git_sha256": "2ba32656e85549e74550f9377553a10cbfc09cf12768321c30c6706852a5bf52",
+      "final_snapshot_sha256": "796ae43a15a50af5d7b5f6cfc3aeccd21800fc06e4fadbd9a330b0cd5526d033",
+      "snapshot_bytes_equal": true
+    },
+    {
+      "path": "references/academic-proposal.md",
+      "working_sha256": "582930f36096cc7939537c46772bdc0851eb289098e6818a34127f372e0339e7",
+      "working_lf_sha256": "bc36d26f98e5e8aadc797947325fc3981c090664eb3eb7fa4757842d1634a3aa",
+      "baseline_git_sha256": "7ceb28a0a6907b3fefa0fa8b302c6fb29c155b6c8f79699e54b0faa076b3e1a0",
+      "final_snapshot_sha256": "582930f36096cc7939537c46772bdc0851eb289098e6818a34127f372e0339e7",
+      "snapshot_bytes_equal": true
+    },
+    {
+      "path": "references/academic-writing.md",
+      "working_sha256": "462eebb57316577f9429caf9a53f89b278ce3f64573aca43e7152a6cad55e9c3",
+      "working_lf_sha256": "5e20151b18a41d6943df5b3162d19e159d69a2af0021e9528935eda770d618f0",
+      "baseline_git_sha256": "b6d9cc3d07f6f04affbb8eaa7e9b364977b5d65a828f4f08f0297f13b88ab480",
+      "final_snapshot_sha256": "462eebb57316577f9429caf9a53f89b278ce3f64573aca43e7152a6cad55e9c3",
+      "snapshot_bytes_equal": true
+    },
+    {
+      "path": "references/anti-ai-writing.md",
+      "working_sha256": "4f901d4165298fc58d547a48af9eddf415c588c7f49008b1957455f4c27091b0",
+      "working_lf_sha256": "4fed2a71b7fa3989da9b8b3d3b8832a9a81e7adf32fd182b0341a8c020f6f12b",
+      "baseline_git_sha256": "4511f4f974ea21a42a8140e801a1805d8fc64c1dc28e67abca461d8530b15ad0",
+      "final_snapshot_sha256": "4f901d4165298fc58d547a48af9eddf415c588c7f49008b1957455f4c27091b0",
+      "snapshot_bytes_equal": true
+    },
+    {
+      "path": "references/citation-research.md",
+      "working_sha256": "f024bfffdee7cb56f540f6d717bcbd1f758e78a55056cf7b667b5df99cb5776f",
+      "working_lf_sha256": "8d2672ebdffde5dd95737a0d97fb0cefc43867f6d1a5cb02244f6781b7a476a8",
+      "baseline_git_sha256": "a375ceee4f97e8d271c654e27581e74fd4bf3fa354a28e2f8e5e80fa8c728720",
+      "final_snapshot_sha256": "f024bfffdee7cb56f540f6d717bcbd1f758e78a55056cf7b667b5df99cb5776f",
+      "snapshot_bytes_equal": true
+    },
+    {
+      "path": "references/long-form-consistency.md",
+      "working_sha256": "359b2b870c546dd22d836f00c2107fa38c18f3cc71b144835625e2390ddc97fe",
+      "working_lf_sha256": "26254e382ea3dd793003be0b91a55ed01a92a89187314c8cd1cf744a554acb8a",
+      "baseline_git_sha256": "ce88d5c6810b3ebf0594f057a86e1a32882267527b712e3ceda88b85f41b6b80",
+      "final_snapshot_sha256": "359b2b870c546dd22d836f00c2107fa38c18f3cc71b144835625e2390ddc97fe",
+      "snapshot_bytes_equal": true
+    },
+    {
+      "path": "scripts/citation_audit.py",
+      "working_sha256": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "working_lf_sha256": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "baseline_git_sha256": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c"
+    },
+    {
+      "path": "scripts/manuscript_audit.py",
+      "working_sha256": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "working_lf_sha256": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "baseline_git_sha256": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0"
+    },
+    {
+      "path": "scripts/prose_lint.py",
+      "working_sha256": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+      "working_lf_sha256": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+      "baseline_git_sha256": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+    },
+    {
+      "path": "SKILL.md",
+      "working_sha256": "436724b34fb0384531c3534f5f93e8f0af02433c57c562e5ea96e50b05ceca32",
+      "working_lf_sha256": "eee19565fdf9c58800fb39b5f713c30b05eedba0dfec8e280a669f31dcb60bb7",
+      "baseline_git_sha256": "94ea42ee0c5790f7009ae35591d6aa0d9e9014dae3d84476904a37809cbbaaa6",
+      "final_snapshot_sha256": "436724b34fb0384531c3534f5f93e8f0af02433c57c562e5ea96e50b05ceca32",
+      "snapshot_bytes_equal": true
+    }
+  ],
+  "published": false,
+  "remote_pushed": false,
+  "workbuddy_updated": false
+}

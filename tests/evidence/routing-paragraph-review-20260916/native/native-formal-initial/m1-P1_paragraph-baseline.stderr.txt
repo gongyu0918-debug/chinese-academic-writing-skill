@@ -1,0 +1,4 @@
+2026-09-15T21:56:41.195935Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-09-15T21:56:41.249212Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-09-15T21:56:41.249262Z  WARN codex_core::client: falling back to HTTP
+2026-09-15T21:57:54.372751Z ERROR codex_core::tools::router: error=apply_patch verification failed: invalid hunk at line 3, '借阅请求集中于午休时段：180次中占102次，明显高于其他开放时段的78次。为解释这一分布，作者核对了10人访谈摘录，其中6人提到上午课程结束后会顺路到资料室取资料，另外4人未说明选择该时段的原因。据此，作者认为课程结束后的时间衔接可能是午休请求集中的一个原因：午休正好接在上午课程之后，顺路取资料的行为容易在这一时段汇聚，从而抬高请求量。不过，访谈样本只有10人，且部分受访者未说明原因，这一解释目前只与观察记录相容，尚不足以认定为确定的成因。' is not a valid hunk header. Valid hunk headers: '*** Add File: {path}', '*** Delete File: {path}', '*** Update File: {path}'

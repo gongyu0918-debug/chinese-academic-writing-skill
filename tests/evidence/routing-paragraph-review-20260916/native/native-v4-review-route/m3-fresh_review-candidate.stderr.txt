@@ -1,0 +1,5 @@
+2026-09-15T22:15:13.122274Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-09-15T22:15:13.175216Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-09-15T22:15:13.175271Z  WARN codex_core::client: falling back to HTTP
+Warning: no last agent message; wrote empty content to F:\Workspaces\chinese-academic-writing-skill\.release\worktrees\routing-paragraph-review-20260916\.release\native-v4-review-route\m3-fresh_review-candidate.final.txt
+2026-09-15T22:15:15.155041Z  WARN codex_core::tasks: failed to flush rollout after emitting terminal turn event: thread 01a0a723-71de-7483-acd9-b2b7c6c7e76b not found

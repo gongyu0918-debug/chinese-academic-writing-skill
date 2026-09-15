@@ -1,0 +1,20 @@
+{
+  "model": "ollama-cloud/kimi-k3",
+  "effort": "max",
+  "transport": "native codex exec plaintext task",
+  "packet_delivery": "inline stdin",
+  "seconds": 223.13,
+  "returncode": 0,
+  "error": null,
+  "packet_sha256": "55643221e35e2e174da7136a9493051235c0fe088b6865d2f726ac392fcbbd03",
+  "final_exists": true,
+  "usage": [
+    {
+      "input_tokens": 19587,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 17279,
+      "reasoning_output_tokens": 0
+    }
+  ]
+}

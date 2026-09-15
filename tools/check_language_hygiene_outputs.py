@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Validate read-only evidence for the Prompt-driven academic language review.
+"""Replay legacy evidence for the academic language review read-only.
+
+Literal requirements, sample thresholds, and verdict aggregation belong to the
+historical experiment.  They are not gates for current Markdown rules, writing
+quality, or releases.  Current writing changes use fresh drafts and independent
+semantic review; this Python implementation retains its maintenance tests.
 
 The checker never rewrites a draft.  Candidate phrase matches are observations,
 not errors; semantic decisions remain with blind verifiers.  The small Finding

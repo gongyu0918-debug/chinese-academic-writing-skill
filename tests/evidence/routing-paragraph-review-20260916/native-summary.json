@@ -1,0 +1,971 @@
+[
+  {
+    "batch": "native-formal-initial",
+    "records": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 31.18,
+        "draft_sha256": "a8ff14774ba80820709fc18e00466293106e7b6abb331e95e1ef61ede8d07ee0"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 61.69,
+        "draft_sha256": "37c6f2e3c80ef65ad784de20774907082935a966d2a5dd65838fb9d77c44b7c8"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "P1_paragraph",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 54.35,
+        "draft_sha256": "5c58f6ae761cd70476940c7cbdff0713c65b86233934a0e93e024f2d43a72b2a"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "P1_paragraph",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 63.23,
+        "draft_sha256": "854192a3e6de7e126582a8889f57b4f41e9a81130e0cc4602237929be75b25fe"
+      },
+      {
+        "model": "alibaba-token-plan-2/qwen3.8-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 64.44,
+        "draft_sha256": "2522cea305d833e7a409774a86c2ac4139532dfe9279887beb2e62871e969f1e"
+      },
+      {
+        "model": "alibaba-token-plan-2/qwen3.8-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 35.46,
+        "draft_sha256": "c14c5bd6f117729adfb34fe69b3e7ec328be66f84cbb724b2ab94cff23adfb31"
+      },
+      {
+        "model": "alibaba-token-plan-2/qwen3.8-flash",
+        "effort": "max",
+        "case": "P1_paragraph",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 145.38,
+        "draft_sha256": "2b8403e3528eeb15abb7ec5c357947715f4246a4d6dadc7762a3c12b0ea71fd9"
+      },
+      {
+        "model": "alibaba-token-plan-2/qwen3.8-flash",
+        "effort": "max",
+        "case": "P1_paragraph",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 68.45,
+        "draft_sha256": "39fb382dcf1aaca2c485302cc7f6706520aafba70a0aa7dc06a54ca72eaf9246"
+      },
+      {
+        "model": "command-code/deepseek-deepseek-v4.1-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 86.48,
+        "draft_sha256": "635109f870bc32ba87d60493e955c5f5c3558d8b9198be82aa853b580bc31db8"
+      },
+      {
+        "model": "command-code/deepseek-deepseek-v4.1-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 216.03,
+        "draft_sha256": "b8be09ce3d576f1544327390ab00d2483338c2de1f9a38831921519f6639e3d0"
+      },
+      {
+        "model": "command-code/deepseek-deepseek-v4.1-flash",
+        "effort": "max",
+        "case": "P1_paragraph",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 145.25,
+        "draft_sha256": "78ab8b10472e6888c609fc7cf5d900f81423a4b5de0c51f1196fb01bb709de9f"
+      },
+      {
+        "model": "command-code/deepseek-deepseek-v4.1-flash",
+        "effort": "max",
+        "case": "P1_paragraph",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 226.52,
+        "draft_sha256": "d242f258e9ab289b77f065ccd92209cf19f978e78823f3267023f83ae3325dee"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 22.04,
+        "draft_sha256": "d04ee6982e3a7ff2963637b0037bf9f89f9b6776f7b52f990181bd5c80a34c2b"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 34.33,
+        "draft_sha256": "1241558cd4d2dd11bc9c28dbb10f5ccb35a45dea4f11cadc9232bf269f5991a5"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "P1_paragraph",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 30.76,
+        "draft_sha256": "df1a8877b9406c4ad6aea99d809f80827a26fcb052599d330c67b5b5e1f6f714"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "P1_paragraph",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 38.13,
+        "draft_sha256": "b53cf5edfb6b664dbae4e2116e836a8f963a30e49b5e248795922576b45fb0d5"
+      },
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 102.81,
+        "draft_sha256": "a738b79b19208bf4f0e2bf94f99ece7b59dea9222f380454437985cf5701670c"
+      },
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 26.26,
+        "draft_sha256": "3f2913e5c86ddb35e9c61fdbe6905c1cb3af3160f15421bd2da3d7a4c6d8c8bc"
+      },
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max",
+        "case": "P1_paragraph",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 33.67,
+        "draft_sha256": "32d8a4bb0a42aad381154c58caa455c74292b5cdda5c859c390db7aaa6c59605"
+      },
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max",
+        "case": "P1_paragraph",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 20.72,
+        "draft_sha256": "ae250fdfca810f79979d6b5ae78a2e3503a4ab126ed2fa8da6942566f1c0e399"
+      }
+    ],
+    "complete_results_file": true
+  },
+  {
+    "batch": "native-formal-routes",
+    "records": [
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "chain_scope",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 33.4,
+        "draft_sha256": "4721801714995fdd0d7cd2fe559e4b70f4bd1ce44a2733bb4b31af419a426e43"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "chain_scope",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 50.37,
+        "draft_sha256": "1a3656cbdc5250e78e67dba0919965d200c1bb2264f5dad09bbe4c4c0238ed1a"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T1",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [
+          "missing_skill_read_trace"
+        ],
+        "seconds": 8.43,
+        "draft_sha256": "03a46ba4952f6c44332632acdef3bb0813f4f1d6717fd44b6f5bf725afb8f4f4"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T1",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 58.62,
+        "draft_sha256": "6edcf550788cae9eaff794299e48a7ea8582249d4fe7a685b7243e3a2a9d623c"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T2",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 29.67,
+        "draft_sha256": "fdd6658ac4ae25e20dda951a38f69de4ba86921417ec9c7180832acdf224a501"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T2",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 25.27,
+        "draft_sha256": "402e6732a71b0d5f36a9cf4ff927c3c15fd8f5ec48466f4d9a1d1cb4a312a255"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T3",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 25.27,
+        "draft_sha256": "2a0b2ad74852eb28b9f5a107fc56a783caade4f8f7e6d82b270f9fe623076266"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T3",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 48.63,
+        "draft_sha256": "1285011ada7d69459aed8d9a7d5696a051db90653f4b030d49095c9a68dc5397"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T4",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 41.08,
+        "draft_sha256": "f2dd861881bc28b882faec02a0a835063f3025c5bb0ffa8af574dbd842d6a58c"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T4",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 49.28,
+        "draft_sha256": "d4a80b92404325c0a7654dadb63aa05212bb2bcd26cadf1116ca8815f640bf5d"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T5",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 48.02,
+        "draft_sha256": "8da7eb101eefae845de688d972896d5ed15e8ddcdaff941856f2ec79096c89a1"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T5",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 19.24,
+        "draft_sha256": "df1b506c191b14dcefc776cfb77363d58d7592ad3c696e424bc9ab12f0ea21d3"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T6",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 17.13,
+        "draft_sha256": "ae4b7287d5ff2e856952d5f68a804c8d4f11da40f3620b2c10a22eeab2eb5a53"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T6",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 23.17,
+        "draft_sha256": "25ce4ea15ba7ff9c32a7464732f29fd661d3e70d75170cad707281cb5518d70a"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T7",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 21.0,
+        "draft_sha256": "880317cd8827df97a8f95a8d4d86e25ad3e72012fa0f9a70013b65ac74f4a1ac"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T7",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 38.19,
+        "draft_sha256": "5d0846b28c6b867f561e1b9f63cc05c4a2abbec3ce15ac1a253450f22fa57ee2"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T8",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 64.15,
+        "draft_sha256": "9a8027b2cbc043393326a9642ef27c4cf634b51f560dfcbefb4ee34711cddb8b"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T8",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 18.94,
+        "draft_sha256": "ab382f27b51e0b19eac69aa03ba664c87c422b1e381ddc83de42c8fa55f2d1ea"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T9",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 17.53,
+        "draft_sha256": "1eb408e0149437a36ebb1c0a4d4df10690a693449e0d468d1a39f07b8ea807d3"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T9",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 101.99,
+        "draft_sha256": "a64fbf81cc4f391b9397896d5e910337e24939e4991bbf2594a9b1f50836f60d"
+      }
+    ],
+    "complete_results_file": true
+  },
+  {
+    "batch": "native-v2-review",
+    "records": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "chain_scope",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 205.32,
+        "draft_sha256": "47c5e8d259794b9d39bb3afc805462dae720dd98e5cdc01e2fd734989cc9ed02"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "chain_scope",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 197.53,
+        "draft_sha256": "86f414b463035c4be9a0e9fd82d6e30306334372663159604c0440f51596e8a8"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 139.53,
+        "draft_sha256": "2f795c2ba1798f0ba2391a85b07c7429050d8c6a133211a3ba8f64686dd4aece"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 131.39,
+        "draft_sha256": "8bf82b7324d0f5dab088890d0ece7b22da6da6b75e253d120702359f5965c073"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "P2_proposal",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 104.36,
+        "draft_sha256": "e36ad0d0534e5f27488c92c32cd8e91fa625bebae8589bc4ee3b28fa0e908329"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "P2_proposal",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 19.75,
+        "draft_sha256": "80592ef5d426694c4a79791f5284fde37e84adc47ef8a9dd1b0e8864da14fba9"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "chain_scope",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 47.06,
+        "draft_sha256": "7c9547a064a1fced7dec11047d6ce2941dd58a6f364d5bee1a61d55eec26c03f"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "chain_scope",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 56.41,
+        "draft_sha256": "892dcc5351e97824576cbc88b2d3be7f35c91ed162f409bf1b73d83b31fa84b5"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 224.12,
+        "draft_sha256": "999b8da93134e0e1e7754a8ea7360cb616a4953d5b9c32e5a950946529af29c6"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 40.69,
+        "draft_sha256": "6b8f1a4432b8fe857786f8f6c479616d3f4148e2cec1367a0d95a3b629a7abe7"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "P2_proposal",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 82.49,
+        "draft_sha256": "162770ffcdf00da6807fd43faa133545ae1d949b92bbbd789f2c7fcb31870a22"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "P2_proposal",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 52.65,
+        "draft_sha256": "61e80c878f6f016579554415cfb02beef2d9aca75df01cf83df1f21aa0f3e0a3"
+      }
+    ],
+    "complete_results_file": true
+  },
+  {
+    "batch": "native-v3-final",
+    "records": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "fresh_review",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 53.29,
+        "draft_sha256": "bd78382fb60e70ab1b01ee08d45ca1a9fc06bb9b928693a40c6bea926ddac9f0"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "fresh_review",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 58.27,
+        "draft_sha256": "246010926b2b074f974a4c7eacb9a6a6458d829c341a97dd00165e9b14c25f4e"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "P2_proposal",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 148.56,
+        "draft_sha256": "ae1093e94cd11f3d79b5b0421cfe934a70e7ef5458982f3a6af2686749237dd0"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "P2_proposal",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 247.06,
+        "draft_sha256": "e61efddfa7bbad88fc17a3947c681af9b86b582ddcfd430d9bfcf13f5bfbdc17"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "T10",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 45.84,
+        "draft_sha256": "04595e7f9e0b7c3ec71fea59c05c70c2e150cfa35a9d776443dd0150719d2ccd"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "T10",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 74.1,
+        "draft_sha256": "77182a48b4186ac4290e328c23e940ed095b588800afe2aa7c971fb7a8958dcf"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "fresh_review",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 36.49,
+        "draft_sha256": "f4f12aca792885f46cff93916270a10820d2b1eb464aeb2010f47c95a1f02998"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "fresh_review",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 24.71,
+        "draft_sha256": "6e4691ae9d9115c4a4046c1b7d439efedc9e5a2fdc8d9f87c2acf0596bd006a4"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "P2_proposal",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 33.87,
+        "draft_sha256": "244dfb8437c0d4c939c5c0a0668cb2ef6ba4432cb1b8eb5dd6ee1ddea48c5950"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "P2_proposal",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 44.59,
+        "draft_sha256": "24f51ed00cc7fea29eac8aaab2b4b7922f3eea4a9391f046507ccc5ab194c8c3"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T10",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 58.77,
+        "draft_sha256": "c25f4b7ccad1b2b7c7cc8f204ea659cf105361be593a32f4f7b1c8fca2d5e624"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T10",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 27.77,
+        "draft_sha256": "4b31cd16552cdccdc974453e397b61f3e2aa06473bc72d95b9e5c59af7bfe881"
+      }
+    ],
+    "complete_results_file": true
+  },
+  {
+    "batch": "native-v4-review-route",
+    "records": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "fresh_review",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 122.51,
+        "draft_sha256": "832668487ab4aec0e353c4b355838767f5e7c3ddf8d4c3cbc840e484d1c38e86"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "fresh_review",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 105.15,
+        "draft_sha256": "70ad5d4b702eddcc6489aaf23e59ab067e87219513fe0b386d99d690e2303888"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "review_result_guard",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 46.68,
+        "draft_sha256": "d99e43c0247843003c08ad698efe1b5e2fb5b362099945c6956fe2b50c88402d"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "review_result_guard",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 36.28,
+        "draft_sha256": "6944b39b2f9225f222e198419cb9e7e96118c9d2bccd3af9ecd4eac410c60b37"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "fresh_review",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 17.34,
+        "draft_sha256": "015380d7ad21745b80927ca53e29b3ce6cfb5b436072f5cb74d307bafbe032dd"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "fresh_review",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [
+          "missing_final",
+          "missing_skill_read_trace"
+        ],
+        "seconds": 3.55,
+        "draft_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "review_result_guard",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 27.81,
+        "draft_sha256": "e95d44e4072840684ee51f22154bdbb75ede3f37961e18cff700412a9d23f5f2"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "review_result_guard",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 16.17,
+        "draft_sha256": "528959df876afd3bba37f45efcb76f83179ff5a9f6cb60450e2edc9b81779430"
+      }
+    ],
+    "complete_results_file": true
+  },
+  {
+    "batch": "native-v4-technical-retry",
+    "records": [
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "fresh_review",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 45.03,
+        "draft_sha256": "ded3bbf38cc5a66b1ceeb393cca754f65d07813b136c0447474f18e172c297f9"
+      }
+    ],
+    "complete_results_file": true
+  },
+  {
+    "batch": "native-final-closure",
+    "records": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "empty_review",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 45.48,
+        "draft_sha256": "53f79b36fffc1461418676d4c3a4b84a42622bf65b58136967255f851fa6b9cd"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "T10",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 141.94,
+        "draft_sha256": "b9de95d47108e306f99ff891bde635432e74b70540ffcd0b42a48ae899831d83"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "T9",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 195.09,
+        "draft_sha256": "90be3d1841d2a1f720cee9b44e23c3f722afd22910bc0de3de1b62d2cbf1f7cb"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "empty_review",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 9.63,
+        "draft_sha256": "d6fa310304e8819ed47898aa821904d12af732aa1bbf5d60485ed38ed940cf77"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T10",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 66.95,
+        "draft_sha256": "ce1f10ca63bbe8fcdfdee49439bb5a204d3a8650bab129bf4f38789ca8ce310c"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "T9",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 26.28,
+        "draft_sha256": "fcaae6193f9393d1bc37f0cda610842d26fc134465748292c9184cd8b94cf872"
+      }
+    ],
+    "complete_results_file": true
+  },
+  {
+    "batch": "native-negation-boundary",
+    "records": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "HN_guard",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 30.67,
+        "draft_sha256": "2e216ceba1bbcce7c06f91f2e12f2e4ebdb00d886fee49e127f81e0ccb3c331f"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "HN_guard",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 66.66,
+        "draft_sha256": "2378090f6717f501aceb3760924bc14a2df3f93392d3f45bbac9a42535c4475f"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 61.87,
+        "draft_sha256": "343313ccc7def0e4dbd5eaad6c8b79c04527878f5115e471ef18fe79691dec1b"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 61.76,
+        "draft_sha256": "0288628315caba4d5403669876e023a2845862e7b91012d7798404e254bcc7d5"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "HN_guard",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 20.92,
+        "draft_sha256": "5ae54859b30c0793f9e3fa2692e7c5caf21d46834eb030548c8f81167588d9c3"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "HN_guard",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 15.21,
+        "draft_sha256": "f4dc20e1265f4d6d8f999456f33b9bf135e153add66b594071e0c61202f88ec7"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "baseline",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 65.68,
+        "draft_sha256": "62fbbd872498edd6dcbe8ba019d936e190ad78a710117b10e902e4db9989a35e"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 20.64,
+        "draft_sha256": "f8121334cbf60840976cd847d95e80a613450dac504c019a3745dfdc0393b8d7"
+      }
+    ],
+    "complete_results_file": true
+  },
+  {
+    "batch": "native-final-negation",
+    "records": [
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 68.46,
+        "draft_sha256": "ba8be8b40b3e2c57632d4d2616a784d3a3e8f1eb8df06a6fdeafa515129c1a69"
+      },
+      {
+        "model": "alibaba-token-plan/qwen3.8-flash",
+        "effort": "max",
+        "case": "review_result_guard",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 125.56,
+        "draft_sha256": "c1f28ae0eb6905a5be65e6a01a8943db8dcfe2357068450994167f60562ce25b"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "N2_rewrite",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 38.79,
+        "draft_sha256": "8b18443d0f40ffada75ccb7ffedd882ef0bae69ed31f295be7657bcd2b38ceb4"
+      },
+      {
+        "model": "minimax-cn/MiniMax-M3",
+        "effort": "max",
+        "case": "review_result_guard",
+        "arm": "candidate",
+        "returncode": 0,
+        "invalid": [],
+        "seconds": 15.41,
+        "draft_sha256": "c3a3f7895458824a55f0928bff24f92b0d2f0918fd6146a422b4dd6c5cbbe6ea"
+      }
+    ],
+    "complete_results_file": true
+  }
+]

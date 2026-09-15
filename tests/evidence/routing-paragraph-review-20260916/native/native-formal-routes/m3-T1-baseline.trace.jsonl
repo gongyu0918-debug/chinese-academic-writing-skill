@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a0a712-266e-7121-8d0c-edd62fd36010"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "我先读一下 skill 的 SKILL.md，按里面的流程处理。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 29690, "cached_input_tokens": 20096, "cache_write_input_tokens": 0, "output_tokens": 685, "reasoning_output_tokens": 0}}

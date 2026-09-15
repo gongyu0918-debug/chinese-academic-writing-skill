@@ -1,0 +1,44 @@
+{
+  "main_commit": "46e7532c43c7f27a9a3a2f2d66bc37907064c428",
+  "candidate_head": "46e7532c43c7f27a9a3a2f2d66bc37907064c428",
+  "fingerprints": {
+    "baseline": "e4a56c508218baaecb753a51ce1889ab201a5a6dbe1f40938910b1966d7629a4",
+    "candidate": "3668c32bf54f9c7aa393b1e3a094fdac2f9e07eb8637d0b118c0eb8c9f1f7dcc"
+  },
+  "models": [
+    "alibaba-token-plan/qwen3.8-flash",
+    "minimax-cn/MiniMax-M3"
+  ],
+  "cases": {
+    "P2_proposal": "开题报告逐段写，先给‘已有研究基础’这一段，150—220字，暂时不要展开后面的研究安排。题目为《地方博物馆馆藏说明文本的叙事组织》。作者已整理某馆公开展陈手册的2020年和2024年两个版本，并标出其中都出现的24件藏品条目；已核对两版条目标题和排列顺序，还未比较具体措辞。导师已同意把这24件藏品说明作为研究对象。后续计划是比较同件藏品在两版文本中的叙述顺序，具体分析类别下次讨论。本次只输出所要的一段正文。",
+    "N2_rewrite": "请润色下面论文的两段讨论，删掉多余重复，表达自然简洁，保持材料原意与必要限制。只交改后正文。原始记录为：12名受访者中，8人提到办理进度可见能减少反复咨询，4人表示仍需电话确认；访谈仅询问使用体验，没有测量等待时间，研究没有跨机构样本。底稿：‘访谈材料表明，办理进度的可见性与受访者的咨询体验相联系。12名受访者中，8人认为查看进度能减少反复咨询，4人表示仍需电话确认。因此，进度可见性可能有助于受访者判断是否需要继续询问。这不等于手续已经缩减，也不能说明窗口数量有所增加，亦不能说明部门间资源实现整合。\n\n从信息需求看，8名受访者的回答集中于是否还需要再次询问，4名受访者则保留电话确认。这一差异提示，进度展示提供了判断线索，但部分受访者仍需要进一步确认。这里讨论的是主观咨询体验，访谈没有测量等待时间，因此不能把回答解释为办理速度已经提高。本研究不讨论全体居民，也不说明所有机构都具有相同情况，不涉及不同城市的长期发展，更不承诺改革成效。’",
+    "chain_scope": "请按论文段落分工只写当前一段，180字以内。前一段已交代两年数据来自归档邮件，本段评价转交频次是否下降：2014年36封归档邮件中12封有转交，2016年40封中5封有转交；2014年只保存已结案邮件，2016年保存全部邮件。下段才介绍归档制度变化经过。写好后请独立复核段落职责、逻辑、重复与语言，按意见修改，只交本段正文。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\12219cbfbcbddde7\\codex.exe",
+  "cli_version": "codex-cli 0.154.0-alpha.6.2",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-native-v2-review-yteuarqm",
+  "permissions": "inherited-host-config",
+  "timeout": 420,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "snapshot",
+  "baseline_source": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\worktrees\\routing-paragraph-review-20260916\\.release\\trial\\baseline-skill",
+  "candidate_source": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\worktrees\\routing-paragraph-review-20260916\\.release\\trial\\candidate-r2-skill",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": null,
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "9b35fc6e1b32e50698f35f8244631966dac67bc2b53e4ce56ef697c967b0a2ac",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。\n\n本目录文本文件为 UTF-8 编码，读取时显式指定 UTF-8 解码。\n\n",
+  "ordinary_only": false,
+  "utf8_read": true,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": true,
+    "max_threads": 3,
+    "max_depth": 1,
+    "child_model": "same selected writer model",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  }
+}

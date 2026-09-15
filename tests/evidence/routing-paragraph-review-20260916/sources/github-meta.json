@@ -1,0 +1,52 @@
+[
+  {
+    "repo": "nagameTW/humanizer-zh-tw",
+    "commit": "12087742fbad6a971d7c3c65b79e846034018772",
+    "path": "SKILL.md",
+    "url": "https://raw.githubusercontent.com/nagameTW/humanizer-zh-tw/12087742fbad6a971d7c3c65b79e846034018772/SKILL.md",
+    "permalink": "https://github.com/nagameTW/humanizer-zh-tw/blob/12087742fbad6a971d7c3c65b79e846034018772/SKILL.md",
+    "fetched_utc": "2026-09-15T21:37:30.444530+00:00",
+    "sha256": "a187a3d66a586ee61aa46c7ceaa9eca178af7fe5dd233fbc6caaad289345addc",
+    "local": "nagameTW__humanizer-zh-tw__SKILL.md"
+  },
+  {
+    "repo": "nagameTW/humanizer-zh-tw",
+    "commit": "12087742fbad6a971d7c3c65b79e846034018772",
+    "path": "PATTERNS.md",
+    "url": "https://raw.githubusercontent.com/nagameTW/humanizer-zh-tw/12087742fbad6a971d7c3c65b79e846034018772/PATTERNS.md",
+    "permalink": "https://github.com/nagameTW/humanizer-zh-tw/blob/12087742fbad6a971d7c3c65b79e846034018772/PATTERNS.md",
+    "fetched_utc": "2026-09-15T21:37:31.275588+00:00",
+    "sha256": "1e5b43033474b6ffdef4781d164a9e56f07fbdfbcfbe049b60eb675d829da792",
+    "local": "nagameTW__humanizer-zh-tw__PATTERNS.md"
+  },
+  {
+    "repo": "Right-068/gongwen-writing-suite",
+    "commit": "d328baea551c6f10eda0959cd5aa372f4622fd89",
+    "path": "gongwen-writing-suite/SKILL.md",
+    "url": "https://raw.githubusercontent.com/Right-068/gongwen-writing-suite/d328baea551c6f10eda0959cd5aa372f4622fd89/gongwen-writing-suite/SKILL.md",
+    "permalink": "https://github.com/Right-068/gongwen-writing-suite/blob/d328baea551c6f10eda0959cd5aa372f4622fd89/gongwen-writing-suite/SKILL.md",
+    "fetched_utc": "2026-09-15T21:37:33.243353+00:00",
+    "sha256": "5317a14a34ff62ab1a525d64d61be8dbe8177823e78aa9bc29941cff9014dd02",
+    "local": "Right-068__gongwen-writing-suite__gongwen-writing-suite__SKILL.md"
+  },
+  {
+    "repo": "Right-068/gongwen-writing-suite",
+    "commit": "d328baea551c6f10eda0959cd5aa372f4622fd89",
+    "path": "gongwen-writing-suite/references/drafting-workflow.md",
+    "url": "https://raw.githubusercontent.com/Right-068/gongwen-writing-suite/d328baea551c6f10eda0959cd5aa372f4622fd89/gongwen-writing-suite/references/drafting-workflow.md",
+    "permalink": "https://github.com/Right-068/gongwen-writing-suite/blob/d328baea551c6f10eda0959cd5aa372f4622fd89/gongwen-writing-suite/references/drafting-workflow.md",
+    "fetched_utc": "2026-09-15T21:37:34.014827+00:00",
+    "sha256": "89194238580f6af05f708abd46edac0c4c66ae86d8038f8e21392780cf372c30",
+    "local": "Right-068__gongwen-writing-suite__gongwen-writing-suite__references__drafting-workflow.md"
+  },
+  {
+    "repo": "LeftCyberHander/gov-doc-skills",
+    "commit": "2da59538c38740baaf6e5c83c00d8a95f0079261",
+    "path": "references/style-guide.md",
+    "url": "https://raw.githubusercontent.com/LeftCyberHander/gov-doc-skills/2da59538c38740baaf6e5c83c00d8a95f0079261/references/style-guide.md",
+    "permalink": "https://github.com/LeftCyberHander/gov-doc-skills/blob/2da59538c38740baaf6e5c83c00d8a95f0079261/references/style-guide.md",
+    "fetched_utc": "2026-09-15T21:37:36.669155+00:00",
+    "sha256": "ba064222237db2579b0bfab37653a14bcca15c143f27c592d3e33aad8ce0f570",
+    "local": "LeftCyberHander__gov-doc-skills__references__style-guide.md"
+  }
+]

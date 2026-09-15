@@ -1,0 +1,5 @@
+2026-09-15T22:26:17.888741Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-09-15T22:26:17.921350Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-09-15T22:26:17.921409Z  WARN codex_core::client: falling back to HTTP
+2026-09-15T22:27:09.091145Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-09-15T22:27:09.091193Z  WARN codex_core::client: falling back to HTTP

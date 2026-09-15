@@ -1,0 +1,44 @@
+{
+  "main_commit": "46e7532c43c7f27a9a3a2f2d66bc37907064c428",
+  "candidate_head": "46e7532c43c7f27a9a3a2f2d66bc37907064c428",
+  "fingerprints": {
+    "baseline": "3668c32bf54f9c7aa393b1e3a094fdac2f9e07eb8637d0b118c0eb8c9f1f7dcc",
+    "candidate": "309a5fad4242b4b066fcc0703ed25d1e5d5207902c04990a9862c5f71ad78812"
+  },
+  "models": [
+    "alibaba-token-plan/qwen3.8-flash",
+    "minimax-cn/MiniMax-M3"
+  ],
+  "cases": {
+    "P2_proposal": "开题报告逐段写，先给‘已有研究基础’这一段，150—220字，暂时不要展开后面的研究安排。题目为《地方博物馆馆藏说明文本的叙事组织》。作者已整理某馆公开展陈手册的2020年和2024年两个版本，并标出其中都出现的24件藏品条目；已核对两版条目标题和排列顺序，还未比较具体措辞。导师已同意把这24件藏品说明作为研究对象。后续计划是比较同件藏品在两版文本中的叙述顺序，具体分析类别下次讨论。本次只输出所要的一段正文。",
+    "fresh_review": "请只审这两段课程论文，重点看整体结构、逻辑、重复和AI味，给简明意见，不代写。第一段的任务是报告结果，第二段是讨论。材料：某课程20人完成两次摘要练习，第二次有13人补齐了原文中的关键条件，7人仍有条件遗漏。没有记录改动原因，也没有测试迁移任务。原稿第一段：20人中，13人在第二次练习中补齐关键条件，7人仍有遗漏。第二段：从练习成效看，13人补齐条件，7人仍有遗漏。此次练习全面提高了学生的概括能力，学习机制日益完善。这不能说明全校学生都会受益，也不能证明所有任务都能完成，更不能说明长期能力得到改善。",
+    "T10": "现有提纲是“第一节 阅读表现；第二节 阅读效率的提升”。已有正文第一节：24名参与者在平面图上指认东入口，18人正确、6人误指服务台。第二节：本次任务只安排图上指认，未记录实际行走和完成时间。请结合两节正文检查提纲是否对应，只给修订提纲，每节用一句话说明职责，不重写正文。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\12219cbfbcbddde7\\codex.exe",
+  "cli_version": "codex-cli 0.154.0-alpha.6.2",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-native-v3-final-y48pjcc4",
+  "permissions": "inherited-host-config",
+  "timeout": 420,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "snapshot",
+  "baseline_source": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\worktrees\\routing-paragraph-review-20260916\\.release\\trial\\candidate-r2-skill",
+  "candidate_source": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\worktrees\\routing-paragraph-review-20260916\\.release\\trial\\candidate-r3-skill",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": null,
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "de64d16b880f7950c112850a563dc89d69d3866b6a7975cd5a700d229488ae45",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。\n\n本目录文本文件为 UTF-8 编码，读取时显式指定 UTF-8 解码。\n\n",
+  "ordinary_only": false,
+  "utf8_read": true,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": true,
+    "max_threads": 3,
+    "max_depth": 1,
+    "child_model": "same selected writer model",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  }
+}

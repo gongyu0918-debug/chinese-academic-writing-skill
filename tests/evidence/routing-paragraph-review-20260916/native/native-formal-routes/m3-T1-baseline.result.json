@@ -1,0 +1,23 @@
+{
+  "model": "minimax-cn/MiniMax-M3",
+  "effort": "max",
+  "case": "T1",
+  "arm": "baseline",
+  "returncode": 0,
+  "seconds": 8.43,
+  "invalid": [
+    "missing_skill_read_trace"
+  ],
+  "draft_sha256": "03a46ba4952f6c44332632acdef3bb0813f4f1d6717fd44b6f5bf725afb8f4f4",
+  "commands": [],
+  "usage": [
+    {
+      "input_tokens": 29690,
+      "cached_input_tokens": 20096,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 685,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "collaboration_items": []
+}

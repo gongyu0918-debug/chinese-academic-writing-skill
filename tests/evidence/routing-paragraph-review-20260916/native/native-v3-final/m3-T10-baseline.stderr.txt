@@ -1,0 +1,4 @@
+2026-09-15T22:11:16.392357Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-09-15T22:11:16.445511Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-09-15T22:11:16.445582Z  WARN codex_core::client: falling back to HTTP
+2026-09-15T22:12:13.638261Z  WARN codex_core::tasks: failed to flush rollout after emitting terminal turn event: thread 01a0a71f-d525-7b00-8e23-4fbf29fe7445 not found

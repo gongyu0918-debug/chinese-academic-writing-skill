@@ -1,0 +1,54 @@
+[
+  {
+    "id": "N01",
+    "case": "N2_rewrite",
+    "model_index": 0,
+    "A": {
+      "path": "native-negation-boundary/m0-N2_rewrite-candidate.final.txt",
+      "sha256": "0288628315caba4d5403669876e023a2845862e7b91012d7798404e254bcc7d5"
+    },
+    "B": {
+      "path": "native-negation-boundary/m0-N2_rewrite-baseline.final.txt",
+      "sha256": "343313ccc7def0e4dbd5eaad6c8b79c04527878f5115e471ef18fe79691dec1b"
+    }
+  },
+  {
+    "id": "N02",
+    "case": "N2_rewrite",
+    "model_index": 3,
+    "A": {
+      "path": "native-negation-boundary/m3-N2_rewrite-baseline.final.txt",
+      "sha256": "62fbbd872498edd6dcbe8ba019d936e190ad78a710117b10e902e4db9989a35e"
+    },
+    "B": {
+      "path": "native-negation-boundary/m3-N2_rewrite-candidate.final.txt",
+      "sha256": "f8121334cbf60840976cd847d95e80a613450dac504c019a3745dfdc0393b8d7"
+    }
+  },
+  {
+    "id": "N03",
+    "case": "HN_guard",
+    "model_index": 0,
+    "A": {
+      "path": "native-negation-boundary/m0-HN_guard-baseline.final.txt",
+      "sha256": "2e216ceba1bbcce7c06f91f2e12f2e4ebdb00d886fee49e127f81e0ccb3c331f"
+    },
+    "B": {
+      "path": "native-negation-boundary/m0-HN_guard-candidate.final.txt",
+      "sha256": "2378090f6717f501aceb3760924bc14a2df3f93392d3f45bbac9a42535c4475f"
+    }
+  },
+  {
+    "id": "N04",
+    "case": "HN_guard",
+    "model_index": 3,
+    "A": {
+      "path": "native-negation-boundary/m3-HN_guard-candidate.final.txt",
+      "sha256": "f4dc20e1265f4d6d8f999456f33b9bf135e153add66b594071e0c61202f88ec7"
+    },
+    "B": {
+      "path": "native-negation-boundary/m3-HN_guard-baseline.final.txt",
+      "sha256": "5ae54859b30c0793f9e3fa2692e7c5caf21d46834eb030548c8f81167588d9c3"
+    }
+  }
+]

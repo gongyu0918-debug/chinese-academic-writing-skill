@@ -1,0 +1,42 @@
+{
+  "main_commit": "46e7532c43c7f27a9a3a2f2d66bc37907064c428",
+  "candidate_head": "46e7532c43c7f27a9a3a2f2d66bc37907064c428",
+  "fingerprints": {
+    "baseline": "309a5fad4242b4b066fcc0703ed25d1e5d5207902c04990a9862c5f71ad78812",
+    "candidate": "d42a16014ac7a45c073ce7df0fe779f38484739c982642627f386ce718c8e1e0"
+  },
+  "models": [
+    "minimax-cn/MiniMax-M3"
+  ],
+  "cases": {
+    "fresh_review": "请只审这两段课程论文，重点看整体结构、逻辑、重复和AI味，给简明意见，不代写。第一段的任务是报告结果，第二段是讨论。材料：某课程20人完成两次摘要练习，第二次有13人补齐了原文中的关键条件，7人仍有条件遗漏。没有记录改动原因，也没有测试迁移任务。原稿第一段：20人中，13人在第二次练习中补齐关键条件，7人仍有遗漏。第二段：从练习成效看，13人补齐条件，7人仍有遗漏。此次练习全面提高了学生的概括能力，学习机制日益完善。这不能说明全校学生都会受益，也不能证明所有任务都能完成，更不能说明长期能力得到改善。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\12219cbfbcbddde7\\codex.exe",
+  "cli_version": "codex-cli 0.154.0-alpha.6.2",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-native-v4-technical-retry-ir9e1188",
+  "permissions": "inherited-host-config",
+  "timeout": 360,
+  "candidate_only": true,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "snapshot",
+  "baseline_source": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\worktrees\\routing-paragraph-review-20260916\\.release\\trial\\candidate-r3-skill",
+  "candidate_source": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\worktrees\\routing-paragraph-review-20260916\\.release\\trial\\candidate-r4-skill",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": null,
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "62f548031e7786c3c2beacea26fb31439baecc5681fd1481e617b619d7b04627",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。\n\n本目录文本文件为 UTF-8 编码，读取时显式指定 UTF-8 解码。\n\n",
+  "ordinary_only": false,
+  "utf8_read": true,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": true,
+    "max_threads": 3,
+    "max_depth": 1,
+    "child_model": "same selected writer model",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  }
+}

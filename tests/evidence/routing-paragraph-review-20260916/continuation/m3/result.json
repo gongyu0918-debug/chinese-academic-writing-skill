@@ -1,0 +1,12 @@
+{
+  "model": "minimax-cn/MiniMax-M3",
+  "effort": "max",
+  "session_id": "01a0a71d-46f4-75e3-9964-9044fa3d9a36",
+  "source_batch": "native-v3-final",
+  "first_output_sha256": "24f51ed00cc7fea29eac8aaab2b4b7922f3eea4a9391f046507ccc5ab194c8c3",
+  "first_output_unchanged": true,
+  "returncode": 0,
+  "error": null,
+  "seconds": 13.74,
+  "second_output_exists": true
+}

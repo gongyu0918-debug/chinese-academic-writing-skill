@@ -1,0 +1,32 @@
+{
+  "arm": "paragraph-only",
+  "task_id": "HP_scope",
+  "kind": "paragraph_guard",
+  "provider": "minimax",
+  "requested_model": "minimax-cn/MiniMax-M3",
+  "reasoning_effort": "high",
+  "retry_count": 0,
+  "request_sha256": "5b9a1d2bec5f1af296e12721803ec0169d0aaafc7a9eb5d3496660c511788c0e",
+  "skill_files": {
+    "SKILL.md": "515716638928d886c620e45f3bdcf7bb212ea3910b3096f53ef5baff48d07c3a",
+    "references/academic-writing.md": "7993feb0a640f65a510ccd604bf0bee3897aaf9a75b9cfffbfece040bb87810c"
+  },
+  "status": "completed",
+  "returned_model": "MiniMax-M3",
+  "usage": {
+    "input_tokens": 3510,
+    "output_tokens": 4276,
+    "total_tokens": 7786,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "final_chars": 153,
+  "final_sha256": "9d45a5faf66295a11deacce7f27846eb8a54f834a37097a9d21848bd48c5fc8b",
+  "response_sha256": "a7c7c8c4756c357b32384ea808d1d9fa3dca4293195322057b768a5629659672",
+  "valid": true,
+  "seconds": 25.27
+}

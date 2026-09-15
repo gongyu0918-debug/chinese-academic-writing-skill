@@ -13,7 +13,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CHECKER_PATH = ROOT / "tools" / "check_language_hygiene_outputs.py"
 CASES_PATH = ROOT / "tests" / "fixtures" / "language-hygiene-smoke.jsonl"
-SKILL_PATH = ROOT / "chinese-academic-writing-assistant" / "SKILL.md"
 
 SPEC = importlib.util.spec_from_file_location(
     "check_language_hygiene_outputs", CHECKER_PATH
@@ -211,47 +210,8 @@ class LanguageHygieneTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.cases = CHECKER.load_cases(CASES_PATH)
 
-    def test_fixture_has_seven_complementary_cases(self) -> None:
+    def test_legacy_fixture_has_seven_case_identifiers(self) -> None:
         self.assertEqual({f"H{number:02d}" for number in range(1, 8)}, set(self.cases))
-        focuses = {
-            focus for case in self.cases.values() for focus in case["semantic_focus"]
-        }
-        for expected in (
-            "false-contrast",
-            "mechanical-repetition",
-            "necessary-negation",
-            "genuine-comparison",
-            "direct-quotation",
-            "production-label-leak",
-            "repeated-boundary",
-            "tail-note",
-            "review-only",
-        ):
-            self.assertIn(expected, focuses)
-        self.assertIn("未编码材料", self.cases["H06"]["immutable_literals"])
-        self.assertNotIn(
-            "未编码材料不进入本次分析",
-            self.cases["H06"]["immutable_literals"],
-        )
-
-    def test_runtime_prompt_defines_contextual_local_rewrite_layer(self) -> None:
-        skill = SKILL_PATH.read_text(encoding="utf-8")
-        anti_ai = (
-            SKILL_PATH.parent / "references" / "anti-ai-writing.md"
-        ).read_text(encoding="utf-8")
-        runtime = skill + anti_ai
-        for marker in (
-            "先看全文分布，再回到单处语义",
-            "命中和次数只用于定位，不能直接判错",
-            "材料没有被否定对象",
-            "只改确认存在问题的局部",
-            "不得增加 `--fix` 或依据 finding 批量替换",
-            "研究状态、否定范围和论断强度",
-            "无法确认或无法安全改写时保留原句",
-            "不是第四种任务叶",
-            "只输出正文时，不输出候选或检查过程",
-        ):
-            self.assertIn(marker, runtime)
 
     def test_candidate_frequency_is_observation_not_failure(self) -> None:
         text = (

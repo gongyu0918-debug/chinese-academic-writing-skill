@@ -1,0 +1,4 @@
+2026-09-15T22:10:12.105349Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-09-15T22:10:12.157386Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-09-15T22:10:12.157433Z  WARN codex_core::client: falling back to HTTP
+2026-09-15T22:10:17.261580Z ERROR codex_core::tools::router: error=failed to parse function arguments: invalid type: string "10000", expected u64 at line 1 column 288

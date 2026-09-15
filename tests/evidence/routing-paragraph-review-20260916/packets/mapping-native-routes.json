@@ -1,0 +1,159 @@
+{
+  "mapping": [
+    {
+      "pair": "R01",
+      "side": "A",
+      "arm": "baseline",
+      "case": "T2",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "fdd6658ac4ae25e20dda951a38f69de4ba86921417ec9c7180832acdf224a501"
+    },
+    {
+      "pair": "R01",
+      "side": "B",
+      "arm": "candidate",
+      "case": "T2",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "402e6732a71b0d5f36a9cf4ff927c3c15fd8f5ec48466f4d9a1d1cb4a312a255"
+    },
+    {
+      "pair": "R02",
+      "side": "A",
+      "arm": "candidate",
+      "case": "T3",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "1285011ada7d69459aed8d9a7d5696a051db90653f4b030d49095c9a68dc5397"
+    },
+    {
+      "pair": "R02",
+      "side": "B",
+      "arm": "baseline",
+      "case": "T3",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "2a0b2ad74852eb28b9f5a107fc56a783caade4f8f7e6d82b270f9fe623076266"
+    },
+    {
+      "pair": "R03",
+      "side": "A",
+      "arm": "baseline",
+      "case": "T4",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "f2dd861881bc28b882faec02a0a835063f3025c5bb0ffa8af574dbd842d6a58c"
+    },
+    {
+      "pair": "R03",
+      "side": "B",
+      "arm": "candidate",
+      "case": "T4",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "d4a80b92404325c0a7654dadb63aa05212bb2bcd26cadf1116ca8815f640bf5d"
+    },
+    {
+      "pair": "R04",
+      "side": "A",
+      "arm": "baseline",
+      "case": "T5",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "8da7eb101eefae845de688d972896d5ed15e8ddcdaff941856f2ec79096c89a1"
+    },
+    {
+      "pair": "R04",
+      "side": "B",
+      "arm": "candidate",
+      "case": "T5",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "df1b506c191b14dcefc776cfb77363d58d7592ad3c696e424bc9ab12f0ea21d3"
+    },
+    {
+      "pair": "R05",
+      "side": "A",
+      "arm": "candidate",
+      "case": "T6",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "25ce4ea15ba7ff9c32a7464732f29fd661d3e70d75170cad707281cb5518d70a"
+    },
+    {
+      "pair": "R05",
+      "side": "B",
+      "arm": "baseline",
+      "case": "T6",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "ae4b7287d5ff2e856952d5f68a804c8d4f11da40f3620b2c10a22eeab2eb5a53"
+    },
+    {
+      "pair": "R06",
+      "side": "A",
+      "arm": "baseline",
+      "case": "T7",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "880317cd8827df97a8f95a8d4d86e25ad3e72012fa0f9a70013b65ac74f4a1ac"
+    },
+    {
+      "pair": "R06",
+      "side": "B",
+      "arm": "candidate",
+      "case": "T7",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "5d0846b28c6b867f561e1b9f63cc05c4a2abbec3ce15ac1a253450f22fa57ee2"
+    },
+    {
+      "pair": "R07",
+      "side": "A",
+      "arm": "candidate",
+      "case": "T8",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "ab382f27b51e0b19eac69aa03ba664c87c422b1e381ddc83de42c8fa55f2d1ea"
+    },
+    {
+      "pair": "R07",
+      "side": "B",
+      "arm": "baseline",
+      "case": "T8",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "9a8027b2cbc043393326a9642ef27c4cf634b51f560dfcbefb4ee34711cddb8b"
+    },
+    {
+      "pair": "R08",
+      "side": "A",
+      "arm": "baseline",
+      "case": "T9",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "1eb408e0149437a36ebb1c0a4d4df10690a693449e0d468d1a39f07b8ea807d3"
+    },
+    {
+      "pair": "R08",
+      "side": "B",
+      "arm": "candidate",
+      "case": "T9",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "a64fbf81cc4f391b9397896d5e910337e24939e4991bbf2594a9b1f50836f60d"
+    },
+    {
+      "pair": "R09",
+      "side": "A",
+      "arm": "baseline",
+      "case": "chain_scope",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "4721801714995fdd0d7cd2fe559e4b70f4bd1ce44a2733bb4b31af419a426e43"
+    },
+    {
+      "pair": "R09",
+      "side": "B",
+      "arm": "candidate",
+      "case": "chain_scope",
+      "model": "minimax-cn/MiniMax-M3",
+      "sha256": "1a3656cbdc5250e78e67dba0919965d200c1bb2264f5dad09bbe4c4c0238ed1a"
+    }
+  ],
+  "excluded": [
+    {
+      "case": "T1",
+      "invalid": {
+        "baseline": [
+          "missing_skill_read_trace"
+        ],
+        "candidate": []
+      }
+    }
+  ]
+}

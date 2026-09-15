@@ -1,0 +1,33 @@
+{
+  "arm": "negation-only",
+  "task_id": "HN_result",
+  "kind": "negative_holdout",
+  "provider": "minimax",
+  "requested_model": "minimax-cn/MiniMax-M3",
+  "reasoning_effort": "high",
+  "retry_count": 0,
+  "request_sha256": "f9f4621d33f2052e331c8e5f247c40cd06b6642ac3e561f4acf9fd23c8d23bed",
+  "skill_files": {
+    "SKILL.md": "9d668fb63e87039f87086f383a8f86e5fefa9d30b5a1618b851f736002fd023a",
+    "references/academic-writing.md": "7993feb0a640f65a510ccd604bf0bee3897aaf9a75b9cfffbfece040bb87810c",
+    "references/anti-ai-writing.md": "78023e807d2a9048fbd562a298db5b6e9407dabfbbf3eabc09cbcb22fb879ffa"
+  },
+  "status": "completed",
+  "returned_model": "MiniMax-M3",
+  "usage": {
+    "input_tokens": 4698,
+    "output_tokens": 849,
+    "total_tokens": 5547,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 758
+    }
+  },
+  "final_chars": 154,
+  "final_sha256": "27b7b1ae0177e5c17c9767a537270557bb69ca10ce766e5ee7432cdda059b59a",
+  "response_sha256": "ed1dbd55678081045056afb52c0766b502ec2041aa7985a63d11f8c678367ae9",
+  "valid": true,
+  "seconds": 3.92
+}

@@ -1,0 +1,13 @@
+2026-09-15T22:05:05.528762Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-09-15T22:05:05.582138Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-09-15T22:05:05.582195Z  WARN codex_core::client: falling back to HTTP
+2026-09-15T22:05:08.780973Z ERROR codex_core::tools::router: error=failed to parse function arguments: invalid type: string "10000", expected usize at line 1 column 139
+2026-09-15T22:05:11.347054Z ERROR codex_core::tools::router: error=failed to parse function arguments: invalid type: string "10000", expected usize at line 1 column 139
+2026-09-15T22:06:26.438243Z ERROR codex_core::tools::router: error=Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T22:06:26.443229Z ERROR codex_core::util: in-flight tool future failed during drain: Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T22:06:28.952628Z ERROR codex_core::tools::router: error=Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T22:06:28.957385Z ERROR codex_core::util: in-flight tool future failed during drain: Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T22:06:35.438111Z ERROR codex_core::tools::router: error=Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T22:06:35.443553Z ERROR codex_core::util: in-flight tool future failed during drain: Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T22:06:39.146371Z ERROR codex_core::tools::router: error=Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T22:06:39.151222Z ERROR codex_core::util: in-flight tool future failed during drain: Fatal error: tool apply_patch invoked with incompatible payload

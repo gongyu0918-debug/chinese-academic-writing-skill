@@ -7,8 +7,6 @@ ROOT = Path(__file__).resolve().parents[1]
 POLICY_PATH = ROOT / "tools" / "skillhub-package-policy.json"
 LICENSE_PATH = ROOT / "LICENSE"
 README_PATH = ROOT / "README.md"
-HANDOFF_PATH = ROOT / "HANDOFF.md"
-RELEASE_NOTES_PATH = ROOT / "tests" / "evidence" / "v0.1.4-release-gate" / "RELEASE-NOTES.md"
 RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.0.9-release-gate" / "RELEASE-RECEIPT.json"
 V010_RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.1.0-release-gate" / "RELEASE-RECEIPT.json"
 V011_RELEASE_RECEIPT_PATH = ROOT / "tests" / "evidence" / "v0.1.1-release-gate" / "RELEASE-RECEIPT.json"
@@ -23,8 +21,6 @@ class ReleasePolicyTests(unittest.TestCase):
         cls.package = cls.policy["skillhub_package"]
         cls.package_root = ROOT / cls.package["root"]
         cls.readme = README_PATH.read_text(encoding="utf-8")
-        cls.handoff = HANDOFF_PATH.read_text(encoding="utf-8")
-        cls.release_notes = RELEASE_NOTES_PATH.read_text(encoding="utf-8")
         cls.release_receipt = json.loads(RELEASE_RECEIPT_PATH.read_text(encoding="utf-8"))
         cls.v010_release_receipt = json.loads(
             V010_RELEASE_RECEIPT_PATH.read_text(encoding="utf-8")
@@ -45,7 +41,6 @@ class ReleasePolicyTests(unittest.TestCase):
         )
         self.assertEqual([], self.policy["excluded_publish_targets"])
         self.assertIn("clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant", self.readme)
-        self.assertIn("GitHub、skillhub.cn 与 ClawHub", self.handoff)
 
     def test_project_and_skillhub_metadata_use_mit(self) -> None:
         self.assertEqual("MIT", self.policy["license"])
@@ -60,26 +55,6 @@ class ReleasePolicyTests(unittest.TestCase):
             {"github": "MIT", "skillhub.cn": "MIT", "clawhub": "MIT-0"},
             self.policy["channel_licenses"],
         )
-        self.assertEqual("[MIT](LICENSE)", self.readme.partition("## 开源许可")[2].strip())
-
-    def test_real_writing_precedes_engineering_gates(self) -> None:
-        self.assertIn("不先新增解析器、胶水代码或工程门", self.readme)
-        self.assertIn("与 DIFF 无关的模型波动和技术故障只记录，不计候选回退", self.handoff)
-        self.assertIn("才补与已观察行为直接相关的最小确定性测试、胶水和发布门", self.handoff)
-        self.assertIn("样本不足时增加全新真实写稿", self.readme)
-        self.assertIn("最终只作“合并”或“取消”", self.readme)
-        self.assertIn("拆出最小修正并用新鲜样本复测", self.handoff)
-
-    def test_public_copy_does_not_expose_release_commands(self) -> None:
-        public_copy = self.readme + self.handoff + self.release_notes
-        for marker in (
-            "build_skillhub_package.py",
-            "skills_store_cli.py",
-            "--dry-run",
-            "--output-dir",
-            "--zip",
-        ):
-            self.assertNotIn(marker, public_copy)
 
     def test_skillhub_frontmatter_is_minimal_and_has_no_homepage(self) -> None:
         metadata = self.package["derived_frontmatter"]
@@ -144,26 +119,9 @@ class ReleasePolicyTests(unittest.TestCase):
         )
         self.assertEqual([".release/**"], self.policy["local_only_surfaces"])
 
-    def test_v008_clawhub_release_remains_a_historical_fact(self) -> None:
-        historical = "0.0.8 已发布到 GitHub（tag v0.0.8）、ClawHub 与 skillhub.cn"
-        self.assertIn(historical, self.readme)
-        self.assertIn("版本 0.0.8 已发布至 GitHub（tag v0.0.8）、ClawHub 与 skillhub.cn", self.handoff)
-
-    def test_current_release_copy_matches_the_package_and_evidence_boundary(self) -> None:
+    def test_published_version_badge_and_install_identifier(self) -> None:
         self.assertIn("version-0.1.4-blue", self.readme)
         self.assertIn("chinese-academic-writing-assistant@0.1.4", self.readme)
-        historical_notes = (ROOT / "tests" / "evidence" / "v0.1.3-release-gate" / "RELEASE-NOTES.md").read_text(encoding="utf-8")
-        combined = self.readme + historical_notes
-        for marker in (
-            "ClawHub 按平台规则采用 MIT-0",
-            "材料支持的作者分析与新增经验事实",
-            "25 个可比较逻辑配对",
-            "候选 16 胜、基线 8 胜、平 1",
-            "没有确认候选独有",
-            "只在普通论文专项叶增加 273 个字符",
-            "图片不进入运行包",
-        ):
-            self.assertIn(marker, combined)
 
     def test_v009_public_receipt_binds_both_release_surfaces(self) -> None:
         receipt = self.release_receipt

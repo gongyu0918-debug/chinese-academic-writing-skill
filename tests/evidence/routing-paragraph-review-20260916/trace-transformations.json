@@ -1,0 +1,602 @@
+[
+  {
+    "source": "native-formal-initial/m0-N2_rewrite-baseline.trace.jsonl",
+    "raw_sha256": "5cb512c4d3ea0388a98ea04d3cd9396e14e6f5d5a7ac115213399afd2220a39b",
+    "retained_sha256": "71b5b68179eb082d952f5f4ceb7c063c0f0f1c711575d9f4bf5b7c3e12453b11",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m0-N2_rewrite-candidate.trace.jsonl",
+    "raw_sha256": "12c5ccda7b2541bbc24cd01330372508e20f9633ab83903a1d5de319c487248d",
+    "retained_sha256": "c4d488fbd60ec2e82586f321fcaf046fd598de5131c4ac158dd87361d217c2ca",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m0-P1_paragraph-baseline.trace.jsonl",
+    "raw_sha256": "95ca455fb7feb7d455012bf6b8d39a74347da53b33439620d04ce6ff8d5cbb1d",
+    "retained_sha256": "accee6a46963b20c1bc1e4fcbf7d856e657b93decd037f3f26d5bc40dec80cea",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m0-P1_paragraph-candidate.trace.jsonl",
+    "raw_sha256": "dae4183870d1bc1dedf46c35416fb3c989327129a24b661ee74896c05faf450f",
+    "retained_sha256": "04a73aae93f6560e6b7b1d6b3949d9f31c8a8c8c136c76e00f6b6a48dd88445f",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m1-N2_rewrite-baseline.trace.jsonl",
+    "raw_sha256": "751386bd6aed2f5e4a52ecd53c3fa34db59fdd7d75fad153e434c4f963b648bb",
+    "retained_sha256": "85e54ddc07bb9e072c7726b3ad7f16b9ffffcb5c6492e75c05a57e47822a0b60",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m1-N2_rewrite-candidate.trace.jsonl",
+    "raw_sha256": "6140a918d2b9fcfa89c78db7bdf79276c1a84aac2e67b461dae531f0c7bc3641",
+    "retained_sha256": "58d417d440e9a3c1d32f132341c71176fd130f814b27a354a74b2243ad0732df",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m1-P1_paragraph-baseline.trace.jsonl",
+    "raw_sha256": "5b7667c58ba2c5844dc2c9311f09d6c630747bbd80886ce4911bc845bda92be0",
+    "retained_sha256": "72090bce199b3063fa681f0cee17efc6c15d6d3715cd8677a38d14716ee2e144",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m1-P1_paragraph-candidate.trace.jsonl",
+    "raw_sha256": "356fc64daaca275b2484941ef8ab7a4fabecc7ef046a1f2c354c9421721b1745",
+    "retained_sha256": "7a56c6641fab3741830e7d8e3eed4ff21988cf05c1ea5a42d049816140452502",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m2-N2_rewrite-baseline.trace.jsonl",
+    "raw_sha256": "0883b5a03cdbe05c57842dd517e4e7d2c9781a3f17d2fdb28d58aeda8cbb4a22",
+    "retained_sha256": "9e814da06e5f3721696d5eb7c3df7096e6fcecc20f1579a416096e570aa6b6eb",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m2-N2_rewrite-candidate.trace.jsonl",
+    "raw_sha256": "75996e5a911abc599fa2deb1d1492d92cbb8b81bb12e1e014f2fd93b64f6b8de",
+    "retained_sha256": "cec861216bb5d4e63f4d655379cdd9aecebc55439a05c302e86f0f1038a1d924",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m2-P1_paragraph-baseline.trace.jsonl",
+    "raw_sha256": "c9a224a003cd83c7d24c54868842a66d1b0f00921e81ce50af19acd0bccfa940",
+    "retained_sha256": "163db550944ebe04c62ef756830ad83e74ba7a4ef1266f358bb0a9d1783dbac0",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m2-P1_paragraph-candidate.trace.jsonl",
+    "raw_sha256": "8dbb6ea22113c29be55430246ba93a51b480040e7f3831112616747810bb6b8f",
+    "retained_sha256": "50809d1b5a2a73404b4883509017969d0a7d823b5e52744f1ddadc172864ac48",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m3-N2_rewrite-baseline.trace.jsonl",
+    "raw_sha256": "207364990bd56fbe0b510491c1af8a6e2720570165bcf119e393f45c6347559b",
+    "retained_sha256": "62dad63343f126f9f24697e5249b1a02c0ce8d62700fd049d815e80034ad014b",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m3-N2_rewrite-candidate.trace.jsonl",
+    "raw_sha256": "085c14edb6fbf423ed32284dd606685c739ac4d5caa825c1dba2526e2e5ff51c",
+    "retained_sha256": "78d4743c7a19afff6ec74895c144aa81d96a314f62d725b4771cb17846e855c0",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m3-P1_paragraph-baseline.trace.jsonl",
+    "raw_sha256": "90207ba26d327d1ec08cb67c4c3c6f226311ac4efb580da8f61d82390512c59b",
+    "retained_sha256": "38a8d565658b9e03db2ce3e0e66b68b951c901fbb1e0f7d818a13df2ca3c25a0",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m3-P1_paragraph-candidate.trace.jsonl",
+    "raw_sha256": "33eb9b30738572708f86a5b5bbe5bba8b207ae745f162396b6a2bae952dc140c",
+    "retained_sha256": "bf2ed347e9a979872a9ce08eec35cf7f09de92cc1f48e590aa8301417710eaf9",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m4-N2_rewrite-baseline.trace.jsonl",
+    "raw_sha256": "dea9689c2ab4a9f78e7f81e7b6f843439743f679302102630b8bbc71d04a9b96",
+    "retained_sha256": "adf0fae6f9401f0d259f146967bd7714d9faff14c9f310d72b4137169b8dcfcd",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m4-N2_rewrite-candidate.trace.jsonl",
+    "raw_sha256": "9af5b58e41026645c9ba2f1a261798a58f57c454a9016452d01c91586bdfb5d1",
+    "retained_sha256": "a4e49662fa4fe0f0c62ea1ea262d6e16303179b455910ec0f3b595d02c90af51",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m4-P1_paragraph-baseline.trace.jsonl",
+    "raw_sha256": "307e314e3f040997ecee497a3a97a4064e1bb9386e78ad41166b274f0e57f797",
+    "retained_sha256": "834bbb066a63885708b7c0b88e4c8b22c2c822fd6af4d6cb375ffa49fd55be59",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-initial/m4-P1_paragraph-candidate.trace.jsonl",
+    "raw_sha256": "5f67be173a4ce60c6c881894c135c954462d5717ff2006db9310872f53637821",
+    "retained_sha256": "2f66f71b4a756efd66d1d4df7d79f1040ee5fc65597ee609c3201064ff0b42ed",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-chain_scope-baseline.trace.jsonl",
+    "raw_sha256": "759d8f762e41fcf989485a67875b2c09402c1bd1ac084221abaab479fc18c83d",
+    "retained_sha256": "ae475c389132d758a79082c447908ebe0702957a90a882cf450b460665f89368",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-chain_scope-candidate.trace.jsonl",
+    "raw_sha256": "2445fa582eb8efecc449f06aa1a36ae8704c8e23a22f49e3cec4208ef760c504",
+    "retained_sha256": "f034a720718a7540e19b842b9e7258817385293459c07197c30cdcef73956753",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T1-baseline.trace.jsonl",
+    "raw_sha256": "a4f14ab5a2d22fe7dba7ee3355123e048c255f7c24ce31c750cb9be90e85382d",
+    "retained_sha256": "0de61fe7f3addd2bb3b1fedaf02ad9dae80ba29632b347156a31983bcf2dbe53",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T1-candidate.trace.jsonl",
+    "raw_sha256": "94484bc35a80096f5c841f5af7319c6954213ae6da458d7cc11ea28110b443ea",
+    "retained_sha256": "2a7b83d7a1410b162c8fc80920ee5d563dc743157b2ee2be3b4b807c3d31d1d4",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T2-baseline.trace.jsonl",
+    "raw_sha256": "71e7e93584be8d7cb985f3d907d61046ac4124d614cab4d32cda700af184c2d4",
+    "retained_sha256": "6b4d2a144a964c819d23e430dfafdf97b3b213b353d21bb7e4345f2b0400c0d6",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T2-candidate.trace.jsonl",
+    "raw_sha256": "4b53e9a5a764eab570091bf4c6cd496b12b5d754098a0ac550079b26c59751a8",
+    "retained_sha256": "d23f77da2e78e6ed190f67823f5edce43cc1da0b7412ea87fb04725b3a4ab9d8",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T3-baseline.trace.jsonl",
+    "raw_sha256": "45824f52f03ee3d3c5469ee303f65fa3bb201876babb89af4437408486892598",
+    "retained_sha256": "f7d748b6f3f022682410745a6e24bb9536a33267f620df3e2c17218a4a7ac28a",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T3-candidate.trace.jsonl",
+    "raw_sha256": "1471ffbe733e97dc71dfb9592773ddc62e164ab47dc6c337a9687398bb7bc9c6",
+    "retained_sha256": "4b57796a85beec19f1a364b043b01edfca121035f7fdb83f68fb898929497009",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T4-baseline.trace.jsonl",
+    "raw_sha256": "2785feae943e18bacc8aeeeb4075ff29840cf860e33ff9b8d7979319659e8078",
+    "retained_sha256": "b984cf4458dc645eadc22544f672f9dfa7e0222776249b7892c1d0b3f4127ea0",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T4-candidate.trace.jsonl",
+    "raw_sha256": "03dca213b5581fb6fadde9d49077d0b1739f3309c75b162cdb56f146f8786ab1",
+    "retained_sha256": "b362e2d5edb7e01a5e6c9a9faac5b925b4349df7aea9d57d47413a52853aa5f4",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T5-baseline.trace.jsonl",
+    "raw_sha256": "2f97dc11943c44b2d249108b5a8ae99ceb6408b6fe03b0dce07f8eb543e42596",
+    "retained_sha256": "1e799e48cff3aa1e07f162f04bae8ff83d018ab62c9d616cabae20dd66963cee",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T5-candidate.trace.jsonl",
+    "raw_sha256": "31720a45c45d2183beb939517b5d3e724e7b07e7560ae8a6ee3e3612d7ff36e2",
+    "retained_sha256": "283469dc79ba8c7c84a8442375286679290be3751859a227c8ed8c54e6c6a334",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T6-baseline.trace.jsonl",
+    "raw_sha256": "a95e4bfaee5dacec49e4c201a9d1561a4726fb4e7df0f0c75dd7e0cd2a1621ae",
+    "retained_sha256": "e22e4a6b646c14b63d65fbd5babd58ba8932e02885262e17c636f8f0c753cab3",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T6-candidate.trace.jsonl",
+    "raw_sha256": "4030006cc644e875b3c20793fa9cfafdab5f49c466a70344e002f778fa27d1e1",
+    "retained_sha256": "36b3e7479411c377f6b3c556fdce3c04d62babb02960580ef1ccd6c121569995",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T7-baseline.trace.jsonl",
+    "raw_sha256": "732ac16b9cd61a1077688972b5be5d80981acf1aea9c1d45bdefcc716b2d15f3",
+    "retained_sha256": "5507dec231602722609a5be7a4f3fe8508b106af0be44aae533ddf45f0a415be",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T7-candidate.trace.jsonl",
+    "raw_sha256": "46e07e5f6e66e9059d13b7caadbc2a5815e30814820e9c9af576c840a9b7f172",
+    "retained_sha256": "e1f0060e5afc5e5fc9b00411777f0e12f420b1bd077f32c3a76a24b13737dd0e",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T8-baseline.trace.jsonl",
+    "raw_sha256": "422304060477e66d7112bd9e3751234cbbf0a8f31fe72ffafc3d1be082b7c639",
+    "retained_sha256": "4e62dffc6083e7b2b5c6e0f207e110a98a2ad9ed7b80ab917762dcd8b8920e43",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T8-candidate.trace.jsonl",
+    "raw_sha256": "4c8c114ff3a96ec8668cfe77867a2891d681e11f75c459948289c723cd73a1b3",
+    "retained_sha256": "21d3867c4922b44fae4724d6c810a793b1057ee86407ad7fd8d138a6af9b9412",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T9-baseline.trace.jsonl",
+    "raw_sha256": "2fe30d7a154253ecbec35994a35ed06707734d0c9fb1f0a260de87ae3ed6f2b6",
+    "retained_sha256": "e1f52fce3d0d96dc043929b207a2c8c55e42613844e9f0248df9bb94c497785c",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-formal-routes/m3-T9-candidate.trace.jsonl",
+    "raw_sha256": "3c765025e3e02424e1ff8e136a3b88b3cf990f3ded2c902f2d98c52c58081c3c",
+    "retained_sha256": "7dca24eea7c173e2b260e87cb4cacd43f8099ee3d73cf45382aa0993aea904d0",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m0-chain_scope-baseline.trace.jsonl",
+    "raw_sha256": "b88f8b929946cbe807e3a648ad0b7539357c8802d2bb0bc944bd0a72eb435e4f",
+    "retained_sha256": "a6965e449f28958e45bd14476e3d56529afc66326b83c9a59809ae53280bcff6",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m0-chain_scope-candidate.trace.jsonl",
+    "raw_sha256": "f7c088dca5cc5d1ccea7a8b02d53cf875dcffe391ba4a40879a0e747538239db",
+    "retained_sha256": "ca005fad850f6cbd99d4d3e534c7c0e00f22498e760a874f563c6f9fd34e60e7",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m0-N2_rewrite-baseline.trace.jsonl",
+    "raw_sha256": "006a6fe4cdbc876d39d27bd7971bd5eed9b6d47ad5648866c71ded6af3b6c275",
+    "retained_sha256": "bcbf45b11c3683127cd3173c9cb5588a6b98f0c719ff9aa1539c256f16bff750",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m0-N2_rewrite-candidate.trace.jsonl",
+    "raw_sha256": "5082dc66ec303a0556da46908ff18bcfe8f8ab8f4bb680eee62b0bd1a313a73c",
+    "retained_sha256": "742bc5ee4e76a60ab130d57ef465246868c7ce8c1482f42184cd07623e369c15",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m0-P2_proposal-baseline.trace.jsonl",
+    "raw_sha256": "a738234cde293aa2c45729d5f5ecb234de9e72b93cf724578f2b0840d41d69f4",
+    "retained_sha256": "7a86595d070423a67eaa12dfa4346e921a37722ff02064d4ea859b9e02f37296",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m0-P2_proposal-candidate.trace.jsonl",
+    "raw_sha256": "49b8841f6166a6078554933b34815535fedcf0006e1427255073c6b20832173c",
+    "retained_sha256": "ab5da98c4f0b1b53a844bc79915b8fce05606ceb900586362a4c1cabf81ffd77",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m3-chain_scope-baseline.trace.jsonl",
+    "raw_sha256": "ea213d5321940a7eda08ccc7a515368e7e2e4d86ae05d5d2de64ee7b2c9d7649",
+    "retained_sha256": "e94f36018ce884368c7ed976126b2b91a9e95a78464c5cad3f146380d838a197",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m3-chain_scope-candidate.trace.jsonl",
+    "raw_sha256": "fb0c15af684b09c294b256b15d032ff43cd574a5aaedad797cbc80bef576b6d8",
+    "retained_sha256": "3dcbefa99acca2c6a32bb62dfbddb27b03fc6ae002e73b431d94eccf25101a3a",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m3-N2_rewrite-baseline.trace.jsonl",
+    "raw_sha256": "02e140ff4c7571f7f8201a3298637cf6fbfb6ca3398eea021b65840bfad5816c",
+    "retained_sha256": "ae1100f59b145facde49a488aaf8f7a533c5bd4b78064275bb32696d441a7228",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m3-N2_rewrite-candidate.trace.jsonl",
+    "raw_sha256": "f968d31a0142dd77fc6c598c186dcb6c1d347bbf1234cc533408df4c739b7263",
+    "retained_sha256": "cef105e068d770956ae4b033bea5206eaca35be996dd9e919fc4417608ef757a",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m3-P2_proposal-baseline.trace.jsonl",
+    "raw_sha256": "cd4439968edd299a83cb48cae71cca478d3307899dd2fc554b83f4f65be96a46",
+    "retained_sha256": "9cb71a66af2ded7cea44f77a749ddd982d5d1dce17625391a4d570e2a9ab4e06",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v2-review/m3-P2_proposal-candidate.trace.jsonl",
+    "raw_sha256": "8ebc53346b3c18f22b285e362c5eaa6f7f269cc741764f9a3affae55c46e1b15",
+    "retained_sha256": "875bd0755af85dcb347e9798b8dc8e47f2224c4fdff6c9f5688bdd3868c9f502",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m0-fresh_review-baseline.trace.jsonl",
+    "raw_sha256": "f1dd1977e12df89569659529d5b4ea5b76c8e29e80cf6751aff8acff99daab5f",
+    "retained_sha256": "e2748531ff55461835abab47521ec11c30504a3c8ffe085f0f8eb4e1342f7845",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m0-fresh_review-candidate.trace.jsonl",
+    "raw_sha256": "9ce5c899f1ce005b510b998e470165368783ebf89097bbeb9c8b52edbfc41d23",
+    "retained_sha256": "420d843ea9c84ca98a2abdeb960b3731f0e335e2ac5f356d1414523642ac0740",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m0-P2_proposal-baseline.trace.jsonl",
+    "raw_sha256": "fee92fd0100f638d7b156983be4e6b5b7f9b34a43253f7190bd6423c149b13a7",
+    "retained_sha256": "53c1f8353b02db2c1644cb21cc702fec0e773c57dcf5ef0a398d99c55f0eae25",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m0-P2_proposal-candidate.trace.jsonl",
+    "raw_sha256": "1c40bc25f23a2718fc2a0c74debb7c542f26afb1a13ca31c33b5c69250d2078c",
+    "retained_sha256": "1b04581a7dad1ef8c924f1307bce589b5db09e68ce5a9b48a42d036ccae440ed",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m0-T10-baseline.trace.jsonl",
+    "raw_sha256": "8403863d95495672f7d1c05310e234848ef453fb7d1a1593ea89447089eb0fa2",
+    "retained_sha256": "9a653f49c2179176faff1ba87c1f8fc8cd791c724f134b796d61671e2b4fc75c",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m0-T10-candidate.trace.jsonl",
+    "raw_sha256": "cd2fd7e32332b7d85e230f93c6ac90d255c77650724a353f3012b205f5c0deeb",
+    "retained_sha256": "4da1f84bc3cc1dd339db1433097c15223fca11ec3e8449f41407023d9cae6b3d",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m3-fresh_review-baseline.trace.jsonl",
+    "raw_sha256": "6d4666706f5da87f4ea2d10c4b92a7f686d879de7d94e38936e379be72cf8fc2",
+    "retained_sha256": "f38bcb76290782f1eaf51175694c51ad2d694927609a190d59833d806a20e590",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m3-fresh_review-candidate.trace.jsonl",
+    "raw_sha256": "d734f422e1bdbe22d0fb9d28600c50e2ecb2ef08bab8e02100ba216d731f5526",
+    "retained_sha256": "a1589f2a713aea475f4feae194e3459b75f0d00fc2465d971716ded75f405b82",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m3-P2_proposal-baseline.trace.jsonl",
+    "raw_sha256": "fd0568a9fea4edfee5d8f749e3997d26afbbeee8ada5a0a61611e58eefc33e04",
+    "retained_sha256": "27803f0fedb9850b0c45f95c60f0b64b5f044f605aea968c407a504dcf06425d",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m3-P2_proposal-candidate.trace.jsonl",
+    "raw_sha256": "b0c0647415e1c912be6a3ab90274a1af99dc99f0a12b32e6e31f03bba70fd61e",
+    "retained_sha256": "40677d148bba31ef4dd97669e448983032d2167602eb3a7fbcb33d6bcccafa80",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m3-T10-baseline.trace.jsonl",
+    "raw_sha256": "5a70577abbc1dab5606c349b39f9c72a02d5877b2d758337a08433cba3446f82",
+    "retained_sha256": "e8717949e427aee85a2f7de7b21d31d71cc941ae29321c98e5b9bbc4c228921f",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v3-final/m3-T10-candidate.trace.jsonl",
+    "raw_sha256": "bfc8d6f3bfa806d12b3785f8e3b26ef6c343c259614fe0fc0f137b1662f54812",
+    "retained_sha256": "d389f43243cf4159c4bcea3217cb734fcd383ad80d0a1e89f944e05dc88b87c9",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v4-review-route/m0-fresh_review-baseline.trace.jsonl",
+    "raw_sha256": "5e5a8f562b2cc9bda12764e341316614037e71dc6119f0b8432618406e51a066",
+    "retained_sha256": "95dc58b3ccd69cdf4aaea807d50143b4908ed8047482482dc92e66be35d1f24d",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v4-review-route/m0-fresh_review-candidate.trace.jsonl",
+    "raw_sha256": "b0b23a788134d6cdc3998a9e782788609055fe9b0f1a6f8e0d338b2ad7765a77",
+    "retained_sha256": "b5f750f8cee2b1c442b719c2b6fe27424ab88f1eef4724875aabead59fd0010f",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v4-review-route/m0-review_result_guard-baseline.trace.jsonl",
+    "raw_sha256": "a4dcd61d041590dd489e1ef686f16ec8d28d26a7373ce1e7ccec6e5eef0120a5",
+    "retained_sha256": "472c0826490f643c28951df6ca0b8faf5a645c01a2d02d80e382f2d4496310a2",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v4-review-route/m0-review_result_guard-candidate.trace.jsonl",
+    "raw_sha256": "74c7c204bdde686c8019272cc679b3e82708496aaccb22bfd895c651e5699878",
+    "retained_sha256": "4541f9f7293f21e1ca1ab0b122559039e3e0d656b0cb0e702853740a41a984a0",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v4-review-route/m3-fresh_review-baseline.trace.jsonl",
+    "raw_sha256": "7233b66b46f159f46381199cd730fa87a2a3db96e51cbe8bac9ecff437312327",
+    "retained_sha256": "09f3a686fbd8c30c7e5ea13a0cdc8389d5cc2ba5c06f3cb0c5c0c5725a8835c3",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v4-review-route/m3-fresh_review-candidate.trace.jsonl",
+    "raw_sha256": "d2362821361ce6d7a9e3ae17cb8d5669475adf47a669cc2dcffc3c10e0e241ac",
+    "retained_sha256": "ccd1156d1bf9a09a78d5a3bc9c9df18e16cec226e9fc68b252902976c45a2135",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v4-review-route/m3-review_result_guard-baseline.trace.jsonl",
+    "raw_sha256": "c094366780d342789d8af4732db17dabb678622d8b0979e6b2b9b7c4701a7954",
+    "retained_sha256": "52ad1f421a2d5c5ad79a05f8cb524c115c434fdc7deef3ad00ff4414631509de",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v4-review-route/m3-review_result_guard-candidate.trace.jsonl",
+    "raw_sha256": "60d677394a62d4c9a698fb25f4d59c8087241a41366396cb059a2a9ab3b0431f",
+    "retained_sha256": "c14060e75237c22c6a65d54751a8bd8f43e886e46b1ba879df849b6e12736c81",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-v4-technical-retry/m3-fresh_review-candidate.trace.jsonl",
+    "raw_sha256": "305541ec2aa811a5f3b7c9e7b5d7d0628c3915cf8d9763002fa0b5b6bfaa5794",
+    "retained_sha256": "369cf2661148732fba411f8d2e21057db7ef23d05b677de8036dc93985c6c5c1",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-final-closure/m0-empty_review-candidate.trace.jsonl",
+    "raw_sha256": "dfcacff2d4608438ee09917f450b266f451a0658482c164fc176d7270e5f5b0b",
+    "retained_sha256": "2ff6cfbc992abb732096757a99d51cfcf4be1d5084f1b3d7c9f6e88bfc9ec0f0",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-final-closure/m0-T10-candidate.trace.jsonl",
+    "raw_sha256": "55c2d4d3135d644eddcc83681ebb835df810e8657e254510528ecdd9f236a20a",
+    "retained_sha256": "e663586b4970915038d7099be05f9397cfd430a96f1dd51a468ece056d81d616",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-final-closure/m0-T9-candidate.trace.jsonl",
+    "raw_sha256": "bd88aaf02bef4c1c54202fe27a47afe2ee31cf3c55914e1359fb05be4a5749f2",
+    "retained_sha256": "162b3e7395d80c4c8acd827a5a4e1e638cda918242860212cb683885fe5a3958",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-final-closure/m3-empty_review-candidate.trace.jsonl",
+    "raw_sha256": "c6a0e903764fcb159ac3867d561df8d16baa8c159995904cb6924d668242fb70",
+    "retained_sha256": "25167cc611fa1aa9460b6cdce3f963c4c35d6dd110cf714b42b268e8f3654b76",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-final-closure/m3-T10-candidate.trace.jsonl",
+    "raw_sha256": "3b4b43def0a6bdd0a370f63f8560a87aea0fa9ab87809358bd28e4c3d087e295",
+    "retained_sha256": "291b5e290a1619ef7ed7cafbd26fa7a09e8f2c2685df33a52301a08a5526d30e",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-final-closure/m3-T9-candidate.trace.jsonl",
+    "raw_sha256": "3e5288c7bb8a903b60150e4b190fbf95988866c20493737147b86dbaf55f3e11",
+    "retained_sha256": "f3b379706bf7fb55ca6957e8935a15fe7c883cc74228e1fabf8129d51540dbb5",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-negation-boundary/m0-HN_guard-baseline.trace.jsonl",
+    "raw_sha256": "bad6430f4c00694cedad261b3182b7bc9f961a1750b1faef8973223026dcd891",
+    "retained_sha256": "610d2521e6111d22fb4c753fa48abafab40ea066325bfb08e267a90a98b0c88a",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-negation-boundary/m0-HN_guard-candidate.trace.jsonl",
+    "raw_sha256": "717b01cfc18b73c8f4f5845981a70fe1759106b4b3da81bc0a6571a4e3a49cfd",
+    "retained_sha256": "cf393938b50bf6bc57908cf7e88edbc44cedad58db1c8784132fce9b65529d29",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-negation-boundary/m0-N2_rewrite-baseline.trace.jsonl",
+    "raw_sha256": "9b86f0c05bef6e0cfefa043cdef57025833a840890887c3b77d6a69420431ce8",
+    "retained_sha256": "a310b897b0183c93cec74c3e9520999880daa5a446cbf8a6dfcc4d73df0eadb2",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-negation-boundary/m0-N2_rewrite-candidate.trace.jsonl",
+    "raw_sha256": "0bf8ebb9aa6a4dd1ca4e404fd3bc4880df9d1c7bd88d8b480f0b472e77eb02c4",
+    "retained_sha256": "19e9fd5f14161cf0f7cd49d5c758dc8805f38f3842310d878f987fc3b782ef15",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-negation-boundary/m3-HN_guard-baseline.trace.jsonl",
+    "raw_sha256": "69f8b5b3903271eb7dd7086348071cdf8c635c5b2119be6495d2bd4e56a40df9",
+    "retained_sha256": "df2ce958abc6e62f6600072d38bcb9df25b658bcfabb16ec2d0895707f79f873",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-negation-boundary/m3-HN_guard-candidate.trace.jsonl",
+    "raw_sha256": "113194f886ea82250b9ad32fcfb6f555da46a30a10d019d339a18d7229017c65",
+    "retained_sha256": "4ea8fe459a28f0920e4ec8eb8eda518310c6c695a5530949fb1e679a58d2d637",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-negation-boundary/m3-N2_rewrite-baseline.trace.jsonl",
+    "raw_sha256": "13fe7c1654b4717e4e7f0fbb8dfab96ed4541d62ceb71b96654b3efe92e472cc",
+    "retained_sha256": "ec053df8ba06e332ffee5daa777740baa988b264d719c882d1d420999f0fe924",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-negation-boundary/m3-N2_rewrite-candidate.trace.jsonl",
+    "raw_sha256": "7c89311efd2240777642cf9e92d4155a921497aac4870d22a5e64d124d10ce61",
+    "retained_sha256": "7df098c5aad3ce72f289ad03d7eaa6d456389a2f1def822bd5c89731f702cf91",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-final-negation/m0-N2_rewrite-candidate.trace.jsonl",
+    "raw_sha256": "0e9d6dfb514231f3151127026904982d0d80c85bd93244e73b1df2adeb56a7dd",
+    "retained_sha256": "c39cffdef7933e179b3bf83c34a13efed1e1195cddd5b334de48969a424229ca",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-final-negation/m0-review_result_guard-candidate.trace.jsonl",
+    "raw_sha256": "957de8499970bb6cac108a2ca17b542778bbf21acf18075678c5f8ba678d834e",
+    "retained_sha256": "1a6a2554dda4d05769b5a9033db93c539bf9b968473c9336d9401b8b9cd6a0b4",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-final-negation/m3-N2_rewrite-candidate.trace.jsonl",
+    "raw_sha256": "8010f05594c37cf16e62b16c83aac9225223a664e8643b7f64975fffa4111a60",
+    "retained_sha256": "d848c9d6787a2a4d2d510c11f1c21657d9b33df7266102158cc0e1998fc9c314",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-final-negation/m3-review_result_guard-candidate.trace.jsonl",
+    "raw_sha256": "372bac6dc79f43f44c312ef10da985f5bbcacf9c1fec38b9d1fff9fe4b91dbb2",
+    "retained_sha256": "cd657c1f6c625f63f13d77c1892defd537e329eb33c116ff2bdd5f7b59a8b67e",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "cold-qwen-r2/trace.jsonl",
+    "raw_sha256": "2bedbdb1a5575bde36f0f1070c0465b9053a555909c5b15e54389ee78adc3d46",
+    "retained_sha256": "eaf0474cb8bec6fcda11c596b7378a302b25e04e6d0aa11d351105743e23f085",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "cold-kimi-r2/trace.jsonl",
+    "raw_sha256": "9e6748d8aa600cc5248a6656252485196f629cf4bcdfba31dea4304fc3ae1ab4",
+    "retained_sha256": "ca9dc44a0fbd73a271f5e24a9fb1998f6b64225e380a3ba83d91e8f3bf63ee22",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "cold-final-kimi/trace.jsonl",
+    "raw_sha256": "59c7a1f029d7aeceff718335498808ad90e7fac185dfc1ed630143b966e1902e",
+    "retained_sha256": "61732b0c79876c4236030297f4bde46a38558dc8670fd931845a1c20d6bd92bf",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "review-native-routes-kimi/trace.jsonl",
+    "raw_sha256": "327e1b492951dc74fe0fc19f4f548dfc9be72d0ef2781d2b83e149420fc2c891",
+    "retained_sha256": "7113c138a4b83b1711195d904f8155959bde21f223d8dd6da50d9f2d0a7aa89e",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "review-native-initial-qwen/trace.jsonl",
+    "raw_sha256": "0e64f1af1375ffbe01d6b9d5418bf8f129343a582cb5fece9368d7d980700cfb",
+    "retained_sha256": "27e4fd2f3339e38dfa8e50ff9b384704287544e2dd0a75988f5da9046f592714",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "review-native-final-kimi/trace.jsonl",
+    "raw_sha256": "7ef050e77c8bdfe8658bc6de85bee0a47079a303561075fc7d22aee5662a09c1",
+    "retained_sha256": "9339ef7c3d23381f8281fdeb7a4d1969b090fe223de5244ca15d4220dec8ca37",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "review-negation-final-kimi/trace.jsonl",
+    "raw_sha256": "aa463e1101cf72a3fd4cf709fd5aec2c11d1b8a653cdcba0b57109331aee5983",
+    "retained_sha256": "1b62bf9b4fd3e802cd6a8cd57569640b51b78485faa16f0fa9de117f31b8fa66",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-paragraph-resume/m0\\trace.jsonl",
+    "raw_sha256": "463e999253558e4322866b8e76b2c53ce423a67493a70f1763859de3dd6a4567",
+    "retained_sha256": "0c52bce930824f12b9741ddefccb46e14dfdd7567b1547660d20b6bac4afecee",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  },
+  {
+    "source": "native-paragraph-resume/m3\\trace.jsonl",
+    "raw_sha256": "5df1ff44261787ede1c34acc14a1734b6218b8c8776c5ae34df8e88493e4a865",
+    "retained_sha256": "96ea663d301d823b76f588c348b0dafd6ca045d94830dc1bef4104079b3e0b71",
+    "transformation": "removed reasoning/analysis items; JSON serialization only"
+  }
+]

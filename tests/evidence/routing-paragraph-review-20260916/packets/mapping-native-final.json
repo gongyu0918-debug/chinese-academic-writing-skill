@@ -1,0 +1,142 @@
+[
+  {
+    "id": "F01",
+    "batch": "native-v3-final",
+    "case": "P2_proposal",
+    "model_index": 0,
+    "A": {
+      "path": "native-v3-final/m0-P2_proposal-baseline.final.txt",
+      "sha256": "ae1093e94cd11f3d79b5b0421cfe934a70e7ef5458982f3a6af2686749237dd0"
+    },
+    "B": {
+      "path": "native-v3-final/m0-P2_proposal-candidate.final.txt",
+      "sha256": "e61efddfa7bbad88fc17a3947c681af9b86b582ddcfd430d9bfcf13f5bfbdc17"
+    }
+  },
+  {
+    "id": "F02",
+    "batch": "native-v3-final",
+    "case": "P2_proposal",
+    "model_index": 3,
+    "A": {
+      "path": "native-v3-final/m3-P2_proposal-candidate.final.txt",
+      "sha256": "24f51ed00cc7fea29eac8aaab2b4b7922f3eea4a9391f046507ccc5ab194c8c3"
+    },
+    "B": {
+      "path": "native-v3-final/m3-P2_proposal-baseline.final.txt",
+      "sha256": "244dfb8437c0d4c939c5c0a0668cb2ef6ba4432cb1b8eb5dd6ee1ddea48c5950"
+    }
+  },
+  {
+    "id": "F03",
+    "batch": "native-v3-final",
+    "case": "fresh_review",
+    "model_index": 0,
+    "A": {
+      "path": "native-v3-final/m0-fresh_review-baseline.final.txt",
+      "sha256": "bd78382fb60e70ab1b01ee08d45ca1a9fc06bb9b928693a40c6bea926ddac9f0"
+    },
+    "B": {
+      "path": "native-v3-final/m0-fresh_review-candidate.final.txt",
+      "sha256": "246010926b2b074f974a4c7eacb9a6a6458d829c341a97dd00165e9b14c25f4e"
+    }
+  },
+  {
+    "id": "F04",
+    "batch": "native-v3-final",
+    "case": "fresh_review",
+    "model_index": 3,
+    "A": {
+      "path": "native-v3-final/m3-fresh_review-baseline.final.txt",
+      "sha256": "f4f12aca792885f46cff93916270a10820d2b1eb464aeb2010f47c95a1f02998"
+    },
+    "B": {
+      "path": "native-v3-final/m3-fresh_review-candidate.final.txt",
+      "sha256": "6e4691ae9d9115c4a4046c1b7d439efedc9e5a2fdc8d9f87c2acf0596bd006a4"
+    }
+  },
+  {
+    "id": "F05",
+    "batch": "native-v3-final",
+    "case": "T10",
+    "model_index": 0,
+    "A": {
+      "path": "native-v3-final/m0-T10-candidate.final.txt",
+      "sha256": "77182a48b4186ac4290e328c23e940ed095b588800afe2aa7c971fb7a8958dcf"
+    },
+    "B": {
+      "path": "native-v3-final/m0-T10-baseline.final.txt",
+      "sha256": "04595e7f9e0b7c3ec71fea59c05c70c2e150cfa35a9d776443dd0150719d2ccd"
+    }
+  },
+  {
+    "id": "F06",
+    "batch": "native-v3-final",
+    "case": "T10",
+    "model_index": 3,
+    "A": {
+      "path": "native-v3-final/m3-T10-baseline.final.txt",
+      "sha256": "c25f4b7ccad1b2b7c7cc8f204ea659cf105361be593a32f4f7b1c8fca2d5e624"
+    },
+    "B": {
+      "path": "native-v3-final/m3-T10-candidate.final.txt",
+      "sha256": "4b31cd16552cdccdc974453e397b61f3e2aa06473bc72d95b9e5c59af7bfe881"
+    }
+  },
+  {
+    "id": "F07",
+    "batch": "native-v4-review-route",
+    "case": "fresh_review",
+    "model_index": 0,
+    "A": {
+      "path": "native-v4-review-route/m0-fresh_review-candidate.final.txt",
+      "sha256": "70ad5d4b702eddcc6489aaf23e59ab067e87219513fe0b386d99d690e2303888"
+    },
+    "B": {
+      "path": "native-v4-review-route/m0-fresh_review-baseline.final.txt",
+      "sha256": "832668487ab4aec0e353c4b355838767f5e7c3ddf8d4c3cbc840e484d1c38e86"
+    }
+  },
+  {
+    "id": "F08",
+    "batch": "native-v4-review-route",
+    "case": "fresh_review",
+    "model_index": 3,
+    "A": {
+      "path": "native-v4-review-route/m3-fresh_review-baseline.final.txt",
+      "sha256": "015380d7ad21745b80927ca53e29b3ce6cfb5b436072f5cb74d307bafbe032dd"
+    },
+    "B": {
+      "path": "native-v4-technical-retry/m3-fresh_review-candidate.final.txt",
+      "sha256": "ded3bbf38cc5a66b1ceeb393cca754f65d07813b136c0447474f18e172c297f9"
+    }
+  },
+  {
+    "id": "F09",
+    "batch": "native-v4-review-route",
+    "case": "review_result_guard",
+    "model_index": 0,
+    "A": {
+      "path": "native-v4-review-route/m0-review_result_guard-baseline.final.txt",
+      "sha256": "d99e43c0247843003c08ad698efe1b5e2fb5b362099945c6956fe2b50c88402d"
+    },
+    "B": {
+      "path": "native-v4-review-route/m0-review_result_guard-candidate.final.txt",
+      "sha256": "6944b39b2f9225f222e198419cb9e7e96118c9d2bccd3af9ecd4eac410c60b37"
+    }
+  },
+  {
+    "id": "F10",
+    "batch": "native-v4-review-route",
+    "case": "review_result_guard",
+    "model_index": 3,
+    "A": {
+      "path": "native-v4-review-route/m3-review_result_guard-candidate.final.txt",
+      "sha256": "528959df876afd3bba37f45efcb76f83179ff5a9f6cb60450e2edc9b81779430"
+    },
+    "B": {
+      "path": "native-v4-review-route/m3-review_result_guard-baseline.final.txt",
+      "sha256": "e95d44e4072840684ee51f22154bdbb75ede3f37961e18cff700412a9d23f5f2"
+    }
+  }
+]

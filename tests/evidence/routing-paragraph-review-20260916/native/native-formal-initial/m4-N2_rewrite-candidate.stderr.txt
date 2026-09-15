@@ -1,0 +1,7 @@
+2026-09-15T22:06:48.357547Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-09-15T22:06:48.410204Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-09-15T22:06:48.410248Z  WARN codex_core::client: falling back to HTTP
+2026-09-15T22:06:51.181860Z ERROR codex_core::tools::router: error=failed to parse function arguments: invalid type: string "10000", expected u64 at line 1 column 270
+2026-09-15T22:06:53.118455Z ERROR codex_core::tools::router: error=failed to parse function arguments: invalid type: string "20000", expected usize at line 1 column 144
+2026-09-15T22:06:54.963845Z ERROR codex_core::tools::router: error=failed to parse function arguments: invalid type: string "20000", expected usize at line 1 column 144
+2026-09-15T22:07:12.924586Z  WARN codex_core::tasks: failed to flush rollout after emitting terminal turn event: thread 01a0a71b-be21-7952-834c-25893eb9a543 not found

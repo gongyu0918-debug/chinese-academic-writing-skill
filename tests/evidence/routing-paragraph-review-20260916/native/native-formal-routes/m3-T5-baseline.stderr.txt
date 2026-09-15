@@ -1,0 +1,18 @@
+2026-09-15T21:57:49.239842Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-09-15T21:57:49.293163Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: HTTP error: 426 Upgrade Required, url: ws://127.0.0.1:10100/v1/responses
+2026-09-15T21:57:49.293212Z  WARN codex_core::client: falling back to HTTP
+2026-09-15T21:58:02.192043Z ERROR codex_core::tools::router: error=Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:02.241967Z ERROR codex_core::util: in-flight tool future failed during drain: Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:05.647605Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"`\\\"C:\\\\\\\\Users\\\\\\\\admin\\\\\\\\.cache\\\\\\\\codex-runtimes\\\\\\\\codex-primary-runtime\\\\\\\\dependencies\\\\\\\\native\\\\\\\\powershell\\\\\\\\pwsh.exe\\\" -Command \\\"Remove-Item -LiteralPath '_read_skill.ps1' -Force\\\"` rejected: blocked by policy\")" }
+2026-09-15T21:58:08.865410Z ERROR codex_core::tools::router: error=Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:08.916766Z ERROR codex_core::util: in-flight tool future failed during drain: Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:10.058245Z ERROR codex_core::tools::router: error=Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:10.108324Z ERROR codex_core::util: in-flight tool future failed during drain: Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:11.563833Z ERROR codex_core::tools::router: error=Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:11.613951Z ERROR codex_core::util: in-flight tool future failed during drain: Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:14.987398Z ERROR codex_core::tools::router: error=Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:15.036951Z ERROR codex_core::util: in-flight tool future failed during drain: Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:16.100697Z ERROR codex_core::tools::router: error=Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:16.149106Z ERROR codex_core::util: in-flight tool future failed during drain: Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:17.287335Z ERROR codex_core::tools::router: error=Fatal error: tool apply_patch invoked with incompatible payload
+2026-09-15T21:58:17.292211Z ERROR codex_core::util: in-flight tool future failed during drain: Fatal error: tool apply_patch invoked with incompatible payload

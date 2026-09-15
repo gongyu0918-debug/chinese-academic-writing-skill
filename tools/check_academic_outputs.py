@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Read-only validation for academic-writing writer/verifier evidence."""
+"""Replay legacy academic-writing writer/verifier evidence read-only.
+
+This tool preserves the historical experiment's literal checks, sample counts,
+and verdict aggregation.  It is not a gate for current Markdown rules, writing
+quality, or releases.  Current writing changes use fresh drafts and independent
+semantic review; this Python implementation retains its maintenance tests.
+"""
 
 from __future__ import annotations
 

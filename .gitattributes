@@ -8,3 +8,8 @@ tests/evidence/writing-understanding-20260908/** -text whitespace=blank-at-eol,b
 tests/evidence/writing-understanding-20260908/reviews/luna-initial.json -whitespace
 tests/evidence/v0.1.4-release-gate/** text eol=lf
 chinese-academic-writing-assistant/scripts/*.py text eol=lf
+tests/evidence/routing-paragraph-review-20260916/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Frozen review packets keep their original final blank line for input hashes.
+tests/evidence/routing-paragraph-review-20260916/packets/blind-negation-final.md whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+tests/evidence/routing-paragraph-review-20260916/packets/frozen-final-rules.md whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+tests/evidence/routing-paragraph-review-20260916/packets/frozen-rule-review.md whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

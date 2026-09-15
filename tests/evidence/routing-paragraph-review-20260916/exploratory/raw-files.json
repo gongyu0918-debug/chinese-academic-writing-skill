@@ -1,0 +1,802 @@
+[
+  {
+    "file": "paragraph-only/minimax/HP_record/final.md",
+    "sha256": "95df07a03be9bc0c5c15e433a52c5846592a620484da23bb188e2f27b40e0b1c",
+    "bytes": 309
+  },
+  {
+    "file": "paragraph-only/minimax/HP_record/record.json",
+    "sha256": "245eef9e838888a7aa45d6cc5e605ef610ae0df30f8be1a04302b44bd1d5d4db",
+    "bytes": 1061
+  },
+  {
+    "file": "paragraph-only/minimax/HP_record/request.json",
+    "sha256": "5ff0fef8f91a18448b49da3f28c5f11be9599d07021ceb259d1e9fdc0eede9b6",
+    "bytes": 16134
+  },
+  {
+    "file": "paragraph-only/minimax/HP_record/response.json",
+    "sha256": "5562b328af409f5e0140db4f83e44880b332349e7fd4af81bb3ccc15ac002e63",
+    "bytes": 14652
+  },
+  {
+    "file": "paragraph-only/minimax/HP_scope/final.md",
+    "sha256": "9d45a5faf66295a11deacce7f27846eb8a54f834a37097a9d21848bd48c5fc8b",
+    "bytes": 399
+  },
+  {
+    "file": "paragraph-only/minimax/HP_scope/record.json",
+    "sha256": "7577bf6ef64902fd4d4f6124cb05d60f789715b4cabb2b0e931b9d83b5996c6e",
+    "bytes": 1055
+  },
+  {
+    "file": "paragraph-only/minimax/HP_scope/request.json",
+    "sha256": "5b9a1d2bec5f1af296e12721803ec0169d0aaafc7a9eb5d3496660c511788c0e",
+    "bytes": 16172
+  },
+  {
+    "file": "paragraph-only/minimax/HP_scope/response.json",
+    "sha256": "a7c7c8c4756c357b32384ea808d1d9fa3dca4293195322057b768a5629659672",
+    "bytes": 18019
+  },
+  {
+    "file": "paragraph-only/alibaba2/HP_record/final.md",
+    "sha256": "33ea837731d29b6c54acc118fccfd3c5e81fbae70578cdd8947fd6f3d9247700",
+    "bytes": 323
+  },
+  {
+    "file": "paragraph-only/alibaba2/HP_record/record.json",
+    "sha256": "b99c46de83740dddc4cb3eb7482288d5aed2d4595cf4aa856b5b8991d6caea81",
+    "bytes": 1090
+  },
+  {
+    "file": "paragraph-only/alibaba2/HP_record/request.json",
+    "sha256": "1ddce85faa6d023dd63fddaf48d1a4d8832700e71f008824ef6cc3938fd0b4b9",
+    "bytes": 16153
+  },
+  {
+    "file": "paragraph-only/alibaba2/HP_record/response.json",
+    "sha256": "161bb9255812d9ff43488c315376453f86128882e15f6710ca10c747d6d6bff7",
+    "bytes": 6936
+  },
+  {
+    "file": "paragraph-only/alibaba2/HP_scope/final.md",
+    "sha256": "08b4427f64ebb44e15d566416243a13bc8d7f1319e53454b75f29782738f2d1d",
+    "bytes": 485
+  },
+  {
+    "file": "paragraph-only/alibaba2/HP_scope/record.json",
+    "sha256": "eb6eb25f2d60323e32e0536c17e87fc925734bff7ef3ad855a7e315bbd48c0aa",
+    "bytes": 1087
+  },
+  {
+    "file": "paragraph-only/alibaba2/HP_scope/request.json",
+    "sha256": "a3668be1e1e3850660a6ebbec79449b248a7f8d03ce4f6ab42d79075303564bf",
+    "bytes": 16191
+  },
+  {
+    "file": "paragraph-only/alibaba2/HP_scope/response.json",
+    "sha256": "72f74570b00bb511f34885ceabf18a44140c41a6848276a4c918470c4b35e250",
+    "bytes": 8254
+  },
+  {
+    "file": "negation-only/minimax/HN_guard/final.md",
+    "sha256": "21abad009591235867aa86e21eee9c1aae97209054c2d8591f4c9e7311276f45",
+    "bytes": 252
+  },
+  {
+    "file": "negation-only/minimax/HN_guard/record.json",
+    "sha256": "02ec1bab0430fbddf2c60aefeb2e72b038765dec32316a3d99edd6115e021c09",
+    "bytes": 1158
+  },
+  {
+    "file": "negation-only/minimax/HN_guard/request.json",
+    "sha256": "284b0d2f86b54a7fb6c2d5d7e7c529fa830d50c9cce432483db20ae87091aa49",
+    "bytes": 21808
+  },
+  {
+    "file": "negation-only/minimax/HN_guard/response.json",
+    "sha256": "62e9824a7ebfa3dc84f4804c634b1264ac22e73c91191e7abd7acb3df75017ac",
+    "bytes": 4613
+  },
+  {
+    "file": "negation-only/minimax/HN_result/final.md",
+    "sha256": "27b7b1ae0177e5c17c9767a537270557bb69ca10ce766e5ee7432cdda059b59a",
+    "bytes": 446
+  },
+  {
+    "file": "negation-only/minimax/HN_result/record.json",
+    "sha256": "2fd4cd9afb6d4bb4a4d70f5b4f4fdb944428925c7b82f6da631b34aec8788cfe",
+    "bytes": 1162
+  },
+  {
+    "file": "negation-only/minimax/HN_result/request.json",
+    "sha256": "f9f4621d33f2052e331c8e5f247c40cd06b6642ac3e561f4acf9fd23c8d23bed",
+    "bytes": 21855
+  },
+  {
+    "file": "negation-only/minimax/HN_result/response.json",
+    "sha256": "ed1dbd55678081045056afb52c0766b502ec2041aa7985a63d11f8c678367ae9",
+    "bytes": 5611
+  },
+  {
+    "file": "negation-only/alibaba2/HN_guard/final.md",
+    "sha256": "65e08da71bab47d396382fb0f6165f8a4543bb736985929bde34b00b3dba9de0",
+    "bytes": 247
+  },
+  {
+    "file": "negation-only/alibaba2/HN_guard/record.json",
+    "sha256": "0a8b83a34a03b62518cb62c1fde5cf3f4824e4339de169baef7db2251cb2047c",
+    "bytes": 1188
+  },
+  {
+    "file": "negation-only/alibaba2/HN_guard/request.json",
+    "sha256": "5b35df0c4f382e1892dbfb6a9e157073ccdc913c99069c2d8f84af7c579ed5ed",
+    "bytes": 21827
+  },
+  {
+    "file": "negation-only/alibaba2/HN_guard/response.json",
+    "sha256": "8bfa527685d442e2dc605c86a48dea2f8d97aac629ff388b596a0be04b67047c",
+    "bytes": 5946
+  },
+  {
+    "file": "negation-only/alibaba2/HN_result/final.md",
+    "sha256": "3758387f858a3d6a8b62f87b754ffb99788254f40a3481ff52ec059306a6cb89",
+    "bytes": 392
+  },
+  {
+    "file": "negation-only/alibaba2/HN_result/record.json",
+    "sha256": "8d921da573019cacbf7e9478bf2834cf792e7374e3e995b0aed49711605d2c85",
+    "bytes": 1194
+  },
+  {
+    "file": "negation-only/alibaba2/HN_result/request.json",
+    "sha256": "e3b381670d8528f81268be09c7780136bdb041f71ba96467f235a0a1bc0d288f",
+    "bytes": 21874
+  },
+  {
+    "file": "negation-only/alibaba2/HN_result/response.json",
+    "sha256": "f3c14d14df2059eb953b1cfffcc20711997319d307e06e8f06aef406f9762520",
+    "bytes": 6085
+  },
+  {
+    "file": "candidate/minimax/N1_results/final.md",
+    "sha256": "ad02789ee29d7f4c790cf6b1c549eefafac8ef94175acc78aec2a7e146cbae18",
+    "bytes": 2125
+  },
+  {
+    "file": "candidate/minimax/N1_results/record.json",
+    "sha256": "95d5583a18ac3126cecf66c835838bf06370e4d4ab1962793f33ce8a1bd1fc7d",
+    "bytes": 1051
+  },
+  {
+    "file": "candidate/minimax/N1_results/request.json",
+    "sha256": "7a8f37878f117383807f96c2799abd3baa15926f18e8ef04439b53c78e571c16",
+    "bytes": 18216
+  },
+  {
+    "file": "candidate/minimax/N1_results/response.json",
+    "sha256": "c5fa06f911a72c926cace6e98b66b73775ae7c438225ca78bc5006a86490a2b4",
+    "bytes": 20617
+  },
+  {
+    "file": "candidate/minimax/N2_rewrite/final.md",
+    "sha256": "4fad26df8033936b423ea6552920d52c877c5940be9b6b0fae34e01fb62deea5",
+    "bytes": 566
+  },
+  {
+    "file": "candidate/minimax/N2_rewrite/record.json",
+    "sha256": "eac1695273fd61a6a8a052978c4d4f036e4ce8899e167cd627a3c2780edd4b7a",
+    "bytes": 1167
+  },
+  {
+    "file": "candidate/minimax/N2_rewrite/request.json",
+    "sha256": "63845450593a1fb063a813d93a4fc33e6fbf33f774350944e78753e8cee3c5d9",
+    "bytes": 25357
+  },
+  {
+    "file": "candidate/minimax/N2_rewrite/response.json",
+    "sha256": "71f70dd940598afbe02c20c6e0687c34031d01e652bafa5f3a5a7f9c7b2f7ede",
+    "bytes": 14125
+  },
+  {
+    "file": "candidate/minimax/P1_paragraph/final.md",
+    "sha256": "0bad5ed25f4d61ce434eab8da98eec380129691a33ae82e80d6c4864eaeab21e",
+    "bytes": 663
+  },
+  {
+    "file": "candidate/minimax/P1_paragraph/record.json",
+    "sha256": "bc3040c36378aee10225ebb14445c0d24531ac008cd0a73fbe38c04681199bf9",
+    "bytes": 1060
+  },
+  {
+    "file": "candidate/minimax/P1_paragraph/request.json",
+    "sha256": "6a52128ab94848215bc750e9b6a28765e99c831dfe38be54fdfcb41c2c60dc5e",
+    "bytes": 18117
+  },
+  {
+    "file": "candidate/minimax/P1_paragraph/response.json",
+    "sha256": "70236029f61ca87ef86b5dc08e07eea3c68b062055d8926af982044a534c3460",
+    "bytes": 22854
+  },
+  {
+    "file": "candidate/minimax/P2_proposal/final.md",
+    "sha256": "5b5a3430482584846cf1fd44ac46f7ec3c81e96c56f5b79b806d4fc2649b337b",
+    "bytes": 598
+  },
+  {
+    "file": "candidate/minimax/P2_proposal/record.json",
+    "sha256": "f3ae9a88807f1efdb10c03455fc0b5424f1cdeeb390ab071f382287e371322b5",
+    "bytes": 1055
+  },
+  {
+    "file": "candidate/minimax/P2_proposal/request.json",
+    "sha256": "02bcb387bd0a35357c548164cf6cb5e769d1fe153cd751f7700faff1aed122b4",
+    "bytes": 17049
+  },
+  {
+    "file": "candidate/minimax/P2_proposal/response.json",
+    "sha256": "7c175d91edfd69b84248b89bc61045e2284235418942207b1a2a0b7d8d0e5dce",
+    "bytes": 20564
+  },
+  {
+    "file": "candidate/minimax/P3_literature/final.md",
+    "sha256": "3310b146fe890daf1cfed7685dbabea1506a5a17dc9305fc7ba1e564d2217d9a",
+    "bytes": 825
+  },
+  {
+    "file": "candidate/minimax/P3_literature/record.json",
+    "sha256": "fef4199b0fcfb188b96c3b8e936c7e3bd8d18d609eb0d2971af0e7142f4b731d",
+    "bytes": 1067
+  },
+  {
+    "file": "candidate/minimax/P3_literature/request.json",
+    "sha256": "f0aa6c0f0787a1e344ecc9d37e2a90913627b7c7a6427accad0c39792ef39cd9",
+    "bytes": 17118
+  },
+  {
+    "file": "candidate/minimax/P3_literature/response.json",
+    "sha256": "114cf96db15af44e7f735d53b0be371e6c63949353e788487233d85b9ebf47f7",
+    "bytes": 11286
+  },
+  {
+    "file": "candidate/minimax/R1_review/final.md",
+    "sha256": "af4883cb767b45f16dbabeeb301d3ed4781719b530c6d7235f5800f817e07352",
+    "bytes": 2544
+  },
+  {
+    "file": "candidate/minimax/R1_review/record.json",
+    "sha256": "f3e0bfc0c20542ffa0439d6f4e3dc8f71570e85585e86db360cd40e10411478d",
+    "bytes": 1156
+  },
+  {
+    "file": "candidate/minimax/R1_review/request.json",
+    "sha256": "382e484462e934d9b080335fd22c9d759b2cbab2c0eff26584bbcd5c9b3138fd",
+    "bytes": 25069
+  },
+  {
+    "file": "candidate/minimax/R1_review/response.json",
+    "sha256": "0c5fd8b0cfe2cf04da0eaa4e1440f487e853847166ef5102ec4bd9183c863c1a",
+    "bytes": 13859
+  },
+  {
+    "file": "candidate/alibaba2/N1_results/final.md",
+    "sha256": "9402a9e5da9a87b8e8b7b9a9b1c17f33dc668e7246b5d401ce9163ce2507e947",
+    "bytes": 1809
+  },
+  {
+    "file": "candidate/alibaba2/N1_results/record.json",
+    "sha256": "bd5dd39b9370d05783a3170d07d122c5346bbbeffe3bfc175240bfa447c5e3c2",
+    "bytes": 1081
+  },
+  {
+    "file": "candidate/alibaba2/N1_results/request.json",
+    "sha256": "f81adf030f5f6e12c7b0f8e9085da6b98fff9fac7267050bed8382d3c59cc64b",
+    "bytes": 18235
+  },
+  {
+    "file": "candidate/alibaba2/N1_results/response.json",
+    "sha256": "155df8edfdb8c0541717e232fe34306f27ac4f754cf2a23671cccf65d1597a67",
+    "bytes": 17019
+  },
+  {
+    "file": "candidate/alibaba2/N2_rewrite/final.md",
+    "sha256": "c33315190a6a448949d0bce21f51667ac39fc9621f1f4c2691a3327be6aaaf3d",
+    "bytes": 676
+  },
+  {
+    "file": "candidate/alibaba2/N2_rewrite/record.json",
+    "sha256": "89711deba2cc309c4c01b65746f74d5c7c631565e534a870a1bab1e780e34b33",
+    "bytes": 1195
+  },
+  {
+    "file": "candidate/alibaba2/N2_rewrite/request.json",
+    "sha256": "2fb17d105305d577f43134c2fe9901a8e209ee129c60922df4680339194d8776",
+    "bytes": 25376
+  },
+  {
+    "file": "candidate/alibaba2/N2_rewrite/response.json",
+    "sha256": "57a588d4942cb2ee8a4ac6233a77ec4cf5f02eea1376903fbbb96047b23b3ff1",
+    "bytes": 6999
+  },
+  {
+    "file": "candidate/alibaba2/P1_paragraph/final.md",
+    "sha256": "33cb0b86271ae2acd0b0cf23482f3f634c28509fe9809b4459ba9b42e6cf0ac2",
+    "bytes": 632
+  },
+  {
+    "file": "candidate/alibaba2/P1_paragraph/record.json",
+    "sha256": "d7e64100586b56ffb301ca460397ab8636ed41db26e04d19622cf97ea0a4e9bd",
+    "bytes": 1090
+  },
+  {
+    "file": "candidate/alibaba2/P1_paragraph/request.json",
+    "sha256": "8315a56d308398347a3173ae9c265aae5350e94859a3daf632a26dbf0f0abb93",
+    "bytes": 18136
+  },
+  {
+    "file": "candidate/alibaba2/P1_paragraph/response.json",
+    "sha256": "0aa60fb12a86860bcde53b72e1d73ae849182348ffe4fcad78dd791777ea93de",
+    "bytes": 11569
+  },
+  {
+    "file": "candidate/alibaba2/P2_proposal/final.md",
+    "sha256": "6e1bc8e5135f35bb4eace4912cef019f6e92e4d56abc48461244ce9c309dbd92",
+    "bytes": 501
+  },
+  {
+    "file": "candidate/alibaba2/P2_proposal/record.json",
+    "sha256": "f5ae32da77366707838d584e14e1d4855690ecc60ca394572c81419c4c0911e0",
+    "bytes": 1090
+  },
+  {
+    "file": "candidate/alibaba2/P2_proposal/request.json",
+    "sha256": "c5a24547330d49ccf6f664db4391b926ae5c3ab2c8eb24fac5fd123ab865ee39",
+    "bytes": 17068
+  },
+  {
+    "file": "candidate/alibaba2/P2_proposal/response.json",
+    "sha256": "87c476df8e2167f6fef9ceee83af6dc61bc10ca741518a2b2dac3edeb1429b6a",
+    "bytes": 25506
+  },
+  {
+    "file": "candidate/alibaba2/P3_literature/final.md",
+    "sha256": "e4a3e5e665e594cdf7bb73953266ac41eaa78ff0dd95220205249e2d8e76ffc7",
+    "bytes": 744
+  },
+  {
+    "file": "candidate/alibaba2/P3_literature/record.json",
+    "sha256": "1ecc0ad23961c384f33d490af7564ac89cefaae55f8aaa2831a7aade74b7b94b",
+    "bytes": 1097
+  },
+  {
+    "file": "candidate/alibaba2/P3_literature/request.json",
+    "sha256": "0c467036f478946097a7e9c770889c48fb1c945976542e9fa0948a074e868d06",
+    "bytes": 17137
+  },
+  {
+    "file": "candidate/alibaba2/P3_literature/response.json",
+    "sha256": "1c8700e09df71f41a3da01655eb835144500310af599b6e6192b8b97431b7b1a",
+    "bytes": 6728
+  },
+  {
+    "file": "candidate/alibaba2/R1_review/final.md",
+    "sha256": "06d243b1a5aed59e3d6094eda869eecb4a984b2d388bd9dbe0adfd7c338d8b22",
+    "bytes": 3068
+  },
+  {
+    "file": "candidate/alibaba2/R1_review/record.json",
+    "sha256": "987519b40b3638c4c2a6c2a47d7e79d71db89f4bd395445d45d5d8917d11f559",
+    "bytes": 1187
+  },
+  {
+    "file": "candidate/alibaba2/R1_review/request.json",
+    "sha256": "266fb9fa1d0194cdccad6855dbf86c55ab16b2555c0264c42e0049abaae35c5b",
+    "bytes": 25088
+  },
+  {
+    "file": "candidate/alibaba2/R1_review/response.json",
+    "sha256": "8b9197ce3a20f72e29e85b24170c003ba83c2144dd1c15e61c2e274cc17e4681",
+    "bytes": 20581
+  },
+  {
+    "file": "baseline-holdout/minimax/HN_guard/final.md",
+    "sha256": "ee1375ad0702ee2ad349501d3d85b181b876de76775636586d702d7c3bc89cb6",
+    "bytes": 240
+  },
+  {
+    "file": "baseline-holdout/minimax/HN_guard/record.json",
+    "sha256": "d7c052b6d9ef946d28b3b83b6f811314e844f1c47aee408fc5f9acb538ae6e90",
+    "bytes": 1161
+  },
+  {
+    "file": "baseline-holdout/minimax/HN_guard/request.json",
+    "sha256": "b9295427ccd96e8be246b4292b1dfd1fcfe9c2a5227d2a859cad69ff35e89190",
+    "bytes": 21731
+  },
+  {
+    "file": "baseline-holdout/minimax/HN_guard/response.json",
+    "sha256": "350b4844eb6141ae9bca519e80332af6d910566c871f262bae582476f46dcce9",
+    "bytes": 4389
+  },
+  {
+    "file": "baseline-holdout/minimax/HN_result/final.md",
+    "sha256": "f5175f057783b22897e79eb7cc2e1e8a558d71ecc1b9758314ece6b44ecb3a61",
+    "bytes": 331
+  },
+  {
+    "file": "baseline-holdout/minimax/HN_result/record.json",
+    "sha256": "424b25499538e52cbf4b52ed67c3a1ce65710161c87719867b3086ef8b1e6869",
+    "bytes": 1167
+  },
+  {
+    "file": "baseline-holdout/minimax/HN_result/request.json",
+    "sha256": "a230a28e2687aa30286978febb9a8d8efef9056467b46dce6bf38accdacc2395",
+    "bytes": 21778
+  },
+  {
+    "file": "baseline-holdout/minimax/HN_result/response.json",
+    "sha256": "69e743a7b31955f31a38200af40c27c3ff636e9fa9f8759acf88493b58a93f33",
+    "bytes": 10372
+  },
+  {
+    "file": "baseline-holdout/minimax/HP_record/final.md",
+    "sha256": "0900fbb1714f9c3b9f727d74892ad28e7ebb3f1c1bbc98290b8d01f0a3de4c5f",
+    "bytes": 474
+  },
+  {
+    "file": "baseline-holdout/minimax/HP_record/record.json",
+    "sha256": "9342108d44c36ebc39e1495791108da2cb534e839cb31e22310e1045cbdf4ee9",
+    "bytes": 1061
+  },
+  {
+    "file": "baseline-holdout/minimax/HP_record/request.json",
+    "sha256": "af885a8083f26db20231fa1b90e84300bf3f606e30fa8f39efeb9007482fadcf",
+    "bytes": 15296
+  },
+  {
+    "file": "baseline-holdout/minimax/HP_record/response.json",
+    "sha256": "487c54bef028f3916e6f2285eb24b080611d62f2e1aeae28ae2abcadb09619b4",
+    "bytes": 10331
+  },
+  {
+    "file": "baseline-holdout/minimax/HP_scope/final.md",
+    "sha256": "2a2082d843cfd727a95fe01809caadc46a7490bae7b3509fd983befaf3b7da37",
+    "bytes": 398
+  },
+  {
+    "file": "baseline-holdout/minimax/HP_scope/record.json",
+    "sha256": "739ebbbce783aba7642be02c7ee6cf2806938d4b0ffb182be79e16165335c31f",
+    "bytes": 1060
+  },
+  {
+    "file": "baseline-holdout/minimax/HP_scope/request.json",
+    "sha256": "18f97b091490aa73e68dbfb448e072688f8e813430b2a858cbc2b0066bc991ec",
+    "bytes": 15334
+  },
+  {
+    "file": "baseline-holdout/minimax/HP_scope/response.json",
+    "sha256": "aafe058e561f3bb8dbe293276e938751bd8e655607a2bf588ac5e2572414fbf1",
+    "bytes": 16269
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HN_guard/final.md",
+    "sha256": "622117180c10e9c0056014137f52779eee494eb9480946c3242c48e7de2a339b",
+    "bytes": 252
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HN_guard/record.json",
+    "sha256": "34b9f87ccc664b8bf4ebe6e5fae4f17872341bf2eaf534322692ef69181b408e",
+    "bytes": 1191
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HN_guard/request.json",
+    "sha256": "e497a837a6aff6e728206334fdc2bd0383e63af5319aea47d4d37c7608aec72a",
+    "bytes": 21750
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HN_guard/response.json",
+    "sha256": "ee3a48617132c23fcb006d578a51ce5d09b317b7a61a774329bd4329d3e440cd",
+    "bytes": 5447
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HN_result/final.md",
+    "sha256": "5c88760bbc6439015ed000c865cfe56de2c106b40a0974a939d5617ffac4bef6",
+    "bytes": 431
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HN_result/record.json",
+    "sha256": "fd7626fd957a5d0d044b873cae9d997631abff52547ff0decf76ca90390de2b4",
+    "bytes": 1195
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HN_result/request.json",
+    "sha256": "b677698bf2409db30db1d929a144b1617b82b8915e8a5934e7c426543446609c",
+    "bytes": 21797
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HN_result/response.json",
+    "sha256": "f7317ab0012c5141957a35c7c4e1bad150d308db2b39929203eb0e1775380a0d",
+    "bytes": 4802
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HP_record/final.md",
+    "sha256": "7022467339a9a4ffec50856544d07593a816f075349aa8287b8bbe293d167f7a",
+    "bytes": 342
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HP_record/record.json",
+    "sha256": "03aac11cfc69998e236eeba658a618514b715fbc04345541093d679fb9d9680f",
+    "bytes": 1093
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HP_record/request.json",
+    "sha256": "3f26039de2fce4abfb30ad0d92a712b5ac57dd43e9c9e6774a508c53d4ac73b5",
+    "bytes": 15315
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HP_record/response.json",
+    "sha256": "e39e6a6ba018e80e3aeb97aaa0203826b3e2e6332d095fb93f572bb3d796b8cf",
+    "bytes": 9923
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HP_scope/final.md",
+    "sha256": "88e1eb9b6e9048aa08af5c84cd61658172b413f27f9723f61ed95b4c28cedd41",
+    "bytes": 393
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HP_scope/record.json",
+    "sha256": "f78099443920a28176935c42fb150f841c7639ff348613eb6399f202d56872e3",
+    "bytes": 1090
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HP_scope/request.json",
+    "sha256": "74c5eaa71ce752eab35d038f86a9e0e794cfa0fffdf42fb2c18c3ae83be4348b",
+    "bytes": 15353
+  },
+  {
+    "file": "baseline-holdout/alibaba2/HP_scope/response.json",
+    "sha256": "5daf798f9da3b95f90c03d2b1da831954307153014a48ee0276cd9672a6fe7be",
+    "bytes": 13170
+  },
+  {
+    "file": "baseline/minimax/N1_results/final.md",
+    "sha256": "08428570674afdc3ec2170ae6a4daf10674f2b96ba6ee48bd9d0fd6e2b1b52a9",
+    "bytes": 2143
+  },
+  {
+    "file": "baseline/minimax/N1_results/record.json",
+    "sha256": "317c554778af6280bbe0d04b9b19c362fd1158f1f11d82e50ac5cefecf91b578",
+    "bytes": 1051
+  },
+  {
+    "file": "baseline/minimax/N1_results/request.json",
+    "sha256": "02a66c948c344fd9c50ce2d5239bd090efcdda25f3440586cf76ab1b4914720b",
+    "bytes": 15656
+  },
+  {
+    "file": "baseline/minimax/N1_results/response.json",
+    "sha256": "17362c77a6639a79c87164eadf30d805363f9c3fce63cb93ecd0d06add700b50",
+    "bytes": 18780
+  },
+  {
+    "file": "baseline/minimax/N2_rewrite/final.md",
+    "sha256": "f5ffdcf05c4158166612d3d015375c4a436f2653754df7cfaf019bd352096fbe",
+    "bytes": 434
+  },
+  {
+    "file": "baseline/minimax/N2_rewrite/record.json",
+    "sha256": "e5c3a4119073ccc3f4ed0faea4a02d29dea06a54298234818c1c4ff34a5a2ae0",
+    "bytes": 1167
+  },
+  {
+    "file": "baseline/minimax/N2_rewrite/request.json",
+    "sha256": "e246c51e243d46555c900661d67b8f1960b94be4f0a41f221695c2f9b43181d6",
+    "bytes": 22636
+  },
+  {
+    "file": "baseline/minimax/N2_rewrite/response.json",
+    "sha256": "b2cb6e06d3265e04162bf88b857a12c8821046d89f0988167ee4f95021187a4d",
+    "bytes": 20601
+  },
+  {
+    "file": "baseline/minimax/P1_paragraph/final.md",
+    "sha256": "30f42a88d34e090339de0115981ee6ced517821a65290c85aa3a6155cac27640",
+    "bytes": 556
+  },
+  {
+    "file": "baseline/minimax/P1_paragraph/record.json",
+    "sha256": "24de33b2e23f9c659647c470a31e2ffc67c6e5b87dee9a9ede4df4e2fcd96970",
+    "bytes": 1056
+  },
+  {
+    "file": "baseline/minimax/P1_paragraph/request.json",
+    "sha256": "92a14c1ec31bae3a62476370ad02e3f8a92efe36ccca6f0decf133b283b0c504",
+    "bytes": 15557
+  },
+  {
+    "file": "baseline/minimax/P1_paragraph/response.json",
+    "sha256": "e235f150b1fe854b7c4c9af03f05db57c61370754ba286edad384cb0c2ccb22f",
+    "bytes": 17692
+  },
+  {
+    "file": "baseline/minimax/P2_proposal/final.md",
+    "sha256": "0d0cd835a0a5e3989bc828269ce65cfd9ce32ac108f4e51c6e30f47b6e5b474a",
+    "bytes": 488
+  },
+  {
+    "file": "baseline/minimax/P2_proposal/record.json",
+    "sha256": "077fa962b17fb22c9875449eda943c1922c5f1809adcf55a41ecd76ba95389c3",
+    "bytes": 1058
+  },
+  {
+    "file": "baseline/minimax/P2_proposal/request.json",
+    "sha256": "352b729adaa1683bdc36258d457a6da7e81a9e30eae7c7fc876dcda68e1ddd02",
+    "bytes": 14183
+  },
+  {
+    "file": "baseline/minimax/P2_proposal/response.json",
+    "sha256": "feb8c2ac868a54462f2c28aea978c5c92a614a0aa80a169f725189f9cde85710",
+    "bytes": 23687
+  },
+  {
+    "file": "baseline/minimax/P3_literature/final.md",
+    "sha256": "6cdd4a811927e5d24bfdf3017383d4d262e51b9f77c9286c268d57932af9ad1b",
+    "bytes": 863
+  },
+  {
+    "file": "baseline/minimax/P3_literature/record.json",
+    "sha256": "5cf5598e81f8615d5d9fcc8ff3fdc5a8865258efb56ba1c633e8ecf23d3c622a",
+    "bytes": 1065
+  },
+  {
+    "file": "baseline/minimax/P3_literature/request.json",
+    "sha256": "e13122da1f0d3ac817f2dff07c21a5b0575bbbceee7d31065de0bc505f81f919",
+    "bytes": 14327
+  },
+  {
+    "file": "baseline/minimax/P3_literature/response.json",
+    "sha256": "5a2810f22d5bff1d5b2bd1f457266c2528ea2e32b63fab67e39a107d6869fa50",
+    "bytes": 14983
+  },
+  {
+    "file": "baseline/minimax/R1_review/final.md",
+    "sha256": "ca3ede890fa4f40d27a9b922bfc2c35e9b8011cacd013b710dbdbd751aa7fd18",
+    "bytes": 1571
+  },
+  {
+    "file": "baseline/minimax/R1_review/record.json",
+    "sha256": "009a62ca1f5cb78882668a4a766100ec1985f61b612bfa8d7c3919dba9d6801b",
+    "bytes": 1156
+  },
+  {
+    "file": "baseline/minimax/R1_review/request.json",
+    "sha256": "7939a348abff2c73fb1fcac003e50418c6a721708ae22ba265f29a948af20959",
+    "bytes": 22348
+  },
+  {
+    "file": "baseline/minimax/R1_review/response.json",
+    "sha256": "e85d15351857f158fdc0a84f6cede0ea90f0b0e1cbe7162595b9a9abe5f71190",
+    "bytes": 32161
+  },
+  {
+    "file": "baseline/alibaba2/N1_results/final.md",
+    "sha256": "f4fcddd76953241ae745122881ee2b8e7f9cc1c8532be71d82ac3b5a5efe73f2",
+    "bytes": 1744
+  },
+  {
+    "file": "baseline/alibaba2/N1_results/record.json",
+    "sha256": "51bbc7c6b7e6a3df1794e33f1149eb6ebff21e283086f4baa3504f9c08a6f03c",
+    "bytes": 1080
+  },
+  {
+    "file": "baseline/alibaba2/N1_results/request.json",
+    "sha256": "fe5d9c8094c0d5fdbd803491bea90e23a182cbfdcbae8f4cc4abc9440cd03339",
+    "bytes": 15675
+  },
+  {
+    "file": "baseline/alibaba2/N1_results/response.json",
+    "sha256": "df9f94d6883afe1d7cd8c42e98f8fb2752d89c1e7eed52328cc3deb14c6aee9f",
+    "bytes": 10654
+  },
+  {
+    "file": "baseline/alibaba2/N2_rewrite/final.md",
+    "sha256": "d51cee5492bb740e591939c43c0558d99ff3195aa3efe56ef889c0153f8b2dec",
+    "bytes": 548
+  },
+  {
+    "file": "baseline/alibaba2/N2_rewrite/record.json",
+    "sha256": "9bc8459883a38a117ee83f690ccfa6d792991f086b77cdaecfa8c0790aa81cd7",
+    "bytes": 1196
+  },
+  {
+    "file": "baseline/alibaba2/N2_rewrite/request.json",
+    "sha256": "6ca9361a580b0c44303ed5f7af363e30c77603a12b1e195fe73a8804e6ac61dc",
+    "bytes": 22655
+  },
+  {
+    "file": "baseline/alibaba2/N2_rewrite/response.json",
+    "sha256": "738658a4d239b8c307c5595a63d4d24d6d9108141b380f855f9a0a931e958664",
+    "bytes": 8057
+  },
+  {
+    "file": "baseline/alibaba2/P1_paragraph/final.md",
+    "sha256": "301811cf406cf5edf879dae6b2eaa2ccfc68f1ad00932808ca873a1ed0bdd017",
+    "bytes": 601
+  },
+  {
+    "file": "baseline/alibaba2/P1_paragraph/record.json",
+    "sha256": "b22afef6370ed07dddd45fbe0d75e54168e782a122f9524c7ff8256b6fbcfcc4",
+    "bytes": 1088
+  },
+  {
+    "file": "baseline/alibaba2/P1_paragraph/request.json",
+    "sha256": "c379d917bf72f4542581a83c90b6adfeb8ddfd5ff2d7cdc623da43a6fe54334f",
+    "bytes": 15576
+  },
+  {
+    "file": "baseline/alibaba2/P1_paragraph/response.json",
+    "sha256": "e9b6e192f52a2d18fad156f4b63ba4d8dfb495954cd0c63d7a907b65c0b99338",
+    "bytes": 8690
+  },
+  {
+    "file": "baseline/alibaba2/P2_proposal/final.md",
+    "sha256": "233746d55cec1e17c1c02e45a35ede63fd0177bab040b4de59a33177a62c6e84",
+    "bytes": 506
+  },
+  {
+    "file": "baseline/alibaba2/P2_proposal/record.json",
+    "sha256": "ab3b7ee16f32b48b70f2c2f3201c87f2ef10b5caeb248a2fe9cbaa3a26c8a731",
+    "bytes": 1089
+  },
+  {
+    "file": "baseline/alibaba2/P2_proposal/request.json",
+    "sha256": "02bd8cbf8c028508d25c1ec1c8d83ce5b25fd8c5601e8d0913b7675aa7e65254",
+    "bytes": 14202
+  },
+  {
+    "file": "baseline/alibaba2/P2_proposal/response.json",
+    "sha256": "a1170fef1af7325688cfd85cf221ba818ac973cb8147f5baffec2610ba865356",
+    "bytes": 15299
+  },
+  {
+    "file": "baseline/alibaba2/P3_literature/final.md",
+    "sha256": "394e4df22635864a991aa99ef028a48e6641bbfb7b7044c9cd83df3c7ba75636",
+    "bytes": 873
+  },
+  {
+    "file": "baseline/alibaba2/P3_literature/record.json",
+    "sha256": "9a28926e950ced9809f162fa27102fdfa9d3f566930277826d572abf8657f374",
+    "bytes": 1097
+  },
+  {
+    "file": "baseline/alibaba2/P3_literature/request.json",
+    "sha256": "f74c647576bf2fb0eddd02418e1f436bcfd48eea149d0c66e4bb9b24468c550e",
+    "bytes": 14346
+  },
+  {
+    "file": "baseline/alibaba2/P3_literature/response.json",
+    "sha256": "c75ac0e28727254f1217145352638b8781399ad25d4d2a4eb1ba176dab0c8fb3",
+    "bytes": 11478
+  },
+  {
+    "file": "baseline/alibaba2/R1_review/final.md",
+    "sha256": "ee196d97001dedb42d965382933fe6079adf34f21f7d2996de0c07dba7481410",
+    "bytes": 2746
+  },
+  {
+    "file": "baseline/alibaba2/R1_review/record.json",
+    "sha256": "eea196f5f142ecc460c903407c0acedf703dcb8c7668ed5eb82ca80671c65fe9",
+    "bytes": 1186
+  },
+  {
+    "file": "baseline/alibaba2/R1_review/request.json",
+    "sha256": "e059dba9b642615b96b784cfc1fdaf126c4c3f07c6731c0b84a0afc0eacd3a25",
+    "bytes": 22367
+  },
+  {
+    "file": "baseline/alibaba2/R1_review/response.json",
+    "sha256": "f0de138a8383f7cc9ca60b554bbd053ffc153e2628fafc320218ddd368b5fc4c",
+    "bytes": 18603
+  }
+]

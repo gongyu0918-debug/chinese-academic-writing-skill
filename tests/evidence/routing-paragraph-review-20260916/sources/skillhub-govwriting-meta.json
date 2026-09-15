@@ -1,0 +1,7 @@
+{
+  "requested_url": "https://api.skillhub.cn/api/v1/download?slug=%40user_087fbff2%2Fgovwriting",
+  "resolved_url": "https://skillhub-1388575217.cos.accelerate.myqcloud.com/skills/govwriting/3.2.8.zip",
+  "fetched_utc": "2026-09-15T21:37:07.299849+00:00",
+  "content_type": "application/zip",
+  "sha256": "4740ab0b833a01978a89f77886b0b7ea04d9d94b0b156c7178d103f249eb9688"
+}

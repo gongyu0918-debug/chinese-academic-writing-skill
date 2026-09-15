@@ -1,0 +1,12 @@
+{
+  "model": "alibaba-token-plan/qwen3.8-flash",
+  "effort": "max",
+  "session_id": "01a0a71c-02a9-78d3-a4ad-ed97c76fe9c2",
+  "source_batch": "native-v3-final",
+  "first_output_sha256": "e61efddfa7bbad88fc17a3947c681af9b86b582ddcfd430d9bfcf13f5bfbdc17",
+  "first_output_unchanged": true,
+  "returncode": 0,
+  "error": null,
+  "seconds": 100.01,
+  "second_output_exists": true
+}
