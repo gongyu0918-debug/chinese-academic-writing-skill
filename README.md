@@ -1,12 +1,12 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.1.4-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.4)
+[![Version](https://img.shields.io/badge/version-0.1.5-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.5)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 中文论文写作 Skill 用于协助完成中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。它根据作者已经提供或明确授权核验的材料工作，可以构造提纲、逐段起草、修改底稿或只审不改，并在长稿和多轮续写中辅助维护和检查事实、术语、引用与研究状态的一致性。
 
-仓库当前包含 2026-09-16 的路由、逐段写作和独立复核更新，尚未发布新版本；下方版本徽章与安装版本仍指向已发布的 0.1.4。验证范围和已知模型执行问题见[本轮证据](tests/evidence/routing-paragraph-review-20260916/README.md)。
+版本 0.1.5 包含路由、逐段写作和宿主独立复核更新。验证范围及已知模型执行问题见[写稿与冷审证据](tests/evidence/routing-paragraph-review-20260916/README.md)。
 
 这个 Skill 不替作者补造研究。材料不足时，它会收缩交付范围，先给出可成立的结构、研究问题或材料清单，不把常识、惯例和推测写成已经取得的证据。
 
@@ -56,7 +56,7 @@
 
 ## 安装与调用
 
-当前版本：`chinese-academic-writing-assistant@0.1.4`
+当前版本：`chinese-academic-writing-assistant@0.1.5`
 
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
 
@@ -94,6 +94,14 @@ Python 实现改动须运行相关维护测试，覆盖行为、CLI、只读与�
 | `scripts/*.py` | 引用、表达和长稿的只读候选扫描 |
 
 SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，并在平台支持的页面入口单独上传或关联；图片不进入运行包。
+
+## 版本 0.1.5
+
+补齐三类任务的提纲与审稿入口、离线引用核验、长稿状态交接及返回出口。支持按用户指定范围逐段成稿，后续请求从下一段接续；成稿复核优先唤醒宿主中未参与起草的 subagent，检查结构、逻辑、重复、AI 味和段落范围，宿主能力缺失时继续完成可交付任务。
+
+本轮取消了没有稳定写稿收益的两版否定提示，保留原有上下文判定。Markdown 写作规则以真实成稿和独立语义审阅验证，移除 53 项相关语义断言并拆分 13 项混合测试；保留的 166 项 Python、CLI、性能、只读、打包与证据完整性测试通过，三个运行脚本不变。
+
+验证包括 91 次原生 CLI 根调用、2 次同会话续段、9 个实际原生子会话及 7 次冷审；调用成功数不代表写作通过数。模型仍可能跳读复核页、保留冗余否定或附加流程前言，失败与取舍见[详细证据](tests/evidence/routing-paragraph-review-20260916/ADJUDICATION.md)。
 
 ## 版本 0.1.4
 

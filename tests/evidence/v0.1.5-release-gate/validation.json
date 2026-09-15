@@ -1,0 +1,104 @@
+{
+  "version": "0.1.5",
+  "reviewed_commit": "1242e414e9ad9100f921c0847ea88f181975f89d",
+  "canonical_sha256": {
+    "LICENSE.md": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812",
+    "SKILL.md": "eee19565fdf9c58800fb39b5f713c30b05eedba0dfec8e280a669f31dcb60bb7",
+    "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+    "references/academic-literature-review.md": "c95277d78926e8634102ef9e3d1d15a6e6b758fafe5ee411e34e8e5effaa125a",
+    "references/academic-proposal.md": "bc36d26f98e5e8aadc797947325fc3981c090664eb3eb7fa4757842d1634a3aa",
+    "references/academic-writing.md": "5e20151b18a41d6943df5b3162d19e159d69a2af0021e9528935eda770d618f0",
+    "references/anti-ai-writing.md": "4fed2a71b7fa3989da9b8b3d3b8832a9a81e7adf32fd182b0341a8c020f6f12b",
+    "references/citation-research.md": "8d2672ebdffde5dd95737a0d97fb0cefc43867f6d1a5cb02244f6781b7a476a8",
+    "references/long-form-consistency.md": "26254e382ea3dd793003be0b91a55ed01a92a89187314c8cd1cf744a554acb8a",
+    "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+    "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+    "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+  },
+  "skillhub": {
+    "version": "0.1.5",
+    "files": [
+      "LICENSE.md",
+      "SKILL.md",
+      "agents/openai.yaml",
+      "references/academic-literature-review.md",
+      "references/academic-proposal.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md",
+      "references/citation-research.md",
+      "references/long-form-consistency.md",
+      "scripts/citation_audit.py",
+      "scripts/manuscript_audit.py",
+      "scripts/prose_lint.py"
+    ],
+    "file_sha256": {
+      "LICENSE.md": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812",
+      "SKILL.md": "ca58a5ee6216e9a1c56fa11ba83adac0239c97b8c9bc41ef0671bdd8da886766",
+      "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "references/academic-literature-review.md": "c95277d78926e8634102ef9e3d1d15a6e6b758fafe5ee411e34e8e5effaa125a",
+      "references/academic-proposal.md": "bc36d26f98e5e8aadc797947325fc3981c090664eb3eb7fa4757842d1634a3aa",
+      "references/academic-writing.md": "5e20151b18a41d6943df5b3162d19e159d69a2af0021e9528935eda770d618f0",
+      "references/anti-ai-writing.md": "4fed2a71b7fa3989da9b8b3d3b8832a9a81e7adf32fd182b0341a8c020f6f12b",
+      "references/citation-research.md": "8d2672ebdffde5dd95737a0d97fb0cefc43867f6d1a5cb02244f6781b7a476a8",
+      "references/long-form-consistency.md": "26254e382ea3dd793003be0b91a55ed01a92a89187314c8cd1cf744a554acb8a",
+      "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+    },
+    "zip": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\worktrees\\release-v0.1.5\\.release\\v0.1.5\\chinese-academic-writing-assistant-0.1.5-skillhub.zip",
+    "zip_sha256": "e66f27238d7f4b0a8a87493f93b9b1744ed2012f0f944037900ddca34b2cc2e5"
+  },
+  "clawhub": {
+    "file_count": 11,
+    "file_sha256": {
+      "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "references/academic-literature-review.md": "c95277d78926e8634102ef9e3d1d15a6e6b758fafe5ee411e34e8e5effaa125a",
+      "references/academic-proposal.md": "bc36d26f98e5e8aadc797947325fc3981c090664eb3eb7fa4757842d1634a3aa",
+      "references/academic-writing.md": "5e20151b18a41d6943df5b3162d19e159d69a2af0021e9528935eda770d618f0",
+      "references/anti-ai-writing.md": "4fed2a71b7fa3989da9b8b3d3b8832a9a81e7adf32fd182b0341a8c020f6f12b",
+      "references/citation-research.md": "8d2672ebdffde5dd95737a0d97fb0cefc43867f6d1a5cb02244f6781b7a476a8",
+      "references/long-form-consistency.md": "26254e382ea3dd793003be0b91a55ed01a92a89187314c8cd1cf744a554acb8a",
+      "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+      "SKILL.md": "eee19565fdf9c58800fb39b5f713c30b05eedba0dfec8e280a669f31dcb60bb7"
+    },
+    "license": "MIT-0"
+  },
+  "reproducible_zip": true,
+  "review_evidence": "tests/evidence/routing-paragraph-review-20260916/FINAL-BINDING.json",
+  "semantic_rule_changes_since_review": false,
+  "validation": {
+    "full_unittest_command": "py -3 -B -m unittest discover -s tests -v",
+    "full_unittest_count": 166,
+    "full_unittest_result": "PASS",
+    "seconds": 9.918,
+    "log_sha256": "5ea6376190b7a4bd987e7bf0c591dc346f00ba68721d800da510e0ce75b2d80c",
+    "quick_validate": "Skill is valid!",
+    "git_diff_check": "PASS",
+    "runtime_git_diff_empty": true,
+    "writing_validation_reused_from": "1242e414e9ad9100f921c0847ea88f181975f89d"
+  },
+  "preflight": {
+    "github_owner": "gongyu0918-debug",
+    "skillhub_namespace": "user_f3d82da7",
+    "public_latest_before_release": {
+      "github": "0.1.4",
+      "skillhub": "0.1.4",
+      "clawhub": "0.1.4"
+    },
+    "skillhub_dry_run": {
+      "dryRun": true,
+      "slug": "chinese-academic-writing-assistant",
+      "version": "0.1.5"
+    },
+    "clawhub_dry_run": {
+      "ok": true,
+      "status": "would-publish",
+      "slug": "chinese-academic-writing-assistant",
+      "version": "0.1.5",
+      "fileCount": 11,
+      "fingerprint": "abb1b164dd486e6a65dc660d53b4c989de9a397c4bea7d6701e4e72b2c740ea0"
+    }
+  }
+}
