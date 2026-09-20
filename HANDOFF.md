@@ -80,11 +80,11 @@
 
 ## 写稿与冷审模型规范
 
-用户于 2026-09-16 明确要求遵循中文公文项目维护中的可用模型列表，并允许 Codex CLI 批量写稿。后续先只读该项目 `maintenance/AGENTS.md`、`maintenance/docs/development-workflow.md` 及最新实际调用记录，再核对本机 model catalog；下表只是本次已验证快照，不凭旧标签猜当前模型。来源与精确调用证据见本轮 `MODELS.md`。
+自 2026-09-21 起，后续实验遵循中文公文项目当前模型规范，并在调用前核对实时 model catalog。旧 `MODELS.md` 和历史 evidence 只记录当轮实际路线，不因当前换模而回写。
 
-- 便宜 writer：`alibaba-token-plan/qwen3.8-flash`、`alibaba-token-plan-2/qwen3.8-flash`、`command-code/deepseek-deepseek-v4.1-flash`、`minimax-cn/MiniMax-M3`、`ollama-cloud/glm-5.3-flash`，本次正式批量均用 `max`。
-- 独立冷审池：`alibaba-token-plan-2/qwen3.8-max`（技术故障时核对 Alibaba 另一可用渠道）、`ollama-cloud/kimi-k3`、`xai/grok-4.6`；按维护规范及 catalog 指定 effort。本轮实际使用 Qwen Max、Kimi K3，均为 `max`。
-- 不使用 Astra 作为写作或冷审子智能体，不让子代理无意继承主模型；显式指定便宜 writer 及其子代理的模型和 effort，并核对实际会话元数据。0731、V4 Flash 与 V4.1 Flash 按精确 ID 分开记录。
+- Alibaba writer：`alibaba-token-plan-responses/deepseek-v4.1-flash`、`alibaba-token-plan-responses/qwen3.8-flash`。非 Alibaba writer 仍可使用 `command-code/deepseek-deepseek-v4.1-flash`、`minimax-cn/MiniMax-M3`、`ollama-cloud/glm-5.3-flash`，按任务分散 provider。
+- Alibaba 独立冷审：`alibaba-token-plan-responses/glm-5.3`、`alibaba-token-plan-responses/qwen3.8-max`。非 Alibaba 冷审仍可使用 `ollama-cloud/kimi-k3`、`xai/grok-4.6`。
+- 新任务不再调用 `alibaba-token-plan` 或 `alibaba-token-plan-2`。不使用 Astra 作为写作或冷审子智能体，不让子代理无意继承主模型；显式指定模型和受支持的 effort，并核对实际会话元数据。
 - 外部 provider 的 Desktop 子任务若出现加密任务不可读，改用已有明文 Codex CLI 批量通路。每个候选在隔离目录读取自己的规则；正文作者和独立复核者分开上下文，保存可见稿件、意见及模型来源，不归档隐藏推理。
 - 不把“按词表没报错”“成功读了 SKILL”“模型返回了文字”当作正文质量通过；也不把冷审意见当标准答案。对照原始材料核实否定对象、状态、作者分析和真正越界，保留技术无效及不采纳意见的理由。
 
