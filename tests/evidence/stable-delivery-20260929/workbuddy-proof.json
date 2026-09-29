@@ -1,0 +1,63 @@
+{
+  "version": "0.1.5",
+  "release_commit": "32950f07f1b257ab071ae1d202818e9a5100d3c4",
+  "recorded_at": "2026-09-29T12:31:31.658415+00:00",
+  "file_count": 12,
+  "files": [
+    "LICENSE",
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references/academic-literature-review.md",
+    "references/academic-proposal.md",
+    "references/academic-writing.md",
+    "references/anti-ai-writing.md",
+    "references/citation-research.md",
+    "references/long-form-consistency.md",
+    "scripts/citation_audit.py",
+    "scripts/manuscript_audit.py",
+    "scripts/prose_lint.py"
+  ],
+  "file_sha256": {
+    "LICENSE": "a785d3201ed37e2eb1fff42264693bafe2a0e62115bf4e38119c5700772ad3a4",
+    "SKILL.md": "69e8ecb910c059efaca0af9b9607527759bd4e9783a1a70fcd5bafee8076068f",
+    "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+    "references/academic-literature-review.md": "c95277d78926e8634102ef9e3d1d15a6e6b758fafe5ee411e34e8e5effaa125a",
+    "references/academic-proposal.md": "bc36d26f98e5e8aadc797947325fc3981c090664eb3eb7fa4757842d1634a3aa",
+    "references/academic-writing.md": "5e20151b18a41d6943df5b3162d19e159d69a2af0021e9528935eda770d618f0",
+    "references/anti-ai-writing.md": "4fed2a71b7fa3989da9b8b3d3b8832a9a81e7adf32fd182b0341a8c020f6f12b",
+    "references/citation-research.md": "8d2672ebdffde5dd95737a0d97fb0cefc43867f6d1a5cb02244f6781b7a476a8",
+    "references/long-form-consistency.md": "26254e382ea3dd793003be0b91a55ed01a92a89187314c8cd1cf744a554acb8a",
+    "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+    "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+    "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+  },
+  "metadata": {
+    "name": "chinese-academic-writing-assistant",
+    "version": "0.1.5",
+    "display_name": "中文论文写作",
+    "display_name_en": "Chinese Academic Writing",
+    "description_zh": "中文论文、开题报告与文献综述的起草、改写、审稿和证据核对",
+    "description_en": "Draft, revise, and review Chinese academic papers, research proposals, and literature reviews using author-provided materials and verified sources.",
+    "description": "用于依据作者材料、文献或明确授权来源，协作完成中文本科、硕士和课程论文、开题报告及文献综述的提纲、段落与章节起草、改写和独立审稿；在组织论证、核对证据与引用、处理长稿一致性或降低模板化表达时使用。",
+    "metadata": {
+      "tags": "chinese, academic, writing, thesis, literature-review"
+    }
+  },
+  "metadata_field_order_matches_previous": true,
+  "entry_body_matches_release_tag": true,
+  "runtime_files_match_release_tag": true,
+  "root_license_matches_release_tag": true,
+  "hooks_included": false,
+  "reproducible_zip": true,
+  "client_install_tested": false,
+  "zip_name": "中文论文写作-WorkBuddy-v0.1.5-main-32950f07-无Hooks.zip",
+  "zip_sha256": "3004e19ad6feb52b40dc8d0e0b39313f11a42367210ccc6107a764afed4c014b",
+  "zip_size": 48476,
+  "delivered_path": "C:\\Users\\admin\\Desktop\\中文论文写作-WorkBuddy-v0.1.5-main-32950f07-无Hooks.zip",
+  "desktop_hash_match": true,
+  "previous_zip_preserved": true,
+  "previous_zip_sha256": "02557de5f9d156026a215104baf45ff11f1f98784e7033bb0b6aab2de8a66d0e",
+  "v016_published": false,
+  "new_runtime_changes_in_this_delivery": false,
+  "runtime_change_since_desktop_v014": "7 instruction files changed in published v0.1.5; this delivery includes those existing changes."
+}
