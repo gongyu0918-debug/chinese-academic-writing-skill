@@ -1,0 +1,16 @@
+{
+  "worktree": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill",
+  "branch": "codex/academic-release-0.1.6",
+  "purpose": "isolated rule trials and authorized v0.1.6 release",
+  "local_archive": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\release-v0.1.6-20260929",
+  "retained_local_files": 214,
+  "release_and_desktop_hashes_verified_after_copy": true,
+  "active_writer_or_review_processes": false,
+  "ignored_profile_inside_worktree": "PQ2 execution profile is disposable; only identity/model metadata is in Git",
+  "external_temporary_profiles_retained": [
+    "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz",
+    "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-Q-run-9kk5jlup"
+  ],
+  "external_profiles_note": "No running writer remains. These diagnostic execution profiles are separate from the managed worktree; raw hidden reasoning is not copied into Git or the retained release archive. Earlier temporary-profile cleanup was blocked; no bypass retry was made.",
+  "status": "ready_for_managed_archive_after_merge"
+}

@@ -11,7 +11,7 @@
 
 ## 当前状态
 
-- 2026-09-29 用户明确Worktree中小步试验与主次验收尺度后，准入P主次规则和Q2独立证据区分，运行差异仅入口第2步与独立综述叶一条；Q第一版、Elicit硬筛流程取消。本轮28次请求、27份终稿、1次通道失败，最终规则的独立匿名审阅与主审取舍完成，未宣称所有稿件质量通过。准备按已有授权发布0.1.6和更新WorkBuddy。详见 `tests/evidence/priority-recalibration-20260929/`。
+- 2026-09-29 用户明确Worktree中小步试验与主次验收尺度后，准入P主次规则和Q2独立证据区分，运行差异仅入口第2步与独立综述叶一条；Q第一版、Elicit硬筛流程取消。本轮28次请求、27份终稿、1次通道失败，最终规则的独立匿名审阅与主审取舍完成，未宣称所有稿件质量通过。0.1.6已发布至GitHub（标签d6487743，下载资产哈希一致）；SkillHub versionId 388710、ClawHub versionId k9769gtwb2mmt873j8jmzz1s2s8famns各受理一次，公开索引/签名和新版详情仍待传播。桌面WorkBuddy已交付0.1.6无Hooks包，字节与标签一致，未实装。发布回执见 `tests/evidence/v0.1.6-release-gate/RELEASE-RECEIPT.json`。详见 `tests/evidence/priority-recalibration-20260929/`。
 
 - 2026-09-29 用户进一步要求实际、稳定的产品改进后，取消仅更新元数据的0.1.6发布；三个平台均未提交0.1.6，README仍为0.1.5。桌面WorkBuddy由0.1.4同步到已发布0.1.5，12文件无Hooks包绑定v0.1.5标签，旧包保留；包内容、元数据顺序、确定性ZIP及桌面哈希通过，未做客户端实装。记录见 `tests/evidence/stable-delivery-20260929/`。
 
