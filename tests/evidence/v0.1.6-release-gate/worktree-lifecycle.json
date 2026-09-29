@@ -12,5 +12,12 @@
     "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-Q-run-9kk5jlup"
   ],
   "external_profiles_note": "No running writer remains. These diagnostic execution profiles are separate from the managed worktree; raw hidden reasoning is not copied into Git or the retained release archive. Earlier temporary-profile cleanup was blocked; no bypass retry was made.",
-  "status": "ready_for_managed_archive_after_merge"
+  "status": "archived",
+  "archived_at": "2026-09-29T13:14:02.783967+00:00",
+  "archive_artifact_id": "01a0ed4b-ed2b-7bd0-8c9b-04ed787777e4",
+  "managed_archive_verified": true,
+  "filesystem_path_absent": true,
+  "git_worktree_list_absent": true,
+  "merged_and_pushed_receipt_commit": "267ed220f2c07e8ec7ddefe466fbc32e150c053c",
+  "other_worktrees": "Pre-existing experiment and release checkouts retained for their historical work/evidence; not created or modified by this continuation."
 }
