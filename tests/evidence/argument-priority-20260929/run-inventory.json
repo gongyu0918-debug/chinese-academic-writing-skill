@@ -1,0 +1,67 @@
+[
+  {
+    "batch": "priority-r1",
+    "requests": 16,
+    "complete_final_texts": 12,
+    "technical_valid": 12,
+    "failures": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "case": "C_proposal",
+        "arm": "baseline",
+        "invalid": [
+          "timeout",
+          "missing_final"
+        ]
+      },
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "case": "C_proposal",
+        "arm": "candidate",
+        "invalid": [
+          "timeout",
+          "missing_final"
+        ]
+      },
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "case": "D_control",
+        "arm": "baseline",
+        "invalid": [
+          "timeout",
+          "missing_final"
+        ]
+      },
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "case": "D_control",
+        "arm": "candidate",
+        "invalid": [
+          "timeout",
+          "missing_final"
+        ]
+      }
+    ]
+  },
+  {
+    "batch": "priority-controls",
+    "requests": 4,
+    "complete_final_texts": 4,
+    "technical_valid": 4,
+    "failures": []
+  },
+  {
+    "batch": "priority-r2",
+    "requests": 12,
+    "complete_final_texts": 12,
+    "technical_valid": 12,
+    "failures": []
+  },
+  {
+    "batch": "priority-r2-required",
+    "requests": 2,
+    "complete_final_texts": 2,
+    "technical_valid": 2,
+    "failures": []
+  }
+]

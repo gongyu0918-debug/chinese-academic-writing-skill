@@ -1,0 +1,45 @@
+{
+  "main_commit": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "candidate_head": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "fingerprints": {
+    "baseline": "e3ee8774314c08bf7b11d46e98c6033bfb69d56d00868a976c2c3ea9edc51c76",
+    "candidate": "0e46d568cbcb2e68a7022575e09417a1b7fd847b882b89b702f60c72f1bcec44"
+  },
+  "models": [
+    "alibaba-token-plan-responses/deepseek-v4.1-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "A_discussion": "请依据作者材料为课程论文写“反馈对象与修订选择”讨论小节，约450字，只交正文。中心问题：学生如何在不同反馈中选择修订对象。24名学生各完成一次初稿和一次修订；教师在初稿中分别标出主张与证据错位、来源遗漏。修订记录显示，15人优先调整主张与证据的对应，6人只补来源，3人没有修改。访谈摘录：7人说能看出具体哪条证据不贴合主张，4人说补来源更容易；11人均来自前两组，其余未访谈。作者观点：反馈对象是否清楚、修改是否容易，可能共同影响选择。另有课堂管理记录：课程共8周，每周90分钟，第3周换过教室，作业系统收齐24份，两次下雨延迟下课。没有对照组，也未评价修订后的质量。下一节另写教学建议。",
+    "B_review": "写独立文献综述中的“检索提示与证据回查”一节，约450字，只交正文并保留来源ID。只用以下已读原文摘录。研究问题：提示是否有助于读者回到与判断相关的证据。L1：48名成人随机使用有提示或无提示的在线说明，带提示组更常回到对应段落；作者未测理解正确率。L2：36名成人完成另一种说明任务，提示组与对照组回查次数接近，但提示组更多回到无关段落；作者认为提示内容的相关性值得进一步考察。L3：12名培训学员访谈，8人称醒目标记便于找到需要复查的位置，未记录实际点击。L4：问卷调查80名本科生，56人喜欢浅色界面，未测试提示或回查。L5：系统设计说明介绍了导航栏、下载按钮、账户设置三个模块，没有读者实验。文献对象、任务和测量不相同。不得编造综合效应，不需要逐篇摘要或另附文献表。",
+    "C_proposal": "根据材料写开题报告“研究内容与已有基础”小节，约400字，只交正文。研究问题：同一历史事件在两版地方教材中如何调整叙述次序。作者已整理2010年版和2022年版教材，核对出都涉及该事件的18个段落，已抄录各段原文并核对页码；只完成12个段落的次序标记，其余6个尚未标记。作者拟比较事件起因、经过和结果的叙述位置；这三个维度已与导师确认。作者尚未判断变化原因，拟在完成全部标记后结合教材编写说明作解释，编写说明尚未取得。作者还整理了教材封面颜色、定价及纸张尺寸，不拟研究装帧与发行。进度另节写，本节不写时间表。研究成果尚未形成。学校要求先写研究内容，再写已有基础。",
+    "D_control": "请压缩这段论文讨论至约220字，只交改后正文，保持原判断和引用。研究问题是维修时长是否下降。原稿：本研究比较甲站2023年和2024年维修记录。2023年有60条记录，平均维修时长为5天；2024年有90条记录，平均为3天。从年度均值看，维修时长有所缩短。但2023年仅登记已结案工单，2024年同时登记已结案与未结案工单，且两年未结案事项的时长计算口径没有说明。因此，记录均值的变化尚不能被直接解释为维修效率改善。另一处同期运行记录显示，紧急维修工单由10条增至25条，工单构成也有变化。[R1] 两年的工作人员人数均为8人，前台公告栏分别在3月和4月重新张贴。作者认为应先核对登记和计算口径，再讨论两年时长差异，不宜仅凭均值对效率作确定判断。本研究没有另外调查服务评价。[R1] 原始材料与本段一致，引用R1是作者的记录汇编。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\faa963e871dd422c\\codex.exe",
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-priority-r1-07h164ia",
+  "permissions": "inherited-host-config",
+  "timeout": 420,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "baseline_source": null,
+  "candidate_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-priority\\chinese-academic-writing-skill\\chinese-academic-writing-assistant",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "4ad0cd247ec84688c9c972fb4eca0589bd6ba29b16778a771934daafbf1d0970",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n本目录文本文件为 UTF-8 编码，读取时显式指定 UTF-8 解码。\n\n",
+  "ordinary_only": false,
+  "utf8_read": true,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "ephemeral",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  }
+}

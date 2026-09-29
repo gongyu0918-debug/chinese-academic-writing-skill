@@ -1,0 +1,74 @@
+[
+  {
+    "pair": "1-1",
+    "label": "X",
+    "file": "m0-A_discussion-baseline.final.txt",
+    "sha256": "da171648bc9726480802bae0b20230c68ab080833c623976caa5f1c5cbd09700"
+  },
+  {
+    "pair": "1-1",
+    "label": "Y",
+    "file": "m0-A_discussion-candidate.final.txt",
+    "sha256": "9b1d07b36e22a4f595d149ef30c9bcf8d564e68d631828f4dce151ae85cc2aea"
+  },
+  {
+    "pair": "1-2",
+    "label": "X",
+    "file": "m0-B_review-candidate.final.txt",
+    "sha256": "cc26042ad11d898f65985dac2b8c5dfa9cc9f701ea65c3718dc54590e48e4fa3"
+  },
+  {
+    "pair": "1-2",
+    "label": "Y",
+    "file": "m0-B_review-baseline.final.txt",
+    "sha256": "457035d275e9aeb322dccc473bb444c49023c47dfcf556d14fb80ff390ce6829"
+  },
+  {
+    "pair": "2-1",
+    "label": "X",
+    "file": "m1-A_discussion-candidate.final.txt",
+    "sha256": "ba49d6f136e5e0c8614dff7cf12b7d477ad11fd469eda499749c9bc71b8382b0"
+  },
+  {
+    "pair": "2-1",
+    "label": "Y",
+    "file": "m1-A_discussion-baseline.final.txt",
+    "sha256": "952a50ffc24e69e7b4212ba72c8fb59c12663bd011c62b017b698c30bb6c2db4"
+  },
+  {
+    "pair": "2-2",
+    "label": "X",
+    "file": "m1-B_review-baseline.final.txt",
+    "sha256": "f9e00e9db06e6f9944bb345752df72e1296812d8dd75f5ccfff0f349830841a9"
+  },
+  {
+    "pair": "2-2",
+    "label": "Y",
+    "file": "m1-B_review-candidate.final.txt",
+    "sha256": "3ec285a9044cb9935766f64dddeb0175271221b3add306f043ae694a04d2e311"
+  },
+  {
+    "pair": "2-3",
+    "label": "X",
+    "file": "m1-C_proposal-candidate.final.txt",
+    "sha256": "1472c811154ee8210a5c4e6ffdaffd14cf0f9fc8e3c34130fbbc2dd571767330"
+  },
+  {
+    "pair": "2-3",
+    "label": "Y",
+    "file": "m1-C_proposal-baseline.final.txt",
+    "sha256": "729854a467f42ec08106ab10d021c67338bdc3fa6285557b93ac89b73fb250ae"
+  },
+  {
+    "pair": "2-4",
+    "label": "X",
+    "file": "m1-D_control-baseline.final.txt",
+    "sha256": "836a1c149985b770284ebb5fb33800c8e85167308c80e7723b843587c6ff9b37"
+  },
+  {
+    "pair": "2-4",
+    "label": "Y",
+    "file": "m1-D_control-candidate.final.txt",
+    "sha256": "a7f040c5c58863da7ea530e866cd50d77312a3f47c0db1b4ddc71ce37e5bac3f"
+  }
+]

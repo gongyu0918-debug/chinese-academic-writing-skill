@@ -1,0 +1,14 @@
+[
+  {
+    "pair": "1-1",
+    "label": "X",
+    "file": "m0-E_required-baseline.final.txt",
+    "sha256": "6e4425c052f957f8279aef47f6e4d18283519afee871ac22d89645ba12e3d536"
+  },
+  {
+    "pair": "1-1",
+    "label": "Y",
+    "file": "m0-E_required-candidate.final.txt",
+    "sha256": "b4934496bbc1b1a76bf8867d3f4bd1a82bbac0f78985a949c3ac62c03286747f"
+  }
+]

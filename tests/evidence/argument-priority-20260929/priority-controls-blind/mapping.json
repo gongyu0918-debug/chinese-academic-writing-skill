@@ -1,0 +1,26 @@
+[
+  {
+    "pair": "1-1",
+    "label": "X",
+    "file": "m0-E_required-baseline.final.txt",
+    "sha256": "c73214fca29ce00b22cc54f569fc040e277f17599ea19981b31a4f640af6ec12"
+  },
+  {
+    "pair": "1-1",
+    "label": "Y",
+    "file": "m0-E_required-candidate.final.txt",
+    "sha256": "2f21dbbd78773844181cd13839af2837b436e1dc8ddf415e3bd1f37d1a086433"
+  },
+  {
+    "pair": "1-2",
+    "label": "X",
+    "file": "m0-F_counterargument-candidate.final.txt",
+    "sha256": "552f18101cd96fba269999a3c15da33d27aac86a989f14fe66ce9276e54e63dd"
+  },
+  {
+    "pair": "1-2",
+    "label": "Y",
+    "file": "m0-F_counterargument-baseline.final.txt",
+    "sha256": "b6c04a31925b78064ca0b827c66cbcc2db8cb25c528e09ce6bc00190cb0c4352"
+  }
+]

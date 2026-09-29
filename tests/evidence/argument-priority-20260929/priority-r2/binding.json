@@ -1,0 +1,44 @@
+{
+  "main_commit": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "candidate_head": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "fingerprints": {
+    "baseline": "e3ee8774314c08bf7b11d46e98c6033bfb69d56d00868a976c2c3ea9edc51c76",
+    "candidate": "8b0926256b33d78321ea46ac26f75a5f34559d0a4b9ef4bef9208a155f3476b2"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "G_evidence": "依据下面已读来源，为独立文献综述写“图例提示与路线识别”小节，约400字，只交正文，保留来源ID。问题包括路线识别的正确性与耗时。M1：30名成人在两种图例下识别路线，简化图例组平均耗时40秒，常规图例组55秒，两组各15人，分组非随机；未记录正确率。M2：另一任务有40名成人，两种图例各20人，路线识别正确人数分别为16人和12人，未记录耗时。M3：访谈12名使用者，9人说图例醒目，3人觉得颜色太多，未测试识别表现。M4：一次设计展展出25张地图，说明文字只介绍装帧材料，没有用户评价。不能从不同任务拼成同一图例同时提高正确率并缩短耗时，不需要逐篇摘要。",
+    "H_discussion": "只依据材料，为课程论文写“提醒设置与归还行为”的结果讨论，约400字，直接给正文。中心问题是归还提醒是否与逾期天数减少相联系。甲阅览室2024年有80次归还，平均逾期3天；2025年有100次归还，平均逾期2天，2025年开始提前两天发送归还提醒。两年的读者构成和资料借期不同，未记录具体差异。乙阅览室同期也在2025年启用相同提醒，但两年的平均逾期天数均为2天，分别记录70次和90次归还。作者判断：提醒可能帮助部分读者安排归还，但现有记录不足以单独确认提醒的作用。另有甲室台账记录：更换2个书架、调整3张桌子、重印200份导览单；上述台账未关联到借阅记录。不得把台账活动当效果原因，不写管理建议。",
+    "I_proposal": "为开题报告写“研究内容与材料条件”，约300字，直接交正文。中心问题是地方报纸两次改版前后读者来信栏目如何安排回应。作者已收集2005年与2015年各12期报纸，确认24期都保存完整；已转录其中18期的来信栏目，其余6期尚未转录。拟比较来信问题的呈现顺序与编辑回应的位置，这两个维度已经确定。作者计划完成全部转录后进行对读，不做读者访谈。尚未比较两版的具体差异，不能预设改版改善互动。另整理了两年的报纸售价和印刷纸张规格，本研究不讨论经营与印制。学校模板规定先写研究内容，随后写材料条件；本节不写进度日期。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\faa963e871dd422c\\codex.exe",
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-priority-r2-lr0uypq3",
+  "permissions": "inherited-host-config",
+  "timeout": 420,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "baseline_source": null,
+  "candidate_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-priority\\chinese-academic-writing-skill\\chinese-academic-writing-assistant",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "1846e1d615a16209f1990fdcbadfbb5bff51d507c29ad2ce25d3188fbaf64244",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n本目录文本文件为 UTF-8 编码，读取时显式指定 UTF-8 解码。\n\n",
+  "ordinary_only": false,
+  "utf8_read": true,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  }
+}

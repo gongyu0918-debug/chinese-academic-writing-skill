@@ -14,3 +14,7 @@ tests/evidence/routing-paragraph-review-20260916/packets/blind-negation-final.md
 tests/evidence/routing-paragraph-review-20260916/packets/frozen-final-rules.md whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
 tests/evidence/routing-paragraph-review-20260916/packets/frozen-rule-review.md whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
 tests/evidence/v0.1.5-release-gate/** text eol=lf
+# Frozen academic priority inputs and model outputs retain their original bytes.
+tests/evidence/argument-priority-20260929/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Verbatim reviewer Markdown retains hard line breaks and final blank lines.
+tests/evidence/argument-priority-20260929/reviews/*.md whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

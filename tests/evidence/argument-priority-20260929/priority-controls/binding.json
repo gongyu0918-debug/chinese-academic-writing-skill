@@ -1,0 +1,42 @@
+{
+  "main_commit": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "candidate_head": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "fingerprints": {
+    "baseline": "e3ee8774314c08bf7b11d46e98c6033bfb69d56d00868a976c2c3ea9edc51c76",
+    "candidate": "0e46d568cbcb2e68a7022575e09417a1b7fd847b882b89b702f60c72f1bcec44"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash"
+  ],
+  "cases": {
+    "E_required": "请写独立文献综述的资料述评，按学校作业要求依次逐篇介绍S1至S5，每篇各一两句，五篇都要出现并保留ID、人数和该篇主要结果；随后用一段简短综合回应“版面提示与信息定位”。只交正文，约400字。已读来源：S1，32名成人，栏边标记组在同一表格中定位指定数字平均用时18秒，无标记组22秒，分组非随机；S2，24名成人，页首目录与页末目录条件下定位正确人数分别为9人和10人，两条件各12人，无用时数据；S3，访谈10名退休职工，其中6人说加粗标题容易找到、4人偏好扩大字号，没有行为测试；S4，问卷50名学生，其中35人偏好蓝色封面，未考察版面提示；S5，技术说明提出三种导出文件格式，无用户研究。不要因S4或S5与中心问题关系较弱而省略，说明关联有限即可。",
+    "F_counterargument": "请为文学课程论文写一个约300字的分析段，中心问题是叙述者对远行的态度，直接交正文。作者提供两处原文摘录：第12页“只要出了这座城，日子总会亮起来”；第37页“他把车票折起，仍放回没有锁的抽屉”。作者已核对两句均出自同一人物的内心描写，前一句在收到邀请后，后一句在临行前。作者主张：两处文字可以读作期待与迟疑并存，不能只用前一句概括始终积极。除此之外没有提供小说其他章节、作者生平或社会背景。段落要分析两处措辞及其张力，不替人物确定留城原因，也不推定人物最终有没有出发。引用保留页码。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\faa963e871dd422c\\codex.exe",
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-priority-controls-8copru40",
+  "permissions": "inherited-host-config",
+  "timeout": 420,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "baseline_source": null,
+  "candidate_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-priority\\chinese-academic-writing-skill\\chinese-academic-writing-assistant",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "55668ef9e3e4f67cb5d81548775f5aef45138eb6",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "36b75b5deddb90ea10caece8542bc1731520fd9f446783a6b352d95f73d36624",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n本目录文本文件为 UTF-8 编码，读取时显式指定 UTF-8 解码。\n\n",
+  "ordinary_only": false,
+  "utf8_read": true,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "ephemeral",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "01a0ec9c-f9d7-7613-83ee-f20181eefefd",
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-max",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "id": "01a0ec9c-fb24-76a3-9a88-5675c8884349",
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/glm-5.3",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "id": "01a0eca8-b543-7a20-a119-7f77bc8b695a",
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-max",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "id": "01a0ecab-8f58-7da1-93b4-b600bd056e7d",
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/glm-5.3",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "id": "01a0ecb4-a88e-70d1-9a75-ee97755fffe3",
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/glm-5.3",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "id": "01a0ecb4-a97e-7a92-a4fa-7bed1e49a907",
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-max",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "id": "01a0ecb8-904e-75d3-ba20-ce0d970d4ada",
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/glm-5.3",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "id": "01a0ecb8-913c-7d11-8c2f-3c42d3ba25dc",
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-max",
+        "effort": "max"
+      }
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "batches": {
+    "priority-r1": {
+      "requests": 16,
+      "technical_valid": 12,
+      "snapshot_fingerprints": {
+        "baseline": "e3ee8774314c08bf7b11d46e98c6033bfb69d56d00868a976c2c3ea9edc51c76",
+        "candidate": "0e46d568cbcb2e68a7022575e09417a1b7fd847b882b89b702f60c72f1bcec44"
+      }
+    },
+    "priority-controls": {
+      "requests": 4,
+      "technical_valid": 4,
+      "snapshot_fingerprints": {
+        "baseline": "e3ee8774314c08bf7b11d46e98c6033bfb69d56d00868a976c2c3ea9edc51c76",
+        "candidate": "0e46d568cbcb2e68a7022575e09417a1b7fd847b882b89b702f60c72f1bcec44"
+      }
+    },
+    "priority-r2": {
+      "requests": 12,
+      "technical_valid": 12,
+      "snapshot_fingerprints": {
+        "baseline": "e3ee8774314c08bf7b11d46e98c6033bfb69d56d00868a976c2c3ea9edc51c76",
+        "candidate": "8b0926256b33d78321ea46ac26f75a5f34559d0a4b9ef4bef9208a155f3476b2"
+      }
+    },
+    "priority-r2-required": {
+      "requests": 2,
+      "technical_valid": 2,
+      "snapshot_fingerprints": {
+        "baseline": "e3ee8774314c08bf7b11d46e98c6033bfb69d56d00868a976c2c3ea9edc51c76",
+        "candidate": "8b0926256b33d78321ea46ac26f75a5f34559d0a4b9ef4bef9208a155f3476b2"
+      }
+    }
+  },
+  "problems": []
+}

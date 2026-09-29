@@ -1,0 +1,36 @@
+[
+  {
+    "identity": {
+      "id": "01a0ecb2-1d03-71d0-afe9-30f7dd0bfc8e",
+      "timestamp": "2026-09-29T10:24:50.948Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-priority-r2-required-8w0rqs71\\m0-E_required-baseline\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "model_provider": "openai",
+      "source": "exec"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "e3e1a45007ca374066a546465dedb41f4a4b7e30ec1c39d2d73bbf496a5c4f53"
+  },
+  {
+    "identity": {
+      "id": "01a0ecb5-a2df-7223-80af-1764a72a895d",
+      "timestamp": "2026-09-29T10:28:41.824Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-priority-r2-required-8w0rqs71\\m0-E_required-candidate\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "model_provider": "openai",
+      "source": "exec"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "8a1215bd9d9a316866720a979171a35e02efcfcd6dcaeba88c8d0bc12dbea8e2"
+  }
+]
