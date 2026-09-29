@@ -1,0 +1,43 @@
+{
+  "main_commit": "297d458d3d6c1b38c140aa75d9529631a02dfe49",
+  "candidate_head": "121d642fd949808165f4df2ca7a756cd721836a8",
+  "fingerprints": {
+    "baseline": "e3ee8774314c08bf7b11d46e98c6033bfb69d56d00868a976c2c3ea9edc51c76",
+    "candidate": "9259fc13c47d9654f532ce738d1b37dbf9b71e5e2f97fdb6049eb28a525d63ff"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "Q1_secondary": "只依据以下已读材料，为独立文献综述写“索引页与原文回查”的研究述评，约400字，只交正文，保留使用来源ID。问题是索引页是否有助于读者回查原文。A：一项课堂研究的80名读者非随机分为两组各40人，带索引页材料组16人回查原文，无索引页组10人回查；研究未记录回查原因。B：后来的综述写道“已有研究发现索引页组回查人数较多”，该句引用A的80人研究，没有另报回查数据。C：一篇评论据B概括“索引页可能有利于原文回查”，没有实施用户研究。D：另一研究对60名读者分组，各30人，在不同文章任务中有索引页组15人回查、无索引页组16人回查，分组方式未交代。E：方法说明介绍如何制作索引页与记录点击，只给操作步骤，无用户效果数据。请综合比较证据及其允许的结论，不逐篇摘要，不做文献检索。",
+    "Q2_independent": "只依据以下已读来源，为独立文献综述写“检索清单与来源辨认”的小节，约400字，只交正文，保留来源ID。A：48名读者分两组各24人，同一辨认任务中清单组18人正确辨认来源、无清单组13人正确，非随机分组。B：另一研究使用A同样的任务设计和清单模板，重新招募54名读者，清单组与无清单组各27人，分别20人与16人正确；作者明确报告这54人来自另一课程，未与A共用样本，亦非随机分组。C：方法文献介绍清单模板中的作者、年份与出版机构三个栏目；A、B均说明采用该模板，C本身未测读者表现。D：访谈12人，8人觉得清单查找方便，4人认为栏目繁琐，没有测试辨认正确性。综述问题是清单对来源辨认是否有帮助，需要结合研究之间的关系作有限综合，正文可以交代方法引用的作用，不要求逐篇列述。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\faa963e871dd422c\\codex.exe",
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-Q-run-9kk5jlup",
+  "permissions": "inherited-host-config",
+  "timeout": 420,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "297d458d3d6c1b38c140aa75d9529631a02dfe49",
+  "baseline_source": null,
+  "candidate_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\Q-independent-evidence",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "297d458d3d6c1b38c140aa75d9529631a02dfe49",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "8cb2eebbf52242d7af2c70dcd346db89afd4b3c3ed2a532b06c022d51f3faa50",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n本目录文本文件为 UTF-8 编码，读取时显式指定 UTF-8 解码。\n\n",
+  "ordinary_only": false,
+  "utf8_read": true,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  }
+}

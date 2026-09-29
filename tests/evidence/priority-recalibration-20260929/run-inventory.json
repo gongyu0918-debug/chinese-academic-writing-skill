@@ -1,0 +1,257 @@
+[
+  {
+    "batch": "P-run",
+    "case": "P1_discussion",
+    "arm": "baseline",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m0-P1_discussion-baseline.final.txt"
+  },
+  {
+    "batch": "P-run",
+    "case": "P1_discussion",
+    "arm": "candidate",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m0-P1_discussion-candidate.final.txt"
+  },
+  {
+    "batch": "P-run",
+    "case": "P2_revision",
+    "arm": "baseline",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m0-P2_revision-baseline.final.txt"
+  },
+  {
+    "batch": "P-run",
+    "case": "P2_revision",
+    "arm": "candidate",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m0-P2_revision-candidate.final.txt"
+  },
+  {
+    "batch": "P-run",
+    "case": "P3_required",
+    "arm": "baseline",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m0-P3_required-baseline.final.txt"
+  },
+  {
+    "batch": "P-run",
+    "case": "P3_required",
+    "arm": "candidate",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m0-P3_required-candidate.final.txt"
+  },
+  {
+    "batch": "P-run",
+    "case": "P1_discussion",
+    "arm": "candidate",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m1-P1_discussion-candidate.final.txt"
+  },
+  {
+    "batch": "P-run",
+    "case": "P1_discussion",
+    "arm": "baseline",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m1-P1_discussion-baseline.final.txt"
+  },
+  {
+    "batch": "P-run",
+    "case": "P2_revision",
+    "arm": "candidate",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m1-P2_revision-candidate.final.txt"
+  },
+  {
+    "batch": "P-run",
+    "case": "P2_revision",
+    "arm": "baseline",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m1-P2_revision-baseline.final.txt"
+  },
+  {
+    "batch": "P-run",
+    "case": "P3_required",
+    "arm": "candidate",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m1-P3_required-candidate.final.txt"
+  },
+  {
+    "batch": "P-run",
+    "case": "P3_required",
+    "arm": "baseline",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "P-run/m1-P3_required-baseline.final.txt"
+  },
+  {
+    "batch": "Q-run",
+    "case": "Q1_secondary",
+    "arm": "baseline",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "Q-run/m0-Q1_secondary-baseline.final.txt"
+  },
+  {
+    "batch": "Q-run",
+    "case": "Q1_secondary",
+    "arm": "candidate",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "Q-run/m0-Q1_secondary-candidate.final.txt"
+  },
+  {
+    "batch": "Q-run",
+    "case": "Q2_independent",
+    "arm": "baseline",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "Q-run/m0-Q2_independent-baseline.final.txt"
+  },
+  {
+    "batch": "Q-run",
+    "case": "Q2_independent",
+    "arm": "candidate",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "Q-run/m0-Q2_independent-candidate.final.txt"
+  },
+  {
+    "batch": "Q-run",
+    "case": "Q1_secondary",
+    "arm": "candidate",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "Q-run/m1-Q1_secondary-candidate.final.txt"
+  },
+  {
+    "batch": "Q-run",
+    "case": "Q1_secondary",
+    "arm": "baseline",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "final": null
+  },
+  {
+    "batch": "Q-run",
+    "case": "Q2_independent",
+    "arm": "candidate",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "Q-run/m1-Q2_independent-candidate.final.txt"
+  },
+  {
+    "batch": "Q-run",
+    "case": "Q2_independent",
+    "arm": "baseline",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "Q-run/m1-Q2_independent-baseline.final.txt"
+  },
+  {
+    "batch": "PQ2-run",
+    "case": "J_new_samples",
+    "arm": "baseline",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "PQ2-run/m0-J_new_samples-baseline.final.txt"
+  },
+  {
+    "batch": "PQ2-run",
+    "case": "J_new_samples",
+    "arm": "candidate",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "PQ2-run/m0-J_new_samples-candidate.final.txt"
+  },
+  {
+    "batch": "PQ2-run",
+    "case": "K_shared_result",
+    "arm": "baseline",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "PQ2-run/m0-K_shared_result-baseline.final.txt"
+  },
+  {
+    "batch": "PQ2-run",
+    "case": "K_shared_result",
+    "arm": "candidate",
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "PQ2-run/m0-K_shared_result-candidate.final.txt"
+  },
+  {
+    "batch": "PQ2-run",
+    "case": "J_new_samples",
+    "arm": "candidate",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "PQ2-run/m1-J_new_samples-candidate.final.txt"
+  },
+  {
+    "batch": "PQ2-run",
+    "case": "J_new_samples",
+    "arm": "baseline",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "PQ2-run/m1-J_new_samples-baseline.final.txt"
+  },
+  {
+    "batch": "PQ2-run",
+    "case": "K_shared_result",
+    "arm": "candidate",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "PQ2-run/m1-K_shared_result-candidate.final.txt"
+  },
+  {
+    "batch": "PQ2-run",
+    "case": "K_shared_result",
+    "arm": "baseline",
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "invalid": [],
+    "final": "PQ2-run/m1-K_shared_result-baseline.final.txt"
+  }
+]

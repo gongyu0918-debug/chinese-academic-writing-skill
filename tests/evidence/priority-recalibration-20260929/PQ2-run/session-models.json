@@ -1,0 +1,138 @@
+[
+  {
+    "identity": {
+      "id": "01a0ed34-3822-7d42-928c-b6081960702d",
+      "timestamp": "2026-09-29T12:46:57.655Z",
+      "cwd": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\cow-native-PQ2-run-oi55ltsi\\m0-J_new_samples-baseline\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "c4a97d4437b75b299d491e2b9baf84daf2c3c9aacabceed6965f089900653c7e"
+  },
+  {
+    "identity": {
+      "id": "01a0ed34-3835-7653-997b-92ab7960ce21",
+      "timestamp": "2026-09-29T12:46:57.677Z",
+      "cwd": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\cow-native-PQ2-run-oi55ltsi\\m0-K_shared_result-baseline\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "b305555e185ae12e4a37e9385cffd70fe8a2ecf3fa3792f77a66533c1e10c1b2"
+  },
+  {
+    "identity": {
+      "id": "01a0ed35-6b2d-7931-8744-3fd8b233ad34",
+      "timestamp": "2026-09-29T12:48:16.257Z",
+      "cwd": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\cow-native-PQ2-run-oi55ltsi\\m0-K_shared_result-candidate\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "68f6e1429009fa24ba1e3bbe7568b045371e77885b67cba8001053b3789506bb"
+  },
+  {
+    "identity": {
+      "id": "01a0ed38-34d8-7573-b8b4-ab414897d2e4",
+      "timestamp": "2026-09-29T12:51:18.953Z",
+      "cwd": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\cow-native-PQ2-run-oi55ltsi\\m1-J_new_samples-candidate\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "6d03c37ea904ddd095881e147aa2e65ed59bf57618cee738cf36b4664c1926b6"
+  },
+  {
+    "identity": {
+      "id": "01a0ed39-043b-7990-9b33-141aae8b8c81",
+      "timestamp": "2026-09-29T12:52:12.046Z",
+      "cwd": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\cow-native-PQ2-run-oi55ltsi\\m0-J_new_samples-candidate\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "23175af7ee3426ec91f5becd304e2fb20d482bec591de9c16c8c53bca7d8cf32"
+  },
+  {
+    "identity": {
+      "id": "01a0ed39-4621-7dd2-889d-5e9a4ef65d4f",
+      "timestamp": "2026-09-29T12:52:28.912Z",
+      "cwd": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\cow-native-PQ2-run-oi55ltsi\\m1-J_new_samples-baseline\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "d2d0996fd80fdc439810b487ac3fcbb0392cdf6096fee6327ee5ce81f821b3f4"
+  },
+  {
+    "identity": {
+      "id": "01a0ed39-8d5f-7682-931f-9bf3a48f02d3",
+      "timestamp": "2026-09-29T12:52:47.150Z",
+      "cwd": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\cow-native-PQ2-run-oi55ltsi\\m1-K_shared_result-candidate\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "861b07859f83e1bd40b462910f1556635ee19b698364c7595eb694ec1dc5a9b6"
+  },
+  {
+    "identity": {
+      "id": "01a0ed39-ee90-7621-a5f0-f10c5d15a998",
+      "timestamp": "2026-09-29T12:53:12.037Z",
+      "cwd": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\cow-native-PQ2-run-oi55ltsi\\m1-K_shared_result-baseline\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "d13e3c902574fa8ecf6f2e1e9ddf0f56283dea3b4884180c9d1c3603b3ab108e"
+  }
+]

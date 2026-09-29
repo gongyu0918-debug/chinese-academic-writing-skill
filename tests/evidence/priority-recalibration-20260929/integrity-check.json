@@ -1,0 +1,20 @@
+[
+  {
+    "batch": "P-run",
+    "archived_files_hash_match": true,
+    "draft_hashes_match": true,
+    "actual_sessions": 12
+  },
+  {
+    "batch": "Q-run",
+    "archived_files_hash_match": true,
+    "draft_hashes_match": true,
+    "actual_sessions": 8
+  },
+  {
+    "batch": "PQ2-run",
+    "archived_files_hash_match": true,
+    "draft_hashes_match": true,
+    "actual_sessions": 8
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "identity": {
+      "id": "01a0ed29-41d1-77a2-ba64-251e41b30c05",
+      "timestamp": "2026-09-29T12:34:59.155Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m0-P3_required-baseline\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "ef0814de3ceda966498af7b50b75c8e8fe7de15f073df23874227e021e72de62"
+  },
+  {
+    "identity": {
+      "id": "01a0ed29-41d7-7610-8ecb-fb367264922e",
+      "timestamp": "2026-09-29T12:34:59.161Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m0-P2_revision-baseline\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "3521e1e373e3d04272c73d4d0970bd57f2732a6714a24eb7a28d9fed4eb085c6"
+  },
+  {
+    "identity": {
+      "id": "01a0ed29-41ef-73f3-803e-a5841e55f435",
+      "timestamp": "2026-09-29T12:34:59.185Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m0-P1_discussion-baseline\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "240db5e13a1af34f6e7380ee06b17a370eaaace8c8a6c3851629d973a92268f1"
+  },
+  {
+    "identity": {
+      "id": "01a0ed29-4206-7062-8365-d8ee2fe5640e",
+      "timestamp": "2026-09-29T12:34:59.208Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m1-P1_discussion-candidate\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "29852fb7a3abd9952146e2b7b33ba182014f54c80b78f3c8bb7586a7a642ffc2"
+  },
+  {
+    "identity": {
+      "id": "01a0ed29-cefd-7dd3-b4a6-8fbbe531281e",
+      "timestamp": "2026-09-29T12:35:35.295Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m1-P1_discussion-baseline\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "27794a01d9a8c97ef0fa0a1a42fb0a84ad79520a9666fdbc2956941dbb758d65"
+  },
+  {
+    "identity": {
+      "id": "01a0ed2b-0713-7b60-87d7-4df94c880140",
+      "timestamp": "2026-09-29T12:36:55.188Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m0-P1_discussion-candidate\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "9a1988e0b239d28d399075ed80218a0edfcf64f5511622a966c440b79a2e792d"
+  },
+  {
+    "identity": {
+      "id": "01a0ed2b-0dee-7a70-ae0a-12aa5efa1b98",
+      "timestamp": "2026-09-29T12:36:56.943Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m1-P2_revision-candidate\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "fb3d282b6b663dadea5c24481f856bc8dfac3f455918b0764c5702377f82f108"
+  },
+  {
+    "identity": {
+      "id": "01a0ed2b-2b64-72e0-a470-825df4ec7dd6",
+      "timestamp": "2026-09-29T12:37:04.485Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m0-P2_revision-candidate\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "04df0eaf24bb5320130fa08f9ff6c30cdbe71897041ac649526863d4b3089987"
+  },
+  {
+    "identity": {
+      "id": "01a0ed2b-66a9-7140-8ca1-54cb691cd818",
+      "timestamp": "2026-09-29T12:37:19.658Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m0-P3_required-candidate\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "882b25169a09c05f8689e615867c923e5c6dfb18b10aadee893d852a2a041c6d"
+  },
+  {
+    "identity": {
+      "id": "01a0ed2c-30a3-70a2-8df1-fe4a0f643cf7",
+      "timestamp": "2026-09-29T12:38:11.364Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m1-P2_revision-baseline\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "9ccc00e01f21134b9ca77109fb5e39f46626049006ed6c4f845e01ee321702d2"
+  },
+  {
+    "identity": {
+      "id": "01a0ed2c-ad0e-7193-927c-ed15a52ceaad",
+      "timestamp": "2026-09-29T12:38:43.216Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m1-P3_required-candidate\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "e102701b43be41e321427d24f7878de842fceb88248774528aa50169616c009b"
+  },
+  {
+    "identity": {
+      "id": "01a0ed2e-4794-7911-bbdf-1360a686a491",
+      "timestamp": "2026-09-29T12:40:28.310Z",
+      "cwd": "C:\\Users\\admin\\AppData\\Local\\Temp\\cow-native-P-run-9du3azvz\\m1-P3_required-baseline\\workspace",
+      "cli_version": "0.158.0-alpha.2.1",
+      "source": "exec",
+      "model_provider": "openai"
+    },
+    "models": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "raw_session_sha256": "f62ab59a2facbbc8e59f125386fc9278ccb6926d56f58de2836cdddca831f136"
+  }
+]

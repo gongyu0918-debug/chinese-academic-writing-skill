@@ -1,0 +1,44 @@
+{
+  "Q-run-1": {
+    "X": {
+      "case": "Q1_secondary",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "baseline",
+      "file": "m0-Q1_secondary-baseline.final.txt"
+    },
+    "Y": {
+      "case": "Q1_secondary",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "candidate",
+      "file": "m0-Q1_secondary-candidate.final.txt"
+    }
+  },
+  "Q-run-2": {
+    "X": {
+      "case": "Q2_independent",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "candidate",
+      "file": "m0-Q2_independent-candidate.final.txt"
+    },
+    "Y": {
+      "case": "Q2_independent",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "baseline",
+      "file": "m0-Q2_independent-baseline.final.txt"
+    }
+  },
+  "Q-run-3": {
+    "X": {
+      "case": "Q2_independent",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "baseline",
+      "file": "m1-Q2_independent-baseline.final.txt"
+    },
+    "Y": {
+      "case": "Q2_independent",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "candidate",
+      "file": "m1-Q2_independent-candidate.final.txt"
+    }
+  }
+}

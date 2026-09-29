@@ -1,0 +1,43 @@
+{
+  "main_commit": "297d458d3d6c1b38c140aa75d9529631a02dfe49",
+  "candidate_head": "121d642fd949808165f4df2ca7a756cd721836a8",
+  "fingerprints": {
+    "baseline": "9e37597dc06d93f3a15b9a8932b37b35c34ad9c4b0b10991e03e72b645945419",
+    "candidate": "db52a9edb9c04960be9c8fc6b7a35d7c6a91fed5eed1ce7093e0361b37c1c805"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "J_new_samples": "只用以下已读材料写独立文献综述“检索提示与引文定位”的小节，约400字，只交正文，保留所用来源ID。R1：非随机两组各16人，同一任务中提示组11人正确定位引文，无提示组8人正确。R2：沿用R1的提示格式与题目，在另一所学校另招40人，非随机两组各20人，提示组14人正确，无提示组10人正确；原文说明没有使用R1的任何参与者或答题记录。R3：一篇综述引用R1、R2后写“这两项观察中提示组定位正确人数均较多”，没有新做测试。R4：提示格式的设计文献只说明页码、作者、引文起始词三个栏目的安排，没有用户表现数据。R5：另一项访谈的8人中5人认为提示便于查找、3人觉得信息拥挤，未测定位表现。请围绕提示是否有助于定位，比较来源之间的关系、主要结果及结论范围，不逐篇平均介绍，不检索文献。",
+    "K_shared_result": "依据下面已读材料写独立文献综述“栏边编号与来源核对”的研究述评，约380字，只交正文，保留来源ID。T1：观察24名读者使用带栏边编号的文章，15人核对来源；没有无编号对照，未记录核对原因。T2：一篇方法说明引用T1，并准确转述“24名使用编号文章的读者中15人核对来源”，随后介绍编号制作步骤，没有另招参与者或提供新观察。T3：一篇综述同时引用T1、T2，陈述“T1观察到部分读者使用编号文章时核对来源”，没有新增数据。T4：另一任务记录30名读者阅读不带编号的不同文章，其中19人核对来源；未与T1使用相同文章或同一招募方式。T5：访谈T1中的6人，4人说编号帮助找到来源位置、2人说习惯自己核对；该访谈使用T1参与者，不是新一轮行为观察。请比较这些材料对研究问题的支持与限制，可以作材料内有限综合，不做总体效果或因果判断。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\faa963e871dd422c\\codex.exe",
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\cow-native-PQ2-run-oi55ltsi",
+  "permissions": "inherited-host-config",
+  "timeout": 420,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "snapshot",
+  "baseline_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\P-priority",
+  "candidate_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-016\\chinese-academic-writing-skill\\.release\\priority-recalibration\\PQ2-combined",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": null,
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "2aefbb3e276f882c59053f3f92cc7e6ff26d8c01bef0b60e35f12c7a057eef4b",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n本目录文本文件为 UTF-8 编码，读取时显式指定 UTF-8 解码。\n\n",
+  "ordinary_only": false,
+  "utf8_read": true,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  }
+}

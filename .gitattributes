@@ -19,3 +19,6 @@ tests/evidence/argument-priority-20260929/** -text whitespace=blank-at-eol,blank
 # Verbatim reviewer Markdown retains hard line breaks and final blank lines.
 tests/evidence/argument-priority-20260929/reviews/*.md whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
 tests/evidence/stable-delivery-20260929/** text eol=lf
+tests/evidence/priority-recalibration-20260929/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/evidence/priority-recalibration-20260929/reviews/*.md whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+tests/evidence/v0.1.6-release-gate/** text eol=lf

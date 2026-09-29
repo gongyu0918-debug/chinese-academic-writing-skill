@@ -1,0 +1,86 @@
+{
+  "P-run-1": {
+    "X": {
+      "case": "P1_discussion",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "baseline",
+      "file": "m0-P1_discussion-baseline.final.txt"
+    },
+    "Y": {
+      "case": "P1_discussion",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "candidate",
+      "file": "m0-P1_discussion-candidate.final.txt"
+    }
+  },
+  "P-run-2": {
+    "X": {
+      "case": "P2_revision",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "candidate",
+      "file": "m0-P2_revision-candidate.final.txt"
+    },
+    "Y": {
+      "case": "P2_revision",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "baseline",
+      "file": "m0-P2_revision-baseline.final.txt"
+    }
+  },
+  "P-run-3": {
+    "X": {
+      "case": "P3_required",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "baseline",
+      "file": "m0-P3_required-baseline.final.txt"
+    },
+    "Y": {
+      "case": "P3_required",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "candidate",
+      "file": "m0-P3_required-candidate.final.txt"
+    }
+  },
+  "P-run-4": {
+    "X": {
+      "case": "P1_discussion",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "candidate",
+      "file": "m1-P1_discussion-candidate.final.txt"
+    },
+    "Y": {
+      "case": "P1_discussion",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "baseline",
+      "file": "m1-P1_discussion-baseline.final.txt"
+    }
+  },
+  "P-run-5": {
+    "X": {
+      "case": "P2_revision",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "baseline",
+      "file": "m1-P2_revision-baseline.final.txt"
+    },
+    "Y": {
+      "case": "P2_revision",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "candidate",
+      "file": "m1-P2_revision-candidate.final.txt"
+    }
+  },
+  "P-run-6": {
+    "X": {
+      "case": "P3_required",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "baseline",
+      "file": "m1-P3_required-baseline.final.txt"
+    },
+    "Y": {
+      "case": "P3_required",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "candidate",
+      "file": "m1-P3_required-candidate.final.txt"
+    }
+  }
+}

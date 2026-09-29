@@ -1,12 +1,12 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.1.5-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.5)
+[![Version](https://img.shields.io/badge/version-0.1.6-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.6)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 中文论文写作 Skill 用于协助完成中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。它根据作者已经提供或明确授权核验的材料工作，可以构造提纲、逐段起草、修改底稿或只审不改，并在长稿和多轮续写中辅助维护和检查事实、术语、引用与研究状态的一致性。
 
-版本 0.1.5 包含路由、逐段写作和宿主独立复核更新。验证范围及已知模型执行问题见[写稿与冷审证据](tests/evidence/routing-paragraph-review-20260916/README.md)。
+版本 0.1.6 在入口中明确学术写作的主次详略：核心证据及其与判断的关系重点展开，背景与旁支按需要收束，关键反证和用户必列内容保留。实写范围及已知风险见[规则验证记录](tests/evidence/priority-recalibration-20260929/README.md)。
 
 这个 Skill 不替作者补造研究。材料不足时，它会收缩交付范围，先给出可成立的结构、研究问题或材料清单，不把常识、惯例和推测写成已经取得的证据。
 
@@ -56,7 +56,7 @@
 
 ## 安装与调用
 
-当前版本：`chinese-academic-writing-assistant@0.1.5`
+当前版本：`chinese-academic-writing-assistant@0.1.6`
 
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
 
@@ -94,6 +94,12 @@ Python 实现改动须运行相关维护测试，覆盖行为、CLI、只读与�
 | `scripts/*.py` | 引用、表达和长稿的只读候选扫描 |
 
 SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，并在平台支持的页面入口单独上传或关联；图片不进入运行包。
+
+## 版本 0.1.6
+
+规则层只有两处小改：入口第2步按研究问题与材料作用安排详略，不按材料条数平均铺排，保留关键反证、必要限定和用户必列内容；独立综述叶区分独立研究结果与准确转述，多次转述不增加独立证据，同方法的新材料或新样本仍分别判断。三个检查脚本及其他运行规则保持0.1.5。
+
+重新校准主次准入，允许次要内容压缩和材料内分析，区分局部收益、稿件错误与可归因回退。独立证据候选第一版因误伤同方法新样本而撤回，最小修订后用新材料复测；摘要先筛的硬流程不采用。没有声称每篇稿件都能稳定提升。详见[取舍与原稿](tests/evidence/priority-recalibration-20260929/README.md)及[发布验证](tests/evidence/v0.1.6-release-gate/README.md)。
 
 ## 版本 0.1.5
 

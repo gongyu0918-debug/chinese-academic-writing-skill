@@ -1,0 +1,58 @@
+{
+  "PQ2-run-1": {
+    "X": {
+      "case": "J_new_samples",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "candidate",
+      "file": "m0-J_new_samples-candidate.final.txt"
+    },
+    "Y": {
+      "case": "J_new_samples",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "baseline",
+      "file": "m0-J_new_samples-baseline.final.txt"
+    }
+  },
+  "PQ2-run-2": {
+    "X": {
+      "case": "K_shared_result",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "candidate",
+      "file": "m0-K_shared_result-candidate.final.txt"
+    },
+    "Y": {
+      "case": "K_shared_result",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "baseline",
+      "file": "m0-K_shared_result-baseline.final.txt"
+    }
+  },
+  "PQ2-run-3": {
+    "X": {
+      "case": "J_new_samples",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "candidate",
+      "file": "m1-J_new_samples-candidate.final.txt"
+    },
+    "Y": {
+      "case": "J_new_samples",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "baseline",
+      "file": "m1-J_new_samples-baseline.final.txt"
+    }
+  },
+  "PQ2-run-4": {
+    "X": {
+      "case": "K_shared_result",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "candidate",
+      "file": "m1-K_shared_result-candidate.final.txt"
+    },
+    "Y": {
+      "case": "K_shared_result",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "baseline",
+      "file": "m1-K_shared_result-baseline.final.txt"
+    }
+  }
+}
