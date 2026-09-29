@@ -1,6 +1,6 @@
 {
   "ADJUDICATION.md": "d730318537183f28764f50cc753c2f100e1077788c53dd9e130baff349a774a8",
-  "agent.md": "3b1545c8c516f279e2b41f846128abdb1f781349dfdd48362cd9136e165f8597",
+  "agent.md": "3a68a12298d4c6d907181cb8d44c1db33496d3c33e57e0b64bf99f172432ae8a",
   "integrity-check.json": "20669237f70355dcc9082b8fae182b702a1344b0674dacc878eabf53867da09e",
   "maintenance-tests.log": "fc61b63c31c674098421e6a7b09296b00d2a7202b89ac0d94b8c198279499be2",
   "priority-controls/archive-transforms.json": "0dc56012c5eaec46595ba0832b135e1c4a830b42819e6837413287997f861969",
@@ -229,7 +229,7 @@
   "priority-r2-required/snapshots/main/SKILL.md": "eee19565fdf9c58800fb39b5f713c30b05eedba0dfec8e280a669f31dcb60bb7",
   "priority-r2-required-blind/mapping.json": "d549e6ce7b3749e5234c5e1036a7b743f79dd8e9dbf6908d1c2fa4ed435d9589",
   "priority-r2-required-blind/pack-0.md": "3e2ca23421aab989cca4d96d72e80e277c268651af543d5f9bc51412e052e3d8",
-  "README.md": "37cfe70608fef8d70fd00098b6e89391d89603422b64d0d707f6fb6c835d2aca",
+  "README.md": "773400ef9c276f1362eedef4813b47da64911f62442a1a28fac72e7be3cd7e91",
   "RESEARCH.md": "c1cd5afea4b137974c511ccc694ffffe918408b3ba5ecd32c95797eddf794bf3",
   "reviews/blind-controls-complete.md": "3ed3675ad871ccfea329a6135a000adf8612f22a645f2165589ed83f8b32b1a0",
   "reviews/blind-controls.md": "97f8d00153c9ff7d81427bcc9d80fab70d20cff4e4b7958e3370dce6a8a63727",

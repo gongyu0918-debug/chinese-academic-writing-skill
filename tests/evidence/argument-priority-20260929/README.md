@@ -52,4 +52,6 @@ git diff --exit-code -- chinese-academic-writing-assistant
 
 归档只保留可见文本、执行信息与选择性会话元数据。`archive-transforms.json` 记录原始/归档哈希与过滤；reasoning事件及重复流式事件不入库，原始stderr留作本轮临时诊断，不含产品交付。测试驱动只是归档副本，复现时复制到隔离检出的 `.release/`，重新核对本机catalog与CLI路径，不直接从证据目录执行旧绝对路径。
 
-本轮证据目录以 Git `-text` 保留冻结输入与稿件字节；原始审阅Markdown的硬换行和尾空行单独保留，产品及主审文档的空白检查未放宽。`manifest.json` 为归档文件哈希，`integrity-check.json` 核对两版快照与成稿哈希。临时profile中完整会话在提取模型元数据后回收，不公开隐藏推理。
+本轮证据目录以 Git `-text` 保留冻结输入与稿件字节；原始审阅Markdown的硬换行和尾空行单独保留，产品及主审文档的空白检查未放宽。`manifest.json` 为归档文件哈希，`integrity-check.json` 核对两版快照与成稿哈希。临时profile只提取模型元数据，不公开隐藏推理。
+
+运行目录清理：四批临时目录的位置保存在各自 `binding.json.runtime`。模型调用均已结束，但自动审批拒绝了删除这四个目录的命令，仅返回 `blocked by policy`；目录保留，未绕过限制重试。它们位于系统临时目录，不属于托管worktree。worktree的回收另用 `archive_worktree`，不能将两种清理状态混为一项。
