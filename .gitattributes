@@ -22,3 +22,5 @@ tests/evidence/stable-delivery-20260929/** text eol=lf
 tests/evidence/priority-recalibration-20260929/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/evidence/priority-recalibration-20260929/reviews/*.md whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
 tests/evidence/v0.1.6-release-gate/** text eol=lf
+# Preserve frozen rule-screen inputs, model outputs and review messages verbatim.
+tests/evidence/rule-screen-20261009/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

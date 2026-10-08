@@ -5,10 +5,23 @@
   "branch": "codex/academic-rule-screen-20261009",
   "purpose": "current-rule screening and isolated real-writing candidate verification",
   "runtime_decision": "cancel R1/R2; runtime unchanged",
-  "stage": "ready for local merge and archival",
+  "stage": "archived and absent from git worktree list",
   "local_artifacts": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\rule-screen-20261009",
   "temporary_profiles": "not retained across directories; eligible for removal with owned managed worktree",
   "historical_worktrees": "not modified",
   "historical_blocked_temp_profiles": "not modified",
-  "publish_or_push": false
+  "publish_or_push": false,
+  "main_merge_commit": "05dd931",
+  "archive_attachment_type": "archived_worktree",
+  "original_path_exists": false,
+  "uncommitted_before_archive": false,
+  "unmerged_before_archive": 0,
+  "closed_subagents": [
+    "01a11cb0-8b2c-7100-be9d-545f538950b3",
+    "01a11cc0-1805-7f61-ad42-d3078d26da2a",
+    "01a11cc7-9800-76a2-956a-f1d373239379"
+  ],
+  "local_artifact_hashes_verified": 39,
+  "full_temporary_profiles_retained": false,
+  "byte_preservation": "scoped -text attributes; original bytes reconstructed only where exact recorded SHA-256 matched"
 }

@@ -1,4 +1,5 @@
 {
+  "hash_scope": "verbatim bytes preserved by scoped Git -text attributes",
   "files": [
     {
       "path": "ADJUDICATION.md",
@@ -6,7 +7,7 @@
     },
     {
       "path": "agent.md",
-      "sha256": "d2f93c7d5a925c1486c5f6d9c19d279b139ac76e3c3dac9f3398abc3dc05f827"
+      "sha256": "4ee281428d44936b7a60d0173276edf544ce99722b0b7ef430f1b636e2e7359d"
     },
     {
       "path": "cases.json",
@@ -746,7 +747,7 @@
     },
     {
       "path": "worktree-lifecycle.json",
-      "sha256": "e0b11e5de53df026f3d6a7a774cc9b6aa98696c58c746c3ecfb0ace6696700e9"
+      "sha256": "bb87c7bdd20e4f30e0645518aa8c47ff68e9cca3de06a061b32d9ca4fe1c2edb"
     }
   ]
 }
