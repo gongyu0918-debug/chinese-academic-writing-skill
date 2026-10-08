@@ -1,0 +1,8 @@
+{
+  "id": "01a11cc7-9800-76a2-956a-f1d373239379",
+  "model": "alibaba-token-plan-responses/qwen3.8-max",
+  "effort": "max",
+  "completed_semantic_review": true,
+  "scope": "R2 Qwen four pairs",
+  "hidden_reasoning_archived": false
+}

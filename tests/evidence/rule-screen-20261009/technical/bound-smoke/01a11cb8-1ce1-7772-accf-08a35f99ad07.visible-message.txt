@@ -1,0 +1,2 @@
+`workdir` 参数没有生效，shell 起在 PowerShell 安装目录。我改用命令内显式切换目录。
+

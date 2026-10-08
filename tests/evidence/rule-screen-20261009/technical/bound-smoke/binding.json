@@ -1,0 +1,41 @@
+{
+  "main_commit": "a6e9cab62138c7549ee9a0ab1f7d38ca801f7770",
+  "candidate_head": "a6e9cab62138c7549ee9a0ab1f7d38ca801f7770",
+  "fingerprints": {
+    "main": "db52a9edb9c04960be9c8fc6b7a35d7c6a91fed5eed1ce7093e0361b37c1c805",
+    "candidate": "4302bdb258b6b8ee15eb6137a72f26d5fb686d09bb242d3ab07772f212615c4f"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash"
+  ],
+  "cases": {
+    "A_paper_sources": "只依据下列已读材料，写普通课程论文内部文献综述的一小节，约320字，只交正文，保留全部来源ID。研究问题是页边索引与读者核对来源的关系。P1观察28名读者使用带页边索引的文章，其中19人核对来源，没有无索引对照，也未询问原因。P2是一篇方法介绍，引用P1并准确转述28人中19人核对来源，之后说明制作索引的步骤，没有新观察。P3沿用P1的文章和索引格式，在另一学校另招44名读者，其中32人核对来源；明确不使用P1参与者或答题记录，没有无索引对照。P4访谈P1参与者中的7人，5人说索引帮助找到出处，2人说自己一向会查；没有再次测量行为。请围绕研究问题比较材料、组织述评，不逐篇平均介绍，不联网。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\9691020b546a15b2\\codex.exe",
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-rule-screen-1009\\chinese-academic-writing-skill\\.release\\rule-screen-20261009\\cow-native-bound-smoke-t40um794",
+  "permissions": "inherited-host-config",
+  "timeout": 240,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "main",
+  "baseline_source": null,
+  "candidate_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-rule-screen-1009\\chinese-academic-writing-skill\\chinese-academic-writing-assistant",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "a6e9cab62138c7549ee9a0ab1f7d38ca801f7770",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "d475e9b7a5845a2adbcd87fd4ec69e9548ed730c22b1b8e79999e751d6ea5777",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n本目录文本文件为 UTF-8 编码，读取时显式指定 UTF-8 解码。\n\n",
+  "ordinary_only": false,
+  "utf8_read": true,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  }
+}

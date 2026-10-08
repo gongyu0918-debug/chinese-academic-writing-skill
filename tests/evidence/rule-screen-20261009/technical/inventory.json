@@ -1,0 +1,53 @@
+[
+  {
+    "batch": "run",
+    "id": "01a11cb3-f0ad-7321-bc43-a80460278ecb",
+    "cwd": "C:\\Users\\admin\\.codex\\worktrees\\academic-rule-screen-1009\\chinese-academic-writing-skill\\.release\\rule-screen-20261009\\cow-native-run-nrgap__r\\m0-A_paper_sources-main\\workspace",
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "source_sha256": "ad7c9cb19453efe0db921118bfc0553ceaeff7820d1eddd599e1fa2a93a811d6",
+    "visible_tools": 42,
+    "has_complete_final": false,
+    "has_visible_commentary": true,
+    "admitted_pair": false,
+    "reason": "wrong public tree read"
+  },
+  {
+    "batch": "run",
+    "id": "01a11cb3-f0af-7101-8682-87c408415e1a",
+    "cwd": "C:\\Users\\admin\\.codex\\worktrees\\academic-rule-screen-1009\\chinese-academic-writing-skill\\.release\\rule-screen-20261009\\cow-native-run-nrgap__r\\m0-B_proposal_state-main\\workspace",
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "source_sha256": "1ec9ec42b382b5639167e976e04f80c2a8d490057e439a18cb2f553358483801",
+    "visible_tools": 48,
+    "has_complete_final": false,
+    "has_visible_commentary": false,
+    "admitted_pair": false,
+    "reason": "wrong public tree read"
+  },
+  {
+    "batch": "bound-smoke",
+    "id": "01a11cb8-1ce1-7772-accf-08a35f99ad07",
+    "cwd": "C:\\Users\\admin\\.codex\\worktrees\\academic-rule-screen-1009\\chinese-academic-writing-skill\\.release\\rule-screen-20261009\\cow-native-bound-smoke-t40um794\\m0-A_paper_sources-main\\workspace",
+    "models": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "source_sha256": "8760a9aefdf7772b31de62cbe5c7767b6dd19739bf81a498fc7ba94d2fac8127",
+    "visible_tools": 26,
+    "has_complete_final": false,
+    "has_visible_commentary": true,
+    "admitted_pair": false,
+    "reason": "bound runtime files not visible"
+  }
+]

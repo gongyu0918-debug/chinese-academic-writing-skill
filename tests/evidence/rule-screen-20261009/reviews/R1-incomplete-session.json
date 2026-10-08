@@ -1,0 +1,8 @@
+{
+  "id": "01a11cc0-1805-7f61-ad42-d3078d26da2a",
+  "model": "alibaba-token-plan-responses/glm-5.3",
+  "effort": "max",
+  "completed_semantic_review": false,
+  "scope": "no completed pair",
+  "hidden_reasoning_archived": false
+}

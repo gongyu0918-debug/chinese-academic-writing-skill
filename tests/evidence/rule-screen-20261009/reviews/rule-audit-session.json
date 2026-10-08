@@ -1,0 +1,7 @@
+{
+  "session_id": "01a11cb0-8b2c-7100-be9d-545f538950b3",
+  "model": "alibaba-token-plan-responses/glm-5.3",
+  "effort": "max",
+  "role": "native rule auditor",
+  "hidden_reasoning_archived": false
+}

@@ -1,0 +1,114 @@
+{
+  "R2-run-1": {
+    "X": {
+      "case": "E_paper_mixed",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "candidate",
+      "file": "m0-E_paper_mixed-candidate.final.txt"
+    },
+    "Y": {
+      "case": "E_paper_mixed",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "main",
+      "file": "m0-E_paper_mixed-main.final.txt"
+    }
+  },
+  "R2-run-2": {
+    "X": {
+      "case": "F_proposal_ongoing",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "main",
+      "file": "m0-F_proposal_ongoing-main.final.txt"
+    },
+    "Y": {
+      "case": "F_proposal_ongoing",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "candidate",
+      "file": "m0-F_proposal_ongoing-candidate.final.txt"
+    }
+  },
+  "R2-run-3": {
+    "X": {
+      "case": "G_standalone_scope",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "candidate",
+      "file": "m0-G_standalone_scope-candidate.final.txt"
+    },
+    "Y": {
+      "case": "G_standalone_scope",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "main",
+      "file": "m0-G_standalone_scope-main.final.txt"
+    }
+  },
+  "R2-run-4": {
+    "X": {
+      "case": "H_review_complete",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "candidate",
+      "file": "m0-H_review_complete-candidate.final.txt"
+    },
+    "Y": {
+      "case": "H_review_complete",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "arm": "main",
+      "file": "m0-H_review_complete-main.final.txt"
+    }
+  },
+  "R2-run-5": {
+    "X": {
+      "case": "E_paper_mixed",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "candidate",
+      "file": "m1-E_paper_mixed-candidate.final.txt"
+    },
+    "Y": {
+      "case": "E_paper_mixed",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "main",
+      "file": "m1-E_paper_mixed-main.final.txt"
+    }
+  },
+  "R2-run-6": {
+    "X": {
+      "case": "F_proposal_ongoing",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "main",
+      "file": "m1-F_proposal_ongoing-main.final.txt"
+    },
+    "Y": {
+      "case": "F_proposal_ongoing",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "candidate",
+      "file": "m1-F_proposal_ongoing-candidate.final.txt"
+    }
+  },
+  "R2-run-7": {
+    "X": {
+      "case": "G_standalone_scope",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "main",
+      "file": "m1-G_standalone_scope-main.final.txt"
+    },
+    "Y": {
+      "case": "G_standalone_scope",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "candidate",
+      "file": "m1-G_standalone_scope-candidate.final.txt"
+    }
+  },
+  "R2-run-8": {
+    "X": {
+      "case": "H_review_complete",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "candidate",
+      "file": "m1-H_review_complete-candidate.final.txt"
+    },
+    "Y": {
+      "case": "H_review_complete",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "arm": "main",
+      "file": "m1-H_review_complete-main.final.txt"
+    }
+  }
+}

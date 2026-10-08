@@ -1,0 +1,328 @@
+{
+  "complete_returns": 32,
+  "complete_pairs": 16,
+  "complete_prompt_and_identity_checks": 32,
+  "quality_pass_count": "not inferred from technical checks",
+  "checks": [
+    {
+      "run": "R1-run",
+      "file": "m0-A_paper_sources-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m0-A_paper_sources-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m0-B_proposal_state-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m0-B_proposal_state-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m0-C_standalone_control-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m0-C_standalone_control-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m0-D_review_only-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m0-D_review_only-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m1-A_paper_sources-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m1-A_paper_sources-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m1-B_proposal_state-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m1-B_proposal_state-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m1-C_standalone_control-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m1-C_standalone_control-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m1-D_review_only-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R1-run",
+      "file": "m1-D_review_only-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m0-E_paper_mixed-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m0-E_paper_mixed-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m0-F_proposal_ongoing-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m0-F_proposal_ongoing-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m0-G_standalone_scope-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m0-G_standalone_scope-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m0-H_review_complete-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m0-H_review_complete-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m1-E_paper_mixed-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m1-E_paper_mixed-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m1-F_proposal_ongoing-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m1-F_proposal_ongoing-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m1-G_standalone_scope-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m1-G_standalone_scope-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m1-H_review_complete-candidate.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    },
+    {
+      "run": "R2-run",
+      "file": "m1-H_review_complete-main.final.txt",
+      "input_complete": true,
+      "prompt_hash_match": true,
+      "actual_model_match": true,
+      "effort_match": true,
+      "draft_hash_match": true,
+      "technical_valid": true
+    }
+  ]
+}

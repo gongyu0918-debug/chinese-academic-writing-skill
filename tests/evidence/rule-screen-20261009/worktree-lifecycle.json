@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "baseline": "a6e9cab62138c7549ee9a0ab1f7d38ca801f7770",
+  "managed_worktree": "C:\\Users\\admin\\.codex\\worktrees\\academic-rule-screen-1009\\chinese-academic-writing-skill",
+  "branch": "codex/academic-rule-screen-20261009",
+  "purpose": "current-rule screening and isolated real-writing candidate verification",
+  "runtime_decision": "cancel R1/R2; runtime unchanged",
+  "stage": "ready for local merge and archival",
+  "local_artifacts": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\rule-screen-20261009",
+  "temporary_profiles": "not retained across directories; eligible for removal with owned managed worktree",
+  "historical_worktrees": "not modified",
+  "historical_blocked_temp_profiles": "not modified",
+  "publish_or_push": false
+}
