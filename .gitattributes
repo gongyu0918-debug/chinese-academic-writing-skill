@@ -27,3 +27,4 @@ tests/evidence/rule-screen-20261009/** -text whitespace=-blank-at-eol,-blank-at-
 
 # Preserve frozen competitor-rule inputs, model outputs and visible reviews verbatim.
 tests/evidence/competitor-rules-20261009/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+tests/evidence/v0.1.7-release-gate/** text eol=lf
