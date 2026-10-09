@@ -1,0 +1,11 @@
+{
+  "requested_model": "alibaba-token-plan-responses/glm-5.3",
+  "effort": "max",
+  "returncode": 0,
+  "timed_out": false,
+  "seconds": 21.78,
+  "prompt_sha256": "e327c7b989fbe1d862bcf474ebbcaba980aca7701b97c794e43b981760290e61",
+  "final_sha256": "41b772ef0b57a0cc6a86755a21fbd5bc044aaa34a383fcca65f1218704d4b2c2",
+  "unexpected_items": [],
+  "quality_not_inferred_from_return": true
+}

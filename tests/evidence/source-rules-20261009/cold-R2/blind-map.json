@@ -1,0 +1,26 @@
+{
+  "R2-0-1": {
+    "X": "m0-D_real_budget-main",
+    "Y": "m0-D_real_budget-candidate"
+  },
+  "R2-1-1": {
+    "X": "m1-D_real_budget-candidate",
+    "Y": "m1-D_real_budget-main"
+  },
+  "R2-0-2": {
+    "X": "m0-E_real_emphasis-main",
+    "Y": "m0-E_real_emphasis-candidate"
+  },
+  "R2-1-2": {
+    "X": "m1-E_real_emphasis-candidate",
+    "Y": "m1-E_real_emphasis-main"
+  },
+  "R2-0-3": {
+    "X": "m0-F_protect_format-candidate",
+    "Y": "m0-F_protect_format-main"
+  },
+  "R2-1-3": {
+    "X": "m1-F_protect_format-candidate",
+    "Y": "m1-F_protect_format-main"
+  }
+}

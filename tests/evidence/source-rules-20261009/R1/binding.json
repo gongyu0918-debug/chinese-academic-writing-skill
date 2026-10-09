@@ -1,0 +1,45 @@
+{
+  "main_commit": "0a8e9ede8fda8ff34966f0fe59e7e796c33a822f",
+  "candidate_head": "0a8e9ede8fda8ff34966f0fe59e7e796c33a822f",
+  "fingerprints": {
+    "main": "59c66ed8050c9ddf1f98e7582696e1f334af5d9de112ca45d815d76de58b98e3",
+    "candidate": "34ffb7d505323a5e59ec12bd83d4c46ee85ce0c2c0b2fc122b3ceb4638002848"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "A_mixed_budget": "请据当前材料起草开题报告的“研究方法”和“经费预算”，只交这两栏，按模板保留栏目，未确认的经费不要猜。不得联网。学校下载的填充范例是纸质与电子目录使用研究，方法栏写两种目录各使用7天、间隔2周；预算栏旁的指导批注另写“例：地方志数字化扫描4万元、数据库开发6万元，共10万元”。作者当前研究是图书馆新生如何选检索词：已访谈6人，拟再访谈4人；拟比较访谈中受访者对书名与作者名的使用情境，只有这项分析安排已经确认，没有7天重复任务、间隔安排或预算数字。导师本轮只要求沿用两个栏目，不沿用范例项目。请成稿。",
+    "B_adopted_method": "请最小润色当前开题报告方法段，只交正文。已确认材料：作者采用纸质和电子目录对照查找，参与者12人，顺序为先纸质后电子，每人各查找3个条目，记录完成数量与用时。这套安排也出现在指导范例中，作者明确已经采用为自己的方案。本轮不评判方法有效性、不补步骤，不联网。当前正文：【拟邀请12人参与目录查找，先用纸质目录，再用电子目录，每种查找3个条目。将记录完成数量及用时，以此描述本次目录查找的任务表现。】正文结束。",
+    "C_template_audit": "只审当前普通论文摘要，不改写，不联网。当前研究已经完成：利用校报中18篇读书报道比较标题中的活动命名，没有问卷、访谈或读者效果调查。学校给的带内容摘要示例使用阅读推广项目，示例写“对60名读者进行问卷和访谈，满意度提高20%”；格式批注要求摘要围绕对象、研究做法和主要发现，作者只采用这个信息顺序，未采用示例方法和结果。当前待审摘要：【本文比较18篇校报读书报道标题中的活动命名，梳理标题对参与主体和活动形式的呈现。对60名读者进行问卷和访谈发现，该活动使满意度提高20%。】以上括号内为全部正文。请交位置、问题、依据及最小建议。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\9691020b546a15b2\\codex.exe",
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-source-rules-1009\\chinese-academic-writing-skill\\.release\\source-rule-runtime\\native-R1-c2t7uqzc",
+  "permissions": "inherited-host-config",
+  "timeout": 200,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "main",
+  "baseline_source": null,
+  "candidate_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-source-rules-1009\\chinese-academic-writing-skill\\chinese-academic-writing-assistant",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "0a8e9ede8fda8ff34966f0fe59e7e796c33a822f",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "d2fecfe3cc9e11cb29d54b79d033e50f8836d69fda00661fd5bf9f04629e9faa",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n使用普通写作能力，不启用 Hook。\n\n",
+  "ordinary_only": true,
+  "utf8_read": false,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  },
+  "input_mode": "full frozen entry plus one routed leaf, supplied inline; not end-to-end file-loading verification"
+}

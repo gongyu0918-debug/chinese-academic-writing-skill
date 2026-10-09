@@ -1,0 +1,20 @@
+[
+  {
+    "local_file": "fudan-proposal.pdf",
+    "sha256": "ba7d2bb3b7baf1de06335cc72f9fcbefe577c3371be0ca9efd622df9bd73d665",
+    "bytes": 285257,
+    "copyright_source_excluded_from_git": true
+  },
+  {
+    "local_file": "wmu-proposal.pdf",
+    "sha256": "49ce1107c52bed2397e92a273f2926670986279d9c0d0c55754a4c0be2957e6d",
+    "bytes": 445979,
+    "copyright_source_excluded_from_git": true
+  },
+  {
+    "local_file": "as-detr.pdf",
+    "sha256": "c9874d0a1dbe6033e4d078c0666cc754c2ab7f8e6954932c472f43ce6af430a2",
+    "bytes": 19765054,
+    "copyright_source_excluded_from_git": true
+  }
+]

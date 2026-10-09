@@ -1,0 +1,34 @@
+{
+  "rounds": [
+    {
+      "round": "R1",
+      "requests": 12,
+      "final_files": 11,
+      "technical_invalid": [
+        {
+          "model": "alibaba-token-plan-responses/qwen3.8-flash",
+          "case": "A_mixed_budget",
+          "arm": "main",
+          "invalid": [
+            "timeout",
+            "missing_final"
+          ]
+        }
+      ],
+      "native_sessions": 12,
+      "all_model_and_prompt_bindings_match": true,
+      "removed_reasoning_trace_items": 6
+    },
+    {
+      "round": "R2",
+      "requests": 12,
+      "final_files": 12,
+      "technical_invalid": [],
+      "native_sessions": 12,
+      "all_model_and_prompt_bindings_match": true,
+      "removed_reasoning_trace_items": 6
+    }
+  ],
+  "scope": "Real model writing on constructed cases and supplied excerpts; inline complete frozen rules, not autonomous routing or end-to-end installation. Technical returns are not quality passes.",
+  "python_role": "model orchestration and evidence preservation only; no unit or structure tests used as prompt admission"
+}

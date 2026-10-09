@@ -1,0 +1,17 @@
+{
+  "raw_byte_difference_paths": [
+    "agents\\openai.yaml",
+    "LICENSE.md",
+    "references\\academic-literature-review.md",
+    "references\\academic-proposal.md",
+    "references\\academic-writing.md",
+    "references\\anti-ai-writing.md",
+    "references\\citation-research.md",
+    "references\\long-form-consistency.md",
+    "SKILL.md"
+  ],
+  "newline_normalized_difference_paths": [
+    "SKILL.md"
+  ],
+  "purpose": "Frozen input attribution; not skill structure or prose quality validation."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "packet": 1,
+    "id": "01a11e9f-2110-7033-b20b-3e85bf58d168",
+    "actual_model": "alibaba-token-plan-responses/glm-5.3",
+    "actual_effort": "max",
+    "submitted_prompt_sha256": "16483e59c4af523f111c4a5fa9b151404412b236456177d9f5342c574c97e9f0",
+    "native_prompt_sha256": "16483e59c4af523f111c4a5fa9b151404412b236456177d9f5342c574c97e9f0",
+    "prompt_hash_match": true,
+    "function_call_names": [],
+    "hidden_reasoning_archived": false
+  },
+  {
+    "packet": 0,
+    "id": "01a11e9f-2110-7682-b660-074f6a0d9899",
+    "actual_model": "alibaba-token-plan-responses/glm-5.3",
+    "actual_effort": "max",
+    "submitted_prompt_sha256": "ab0b55ccbd385817eb56dfb69bdae855c390409026e9892cce1d20b70480ceae",
+    "native_prompt_sha256": "ab0b55ccbd385817eb56dfb69bdae855c390409026e9892cce1d20b70480ceae",
+    "prompt_hash_match": true,
+    "function_call_names": [],
+    "hidden_reasoning_archived": false
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "requested_model": "alibaba-token-plan-responses/glm-5.3",
+  "effort": "max",
+  "returncode": 124,
+  "timed_out": true,
+  "final_received": false,
+  "prompt_sha256": "16483e59c4af523f111c4a5fa9b151404412b236456177d9f5342c574c97e9f0",
+  "recovery": "260s TimeoutExpired observed in runner; no retry; stdout/stderr not recoverable from failed capture",
+  "quality_not_inferred_from_return": true
+}

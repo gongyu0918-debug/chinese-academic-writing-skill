@@ -1,0 +1,9 @@
+{
+  "id": "01a11e94-980d-75c0-ba9a-719257c98f30",
+  "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+  "effort": "max",
+  "status": "completed then closed",
+  "scope": "Read-only primary-source research",
+  "hidden_reasoning_archived": false,
+  "coverage_correction": "Final phrase read all one paper contradicts declared missing conclusion tail, notes and bibliography. Use detailed declared coverage; applied full PDF later acquired and read by parent."
+}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11e9c-8c36-7a21-be62-54a1b02e4357"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "拟邀请12人参与目录查找，先用纸质目录，再用电子目录，每人查找3个条目。将记录完成数量及用时，以此描述本次目录查找的任务表现。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16081, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 2809, "reasoning_output_tokens": 0}}

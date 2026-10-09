@@ -1,0 +1,8 @@
+{"type": "thread.started", "thread_id": "01a11e99-1a4e-7af2-83a3-e36370a94cd2"}
+{"type": "turn.started"}
+{"type": "error", "message": "Reconnecting... 1/5 (stream disconnected before completion: Upstream stream terminated unexpectedly: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch())"}
+{"type": "error", "message": "Reconnecting... 2/5 (unexpected status 502 Bad Gateway: Provider unreachable: getaddrinfo ENOTFOUND token-plan.cn-beijing.maas.aliyuncs.com, url: http://127.0.0.1:10100/v1/responses)"}
+{"type": "error", "message": "Reconnecting... 3/5 (unexpected status 502 Bad Gateway: Provider unreachable: getaddrinfo ENOTFOUND token-plan.cn-beijing.maas.aliyuncs.com, url: http://127.0.0.1:10100/v1/responses)"}
+{"type": "error", "message": "Reconnecting... 4/5 (unexpected status 502 Bad Gateway: Provider unreachable: getaddrinfo ENOTFOUND token-plan.cn-beijing.maas.aliyuncs.com, url: http://127.0.0.1:10100/v1/responses)"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "拟邀请12人参与目录查找，先使用纸质目录，再使用电子目录，每人每种目录各查找3个条目，记录完成数量与用时，以此描述本次目录查找的任务表现。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14884, "cached_input_tokens": 14336, "cache_write_input_tokens": 0, "output_tokens": 1377, "reasoning_output_tokens": 1332}}

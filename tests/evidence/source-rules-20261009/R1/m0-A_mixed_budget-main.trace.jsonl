@@ -1,0 +1,6 @@
+{"type": "thread.started", "thread_id": "01a11e99-1a22-73a1-aa2d-1597d6d49aff"}
+{"type": "turn.started"}
+{"type": "error", "message": "Reconnecting... 1/5 (stream disconnected before completion: Upstream stream terminated unexpectedly: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch())"}
+{"type": "error", "message": "Reconnecting... 2/5 (unexpected status 502 Bad Gateway: Provider unreachable: getaddrinfo ENOTFOUND token-plan.cn-beijing.maas.aliyuncs.com, url: http://127.0.0.1:10100/v1/responses)"}
+{"type": "error", "message": "Reconnecting... 3/5 (unexpected status 502 Bad Gateway: Provider unreachable: getaddrinfo ENOTFOUND token-plan.cn-beijing.maas.aliyuncs.com, url: http://127.0.0.1:10100/v1/responses)"}
+{"type": "error", "message": "Reconnecting... 4/5 (unexpected status 502 Bad Gateway: Provider unreachable: getaddrinfo ENOTFOUND token-plan.cn-beijing.maas.aliyuncs.com, url: http://127.0.0.1:10100/v1/responses)"}

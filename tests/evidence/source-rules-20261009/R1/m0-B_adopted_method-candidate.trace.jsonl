@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11e9b-24ba-7600-a917-c179b4b56050"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "拟邀请12人参与目录查找，每人使用纸质目录和电子目录各查找3个条目，两种目录按先纸质、后电子的顺序进行。查找过程中记录完成的条目数量与用时，用以比较两种查找方式下的任务表现。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14969, "cached_input_tokens": 7168, "cache_write_input_tokens": 0, "output_tokens": 1224, "reasoning_output_tokens": 1170}}

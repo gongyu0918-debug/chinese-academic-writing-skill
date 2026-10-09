@@ -1,0 +1,45 @@
+{
+  "main_commit": "0a8e9ede8fda8ff34966f0fe59e7e796c33a822f",
+  "candidate_head": "0a8e9ede8fda8ff34966f0fe59e7e796c33a822f",
+  "fingerprints": {
+    "main": "59c66ed8050c9ddf1f98e7582696e1f334af5d9de112ca45d815d76de58b98e3",
+    "candidate": "34ffb7d505323a5e59ec12bd83d4c46ee85ce0c2c0b2fc122b3ceb4638002848"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "D_real_budget": "这是对温州医科大学公开开题范例的限定写作复核，不是当前临床建议或新方案设计。不联网。已读范例标题为“水凝胶、硅水凝胶材料软性接触镜配戴对眼表的影响”。现存报告方法栏有两种材料的配戴前、配戴后第1天及第7天观察安排；经费栏蓝色填充字标为“例”，写的是小鼠Dicer/miR-204等研究预算4、6、5、5万元合计20万元，与接触镜课题不是同一对象。作者确认本课题预算尚未给出。本轮只整理“课题经费预算”一栏，保留标题，不将示例列为本课题支出；不要添加自己的预算方案、医疗判断或说明过程。上述为公开范例的事实摘要，不是原文全篇。",
+    "E_real_emphasis": "按复旦大学工程硕士公开带批注范例整理该课题的“具体研究内容和实施方案”一栏，只交可用正文，不联网、不补实验或数据。该报告的真实标题为“基于分布式数据库的跨运营商网游运营平台设计”；正文拟先讨论天纵公司平台现状及网络应对不足，分析用户注册、消费的核心流程，讨论MVC架构及账户、扣费、统计子系统；重点是数据分布与分布数据的透明访问设计，并与同类平台比较，最后对稳定性、扩展性及投资效益作简单分析。页边批注要求围绕重点，旁支略写，也建议两段篇幅平衡和重点在偏后。本轮导师只确认正文这些任务及重点，不要求等长两段或固定句位。请据这些已读事实摘要成稿，保留拟开展状态，不把方案写成已证实的成果。",
+    "F_protect_format": "请根据当前作者材料起草开题报告“已有基础”和“拟开展工作”，只交这两栏。学校模板明确要求使用这两个标题；本轮导师明确要求每栏两条编号，沿用此要求。模板中示范研究使用8次访谈、12份文件，不是作者材料。作者已完成借阅目录整理，现有5份目录；访谈拟开展，作者已确定访谈3人，日期尚未给出；拟比较这5份目录中检索词的列示方式。没有其他计划或结果。不联网，不因格式要求也见于范例就取消标题或编号，不补新任务。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\9691020b546a15b2\\codex.exe",
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-source-rules-1009\\chinese-academic-writing-skill\\.release\\source-rule-runtime\\native-R2-7scgfu5g",
+  "permissions": "inherited-host-config",
+  "timeout": 200,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "main",
+  "baseline_source": null,
+  "candidate_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-source-rules-1009\\chinese-academic-writing-skill\\chinese-academic-writing-assistant",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "0a8e9ede8fda8ff34966f0fe59e7e796c33a822f",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "d1bcd915b5c65906e5f1a7c27dc9cc6f736128dcad8456e6cecd883ba4429972",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n使用普通写作能力，不启用 Hook。\n\n",
+  "ordinary_only": true,
+  "utf8_read": false,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  },
+  "input_mode": "full frozen entry plus one routed leaf, supplied inline; not end-to-end file-loading verification"
+}

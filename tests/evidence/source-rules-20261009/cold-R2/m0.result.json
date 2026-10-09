@@ -1,0 +1,28 @@
+{
+  "requested_model": "alibaba-token-plan-responses/glm-5.3",
+  "effort": "max",
+  "returncode": 124,
+  "timed_out": true,
+  "seconds": 260.04,
+  "prompt_sha256": "a85a643ad66aa0ea34177ba87a7d710bb490c06c82e3d481fc88001558b5bd2c",
+  "final_sha256": null,
+  "unexpected_items": [
+    {
+      "id": "item_1",
+      "type": "command_execution",
+      "command": "\"C:\\\\Users\\\\admin\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command 'Get-ChildItem -LiteralPath . | Select-Object -First 5 | Format-Table -AutoSize'",
+      "aggregated_output": "",
+      "exit_code": 0,
+      "status": "completed"
+    },
+    {
+      "id": "item_2",
+      "type": "command_execution",
+      "command": "\"C:\\\\Users\\\\admin\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command '$ErrorActionPreference='\"'SilentlyContinue'; [math]::Sqrt(16)\"",
+      "aggregated_output": "4\r\n",
+      "exit_code": 0,
+      "status": "completed"
+    }
+  ],
+  "quality_not_inferred_from_return": true
+}

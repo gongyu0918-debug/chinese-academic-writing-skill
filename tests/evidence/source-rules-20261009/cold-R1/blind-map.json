@@ -1,0 +1,26 @@
+{
+  "R1-0-1": {
+    "X": "m0-A_mixed_budget-candidate",
+    "Y": "m0-A_mixed_budget-main"
+  },
+  "R1-0-2": {
+    "X": "m0-B_adopted_method-candidate",
+    "Y": "m0-B_adopted_method-main"
+  },
+  "R1-0-3": {
+    "X": "m0-C_template_audit-main",
+    "Y": "m0-C_template_audit-candidate"
+  },
+  "R1-1-1": {
+    "X": "m1-A_mixed_budget-candidate",
+    "Y": "m1-A_mixed_budget-main"
+  },
+  "R1-1-2": {
+    "X": "m1-B_adopted_method-candidate",
+    "Y": "m1-B_adopted_method-main"
+  },
+  "R1-1-3": {
+    "X": "m1-C_template_audit-candidate",
+    "Y": "m1-C_template_audit-main"
+  }
+}

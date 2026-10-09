@@ -1,0 +1,57 @@
+{
+  "requests": 4,
+  "completed_reports": 2,
+  "rows": [
+    {
+      "round": "R1",
+      "packet": 0,
+      "returncode": 0,
+      "final_present": true,
+      "unexpected_items": [],
+      "interpretation": "Independent opinions require source-based correction; technical completion is not a quality pass."
+    },
+    {
+      "round": "R1",
+      "packet": 1,
+      "returncode": 124,
+      "final_present": false,
+      "unexpected_items": [],
+      "interpretation": "Independent opinions require source-based correction; technical completion is not a quality pass."
+    },
+    {
+      "round": "R2",
+      "packet": 0,
+      "returncode": 124,
+      "final_present": false,
+      "unexpected_items": [
+        {
+          "id": "item_1",
+          "type": "command_execution",
+          "command": "\"C:\\\\Users\\\\admin\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command 'Get-ChildItem -LiteralPath . | Select-Object -First 5 | Format-Table -AutoSize'",
+          "aggregated_output": "",
+          "exit_code": 0,
+          "status": "completed"
+        },
+        {
+          "id": "item_2",
+          "type": "command_execution",
+          "command": "\"C:\\\\Users\\\\admin\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command '$ErrorActionPreference='\"'SilentlyContinue'; [math]::Sqrt(16)\"",
+          "aggregated_output": "4\r\n",
+          "exit_code": 0,
+          "status": "completed"
+        }
+      ],
+      "interpretation": "Independent opinions require source-based correction; technical completion is not a quality pass."
+    },
+    {
+      "round": "R2",
+      "packet": 1,
+      "returncode": 0,
+      "final_present": true,
+      "unexpected_items": [],
+      "interpretation": "Independent opinions require source-based correction; technical completion is not a quality pass."
+    }
+  ],
+  "coverage": "Two completed packets address six pairs, one without baseline final. Five complete pairs have completed independent opinions. Others main-reviewed only; candidate not admitted.",
+  "tool_violation": "R2 m0 called two unrelated local commands despite no-tool instruction and timed out; exclude from controlled review. R1 m1 timeout has native function-call names retained."
+}
