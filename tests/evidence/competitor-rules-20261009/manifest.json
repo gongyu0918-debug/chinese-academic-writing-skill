@@ -5,7 +5,7 @@
   },
   {
     "path": "agent.md",
-    "sha256": "377ec47d633be417f4b65f57a4c9be766fd9534550fe0a23a9069a5aea3567a6"
+    "sha256": "f710276462390c81c9b46b50d5b90a9f156788c8907447e9242810e553548972"
   },
   {
     "path": "candidate-rule.txt",
@@ -1226,5 +1226,9 @@
   {
     "path": "technical-integrity.json",
     "sha256": "89701a5527676208e158b9cd761a490331b44187b5940547535a0cb584efd560"
+  },
+  {
+    "path": "worktree-lifecycle.json",
+    "sha256": "73f2ac8efb08383f784d27cce814755245cdfc8abc4c55535a0c3663b131aaa1"
   }
 ]

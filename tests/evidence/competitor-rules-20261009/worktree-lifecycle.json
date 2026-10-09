@@ -1,0 +1,15 @@
+{
+  "runtime_commit": "194150cc8b64b9eed4b548f4f6fc98daf6d9da67",
+  "main_merged": true,
+  "managed_worktree": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill",
+  "archive_attachment_id": "01a11e7b-f814-7492-95ae-54dd6e851e87",
+  "archive_attachment_type": "archived_worktree",
+  "filesystem_exists": false,
+  "worktree_list_contains": false,
+  "subagents_closed": 3,
+  "unmerged_commits_before_archive": 0,
+  "dirty_files_before_archive": 0,
+  "retained_ignored_files": 49,
+  "profiles_or_hidden_reasoning_copied": false,
+  "published_or_pushed": false
+}
