@@ -5,10 +5,32 @@
   "purpose": "Expand actual paper/proposal reading and compare two optional rule additions",
   "runtime_version": "0.1.7",
   "runtime_changed": false,
-  "evidence_commit": null,
-  "merged_into_main": false,
-  "archived": false,
+  "evidence_commit": "77997e2fdaca6d67deb28e11bd92cd3134546b27",
+  "merged_into_main": true,
+  "merge_method": "Fast-forward; commit ancestry verified",
+  "archived": true,
+  "archive_attachment_id": "01a11ef8-d624-7c12-973d-8e37b937e287",
+  "archive_verification": {
+    "attachment_type": "archived_worktree",
+    "checkout_path_exists": false,
+    "present_in_git_worktree_list": false,
+    "uncommitted_changes_before_archive": false,
+    "unmerged_commits_before_archive": false,
+    "ignored_files_in_worktree_before_archive": false,
+    "research_subagents_closed": true
+  },
+  "validation": {
+    "visible_drafts": 52,
+    "complete_pairs": 26,
+    "archived_files_byte_verified": 290,
+    "prompts_and_drafts_bound": 52,
+    "quality_passes": null,
+    "semantic_review": "Original task/source checks plus independent reviewers; see ADJUDICATION.md",
+    "python_role": "Invocation, extraction and archive integrity only",
+    "runtime_diff_from_baseline": "Empty",
+    "release_or_push": false
+  },
   "raw_materials_location": ".release/corpus-expansion-20261009 in main checkout",
   "other_worktrees": "Not part of this task, left intact",
-  "state": "Evidence prepared; merge/archive verification to be recorded after completion"
+  "state": "Research evidence committed and merged; managed worktree archive verified"
 }
