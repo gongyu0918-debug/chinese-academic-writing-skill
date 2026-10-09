@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11ee4-f3bb-7aa2-bb67-a40d15bf85b4"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "孔丽华（2018）提供的Z机构2016年收支资料显示，该表人力成本登记为0；财务人员说明，这一年的工资及社保约20多万元系从另一家公司的账发放。对照该表收入合计381471.13元、费用合计407018.43元的规模，这笔账外发放的工资和社保已接近乃至超过费用合计的一半。可见，表中该项为0并非说明该机构当年没有人力成本发生，而是这部分支出经由另一家公司的账目列支，未反映在本机构的收支记录之中；在此情况下，仅依据该表衡量人力成本投入，会明显低估其实际规模。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16150, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 7985, "reasoning_output_tokens": 0}}

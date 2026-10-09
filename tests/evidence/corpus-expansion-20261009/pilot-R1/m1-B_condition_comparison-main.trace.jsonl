@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11eca-1b58-7421-93e7-fdaaabe007e3"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "对比实验在同一设备、相同输入尺寸和同一测试集上进行：模型甲准确率92%、速度40帧/秒，模型乙准确率90%、速度60帧/秒。按本任务不低于50帧/秒的要求，甲的速度不达标而乙满足，故选择乙作为部署候选；尽管甲在总体准确率及连续遮挡子集上均优于乙（遮挡样本下分别为86%与81%），该取舍得自速度约束。候选尚未经现场部署测试。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16197, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 457, "reasoning_output_tokens": 0}}

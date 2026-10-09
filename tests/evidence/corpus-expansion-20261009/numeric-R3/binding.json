@@ -1,0 +1,45 @@
+{
+  "main_commit": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "candidate_head": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "fingerprints": {
+    "main": "59c66ed8050c9ddf1f98e7582696e1f334af5d9de112ca45d815d76de58b98e3",
+    "candidate": "31826be407abff6b5a80d450d4e8594608da613135c55bd4a54a6c5b2ac90571"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "K_zero_compress": "普通论文据材料起草。下面是孔丽华2018年北师大硕论PDF34—35页的摘编资料：Z机构2016年收支表中，人力成本登记为0；财务人员说明，这一年的工资及社保约20多万元从另一家公司的账发放。该表收入合计381471.13元，费用合计407018.43元。请把这组资料组织成一段简洁的案例说明，重点写人力成本记录，收支合计按论证需要处理。只交正文，不联网。",
+    "L_condition_review": "普通论文只审不改。材料摘编自刘若兰2023年SLP布局论文的两方案对比：在论文考察的生产条件下，方案Ⅰ总搬运距离833.1米，方案Ⅱ867.9米；两方案各有其他优缺点。待审句：“在本文考察的生产条件下，方案Ⅰ的总搬运距离短于方案Ⅱ，因此在这一指标上优于方案Ⅱ。”请给出必要的语义审稿意见；没有实质问题时明确无需修改。只审这句话，不联网。",
+    "M_followup_overview": "普通论文文献介绍。材料摘编自黄峰等2025年《心理学报》的AI心理咨询研究：对象为普通人群；短期干预后，抑郁、焦虑和孤独感均较对照有显著改善。一周后随访时，焦虑改善仍保持，另外两项指标的改善不再显著。研究未评价长期效果。请写一段精练文字介绍这项研究的发现，只交正文，不联网。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\9691020b546a15b2\\codex.exe",
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\source-rule-runtime\\native-numeric-R3-rf_x6hw5",
+  "permissions": "inherited-host-config",
+  "timeout": 260,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "main",
+  "baseline_source": null,
+  "candidate_source": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\corpus-expansion-20261009\\numeric-candidate",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "0009dba565ed036db9ce455b1599071105579c9a9b6b8df8d779f49e1c2a7d2a",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n",
+  "ordinary_only": false,
+  "utf8_read": false,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  },
+  "input_mode": "full frozen entry plus one routed leaf, supplied inline; not end-to-end file-loading verification"
+}

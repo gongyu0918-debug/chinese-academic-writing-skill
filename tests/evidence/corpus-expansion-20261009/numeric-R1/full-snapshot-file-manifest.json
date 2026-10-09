@@ -1,0 +1,170 @@
+[
+  {
+    "arm": "main",
+    "path": "agents/openai.yaml",
+    "bytes": 306,
+    "sha256": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+    "newline_normalized_sha256": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675"
+  },
+  {
+    "arm": "main",
+    "path": "LICENSE.md",
+    "bytes": 1075,
+    "sha256": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812",
+    "newline_normalized_sha256": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812"
+  },
+  {
+    "arm": "main",
+    "path": "references/academic-literature-review.md",
+    "bytes": 3998,
+    "sha256": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9",
+    "newline_normalized_sha256": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9"
+  },
+  {
+    "arm": "main",
+    "path": "references/academic-proposal.md",
+    "bytes": 3848,
+    "sha256": "bc36d26f98e5e8aadc797947325fc3981c090664eb3eb7fa4757842d1634a3aa",
+    "newline_normalized_sha256": "bc36d26f98e5e8aadc797947325fc3981c090664eb3eb7fa4757842d1634a3aa"
+  },
+  {
+    "arm": "main",
+    "path": "references/academic-writing.md",
+    "bytes": 4786,
+    "sha256": "5e20151b18a41d6943df5b3162d19e159d69a2af0021e9528935eda770d618f0",
+    "newline_normalized_sha256": "5e20151b18a41d6943df5b3162d19e159d69a2af0021e9528935eda770d618f0"
+  },
+  {
+    "arm": "main",
+    "path": "references/anti-ai-writing.md",
+    "bytes": 7408,
+    "sha256": "282e406c84b86ef6af3d2a67d38ff7407b05476ac9ff6a3b4f0449459c02fc7f",
+    "newline_normalized_sha256": "282e406c84b86ef6af3d2a67d38ff7407b05476ac9ff6a3b4f0449459c02fc7f"
+  },
+  {
+    "arm": "main",
+    "path": "references/citation-research.md",
+    "bytes": 7598,
+    "sha256": "8d2672ebdffde5dd95737a0d97fb0cefc43867f6d1a5cb02244f6781b7a476a8",
+    "newline_normalized_sha256": "8d2672ebdffde5dd95737a0d97fb0cefc43867f6d1a5cb02244f6781b7a476a8"
+  },
+  {
+    "arm": "main",
+    "path": "references/long-form-consistency.md",
+    "bytes": 6544,
+    "sha256": "26254e382ea3dd793003be0b91a55ed01a92a89187314c8cd1cf744a554acb8a",
+    "newline_normalized_sha256": "26254e382ea3dd793003be0b91a55ed01a92a89187314c8cd1cf744a554acb8a"
+  },
+  {
+    "arm": "main",
+    "path": "scripts/citation_audit.py",
+    "bytes": 15974,
+    "sha256": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+    "newline_normalized_sha256": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c"
+  },
+  {
+    "arm": "main",
+    "path": "scripts/manuscript_audit.py",
+    "bytes": 14718,
+    "sha256": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+    "newline_normalized_sha256": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0"
+  },
+  {
+    "arm": "main",
+    "path": "scripts/prose_lint.py",
+    "bytes": 38763,
+    "sha256": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+    "newline_normalized_sha256": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+  },
+  {
+    "arm": "main",
+    "path": "SKILL.md",
+    "bytes": 13117,
+    "sha256": "46a927df561bacd631cb4746e849713b13c6dc41034439f270357a574e65b997",
+    "newline_normalized_sha256": "46a927df561bacd631cb4746e849713b13c6dc41034439f270357a574e65b997"
+  },
+  {
+    "arm": "candidate",
+    "path": "agents/openai.yaml",
+    "bytes": 310,
+    "sha256": "6aa3fabd7184401be8c09f0e235b78ea066ccd6837929aa57b742b800856ed13",
+    "newline_normalized_sha256": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675"
+  },
+  {
+    "arm": "candidate",
+    "path": "LICENSE.md",
+    "bytes": 1096,
+    "sha256": "7182fd4c6281db93871ce4941eb4443e2230a4e33680a3b7f99510bcf0a9d023",
+    "newline_normalized_sha256": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812"
+  },
+  {
+    "arm": "candidate",
+    "path": "references/academic-literature-review.md",
+    "bytes": 4052,
+    "sha256": "e6c58dd737900b87f733325f449f533a3367d2f23558fa27a1708fd5f8801c68",
+    "newline_normalized_sha256": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9"
+  },
+  {
+    "arm": "candidate",
+    "path": "references/academic-proposal.md",
+    "bytes": 3897,
+    "sha256": "bb346a19004028e0f6e006cc8e5e0d861ac4534ed6176dae8990f7a967be3fe7",
+    "newline_normalized_sha256": "bc36d26f98e5e8aadc797947325fc3981c090664eb3eb7fa4757842d1634a3aa"
+  },
+  {
+    "arm": "candidate",
+    "path": "references/academic-writing.md",
+    "bytes": 5194,
+    "sha256": "c86144ce511e2b166a20caa22444887f930dab164db30325cd5b8a390e9a497c",
+    "newline_normalized_sha256": "f95fa999a2436c538ccd558b64ff3fdcca0203eb565606d1c249b85f38da88b9"
+  },
+  {
+    "arm": "candidate",
+    "path": "references/anti-ai-writing.md",
+    "bytes": 7470,
+    "sha256": "e7a318294e60357d5e59018a38bd8b6629916d93f40a85dd5de2cec8fd9725f1",
+    "newline_normalized_sha256": "282e406c84b86ef6af3d2a67d38ff7407b05476ac9ff6a3b4f0449459c02fc7f"
+  },
+  {
+    "arm": "candidate",
+    "path": "references/citation-research.md",
+    "bytes": 7635,
+    "sha256": "1898a8c71ed378d51c9f3081f311211edd1b94f70f15b6dbb49ba61a0c485d52",
+    "newline_normalized_sha256": "8d2672ebdffde5dd95737a0d97fb0cefc43867f6d1a5cb02244f6781b7a476a8"
+  },
+  {
+    "arm": "candidate",
+    "path": "references/long-form-consistency.md",
+    "bytes": 6614,
+    "sha256": "bd53040c169d23d6576fdf3d7cafa1272b54b32557dc0d5fcb70ed4c60be5063",
+    "newline_normalized_sha256": "26254e382ea3dd793003be0b91a55ed01a92a89187314c8cd1cf744a554acb8a"
+  },
+  {
+    "arm": "candidate",
+    "path": "scripts/citation_audit.py",
+    "bytes": 15974,
+    "sha256": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+    "newline_normalized_sha256": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c"
+  },
+  {
+    "arm": "candidate",
+    "path": "scripts/manuscript_audit.py",
+    "bytes": 14718,
+    "sha256": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+    "newline_normalized_sha256": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0"
+  },
+  {
+    "arm": "candidate",
+    "path": "scripts/prose_lint.py",
+    "bytes": 38763,
+    "sha256": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+    "newline_normalized_sha256": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+  },
+  {
+    "arm": "candidate",
+    "path": "SKILL.md",
+    "bytes": 13207,
+    "sha256": "ddc50022feed075ea63eed8a30eb7a11ccb4bdae77349137439236566fb93ea0",
+    "newline_normalized_sha256": "46a927df561bacd631cb4746e849713b13c6dc41034439f270357a574e65b997"
+  }
+]

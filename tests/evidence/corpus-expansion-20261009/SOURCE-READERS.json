@@ -1,0 +1,128 @@
+[
+  {
+    "local_report": "social-agent.md",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "reader_role": "social-and-proposal",
+    "agent_id": "01a11eba-560d-7890-8c09-da73edeccbba",
+    "sha256": "3ec3e0389176c9dd393a76b6c14c04222ba8f6a8dfd0dabec07f73f4ab282610",
+    "bytes": 17123,
+    "coverage": "See CORPUS.md",
+    "public_report_included": false,
+    "local_original_retained": true
+  },
+  {
+    "local_report": "humanities-agent.md",
+    "source_ids": [
+      "H1",
+      "H2",
+      "H3"
+    ],
+    "reader_role": "humanities-and-review",
+    "agent_id": "01a11eba-573f-75e3-bedf-88fb26c72a90",
+    "sha256": "e93d15c5cce2a66fd3e257c9ec6d74690364ccf84a20ee6ef388b0749fd10004",
+    "bytes": 18032,
+    "coverage": "See CORPUS.md",
+    "public_report_included": false,
+    "local_original_retained": true
+  },
+  {
+    "local_report": "applied-agent.md",
+    "source_ids": [
+      "A1",
+      "A2",
+      "A3"
+    ],
+    "reader_role": "applied",
+    "agent_id": "01a11eba-58cb-7431-b362-df7b044e2102",
+    "sha256": "629873e7757e18351fd93420ee14908e8cc2f8bb62adf70bbe49874baffe78c6",
+    "bytes": 16406,
+    "coverage": "See CORPUS.md",
+    "public_report_included": false,
+    "local_original_retained": true
+  },
+  {
+    "local_report": "proposal-pairs-agent.md",
+    "source_ids": [
+      "B1",
+      "B2",
+      "P1",
+      "P2"
+    ],
+    "reader_role": "social-and-proposal",
+    "agent_id": "01a11eba-560d-7890-8c09-da73edeccbba",
+    "sha256": "8a139091c0434d83e6335b429d68ec8a72e6d94bb8981877f88872d101a0b24c",
+    "bytes": 12721,
+    "coverage": "See CORPUS.md",
+    "public_report_included": false,
+    "local_original_retained": true
+  },
+  {
+    "local_report": "bnu-reader.md",
+    "source_ids": [
+      "M1"
+    ],
+    "reader_role": "main",
+    "agent_id": null,
+    "sha256": "5ccf9a01ec4192c2398acc2f4ecc2316666a3075322aa044c446cfb454e30b9d",
+    "bytes": 3299,
+    "coverage": "See CORPUS.md",
+    "public_report_included": false,
+    "local_original_retained": true
+  },
+  {
+    "local_report": "finance-reader.md",
+    "source_ids": [
+      "B3"
+    ],
+    "reader_role": "main",
+    "agent_id": null,
+    "sha256": "8f5d634b0b3f731e00b932b55429c29edb32f053ea28cdfe8433e07985214d7e",
+    "bytes": 2027,
+    "coverage": "See CORPUS.md",
+    "public_report_included": true,
+    "local_original_retained": true
+  },
+  {
+    "local_report": "proposal-logistics-reader.md",
+    "source_ids": [
+      "P3"
+    ],
+    "reader_role": "main",
+    "agent_id": null,
+    "sha256": "6316f4db3d37d51d3189d3c0553178e7d7d6ff18d7caa0b3eac0e4a9af46d5d7",
+    "bytes": 1760,
+    "coverage": "See CORPUS.md",
+    "public_report_included": true,
+    "local_original_retained": true
+  },
+  {
+    "local_report": "source-synthesis-audit.md",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "H1",
+      "H2",
+      "H3",
+      "A1",
+      "A2",
+      "A3",
+      "M1",
+      "B1",
+      "B2",
+      "P1",
+      "P2"
+    ],
+    "reader_role": "humanities-and-review",
+    "agent_id": "01a11eba-573f-75e3-bedf-88fb26c72a90",
+    "sha256": "1880da2bd14ea60397398982a723ad03321c71fa29b7703571f71cd42c7de7de",
+    "bytes": 14150,
+    "coverage": "See CORPUS.md",
+    "public_report_included": false,
+    "local_original_retained": true
+  }
+]

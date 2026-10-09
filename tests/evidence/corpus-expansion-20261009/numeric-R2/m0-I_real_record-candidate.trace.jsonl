@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11edb-c004-77c1-af15-114c82598861"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "在Y机构项目成本的预算与决算对照中，业务活动预算4.612万元、决算4.553395万元，决算低于预算；人力成本预算8.43万元、决算8.5万元，决算高于预算。两项决算金额又按原数写入“真账（待定）”列，列内所记仍是待定的账目记录，尚未逐项核验确认为实际成本。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15083, "cached_input_tokens": 7168, "cache_write_input_tokens": 0, "output_tokens": 1834, "reasoning_output_tokens": 1740}}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11ec8-6e12-7631-b19d-5cc6ed03b632"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "在同一设备、相同输入尺寸、同一测试集上：模型甲识别准确率92%、推理40帧/秒，模型乙准确率90%、60帧/秒；连续遮挡样本上，甲为86%，乙降至81%。乙两项准确率均低于甲，但只有乙的速度达到本任务要求的至少50帧/秒，作者因此选择乙作为部署候选。尚未进行现场部署测试。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14977, "cached_input_tokens": 1024, "cache_write_input_tokens": 0, "output_tokens": 4655, "reasoning_output_tokens": 4561}}

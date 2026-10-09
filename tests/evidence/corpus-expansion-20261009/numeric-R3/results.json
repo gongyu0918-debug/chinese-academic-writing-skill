@@ -1,0 +1,266 @@
+[
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "K_zero_compress",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 57.06,
+    "invalid": [],
+    "draft_sha256": "e1dcf50af19756d240805b7dee03ebdaf477c0ce7e3faadd7535569fc637cd16",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 14934,
+        "cached_input_tokens": 1024,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2503,
+        "reasoning_output_tokens": 2332
+      }
+    ],
+    "prompt_sha256": "66be90410eed983758a8b1570c70fb83c981271af6eff49e51d0744e83fe5f1e",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "K_zero_compress",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 61.89,
+    "invalid": [],
+    "draft_sha256": "4284034f5b6450e692211986906d8f314dd89e1d63df6f483258aa862c6c274e",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 15017,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2595,
+        "reasoning_output_tokens": 2414
+      }
+    ],
+    "prompt_sha256": "1c8b934163f3177077c8ce29540c2aa449be0de61fccc3847149987d7754f5b5",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "L_condition_review",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 65.08,
+    "invalid": [],
+    "draft_sha256": "54cc189c66854ac3ea0a86f87f0e48c8902be006c80eac9d134231a9c32b0774",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 14925,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2937,
+        "reasoning_output_tokens": 2399
+      }
+    ],
+    "prompt_sha256": "3dd865929cd5fc8961c5c35e2ebbe26e2b2654ccf948555ef42bc12d7f2fb098",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "L_condition_review",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 36.67,
+    "invalid": [],
+    "draft_sha256": "ba55dedb957b3d0702b3c0dea00d645dbdac9b086f8775a4b2eb709ae99253c2",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 15008,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1940,
+        "reasoning_output_tokens": 1413
+      }
+    ],
+    "prompt_sha256": "3bafa4cdeb9d1f6a6e3af5c5a6fb6d8174d72491c8b0ebb70e377031f3ac4672",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "M_followup_overview",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 30.81,
+    "invalid": [],
+    "draft_sha256": "a3c2c321b5f9604648c8cd2f0ed0672c8948265604fda85896d09735d2c18a5d",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 14239,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1359,
+        "reasoning_output_tokens": 1273
+      }
+    ],
+    "prompt_sha256": "224d78fcbb3eb7460dcc130f08fba98f4818adcfad15792fd061c3ac34f61a2e",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "M_followup_overview",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 34.0,
+    "invalid": [],
+    "draft_sha256": "26458a824ff0dd44a63673f07fe1b06104e0b7c2530d27f334dcf78b7bc3553d",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 15002,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1290,
+        "reasoning_output_tokens": 1217
+      }
+    ],
+    "prompt_sha256": "228d4ed50a071edf334a8b6f3bd32006376b437106f168a955efc41496b714ec",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "K_zero_compress",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 60.42,
+    "invalid": [],
+    "draft_sha256": "b0e1fcbef20eaff14bb9e3cb2556275d04ce4cae9ab2287a247858f424967cca",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 15572,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14727,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "1c8b934163f3177077c8ce29540c2aa449be0de61fccc3847149987d7754f5b5",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "K_zero_compress",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 68.97,
+    "invalid": [],
+    "draft_sha256": "04bab4d8a3dfbacdb22f52313a012d3c9969cf4d66bd3097ad0ff29b3db97e38",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 16150,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7985,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "66be90410eed983758a8b1570c70fb83c981271af6eff49e51d0744e83fe5f1e",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "L_condition_review",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 30.98,
+    "invalid": [],
+    "draft_sha256": "30dd5091dd913b003d9e63de29667e4acb989e9d3958a37c2ae215319775705a",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 16226,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 461,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "3bafa4cdeb9d1f6a6e3af5c5a6fb6d8174d72491c8b0ebb70e377031f3ac4672",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "L_condition_review",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 8.83,
+    "invalid": [],
+    "draft_sha256": "72441c63abd9c5147e9fd362b6bfa410f1dbd32637a93b387a87f4525f880634",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 16141,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 543,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "3dd865929cd5fc8961c5c35e2ebbe26e2b2654ccf948555ef42bc12d7f2fb098",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "M_followup_overview",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 19.77,
+    "invalid": [],
+    "draft_sha256": "99db2a7bc134f90cb06dc89e1c4355d7e4791bab8227aa0301d3d0e6fbe44551",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 16227,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 903,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "228d4ed50a071edf334a8b6f3bd32006376b437106f168a955efc41496b714ec",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "M_followup_overview",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 5.28,
+    "invalid": [],
+    "draft_sha256": "ee9f733ec5a8ae6e78ec15f92cf7944e1bf3ea4a37f177fed6ba119abe6637fc",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 16142,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 284,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "224d78fcbb3eb7460dcc130f08fba98f4818adcfad15792fd061c3ac34f61a2e",
+    "input_mode": "inline frozen entry and one leaf"
+  }
+]

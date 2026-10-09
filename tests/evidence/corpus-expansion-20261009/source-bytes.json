@@ -1,0 +1,92 @@
+[
+  {
+    "id": "bnu-mpa-cost-proposal",
+    "url": "https://mpa.bnu.edu.cn/docs/20210324164723045307.pdf",
+    "final_url": "https://mpa.bnu.edu.cn/docs/20210324164723045307.pdf",
+    "bytes": 1779316,
+    "sha256": "031b65de9f4c4efc7c30b6514348e3c72b4e667e2e4ccf0d88987cf3254e1643",
+    "container_pages": 51,
+    "download_receipt_status": "downloaded-text-extracted-not-yet-read",
+    "reading_status": "See CORPUS.md; download receipt is not reading proof"
+  },
+  {
+    "id": "cau-herder-quant",
+    "url": "https://cem.cau.edu.cn/module/download/downfile.jsp?classid=0&filename=eda6d52cb5e3447a8cbee928f113347c.pdf",
+    "final_url": "https://cem.cau.edu.cn/module/download/downfile.jsp?classid=0&filename=eda6d52cb5e3447a8cbee928f113347c.pdf",
+    "bytes": 1233335,
+    "sha256": "fe2bf65f90f1bc7afc6b6d7b4e370373c694781cbb2e743e99a972f1c8c086f7",
+    "container_pages": 9,
+    "download_receipt_status": "downloaded-text-extracted-not-yet-read",
+    "reading_status": "See CORPUS.md; download receipt is not reading proof"
+  },
+  {
+    "id": "applied-aas-patch",
+    "url": "https://www.aas.net.cn/cn/article/pdf/preview/10.16383/j.aas.c250300.pdf",
+    "final_url": "https://www.aas.net.cn/cn/article/pdf/preview/10.16383/j.aas.c250300.pdf",
+    "bytes": 8546304,
+    "sha256": "993cf5317ed7901e03cb6f8301edaef1a8a8e9b68289c9218ad6bd4747d0b555",
+    "container_pages": 16,
+    "download_receipt_status": "downloaded-text-extracted-not-yet-read",
+    "reading_status": "See CORPUS.md; download receipt is not reading proof"
+  },
+  {
+    "id": "applied-xlxb-ai",
+    "url": "https://journal.psych.ac.cn/xlxb/CN/article/downloadArticleFile.do?attachType=PDF&id=16187",
+    "final_url": "https://journal.psych.ac.cn/xlxb/CN/article/downloadArticleFile.do?attachType=PDF&id=16187",
+    "bytes": 2871043,
+    "sha256": "1d0ebb21dea7c1f2d45879cd994358cfd51d73a5bfacce545f72ce087d7003ac",
+    "container_pages": 22,
+    "download_receipt_status": "downloaded-text-extracted-not-yet-read",
+    "reading_status": "See CORPUS.md; download receipt is not reading proof"
+  },
+  {
+    "id": "applied-jlakes-co2-http",
+    "url": "http://jlakes.alljournals.cn/hpkx/article/pdf/20240215",
+    "final_url": "http://jlakes.alljournals.cn/hpkx/article/pdf/20240215",
+    "bytes": 3058930,
+    "sha256": "10b2f46aa7683fdc1177ddf7bdf711c90a2a0eaf6d48225bf3330b76f83e40c7",
+    "container_pages": 14,
+    "download_receipt_status": "downloaded-text-extracted-not-yet-read",
+    "reading_status": "See CORPUS.md; download receipt is not reading proof"
+  },
+  {
+    "id": "tianjin-slp-archive",
+    "url": "https://tsg.tsguas.edu.cn/__local/9/53/29/DC1838E2A61FE8F963A78C14BD0_F2424900_2C72C6.pdf",
+    "final_url": "https://tsg.tsguas.edu.cn/__local/9/53/29/DC1838E2A61FE8F963A78C14BD0_F2424900_2C72C6.pdf",
+    "bytes": 2912966,
+    "sha256": "4b1dd8b8f9e260b96278b99a7667c984614aa9d1ed0f857104a884a63a9ab104",
+    "container_pages": 82,
+    "download_receipt_status": "downloaded-text-extracted-not-yet-read",
+    "reading_status": "See CORPUS.md; download receipt is not reading proof"
+  },
+  {
+    "id": "tianjin-turboshaft-archive",
+    "url": "https://tsg.tsguas.edu.cn/__local/0/FA/30/034797A11427D647DA4DF4BDE64_3EE45AC8_1F0863.pdf",
+    "final_url": "https://tsg.tsguas.edu.cn/__local/0/FA/30/034797A11427D647DA4DF4BDE64_3EE45AC8_1F0863.pdf",
+    "bytes": 2033763,
+    "sha256": "6f2cb0f9671d23ab616c557cef3467a2eae6e4e7c9c4709b79fee7d28e4148ab",
+    "container_pages": 58,
+    "download_receipt_status": "downloaded-text-extracted-not-yet-read",
+    "reading_status": "See CORPUS.md; download receipt is not reading proof"
+  },
+  {
+    "id": "tianjin-finance-archive",
+    "url": "https://tsg.tsguas.edu.cn/__local/4/33/74/52CFAC2FB9E5AC43BE451EB9DB9_974A8F0A_1116D6.pdf",
+    "final_url": "https://tsg.tsguas.edu.cn/__local/4/33/74/52CFAC2FB9E5AC43BE451EB9DB9_974A8F0A_1116D6.pdf",
+    "bytes": 1119958,
+    "sha256": "99fd953e10067feba0b8b16f415fd979edb00b5f9263104467ca25c33d3c940f",
+    "container_pages": 34,
+    "download_receipt_status": "downloaded-text-extracted-not-yet-read",
+    "reading_status": "See CORPUS.md; download receipt is not reading proof"
+  },
+  {
+    "id": "tianjin-logistics-archive",
+    "url": "https://tsg.tsguas.edu.cn/__local/E/CF/23/3E527BB56A73604B22C138D44B3_6D4A7FCC_293E69.pdf",
+    "final_url": null,
+    "bytes": 2702953,
+    "sha256": "a87c2f93b4d1c460bbba12f10136b8c35925b502b54f20fbf6ea89f0ca9f875b",
+    "container_pages": 60,
+    "download_receipt_status": "downloaded-extraction-recovered-not-yet-read",
+    "reading_status": "See CORPUS.md; download receipt is not reading proof"
+  }
+]

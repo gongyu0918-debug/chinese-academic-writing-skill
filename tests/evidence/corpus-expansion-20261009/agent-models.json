@@ -1,0 +1,72 @@
+[
+  {
+    "role": "social-and-proposal",
+    "agent_id": "01a11eba-560d-7890-8c09-da73edeccbba",
+    "context_metadata": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "native_reasoning_archived": false
+  },
+  {
+    "role": "humanities-and-review",
+    "agent_id": "01a11eba-573f-75e3-bedf-88fb26c72a90",
+    "context_metadata": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "native_reasoning_archived": false
+  },
+  {
+    "role": "applied",
+    "agent_id": "01a11eba-58cb-7431-b362-df7b044e2102",
+    "context_metadata": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "native_reasoning_archived": false
+  },
+  {
+    "role": "independent-review",
+    "agent_id": "01a11ed1-a797-7761-963f-7831d78bddb6",
+    "context_metadata": [
+      {
+        "model": "alibaba-token-plan-responses/glm-5.3",
+        "effort": "max"
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh"
+      }
+    ],
+    "native_reasoning_archived": false
+  },
+  {
+    "role": "proposal-supplement",
+    "agent_id": "01a11ee3-00b1-7a03-a9e1-7e75443d6c37",
+    "context_metadata": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "native_reasoning_archived": false
+  },
+  {
+    "role": "R3-review",
+    "agent_id": "01a11ee6-d162-7652-8e86-4f039e081f44",
+    "context_metadata": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "native_reasoning_archived": false
+  }
+]

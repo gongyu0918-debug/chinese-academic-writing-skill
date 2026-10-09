@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11eda-7dcb-7141-9a76-cf5aea9210fc"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "Y机构项目业务活动决算4.553395万元，低于4.612万元预算；人力成本决算8.5万元，高于8.43万元预算。两项决算数均与表中“真账（待定）”列所记一致，作者尚未将这些标注“待定”的记录确认为逐项核验的实际成本。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16301, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 6826, "reasoning_output_tokens": 0}}

@@ -1,0 +1,14 @@
+{
+  "worktree": "C:\\Users\\admin\\.codex\\worktrees\\academic-corpus-1009\\chinese-academic-writing-skill",
+  "branch": "codex/academic-corpus-20261009",
+  "base_commit": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "purpose": "Expand actual paper/proposal reading and compare two optional rule additions",
+  "runtime_version": "0.1.7",
+  "runtime_changed": false,
+  "evidence_commit": null,
+  "merged_into_main": false,
+  "archived": false,
+  "raw_materials_location": ".release/corpus-expansion-20261009 in main checkout",
+  "other_worktrees": "Not part of this task, left intact",
+  "state": "Evidence prepared; merge/archive verification to be recorded after completion"
+}

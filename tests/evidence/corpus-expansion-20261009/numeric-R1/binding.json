@@ -1,0 +1,46 @@
+{
+  "main_commit": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "candidate_head": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "fingerprints": {
+    "main": "59c66ed8050c9ddf1f98e7582696e1f334af5d9de112ca45d815d76de58b98e3",
+    "candidate": "31826be407abff6b5a80d450d4e8594608da613135c55bd4a54a6c5b2ac90571"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "D_real_zero": "依据北师大孔丽华2018年硕论PDF34—35页（打印27—28页）的已读材料，起草一段普通论文案例结果，只交正文、不联网。给定材料：Z机构2016年收支报表中人力成本列为0；财务人员解释，2016年工资和社保约20多万元，是由另外一个公司账发放。收入合计381471.13元，费用合计407018.43元。作者本节要说明为什么不能只按该收支表判断真实人力投入；收支合计只是旁证。保留约数和信息归属，不替作者重算归并后的总费用、判违法或说明所有机构均如此。次要数字按需要收束，不要求逐项抄表。",
+    "E_real_scope": "只压缩下面普通论文段落，只交正文、不联网。材料依据北师大孔丽华硕论PDF30—31页（打印23—24页）的限定摘编，数字按给定材料保留，不复现成本核算。底稿：Y机构2016年全年财务报表管理费用占总支出约19%；其A区项目决算按项目口径计提管理费2212元，原文记为约1.6%。作者据机构年度占比提出项目间接成本支持可能不足的判断，但这个年度占比不是该项目管理成本经单独核算后的实测比例。表中项目业务活动成本和人力成本的“真账”数值仍标为待定。请围绕可能不足的判断压缩，保留使这一判断成立的差别和状态，允许有限推断，不增加统一核算标准、成本总额或因果结论。",
+    "F_real_followup": "普通论文摘要中的结果概述，请只据材料写一段简洁正文，不联网；本轮只组织文字，不评价统计有效性，不给健康建议。材料来自黄峰等2025年《心理学报》AI心理咨询论文：初始招募202名普通人群参与者，按互动质量筛选后T2保留180人，T3一周随访保留153人；论文按T1到T3报告流失率24.3%。与对照比较，短期抑郁、焦虑和孤独感有显著改善；随访时焦虑的改善仍保持，其他指标改善不再显著。只概述给定发现及适用范围，不把普通人群换成临床患者，不把不显著说成效果为零或长期持续；重点是时间与指标区别，样本数字不需要每项照抄。",
+    "G_protect_reasoning": "普通论文只审不改，不联网。以下为独立构造案例，不冒充公开论文数据：问卷中12人未填写某项收入，另8人填写0；作者在材料账本分开记录缺失与零收入。底稿：“本次描述中，未填写收入者不纳入收入分布，零收入回答仍保留。两类记录分开处理，有助于避免把信息缺失误当作无收入；这里说明的是本次资料整理办法，不据此推断未回答者的实际收入。”作者没有给出其他收入数据，也没有要求验证统计设计。只检查是否有实质性语义问题，输出必要意见；没有问题明确无需改动，不要求补算总体收入，不把这个明确标为整理办法的解释判为新增研究发现，不重写正文。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\9691020b546a15b2\\codex.exe",
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\source-rule-runtime\\native-numeric-R1-n9zavhcs",
+  "permissions": "inherited-host-config",
+  "timeout": 260,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "main",
+  "baseline_source": null,
+  "candidate_source": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\corpus-expansion-20261009\\numeric-candidate",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "c33ff3ccde84abba3199399494a8dedf45662b79b030f7f6470bcdc3e3ad9016",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n",
+  "ordinary_only": false,
+  "utf8_read": false,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  },
+  "input_mode": "full frozen entry plus one routed leaf, supplied inline; not end-to-end file-loading verification"
+}

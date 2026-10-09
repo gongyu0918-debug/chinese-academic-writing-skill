@@ -1,0 +1,45 @@
+{
+  "main_commit": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "candidate_head": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "fingerprints": {
+    "main": "59c66ed8050c9ddf1f98e7582696e1f334af5d9de112ca45d815d76de58b98e3",
+    "candidate": "192d9f6b17543cd207c4aec5ebecd66b62492c7a146e03eb2af7e3278c9f1871"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "A_layout_tradeoff": "这是依据天津中德应用技术大学公开本科论文第4.3节（PDF第72—75页）整理出的作者材料摘要；只作给定结果的文字整理，不是复现布局实验。请起草普通论文“方案比较”一段，只交正文，不联网。原布局总搬运距离931.5m，方案Ⅰ833.1m（下降10.56%），方案Ⅱ867.9m（下降6.83%）。在包装区到成品区的一条路线，原来20m，方案Ⅰ35.5m，方案Ⅱ43.5m；原表标记这是负向变化。方案Ⅱ有3个包装区，布局柔性比仅有2个的方案Ⅰ好；两方案改动成本大致相近。作者已确定以总搬运距离为优先依据，选用方案Ⅰ，不要重选、增加权重、推断已投产或新增成本和生产效率实测。需说明选择依据及其取舍，次要细节适当收束。",
+    "B_condition_comparison": "这是工程论文中的构造结果材料，请只压缩下面段落，保留与选择有关的信息，只交正文，不联网。原文：“在同一设备、相同输入尺寸及同一测试集上，模型甲的识别准确率为92%，推理速度40帧/秒；模型乙准确率90%，推理速度60帧/秒。本任务要求至少50帧/秒，作者因此选择模型乙作为部署候选。乙在连续遮挡样本上准确率下降至81%，甲为86%，这些样本均属于同一测试集。乙的速度满足本任务要求，但其准确率以及连续遮挡情况下的表现逊于甲。这一取舍支持当前候选选择，尚未进行现场部署测试。”不要添加结果、指标、现场成效、后续计划，允许自然归纳和比较。",
+    "C_preserve_limited_analysis": "普通论文只审不改，不联网。作者材料来自天津SLP方案比较的限定改编：Ⅰ的总搬运距离833.1m，Ⅱ为867.9m；Ⅱ有3个包装区，Ⅰ有2个，材料说明Ⅱ的布局柔性更好；作者当前以缩短总搬运距离为主要目标，已选择Ⅰ。底稿：“在以总搬运距离为主要依据的本次比较中，方案Ⅰ更适合当前目标。方案Ⅱ在布局柔性方面较好，可能更适合需要多品种同时下线的情境；这是依据现有布局安排作出的条件性分析，不是已经观察到的投产效果。”只检查论断范围与材料关系，输出位置、问题、依据和必要修改建议；没有实质问题就明确无需改动，不为了凑意见要求测量所有候选解释，不重写正文。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\9691020b546a15b2\\codex.exe",
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\source-rule-runtime\\native-pilot-R1-fiw8w7vv",
+  "permissions": "inherited-host-config",
+  "timeout": 260,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "main",
+  "baseline_source": null,
+  "candidate_source": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\corpus-expansion-20261009\\candidate",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "65d8ddaca068cee8b5e65c54d87e2896e6503cfbadade0218c21b1685b66d430",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n",
+  "ordinary_only": false,
+  "utf8_read": false,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  },
+  "input_mode": "full frozen entry plus one routed leaf, supplied inline; not end-to-end file-loading verification"
+}

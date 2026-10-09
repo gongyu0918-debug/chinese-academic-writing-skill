@@ -1,0 +1,22 @@
+{
+  "model": "alibaba-token-plan-responses/qwen3.8-flash",
+  "effort": "max",
+  "case": "M_followup_overview",
+  "arm": "main",
+  "returncode": 0,
+  "seconds": 30.81,
+  "invalid": [],
+  "draft_sha256": "a3c2c321b5f9604648c8cd2f0ed0672c8948265604fda85896d09735d2c18a5d",
+  "commands": [],
+  "usage": [
+    {
+      "input_tokens": 14239,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1359,
+      "reasoning_output_tokens": 1273
+    }
+  ],
+  "prompt_sha256": "224d78fcbb3eb7460dcc130f08fba98f4818adcfad15792fd061c3ac34f61a2e",
+  "input_mode": "inline frozen entry and one leaf"
+}

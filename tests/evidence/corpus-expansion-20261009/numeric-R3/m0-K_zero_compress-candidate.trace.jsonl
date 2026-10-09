@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11ee4-e69e-7a50-ab21-6486fdc89655"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "据孔丽华（2018）所载Z机构2016年收支表，人力成本一栏登记为0。财务人员的说明是，这一年约20多万元的工资及社保从另一家公司的账上发放，没有留在本表的这一科目里。同一张表列出的收入合计为381471.13元，费用合计为407018.43元，按表内口径，费用已高出收入25547.30元。这组资料中最能说明问题的是人力成本为0这一记录本身：它并不表示Z机构当年没有人员开支，而是表示这部分开支被记在另一套账上，表内的收入和费用合计只覆盖进入这套账的收支。由此算出的差额，也就难以据以判断该机构实际的人员投入规模。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15017, "cached_input_tokens": 7168, "cache_write_input_tokens": 0, "output_tokens": 2595, "reasoning_output_tokens": 2414}}

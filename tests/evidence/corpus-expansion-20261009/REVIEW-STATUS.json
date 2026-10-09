@@ -1,0 +1,49 @@
+{
+  "reading": {
+    "papers_with_all_body_sections_read": 13,
+    "filled_proposals_read": 3,
+    "references": "Distribution and use only, not all references verified",
+    "supplement_agent": {
+      "id": "01a11ee3-00b1-7a03-a9e1-7e75443d6c37",
+      "status": "errored",
+      "full_read_report_completed": false,
+      "error": "DataInspectionFailed on image input",
+      "recovered_by": "Main reviewer read full logistics proposal and inspected key pages"
+    },
+    "source_synthesis_audit": {
+      "papers": 12,
+      "proposals": 2,
+      "not_covered": [
+        "B3 finance paper",
+        "P3 logistics proposal"
+      ]
+    }
+  },
+  "writing_review": {
+    "pilot-R1": [
+      "pilot-review.md"
+    ],
+    "numeric-R1": [
+      "numeric-review-R1.md",
+      "numeric-review-R1b.md"
+    ],
+    "numeric-R2": [
+      "numeric-review-R2.md",
+      "numeric-review-R2b.md"
+    ],
+    "numeric-R3": [
+      "numeric-review-R3.md",
+      "numeric-review-R3b.md"
+    ],
+    "R3_blinding": "Rule hidden in first pass; filenames identify arms, not fully anonymous",
+    "R3_rule_attribution": "First reviewer subsequently read only the unique diff and rule",
+    "final_adjudication": "Main reviewer checked materials and visible drafts; reviewer opinions are not ground truth"
+  },
+  "decision": "Cancel both default rule additions; preserve research evidence only",
+  "public_archive_excludes": [
+    "Original PDFs and full source extractions",
+    "Native profiles",
+    "Hidden reasoning",
+    "Credentials"
+  ]
+}

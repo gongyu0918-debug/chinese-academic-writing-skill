@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11ee4-07eb-7d13-abdd-549395affec8"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "在Z机构的调查中，孔丽华（2018）记录了这样的情况：在该机构2016年的收支表中，人力成本登记为0，而据财务人员说明，当年的工资及社保约20多万元实际从另一家公司的账发放；同一表内收入合计为381471.13元，费用合计为407018.43元。以此衡量，这部分未体现在账面上的工资及社保相对同表的费用合计并非小数。也就是说，机构的实际人力成本状况无法直接从账面记录得到。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15572, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 14727, "reasoning_output_tokens": 0}}

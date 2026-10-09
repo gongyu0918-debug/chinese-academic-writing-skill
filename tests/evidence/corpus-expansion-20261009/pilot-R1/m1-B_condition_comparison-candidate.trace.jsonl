@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11ec9-5044-7822-b3a8-cc1aba09eea0"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "在同一设备、相同输入尺寸及同一测试集上，模型甲识别准确率92%、推理速度40帧/秒；模型乙准确率90%、推理速度60帧/秒。本任务要求推理速度至少50帧/秒，作者因此选择模型乙作为部署候选。在其中的连续遮挡样本上，甲准确率为86%，乙则降至81%；现场部署测试尚未进行。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16282, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 7428, "reasoning_output_tokens": 0}}

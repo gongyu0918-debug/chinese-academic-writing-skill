@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11ed5-e5e0-73d3-af13-9672b0072208"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "就真实人力投入的判断而言，Z机构2016年的收支报表只能提供有限的账面信息。该表将当年的人力成本列为0，收入合计381471.13元，费用合计407018.43元；若只看这份记录，容易得出该机构当年没有人力投入的结论。财务人员的解释给出了另一层情况：2016年该机构的工资和社保约20多万元，由另外一个公司账发放，并未计入机构自身的收支报表。也就是说，报表中的人力成本为零记录的只是人力成本在本机构账内的列支口径，而非机构实际发生的人力投入；薪酬经由其他公司账列支时，账面人力成本归零只是记账处理的结果。因此，收入合计与费用合计数字只能作为说明该机构账面收支状况的旁证，不能单独用来衡量其真实的人力投入。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16281, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 4199, "reasoning_output_tokens": 0}}

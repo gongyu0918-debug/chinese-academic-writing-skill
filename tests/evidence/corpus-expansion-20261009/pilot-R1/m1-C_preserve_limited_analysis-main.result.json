@@ -1,0 +1,22 @@
+{
+  "model": "ollama-cloud/glm-5.3-flash",
+  "effort": "max",
+  "case": "C_preserve_limited_analysis",
+  "arm": "main",
+  "returncode": 0,
+  "seconds": 41.33,
+  "invalid": [],
+  "draft_sha256": "2b54416cef7b877fcc342875768ecd26e4df74dab20800511683b4d1914fc5ba",
+  "commands": [],
+  "usage": [
+    {
+      "input_tokens": 16237,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5095,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "prompt_sha256": "5ee086713b90dd9691924f239d3942e0004ad232cf36d76eceb17123f6765934",
+  "input_mode": "inline frozen entry and one leaf"
+}

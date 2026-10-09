@@ -1,0 +1,110 @@
+[
+  {
+    "session_id": "01a11ec8-6df4-7932-8e10-ddc1bfba8ef2",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "session_id": "01a11ec8-6e12-7631-b19d-5cc6ed03b632",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "session_id": "01a11ec8-6e13-71d1-b051-5a97344ea652",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "session_id": "01a11ec8-71fa-7f33-8c5a-5a6dae6f778d",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "session_id": "01a11ec8-bb1c-7af0-8ad6-0c96c42bb019",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "session_id": "01a11ec9-1e84-7a13-9316-cad3f93495db",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "session_id": "01a11ec9-5044-7822-b3a8-cc1aba09eea0",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "session_id": "01a11ec9-a5aa-7e31-b09c-97ee520ecd15",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "session_id": "01a11ec9-ac70-7ca2-8b47-5f204c3febe6",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "session_id": "01a11eca-1b58-7421-93e7-fdaaabe007e3",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "session_id": "01a11eca-3956-7aa0-a603-94ce54d2cf20",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ]
+  },
+  {
+    "session_id": "01a11eca-8efa-7763-ad2a-460cc10f84cf",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ]
+  }
+]

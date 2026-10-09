@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11ed7-fda5-7ee0-8caa-6f5815540999"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "本研究共招募202名普通人群参与者，按互动质量筛选后T2保留180人，一周随访（T3）保留153人，T1至T3的总流失率为24.3%。与对照条件相比，参与者的抑郁、焦虑和孤独感在短期内均显著改善；一周随访时，焦虑的改善仍然保持，其余指标的改善未再显著。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16206, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 8241, "reasoning_output_tokens": 0}}

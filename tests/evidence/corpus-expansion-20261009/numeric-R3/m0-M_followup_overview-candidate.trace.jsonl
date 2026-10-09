@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11ee4-800f-7290-bcea-0c2e571b16e1"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "黄峰等（2025）以普通人群为研究对象，考察人工智能心理咨询的短期干预效果。与对照组相比，干预后抑郁、焦虑和孤独感三项指标的改善均达到显著水平。到一周随访时，焦虑的改善仍然保持，抑郁和孤独感的改善不再显著。该研究未评价更长期的效果。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15002, "cached_input_tokens": 7168, "cache_write_input_tokens": 0, "output_tokens": 1290, "reasoning_output_tokens": 1217}}

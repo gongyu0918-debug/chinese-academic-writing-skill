@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11ee5-e29d-7950-97e1-72096e93d6e9"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "黄峰等（2025）发表于《心理学报》的研究考察了AI心理咨询对普通人群的应用效果。结果显示，经过短期干预，参与者在抑郁、焦虑和孤独感三项指标上均较对照组有显著改善。一周后的随访中，焦虑的改善仍然得到保持，抑郁和孤独感的改善则不再显著。该研究未对更长期的效果进行评价。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16142, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 284, "reasoning_output_tokens": 0}}

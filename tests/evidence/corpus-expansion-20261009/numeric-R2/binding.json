@@ -1,0 +1,45 @@
+{
+  "main_commit": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "candidate_head": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "fingerprints": {
+    "main": "59c66ed8050c9ddf1f98e7582696e1f334af5d9de112ca45d815d76de58b98e3",
+    "candidate": "31826be407abff6b5a80d450d4e8594608da613135c55bd4a54a6c5b2ac90571"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "H_real_method": "依据刘纪明等2024年《湖泊科学》论文PDF9—10页（打印507—508）的摘编材料，写普通论文讨论中的一个比较段，只交正文，不联网。本节讨论两种通量估算方法的差别。材料：OF-CEAS法腔室测定的是水—气界面总通量，扩散模型法估算气体扩散通量；作者说明后者没有考虑水生植物分布等影响。两法在所研究城市湖泊中结果相关显著，在湘江河流样点相关不显著。本文观察到OF-CEAS法估算值高于扩散模型法。建筑物影响风速、河流通航扰动、水生植物分布是作者提出的可能解释。用这些材料说明本次方法比较能得出的判断，不评价哪种方法绝对准确，不外推其他地区，不加新数据。",
+    "I_real_record": "依据孔丽华2018年北师大硕论打印24页表15的已读摘录，压缩这段普通论文结果说明，只交正文，不联网：“Y机构项目业务活动预算4.612万元、决算4.553395万元；表中‘真账（待定）’列写4.553395万元（待定）。项目人力成本预算8.43万元、决算8.5万元；同一列写8.5万元（待定）。该表呈现各列账目记录，作者尚未把这些待定项确认为逐项核验的实际成本。年度机构管理费用比例另在别处说明，本段不展开。”本节只需说明决算与待定记录的关系，删去无关铺垫；可概述差别，不要求逐项抄数，不补核验程序或计算合计。",
+    "J_clean_control": "普通论文只审不改，不联网。构造材料：两个版本同一测试条件下的平均处理耗时，甲4秒、乙3秒；这一轮样本类型仅一种，作者已明确此比较只讨论该条件下的耗时，没有声称全面性能优越。底稿：“在本次给定条件下，乙的平均处理耗时比甲短，因而在这一指标上具有优势。”作者只要语义问题意见；没有实质问题明确无需修改，不重写，不添重复限制，不要求每句话报齐方法与样本，也不核验统计设计。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\9691020b546a15b2\\codex.exe",
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\source-rule-runtime\\native-numeric-R2-14vxb4ps",
+  "permissions": "inherited-host-config",
+  "timeout": 260,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "main",
+  "baseline_source": null,
+  "candidate_source": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\corpus-expansion-20261009\\numeric-candidate",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "55d4e998ec03842ad0ad3fb6c05f7adf95ea8483f2645931a7295eee1e6a4e56",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n",
+  "ordinary_only": false,
+  "utf8_read": false,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  },
+  "input_mode": "full frozen entry plus one routed leaf, supplied inline; not end-to-end file-loading verification"
+}

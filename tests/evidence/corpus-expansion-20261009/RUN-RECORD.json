@@ -1,0 +1,50 @@
+{
+  "baseline": "07f8a0ad405083ab1fc98d80cd1dd40ce4e3645e",
+  "runtime_version": "0.1.7",
+  "batches": [
+    {
+      "batch": "pilot-R1",
+      "calls": 12,
+      "pairs": 6,
+      "process_completed": 12,
+      "execution_invalid_records": [],
+      "quality_passes": null
+    },
+    {
+      "batch": "numeric-R1",
+      "calls": 16,
+      "pairs": 8,
+      "process_completed": 16,
+      "execution_invalid_records": [],
+      "quality_passes": null
+    },
+    {
+      "batch": "numeric-R2",
+      "calls": 12,
+      "pairs": 6,
+      "process_completed": 12,
+      "execution_invalid_records": [],
+      "quality_passes": null
+    },
+    {
+      "batch": "numeric-R3",
+      "calls": 12,
+      "pairs": 6,
+      "process_completed": 12,
+      "execution_invalid_records": [],
+      "quality_passes": null
+    }
+  ],
+  "calls": 52,
+  "pairs": 26,
+  "input": "Full frozen entry + ordinary leaf + anti-ai layer supplied inline in every call",
+  "not_proven": [
+    "autonomous routing",
+    "file loading",
+    "Hook integration",
+    "long manuscript behavior",
+    "statistical or engineering validity"
+  ],
+  "quality_passes": null,
+  "python_purpose": "Model invocation, PDF extraction, and artifact archiving only"
+}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11edb-3a27-7dc3-b4f3-af60a172df90"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "Y机构项目业务活动、人力成本的决算分别为4.553395万元和8.5万元；表15‘真账（待定）’列所记两项数值与相应决算数一致，均以‘待定’标注。决算与预算相比，业务活动略低，人力成本略高。作者尚未把这些待定项确认为逐项核验的实际成本。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16216, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 7912, "reasoning_output_tokens": 0}}
