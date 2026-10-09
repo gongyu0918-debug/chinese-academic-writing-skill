@@ -9,6 +9,12 @@
   "external_execution_profiles_created": false,
   "ignored_worktree_artifacts": ".release/v0.1.7 contains packages, dry-run/accepted receipts and read-only status logs; all retained locally",
   "active_task_dependencies": false,
-  "status": "ready_for_managed_archive_after_evidence_merge",
+  "status": "managed_archive_confirmed",
+  "archive_attachment_id": "01a11e91-d0af-7840-bab9-4bc1c4053a46",
+  "archive_tool_initial_result": "queued; completion confirmed separately",
+  "worktree_path_absent": true,
+  "git_worktree_entry_absent": true,
+  "pre_archive_unmerged_commits": 0,
+  "pre_archive_bound_execution_processes": 0,
   "historical_manual_worktrees": "not touched; not part of this task"
 }

@@ -7,3 +7,5 @@
 发布执行：GitHub Release 407442717、SkillHub versionId 416245、ClawHub versionId k973h02s585yad6v197763g9898fz58b 均取得成功回执，各实际提交一次。两个市场后续仅只读查询，不重复上传。ClawHub首次本地dry-run缺source-commit而失败，补齐固定产品提交后dry-run通过；该预检失败未发起发布HTTP。GitHub分支和标签原子push成功，末尾未加引号的PowerShell标签解引用命令报错，已用引号和远端refs确认固定标签，无重复推送或重建标签。桌面ZIP已交付；GitHub下载与桌面哈希匹配。
 
 两市场最终只读复查后仍待公开传播/审核，未追加发布。当前工作树的全部忽略包、受理回执、下载资产及状态日志已复制到主仓库.release/release-v0.1.7-20261009，包哈希再次相符；未创建模型执行profile或启动writer。发布工作树在证据合并与推送后通过archive_worktree回收，历史手工worktree保持原状。
+
+回收完成：证据提交910a2d4已合并并推送main，分支未合并提交为0，宿主进程核查无绑定执行进程。archive_worktree初次返回queued，未把排队当完成；后续确认目录已不存在、git worktree list无本轮检出，任务附件为archived_worktree（01a11e91-d0af-7840-bab9-4bc1c4053a46）。主仓库本机发布ZIP与桌面WorkBuddy ZIP哈希仍相符。该完成记录另行提交，不移动v0.1.7产品标签，不追加任何平台发布。
