@@ -3,3 +3,7 @@
 本任务按用户明确授权发布新的小版本0.1.7，并沿用此前桌面WorkBuddy更新授权。当前任务附件没有可复用的活动托管worktree；历史手工worktree用途未确定，保持原状。新建academic-release-017托管隔离工作树，分支codex/academic-release-017，专用于版本文档、打包及发布证据；运行Prompt不再改动。
 
 复用tools/build_skillhub_package.py及机器白名单，GitHub/SkillHub共用12文件MIT包，ClawHub为独立11文件MIT-0 staging。新规则已在194150c实写准入；包逐文件对照冻结Git字节，Markdown正文与已给收窄原子相同。更新现有版本显示断言仅为跟随README，不建立写作收益门禁。每个平台受理一次后仅只读检查；产品标签保持固定，后续回执单独提交。必要本机产物归档后回收本轮托管worktree。
+
+发布执行：GitHub Release 407442717、SkillHub versionId 416245、ClawHub versionId k973h02s585yad6v197763g9898fz58b 均取得成功回执，各实际提交一次。两个市场后续仅只读查询，不重复上传。ClawHub首次本地dry-run缺source-commit而失败，补齐固定产品提交后dry-run通过；该预检失败未发起发布HTTP。GitHub分支和标签原子push成功，末尾未加引号的PowerShell标签解引用命令报错，已用引号和远端refs确认固定标签，无重复推送或重建标签。桌面ZIP已交付；GitHub下载与桌面哈希匹配。
+
+两市场最终只读复查后仍待公开传播/审核，未追加发布。当前工作树的全部忽略包、受理回执、下载资产及状态日志已复制到主仓库.release/release-v0.1.7-20261009，包哈希再次相符；未创建模型执行profile或启动writer。发布工作树在证据合并与推送后通过archive_worktree回收，历史手工worktree保持原状。

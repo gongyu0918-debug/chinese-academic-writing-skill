@@ -1,0 +1,14 @@
+{
+  "worktree": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-017\\chinese-academic-writing-skill",
+  "branch": "codex/academic-release-017",
+  "purpose": "authorized v0.1.7 patch publication and evidence",
+  "product_commit": "be5fef1f6f1746ff7938a7847614539936dc8880",
+  "local_archive": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\release-v0.1.7-20261009",
+  "retained_files": 89,
+  "retained_zip_hashes_verified": true,
+  "external_execution_profiles_created": false,
+  "ignored_worktree_artifacts": ".release/v0.1.7 contains packages, dry-run/accepted receipts and read-only status logs; all retained locally",
+  "active_task_dependencies": false,
+  "status": "ready_for_managed_archive_after_evidence_merge",
+  "historical_manual_worktrees": "not touched; not part of this task"
+}

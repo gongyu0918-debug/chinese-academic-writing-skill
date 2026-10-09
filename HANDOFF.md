@@ -11,7 +11,7 @@
 
 ## 当前状态
 
-- 2026-10-09 用户授权将已合并版本作为 v0.1.7 发布至 GitHub、skillhub.cn、ClawHub；运行差异相对 v0.1.6 仅 anti-ai-writing.md 的收窄回指段落。复用已完成实写及独立语义复核，发布阶段仅核对包、标签与平台状态，不以 Python 单测或结构检查证明 Prompt 收益。三平台回执见 tests/evidence/v0.1.7-release-gate/RELEASE-RECEIPT.json。
+- 2026-10-09 用户授权将已合并版本作为 v0.1.7 发布至 GitHub、skillhub.cn、ClawHub；运行差异相对 v0.1.6 仅 anti-ai-writing.md 的收窄回指段落。复用已完成实写及独立语义复核，发布阶段仅核对包、标签与平台状态，不以 Python 单测或结构检查证明 Prompt 收益。GitHub Release 407442717 已公开，下载资产哈希一致；SkillHub versionId 416245、ClawHub versionId k973h02s585yad6v197763g9898fz58b 各受理一次。记录时SkillHub公开索引为0.1.6、新版签名及ClawHub新版详情暂不可查，审核/传播待确认。桌面WorkBuddy 0.1.7无Hooks包已交付且与标签逐文件一致，未实装。三平台回执见 tests/evidence/v0.1.7-release-gate/RELEASE-RECEIPT.json。
 
 - 2026-09-29 用户明确Worktree中小步试验与主次验收尺度后，准入P主次规则和Q2独立证据区分，运行差异仅入口第2步与独立综述叶一条；Q第一版、Elicit硬筛流程取消。本轮28次请求、27份终稿、1次通道失败，最终规则的独立匿名审阅与主审取舍完成，未宣称所有稿件质量通过。0.1.6已发布至GitHub（标签d6487743，下载资产哈希一致）；SkillHub versionId 388710、ClawHub versionId k9769gtwb2mmt873j8jmzz1s2s8famns各受理一次，公开索引/签名和新版详情仍待传播。桌面WorkBuddy已交付0.1.6无Hooks包，字节与标签一致，未实装。发布回执见 `tests/evidence/v0.1.6-release-gate/RELEASE-RECEIPT.json`。详见 `tests/evidence/priority-recalibration-20260929/`。
 
