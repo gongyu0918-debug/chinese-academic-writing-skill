@@ -7,6 +7,7 @@
 - [来源补读](CORPUS.md)：既有真实人文硕论新增11页覆盖；未取得新的实际填写人文开题，搜索模板不计样本。
 - [执行与命令](RUN.md)：固定模型/effort、运行命令、技术状态与维护审阅前置检查。
 - [执行记录](agent.md)：实际subagent分工、磁盘文件恢复和独立审稿范围；原件/profile留本地.release。
+- [工作树回收](WORKTREE-LIFECYCLE.md)：证据已合入main，托管目录与Git注册均已回收。
 - RUN-SUMMARY.json和ARCHIVE-MANIFEST.json保存执行统计、实际模型元信息及冻结字节。完成返回不等于稿件合格。
 
 产品规则本轮不变；沿用上一轮已合入的长稿授权修改消歧。source-scope-candidate仅作为未准入试验存档。本轮不发布、打tag、上传平台或替换桌面包。

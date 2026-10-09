@@ -311,8 +311,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 1326,
-    "sha256": "359b0ca68c18225dedde251a65ba61f88cd58f8aa0cf678e90804ce144501a3b"
+    "bytes": 1433,
+    "sha256": "c30f4944e296e2397cf03c173cf5f50fa9442b657f4283da2c73a654269541b7"
   },
   {
     "path": "replay-plan.json",
@@ -2208,5 +2208,10 @@
     "path": "stage_evidence.py",
     "bytes": 8328,
     "sha256": "2f30a0f02a7f007edacea0ea2d40a41fbadba1dca1cced4b92c80681369155d4"
+  },
+  {
+    "path": "WORKTREE-LIFECYCLE.md",
+    "bytes": 1604,
+    "sha256": "13b8ca9acbe85875ffd3e0800cf44349f9a6998b251aab8e66808f05687800d6"
   }
 ]
