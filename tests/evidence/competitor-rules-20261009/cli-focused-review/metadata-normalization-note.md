@@ -1,0 +1,1 @@
+三次复核实际均已完成，原输出保留。收尾采集器先按最长user消息选输入，短题会错误选中宿主环境消息；随后改用本轮唯一审稿指令定位真实输入。两个中间配对切片还含结尾空行，CLI会话省去终端空白。逐字仅接受expected或expected.rstrip()；三次材料与正文全同、model/effort匹配。各次exact_hash_match与terminal_whitespace_only及双哈希见session-models.json；不改写原始调用器断言或原稿，未重发三次复核，不把技术收尾错误算成文字规则效果。

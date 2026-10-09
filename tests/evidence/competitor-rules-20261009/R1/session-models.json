@@ -1,0 +1,9 @@
+{
+  "native_metadata_count": 0,
+  "requested_models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "records": [],
+  "limitation": "R1 used ephemeral sessions; requested model and CLI command bound, no retained native model metadata"
+}

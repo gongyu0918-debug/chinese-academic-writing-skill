@@ -1,0 +1,26 @@
+[
+  {
+    "run": "R1",
+    "original_runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\tests\\evidence\\competitor-rules-20261009\\cow-native-R1-qeet1rua",
+    "relocated_ignored_runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\.release\\competitor-runtime\\R1",
+    "public_evidence_has_runtime": false
+  },
+  {
+    "run": "R2",
+    "original_runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\tests\\evidence\\competitor-rules-20261009\\cow-native-R2-20ovw2yl",
+    "relocated_ignored_runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\.release\\competitor-runtime\\R2",
+    "public_evidence_has_runtime": false
+  },
+  {
+    "run": "R3",
+    "original_runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\tests\\evidence\\competitor-rules-20261009\\cow-native-R3-_ncygfhm",
+    "relocated_ignored_runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\.release\\competitor-runtime\\R3",
+    "public_evidence_has_runtime": false
+  },
+  {
+    "run": "R4",
+    "original_runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\tests\\evidence\\competitor-rules-20261009\\cow-native-R4-yt5o3kr8",
+    "relocated_ignored_runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\.release\\competitor-runtime\\R4",
+    "public_evidence_has_runtime": false
+  }
+]

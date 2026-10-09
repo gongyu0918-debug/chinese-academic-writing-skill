@@ -1,0 +1,50 @@
+{
+  "R3-m0-t1": {
+    "X": {
+      "arm": "candidate",
+      "file": "m0-G_clear_analysis-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m0-G_clear_analysis-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R3-m0-t2": {
+    "X": {
+      "arm": "candidate",
+      "file": "m0-H_unknown_source-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m0-H_unknown_source-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R3-m1-t1": {
+    "X": {
+      "arm": "candidate",
+      "file": "m1-G_clear_analysis-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m1-G_clear_analysis-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R3-m1-t2": {
+    "X": {
+      "arm": "main",
+      "file": "m1-H_unknown_source-main.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "candidate",
+      "file": "m1-H_unknown_source-candidate.final.txt",
+      "technical_invalid": []
+    }
+  }
+}

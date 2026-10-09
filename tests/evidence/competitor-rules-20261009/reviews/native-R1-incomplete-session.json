@@ -1,0 +1,9 @@
+{
+  "id": "01a11e5d-cea9-7222-8fa9-3495c39dcd5f",
+  "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+  "effort": "max",
+  "completed_semantic_review": false,
+  "hidden_reasoning_archived": false,
+  "closed_status": "running",
+  "replacement": "independent native CLI GLM5.3/max blind review"
+}

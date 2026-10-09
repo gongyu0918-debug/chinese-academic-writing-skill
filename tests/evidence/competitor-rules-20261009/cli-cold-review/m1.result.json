@@ -1,0 +1,10 @@
+{
+  "model_requested": "alibaba-token-plan-responses/glm-5.3",
+  "effort_requested": "max",
+  "returncode": 0,
+  "seconds": 295.54,
+  "prompt_sha256": "e2de061c721cfe0e77178a32ed99679f42a1dcc2cad684f9fd4717e6a18f5840",
+  "final_sha256": "906069c692792e7ea6b318fcfc2a7e12742abdf71539888a41a44f3742948396",
+  "semantic_pass": "not inferred from response",
+  "scope": "five anonymous repaired pairs, writer route m1"
+}

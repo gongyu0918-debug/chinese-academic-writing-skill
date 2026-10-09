@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11e65-55a2-7eb1-a5ce-56b333557df1"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "地方志摘录整理已经完成，共整理出21条摘录。访谈共计划8人，目前已完成其中3人的访谈，其余5人的访谈拟开展，具体时间尚未确定。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14681, "cached_input_tokens": 7168, "cache_write_input_tokens": 0, "output_tokens": 1790, "reasoning_output_tokens": 1749}}

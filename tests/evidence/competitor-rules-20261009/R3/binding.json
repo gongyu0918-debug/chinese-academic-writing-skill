@@ -1,0 +1,44 @@
+{
+  "main_commit": "1d0729ca411b8aeccf4ebb694a033bbb35eb8945",
+  "candidate_head": "1d0729ca411b8aeccf4ebb694a033bbb35eb8945",
+  "fingerprints": {
+    "main": "db52a9edb9c04960be9c8fc6b7a35d7c6a91fed5eed1ce7093e0361b37c1c805",
+    "candidate": "998f0d62fac62a55d2bb0f8cf5a2f989c57737fe8c084155a71084b6867a5b3d"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "G_clear_analysis": "请只检测下面文学论文段的文风与衔接，不改写、不联网；按实际问题给意见，无实质问题就保留，不把有限文本解释当作新增经验事实。材料：选段中人物先说要回家，紧接着坐在台阶上，选段到此结束，没有后续叙事。原段：人物先说要回家，接着坐在台阶上。这组安排把离开的言语与停留的动作并置。它呈现出两者尚未一致，却不能据此确定人物为何停留。",
+    "H_unknown_source": "请只审不改下面独立文献综述的表述与指代，不联网，只指出实际问题，给位置、依据及最小建议。作者确认底稿第一句关于文献A、B讨论同一问题且都用访谈的陈述属已读原文事实，无需补证。全部材料：两篇原文都讨论读者如何选择检索词，A访谈12人，B访谈15人；作者摘录中有“7人说会先用人名”，但未注明来自A还是B，原文对应位置尚未确定，本轮无法判定归属。完整原段：文献A与文献B都用访谈讨论检索词的选择。它记录了7人先用人名的说法。这个结果将在后文用于说明文献A对检索习惯的描述。不能将7人的摘录猜归A或B，也不要求两文等篇幅介绍。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\9691020b546a15b2\\codex.exe",
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\tests\\evidence\\competitor-rules-20261009\\cow-native-R3-_ncygfhm",
+  "permissions": "inherited-host-config",
+  "timeout": 200,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "main",
+  "baseline_source": null,
+  "candidate_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\chinese-academic-writing-assistant",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "1d0729ca411b8aeccf4ebb694a033bbb35eb8945",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "fb9ff7407024e4efd1ddb9ba8c021c8ecb5ff977eac8c054167a48badb49cfd8",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n使用普通写作能力，不启用 Hook。\n\n",
+  "ordinary_only": true,
+  "utf8_read": false,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  },
+  "input_mode": "full frozen entry plus one routed leaf, supplied inline; not end-to-end file-loading verification"
+}

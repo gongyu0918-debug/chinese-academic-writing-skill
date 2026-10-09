@@ -1,0 +1,10 @@
+{
+  "model_requested": "alibaba-token-plan-responses/qwen3.8-max",
+  "effort_requested": "max",
+  "returncode": 0,
+  "seconds": 69.4,
+  "prompt_sha256": "6768f3c6a0484c3837f07a22dbdf51c0bd10ed5f1315aa9a145644abc442014f",
+  "final_sha256": "7d80b9193a9eb7f0ace672e4706464c8cbe692b08cb209b4a8c161c1d6850051",
+  "semantic_pass": "not inferred from response",
+  "scope": "R3-m0-t1"
+}

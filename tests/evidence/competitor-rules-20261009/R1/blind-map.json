@@ -1,0 +1,98 @@
+{
+  "R1-m0-t1": {
+    "X": {
+      "arm": "main",
+      "file": "m0-A_context_edit-main.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "candidate",
+      "file": "m0-A_context_edit-candidate.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R1-m0-t2": {
+    "X": {
+      "arm": "candidate",
+      "file": "m0-B_ambiguous_review-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m0-B_ambiguous_review-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R1-m0-t3": {
+    "X": {
+      "arm": "candidate",
+      "file": "m0-C_priority_edit-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m0-C_priority_edit-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R1-m0-t4": {
+    "X": {
+      "arm": "candidate",
+      "file": "m0-D_clear_review-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m0-D_clear_review-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R1-m1-t1": {
+    "X": {
+      "arm": "candidate",
+      "file": "m1-A_context_edit-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m1-A_context_edit-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R1-m1-t2": {
+    "X": {
+      "arm": "candidate",
+      "file": "m1-B_ambiguous_review-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m1-B_ambiguous_review-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R1-m1-t3": {
+    "X": {
+      "arm": "candidate",
+      "file": "m1-C_priority_edit-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m1-C_priority_edit-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R1-m1-t4": {
+    "X": {
+      "arm": "main",
+      "file": "m1-D_clear_review-main.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "candidate",
+      "file": "m1-D_clear_review-candidate.final.txt",
+      "technical_invalid": []
+    }
+  }
+}

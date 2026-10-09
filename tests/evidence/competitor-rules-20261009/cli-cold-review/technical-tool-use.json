@@ -1,0 +1,11 @@
+{
+  "call": "m0",
+  "controlled_blind_review": false,
+  "unexpected_item": "web_search",
+  "query": "test",
+  "no_writer_case_content_in_query": true,
+  "decision": "preserve visible report and tool record; exclude as controlled independent validation; focused reviewer independently covers G/I/K",
+  "valid_independent_cli_calls": 4,
+  "valid_repaired_pair_coverage": 8,
+  "two_remaining_pairs": "R3/H Qwen input-boundary limitation; R4/J Qwen both delivery failures, main review only"
+}

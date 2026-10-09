@@ -1,0 +1,18 @@
+[
+  {
+    "id": "01a11e6e-20fe-7a40-af7e-6324657233ba",
+    "model": "alibaba-token-plan-responses/glm-5.3",
+    "effort": "max",
+    "writer_packet": 0,
+    "prompt_hash_match": true,
+    "hidden_reasoning_archived": false
+  },
+  {
+    "id": "01a11e6e-2103-7170-884a-bfd77baa7570",
+    "model": "alibaba-token-plan-responses/glm-5.3",
+    "effort": "max",
+    "writer_packet": 1,
+    "prompt_hash_match": true,
+    "hidden_reasoning_archived": false
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "01a11e70-ecd4-72c0-b032-ed8e936b2725",
+    "review_call": 1,
+    "pair": "R4-m0-t1",
+    "model": "alibaba-token-plan-responses/qwen3.8-max",
+    "effort": "max",
+    "raw_prompt_sha256": "b53ffcb97742d6dd47f0de2a26856453cb17f1c1c31067b2e06360ebc9407e96",
+    "native_prompt_sha256": "b53ffcb97742d6dd47f0de2a26856453cb17f1c1c31067b2e06360ebc9407e96",
+    "exact_hash_match": true,
+    "terminal_whitespace_only": false,
+    "full_substantive_input_match": true,
+    "hidden_reasoning_archived": false
+  },
+  {
+    "id": "01a11e70-ecea-7971-be9f-40d3e5b2e4cd",
+    "review_call": 0,
+    "pair": "R3-m0-t1",
+    "model": "alibaba-token-plan-responses/qwen3.8-max",
+    "effort": "max",
+    "raw_prompt_sha256": "6768f3c6a0484c3837f07a22dbdf51c0bd10ed5f1315aa9a145644abc442014f",
+    "native_prompt_sha256": "6768f3c6a0484c3837f07a22dbdf51c0bd10ed5f1315aa9a145644abc442014f",
+    "exact_hash_match": true,
+    "terminal_whitespace_only": false,
+    "full_substantive_input_match": true,
+    "hidden_reasoning_archived": false
+  },
+  {
+    "id": "01a11e71-db5c-7922-accc-bf5b518737c9",
+    "review_call": 2,
+    "pair": "R4-m0-t3",
+    "model": "alibaba-token-plan-responses/qwen3.8-max",
+    "effort": "max",
+    "raw_prompt_sha256": "f98e25dc57f70d33b792219b6d9f43b99b3f9ad1c417843567e131985802e15d",
+    "native_prompt_sha256": "f98e25dc57f70d33b792219b6d9f43b99b3f9ad1c417843567e131985802e15d",
+    "exact_hash_match": true,
+    "terminal_whitespace_only": false,
+    "full_substantive_input_match": true,
+    "hidden_reasoning_archived": false
+  }
+]

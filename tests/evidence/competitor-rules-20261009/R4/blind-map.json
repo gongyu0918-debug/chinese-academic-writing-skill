@@ -1,0 +1,74 @@
+{
+  "R4-m0-t1": {
+    "X": {
+      "arm": "main",
+      "file": "m0-I_clear_metric-main.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "candidate",
+      "file": "m0-I_clear_metric-candidate.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R4-m0-t2": {
+    "X": {
+      "arm": "candidate",
+      "file": "m0-J_unknown_bounded-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m0-J_unknown_bounded-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R4-m0-t3": {
+    "X": {
+      "arm": "candidate",
+      "file": "m0-K_proposal_state-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m0-K_proposal_state-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R4-m1-t1": {
+    "X": {
+      "arm": "candidate",
+      "file": "m1-I_clear_metric-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m1-I_clear_metric-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R4-m1-t2": {
+    "X": {
+      "arm": "candidate",
+      "file": "m1-J_unknown_bounded-candidate.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "main",
+      "file": "m1-J_unknown_bounded-main.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R4-m1-t3": {
+    "X": {
+      "arm": "main",
+      "file": "m1-K_proposal_state-main.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "candidate",
+      "file": "m1-K_proposal_state-candidate.final.txt",
+      "technical_invalid": []
+    }
+  }
+}

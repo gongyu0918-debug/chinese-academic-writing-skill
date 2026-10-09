@@ -1,0 +1,142 @@
+{
+  "native_metadata_count": 12,
+  "requested_models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "records": [
+    {
+      "id": "01a11e65-559b-7213-885f-4f6f82bed827",
+      "run_id": "m0-I_clear_metric-main",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    },
+    {
+      "id": "01a11e65-559c-7522-b310-4cac786db0a2",
+      "run_id": "m1-I_clear_metric-candidate",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    },
+    {
+      "id": "01a11e65-559d-7803-abb3-a3a860a044a1",
+      "run_id": "m0-J_unknown_bounded-main",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    },
+    {
+      "id": "01a11e65-55a2-7eb1-a5ce-56b333557df1",
+      "run_id": "m0-K_proposal_state-main",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    },
+    {
+      "id": "01a11e65-b7d1-7602-a939-7939db8e7cda",
+      "run_id": "m1-I_clear_metric-main",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    },
+    {
+      "id": "01a11e65-fbf9-75c2-9541-378bd71ba47a",
+      "run_id": "m1-J_unknown_bounded-candidate",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    },
+    {
+      "id": "01a11e66-012c-7f02-83c8-e9becc090480",
+      "run_id": "m0-K_proposal_state-candidate",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    },
+    {
+      "id": "01a11e66-5088-7073-aae6-43b47f4b5bc3",
+      "run_id": "m0-J_unknown_bounded-candidate",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    },
+    {
+      "id": "01a11e66-b4dd-71d1-a4f8-a29787d5f026",
+      "run_id": "m1-J_unknown_bounded-main",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    },
+    {
+      "id": "01a11e66-fa5f-7493-b86a-a5119fdfb317",
+      "run_id": "m1-K_proposal_state-candidate",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    },
+    {
+      "id": "01a11e67-277c-7711-b5d6-e7c40c86913d",
+      "run_id": "m1-K_proposal_state-main",
+      "model": "ollama-cloud/glm-5.3-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    },
+    {
+      "id": "01a11e67-8fb7-71f0-8f40-3d97d27a82ef",
+      "run_id": "m0-I_clear_metric-candidate",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "prompt_hash_match": true,
+      "request_present": true,
+      "model_match": true,
+      "effort_match": true,
+      "hidden_reasoning_archived": false
+    }
+  ],
+  "limitation": null
+}

@@ -1,0 +1,7 @@
+{
+  "id": "01a11e57-ed86-7e82-8359-c5673507d55f",
+  "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+  "effort": "max",
+  "completed_final_count": 8,
+  "hidden_reasoning_archived": false
+}

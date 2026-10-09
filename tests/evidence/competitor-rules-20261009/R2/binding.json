@@ -1,0 +1,44 @@
+{
+  "main_commit": "1d0729ca411b8aeccf4ebb694a033bbb35eb8945",
+  "candidate_head": "1d0729ca411b8aeccf4ebb694a033bbb35eb8945",
+  "fingerprints": {
+    "main": "db52a9edb9c04960be9c8fc6b7a35d7c6a91fed5eed1ce7093e0361b37c1c805",
+    "candidate": "1978ea217a8e1b29be4aaf9a718da363e17430f6814ae4745f37f1b681a56b0c"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "E_proposal_edit": "请只对下面开题报告进展段作最小语言修改，保持现有研究状态，改善文风与衔接，只交改稿正文，不联网，不补研究安排。已给材料：档案整理已完成，共18份；访谈原计划7人，已访谈2人，另5人仍拟开展，具体时间未定。作者确认原段中的“这项工作已完成”专指档案整理，不是整个项目也不是7人的访谈。原段：本研究已整理18份档案，并完成2人的访谈；另5人的访谈仍拟开展，时间未定。这项工作已完成，可用于后续分析。",
+    "F_review_scope": "请只审下列独立文献综述小节的表达与指代，不改写、不联网，按位置、问题、依据及建议交付；没有实际文风问题即可保留。全部已读资料：T1在一场任务中观察20人使用索引，13人找到指定材料；T2在另一场任务中观察28人使用检索框，16人找到指定材料。两场任务的材料与招募不同，不能直接判谁更好。背景资料T3只说明场馆建成时间，与本文比较问题无关，作者已经省略。完整待审正文：索引任务中，20人中有13人找到指定材料[T1]；检索框任务中，28人中有16人完成这一要求[T2]。这两项记录呈现了不同查找方式下的任务表现。由于材料与招募不同，现有记录不足以比较两种方式的优劣。"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\9691020b546a15b2\\codex.exe",
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\tests\\evidence\\competitor-rules-20261009\\cow-native-R2-20ovw2yl",
+  "permissions": "inherited-host-config",
+  "timeout": 200,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "main",
+  "baseline_source": null,
+  "candidate_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\chinese-academic-writing-assistant",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "1d0729ca411b8aeccf4ebb694a033bbb35eb8945",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "4ae16867a7176cbe1407af53b24f7acb5a4e4f7417c48cf50cd9d514ca9a0581",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n使用普通写作能力，不启用 Hook。\n\n",
+  "ordinary_only": true,
+  "utf8_read": false,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  },
+  "input_mode": "full frozen entry plus one routed leaf, supplied inline; not end-to-end file-loading verification"
+}

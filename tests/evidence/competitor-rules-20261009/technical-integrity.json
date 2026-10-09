@@ -1,0 +1,36 @@
+{
+  "rounds": [
+    {
+      "run": "R1",
+      "returns": 16,
+      "pairs": 8,
+      "native_metadata": 0,
+      "technical_invalid": 0
+    },
+    {
+      "run": "R2",
+      "returns": 8,
+      "pairs": 4,
+      "native_metadata": 8,
+      "technical_invalid": 0
+    },
+    {
+      "run": "R3",
+      "returns": 8,
+      "pairs": 4,
+      "native_metadata": 8,
+      "technical_invalid": 0
+    },
+    {
+      "run": "R4",
+      "returns": 12,
+      "pairs": 6,
+      "native_metadata": 12,
+      "technical_invalid": 0
+    }
+  ],
+  "native_input_and_route_records": 28,
+  "ephemeral_without_native_metadata": 16,
+  "semantic_pass_count": "not inferred",
+  "end_to_end_routing_or_client_installation": "not tested"
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "I_clear_metric",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 146.04,
+    "invalid": [],
+    "draft_sha256": "6f1ca524c896417fba6b4eca4c25972bfc7d52f8e8cf9c6c6d4637d82dd0585e",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 14743,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7107,
+        "reasoning_output_tokens": 6683
+      }
+    ],
+    "prompt_sha256": "d9cc32dcf912fca85cdf4337859eb96b109bdf3d93c122d71cd092f6b7fe96ef",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "I_clear_metric",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 79.79,
+    "invalid": [],
+    "draft_sha256": "b8066b2555cb36d1b579a7f32c025c9d5d4cf3bc93ed971af99fbacb4fb41dbc",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 14851,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4755,
+        "reasoning_output_tokens": 4484
+      }
+    ],
+    "prompt_sha256": "4af970b5cbf258b96ee7dfbff392da36bb91d2726849e71cfffd614a2ed63602",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "J_unknown_bounded",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 64.33,
+    "invalid": [],
+    "draft_sha256": "04c62745b7edf83c8679f07f6e9f202633ae4db2b1259597546c94ec1e576fc3",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 14737,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3209,
+        "reasoning_output_tokens": 2093
+      }
+    ],
+    "prompt_sha256": "79ce15131796ae92da0f1f51d5225262cd495869514b4a4d31554419d73f278d",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "J_unknown_bounded",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 64.73,
+    "invalid": [],
+    "draft_sha256": "2cc9c9b7182c7e6b9f4db938c130ba60518a40063a17b3c9206414aae029d2cf",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 14845,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3129,
+        "reasoning_output_tokens": 2577
+      }
+    ],
+    "prompt_sha256": "b5031acbaa3a932683955dd5ff9433d41eed4f864df966042cb9e4c1bad3d607",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "K_proposal_state",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 44.0,
+    "invalid": [],
+    "draft_sha256": "eb43f8ff1121915269831a62d101ba50e1014d1d8f56ac428484c1826bf34796",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 14681,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1790,
+        "reasoning_output_tokens": 1749
+      }
+    ],
+    "prompt_sha256": "0955f2d3b6025905d7b8789931a9c385a813ebed3bc65c57b8e4ea0984185f6f",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "K_proposal_state",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 136.51,
+    "invalid": [],
+    "draft_sha256": "eee38b1414d4429daf57c8b4566179fa3e10189023a210f8c77316b2be16ddb8",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 14789,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7388,
+        "reasoning_output_tokens": 6852
+      }
+    ],
+    "prompt_sha256": "c2f0470b6319eca4a5c3f5db9f824cac0cc1c20e4b74dab716e5eea609606c2d",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "I_clear_metric",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 25.23,
+    "invalid": [],
+    "draft_sha256": "f0c098517a94fd20ff886a74d2f3578f0da100e6cc545dd49d40b8ae265ca131",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 15998,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2497,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "4af970b5cbf258b96ee7dfbff392da36bb91d2726849e71cfffd614a2ed63602",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "I_clear_metric",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 17.42,
+    "invalid": [],
+    "draft_sha256": "a537f07720585c3c90ac168e0b8bc74cae9479d208bfbb679b2bc2698761181a",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 15887,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1599,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "d9cc32dcf912fca85cdf4337859eb96b109bdf3d93c122d71cd092f6b7fe96ef",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "J_unknown_bounded",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 47.32,
+    "invalid": [],
+    "draft_sha256": "64da9adb30c05417b182669d8d2b134ce2486d5f6a0e835fb1a9e1fd0edf67b0",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 15997,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5214,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "b5031acbaa3a932683955dd5ff9433d41eed4f864df966042cb9e4c1bad3d607",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "J_unknown_bounded",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 17.76,
+    "invalid": [],
+    "draft_sha256": "0355b489e6c2403f3099459b7aecd683339621fa2cc50fc58cfa4c5d211fb550",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 15886,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2542,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "79ce15131796ae92da0f1f51d5225262cd495869514b4a4d31554419d73f278d",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "K_proposal_state",
+    "arm": "candidate",
+    "returncode": 0,
+    "seconds": 11.52,
+    "invalid": [],
+    "draft_sha256": "a47b024269432bfa57dbf9d46807c66558b9a3e5cbe067550f877844ed739c8b",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 15947,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 863,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "c2f0470b6319eca4a5c3f5db9f824cac0cc1c20e4b74dab716e5eea609606c2d",
+    "input_mode": "inline frozen entry and one leaf"
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "K_proposal_state",
+    "arm": "main",
+    "returncode": 0,
+    "seconds": 12.15,
+    "invalid": [],
+    "draft_sha256": "eb4418d1bf679ea6289176d05e5536b873f8a6b16885ba76089e19ff52723864",
+    "commands": [],
+    "usage": [
+      {
+        "input_tokens": 15836,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1090,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "prompt_sha256": "0955f2d3b6025905d7b8789931a9c385a813ebed3bc65c57b8e4ea0984185f6f",
+    "input_mode": "inline frozen entry and one leaf"
+  }
+]

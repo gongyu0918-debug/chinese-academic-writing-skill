@@ -1,0 +1,45 @@
+{
+  "main_commit": "1d0729ca411b8aeccf4ebb694a033bbb35eb8945",
+  "candidate_head": "1d0729ca411b8aeccf4ebb694a033bbb35eb8945",
+  "fingerprints": {
+    "main": "db52a9edb9c04960be9c8fc6b7a35d7c6a91fed5eed1ce7093e0361b37c1c805",
+    "candidate": "998f0d62fac62a55d2bb0f8cf5a2f989c57737fe8c084155a71084b6867a5b3d"
+  },
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "cases": {
+    "I_clear_metric": "请只检查独立文献综述段的表达与指代，不改写、不联网，只列影响理解的实际问题，没有问题即可保留。材料均已读：S1用纸质目录安排一次定位任务，18人中12人找到指定条目；S2用电子目录安排另一场定位任务，26人中18人完成查找，目标也为找到指定条目。材料与招募不同，不可直接比较优劣。场馆历史资料与问题无关，不进入正文。待审正文如下：【纸质目录任务中，18人中有12人找到指定条目[S1]；电子目录任务中，26人中有18人完成这一查找[S2]。这两项观察呈现了两种目录使用情境中的任务表现。由于材料与招募不同，现有记录不足以比较两种目录的优劣。】以上方括号内为全部待审正文，不含本句指令。",
+    "J_unknown_bounded": "请只审独立文献综述段的表达、指代与来源归属，不改写、不联网，交位置、实际问题、依据及最小建议。全部材料：原文C访谈16人、原文D访谈22人，均研究读者如何选择检索词；作者摘录有“9人说会先用书名”，但未注明来自C还是D，原文对应位置未确定，本轮不能判断归属。作者确认两文用访谈研究这一问题属已读原文事实。待审正文：【文献C与文献D都用访谈讨论检索词的选择。它记录了9人先用书名的说法。这个结果将在后文用于说明文献C对检索词选择的描述。】待审正文至此结束。审核要求：不猜归属，不要求两文等篇幅；本句为任务约束，不属于待审正文。",
+    "K_proposal_state": "请最小润色开题报告进展段，改善表述和指代，只交可用正文，不联网，不补安排或结果。材料：地方志摘录整理已完成，共21条；访谈共计划8人，已完成3人，另5人拟开展，具体时间未定。原段中“它已完成”作者明确专指地方志摘录整理；研究问题是材料如何被受访者引用，场地装修情况只属次要背景，无须展开。原段：【地方志摘录已经整理21条，访谈已经完成3人，另5人仍拟开展，时间未定。它已完成，可用于后续分析。访谈在装修后的资料室开展。】"
+  },
+  "cli": "C:\\Users\\admin\\AppData\\Local\\OpenAI\\Codex\\bin\\9691020b546a15b2\\codex.exe",
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "effort": "max",
+  "runtime": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\tests\\evidence\\competitor-rules-20261009\\cow-native-R4-yt5o3kr8",
+  "permissions": "inherited-host-config",
+  "timeout": 200,
+  "agent_documents": "project_doc_max_bytes=0",
+  "baseline_ref": "main",
+  "baseline_source": null,
+  "candidate_source": "C:\\Users\\admin\\.codex\\worktrees\\academic-competitor-1009\\chinese-academic-writing-skill\\chinese-academic-writing-assistant",
+  "candidate_skill_name": "chinese-academic-writing-assistant",
+  "baseline_commit": "1d0729ca411b8aeccf4ebb694a033bbb35eb8945",
+  "profile": "temporary-no-user-documents-or-credentials",
+  "runner_sha256": "897e14d8aad8a8bd5ecf03ad0bac5892ec8432ca6d16415439570858bb6216e7",
+  "prompt_prefix": "使用本目录 .agents/skills/chinese-academic-writing-assistant/SKILL.md。本轮只写稿，不委派子代理；独立复核由另外的审稿会话统一执行。不联网。\n\n使用普通写作能力，不启用 Hook。\n\n",
+  "ordinary_only": true,
+  "utf8_read": false,
+  "runtime_layout": "each call has a separate parent, workspace and temporary directory",
+  "session_metadata": "retained in isolated profile",
+  "review_host": {
+    "multi_agent_v2": true,
+    "enabled": false,
+    "max_threads": null,
+    "max_depth": null,
+    "child_model": "host defaults",
+    "child_usage": "root JSON usage is not assumed to include child usage"
+  },
+  "input_mode": "full frozen entry plus one routed leaf, supplied inline; not end-to-end file-loading verification"
+}

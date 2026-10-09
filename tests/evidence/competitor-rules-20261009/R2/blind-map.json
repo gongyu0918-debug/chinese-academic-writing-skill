@@ -1,0 +1,50 @@
+{
+  "R2-m0-t1": {
+    "X": {
+      "arm": "main",
+      "file": "m0-E_proposal_edit-main.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "candidate",
+      "file": "m0-E_proposal_edit-candidate.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R2-m0-t2": {
+    "X": {
+      "arm": "main",
+      "file": "m0-F_review_scope-main.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "candidate",
+      "file": "m0-F_review_scope-candidate.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R2-m1-t1": {
+    "X": {
+      "arm": "main",
+      "file": "m1-E_proposal_edit-main.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "candidate",
+      "file": "m1-E_proposal_edit-candidate.final.txt",
+      "technical_invalid": []
+    }
+  },
+  "R2-m1-t2": {
+    "X": {
+      "arm": "main",
+      "file": "m1-F_review_scope-main.final.txt",
+      "technical_invalid": []
+    },
+    "Y": {
+      "arm": "candidate",
+      "file": "m1-F_review_scope-candidate.final.txt",
+      "technical_invalid": []
+    }
+  }
+}
