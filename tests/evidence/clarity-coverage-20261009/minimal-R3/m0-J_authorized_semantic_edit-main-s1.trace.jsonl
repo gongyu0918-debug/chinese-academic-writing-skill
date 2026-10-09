@@ -1,0 +1,5 @@
+{"type": "thread.started", "thread_id": "01a11f6d-8824-79a1-8c81-4100745d99a7"}
+{"type": "turn.started"}
+{"type": "error", "message": "Reconnecting... 1/5 (stream disconnected before completion: Upstream stream terminated unexpectedly: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch())"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "**4.1 记录**\n\n材料一将该职记为“督办”，材料二将该职记为“委员”。两条记录出自两份不同材料，名称用字不同。至于两个称谓是否指向同一职务，此处不作认定，留待下节讨论。\n\n**4.2 讨论**\n\n两处称谓不同，可能与两份材料各自的记录口径有关。这一解释只是候选说明，材料并未交代两个名称之间的对应关系，因此尚不能认定“督办”与“委员”是否为同一职务。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15696, "cached_input_tokens": 15360, "cache_write_input_tokens": 0, "output_tokens": 7676, "reasoning_output_tokens": 7566}}

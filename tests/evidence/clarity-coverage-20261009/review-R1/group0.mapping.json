@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "A_provided_records",
+    "B_authorized_long_revision"
+  ],
+  "mapping": {
+    "0": {
+      "X": "main",
+      "Y": "candidate"
+    },
+    "1": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  }
+}

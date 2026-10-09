@@ -1,0 +1,280 @@
+[
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "L_cost_state",
+    "arm": "main",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f52-0b9f-7be1-adf9-14fc1fcd2d36"
+    ],
+    "seconds": 177.03,
+    "prompt_sha256": "1c84d0ab7294cef105c93cce4bf686c7e248f99cb41641ee9e7fd74a3244c801",
+    "draft_sha256": "ade7cff0a9fc819dbc480fdcaa8b81e7f14edad33133b2e3075861ac70a4d2d1",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 15737,
+        "cached_input_tokens": 6144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10278,
+        "reasoning_output_tokens": 8503
+      }
+    ]
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "L_cost_state",
+    "arm": "main",
+    "stage": 2,
+    "returncode": null,
+    "invalid": [
+      "timeout",
+      "missing_final"
+    ],
+    "thread_ids": [
+      "01a11f54-bed1-73b2-a8db-d2132455ffc9"
+    ],
+    "seconds": 300.01,
+    "prompt_sha256": "380765f3fff5299119697262c3d6c98a0cc5019539cc0fe6153f39299e02a709",
+    "draft_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": "ade7cff0a9fc819dbc480fdcaa8b81e7f14edad33133b2e3075861ac70a4d2d1",
+    "quality_pass": null,
+    "usage": []
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "L_proposal_state",
+    "arm": "main",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f52-0bb1-7562-964f-7c6b81e45447"
+    ],
+    "seconds": 123.55,
+    "prompt_sha256": "fea16bd315cb5c16f567ebd101cdcb91c17d3dab5aabc657d0b4462ae83f8a9b",
+    "draft_sha256": "715e35e5f4619e362106d0f3ee775b8539ff5295a28deb20fa4e53f85e3004bb",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-proposal.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 15436,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6912,
+        "reasoning_output_tokens": 5829
+      }
+    ]
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "L_proposal_state",
+    "arm": "main",
+    "stage": 2,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f53-ede5-7970-bf2a-10ff0e0f4d81"
+    ],
+    "seconds": 90.94,
+    "prompt_sha256": "bff37b7ebb4aa0dc7d84d6d1a84d9eb9cbae9d73d39fa32ddb6ffb7504ef14a5",
+    "draft_sha256": "a2f3782b309a0f56c16dba74ce8d4907ca3a70dbfec7579365ca876e1c78b92a",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-proposal.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": "715e35e5f4619e362106d0f3ee775b8539ff5295a28deb20fa4e53f85e3004bb",
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 17229,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4395,
+        "reasoning_output_tokens": 2815
+      }
+    ]
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "L_proposal_state",
+    "arm": "main",
+    "stage": 3,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f55-511c-7220-86b7-fb63eb3b85f0"
+    ],
+    "seconds": 198.83,
+    "prompt_sha256": "bf2bcd6ca079a44ee8f0281ecfc6b08fb95a8087d64393961433c06c2ab159ec",
+    "draft_sha256": "02e5daaf06fe6e5cfe3db0c8327a68d89f3254fdc4fe4880af5c9d084224eab3",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-proposal.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": "a2f3782b309a0f56c16dba74ce8d4907ca3a70dbfec7579365ca876e1c78b92a",
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 17723,
+        "cached_input_tokens": 8192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10452,
+        "reasoning_output_tokens": 8786
+      }
+    ]
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "L_cost_state",
+    "arm": "main",
+    "stage": 1,
+    "returncode": null,
+    "invalid": [
+      "timeout",
+      "missing_final"
+    ],
+    "thread_ids": [
+      "01a11f52-0bb4-7030-8e99-188ede68ed68"
+    ],
+    "seconds": 300.02,
+    "prompt_sha256": "1c84d0ab7294cef105c93cce4bf686c7e248f99cb41641ee9e7fd74a3244c801",
+    "draft_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": []
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "L_proposal_state",
+    "arm": "main",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f52-0bc3-7273-8067-99e5ecc1bf58"
+    ],
+    "seconds": 100.22,
+    "prompt_sha256": "fea16bd315cb5c16f567ebd101cdcb91c17d3dab5aabc657d0b4462ae83f8a9b",
+    "draft_sha256": "557d8fa7a4e0165271e13aea2b76daaadd9f3e6ec5a2ea9a2f09de01af6ec36d",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-proposal.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 17330,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18708,
+        "reasoning_output_tokens": 0
+      }
+    ]
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "L_proposal_state",
+    "arm": "main",
+    "stage": 2,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f53-92c3-7510-8fde-b5e9c61d1d90"
+    ],
+    "seconds": 131.33,
+    "prompt_sha256": "017ad9d482042cf52d18ecbe4613b692d0a8c2557ab4b81547efee6adc946e80",
+    "draft_sha256": "face22cc0846a769fc63215281550d254b0bf763bb468979e06691534ce681d7",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-proposal.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": "557d8fa7a4e0165271e13aea2b76daaadd9f3e6ec5a2ea9a2f09de01af6ec36d",
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 18015,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30616,
+        "reasoning_output_tokens": 0
+      }
+    ]
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "L_proposal_state",
+    "arm": "main",
+    "stage": 3,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f55-93be-7f13-a25d-d02e5375439c"
+    ],
+    "seconds": 37.89,
+    "prompt_sha256": "8b2080a8364d637cc2e71d0ac665409509911a6988b117d3a0c29a6b75cb200a",
+    "draft_sha256": "a093eecf681d4dab6da9b86782d684af1339922cd0fd32ea797f40209f67b4ba",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-proposal.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": "face22cc0846a769fc63215281550d254b0bf763bb468979e06691534ce681d7",
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 18273,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6741,
+        "reasoning_output_tokens": 0
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "model_index": 1,
+  "mapping": {
+    "X": "candidate",
+    "Y": "main"
+  }
+}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11f5d-386d-7592-a6b6-06deb8eb4aec"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "在预约办理主体方面，访谈材料呈现不同情况：T01提到“周末是儿子替我预约”，办理由其儿子代为完成；T02提到“我自己在手机上约”，办理由受访者在手机上完成；T03提到“社区帮我约好了”，办理由社区代为完成。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15981, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 997, "reasoning_output_tokens": 0}}

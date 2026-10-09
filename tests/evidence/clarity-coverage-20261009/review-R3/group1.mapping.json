@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "K_undecided_conflict",
+    "M_causal_gate"
+  ],
+  "mapping": {
+    "0": {
+      "X": "candidate",
+      "Y": "main"
+    },
+    "1": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "model": "ollama-cloud/glm-5.3-flash",
+  "effort": "max",
+  "case": "K_undecided_conflict",
+  "arm": "candidate",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [],
+  "thread_ids": [
+    "01a11f70-0ab1-7d42-ab4a-034d58e85bb4"
+  ],
+  "seconds": 35.12,
+  "prompt_sha256": "f8bcf61bb52065ea6fe259974cf378ce028261a80ab6c85942fa94bf7640b5da",
+  "draft_sha256": "37276d51c91c397b12092211ffc8606e4afb36b5d353b98c2465d71977540f71",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/academic-proposal.md",
+    "references/long-form-consistency.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 15596,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2448,
+      "reasoning_output_tokens": 0
+    }
+  ]
+}

@@ -1,0 +1,506 @@
+[
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "A_provided_records",
+    "arm": "main",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5b-5f81-7e92-92a4-99d13867e805"
+    ],
+    "seconds": 66.88,
+    "prompt_sha256": "5811847003275bbebec4bb6eceaadc40084cbf39e4ab55fb3e35034689b08285",
+    "draft_sha256": "4f93c49450302bdac79f5918cb6406f2f79872496e3dcc32c6b32be6a756ce2f",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 14797,
+        "cached_input_tokens": 1024,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3398,
+        "reasoning_output_tokens": 3222
+      }
+    ]
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "A_provided_records",
+    "arm": "candidate",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5c-642b-78e3-be00-2457f3b2f1ab"
+    ],
+    "seconds": 62.53,
+    "prompt_sha256": "7a48dba7ef5594a0bf4debda52c6f7181ee62dde1d5c8841a76d17a8aa16aeab",
+    "draft_sha256": "5bdd82b72594c3a9c30d2b6649d81e224956434e2158b88a40db65d15140b429",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 14855,
+        "cached_input_tokens": 8192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3236,
+        "reasoning_output_tokens": 3110
+      }
+    ]
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "B_authorized_long_revision",
+    "arm": "main",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5b-5f81-7c41-a1c2-bebd287aaa4d"
+    ],
+    "seconds": 66.02,
+    "prompt_sha256": "7ed2fbfc4e8855104518f3d37886254ef01400ccda05efbbc8bfa3a25d3bdd04",
+    "draft_sha256": "ad0361c8cdc191d7f9d629b0c6772e15e44d839d31df161d851e7c35ce4c44b5",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 15660,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3427,
+        "reasoning_output_tokens": 3238
+      }
+    ]
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "B_authorized_long_revision",
+    "arm": "candidate",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5c-60db-7cb2-8381-3d8bb228ea1b"
+    ],
+    "seconds": 66.44,
+    "prompt_sha256": "9c81f7aa587fee3afb6569323c0307873cb0c3dab312a6df1656b4afc12deb7c",
+    "draft_sha256": "2864fbfc134edabcfac6c4f9c60b89f1ccdee5aef8f889202f630c6467ebf302",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 16412,
+        "cached_input_tokens": 8192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3837,
+        "reasoning_output_tokens": 3713
+      }
+    ]
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "C_uncorrected_conflict",
+    "arm": "main",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5b-5f50-7753-a479-a04180527681"
+    ],
+    "seconds": 91.09,
+    "prompt_sha256": "a30a8131c47b8a3f76530f927ded888f24112590d74637fecf93fd40a6092ab5",
+    "draft_sha256": "e85719467a57b6a5071b59435310187aa16f21f933ba6a3dde0936e83f10d019",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-proposal.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 15362,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5335,
+        "reasoning_output_tokens": 4575
+      }
+    ]
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "C_uncorrected_conflict",
+    "arm": "candidate",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5c-c2c6-7a62-9e78-2b69818bc579"
+    ],
+    "seconds": 76.89,
+    "prompt_sha256": "87446e2edee31a723b23c9fd0c2a6368f114b100fd0790f2d3ca0ac38af05915",
+    "draft_sha256": "e7382865e6ed5d636a4bbf54c115409d3b2eab789923655482e47efc5c961536",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-proposal.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 16114,
+        "cached_input_tokens": 8192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4527,
+        "reasoning_output_tokens": 3663
+      }
+    ]
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "D_causal_analysis_guard",
+    "arm": "main",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5b-5f81-70f2-8e8f-9f1719f2ee14"
+    ],
+    "seconds": 48.83,
+    "prompt_sha256": "5637bb0eca923b623f99c4dc3d3a3aacb0be5802d9bb16c141702274d4a4af5a",
+    "draft_sha256": "b0ba0c83b75afa7b9e468bd736fe08433b2c3dfe76eb87a0391972e47edfc572",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 14754,
+        "cached_input_tokens": 8192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1785,
+        "reasoning_output_tokens": 818
+      }
+    ]
+  },
+  {
+    "model": "alibaba-token-plan-responses/qwen3.8-flash",
+    "effort": "max",
+    "case": "D_causal_analysis_guard",
+    "arm": "candidate",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5c-1db9-7770-a60b-a4dacb77a17c"
+    ],
+    "seconds": 61.86,
+    "prompt_sha256": "e97b4aa97b1b8f6ce7c26fedfe7f89b01021acdd9ee9383ccda3b4cb548eb218",
+    "draft_sha256": "73fec1aa3adf6e217b4e8d9ef18b4293eaa606f8b27602068a28c3ea88d56006",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 14812,
+        "cached_input_tokens": 8192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3597,
+        "reasoning_output_tokens": 3040
+      }
+    ]
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "A_provided_records",
+    "arm": "candidate",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5d-0f5c-7eb0-be2c-e30d3abbafdb"
+    ],
+    "seconds": 10.52,
+    "prompt_sha256": "7a48dba7ef5594a0bf4debda52c6f7181ee62dde1d5c8841a76d17a8aa16aeab",
+    "draft_sha256": "d5e308c03282aae77513d5738add76601d40b9f94e5d5f790184eba6b18e0265",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 16043,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1389,
+        "reasoning_output_tokens": 0
+      }
+    ]
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "A_provided_records",
+    "arm": "main",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5d-386d-7592-a6b6-06deb8eb4aec"
+    ],
+    "seconds": 11.75,
+    "prompt_sha256": "5811847003275bbebec4bb6eceaadc40084cbf39e4ab55fb3e35034689b08285",
+    "draft_sha256": "b2deff72ec9aaefaae47948ce454ab5d6b0c3359e9924720b5c4f819b67d9271",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 15981,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 997,
+        "reasoning_output_tokens": 0
+      }
+    ]
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "B_authorized_long_revision",
+    "arm": "candidate",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5d-5876-70e3-8a8d-53bc11fe9a2e"
+    ],
+    "seconds": 17.41,
+    "prompt_sha256": "9c81f7aa587fee3afb6569323c0307873cb0c3dab312a6df1656b4afc12deb7c",
+    "draft_sha256": "411f364c607febfd76bdcf2815c80b281e51a95db3c24d4326bd6fee509e114b",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 17644,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1555,
+        "reasoning_output_tokens": 0
+      }
+    ]
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "B_authorized_long_revision",
+    "arm": "main",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5d-9c7e-7d03-afed-5f4350e48ec8"
+    ],
+    "seconds": 84.03,
+    "prompt_sha256": "7ed2fbfc4e8855104518f3d37886254ef01400ccda05efbbc8bfa3a25d3bdd04",
+    "draft_sha256": "1df95b7255de597341217c8125e74ad10c63deff1a89a6a4c40c47bf66bdbfca",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 17566,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18531,
+        "reasoning_output_tokens": 0
+      }
+    ]
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "C_uncorrected_conflict",
+    "arm": "candidate",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5d-645a-7083-a331-09da0327fd48"
+    ],
+    "seconds": 19.42,
+    "prompt_sha256": "87446e2edee31a723b23c9fd0c2a6368f114b100fd0790f2d3ca0ac38af05915",
+    "draft_sha256": "bbd5418b001b242d9ebd48b1b703dff2be493dbdf9389d43806e63c142fc1675",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-proposal.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 17339,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1773,
+        "reasoning_output_tokens": 0
+      }
+    ]
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "C_uncorrected_conflict",
+    "arm": "main",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5d-b03a-76e3-9bb1-c753ee54d850"
+    ],
+    "seconds": 35.55,
+    "prompt_sha256": "a30a8131c47b8a3f76530f927ded888f24112590d74637fecf93fd40a6092ab5",
+    "draft_sha256": "011a2c7f6920f68db1d86399b37c14b87539131f6dd63deeeb9540795f6a1f78",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-proposal.md",
+      "references/long-form-consistency.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 17261,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5039,
+        "reasoning_output_tokens": 0
+      }
+    ]
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "D_causal_analysis_guard",
+    "arm": "candidate",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5d-665a-7151-92b5-e81117edb33c"
+    ],
+    "seconds": 10.09,
+    "prompt_sha256": "e97b4aa97b1b8f6ce7c26fedfe7f89b01021acdd9ee9383ccda3b4cb548eb218",
+    "draft_sha256": "1c344f2893b58f9bb1db0e3851d4085876672830602ad887dd5629019eb52779",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 15999,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1022,
+        "reasoning_output_tokens": 0
+      }
+    ]
+  },
+  {
+    "model": "ollama-cloud/glm-5.3-flash",
+    "effort": "max",
+    "case": "D_causal_analysis_guard",
+    "arm": "main",
+    "stage": 1,
+    "returncode": 0,
+    "invalid": [],
+    "thread_ids": [
+      "01a11f5d-8dc2-7982-9041-7b6db4b05bf8"
+    ],
+    "seconds": 21.77,
+    "prompt_sha256": "5637bb0eca923b623f99c4dc3d3a3aacb0be5802d9bb16c141702274d4a4af5a",
+    "draft_sha256": "9fee70513d8caa51fe543b971f8114c50fc78f7d88f8268de14d347c305dbda3",
+    "rules_loaded_inline": [
+      "SKILL.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md"
+    ],
+    "prior_output_sha256": null,
+    "quality_pass": null,
+    "usage": [
+      {
+        "input_tokens": 15937,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2242,
+        "reasoning_output_tokens": 0
+      }
+    ]
+  }
+]

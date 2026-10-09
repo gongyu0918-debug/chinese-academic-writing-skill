@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11f51-b61d-7162-97db-3c32070b0efa"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "2.1 办理方式\nL1由本人到窗口提交，O1由女儿协助本人在手机提交。两种方式有不同办理主体。\n\n2.2 主体差异\nL1记录的办理人是本人，提交在窗口完成；O1的提交由女儿协助本人在手机上完成。两种渠道的差别在于线下由本人一方办理，线上另有家庭成员参与操作。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16367, "cached_input_tokens": 1024, "cache_write_input_tokens": 0, "output_tokens": 3567, "reasoning_output_tokens": 3487}}

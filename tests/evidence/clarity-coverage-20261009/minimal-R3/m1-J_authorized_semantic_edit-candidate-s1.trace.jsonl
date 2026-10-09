@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11f70-0887-7ec2-96f6-bd0172ec92b6"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "4.1 记录：材料一称某职为‘督办’，材料二称某职为‘委员’，两处记录所用的称谓不同。\n\n4.2 讨论：这一称谓差异可能与记录口径的差别有关，该解释目前仍属候选；‘督办’与‘委员’是否为同一职务，现有材料尚不能确定。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 17632, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 20206, "reasoning_output_tokens": 0}}

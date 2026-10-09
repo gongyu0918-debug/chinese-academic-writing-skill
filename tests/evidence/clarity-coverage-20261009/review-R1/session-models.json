@@ -1,0 +1,22 @@
+[
+  {
+    "filename": "rollout-2026-10-09T14-41-32-01a11f65-40ef-7a41-a34a-2fd91ea0078a.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/glm-5.3",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a11f65-40ef-7a41-a34a-2fd91ea0078a"
+  },
+  {
+    "filename": "rollout-2026-10-09T14-41-32-01a11f65-4106-7500-ba47-d50ed52753e8.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/glm-5.3",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a11f65-4106-7500-ba47-d50ed52753e8"
+  }
+]

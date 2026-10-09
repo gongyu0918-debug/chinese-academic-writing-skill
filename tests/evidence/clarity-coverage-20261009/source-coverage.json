@@ -1,0 +1,53 @@
+{
+  "sources": [
+    {
+      "id": "G1",
+      "local_ignored_file": "sources-proposals/zju-proposal.doc",
+      "sha256": "4774c3da378ef2ce60d8d8be162f331c780d1d736a9f61c5011d3b26d9555a0b",
+      "bytes": 222208,
+      "actual_reading": "full proposal",
+      "covered": "converted PDF1-18; visual PDF15-18"
+    },
+    {
+      "id": "G1-final",
+      "local_ignored_file": "sources-proposals/zju-final-thesis.docx",
+      "sha256": "dbe3fac974accf5a9cd32fed9b9655cc5e575cd552846146d07a7b0e5a335cff",
+      "bytes": 10176629,
+      "actual_reading": "identity only",
+      "covered": "cover and submission date; not thesis full reading"
+    },
+    {
+      "id": "G2",
+      "local_ignored_file": "sources-proposals/fze-proposal.pdf",
+      "sha256": "6270cec2c03b007d791bff249bc43cfaf34e900d7914f5dee1845fab53742138",
+      "bytes": 469446,
+      "actual_reading": "full proposal",
+      "covered": "PDF1-12; visual PDF7; school unconfirmed"
+    },
+    {
+      "id": "G2-variant",
+      "local_ignored_file": "sources-proposals/fze-degree-proposal.docx",
+      "sha256": "2036d08683db683c6ba9d9fc728467c036dab2e7130e1e06332991b6e8071d26",
+      "bytes": 44471,
+      "actual_reading": "partial variant",
+      "covered": "instructions, body start; visual converted PDF1-2; not separate proposal"
+    },
+    {
+      "id": "H2",
+      "local_ignored_file": "ntu-humanities.pdf",
+      "sha256": "6db5b4d7e1e1188dbe51d3679f5c7b899d488dc0aae47383c2d3000353d68a6f",
+      "bytes": 3376261,
+      "actual_reading": "partial master thesis",
+      "covered": "PDF1,5-41,156-162,223-227 (50 of 236 pages); visual PDF225"
+    }
+  ],
+  "not_covered": [
+    "doctoral thesis",
+    "filled humanities proposal",
+    "all external citations"
+  ],
+  "source_files_exported": false,
+  "alias_in_writing_packet": {
+    "N_humanities_edit/H1": "H2 in CORPUS.md"
+  }
+}

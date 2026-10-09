@@ -1,0 +1,28 @@
+{
+  "baseline_commit": "bdafeb9ec58dc7edc13e074228fd63e2ceb01573",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\long-cost-R2-3frnonqb",
+  "spec": {
+    "L_cost_compact": {
+      "leaf": "academic-writing",
+      "long": true,
+      "requests": [
+        "跨独立会话续写论文节选。以下摘编来自孔丽华2018北师大硕论PDF34—35：Z机构2016年表中人力成本0，财务人员称工资社保约20多万元由另一家公司账发放；表收入381471.13元、费用407018.43元，未说明工资是否经其他科目并入费用合计。作者本研究只做报表口径说明。旧稿和状态中的‘2017年、Z机构账支付’已由作者据原PDF更正。请写‘案例资料’小节约300字及紧凑工作状态约150字，分别交付，供下一独立会话恢复。不联网、不补真实成本或计算。",
+        "恢复上一独立会话稿和工作状态。作者本轮决定：下一节只讨论人力科目0与跨公司账支付的关系；收入费用合计不在本节展开。请只写‘零记录的含义’约300字，并交更新状态约150字；不重写上节。未决笔记提出‘全表费用必然未含工资’，没有被作者采纳也没有新凭证；工资是否并入其他科目仍未知。",
+        "请只审上一节和恢复状态，必要问题用位置、问题、依据、建议，无实质问题明确无需修改。最新作者依据保持2016年、另一家公司账支付、是否并入其他费用科目未知。又收到标为未采纳旧稿的‘2017年、Z机构账支付、真实人力成本已经确认20万元’。本轮没有新依据，不将旧稿更新为事实。审查仅限已提供节选及状态，不声称全论文审完。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "5a564f456ee14e7a2e9468ade5665c0f388fe6dfa3feae73de92a9e0efa74872"
+}

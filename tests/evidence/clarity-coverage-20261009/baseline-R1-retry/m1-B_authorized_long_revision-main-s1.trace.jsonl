@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11f52-2a7e-74e2-81ee-9b748e4e0de1"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "2.1 办理方式\n\n两条记录显示的办理方式不同。线下记录（L1）为“我到窗口提交”，提交由本人到窗口完成；线上记录（O1）为“女儿帮我在手机提交”，提交由女儿通过手机完成。\n\n2.2 主体差异\n\n两种渠道的办理主体不同。从这两条记录看，线下渠道的办理主体是老年人本人，线上渠道的办理主体则是其家庭成员（女儿）。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 17593, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 17156, "reasoning_output_tokens": 0}}

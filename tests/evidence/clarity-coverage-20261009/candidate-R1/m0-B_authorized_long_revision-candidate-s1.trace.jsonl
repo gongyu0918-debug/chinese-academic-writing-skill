@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11f5c-60db-7cb2-8381-3d8bb228ea1b"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "### 2.1 办理方式\n\nL1记本人到窗口提交，O1记女儿帮本人在手机上提交。前者是线下窗口渠道，后者是线上手机渠道。\n\n### 2.2 主体差异\n\n两条记录的办理主体不同。L1中到窗口并提交的人是本人；O1中的提交由女儿在手机完成，本人是被帮助的一方，办理事项仍归于本人。差异因此落在提交动作由谁承担：窗口记录里是本人自己，手机记录里是本人以外的家庭成员。就这两条记录所示，渠道不同，承担提交的主体也不同。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16412, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 3837, "reasoning_output_tokens": 3713}}

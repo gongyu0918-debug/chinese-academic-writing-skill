@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "I_author_records",
+    "J_authorized_semantic_edit"
+  ],
+  "mapping": {
+    "0": {
+      "X": "main",
+      "Y": "candidate"
+    },
+    "1": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  }
+}

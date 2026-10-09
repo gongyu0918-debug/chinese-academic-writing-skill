@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "C_uncorrected_conflict",
+    "D_causal_analysis_guard"
+  ],
+  "mapping": {
+    "0": {
+      "X": "candidate",
+      "Y": "main"
+    },
+    "1": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  }
+}

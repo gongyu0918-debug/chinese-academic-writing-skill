@@ -1,0 +1,15 @@
+{
+  "cases": [
+    "P_undecided_author_choice"
+  ],
+  "mapping": {
+    "0": {
+      "X": "candidate",
+      "Y": "main"
+    },
+    "1": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  }
+}

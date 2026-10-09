@@ -31,3 +31,6 @@ tests/evidence/v0.1.7-release-gate/** text eol=lf
 
 # Preserve frozen corpus inputs, visible outputs and reviewer Markdown byte-for-byte.
 tests/evidence/corpus-expansion-20261009/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve frozen clarity audit and visible model evidence verbatim.
+tests/evidence/clarity-coverage-20261009/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

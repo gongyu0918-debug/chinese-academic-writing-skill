@@ -1,0 +1,45 @@
+{
+  "baseline_commit": "bdafeb9ec58dc7edc13e074228fd63e2ceb01573",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\baseline-R1-nd9r8nje",
+  "spec": {
+    "A_provided_records": {
+      "leaf": "academic-writing",
+      "requests": [
+        "普通论文据作者材料起草，只交一段结果正文，不联网。以下是作者已完成整理的原始材料，不是文献题名：访谈编号T01的原文为‘周末是儿子替我预约’，T02为‘我自己在手机上约’，T03为‘社区帮我约好了’。作者用这三条材料讨论预约办理主体的差异；材料未做独立外部真实性核验。请按材料写清办理主体的不同，不增加人数、普遍比例或效果。"
+      ]
+    },
+    "B_authorized_long_revision": {
+      "leaf": "academic-writing",
+      "long": true,
+      "requests": [
+        "这是论文两个相邻小节的修改任务，请直接完成范围内改稿，只交修改后的两节，不联网。作者已确认中心判断为‘两种渠道的办理主体不同’，要求删去无依据的情绪判断并让第二节集中解释主体差异。原始记录：线下记录L1‘我到窗口提交’，线上记录O1‘女儿帮我在手机提交’；未记录情绪、满意度或能力。最新版底稿：\n2.1 办理方式\nL1由本人到窗口提交，O1由女儿通过手机提交。两种方式有不同办理主体。\n2.2 主体差异\n两种方式有不同办理主体。线上方式可见家庭成员代办，而线下记录为本人办理。由此说明老年人普遍因无助而依赖家人，线上方式必然降低独立性。"
+      ]
+    },
+    "C_uncorrected_conflict": {
+      "leaf": "academic-proposal",
+      "long": true,
+      "requests": [
+        "开题报告只审不改，输出必要问题与建议，不联网。收到的状态文件为：研究对象某市社区预约；访谈对象拟为社区工作人员6人，尚未招募。2026年9月新版方法节：‘拟访谈社区工作人员8人，尚未招募。’作者说这份新版只是待讨论草稿，人数尚未确认。本轮没有更正依据，请对人数与招募状态的版本冲突提出意见，不选定方案。"
+      ]
+    },
+    "D_causal_analysis_guard": {
+      "leaf": "academic-writing",
+      "requests": [
+        "普通论文只审不改，只审给出的讨论句。材料：样本内A与B相关；B与C未发现显著相关。作者讨论句：‘这提示A可能通过B促进C。’请给必要意见，不联网。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "5a564f456ee14e7a2e9468ade5665c0f388fe6dfa3feae73de92a9e0efa74872"
+}

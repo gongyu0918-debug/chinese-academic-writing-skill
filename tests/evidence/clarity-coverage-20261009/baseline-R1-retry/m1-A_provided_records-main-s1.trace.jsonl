@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11f51-f2da-7431-9b4c-90401cd00859"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "所获访谈片段显示，预约办理主体存在三种不同安排：T01中预约由儿子代为完成，且该情形出现在周末；T02中预约由受访者本人通过手机操作完成；T03中预约由社区协助办妥。在这三段陈述中，预约动作分别落在家庭成员、受访者本人和社区，未表现出固定由单一主体承担的形态。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16008, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 661, "reasoning_output_tokens": 0}}

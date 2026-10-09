@@ -1,0 +1,12 @@
+[
+  {
+    "filename": "rollout-2026-10-09T14-41-16-01a11f65-02c2-7252-a87b-3d9e3f2b0225.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/glm-5.3",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a11f65-02c2-7252-a87b-3d9e3f2b0225"
+  }
+]

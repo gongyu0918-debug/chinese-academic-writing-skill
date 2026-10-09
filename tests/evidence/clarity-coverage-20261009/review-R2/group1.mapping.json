@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "G_external_unread",
+    "H_limited_analysis"
+  ],
+  "mapping": {
+    "0": {
+      "X": "candidate",
+      "Y": "main"
+    },
+    "1": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  }
+}

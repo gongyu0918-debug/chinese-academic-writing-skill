@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11f5d-0f5c-7eb0-be2c-e30d3abbafdb"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "从访谈记录看，预约办理主体存在差异：T01称“周末是儿子替我预约”，该情形中的完成主体是儿子；T02称“我自己在手机上约”，完成主体是受访者本人；T03称“社区帮我约好了”，完成主体是社区。据此，这组材料中的预约办理可分为家属代办、本人办理和社区代办三类情形。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16043, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 1389, "reasoning_output_tokens": 0}}

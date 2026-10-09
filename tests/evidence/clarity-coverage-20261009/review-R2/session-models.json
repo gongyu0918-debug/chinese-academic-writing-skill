@@ -1,0 +1,22 @@
+[
+  {
+    "filename": "rollout-2026-10-09T14-50-54-01a11f6d-d52d-7c72-ae60-36c0719d33cb.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a11f6d-d52d-7c72-ae60-36c0719d33cb"
+  },
+  {
+    "filename": "rollout-2026-10-09T14-53-34-01a11f70-47d8-7f71-964a-1ab375a20c0d.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a11f70-47d8-7f71-964a-1ab375a20c0d"
+  }
+]

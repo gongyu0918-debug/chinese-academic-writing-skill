@@ -1,0 +1,31 @@
+{
+  "model": "ollama-cloud/glm-5.3-flash",
+  "effort": "max",
+  "case": "D_causal_analysis_guard",
+  "arm": "main",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [],
+  "thread_ids": [
+    "01a11f52-c8dc-7cd1-8523-000f422d00d5"
+  ],
+  "seconds": 62.03,
+  "prompt_sha256": "5637bb0eca923b623f99c4dc3d3a3aacb0be5802d9bb16c141702274d4a4af5a",
+  "draft_sha256": "f5c5a206ace1325c04b4343830cbc04f79ff79f908157fd43fcae35920bfbdf1",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/academic-writing.md",
+    "references/anti-ai-writing.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 15964,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4365,
+      "reasoning_output_tokens": 0
+    }
+  ]
+}

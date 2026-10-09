@@ -1,0 +1,46 @@
+{
+  "baseline_commit": "bdafeb9ec58dc7edc13e074228fd63e2ceb01573",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\minimal-R3-zq8kjqtm",
+  "spec": {
+    "I_author_records": {
+      "leaf": "academic-proposal",
+      "requests": [
+        "请据作者原始记录写开题的‘前期基础’与‘拟开展工作’两小节，每节约80字，只交正文，不联网。材料：作者已扫描地方报刊的两期原件，已记录刊期和栏目名，尚未校读正文；拟校读两期正文并比较同一栏目中的叙述变化。作者未取得第三方对原件真实性的核验。按作者记录陈述基础与计划，不补读后发现、收集数量、方法步骤或结论。"
+      ]
+    },
+    "J_authorized_semantic_edit": {
+      "leaf": "academic-writing",
+      "long": true,
+      "requests": [
+        "据最新版材料改写下列两节，只交这两节，每节约80字，不联网。作者已授权删除重复概括并按‘先列两种记录、再讨论称谓差异’组织，不是只改机械错误。材料一称某职为‘督办’，材料二称某职为‘委员’，尚不能认定两者是同一职务。作者已经决定删除‘必然是同一职务’的断言；‘记录口径差异可能有关’是作者已选择保留的候选解释。原文：4.1 记录：材料一记‘督办’，材料二记‘委员’，差异意味着二者必然是同一职务。4.2 讨论：材料一记‘督办’，材料二记‘委员’，两个称谓不同。记录口径差异可能与此有关，目前尚不能确定两者是否为同一职务。不要替作者确定职务同一性。"
+      ]
+    },
+    "K_undecided_conflict": {
+      "leaf": "academic-proposal",
+      "long": true,
+      "style": false,
+      "requests": [
+        "只审不改，审查仅限这两项材料，给必要意见，不联网。工作状态写‘拟比较两个版本，尚未校读正文’；较新的开题草稿写‘拟比较四个版本，尚未校读正文’。作者明确四个版本仍待讨论，没有更正依据，也未授权选定数目。请指出数量冲突，不将新版草稿自动当作已经确认的计划，不推定已经完成校读。"
+      ]
+    },
+    "M_causal_gate": {
+      "leaf": "academic-writing",
+      "requests": [
+        "普通论文只审不改，目标句是‘这提示X可能经由Y改善Z。’。作者提供的样本结果为X与Y相关，Y与Z未发现显著相关，没有整体路径检验。请只对这个目标句给必要意见，不改写正文，不联网。不把未显著说成无关系或中介机制被否定，不审查未给的前后文。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "5a564f456ee14e7a2e9468ade5665c0f388fe6dfa3feae73de92a9e0efa74872"
+}

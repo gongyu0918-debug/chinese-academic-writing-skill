@@ -1,0 +1,11 @@
+{
+  "model": "alibaba-token-plan-responses/glm-5.3",
+  "effort": "max",
+  "returncode": 1,
+  "prompt_sha256": "9a5fe929fe0df6ef20fdb7c9a3ec3f050dd962cbfde523bb735a2223d3e0fa24",
+  "draft_sha256": null,
+  "visible_tool_items": [],
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\review-runtime-u9h88h88",
+  "session_profile": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\review-runtime-u9h88h88\\native-profile",
+  "review_completed": false
+}

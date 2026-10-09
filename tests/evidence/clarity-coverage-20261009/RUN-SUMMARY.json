@@ -1,0 +1,259 @@
+{
+  "writer_batches": [
+    {
+      "batch": "baseline-R1",
+      "calls": 8,
+      "visible_completed_without_route_violation": 0,
+      "invalid": 8,
+      "changed_rule_files": [],
+      "quality_pass": null
+    },
+    {
+      "batch": "long-baseline",
+      "calls": 4,
+      "visible_completed_without_route_violation": 0,
+      "invalid": 4,
+      "changed_rule_files": [],
+      "quality_pass": null
+    },
+    {
+      "batch": "baseline-R1-retry",
+      "calls": 8,
+      "visible_completed_without_route_violation": 8,
+      "invalid": 0,
+      "changed_rule_files": [],
+      "quality_pass": null
+    },
+    {
+      "batch": "long-baseline-retry",
+      "calls": 9,
+      "visible_completed_without_route_violation": 7,
+      "invalid": 2,
+      "changed_rule_files": [],
+      "quality_pass": null
+    },
+    {
+      "batch": "candidate-R1",
+      "calls": 16,
+      "visible_completed_without_route_violation": 16,
+      "invalid": 0,
+      "changed_rule_files": [
+        "SKILL.md",
+        "references/long-form-consistency.md"
+      ],
+      "quality_pass": null
+    },
+    {
+      "batch": "confirmation-R2",
+      "calls": 16,
+      "visible_completed_without_route_violation": 14,
+      "invalid": 2,
+      "changed_rule_files": [
+        "SKILL.md",
+        "references/long-form-consistency.md"
+      ],
+      "quality_pass": null
+    },
+    {
+      "batch": "long-cost-R2",
+      "calls": 12,
+      "visible_completed_without_route_violation": 12,
+      "invalid": 0,
+      "changed_rule_files": [
+        "SKILL.md",
+        "references/long-form-consistency.md"
+      ],
+      "quality_pass": null
+    },
+    {
+      "batch": "minimal-R3",
+      "calls": 16,
+      "visible_completed_without_route_violation": 16,
+      "invalid": 0,
+      "changed_rule_files": [
+        "SKILL.md",
+        "references/long-form-consistency.md"
+      ],
+      "quality_pass": null
+    },
+    {
+      "batch": "long-only-R4",
+      "calls": 12,
+      "visible_completed_without_route_violation": 12,
+      "invalid": 0,
+      "changed_rule_files": [
+        "references/long-form-consistency.md"
+      ],
+      "quality_pass": null
+    }
+  ],
+  "writer_calls": 101,
+  "visible_completed_without_route_violation": 85,
+  "invalid": 16,
+  "quality_pass_count": null,
+  "review_batches": [
+    {
+      "batch": "review-audit",
+      "packets": [
+        {
+          "packet": "audit",
+          "model": "alibaba-token-plan-responses/glm-5.3",
+          "effort": "max",
+          "returncode": null,
+          "completed": false,
+          "tool_items": 0
+        }
+      ]
+    },
+    {
+      "batch": "review-R1",
+      "packets": [
+        {
+          "packet": "group0",
+          "model": "alibaba-token-plan-responses/glm-5.3",
+          "effort": "max",
+          "returncode": 1,
+          "completed": false,
+          "tool_items": 0
+        },
+        {
+          "packet": "group1",
+          "model": "alibaba-token-plan-responses/glm-5.3",
+          "effort": "max",
+          "returncode": 1,
+          "completed": false,
+          "tool_items": 0
+        }
+      ]
+    },
+    {
+      "batch": "review-audit-retry",
+      "packets": [
+        {
+          "packet": "audit",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "completed": true,
+          "tool_items": 0
+        }
+      ]
+    },
+    {
+      "batch": "review-R1-retry",
+      "packets": [
+        {
+          "packet": "group0",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "completed": true,
+          "tool_items": 0
+        },
+        {
+          "packet": "group1",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "completed": true,
+          "tool_items": 0
+        }
+      ]
+    },
+    {
+      "batch": "review-R2",
+      "packets": [
+        {
+          "packet": "group0",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "completed": true,
+          "tool_items": 0
+        },
+        {
+          "packet": "group1",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "completed": true,
+          "tool_items": 0
+        }
+      ]
+    },
+    {
+      "batch": "review-long",
+      "packets": [
+        {
+          "packet": "model0",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "completed": true,
+          "tool_items": 0
+        },
+        {
+          "packet": "model1",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "completed": true,
+          "tool_items": 0
+        }
+      ]
+    },
+    {
+      "batch": "review-R3",
+      "packets": [
+        {
+          "packet": "group0",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "completed": true,
+          "tool_items": 0
+        },
+        {
+          "packet": "group1",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "completed": true,
+          "tool_items": 0
+        }
+      ]
+    },
+    {
+      "batch": "review-R4",
+      "packets": [
+        {
+          "packet": "group0",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "completed": true,
+          "tool_items": 0
+        },
+        {
+          "packet": "group1",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "completed": true,
+          "tool_items": 0
+        }
+      ]
+    }
+  ],
+  "subagents_completed": 0,
+  "checks": [
+    "prompt and final bytes match each result SHA256",
+    "visible-only trace archive",
+    "rule diffs per batch"
+  ],
+  "not_checks": [
+    "semantic Python grading",
+    "full unittest",
+    "skill structure validity as quality evidence"
+  ]
+}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11f5d-5876-70e3-8a8d-53bc11fe9a2e"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "2.1 办理方式  \n线下记录L1为本人到窗口提交；线上记录O1为通过手机提交。  \n\n2.2 主体差异  \n线下记录中的办理主体为本人；线上记录中的办理主体为女儿，即由家庭成员完成手机端提交。因此，两种渠道的办理主体不同。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 17644, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 1555, "reasoning_output_tokens": 0}}

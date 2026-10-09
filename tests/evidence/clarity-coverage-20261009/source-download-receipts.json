@@ -1,0 +1,42 @@
+[
+  {
+    "local": "zju-proposal.doc",
+    "url": "https://raw.githubusercontent.com/shiludeng/graduation-thesis/e98dc89bf4fc16e66665ae8d0ec3bc93a8a20bc8/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%E7%A1%95%E5%A3%AB%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A.doc",
+    "sha256": "4774c3da378ef2ce60d8d8be162f331c780d1d736a9f61c5011d3b26d9555a0b",
+    "path": "浙江大学硕士毕业论文开题报告.doc",
+    "bytes": 222208,
+    "reading": "not-yet-read",
+    "repository": "shiludeng/graduation-thesis",
+    "commit": "e98dc89bf4fc16e66665ae8d0ec3bc93a8a20bc8"
+  },
+  {
+    "local": "zju-final-thesis.docx",
+    "url": "https://raw.githubusercontent.com/shiludeng/graduation-thesis/e98dc89bf4fc16e66665ae8d0ec3bc93a8a20bc8/%E9%9D%A2%E5%90%91%E8%A7%86%E5%8A%9B%E6%AE%8B%E7%96%BE%E4%BA%BA%E7%9A%84%E5%AE%A4%E5%86%85%E5%AF%BC%E8%88%AA%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AE%9E%E7%8E%B0.docx",
+    "sha256": "dbe3fac974accf5a9cd32fed9b9655cc5e575cd552846146d07a7b0e5a335cff",
+    "path": "面向视力残疾人的室内导航系统的研究与实现.docx",
+    "bytes": 10176629,
+    "reading": "not-yet-read",
+    "repository": "shiludeng/graduation-thesis",
+    "commit": "e98dc89bf4fc16e66665ae8d0ec3bc93a8a20bc8"
+  },
+  {
+    "local": "fze-proposal.pdf",
+    "url": "https://raw.githubusercontent.com/oscourse-tsinghua/openingreport-fze2023/bf91d7960e1dd15796533421b1740a78187c2461/%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A.pdf",
+    "sha256": "6270cec2c03b007d791bff249bc43cfaf34e900d7914f5dee1845fab53742138",
+    "path": "开题报告.pdf",
+    "bytes": 469446,
+    "reading": "not-yet-read",
+    "repository": "oscourse-tsinghua/openingreport-fze2023",
+    "commit": "bf91d7960e1dd15796533421b1740a78187c2461"
+  },
+  {
+    "local": "fze-degree-proposal.docx",
+    "url": "https://raw.githubusercontent.com/oscourse-tsinghua/openingreport-fze2023/bf91d7960e1dd15796533421b1740a78187c2461/%E7%A1%95%E5%A3%AB%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%BD%8D%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AE%BA%E6%96%87%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A.docx",
+    "sha256": "2036d08683db683c6ba9d9fc728467c036dab2e7130e1e06332991b6e8071d26",
+    "path": "硕士专业学位研究生论文开题报告.docx",
+    "bytes": 44471,
+    "reading": "not-yet-read",
+    "repository": "oscourse-tsinghua/openingreport-fze2023",
+    "commit": "bf91d7960e1dd15796533421b1740a78187c2461"
+  }
+]

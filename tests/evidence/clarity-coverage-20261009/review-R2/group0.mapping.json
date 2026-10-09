@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "E_records_scope",
+    "F_revision_auth"
+  ],
+  "mapping": {
+    "0": {
+      "X": "main",
+      "Y": "candidate"
+    },
+    "1": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  }
+}

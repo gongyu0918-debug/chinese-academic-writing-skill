@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a11f79-fa7b-7303-a0f2-dc101cc191d8"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "6.1 方法：方法安排为问卷调查与层次分析法。问卷调查用于获取层次分析确定各因素权重所需数据；问卷尚未开展，权重尚未确定，两项均属拟开展工作。\n\n6.2 进度：按进度安排，2013年9—10月开展问卷调查，并以层次分析法确定因素权重。该阶段为拟开展工作，尚未形成已完成状态。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 17363, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 2682, "reasoning_output_tokens": 0}}
