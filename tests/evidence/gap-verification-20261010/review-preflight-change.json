@@ -1,0 +1,7 @@
+{
+  "date_beijing": "2026-10-10",
+  "problem": "review-R1 was dispatched while one writer was pending; group2 and group3 packets might contain pending placeholders",
+  "handling": "only complete-input packets can support adjudication; rerun affected groups after results.json exists",
+  "fix": "maintenance review helper rejects pending batches before creating output or invoking a model; optional group selection",
+  "not_product_change": true
+}

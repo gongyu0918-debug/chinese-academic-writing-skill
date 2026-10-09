@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1218f-b912-79a3-909a-c11ceee7926e"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "年报记载，该机构2019年“服务收入”项目为100.00万元，“服务费用”项目为125.00万元，两个报表项目的金额存在差异。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14893, "cached_input_tokens": 1024, "cache_write_input_tokens": 0, "output_tokens": 336, "reasoning_output_tokens": 289}}

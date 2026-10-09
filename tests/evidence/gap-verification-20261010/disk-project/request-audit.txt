@@ -1,0 +1,1 @@
+请使用rules中的Skill，只审不改本验证项目的method.md、discussion-draft.md、materials.md、author-update.md及.academic-writing状态/简报，说明正文、材料与状态之间的实质差别，按位置—严重度—问题—依据—建议交意见。讨论草稿较新，但没有作者更正依据；不代替作者选定新的事实、概念或结论。不联网、不委派、不调用Python；不得修改正文、材料、rules或状态，唯一可写文件为audit-report.md。只覆盖这些实际已读文件，不声称全论文复核。读取一次后直接交报告，不做编码或时间戳等无关检查。

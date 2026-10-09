@@ -1,0 +1,44 @@
+{
+  "source_id": "H2",
+  "url": "https://tdr.lib.ntu.edu.tw/bitstream/123456789/3784/1/ntu-105-1.pdf",
+  "local_only_original": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\ntu-humanities.pdf",
+  "pdf_sha256": "6db5b4d7e1e1188dbe51d3679f5c7b899d488dc0aae47383c2d3000353d68a6f",
+  "new_pdf_pages": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "new_printed_pages": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43
+  ],
+  "new_read_pages": 11,
+  "prior_read_pages": 50,
+  "cumulative_read_pages": 61,
+  "total_pdf_pages": 236,
+  "visual_check_pdf_pages": [
+    46,
+    50
+  ],
+  "full_read": false,
+  "filled_humanities_proposal_added": 0,
+  "source_files_exported": false,
+  "controlled_tasks_are_new_real_projects": false
+}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12198-8148-79c1-8135-708c89db86d4"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "4.1 名称：登记表甲称“参加”，登记表乙称“出席”；两表称谓不同。\n\n4.2 口径：登记表甲称“参加”，登记表乙称“出席”；两表称谓不同。\n\n未决意见：两表口径是否相同尚未确定，合并与否应待两表内容核对后再定。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15891, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 568, "reasoning_output_tokens": 0}}

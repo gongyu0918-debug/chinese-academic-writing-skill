@@ -1,0 +1,16 @@
+{
+  "case": "A",
+  "repeat": 2,
+  "model": "alibaba-token-plan-responses/qwen3.8-flash",
+  "effort": "max",
+  "returncode": 0,
+  "seconds": 51.84,
+  "prompt_sha256": "13b94b9fff2fceffcad8c57080b1d61f757328bc9fd3dda850ef6e3b8e864336",
+  "draft_sha256": "f475362d0871c01eb7a60eb4fa1b2b71feea7512d9970e12c818278191c1600a",
+  "completed": true,
+  "tools_used": false,
+  "thread_ids": [
+    "01a1219d-7dbf-7df0-a51a-65af30ab2d82"
+  ],
+  "quality_pass": null
+}

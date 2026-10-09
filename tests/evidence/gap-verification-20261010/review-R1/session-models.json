@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "rollout-2026-10-10T00-54-16-01a12196-3b81-7dc0-80ee-df43396c45c1.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a12196-3b81-7dc0-80ee-df43396c45c1"
+  },
+  {
+    "filename": "rollout-2026-10-10T00-58-41-01a1219a-46ea-70c0-8099-64eaf47dab3c.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1219a-46ea-70c0-8099-64eaf47dab3c"
+  },
+  {
+    "filename": "rollout-2026-10-10T01-02-36-01a1219d-dbda-7410-a461-1bdefc451b7e.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1219d-dbda-7410-a461-1bdefc451b7e"
+  },
+  {
+    "filename": "rollout-2026-10-10T01-05-03-01a121a0-1aca-7010-8570-1983e1aac94f.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a121a0-1aca-7010-8570-1983e1aac94f"
+  }
+]

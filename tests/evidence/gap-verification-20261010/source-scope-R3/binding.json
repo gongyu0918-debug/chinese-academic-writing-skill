@@ -1,0 +1,39 @@
+{
+  "baseline_commit": "eb598fe5c92109171bee6ea0015241ebc8eeb587",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\gap-verification-20261010\\source-scope-R3-8an4fibm",
+  "spec": {
+    "A_raw_interviews": {
+      "leaf": "academic-writing",
+      "requests": [
+        "依据作者提供的访谈记录起草硕士论文中的“家人帮助与办事选择”一段，只交正文，不联网。记录已经可读，但没有经过第三方真实性核验，不是外部文献。记录R11：受访者说女儿帮她预约了服务，她自己没有操作手机，觉得女儿比较熟悉。R12：受访者说先自己试过，未成功后请邻居帮忙。R13：受访者说工作人员在现场为她办理。作者要比较不同帮助来源，不要称三人全部依赖家庭，不推测年龄、社区、人群比例、长期能力和帮助发生的更多时间顺序。保留记录ID，不把记录改成逐字引语；可作有限比较，不声称资料真实性已经核验。"
+      ]
+    },
+    "C_raw_conflict": {
+      "leaf": "academic-proposal",
+      "requests": [
+        "修改开题报告已有基础一段，只交可成立的正文及必要未决意见，不联网。作者提供的原始台账T1已可读，逐项列入样本A、B、C、D四份记录；汇总页却记“已收集5份”，差异尚未解决，无更正依据。作者未提供这些记录的具体内容，后续拟继续收集材料，但没有给日期、数量和分析步骤。底稿：“本研究已收集5份记录，完成比较分析并发现共同变化机制，下一阶段将于11月追加10份。”不得替作者选4或5，不把作者提供当成冲突已解决，也不要因未有第三方真实性核验而说台账不可读或资料不存在。"
+      ]
+    },
+    "L_existing_target": {
+      "leaf": "academic-writing",
+      "long": true,
+      "style": false,
+      "requests": [
+        "修改课程论文两节，只交两节与一句必要未决意见，不联网。目标正文全文：4.1 名称：登记表甲称“参加”，登记表乙称“出席”；两表称谓不同。4.2 口径：登记表甲称“参加”，登记表乙称“出席”，两表称谓不同，所以含义完全等同，应直接合并。依据：作者已确认两表称谓不同，但两表口径未确定。授权删重复与无依据等同，未授权选择同义或异义。保留称谓差异，不选择是否合并，不索取已经给出的两节正文。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "5a564f456ee14e7a2e9468ade5665c0f388fe6dfa3feae73de92a9e0efa74872"
+}

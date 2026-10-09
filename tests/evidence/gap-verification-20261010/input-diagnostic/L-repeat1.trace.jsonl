@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1219c-fb0d-7961-87e2-768070bda773"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "**4.1 名称**\n\n登记表甲称\"参加\"，登记表乙称\"出席\"，两表称谓不同。\n\n**4.2 口径**\n\n两表称谓差异见 4.1，此处不再重复。登记表甲所用\"参加\"与登记表乙所用\"出席\"含义是否等同，现有材料未予确定，本文不作等同认定；是否据此合并两表亦暂不判定，留待口径核实。\n\n未决意见：4.2 的两表口径（\"参加\"与\"出席\"是否同义）尚未确定，须作者核实后才能判定是否合并，核实前不宜写入等同或合并结论。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 9149, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 1770, "reasoning_output_tokens": 1630}}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1219c-3d50-7991-8a0b-d195fd3c160f"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "4.1 名称：登记表甲称“参加”，登记表乙称“出席”；两表称谓不同。\n\n4.2 口径：两表称谓差异已见4.1；仅凭称谓差异，尚不能认定两表口径是否一致。\n\n未决意见：4.2两表口径是否一致目前无依据，需补充两表口径说明后才能确定，并据此判断是否合并。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15891, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 4301, "reasoning_output_tokens": 0}}

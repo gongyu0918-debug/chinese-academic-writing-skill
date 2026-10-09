@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\gap-verification-20261010\\review_cli.py",
+    "pair",
+    "not-a-completed-batch",
+    "--output",
+    "preflight-should-not-exist"
+  ],
+  "returncode": 1,
+  "stderr": "Batch is still pending; do not turn missing drafts into technical or semantic failures.",
+  "output_directory_created": false,
+  "model_invoked": false,
+  "scope": "early exit before model setup; execution integrity only"
+}

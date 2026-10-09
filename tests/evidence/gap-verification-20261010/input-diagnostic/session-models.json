@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "rollout-2026-10-10T01-00-46-01a1219c-2db5-7b71-bc4c-3bdd5f76032b.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1219c-2db5-7b71-bc4c-3bdd5f76032b"
+  },
+  {
+    "filename": "rollout-2026-10-10T01-01-38-01a1219c-fb0d-7961-87e2-768070bda773.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1219c-fb0d-7961-87e2-768070bda773"
+  },
+  {
+    "filename": "rollout-2026-10-10T01-02-12-01a1219d-7dbf-7df0-a51a-65af30ab2d82.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1219d-7dbf-7df0-a51a-65af30ab2d82"
+  },
+  {
+    "filename": "rollout-2026-10-10T01-03-03-01a1219e-4856-7652-929c-c26825893019.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1219e-4856-7652-929c-c26825893019"
+  }
+]

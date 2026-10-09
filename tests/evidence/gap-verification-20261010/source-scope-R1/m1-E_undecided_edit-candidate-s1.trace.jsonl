@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12193-b9ba-7792-afdd-abffc40f307e"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "2.1 记录范围：S1用“参与”，S2用“到场”，两表标签不同。\n\n2.2 术语关系：S1用“参与”，S2用“到场”，两表标签不同。X与Y的术语关系尚未确定；统计口径是否合并，也未确定。\n\n未决意见：X与Y是否同义，以及是否合并统计，待作者后续确认。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15940, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 3921, "reasoning_output_tokens": 0}}

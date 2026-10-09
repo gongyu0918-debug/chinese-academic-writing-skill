@@ -34,3 +34,6 @@ tests/evidence/corpus-expansion-20261009/** -text whitespace=-blank-at-eol,-blan
 
 # Preserve frozen clarity audit and visible model evidence verbatim.
 tests/evidence/clarity-coverage-20261009/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve retained-risk verification inputs, visible outputs and review reports verbatim.
+tests/evidence/gap-verification-20261010/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

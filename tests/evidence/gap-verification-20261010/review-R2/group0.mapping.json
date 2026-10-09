@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "I_text_claim_effect",
+    "J_external_identity"
+  ],
+  "mapping": {
+    "0": {
+      "X": "main",
+      "Y": "candidate"
+    },
+    "1": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  }
+}

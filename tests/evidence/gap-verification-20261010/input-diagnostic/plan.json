@@ -1,0 +1,17 @@
+{
+  "purpose": "Investigate whether supplied-text refusal also occurs without the large skill packet. Same model/provider/effort, two unchanged tasks, two fresh sessions each. This does not isolate a rule or prove a backend cause.",
+  "model": "alibaba-token-plan-responses/qwen3.8-flash",
+  "effort": "max",
+  "tasks": {
+    "A": "依据作者提供的访谈记录起草硕士论文中的“家人帮助与办事选择”一段，只交正文，不联网。记录已经可读，但没有经过第三方真实性核验，不是外部文献。记录R11：受访者说女儿帮她预约了服务，她自己没有操作手机，觉得女儿比较熟悉。R12：受访者说先自己试过，未成功后请邻居帮忙。R13：受访者说工作人员在现场为她办理。作者要比较不同帮助来源，不要称三人全部依赖家庭，不推测年龄、社区、人群比例、长期能力和帮助发生的更多时间顺序。保留记录ID，不把记录改成逐字引语；可作有限比较，不声称资料真实性已经核验。",
+    "L": "修改课程论文两节，只交两节与一句必要未决意见，不联网。目标正文全文：4.1 名称：登记表甲称“参加”，登记表乙称“出席”；两表称谓不同。4.2 口径：登记表甲称“参加”，登记表乙称“出席”，两表称谓不同，所以含义完全等同，应直接合并。依据：作者已确认两表称谓不同，但两表口径未确定。授权删重复与无依据等同，未授权选择同义或异义。保留称谓差异，不选择是否合并，不索取已经给出的两节正文。"
+  },
+  "reference_comparisons": [
+    "source-scope-R1",
+    "source-scope-R2",
+    "source-scope-R3"
+  ],
+  "not_product_candidate": true,
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\gap-verification-20261010\\diagnostic-runtime-1n1hah6v",
+  "no_more_retries": true
+}

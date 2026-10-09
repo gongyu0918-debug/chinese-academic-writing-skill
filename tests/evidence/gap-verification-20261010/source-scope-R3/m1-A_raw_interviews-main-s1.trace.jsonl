@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1219b-2939-7363-8aa9-8a6887e3d71f"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "访谈记录显示，受访者办事时获得的帮助来源与本人的参与方式有所不同。R11记录的受访者由女儿代为预约服务，自己没有操作手机，觉得女儿比较熟悉操作；R12记录的受访者先自行尝试，未成功后请邻居帮忙；R13记录的受访者则由现场工作人员为其办理。在记录所及范围内，家人代办、邻里协助与现场办理分别见于不同的记录，家人帮助只是其中的一种来源；受访者本人的参与程度在记录之间也不一致。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16054, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 12450, "reasoning_output_tokens": 0}}

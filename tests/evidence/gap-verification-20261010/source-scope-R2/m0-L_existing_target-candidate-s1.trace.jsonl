@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12198-1009-7a23-9a83-f2e73b8d670c"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "本节术语口径\n\n课程论文涉及的核心术语在不同来源中的表述存在差异，见参考文献[1]、[2]。现有材料尚未能确认这些表述指向同一对象。本节将术语对应关系记为待核实事项，按来源各自表述记录，不预设其可互换。\n\n相关分析的范围限定\n\n在上述对应关系核实之前，两类来源的材料能否合并为同一研究对象尚无依据。本节的比较与归纳只在各来源自身表述范围内成立，跨来源的合并结论留待核实后处理。\n\n未决意见：两个术语是否指称同一对象因未读取来源原文而无法核验，两节已据此从“可互换”收缩为待核实，跨来源合并结论在核验前不成立。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14712, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 1184, "reasoning_output_tokens": 1030}}

@@ -1,0 +1,11 @@
+{
+  "model": "ollama-cloud/glm-5.3-flash",
+  "effort": "max",
+  "returncode": 0,
+  "prompt_sha256": "f92708bf0c2ab06bd6ca407bee2b701624753ac0b1e7200663c857c2857ed82d",
+  "draft_sha256": "4f52e767daa540b81d0153940c1cebed9f9ebe196c2762b5addc70d9ed8d0ffe",
+  "visible_tool_items": [],
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\gap-verification-20261010\\review-runtime-_5q3n1l3",
+  "session_profile": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\gap-verification-20261010\\review-runtime-_5q3n1l3\\native-profile",
+  "review_completed": true
+}

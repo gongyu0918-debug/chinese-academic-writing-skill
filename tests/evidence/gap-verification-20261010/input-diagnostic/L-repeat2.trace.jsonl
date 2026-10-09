@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1219e-4856-7652-929c-c26825893019"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "4.1 名称：登记表甲称\"参加\"，登记表乙称\"出席\"，两表称谓不同。\n\n4.2 口径：登记表甲\"参加\"与登记表乙\"出席\"的统计口径是否一致，现有材料未确定。\n\n未决意见：请作者确认两表\"参加\"与\"出席\"的统计口径是否一致。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 9149, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 1681, "reasoning_output_tokens": 1601}}

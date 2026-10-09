@@ -1,0 +1,67 @@
+[
+  {
+    "task": "rule-audit",
+    "filename": "rollout-2026-10-10T00-44-15-01a1218d-11cf-7cb0-a094-823b370faec8.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1218d-11cf-7cb0-a094-823b370faec8",
+    "model_override": false,
+    "final_report_received": true
+  },
+  {
+    "task": "prior-evidence-audit",
+    "filename": "rollout-2026-10-10T00-44-16-01a1218d-1337-7730-b825-7c3a300b106b.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1218d-1337-7730-b825-7c3a300b106b",
+    "model_override": false,
+    "final_report_received": true
+  },
+  {
+    "task": "disk-stage1",
+    "filename": "rollout-2026-10-10T00-48-03-01a12190-8960-75d2-8193-c13beeef70a4.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a12190-8960-75d2-8193-c13beeef70a4",
+    "model_override": false,
+    "final_report_received": true
+  },
+  {
+    "task": "disk-stage2",
+    "filename": "rollout-2026-10-10T00-57-15-01a12198-f877-7f42-a09a-ed8fca99645b.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a12198-f877-7f42-a09a-ed8fca99645b",
+    "model_override": false,
+    "final_report_received": true
+  },
+  {
+    "task": "disk-audit",
+    "filename": "rollout-2026-10-10T01-03-48-01a1219e-f550-71e0-854c-05b4281d9976.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1219e-f550-71e0-854c-05b4281d9976",
+    "model_override": false,
+    "final_report_received": true
+  }
+]

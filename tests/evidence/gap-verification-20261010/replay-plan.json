@@ -1,0 +1,14 @@
+{
+  "purpose": "Replay observed material-misread and candidate-only factual/delivery problems with unchanged candidate and exact tasks. This is repetition, not new corpus coverage.",
+  "cases": [
+    "A_raw_interviews",
+    "C_raw_conflict",
+    "L_existing_target"
+  ],
+  "selected_before_replay": [
+    "R1 A baseline missed supplied records; candidate inferred different locations",
+    "R1 C candidate denied supplied target",
+    "R2 L baseline denied supplied sections"
+  ],
+  "stop": "One exact replay batch. Preserve all failures; no posthoc prompt coaching or repeated trials until pass. Candidate stays out of product without stable benefit and acceptable boundary behavior."
+}

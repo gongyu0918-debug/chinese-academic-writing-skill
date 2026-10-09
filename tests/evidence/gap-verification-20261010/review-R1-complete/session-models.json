@@ -1,0 +1,12 @@
+[
+  {
+    "filename": "rollout-2026-10-10T01-03-53-01a1219f-0b21-70c0-bf55-be31adf2e0e9.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1219f-0b21-70c0-bf55-be31adf2e0e9"
+  }
+]

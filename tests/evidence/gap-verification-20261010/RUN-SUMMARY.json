@@ -1,0 +1,279 @@
+{
+  "date_beijing": "2026-10-10",
+  "baseline_commit": "eb598fe5c92109171bee6ea0015241ebc8eeb587",
+  "candidate_admission": "cancelled; no product rule change",
+  "writer_batches": [
+    {
+      "batch": "source-scope-R1",
+      "calls": 32,
+      "execution_invalid": 0,
+      "changed_markdown": [
+        "SKILL.md"
+      ],
+      "quality_pass_count": null
+    },
+    {
+      "batch": "source-scope-R2",
+      "calls": 16,
+      "execution_invalid": 0,
+      "changed_markdown": [
+        "SKILL.md"
+      ],
+      "quality_pass_count": null
+    },
+    {
+      "batch": "source-scope-R3",
+      "calls": 12,
+      "execution_invalid": 0,
+      "changed_markdown": [
+        "SKILL.md"
+      ],
+      "quality_pass_count": null
+    }
+  ],
+  "paired_writer_calls": 60,
+  "paired_comparisons": 30,
+  "fresh_task_pairs": 24,
+  "exact_replay_pairs": 6,
+  "task_only_diagnostic_calls": 4,
+  "total_native_cli_writer_calls": 64,
+  "writer_execution_invalid": 0,
+  "writer_quality_pass_count": null,
+  "review_batches": [
+    {
+      "batch": "review-R1",
+      "packets": [
+        {
+          "packet": "group0",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "call_completed": true,
+          "semantic_report_present": true,
+          "input_complete": true,
+          "disposition": "complete input; semantic report present, manual corrections in ADJUDICATION",
+          "quality_pass": null
+        },
+        {
+          "packet": "group1",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "call_completed": true,
+          "semantic_report_present": true,
+          "input_complete": true,
+          "disposition": "complete input; semantic report present, manual corrections in ADJUDICATION",
+          "quality_pass": null
+        },
+        {
+          "packet": "group2",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "call_completed": true,
+          "semantic_report_present": true,
+          "input_complete": false,
+          "disposition": "partial input: E/GLM main for group2, G/GLM main for group3 was a pending placeholder; affected comparison excluded, rerun in review-R1-fixed",
+          "quality_pass": null
+        },
+        {
+          "packet": "group3",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "call_completed": true,
+          "semantic_report_present": true,
+          "input_complete": false,
+          "disposition": "partial input: E/GLM main for group2, G/GLM main for group3 was a pending placeholder; affected comparison excluded, rerun in review-R1-fixed",
+          "quality_pass": null
+        }
+      ]
+    },
+    {
+      "batch": "review-R2",
+      "packets": [
+        {
+          "packet": "group0",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "call_completed": true,
+          "semantic_report_present": true,
+          "input_complete": true,
+          "disposition": "complete input; semantic report present, manual corrections in ADJUDICATION",
+          "quality_pass": null
+        },
+        {
+          "packet": "group1",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "call_completed": true,
+          "semantic_report_present": true,
+          "input_complete": true,
+          "disposition": "complete input; semantic report present, manual corrections in ADJUDICATION",
+          "quality_pass": null
+        }
+      ]
+    },
+    {
+      "batch": "review-R1-complete",
+      "packets": [
+        {
+          "packet": "group3",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "call_completed": true,
+          "semantic_report_present": false,
+          "input_complete": true,
+          "disposition": "acknowledgment only; no semantic report, not completed review",
+          "quality_pass": null
+        }
+      ]
+    },
+    {
+      "batch": "review-R1-fixed",
+      "packets": [
+        {
+          "packet": "group2",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "call_completed": true,
+          "semantic_report_present": true,
+          "input_complete": true,
+          "disposition": "complete input; semantic report present, manual corrections in ADJUDICATION",
+          "quality_pass": null
+        },
+        {
+          "packet": "group3",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "call_completed": true,
+          "semantic_report_present": true,
+          "input_complete": true,
+          "disposition": "complete input; semantic report present, manual corrections in ADJUDICATION",
+          "quality_pass": null
+        }
+      ]
+    },
+    {
+      "batch": "review-R3",
+      "packets": [
+        {
+          "packet": "group0",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "call_completed": true,
+          "semantic_report_present": true,
+          "input_complete": true,
+          "disposition": "complete input; semantic report present, manual corrections in ADJUDICATION",
+          "quality_pass": null
+        },
+        {
+          "packet": "group1",
+          "model": "ollama-cloud/glm-5.3-flash",
+          "effort": "max",
+          "returncode": 0,
+          "call_completed": true,
+          "semantic_report_present": true,
+          "input_complete": true,
+          "disposition": "complete input; semantic report present, manual corrections in ADJUDICATION",
+          "quality_pass": null
+        }
+      ]
+    }
+  ],
+  "cli_review_calls": 11,
+  "semantic_review_reports": 10,
+  "semantic_reports_with_complete_input": 8,
+  "partial_input_reports": 2,
+  "acknowledgment_only_calls": 1,
+  "native_subagents_completed": 5,
+  "native_actual_models": [
+    {
+      "task": "rule-audit",
+      "filename": "rollout-2026-10-10T00-44-15-01a1218d-11cf-7cb0-a094-823b370faec8.jsonl",
+      "context": [
+        {
+          "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+          "effort": "max"
+        }
+      ],
+      "session_id": "01a1218d-11cf-7cb0-a094-823b370faec8",
+      "model_override": false,
+      "final_report_received": true
+    },
+    {
+      "task": "prior-evidence-audit",
+      "filename": "rollout-2026-10-10T00-44-16-01a1218d-1337-7730-b825-7c3a300b106b.jsonl",
+      "context": [
+        {
+          "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+          "effort": "max"
+        }
+      ],
+      "session_id": "01a1218d-1337-7730-b825-7c3a300b106b",
+      "model_override": false,
+      "final_report_received": true
+    },
+    {
+      "task": "disk-stage1",
+      "filename": "rollout-2026-10-10T00-48-03-01a12190-8960-75d2-8193-c13beeef70a4.jsonl",
+      "context": [
+        {
+          "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+          "effort": "max"
+        }
+      ],
+      "session_id": "01a12190-8960-75d2-8193-c13beeef70a4",
+      "model_override": false,
+      "final_report_received": true
+    },
+    {
+      "task": "disk-stage2",
+      "filename": "rollout-2026-10-10T00-57-15-01a12198-f877-7f42-a09a-ed8fca99645b.jsonl",
+      "context": [
+        {
+          "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+          "effort": "max"
+        }
+      ],
+      "session_id": "01a12198-f877-7f42-a09a-ed8fca99645b",
+      "model_override": false,
+      "final_report_received": true
+    },
+    {
+      "task": "disk-audit",
+      "filename": "rollout-2026-10-10T01-03-48-01a1219e-f550-71e0-854c-05b4281d9976.jsonl",
+      "context": [
+        {
+          "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+          "effort": "max"
+        }
+      ],
+      "session_id": "01a1219e-f550-71e0-854c-05b4281d9976",
+      "model_override": false,
+      "final_report_received": true
+    }
+  ],
+  "production_files_changed": [],
+  "checks": [
+    "prompt/final/result SHA256 binding",
+    "visible-only trace archive",
+    "disk snapshots unchanged by read-only audit",
+    "pending-batch early exit"
+  ],
+  "not_checks": [
+    "semantic Python grading",
+    "full unittest",
+    "Skill structural validity as quality evidence",
+    "whole thesis",
+    "autonomous Hook",
+    "desktop WorkBuddy",
+    "market installation"
+  ]
+}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1219b-0330-7401-b5de-708ac4918779"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "材料门禁：底稿修改需目标文本，现有材料不含两节原文，无法交付改稿。请提供待修改的两节文字。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14712, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 1574, "reasoning_output_tokens": 1541}}

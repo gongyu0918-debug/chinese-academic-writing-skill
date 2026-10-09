@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "C_raw_conflict",
+    "D_process_absence"
+  ],
+  "mapping": {
+    "0": {
+      "X": "candidate",
+      "Y": "main"
+    },
+    "1": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  }
+}

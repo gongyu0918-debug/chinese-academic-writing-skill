@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12198-3203-7f20-a73c-9298029f2b81"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "两条记录在结果层面呈现相同状态，即V1中甲自己提交申请后事项办妥，V2中乙请同事代提交后事项也办妥；差异集中在操作主体，前者的提交动作由甲本人完成，后者的提交动作由乙之外的同事代为完成。V1/V2"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14274, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 552, "reasoning_output_tokens": 0}}

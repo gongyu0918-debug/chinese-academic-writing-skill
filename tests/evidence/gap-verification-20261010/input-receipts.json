@@ -1,0 +1,80 @@
+[
+  {
+    "batch": "source-scope-R1",
+    "stem": "m0-A_raw_interviews-main-s1",
+    "session_id": "01a1218f-b8c6-7d91-9d2d-89284314bb00",
+    "native_user_content_sha256": "09a34b5e4aa35c236c5a397c9b74bf8be34a8e5e57866721746b78c219189654",
+    "anchors": {
+      "R11": true,
+      "R12": true,
+      "R13": true
+    },
+    "prompt_sha256": "82a623974c5eeec7b592c23548364ef1fa3aee87726f01be5c31dea52116b989",
+    "claim": "CLI session contains these supplied-text anchors; upstream request body was not captured."
+  },
+  {
+    "batch": "source-scope-R1",
+    "stem": "m0-C_raw_conflict-candidate-s1",
+    "session_id": "01a12190-1944-7cc3-a0b9-158d744d1f49",
+    "native_user_content_sha256": "c10e69961440d4b64694786a014431feda44f137c91135d7021aa63dd8156083",
+    "anchors": {
+      "T1": true,
+      "A、B、C、D": true,
+      "本研究已收集5份记录": true
+    },
+    "prompt_sha256": "b050602ceb0a3959caeca2ab9e34194135d9e028d450711e9e7aaefad0c9f00b",
+    "claim": "CLI session contains these supplied-text anchors; upstream request body was not captured."
+  },
+  {
+    "batch": "source-scope-R2",
+    "stem": "m0-L_existing_target-main-s1",
+    "session_id": "01a12195-33fc-79a1-b86d-d58fda2780bf",
+    "native_user_content_sha256": "c2702fe5910a891d50cc71bcebf0ccb5c5c70d56884c2fad365275fe53851177",
+    "anchors": {
+      "4.1 名称": true,
+      "4.2 口径": true,
+      "目标正文全文": true
+    },
+    "prompt_sha256": "d77f4007cfec9bc84e33e2665be45daee0e75079d879eb28ba7d5a5a68fd5a88",
+    "claim": "CLI session contains these supplied-text anchors; upstream request body was not captured."
+  },
+  {
+    "batch": "source-scope-R2",
+    "stem": "m0-L_existing_target-candidate-s1",
+    "session_id": "01a12198-1009-7a23-9a83-f2e73b8d670c",
+    "native_user_content_sha256": "04cdb867c5584554d4c7467034ac19486f46906eea4f85d71a1df12f4c3107ad",
+    "anchors": {
+      "4.1 名称": true,
+      "4.2 口径": true,
+      "目标正文全文": true
+    },
+    "prompt_sha256": "54d954d8c89a031363cf8234045fe23cee327bbb5cc89e59377aa87e7bf0aa24",
+    "claim": "CLI session contains these supplied-text anchors; upstream request body was not captured."
+  },
+  {
+    "batch": "source-scope-R3",
+    "stem": "m0-C_raw_conflict-main-s1",
+    "session_id": "01a1219a-0ed2-7633-a9b5-9d178557435c",
+    "native_user_content_sha256": "f6da7f0370051233004ea325f1b9662af254fc742f9e0e67210988c4f8f8b56c",
+    "anchors": {
+      "T1": true,
+      "A、B、C、D": true,
+      "本研究已收集5份记录": true
+    },
+    "prompt_sha256": "73676119c7c68127d7d012fcf9c9ad7f2391efaa4fbe7e7e3e651bb983ce5c13",
+    "claim": "CLI session contains these supplied-text anchors; upstream request body was not captured."
+  },
+  {
+    "batch": "source-scope-R3",
+    "stem": "m0-L_existing_target-candidate-s1",
+    "session_id": "01a1219b-0330-7401-b5de-708ac4918779",
+    "native_user_content_sha256": "e4a2d16d8b86e08228ad5f36b58e44daabc4e38e4dc5980d371dcec94199706a",
+    "anchors": {
+      "4.1 名称": true,
+      "4.2 口径": true,
+      "目标正文全文": true
+    },
+    "prompt_sha256": "54d954d8c89a031363cf8234045fe23cee327bbb5cc89e59377aa87e7bf0aa24",
+    "claim": "CLI session contains these supplied-text anchors; upstream request body was not captured."
+  }
+]

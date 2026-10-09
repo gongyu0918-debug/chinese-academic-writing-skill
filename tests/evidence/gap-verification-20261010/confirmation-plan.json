@@ -1,0 +1,9 @@
+{
+  "rationale": "Fresh R2 adds real-source discourse/effect separation and known external identity conflict; K/L are reduced-complexity new tasks for material-misread reproduction. Candidate remains unchanged; no intended output provided to reviewer.",
+  "real_source": "H2 same master thesis; newly read PDF42-52 (11 pages), not an additional thesis; printed33-43",
+  "case_classification": {
+    "I": "real-source content paraphrase plus constructed flawed draft",
+    "J/K/L": "constructed controls"
+  },
+  "candidate_sha256": "3eae43dd2e73752f6b05662f49ccde59667c3341dbb06223b2345309f49152e2"
+}

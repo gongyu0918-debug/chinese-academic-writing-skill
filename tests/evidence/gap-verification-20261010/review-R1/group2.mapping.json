@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "E_undecided_edit",
+    "F_review_target"
+  ],
+  "mapping": {
+    "0": {
+      "X": "main",
+      "Y": "candidate"
+    },
+    "1": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  }
+}

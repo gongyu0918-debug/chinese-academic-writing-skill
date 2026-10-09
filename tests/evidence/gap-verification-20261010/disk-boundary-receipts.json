@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "path": "method.md",
+      "stage2_sha256": "8c3307b488358ef40dce90b3e04fda9f423f4c734e8c6da3323b547a8c16c264",
+      "after_audit_sha256": "8c3307b488358ef40dce90b3e04fda9f423f4c734e8c6da3323b547a8c16c264",
+      "unchanged_by_read_only_audit": true
+    },
+    {
+      "path": ".academic-writing/paper-state.md",
+      "stage2_sha256": "8f6a2e1e07d1145b670213641ad105032fb2a0da8a07b6f33b780247011ffabb",
+      "after_audit_sha256": "8f6a2e1e07d1145b670213641ad105032fb2a0da8a07b6f33b780247011ffabb",
+      "unchanged_by_read_only_audit": true
+    },
+    {
+      "path": ".academic-writing/section-briefs/method.md",
+      "stage2_sha256": "ece056b5dc0640e202a7f3ffc7adf6520d6717e34d4d0d6ab7f152a750b3d496",
+      "after_audit_sha256": "ece056b5dc0640e202a7f3ffc7adf6520d6717e34d4d0d6ab7f152a750b3d496",
+      "unchanged_by_read_only_audit": true
+    }
+  ],
+  "rules_equal_baseline": true,
+  "scope": "snapshot files and copied rules only; text quality is manually judged"
+}

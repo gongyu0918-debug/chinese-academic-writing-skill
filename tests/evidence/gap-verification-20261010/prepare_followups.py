@@ -1,0 +1,18 @@
+from pathlib import Path
+import json, hashlib
+HERE = Path(__file__).parent
+def dump(name, obj):
+    (HERE/name).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+first=json.loads((HERE/'source-scope-tasks.json').read_text(encoding='utf-8'))
+follow={
+ 'I_text_claim_effect':{'leaf':'academic-writing','requests':[
+  '修改论文文献评述中的一段，只交改稿，不联网，保留来源H2，控制在一个论证段内。可用来源为已经读取的吴佳鸿2016《从见闻到叙事——晚清小说文体革新》学校原PDF46—51、印刷页37—42的内容摘编（非逐字引语）：作者讨论晚清小说论者如何想象教化者与读者，夏曾佑、严复、康有为把小说作为教化工具；梁启超进一步将教化者形象移到小说创作者，把外国政治小说家称作魁儒硕学。论文把这理解为作者身份想象与公共表达的变化，并提及有关西方政治小说影响的夸大说法受到研究者质疑。没有提供普通读者实际接受效果的资料。本段只比较这些论述中的身份想象，不转成可验证的社会功效，不声称回读了原历史文本。底稿：“晚清论者已经证明小说普遍改善读者能力。梁启超赞颂外国政治小说家，证实所有晚清小说作者都成为了教化者，与前人的看法完全不同，因此政治小说必然引起国家进步[H2]。”按材料删除升级，保留论述中的连续性与具体转移，不加新的历史事实。']},
+ 'J_external_identity':{'leaf':'academic-literature-review','requests':[
+  '修改独立综述一段，交可成立的正文及必要核验问题，不联网。L1可读摘要摘编：同伴帮助与当次办理便利有关，未测能力前后变化。L4作者交来的文献卡写题名《持续帮助与学习》，但附带的出版方身份核对结果显示该卡DOI实际指向另一篇有关植物生长的论文，无法确定文献卡内容的来源，属于已知身份冲突而不是作者原始观察。不能把“用户交来”当作已核验或把L4变为可信原始资料。底稿：“L1记录同伴帮助与办理便利之间的关联。L4已证明这种帮助持续提升个人能力，因而两项研究共同验证了从求助到技能提高的机制。”保留L1的有限关联，不使用L4支撑发现，也不将身份冲突的未核验内容伪写成已读摘要，不生成新来源。']},
+ 'K_raw_short':{'leaf':'academic-writing','style':False,'requests':[
+  '根据以下作者原始记录写课程论文一段，只交正文，不联网。记录是本轮可读的转述，尚未第三方核实。V1：甲自己提交申请，事项办妥；V2：乙请同事代提交，事项也办妥。比较两条记录中结果与操作主体的不同，引用V1/V2；不判断效率、技能、身份或原因，不能把未第三方核实说成未给记录。']},
+ 'L_existing_target':{'leaf':'academic-writing','long':True,'style':False,'requests':[
+  '修改课程论文两节，只交两节与一句必要未决意见，不联网。目标正文全文：4.1 名称：登记表甲称“参加”，登记表乙称“出席”；两表称谓不同。4.2 口径：登记表甲称“参加”，登记表乙称“出席”，两表称谓不同，所以含义完全等同，应直接合并。依据：作者已确认两表称谓不同，但两表口径未确定。授权删重复与无依据等同，未授权选择同义或异义。保留称谓差异，不选择是否合并，不索取已经给出的两节正文。']}
+}
+dump('confirmation-tasks.json',follow)
+dump('confirmation-plan.json',{'rationale':'Fresh R2 adds real-source discourse/effect separation and known external identity conflict; K/L are reduced-complexity new tasks for material-misread reproduction. Candidate remains unchanged; no intended output provided to reviewer.', 'real_source':'H2 same master thesis; newly read PDF42-52 (11 pages), not an additional thesis; printed33-43','case_classification':{'I':'real-source content paraphrase plus constructed flawed draft','J/K/L':'constructed controls'},'candidate_sha256':hashlib.sha256((HERE/'source-scope-candidate/SKILL.md').read_bytes()).hexdigest()})

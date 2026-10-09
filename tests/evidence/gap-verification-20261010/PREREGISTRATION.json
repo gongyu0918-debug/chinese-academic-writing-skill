@@ -1,0 +1,35 @@
+{
+  "date_beijing": "2026-10-10",
+  "baseline_commit": "eb598fe5c92109171bee6ea0015241ebc8eeb587",
+  "question": "C1原始材料与待核验外部来源的单变量消歧；其他旧问题用新任务检查",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "candidate_files": [
+    "SKILL.md"
+  ],
+  "unchanged": [
+    "all six reference files",
+    "production scripts",
+    "published version"
+  ],
+  "semantic_criteria": [
+    "按可读记录工作而不冒称真实性核验",
+    "身份冲突不放行",
+    "摘要/元数据/线索不跨层",
+    "不把未给作者过程写成没有发生",
+    "已给目标不得误认缺失",
+    "只审不换对象",
+    "重点保留反证与必要限定",
+    "引语与数据不篡改"
+  ],
+  "admission": "候选独有硬交付/事实失败需复现与诊断；不得靠总调用数抵消。若无明确收益或稳定行为支持，仅记录消歧候选，不合入产品。失败与分歧全存档。",
+  "quality_scoring": "Independent semantic review and manual reread only; no Python/unit-test semantic gate",
+  "corpus": "This batch consists of controlled fresh cases, not additional real thesis coverage",
+  "gaps": [
+    "Actual file/state recovery tested separately",
+    "No whole-thesis, doctoral, formatting or desktop validation claim"
+  ]
+}

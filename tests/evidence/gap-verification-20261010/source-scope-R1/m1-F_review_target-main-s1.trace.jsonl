@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12194-10c7-7711-ae89-aafc09e70bc1"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "| 位置 | 严重度 | 问题 | 依据 | 建议 |\n|---|---|---|---|---|\n| 目标句（整句） | 无实际问题 | 未发现事实越界、推断强度升级或研究状态误判。 | M1 支持“由儿子帮忙提交表单”“本次事项办妥”，并明确“记录没有前后能力测量”。目标句以“提示”“可能”保留有限作者分析，且明确不作长期能力变化判断。 | 保留原句。 |"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16039, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 1748, "reasoning_output_tokens": 0}}

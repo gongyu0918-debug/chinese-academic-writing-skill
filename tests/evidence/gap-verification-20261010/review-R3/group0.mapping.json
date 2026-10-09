@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "A_raw_interviews",
+    "C_raw_conflict"
+  ],
+  "mapping": {
+    "0": {
+      "X": "main",
+      "Y": "candidate"
+    },
+    "1": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  }
+}

@@ -1,0 +1,189 @@
+[
+  {
+    "batch": "baseline-R1",
+    "stem": "m0-A_provided_records-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "f17b15199ec273a8d0e3003529bee5c5e08936823b578ca9da7d7afd777b4cfe",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\baseline-R1-nd9r8nje\\m0-A_provided_records-main-s1.stderr.txt"
+  },
+  {
+    "batch": "baseline-R1",
+    "stem": "m0-B_authorized_long_revision-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "f17b15199ec273a8d0e3003529bee5c5e08936823b578ca9da7d7afd777b4cfe",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\baseline-R1-nd9r8nje\\m0-B_authorized_long_revision-main-s1.stderr.txt"
+  },
+  {
+    "batch": "baseline-R1",
+    "stem": "m0-C_uncorrected_conflict-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "f17b15199ec273a8d0e3003529bee5c5e08936823b578ca9da7d7afd777b4cfe",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\baseline-R1-nd9r8nje\\m0-C_uncorrected_conflict-main-s1.stderr.txt"
+  },
+  {
+    "batch": "baseline-R1",
+    "stem": "m0-D_causal_analysis_guard-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "f17b15199ec273a8d0e3003529bee5c5e08936823b578ca9da7d7afd777b4cfe",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\baseline-R1-nd9r8nje\\m0-D_causal_analysis_guard-main-s1.stderr.txt"
+  },
+  {
+    "batch": "baseline-R1",
+    "stem": "m1-A_provided_records-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "f17b15199ec273a8d0e3003529bee5c5e08936823b578ca9da7d7afd777b4cfe",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\baseline-R1-nd9r8nje\\m1-A_provided_records-main-s1.stderr.txt"
+  },
+  {
+    "batch": "baseline-R1",
+    "stem": "m1-B_authorized_long_revision-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "f17b15199ec273a8d0e3003529bee5c5e08936823b578ca9da7d7afd777b4cfe",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\baseline-R1-nd9r8nje\\m1-B_authorized_long_revision-main-s1.stderr.txt"
+  },
+  {
+    "batch": "baseline-R1",
+    "stem": "m1-C_uncorrected_conflict-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "f17b15199ec273a8d0e3003529bee5c5e08936823b578ca9da7d7afd777b4cfe",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\baseline-R1-nd9r8nje\\m1-C_uncorrected_conflict-main-s1.stderr.txt"
+  },
+  {
+    "batch": "baseline-R1",
+    "stem": "m1-D_causal_analysis_guard-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "f17b15199ec273a8d0e3003529bee5c5e08936823b578ca9da7d7afd777b4cfe",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\baseline-R1-nd9r8nje\\m1-D_causal_analysis_guard-main-s1.stderr.txt"
+  },
+  {
+    "batch": "long-baseline",
+    "stem": "m0-L_cost_state-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "060cc73c194f33ebf3ef5a24c734e3bfa64ca9239f37f7c4b546b1a2fc4314cc",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\long-baseline-va_kx1vt\\m0-L_cost_state-main-s1.stderr.txt"
+  },
+  {
+    "batch": "long-baseline",
+    "stem": "m0-L_proposal_state-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "060cc73c194f33ebf3ef5a24c734e3bfa64ca9239f37f7c4b546b1a2fc4314cc",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\long-baseline-va_kx1vt\\m0-L_proposal_state-main-s1.stderr.txt"
+  },
+  {
+    "batch": "long-baseline",
+    "stem": "m1-L_cost_state-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "060cc73c194f33ebf3ef5a24c734e3bfa64ca9239f37f7c4b546b1a2fc4314cc",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\long-baseline-va_kx1vt\\m1-L_cost_state-main-s1.stderr.txt"
+  },
+  {
+    "batch": "long-baseline",
+    "stem": "m1-L_proposal_state-main-s1",
+    "returncode": 1,
+    "invalid": [
+      "exit_1",
+      "missing_final"
+    ],
+    "stderr_sha256": "060cc73c194f33ebf3ef5a24c734e3bfa64ca9239f37f7c4b546b1a2fc4314cc",
+    "exact_safe_excerpt": "failed to canonicalize CODEX_HOME",
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\long-baseline-va_kx1vt\\m1-L_proposal_state-main-s1.stderr.txt"
+  },
+  {
+    "batch": "review-audit",
+    "stem": "audit",
+    "returncode": null,
+    "configured_deadline_seconds": 420,
+    "stderr_sha256": "e007543428e5fd6a5096a22e7f75c6ebdd9113756cb667a207bb89ebd0e9576e",
+    "exact_safe_excerpts": [],
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\review-runtime-qnfqqe5k\\audit.stderr.txt",
+    "visible_trace_sha256": "572811836d3b195a90d9ad9015e8d460f8296ff90da46da6433a06642ebc53ba",
+    "visible_trace_safe_excerpts": [],
+    "visible_trace_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\review-audit\\audit.trace.jsonl",
+    "null_returncode_means_runner_timeout": true
+  },
+  {
+    "batch": "review-R1",
+    "stem": "group0",
+    "returncode": 1,
+    "configured_deadline_seconds": 420,
+    "stderr_sha256": "aacb44a0760966da1c46979e794893951382343f41499a470f84aa25b76eb78d",
+    "exact_safe_excerpts": [],
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\review-runtime-u9h88h88\\group0.stderr.txt",
+    "visible_trace_sha256": "97d53085c434efbc7e208fd93e0deff63fcd4a698afd4f2cd16dfec61132572b",
+    "visible_trace_safe_excerpts": [
+      "exceeded retry limit, last status: 429 Too Many Requests"
+    ],
+    "visible_trace_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\review-R1\\group0.trace.jsonl",
+    "null_returncode_means_runner_timeout": false
+  },
+  {
+    "batch": "review-R1",
+    "stem": "group1",
+    "returncode": 1,
+    "configured_deadline_seconds": 420,
+    "stderr_sha256": "0e84af0f439781ace6fcd6cd55ba47fe8ffff55c7763d72960f1e0f19ee3d1c9",
+    "exact_safe_excerpts": [],
+    "stderr_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\review-runtime-u9h88h88\\group1.stderr.txt",
+    "visible_trace_sha256": "2ab02f926ad784fff87a8752f99bf931b04ac414bbc8d3fc0f31ce14c581e176",
+    "visible_trace_safe_excerpts": [
+      "exceeded retry limit, last status: 429 Too Many Requests"
+    ],
+    "visible_trace_local_only": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009\\review-R1\\group1.trace.jsonl",
+    "null_returncode_means_runner_timeout": false
+  }
+]

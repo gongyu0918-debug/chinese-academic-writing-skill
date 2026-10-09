@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "G_primary_secondary",
+    "H_quote_protection"
+  ],
+  "mapping": {
+    "0": {
+      "X": "candidate",
+      "Y": "main"
+    },
+    "1": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  }
+}

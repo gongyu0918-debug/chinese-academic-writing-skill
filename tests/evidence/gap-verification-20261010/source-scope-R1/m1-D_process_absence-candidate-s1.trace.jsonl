@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12193-8ecb-7133-8b93-862f447cc70b"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "本节所读年报中，“服务收入”为100.00万元，“服务费用”为125.00万元，两者属于不同报表项目，金额不同。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16131, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 586, "reasoning_output_tokens": 0}}

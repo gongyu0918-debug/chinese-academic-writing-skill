@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1219a-0ee7-7851-8370-cdc5bea13aff"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "4.1 名称：登记表甲称\"参加\"，登记表乙称\"出席\"。\n\n4.2 口径：登记表甲与登记表乙的口径尚未确定，两表称谓不同不足以据此判定两者含义等同或相异。\n\n未决意见：两表口径关系尚无判定依据，需作者提供两表对口径的界定后，才能确定含义是否等同并决定是否合并。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14655, "cached_input_tokens": 7168, "cache_write_input_tokens": 0, "output_tokens": 3043, "reasoning_output_tokens": 2956}}

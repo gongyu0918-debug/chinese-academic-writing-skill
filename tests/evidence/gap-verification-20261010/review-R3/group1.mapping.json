@@ -1,0 +1,15 @@
+{
+  "cases": [
+    "L_existing_target"
+  ],
+  "mapping": {
+    "0": {
+      "X": "candidate",
+      "Y": "main"
+    },
+    "1": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  }
+}
