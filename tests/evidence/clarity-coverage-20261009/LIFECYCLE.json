@@ -1,0 +1,41 @@
+{
+  "task": "academic rule clarity audit and expanded writing coverage",
+  "date": "2026-10-09",
+  "baseline_commit": "bdafeb9ec58dc7edc13e074228fd63e2ceb01573",
+  "feature_commit": "03fde417066d88fd386f250b48c7eaa11fe70467",
+  "branch": "codex/academic-clarity-20261009",
+  "worktree": "C:\\Users\\admin\\.codex\\worktrees\\academic-clarity-1009\\chinese-academic-writing-skill",
+  "merged_to": "main",
+  "merge_method": "fast-forward-only",
+  "pre_archive_checks": {
+    "git_status_porcelain_empty": true,
+    "git_log_main_to_head_empty": true,
+    "ignored_files_empty": true,
+    "writing_and_review_calls_completed": true,
+    "native_subagents_closed_without_completed_reports": 4
+  },
+  "archive": {
+    "method": "mcp__codex_app__archive_worktree",
+    "attachment_type_verified": "archived_worktree",
+    "attachment_id": "01a11f85-f26d-7e50-ab7d-16e818408b20",
+    "worktree_absent_from_git_worktree_list": true,
+    "worktree_path_exists_after_archive": false,
+    "unrelated_historical_worktrees": "retained; not created or changed by this round"
+  },
+  "local_only_materials": {
+    "retained_at": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\clarity-coverage-20261009",
+    "contents": "original source files, full text extraction, page images and isolated native model profiles"
+  },
+  "publication": {
+    "published_version_unchanged": "0.1.7",
+    "github_push": false,
+    "new_tag": false,
+    "marketplace_upload": false,
+    "desktop_package_update": false
+  },
+  "evidence_manifest": {
+    "algorithm": "SHA-256",
+    "scope": "all public files in this evidence directory except ARCHIVE-MANIFEST.json itself",
+    "lifecycle_is_maintenance_record_not_writing_validation": true
+  }
+}
