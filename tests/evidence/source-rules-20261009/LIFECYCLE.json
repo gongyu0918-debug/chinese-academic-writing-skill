@@ -1,0 +1,17 @@
+{
+  "research_commit": "7384874",
+  "merged_into": "local main",
+  "managed_worktree": "C:\\Users\\admin\\.codex\\worktrees\\academic-source-rules-1009\\chinese-academic-writing-skill",
+  "attachment_type": "archived_worktree",
+  "filesystem_exists_after_archive": false,
+  "git_worktree_list_contains_path": false,
+  "dirty_before_archive": false,
+  "unmerged_commits_before_archive": false,
+  "temporary_model_processes_before_archive": 0,
+  "source_subagent_closed": true,
+  "original_sources_and_full_snapshots_preserved_locally": true,
+  "runtime_changes": false,
+  "new_release_or_push": false,
+  "desktop_package_changes": false,
+  "semantic_quality_not_inferred_from_cleanup": true
+}
