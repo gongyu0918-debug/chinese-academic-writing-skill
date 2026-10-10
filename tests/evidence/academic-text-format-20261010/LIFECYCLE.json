@@ -1,0 +1,30 @@
+{
+  "baseline_commit": "c38f02f09c7abfac80c7b85c349c642b3120a962",
+  "implementation_commit": "ff7880b39766516dba9abb8192401552ff06e3b9",
+  "merge": "fast-forward into main",
+  "worktree": "C:\\Users\\admin\\.codex\\worktrees\\academic-rule-format-audit\\chinese-academic-writing-skill",
+  "branch": "codex/academic-rule-format-audit",
+  "pre_archive": {
+    "uncommitted_files": 0,
+    "unmerged_commits": 0,
+    "ignored_files": 0,
+    "active_agents_or_runs_using_worktree": 0,
+    "raw_staging_preserved_in": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\academic-rule-format-audit"
+  },
+  "archive": {
+    "tool": "archive_worktree",
+    "attachment_id": "01a124a7-c372-7491-9c51-1d728a6a2d2a",
+    "attachment_type": "archived_worktree",
+    "git_worktree_registered": false,
+    "directory_exists": false
+  },
+  "historical_worktrees": "Pre-existing experiments and release checkouts retained; not created or changed by this task.",
+  "publication": {
+    "github_push": false,
+    "skillhub_publish": false,
+    "clawhub_publish": false,
+    "desktop_install_updated": false,
+    "public_version": "0.1.8",
+    "local_review_package": "0.1.8-format.1"
+  }
+}
