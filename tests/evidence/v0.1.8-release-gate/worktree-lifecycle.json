@@ -9,6 +9,11 @@
   "external_execution_profiles_created": false,
   "ignored_worktree_artifacts": ".release/v0.1.8 staged packages, upload receipts, downloads and read-only visibility logs retained locally before archival",
   "active_task_dependencies": false,
-  "status": "ready_for_managed_archive_after_evidence_merge",
-  "historical_manual_worktrees": "not touched"
+  "status": "managed_archive_completed",
+  "historical_manual_worktrees": "not touched",
+  "verified_date_beijing": "2026-10-10",
+  "evidence_commit": "63b524a43f0cd45884a6936b29e57ed2d7c8e756",
+  "archived_artifact_id": "01a1237f-c5d1-71e3-a8e0-45c9b5afb155",
+  "path_exists_after_archive": false,
+  "registered_after_archive": false
 }
