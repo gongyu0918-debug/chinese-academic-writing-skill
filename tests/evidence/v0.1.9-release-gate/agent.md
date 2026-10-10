@@ -9,3 +9,5 @@
 GitHub Release 408825098公开且下载哈希一致；SkillHub versionId 420582、ClawHub versionId k97eb7fjpr7tq6y39vcfp8nmz98g0v1s各受理一次。SkillHub公开搜索版本为0.1.8，签名未取得；ClawHub新版详情未取得，远端文件哈希尚未验证。审核状态与受理分开记录。桌面WorkBuddy0.1.9包与标签一致，未实装。 产品标签固定9feb503ff8c81b54c685ef421d8c7cb3d8fdf03b。
 
 发布后两个市场各只读检查两次，仍未取得新版本签名/详情，无重复发布。GitHub和桌面哈希一致。两名原生审阅者无最终报告且均已关闭，不计独立通过。126个实写输入/输出档案哈希核对一致，所有本轮工作树忽略发布产物保存到主仓库.release/release-v0.1.9-20261010，产品标签不移动。回执合并/推送后归档本轮托管工作树，历史检出保留。
+
+回收确认：archive_worktree返回queued后，确认目标目录不存在、git worktree list无该注册、任务附件为archived_worktree（01a1250e-9665-74f3-ae05-fa28282e7f72）。回执证据4f8bd1c已合并并推送；本轮全部忽略产物已保留，126文件档案哈希、GitHub冻结包和桌面包哈希仍相符。历史工作树未动，产品v0.1.9标签仍指9feb503f。

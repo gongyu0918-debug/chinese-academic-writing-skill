@@ -7,6 +7,12 @@
   "ignored_artifacts_preserved_at": "F:/Workspaces/chinese-academic-writing-skill/.release/release-v0.1.9-20261010",
   "active_local_processes": false,
   "subagents_closed": true,
-  "archive_status": "ready_after_receipts_merge",
-  "historical_worktrees": "untouched; pre-existing experiments and prior releases outside this round"
+  "archive_status": "completed",
+  "historical_worktrees": "untouched; pre-existing experiments and prior releases outside this round",
+  "confirmed_at_beijing": "2026-10-10T17:05:23.109578+08:00",
+  "archived_attachment_id": "01a1250e-9665-74f3-ae05-fa28282e7f72",
+  "directory_absent": true,
+  "git_worktree_registration_absent": true,
+  "receipt_evidence_commit": "4f8bd1cd98728e9f1fecdb5367071bab0052d0d9",
+  "receipt_commit_merged_and_pushed": true
 }
