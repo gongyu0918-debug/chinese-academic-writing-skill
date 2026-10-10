@@ -1,12 +1,12 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.1.7-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.7)
+[![Version](https://img.shields.io/badge/version-0.1.8-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.8)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 中文论文写作 Skill 用于协助完成中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。它根据作者已经提供或明确授权核验的材料工作，可以构造提纲、逐段起草、修改底稿或只审不改，并在长稿和多轮续写中辅助维护和检查事实、术语、引用与研究状态的一致性。
 
-版本 0.1.7 收窄回指复核：上下文清楚的代词、动作、判断及整段承接保持原文，只处理会混淆论断对象、指标或材料归属的实际歧义；无法据材料确定时不替作者选定。沿用 0.1.6 的主次详略与证据规则。实写范围及已知风险见[竞品借鉴与取舍](tests/evidence/competitor-rules-20261009/ADJUDICATION.md)。
+版本 0.1.8 消歧长稿修改范围：有材料依据且在用户授权范围内的问题可直接修复；涉及作者选择的未决问题先报告。沿用既有主次详略、来源门禁和回指复核规则，保留目标文本误读、状态日期失真等已知风险。详见[长稿取舍](tests/evidence/clarity-coverage-20261009/ADJUDICATION.md)和[保留问题续验](tests/evidence/gap-verification-20261010/ADJUDICATION.md)。
 
 这个 Skill 不替作者补造研究。材料不足时，它会收缩交付范围，先给出可成立的结构、研究问题或材料清单，不把常识、惯例和推测写成已经取得的证据。
 
@@ -56,7 +56,7 @@
 
 ## 安装与调用
 
-当前版本：`chinese-academic-writing-assistant@0.1.7`
+当前版本：`chinese-academic-writing-assistant@0.1.8`
 
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
 
@@ -100,6 +100,12 @@ SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，
 2026-10-09完成入口与六份规则审计，新增两份硕士开题全文和一篇人文硕论50页覆盖。只消歧长稿规则一句：有材料依据且在用户授权范围内可修改，作者未决选择先报告。单变量六对中五对语义成立，一对基线与候选共同误认已给正文缺失；不宣称整套规则稳定提升。来源门禁组合候选取消，该对象范围歧义仍登记。已发布版本保持0.1.7，本轮未发布或替换桌面包。详见[规则审计](tests/evidence/clarity-coverage-20261009/AUDIT.md)和[原稿与取舍](tests/evidence/clarity-coverage-20261009/ADJUDICATION.md)。
 
 2026-10-10继续验证保留问题：两模型30组写稿配对及4次仅任务诊断，完成两轮实际文件更正/恢复和独立审读。来源范围候选没有稳定收益且复现硬交付失败，取消；记录目标误读、材料外否定、来源ID遗漏、主体错位及状态日期误记。规则审计另保留进行中归类、系统综述产物与转引对象三处待验证边界。运行规则与0.1.7版本不变，未发布或替换桌面包。详见[原稿与取舍](tests/evidence/gap-verification-20261010/ADJUDICATION.md)、[缺口清单](tests/evidence/gap-verification-20261010/GAPS.md)及[上轮证据限定](tests/evidence/gap-verification-20261010/ERRATA.md)。
+
+## 版本 0.1.8
+
+相对已发布0.1.7，运行差异只有`references/long-form-consistency.md`第60行：材料有据、用户已授权的修改不再限于机械问题；论点取舍、概念合并、矛盾解释或作者声音中的未决选择仍先报告。入口、其他五份reference、三个只读脚本和主次详略规则不变。来源对象范围候选已取消，没有进入发布包。
+
+该单句消歧在两模型六配对中五对语义可成立、一对共同误认已给正文缺失。后续30组实写配对、4次仅任务诊断和5个原生子会话记录了真实文件更正与新会话恢复，也暴露目标误读、来源ID遗漏、材料外断言、状态日期误记及独立审阅漏报；调用数不代表通过数，不宣称整套规则稳定提升。实写、失败及未测边界见[长稿验证](tests/evidence/clarity-coverage-20261009/ADJUDICATION.md)、[续验缺口](tests/evidence/gap-verification-20261010/GAPS.md)和[发布记录](tests/evidence/v0.1.8-release-gate/README.md)。
 
 ## 版本 0.1.7
 

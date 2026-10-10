@@ -11,6 +11,8 @@
 
 ## 当前状态
 
+- 2026-10-10 用户授权将当前已合入版本作为0.1.8发布至GitHub、skillhub.cn与ClawHub。相对0.1.7只有长稿授权修改消歧一句；来源候选取消、既有主次/证据规则及产品脚本不变。复用六对单变量实写及后续保留问题续验，发布仅核对包、标签与平台状态，不以Python测试证明写作质量。受理/传播分别见 tests/evidence/v0.1.8-release-gate/RELEASE-RECEIPT.json。
+
 - 2026-10-09 继续从真实论文和高校公开填充开题范例提炼规则，记录主次、方法与问题对应、研究缺口、创新归属与比较范围、限定位置及模板内容归属6类审稿判据。各来源实际覆盖范围单独登记；两轮24次固定模型实写、23份终稿、1次基线技术超时。新增模板提示没有净收益，取消，运行规则保持0.1.7。4次独立复核仅2份报告完成，另2份超时，其中1份有无关工具调用；意见经原材料纠偏，不冒称全部独立通过。来源、逐稿裁决及模型绑定见 `tests/evidence/source-rules-20261009/`。本轮只合并研究证据，不以Python测试证明Prompt收益，不发布、推送或更新桌面包。
 
 - 2026-10-09 用户授权将已合并版本作为 v0.1.7 发布至 GitHub、skillhub.cn、ClawHub；运行差异相对 v0.1.6 仅 anti-ai-writing.md 的收窄回指段落。复用已完成实写及独立语义复核，发布阶段仅核对包、标签与平台状态，不以 Python 单测或结构检查证明 Prompt 收益。GitHub Release 407442717 已公开，下载资产哈希一致；SkillHub versionId 416245、ClawHub versionId k973h02s585yad6v197763g9898fz58b 各受理一次。记录时SkillHub公开索引为0.1.6、新版签名及ClawHub新版详情暂不可查，审核/传播待确认。桌面WorkBuddy 0.1.7无Hooks包已交付且与标签逐文件一致，未实装。三平台回执见 tests/evidence/v0.1.7-release-gate/RELEASE-RECEIPT.json。

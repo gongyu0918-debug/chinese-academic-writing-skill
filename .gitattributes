@@ -37,3 +37,4 @@ tests/evidence/clarity-coverage-20261009/** -text whitespace=-blank-at-eol,-blan
 
 # Preserve retained-risk verification inputs, visible outputs and review reports verbatim.
 tests/evidence/gap-verification-20261010/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+tests/evidence/v0.1.8-release-gate/** text eol=lf
