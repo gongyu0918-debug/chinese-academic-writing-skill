@@ -1,0 +1,57 @@
+{
+  "version": "0.1.9",
+  "files": [
+    "LICENSE",
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references/academic-literature-review.md",
+    "references/academic-proposal.md",
+    "references/academic-text-format.md",
+    "references/academic-writing.md",
+    "references/anti-ai-writing.md",
+    "references/citation-research.md",
+    "references/long-form-consistency.md",
+    "scripts/citation_audit.py",
+    "scripts/manuscript_audit.py",
+    "scripts/prose_lint.py"
+  ],
+  "file_count": 13,
+  "metadata": {
+    "name": "chinese-academic-writing-assistant",
+    "version": "0.1.9",
+    "display_name": "中文论文写作",
+    "display_name_en": "Chinese Academic Writing",
+    "description_zh": "中文论文、开题报告与文献综述的起草、改写、审稿、必要英文和学术文字格式核对",
+    "description_en": "Draft, revise, and review Chinese academic writing, including necessary English sections and academic text formatting, using author materials and verified sources.",
+    "description": "用于依据作者材料、文献或明确授权来源，协作完成中文本科、硕士和课程论文、开题报告及文献综述的提纲、段落与章节起草、改写和独立审稿；在组织论证、核对证据与引用、处理长稿一致性、必要英文部分或降低模板化表达时使用。",
+    "metadata": {
+      "tags": "chinese, academic, writing, thesis, literature-review"
+    }
+  },
+  "file_sha256": {
+    "LICENSE": "a785d3201ed37e2eb1fff42264693bafe2a0e62115bf4e38119c5700772ad3a4",
+    "SKILL.md": "72336849a57f11d045d7db081a8cba2f1f4ce9caca749d468d76ef439a33853c",
+    "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+    "references/academic-literature-review.md": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9",
+    "references/academic-proposal.md": "e8e677b36580d4ca1659a21f406314cd9344f9b113f66a7d01e33a986e13cda3",
+    "references/academic-text-format.md": "a430adc5d2348842feee98109ba3b5e75fef0289ff2c74bbc6a0cb92ed978adc",
+    "references/academic-writing.md": "bf4660d4d19327321446b3a0d63acf07ebe72c99aaa8ed945d1f367985650a04",
+    "references/anti-ai-writing.md": "253ef7ac1436dfd8530940f73424d606c24095e7a25fdad26684e2348200d5aa",
+    "references/citation-research.md": "7e59839185db5373e4ee8eac598b92fdcf9bafe8cf627ded919d483c4935a0a2",
+    "references/long-form-consistency.md": "5bd3d94f67aa5931d3f8e87e652f239bc82c752163587ead6f42d61be4bc51a6",
+    "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+    "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+    "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+  },
+  "zip_sha256": "9cb640272c66e784dec87bd3c10094c07317679d61f778bbc0c0c68cc32bb275",
+  "reproducible_zip": true,
+  "entry_body_matches_runtime": true,
+  "hooks_included": false,
+  "client_install_tested": false,
+  "release_commit": "9feb503ff8c81b54c685ef421d8c7cb3d8fdf03b",
+  "zip_name": "中文论文写作-WorkBuddy-v0.1.9-main-9feb503f-无Hooks.zip",
+  "zip_size": 53441,
+  "delivered_path": "C:\\Users\\admin\\Desktop\\中文论文写作-WorkBuddy-v0.1.9-main-9feb503f-无Hooks.zip",
+  "desktop_hash_match": true,
+  "tag_runtime_hash_match": true
+}

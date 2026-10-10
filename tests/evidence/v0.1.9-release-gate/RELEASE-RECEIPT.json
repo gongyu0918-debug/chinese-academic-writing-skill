@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "version": "0.1.9",
+  "recorded_at_beijing": "2026-10-10T17:03:54.400939+08:00",
+  "release_commit": "9feb503ff8c81b54c685ef421d8c7cb3d8fdf03b",
+  "tag": {
+    "name": "v0.1.9",
+    "annotated_object": "257e04054304f15bdbca4806984915ae607c6ecd",
+    "dereferenced_commit": "9feb503ff8c81b54c685ef421d8c7cb3d8fdf03b"
+  },
+  "package": {
+    "name": "chinese-academic-writing-assistant-0.1.9-skillhub.zip",
+    "file_count": 13,
+    "license": "MIT",
+    "license_file": "LICENSE.md",
+    "zip_sha256": "b54251193466d607f9e27b08f328f850eaf2ee06c68d39640f5d078eb21a716a",
+    "zip_size": 53256,
+    "entries": [
+      "LICENSE.md",
+      "SKILL.md",
+      "agents/openai.yaml",
+      "references/academic-literature-review.md",
+      "references/academic-proposal.md",
+      "references/academic-text-format.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md",
+      "references/citation-research.md",
+      "references/long-form-consistency.md",
+      "scripts/citation_audit.py",
+      "scripts/manuscript_audit.py",
+      "scripts/prose_lint.py"
+    ],
+    "file_sha256": {
+      "LICENSE.md": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812",
+      "SKILL.md": "696cfa9fd59a29e26ae5399ea18da99b7420c52e3c8a604b22bb02e034f98f31",
+      "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "references/academic-literature-review.md": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9",
+      "references/academic-proposal.md": "e8e677b36580d4ca1659a21f406314cd9344f9b113f66a7d01e33a986e13cda3",
+      "references/academic-text-format.md": "a430adc5d2348842feee98109ba3b5e75fef0289ff2c74bbc6a0cb92ed978adc",
+      "references/academic-writing.md": "bf4660d4d19327321446b3a0d63acf07ebe72c99aaa8ed945d1f367985650a04",
+      "references/anti-ai-writing.md": "253ef7ac1436dfd8530940f73424d606c24095e7a25fdad26684e2348200d5aa",
+      "references/citation-research.md": "7e59839185db5373e4ee8eac598b92fdcf9bafe8cf627ded919d483c4935a0a2",
+      "references/long-form-consistency.md": "5bd3d94f67aa5931d3f8e87e652f239bc82c752163587ead6f42d61be4bc51a6",
+      "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+    }
+  },
+  "github": {
+    "release_id": 408825098,
+    "release_url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.9",
+    "published_at": "2026-10-10T09:00:47Z",
+    "asset_id": 627494295,
+    "asset_url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/download/v0.1.9/chinese-academic-writing-assistant-0.1.9-skillhub.zip",
+    "asset_digest": "sha256:b54251193466d607f9e27b08f328f850eaf2ee06c68d39640f5d078eb21a716a",
+    "downloaded_asset_hash_match": true,
+    "release_create_attempts": 1,
+    "workflow_runs": {
+      "total_count": 0,
+      "workflow_runs": []
+    }
+  },
+  "skillhub": {
+    "namespace": "user_f3d82da7",
+    "slug": "chinese-academic-writing-assistant",
+    "skill_id": 98987,
+    "version_id": 420582,
+    "submitted_version": "0.1.9",
+    "publish_accepted": true,
+    "publish_attempts": 1,
+    "upload_file_count": 13,
+    "upload_fingerprint": "71e8cd30dc6200359b8530c2b48cd576cd89f54a620eb5b7f73b25037df5f739",
+    "review_status_at_upload": "pending",
+    "content_audit_status_at_upload": "pending",
+    "security_scan_status_at_upload": "pending",
+    "tags_at_upload": {
+      "academic": "0.1.9",
+      "chinese": "0.1.9",
+      "latest": "0.1.9"
+    },
+    "public_search_visible_version_at_recording": "0.1.8",
+    "signature_verify_result": null,
+    "signature_verify_status_at_recording": "pending_version_not_found",
+    "signature_verify_error": "Error: 找不到该版本: chinese-academic-writing-assistant@0.1.9"
+  },
+  "clawhub": {
+    "owner": "gongyu0918-debug",
+    "slug": "chinese-academic-writing-assistant",
+    "version_id": "k97eb7fjpr7tq6y39vcfp8nmz98g0v1s",
+    "submitted_version": "0.1.9",
+    "publish_status": "published",
+    "publish_attempts": 1,
+    "source_ref_requested": "v0.1.9",
+    "source_commit_requested": "9feb503ff8c81b54c685ef421d8c7cb3d8fdf03b",
+    "platform_license": "MIT-0",
+    "uploaded_file_count": 12,
+    "license_file_included": false,
+    "fingerprint": "a4e3bc28d66e043d39e4fbc70c4184c855cd95451cb51eec766876d7d34950f3",
+    "local_upload_file_sha256": {
+      "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "references/academic-literature-review.md": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9",
+      "references/academic-proposal.md": "e8e677b36580d4ca1659a21f406314cd9344f9b113f66a7d01e33a986e13cda3",
+      "references/academic-text-format.md": "a430adc5d2348842feee98109ba3b5e75fef0289ff2c74bbc6a0cb92ed978adc",
+      "references/academic-writing.md": "bf4660d4d19327321446b3a0d63acf07ebe72c99aaa8ed945d1f367985650a04",
+      "references/anti-ai-writing.md": "253ef7ac1436dfd8530940f73424d606c24095e7a25fdad26684e2348200d5aa",
+      "references/citation-research.md": "7e59839185db5373e4ee8eac598b92fdcf9bafe8cf627ded919d483c4935a0a2",
+      "references/long-form-consistency.md": "5bd3d94f67aa5931d3f8e87e652f239bc82c752163587ead6f42d61be4bc51a6",
+      "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+      "SKILL.md": "ab2f5cad13b1ecbfb34d798ad384ac5bdfb0e1b7e51ee78072bba7af5d3a04ae"
+    },
+    "latest_version_in_upload_receipt": "0.1.8",
+    "version_inspection_status_at_recording": "pending_version_not_found",
+    "version_inspection_error": "Version not found (reset in 14s)\nError: Version not found (reset in 14s)",
+    "remote_content_hash_verified": false,
+    "version_detail": null
+  },
+  "workbuddy": {
+    "version": "0.1.9",
+    "files": [
+      "LICENSE",
+      "SKILL.md",
+      "agents/openai.yaml",
+      "references/academic-literature-review.md",
+      "references/academic-proposal.md",
+      "references/academic-text-format.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md",
+      "references/citation-research.md",
+      "references/long-form-consistency.md",
+      "scripts/citation_audit.py",
+      "scripts/manuscript_audit.py",
+      "scripts/prose_lint.py"
+    ],
+    "file_count": 13,
+    "metadata": {
+      "name": "chinese-academic-writing-assistant",
+      "version": "0.1.9",
+      "display_name": "中文论文写作",
+      "display_name_en": "Chinese Academic Writing",
+      "description_zh": "中文论文、开题报告与文献综述的起草、改写、审稿、必要英文和学术文字格式核对",
+      "description_en": "Draft, revise, and review Chinese academic writing, including necessary English sections and academic text formatting, using author materials and verified sources.",
+      "description": "用于依据作者材料、文献或明确授权来源，协作完成中文本科、硕士和课程论文、开题报告及文献综述的提纲、段落与章节起草、改写和独立审稿；在组织论证、核对证据与引用、处理长稿一致性、必要英文部分或降低模板化表达时使用。",
+      "metadata": {
+        "tags": "chinese, academic, writing, thesis, literature-review"
+      }
+    },
+    "file_sha256": {
+      "LICENSE": "a785d3201ed37e2eb1fff42264693bafe2a0e62115bf4e38119c5700772ad3a4",
+      "SKILL.md": "72336849a57f11d045d7db081a8cba2f1f4ce9caca749d468d76ef439a33853c",
+      "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "references/academic-literature-review.md": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9",
+      "references/academic-proposal.md": "e8e677b36580d4ca1659a21f406314cd9344f9b113f66a7d01e33a986e13cda3",
+      "references/academic-text-format.md": "a430adc5d2348842feee98109ba3b5e75fef0289ff2c74bbc6a0cb92ed978adc",
+      "references/academic-writing.md": "bf4660d4d19327321446b3a0d63acf07ebe72c99aaa8ed945d1f367985650a04",
+      "references/anti-ai-writing.md": "253ef7ac1436dfd8530940f73424d606c24095e7a25fdad26684e2348200d5aa",
+      "references/citation-research.md": "7e59839185db5373e4ee8eac598b92fdcf9bafe8cf627ded919d483c4935a0a2",
+      "references/long-form-consistency.md": "5bd3d94f67aa5931d3f8e87e652f239bc82c752163587ead6f42d61be4bc51a6",
+      "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+    },
+    "zip_sha256": "9cb640272c66e784dec87bd3c10094c07317679d61f778bbc0c0c68cc32bb275",
+    "reproducible_zip": true,
+    "entry_body_matches_runtime": true,
+    "hooks_included": false,
+    "client_install_tested": false,
+    "release_commit": "9feb503ff8c81b54c685ef421d8c7cb3d8fdf03b",
+    "zip_name": "中文论文写作-WorkBuddy-v0.1.9-main-9feb503f-无Hooks.zip",
+    "zip_size": 53441,
+    "delivered_path": "C:\\Users\\admin\\Desktop\\中文论文写作-WorkBuddy-v0.1.9-main-9feb503f-无Hooks.zip",
+    "desktop_hash_match": true,
+    "tag_runtime_hash_match": true
+  },
+  "writing_evidence": [
+    "tests/evidence/academic-text-format-20261010/",
+    "tests/evidence/national-format-20261010/"
+  ],
+  "runtime_changes": [
+    "chinese-academic-writing-assistant/SKILL.md",
+    "chinese-academic-writing-assistant/references/academic-proposal.md",
+    "chinese-academic-writing-assistant/references/academic-text-format.md",
+    "chinese-academic-writing-assistant/references/academic-writing.md",
+    "chinese-academic-writing-assistant/references/anti-ai-writing.md",
+    "chinese-academic-writing-assistant/references/citation-research.md"
+  ],
+  "writing_validation": {
+    "first_round_calls": 12,
+    "first_round_execution_invalid": 0,
+    "quality_pass_total": null,
+    "reference_leaf_missing_diagnostic_pairs": 2,
+    "full_reference_followup_calls": 4,
+    "followup_execution_invalid": 1,
+    "followup_complete_valid_pairs": 1,
+    "candidate_year_placement_correct_outputs": 2,
+    "candidate_English_campus_omissions": 2,
+    "whole_skill_no_regression_proven": false
+  },
+  "release_validation": {
+    "full_unittest_run": false,
+    "skill_structure_validator_run": false,
+    "product_python_scripts_changed": false,
+    "technical_checks_prove_writing_quality": false
+  },
+  "package_tests": {
+    "builder": 6,
+    "release_policy": 11,
+    "passed": true,
+    "proves_prose_quality": false,
+    "initial_stale_assertions": 2
+  },
+  "independent_reviews": [
+    {
+      "agent_id": "01a124ff-e7b3-7510-9b67-5572d9fc2dc7",
+      "final_report_received": false,
+      "actual_context": [
+        {
+          "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+          "effort": "max"
+        }
+      ],
+      "status": "incomplete_closed"
+    },
+    {
+      "agent_id": "01a12506-2d96-7e40-8905-8dce6805bed1",
+      "final_report_received": false,
+      "actual_context": [
+        {
+          "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+          "effort": "max"
+        }
+      ],
+      "status": "incomplete_closed"
+    }
+  ],
+  "read_only_visibility_checks_per_marketplace": 2,
+  "stability_claim": false,
+  "notes": [
+    "Six runtime Markdown files differ from v0.1.8, including the new necessary-English format leaf; runtime Python scripts are unchanged.",
+    "Sixteen supplemental calls include one execution-invalid baseline; two first-round reference pairs are incomplete-loading diagnostics.",
+    "English campus omission and overreview risks remain; calls and package tests do not prove global stability.",
+    "Each platform received one publication. Acceptance, public propagation, signature, security and review are distinct.",
+    "Product tag remains fixed while later evidence commits are pushed.",
+    "WorkBuddy package bytes match tag and desktop archive; client installation not tested."
+  ]
+}

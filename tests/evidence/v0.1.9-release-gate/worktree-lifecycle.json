@@ -1,0 +1,12 @@
+{
+  "recorded_at_beijing": "2026-10-10T17:04:27.227843+08:00",
+  "worktree_root": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-019\\chinese-academic-writing-skill",
+  "branch": "codex/academic-release-019",
+  "product_tag": "v0.1.9",
+  "product_commit": "9feb503ff8c81b54c685ef421d8c7cb3d8fdf03b",
+  "ignored_artifacts_preserved_at": "F:/Workspaces/chinese-academic-writing-skill/.release/release-v0.1.9-20261010",
+  "active_local_processes": false,
+  "subagents_closed": true,
+  "archive_status": "ready_after_receipts_merge",
+  "historical_worktrees": "untouched; pre-existing experiments and prior releases outside this round"
+}
