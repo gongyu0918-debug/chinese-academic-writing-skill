@@ -1,0 +1,18 @@
+{
+  "C_same_study-m0": {
+    "X": "main",
+    "Y": "candidate"
+  },
+  "C_same_study-m1": {
+    "X": "candidate",
+    "Y": "main"
+  },
+  "D_independent_unknown-m0": {
+    "X": "candidate",
+    "Y": "main"
+  },
+  "D_independent_unknown-m1": {
+    "X": "main",
+    "Y": "candidate"
+  }
+}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1238a-d8bb-7321-a580-7e77affcc0ab"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "在当前材料里，报告求助来源与当次办妥关系的是两项各自独立收集数据的研究。研究 T 的预印本摘要写明 2022 年在同一服务点招募 80 人，结果是求助来源与当次办妥有关[P1]；其正式论文摘要明确沿用同一 80 人样本和同一结果，补充讨论研究限制，并未新增参与者或新的测量[P2]，因此两份发表对这一结果只构成一份证据。研究 U 的论文摘要写明 2023 年在另一服务点独立招募 75 人，用相同方法得到同方向的关联[P3]。按现有来源覆盖，跨服务点的独立检验只见于研究 U。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 12338, "cached_input_tokens": 7168, "cache_write_input_tokens": 0, "output_tokens": 2566, "reasoning_output_tokens": 2409}}

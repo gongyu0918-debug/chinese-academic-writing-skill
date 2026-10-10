@@ -1,0 +1,18 @@
+{
+  "A_narrow_history-m0": {
+    "X": "main",
+    "Y": "candidate"
+  },
+  "A_narrow_history-m1": {
+    "X": "candidate",
+    "Y": "main"
+  },
+  "B_central_overclaim-m0": {
+    "X": "candidate",
+    "Y": "main"
+  },
+  "B_central_overclaim-m1": {
+    "X": "main",
+    "Y": "candidate"
+  }
+}

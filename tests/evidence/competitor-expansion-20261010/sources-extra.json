@@ -1,0 +1,5 @@
+[
+  {"id":"snl-survey","repo":"SNL-UCSB/literature-survey-skill","path":"SKILL.md"},
+  {"id":"besser-review","repo":"BESSER-PEARL/research-agent-skills","path":"research-paper-review/SKILL.md"},
+  {"id":"docxology-review","repo":"docxology/template","path":"docs/prompts/academic-paper-reviewer/SKILL.md"}
+]

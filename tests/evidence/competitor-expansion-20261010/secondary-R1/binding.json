@@ -1,0 +1,33 @@
+{
+  "baseline_commit": "c60c589908d1e83dba2bc4beb800b816e391f732",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\competitor-expansion-20261010\\secondary-R1-w9uwu3xr",
+  "spec": {
+    "G_secondary_apa": {
+      "leaf": "academic-literature-review",
+      "style": false,
+      "requests": [
+        "据下面给定材料写一小段概念综述，说明“自我效能信念与实际能力为何不能直接等同”，正文后附APA实际使用参考文献。离线，不联网，保留AR12来源ID。本轮实际可读的二手材料为AR12：Artino, A. R., Jr. (2012). Academic self-efficacy: from educational theory to instructional practice. Perspectives on Medical Education, 1, 76–85. https://doi.org/10.1007/s40037-012-0012-5 。取自出版方页面“The nature and structure of self-efficacy”中的“Self-efficacy defined”：Artino借Bandura的定义讨论，自我效能是对自身执行有关任务能力的信念，这种信念不必等同于实际能力。这里只提供中文内容摘编，不是原文引语。该节把定义标到文后第10条：Bandura, A. (1986). Social foundations of thought and action: A social cognitive theory. Prentice Hall. 书目信息来自AR12的文后清单，Bandura原书正文未取得、未阅读、未核验；没有原书页码。AR12不是新的效应测量或系统综述。 不使用直接引语，不补原书页码，不增加其他来源。"
+      ]
+    },
+    "H_secondary_body_only": {
+      "leaf": "academic-literature-review",
+      "style": false,
+      "requests": [
+        "依据材料修改独立综述中的两句，只交正文，不联网，保留AR12来源ID；不另附说明、参考文献清单或材料账本。本轮实际可读的二手材料为AR12：Artino, A. R., Jr. (2012). Academic self-efficacy: from educational theory to instructional practice. Perspectives on Medical Education, 1, 76–85. https://doi.org/10.1007/s40037-012-0012-5 。取自出版方页面“The nature and structure of self-efficacy”中的“Self-efficacy defined”：Artino借Bandura的定义讨论，自我效能是对自身执行有关任务能力的信念，这种信念不必等同于实际能力。这里只提供中文内容摘编，不是原文引语。该节把定义标到文后第10条：Bandura, A. (1986). Social foundations of thought and action: A social cognitive theory. Prentice Hall. 书目信息来自AR12的文后清单，Bandura原书正文未取得、未阅读、未核验；没有原书页码。AR12不是新的效应测量或系统综述。 目标底稿：“本综述已阅读并核验Bandura（1986）原著，证实自我效能与实际能力完全相同[AR12]。Artino（2012）也完成了新的能力干预实验，进一步证明这一结论[AR12]。”"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "a6853c2d05779c36360800189a1a3be10553405af85dbffce4e0a0d0d7565816"
+}

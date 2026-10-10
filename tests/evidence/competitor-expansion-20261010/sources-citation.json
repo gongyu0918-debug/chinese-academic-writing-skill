@@ -1,0 +1,7 @@
+[
+  {"id":"victor-citation","repo":"comeonvictor/claude-code-deep-research","path":"references/citation_rules.md"},
+  {"id":"ecylmz-audit","repo":"ecylmz/academic-writing-skills","path":"skills/en/research-integrity-audit/SKILL.md"},
+  {"id":"paperqa-prompts","repo":"Future-House/paper-qa","path":"src/paperqa/prompts.py"},
+  {"id":"storyengine-system","repo":"brian-caylor/StoryEngine_Template","path":"story-engine-template/SYSTEM_PROMPT.md"},
+  {"id":"storyengine-draft","repo":"brian-caylor/StoryEngine_Template","path":"story-engine-template/prompts/draft-chapter.md"}
+]

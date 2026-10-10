@@ -1,0 +1,30 @@
+{
+  "model": "alibaba-token-plan-responses/qwen3.8-flash",
+  "effort": "max",
+  "case": "B_central_overclaim",
+  "arm": "main",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [],
+  "thread_ids": [
+    "01a1238a-ac23-7a31-8a20-7ad0381042c2"
+  ],
+  "seconds": 98.98,
+  "prompt_sha256": "74037821101e14ab982f434150d73f138e60462dbbb7808a3a9cd7055aab2d58",
+  "draft_sha256": "4b85f99454c21e1d08617235754c53f35b6c85652305bc8fe047612865b37655",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/academic-writing.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 13138,
+      "cached_input_tokens": 7168,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4438,
+      "reasoning_output_tokens": 3341
+    }
+  ]
+}

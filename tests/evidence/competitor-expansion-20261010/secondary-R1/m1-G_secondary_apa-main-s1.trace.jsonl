@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12393-4248-7cb1-96af-bc0c66e98ea1"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "自我效能信念不能直接等同于实际能力，因为二者分处不同的概念层面。Artino（2012；AR12）借用 Bandura 的定义，将自我效能表述为对自身执行有关任务能力的信念；这一表述指向的是个体关于能力的信念，而非实际能力本身。因此，自我效能可以用来说明个体相信自己能做什么，但它未必与实际具备的能力相吻合，在概念上不应被当作实际能力的等价物。\n\n参考文献\n\nArtino, A. R., Jr. (2012). Academic self-efficacy: from educational theory to instructional practice. *Perspectives on Medical Education*, *1*, 76–85. https://doi.org/10.1007/s40037-012-0012-5"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14112, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 4562, "reasoning_output_tokens": 0}}

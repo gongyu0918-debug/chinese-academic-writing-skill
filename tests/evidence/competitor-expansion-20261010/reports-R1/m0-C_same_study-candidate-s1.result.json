@@ -1,0 +1,32 @@
+{
+  "model": "alibaba-token-plan-responses/qwen3.8-flash",
+  "effort": "max",
+  "case": "C_same_study",
+  "arm": "candidate",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [
+    "unexpected_tool_use"
+  ],
+  "thread_ids": [
+    "01a1238b-6f10-76f2-8249-0f5098c909eb"
+  ],
+  "seconds": 109.67,
+  "prompt_sha256": "e2468127fcea462be87a2130180770c90d52905bcadff71451b061f9a6b019ea",
+  "draft_sha256": "8c4a9f7798a95edf1b03d854fdae19e97775b45b6b13b8860ccd92a2b0bb522a",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/academic-literature-review.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 29443,
+      "cached_input_tokens": 20736,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2354,
+      "reasoning_output_tokens": 2166
+    }
+  ]
+}

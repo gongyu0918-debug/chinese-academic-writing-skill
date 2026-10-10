@@ -1,0 +1,18 @@
+{
+  "G_secondary_apa-m0": {
+    "X": "main",
+    "Y": "candidate"
+  },
+  "G_secondary_apa-m1": {
+    "X": "candidate",
+    "Y": "main"
+  },
+  "H_secondary_body_only-m0": {
+    "X": "candidate",
+    "Y": "main"
+  },
+  "H_secondary_body_only-m1": {
+    "X": "main",
+    "Y": "candidate"
+  }
+}

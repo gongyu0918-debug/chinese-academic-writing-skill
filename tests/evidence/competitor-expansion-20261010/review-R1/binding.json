@@ -1,0 +1,33 @@
+{
+  "baseline_commit": "c60c589908d1e83dba2bc4beb800b816e391f732",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\competitor-expansion-20261010\\review-R1-bsfi_cny",
+  "spec": {
+    "A_narrow_history": {
+      "leaf": "academic-writing",
+      "style": false,
+      "requests": [
+        "只审课程论文中一个结果段，不改稿，不联网；按位置、严重度、问题、依据、修改建议给真实问题，没有问题可以说明。本文任务仅比较1934与1935年一份地方校刊中活动名称，不推论全国教育制度、政策效果或活动规模。已读材料为校刊两年目录，1934年目录用“读书会”，1935年目录用“读书讨论会”。目标段：“两年目录所用活动名称不同，1934年为‘读书会’，1935年为‘读书讨论会’[D1][D2]。这一名称变化只能反映所读两份目录的表述，尚不能说明实际活动形式是否变化。”文中未报告访谈、计量分析与全国样本；其他章节不在本轮范围。"
+      ]
+    },
+    "B_central_overclaim": {
+      "leaf": "academic-writing",
+      "style": false,
+      "requests": [
+        "只审硕士论文的讨论段，不改稿，不联网；按位置、严重度、问题、依据、修改建议输出。给定记录O3来自一个服务点：5次办事中4次由工作人员代为操作，1次由当事人独立操作；只记录当次操作主体，没有前后能力测量。目标段：“上述观察已证明该服务点居民长期数字能力显著提升[O3]。”其他章节未提供。请围绕这个中心判断审查。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "a6853c2d05779c36360800189a1a3be10553405af85dbffce4e0a0d0d7565816"
+}

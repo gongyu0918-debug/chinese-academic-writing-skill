@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1238a-ab3c-7761-9082-e64cf89cc583"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "S2采用事先设定的等效界值（-3至3分）进行对应的双单侧等效检验。结果显示，两组平均分差为0.4分，90%置信区间为-1.1至1.9分，该区间完整落入预设界值范围内，因而在本样本、本指标与预设界值范围内满足等效判据。该结果限于上述分析范围，不表明两组在更大范围或所有情境下完全相同。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14388, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 878, "reasoning_output_tokens": 0}}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1238f-f3e7-74e0-8307-a2c520c08db3"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "自我效能信念与实际能力不能直接等同。AR12（Artino, 2012）介绍Bandura的界定时，把自我效能理解为个体对自身能否执行完成某项任务所需行动能力的信念，而不是执行能力本身。这一定义区分了两个层面：一个是个体关于“自己能否完成这类任务”的判断，另一个是完成任务实际具备的能力。把前者直接当作后者，就会把自我评估的强度当作实际水平的证据。因此，自我效能可以在分析中作为信念变量使用，但不能由它直接判定个体的实际能力。\n\n**参考文献（实际使用）**  \nArtino, A. R., Jr. (2012). *Academic self-efficacy: From educational theory to instructional practice*. *Perspectives on Medical Education, 1*, 76–85. https://doi.org/10.1007/s40037-012-0012-5"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14170, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 3264, "reasoning_output_tokens": 0}}

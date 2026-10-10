@@ -1,0 +1,82 @@
+{
+  "raw_source_sha256": "5eb4e5f7dd8d7f43a2d08a05b880db5685bd22afc6e1b1c2d9c73385e0a5a523",
+  "scope": "Routing/model fields only; full instruction templates not republished",
+  "models": [
+    {
+      "slug": "ollama-cloud/glm-5.3-flash",
+      "display_name": "ollama-cloud/glm-5.3-flash",
+      "description": "Routed via opencodex → ollama-cloud (ollama).",
+      "default_reasoning_level": "medium",
+      "supported_reasoning_levels": [
+        {
+          "effort": "low",
+          "description": "Fast responses with lighter reasoning"
+        },
+        {
+          "effort": "medium",
+          "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+          "effort": "high",
+          "description": "Greater reasoning depth for complex problems"
+        },
+        {
+          "effort": "xhigh",
+          "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+          "effort": "max",
+          "description": "Maximum reasoning depth for the hardest problems"
+        },
+        {
+          "effort": "ultra",
+          "description": "Maximum reasoning with automatic task delegation"
+        }
+      ],
+      "shell_type": "unified_exec",
+      "supports_reasoning_summaries": false,
+      "context_window": 350000,
+      "max_context_window": 350000,
+      "input_modalities": [
+        "text",
+        "image"
+      ]
+    },
+    {
+      "slug": "alibaba-token-plan-responses/qwen3.8-flash",
+      "display_name": "alibaba-token-plan-responses/qwen3.8-flash",
+      "description": "Routed via opencodex → alibaba-token-plan-responses (alibaba-token-plan-responses).",
+      "default_reasoning_level": "xhigh",
+      "supported_reasoning_levels": [
+        {
+          "effort": "low",
+          "description": "Fast responses with lighter reasoning"
+        },
+        {
+          "effort": "medium",
+          "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+          "effort": "xhigh",
+          "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+          "effort": "max",
+          "description": "Maximum reasoning depth for the hardest problems"
+        },
+        {
+          "effort": "ultra",
+          "description": "Maximum reasoning with automatic task delegation"
+        }
+      ],
+      "shell_type": "unified_exec",
+      "supports_reasoning_summaries": false,
+      "context_window": 983616,
+      "max_context_window": 983616,
+      "input_modalities": [
+        "text",
+        "image"
+      ]
+    }
+  ]
+}

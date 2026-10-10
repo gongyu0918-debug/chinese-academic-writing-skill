@@ -1,0 +1,18 @@
+{
+  "E_nonsignificant-m0": {
+    "X": "main",
+    "Y": "candidate"
+  },
+  "E_nonsignificant-m1": {
+    "X": "candidate",
+    "Y": "main"
+  },
+  "F_reported_equivalence-m0": {
+    "X": "candidate",
+    "Y": "main"
+  },
+  "F_reported_equivalence-m1": {
+    "X": "main",
+    "Y": "candidate"
+  }
+}

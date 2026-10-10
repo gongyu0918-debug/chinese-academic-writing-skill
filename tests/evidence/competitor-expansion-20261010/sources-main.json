@@ -1,0 +1,6 @@
+[
+  {"id":"kdense-literature","repo":"K-Dense-AI/scientific-agent-skills","path":"skills/literature-review/SKILL.md"},
+  {"id":"kdense-peer-review","repo":"K-Dense-AI/scientific-agent-skills","path":"skills/peer-review/SKILL.md"},
+  {"id":"kdense-citations","repo":"K-Dense-AI/scientific-agent-skills","path":"skills/citation-management/SKILL.md"},
+  {"id":"marazii-peer-review","repo":"Marazii/research-co-pilot","path":"skills/peer-review/SKILL.md"}
+]

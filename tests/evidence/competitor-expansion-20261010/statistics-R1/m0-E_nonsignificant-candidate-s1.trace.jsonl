@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1238b-216d-7270-9d68-16c32f52929c"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "两组问卷平均分相差0.8分，95%置信区间为-1.2至2.8分，双侧差异检验p=0.43，本次检验未达到显著水平[S1]。由于未开展等效或非劣分析，该结果不支持两组完全相同、该安排没有任何效应或两种办法已经等效的判断[S1]。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 13248, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 1857, "reasoning_output_tokens": 1781}}

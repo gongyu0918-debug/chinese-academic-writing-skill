@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1238a-ab35-7633-8351-6276c299c4b2"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "两组平均分差为0.8分，95%置信区间为-1.2至2.8分，双侧差异检验p=0.43，未达到显著水平[S1]。这一结果不支持两组得分之间存在可检出的差异，但也不能把两组说成完全相同或把该区间的范围读作零效应，因为区间本身同时覆盖负值与正值，两组间的差异方向与幅度仍未确定[S1]。本次检验未开展等效性或非劣效性分析，因此现有结果不足以证明两种办法等效[S1]。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 13180, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 1420, "reasoning_output_tokens": 1300}}

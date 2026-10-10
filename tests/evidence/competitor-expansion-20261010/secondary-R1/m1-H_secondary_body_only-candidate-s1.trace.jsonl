@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1238f-f3a1-7b40-a1d6-afc07e0fe2a2"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "Artino（2012）借Bandura（1986）的定义讨论指出，自我效能是对自身执行有关任务能力的信念[AR12]。按这一界定，这种信念不必等同于实际能力[AR12]。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 13533, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 4974, "reasoning_output_tokens": 0}}

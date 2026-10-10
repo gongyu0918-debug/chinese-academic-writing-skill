@@ -1,0 +1,30 @@
+{
+  "model": "ollama-cloud/glm-5.3-flash",
+  "effort": "max",
+  "case": "B_central_overclaim",
+  "arm": "candidate",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [],
+  "thread_ids": [
+    "01a1238a-abc7-7102-baf6-8df6630e9b0a"
+  ],
+  "seconds": 25.27,
+  "prompt_sha256": "fb1acd11d0edbc83b2977477c7253e92c35311e33c0a434c9d8d6935d523bf7d",
+  "draft_sha256": "b6481d54b1e27e8dbe59a135815c039f155f02f4f5859d1e5070de754751e6f7",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/academic-writing.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 13684,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1945,
+      "reasoning_output_tokens": 0
+    }
+  ]
+}

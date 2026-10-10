@@ -1,0 +1,9 @@
+[
+  {"id":"xiao-proposal","repo":"XiaoJie4096/thesis-workflow-cn","path":"skills/thesis-workflow-cn/modules/thesis-proposal-cn/references/proposal-writing-rules.md"},
+  {"id":"xiao-review","repo":"XiaoJie4096/thesis-workflow-cn","path":"skills/thesis-workflow-cn/modules/literature-review-cn/references/review-writing-rules.md"},
+  {"id":"yanlin-writing","repo":"yanlin-cheng/skill-thesis-writer","path":"SKILL.md"},
+  {"id":"yanlin-social","repo":"yanlin-cheng/skill-thesis-writer","path":"assets/templates/social_science_thesis.md"},
+  {"id":"renzo-standardizer","repo":"renzo1031/thesis-skills","path":"thesis-standardizer/SKILL.md"},
+  {"id":"renzo-style","repo":"renzo1031/thesis-skills","path":"thesis-standardizer/references/aigc-style-governance.md"},
+  {"id":"renzo-gates","repo":"renzo1031/thesis-skills","path":"thesis-standardizer/references/quality-gates.md"}
+]

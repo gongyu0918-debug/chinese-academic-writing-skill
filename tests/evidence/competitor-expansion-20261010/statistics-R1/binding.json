@@ -1,0 +1,33 @@
+{
+  "baseline_commit": "c60c589908d1e83dba2bc4beb800b816e391f732",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\competitor-expansion-20261010\\statistics-R1-ugh27295",
+  "spec": {
+    "E_nonsignificant": {
+      "leaf": "academic-writing",
+      "style": false,
+      "requests": [
+        "据作者提供的分析摘要修改论文结果段，只交改稿，不联网，不重新分析。摘要S1：问卷两组平均分差0.8分，95%置信区间为-1.2至2.8分，双侧差异检验p=0.43；作者的统计结论为本次检验未达到显著水平，没有开展等效或非劣分析。底稿：“两组完全相同，该安排没有任何效应，两种办法已经证明等效[S1]。”保留数字与来源ID，仅准确呈现作者已给结论。"
+      ]
+    },
+    "F_reported_equivalence": {
+      "leaf": "academic-writing",
+      "style": false,
+      "requests": [
+        "据作者已提供的分析摘要起草论文结果段，只交正文，不联网，不重算或认证统计有效性。S2分析摘要：事先设定等效界值为-3至3分，使用对应的双单侧等效检验；平均分差0.4分，90%置信区间为-1.1至1.9分；作者明确报告“在本样本、本指标、预设界值内满足等效判据”。这些是已完成分析，不是拟安排。保留数字、S2与结论范围，不能把有限等效写成完全相同或所有情境无效，也不要仅因没有显著差异就一律删去作者已经报告的等效结论。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "a6853c2d05779c36360800189a1a3be10553405af85dbffce4e0a0d0d7565816"
+}

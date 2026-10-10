@@ -1,0 +1,82 @@
+[
+  {
+    "file_name": "rollout-2026-10-10T10-00-52-01a1238a-aaf9-7910-8f9b-5e01f2515738.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1238a-aaf9-7910-8f9b-5e01f2515738"
+  },
+  {
+    "file_name": "rollout-2026-10-10T10-00-53-01a1238a-ab34-73a0-8683-d31c047d0082.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1238a-ab34-73a0-8683-d31c047d0082"
+  },
+  {
+    "file_name": "rollout-2026-10-10T10-00-53-01a1238a-ab35-7633-8351-6276c299c4b2.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1238a-ab35-7633-8351-6276c299c4b2"
+  },
+  {
+    "file_name": "rollout-2026-10-10T10-00-53-01a1238a-ab3c-7761-9082-e64cf89cc583.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1238a-ab3c-7761-9082-e64cf89cc583"
+  },
+  {
+    "file_name": "rollout-2026-10-10T10-01-02-01a1238a-d16f-76f2-a3c4-8f33866ed3e5.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1238a-d16f-76f2-a3c4-8f33866ed3e5"
+  },
+  {
+    "file_name": "rollout-2026-10-10T10-01-11-01a1238a-f322-7752-befe-2eb0b2f2cad8.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1238a-f322-7752-befe-2eb0b2f2cad8"
+  },
+  {
+    "file_name": "rollout-2026-10-10T10-01-23-01a1238b-216d-7270-9d68-16c32f52929c.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1238b-216d-7270-9d68-16c32f52929c"
+  },
+  {
+    "file_name": "rollout-2026-10-10T10-02-06-01a1238b-c951-74f3-a472-d20759fcaece.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a1238b-c951-74f3-a472-d20759fcaece"
+  }
+]
