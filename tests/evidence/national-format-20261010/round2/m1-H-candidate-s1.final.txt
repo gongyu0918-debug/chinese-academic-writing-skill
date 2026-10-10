@@ -1,0 +1,3 @@
+Abstract: The author plans to study the library arrival experience after seat reservation. Eleven feedback records have been saved and have not yet been classified. After obtaining permission, the author plans to interview four users and organize the arrival experience by drawing on the feedback records. Interviews have not been conducted, and neither reservation success rate nor arrival rate has been measured. A descriptive analysis is expected; at this stage, the study will not propose conclusions on improving effectiveness.
+
+Keywords: seat reservation; arrival experience; feedback records

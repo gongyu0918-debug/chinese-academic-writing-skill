@@ -1,0 +1,64 @@
+{
+  "baseline_commit": "718887ad7dd08b26fe3a49fcd7578633746b4dc6",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\academic-rule-format-audit\\round1-gvrqgqnx",
+  "spec": {
+    "A": {
+      "leaf": "academic-writing",
+      "format": true,
+      "style": false,
+      "requests": [
+        "请只审以下中文硕士学位论文的中英文摘要与关键词，不改稿，给具体位置、问题与建议。学校表格规定只填两个关键词。中文摘要：本研究考察某校图书馆预约系统的使用情况。研究采用使用日志与半结构化访谈两类材料，整理了46份使用日志，并访谈了9名使用者。日志显示，部分使用者在预约确认后未按时到场；访谈中，受访者提到预约提示不够醒目和临时安排变化两类情况。本文据此分析预约记录与使用者叙述的对应关系。材料未直接测量提示信息对到场行为的影响，不能将未到场归因为提示不醒目。研究提出对预约确认和临近时间提醒作进一步比较的建议，但该建议尚未经干预验证。研究范围限于该校现有材料，不推及其他学校。关键词：预约行为；使用日志。English abstract: This study examines the use of a library reservation system at one school. It draws on 46 usage logs and semi-structured interviews with nine users. Some confirmed reservations were not followed by attendance. Interviewees mentioned inconspicuous reminders and changes to personal schedules. The analysis compares reservation records with users' accounts. The materials do not directly measure the effects of reminders on attendance, and non-attendance cannot be attributed to inconspicuous reminders. Further comparison of reservation confirmations and reminders near the reserved time is proposed; this proposal has not been tested through an intervention. The findings are limited to the materials from this school. Keywords: Reservation behavior; Usage logs."
+      ]
+    },
+    "B": {
+      "leaf": "citation-research",
+      "format": true,
+      "style": false,
+      "requests": [
+        "中文论文沿用著者—出版年制，请按通用国标整理下面的参考文献表，只交参考文献。正文先引Stieg（1981），后引Crane（1972）。下面是从原文书目信息摘录的两个条目；只做离线格式整理，不核验文献观点或联网：Mary F. Stieg；The information needs of historians；The Library Quarterly；1981；volume 51；issue 4；pages 549–560。Diana Crane；Invisible colleges；Chicago；University of Chicago Press；1972。现稿条目为：[1] Stieg M F. The information needs of historians[J]. The Library Quarterly, 1981, 51(4): 549-560. [2] Crane D. Invisible colleges[M]. Chicago: University of Chicago Press, 1972."
+      ]
+    },
+    "C": {
+      "leaf": "academic-proposal",
+      "format": true,
+      "requests": [
+        "把下面中文开题报告摘要翻成可直接使用的英文，只输出英文摘要和关键词。校内栏位为Abstract和Keywords，关键词用分号。摘要：本研究拟考察校园打印服务的使用体验。作者已整理7份问题记录，尚未实施访谈。研究计划在获得许可后访谈6名使用者，围绕设备位置、排队经历与操作反馈整理材料；分析类别将在阅读记录与访谈材料后确定。目前没有测量服务效率，也没有检验不同使用者的差异。预期形成一份使用体验的描述性分析。关键词：校园打印；使用体验；访谈计划。不要替作者补方法、审批状态或研究结果。"
+      ]
+    },
+    "D": {
+      "leaf": "academic-writing",
+      "format": true,
+      "requests": [
+        "这是中文硕士论文中的一小段，首次出现二维码技术术语。请只改这段的文字格式，英文直接引语、公式和URL原样保留；只输出改后段落。材料给定：QR指Quick Response。原段：日志中记录了31次通过二维码（QR）打开预约页的操作。说明页写道：“Use QR codes, not a shortened link.”公式为T=a/b，网址为https://example.org/reserve?x=1&y=QR。这里只说明访问方式，未测试访问速度。"
+      ]
+    },
+    "E": {
+      "leaf": "academic-writing",
+      "format": false,
+      "requests": [
+        "只润色下面课程论文段落，减少重复，保留全部数字和未决状态，只输出改后段落。原段：本次整理了29份登记记录，其中17份写明具体办理时间，12份只写日期。由于记录粒度不同，本文不计算平均办理时长，也不据此比较快慢。登记记录可以说明时间填写方式存在差异，可以说明差异，但目前还不能确定差异的原因。下一节讨论填写项目的一致性，不讨论办理速度。"
+      ]
+    },
+    "F": {
+      "leaf": "academic-proposal",
+      "format": true,
+      "style": false,
+      "requests": [
+        "只审下面开题报告栏目安排，不改稿。学校样表栏目依次为研究问题、已有材料、拟开展工作、预期结果；未要求独立摘要或原创性声明。研究问题：校园自助打印设备的操作反馈如何呈现？已有材料：作者已保存8份操作反馈记录，尚未分类。拟开展工作：获得许可后访谈5名使用者，再对照记录作主题整理。预期结果：形成一份使用体验描述，不预设问题类别和效果。请核对结构与研究状态，不增加未提供的方案。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "47b63d01a5cd86f111768c13850ba4762cc0690ff8c60c971c7db1d77d679aaf"
+}

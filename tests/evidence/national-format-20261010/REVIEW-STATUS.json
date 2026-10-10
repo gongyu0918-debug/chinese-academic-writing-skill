@@ -1,0 +1,98 @@
+[
+  {
+    "agent_id": "01a124c7-d9c7-7111-a401-66ba4b26ab3d",
+    "name": "Harvey",
+    "task": "Old baseline priority audit",
+    "covered_pairs": 0,
+    "status": "completed",
+    "closed": true,
+    "model_context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "final_report_received": true,
+    "limitation": "No final candidate audit assigned"
+  },
+  {
+    "agent_id": "01a124d6-8e0b-7900-a12f-4d60e977ec95",
+    "name": "Pasteur",
+    "task": "R1 blind pairs",
+    "covered_pairs": 11,
+    "status": "completed",
+    "closed": true,
+    "model_context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "final_report_received": true,
+    "limitation": ""
+  },
+  {
+    "agent_id": "01a124d9-8bba-7880-b6a7-14f22517e0fb",
+    "name": "Curie",
+    "task": "R2 blind pairs",
+    "covered_pairs": 6,
+    "status": "completed",
+    "closed": true,
+    "model_context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "final_report_received": true,
+    "limitation": ""
+  },
+  {
+    "agent_id": "01a124db-242a-7d70-815b-06be9fc61903",
+    "name": "Bohr",
+    "task": "R3 blind pairs and final rule audit",
+    "covered_pairs": 4,
+    "status": "partial",
+    "closed": true,
+    "model_context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "final_report_received": true,
+    "limitation": "All four pairs covered; three final rules not read"
+  },
+  {
+    "agent_id": "01a124e7-f70b-7692-9570-c4d804cd0dc9",
+    "name": "Helmholtz",
+    "task": "Final three rules and source notes",
+    "covered_pairs": 0,
+    "status": "incomplete_closed",
+    "closed": true,
+    "model_context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "final_report_received": false,
+    "limitation": "Closed while running; no final report returned; coverage not inferred from tool calls"
+  },
+  {
+    "agent_id": "01a124ea-3152-7962-8495-5ceaef616eed",
+    "name": "Mendel",
+    "task": "R5 blind pairs",
+    "covered_pairs": 4,
+    "status": "completed",
+    "closed": true,
+    "model_context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "final_report_received": true,
+    "limitation": ""
+  }
+]

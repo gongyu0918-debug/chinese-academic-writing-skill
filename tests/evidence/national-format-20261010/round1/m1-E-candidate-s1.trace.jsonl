@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a124d3-fa83-7f50-96a4-8594f1a4e7de"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "本次整理了29份登记记录，其中17份写明具体办理时间，12份只写日期。因记录粒度不同，本文不计算平均办理时长，也不据此比较快慢。这些记录可以反映时间填写方式存在差异，差异原因尚不能确定。下一节讨论填写项目的一致性，不涉及办理速度。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16074, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 461, "reasoning_output_tokens": 0}}

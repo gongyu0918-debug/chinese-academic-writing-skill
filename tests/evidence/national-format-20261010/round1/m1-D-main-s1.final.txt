@@ -1,0 +1,1 @@
+日志中记录了31次通过二维码（QR，Quick Response）打开预约页的操作。说明页写道：“Use QR codes, not a shortened link.”公式为T=a/b，网址为https://example.org/reserve?x=1&y=QR。这里只说明访问方式，未测试访问速度。

@@ -1,0 +1,76 @@
+{
+  "baseline_commit": "718887ad7dd08b26fe3a49fcd7578633746b4dc6",
+  "date_bjt": "2026-10-10",
+  "rounds": [
+    {
+      "round": "round1",
+      "calls": 24,
+      "execution_invalid": [
+        {
+          "model": "alibaba-token-plan-responses/qwen3.8-flash",
+          "case": "A",
+          "arm": "candidate",
+          "thread_ids": [
+            "01a124d0-38a8-7b12-9616-c748652ece50"
+          ],
+          "invalid": [
+            "unexpected_tool_use"
+          ]
+        }
+      ],
+      "valid_pairs": 11,
+      "quality_pass": null
+    },
+    {
+      "round": "round2",
+      "calls": 12,
+      "execution_invalid": [],
+      "valid_pairs": 6,
+      "quality_pass": null
+    },
+    {
+      "round": "round3",
+      "calls": 8,
+      "execution_invalid": [],
+      "valid_pairs": 4,
+      "quality_pass": null
+    },
+    {
+      "round": "round4",
+      "calls": 4,
+      "execution_invalid": [
+        {
+          "model": "alibaba-token-plan-responses/qwen3.8-flash",
+          "case": "L",
+          "arm": "main",
+          "thread_ids": [
+            "01a124dc-2292-7651-8898-38b3b416669d"
+          ],
+          "invalid": [
+            "unexpected_tool_use"
+          ]
+        }
+      ],
+      "valid_pairs": 1,
+      "quality_pass": null
+    },
+    {
+      "round": "round5-control",
+      "calls": 8,
+      "execution_invalid": [],
+      "valid_pairs": 4,
+      "quality_pass": null
+    }
+  ],
+  "calls": 56,
+  "execution_invalid": 2,
+  "valid_pairs": 26,
+  "quality_pass": null,
+  "limits": [
+    "Constructed excerpt tasks, not full theses",
+    "Inline frozen rules, not autonomous loading",
+    "Native reviewers share one inherited model",
+    "No Word/PDF manuscript layout acceptance"
+  ],
+  "trace_archive_policy": "Visible agent messages and execution metadata; non-message tool arguments and outputs removed"
+}

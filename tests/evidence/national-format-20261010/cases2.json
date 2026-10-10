@@ -1,0 +1,5 @@
+{
+  "G": {"leaf":"citation-research","format":true,"style":false,"requests":["请为中文论文按国标著者—出版年制整理以下条目，只交参考文献表，不联网，不核对其观点。正文先引Dowler，再引Baker，不改正文。已给书目信息：Dowler L；The research university's dilemma: resource sharing and research in a transinstitutional environment；Journal of Library Administration；1995；21；1/2；5-26。Baker S K, Jackson M E；The future of resource sharing；New York；The Haworth Press；1995。条目元数据按所给使用，不补全作者名字、DOI或链接。"]},
+  "H": {"leaf":"academic-proposal","format":true,"requests":["请将下面中文开题摘要译为英语，仅交Abstract和Keywords。校表允许一段式摘要，关键词用分号。摘要：作者拟研究图书馆座位预约后的到场体验，已保存11条反馈记录，尚未分类。计划在获得许可后访谈4名使用者，结合反馈记录整理到场体验。没有开展访谈，也没有测量预约成功率或到场率。预期形成一份描述性分析，暂不提出提升效果的结论。关键词：座位预约；到场体验；反馈记录。保留已有、计划和未测量状态，不新增研究安排。"]},
+  "I": {"leaf":"academic-writing","format":true,"style":false,"requests":["这是中文硕士学位论文的关键词行。学校旧模板规定两个词。本轮只审关键词数量及中英对应，不审摘要篇幅、不改稿，也不增补内容。中文：数字档案；访问记录。English: digital archives; access logs。请按通用国家标准给出简短的具体问题和修改方向。"]}
+}

@@ -1,0 +1,12 @@
+{"type": "thread.started", "thread_id": "01a124dc-2292-7651-8898-38b3b416669d"}
+{"type": "turn.started"}
+{"type": "item.started", "item": {"id": "msg_edf9e38c-082f-4651-b5e9-647c2944c621", "type": "web_search"}}
+{"type": "item.completed", "item": {"id": "msg_edf9e38c-082f-4651-b5e9-647c2944c621", "type": "web_search"}}
+{"type": "item.started", "item": {"id": "msg_985fea14-6f52-4ffe-bca9-0ddfbd92a1f1", "type": "web_search"}}
+{"type": "item.completed", "item": {"id": "msg_985fea14-6f52-4ffe-bca9-0ddfbd92a1f1", "type": "web_search"}}
+{"type": "item.started", "item": {"id": "msg_14bbb214-48d5-4d11-956c-d6efa81a52e9", "type": "web_search"}}
+{"type": "item.completed", "item": {"id": "msg_14bbb214-48d5-4d11-956c-d6efa81a52e9", "type": "web_search"}}
+{"type": "item.started", "item": {"id": "msg_811f7e34-d25c-4423-b722-d1ee9ae7ba95", "type": "web_search"}}
+{"type": "item.completed", "item": {"id": "msg_811f7e34-d25c-4423-b722-d1ee9ae7ba95", "type": "web_search"}}
+{"type": "item.completed", "item": {"id": "item_10", "type": "agent_message", "text": "张群, 程志杰, 王志飞, 2024. 惯性增强动力吸振器-浮置板轨道低频减振性能研究[J]. 铁道学报, 46(8): 102-111."}}
+{"type": "turn.completed", "usage": {"input_tokens": 131360, "cached_input_tokens": 94976, "cache_write_input_tokens": 0, "output_tokens": 12338, "reasoning_output_tokens": 11634}}

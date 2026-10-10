@@ -1,0 +1,31 @@
+{
+  "model": "ollama-cloud/glm-5.3-flash",
+  "effort": "max",
+  "case": "G",
+  "arm": "main",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [],
+  "thread_ids": [
+    "01a124d6-6f58-74e3-af12-f8dd75bc0e0c"
+  ],
+  "seconds": 27.52,
+  "prompt_sha256": "67a646b9d95c4054d06239095ce2d97e8fe2abe38221f08680b9f55ba82a2598",
+  "draft_sha256": "bbf54eed10327f8ba71a6f37ef06181da7ccd0ccbbb3ed9e46365c271e7fb126",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/citation-research.md",
+    "references/academic-text-format.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 15970,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 3445,
+      "reasoning_output_tokens": 0
+    }
+  ]
+}

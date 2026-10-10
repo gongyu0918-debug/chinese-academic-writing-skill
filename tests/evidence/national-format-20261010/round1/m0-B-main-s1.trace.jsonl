@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a124ce-1fc6-7ab2-b200-762c948ee7ea"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "Crane D, 1972. Invisible colleges[M]. Chicago: University of Chicago Press.\n\nStieg M F, 1981. The information needs of historians[J]. The Library Quarterly, 51(4): 549-560."}}
+{"type": "turn.completed", "usage": {"input_tokens": 14911, "cached_input_tokens": 1024, "cache_write_input_tokens": 0, "output_tokens": 10271, "reasoning_output_tokens": 10209}}

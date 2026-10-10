@@ -1,0 +1,14 @@
+[
+  {
+    "task": "ollama-cloud/glm-5.3-flash-L",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m1-L-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-L",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m1-L-main-s1"
+  }
+]

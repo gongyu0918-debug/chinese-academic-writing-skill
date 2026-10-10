@@ -1,0 +1,134 @@
+[
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-B",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m0-B-candidate-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-B",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m0-B-main-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-C",
+    "label": "X",
+    "arm": "main",
+    "stem": "m0-C-main-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-C",
+    "label": "Y",
+    "arm": "candidate",
+    "stem": "m0-C-candidate-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-D",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m0-D-candidate-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-D",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m0-D-main-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-E",
+    "label": "X",
+    "arm": "main",
+    "stem": "m0-E-main-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-E",
+    "label": "Y",
+    "arm": "candidate",
+    "stem": "m0-E-candidate-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-F",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m0-F-candidate-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-F",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m0-F-main-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-A",
+    "label": "X",
+    "arm": "main",
+    "stem": "m1-A-main-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-A",
+    "label": "Y",
+    "arm": "candidate",
+    "stem": "m1-A-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-B",
+    "label": "X",
+    "arm": "main",
+    "stem": "m1-B-main-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-B",
+    "label": "Y",
+    "arm": "candidate",
+    "stem": "m1-B-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-C",
+    "label": "X",
+    "arm": "main",
+    "stem": "m1-C-main-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-C",
+    "label": "Y",
+    "arm": "candidate",
+    "stem": "m1-C-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-D",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m1-D-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-D",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m1-D-main-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-E",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m1-E-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-E",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m1-E-main-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-F",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m1-F-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-F",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m1-F-main-s1"
+  }
+]

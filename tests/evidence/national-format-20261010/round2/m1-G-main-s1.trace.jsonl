@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a124d6-6f58-74e3-af12-f8dd75bc0e0c"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "参考文献\n\nBAKER S K, JACKSON M E, 1995. The future of resource sharing[M]. New York: The Haworth Press.\n\nDOWLER L, 1995. The research university's dilemma: resource sharing and research in a transinstitutional environment[J]. Journal of Library Administration, 21(1/2): 5-26."}}
+{"type": "turn.completed", "usage": {"input_tokens": 15970, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 3445, "reasoning_output_tokens": 0}}

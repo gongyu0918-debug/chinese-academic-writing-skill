@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a124d9-009a-7300-a3c4-7ebb5a6cede1"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "参考文献\n\n李晓东, 张庆红, 叶瑾琳. 气候学研究的若干理论问题[J]. 北京大学学报: 自然科学版, 1999, 35(1): 101-106.\n\n杨宗英. 电子图书馆的现实模型[J]. 中国图书馆学报, 1996, 22(2): 24-29.\n\n两条均按著者—出版年制著录，未加顺序编号；排列上李晓东在前、杨宗英在后，与正文引用先后一致。子刊名按 GB/T 7714 惯例以冒号引出，其余字段一律按已给元数据著录，未增补未知项。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14855, "cached_input_tokens": 7168, "cache_write_input_tokens": 0, "output_tokens": 4868, "reasoning_output_tokens": 4706}}

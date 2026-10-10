@@ -1,0 +1,415 @@
+{
+  "checks": [
+    {
+      "round": "round1",
+      "stem": "m0-A-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m0-A-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m0-B-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m0-B-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m0-C-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m0-C-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m0-D-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m0-D-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m0-E-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m0-E-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m0-F-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m0-F-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-A-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-A-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-B-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-B-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-C-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-C-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-D-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-D-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-E-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-E-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-F-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round1",
+      "stem": "m1-F-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m0-G-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m0-G-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m0-H-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m0-H-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m0-I-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m0-I-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m1-G-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m1-G-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m1-H-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m1-H-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m1-I-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round2",
+      "stem": "m1-I-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round3",
+      "stem": "m0-J-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round3",
+      "stem": "m0-J-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round3",
+      "stem": "m0-K-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round3",
+      "stem": "m0-K-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round3",
+      "stem": "m1-J-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round3",
+      "stem": "m1-J-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round3",
+      "stem": "m1-K-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round3",
+      "stem": "m1-K-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round4",
+      "stem": "m0-L-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round4",
+      "stem": "m0-L-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round4",
+      "stem": "m1-L-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round4",
+      "stem": "m1-L-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round5-control",
+      "stem": "m0-M-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round5-control",
+      "stem": "m0-M-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round5-control",
+      "stem": "m0-N-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round5-control",
+      "stem": "m0-N-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round5-control",
+      "stem": "m1-M-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round5-control",
+      "stem": "m1-M-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round5-control",
+      "stem": "m1-N-candidate-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    },
+    {
+      "round": "round5-control",
+      "stem": "m1-N-main-s1",
+      "prompt_hash_match": true,
+      "draft_hash_match": true
+    }
+  ],
+  "runtime_parity": [
+    {
+      "path": "agents/openai.yaml",
+      "frozen_hash": "6aa3fabd7184401be8c09f0e235b78ea066ccd6837929aa57b742b800856ed13",
+      "worktree_hash": "6aa3fabd7184401be8c09f0e235b78ea066ccd6837929aa57b742b800856ed13"
+    },
+    {
+      "path": "LICENSE.md",
+      "frozen_hash": "7182fd4c6281db93871ce4941eb4443e2230a4e33680a3b7f99510bcf0a9d023",
+      "worktree_hash": "7182fd4c6281db93871ce4941eb4443e2230a4e33680a3b7f99510bcf0a9d023"
+    },
+    {
+      "path": "references/academic-literature-review.md",
+      "frozen_hash": "e6c58dd737900b87f733325f449f533a3367d2f23558fa27a1708fd5f8801c68",
+      "worktree_hash": "e6c58dd737900b87f733325f449f533a3367d2f23558fa27a1708fd5f8801c68"
+    },
+    {
+      "path": "references/academic-proposal.md",
+      "frozen_hash": "e8e677b36580d4ca1659a21f406314cd9344f9b113f66a7d01e33a986e13cda3",
+      "worktree_hash": "e8e677b36580d4ca1659a21f406314cd9344f9b113f66a7d01e33a986e13cda3"
+    },
+    {
+      "path": "references/academic-text-format.md",
+      "frozen_hash": "a430adc5d2348842feee98109ba3b5e75fef0289ff2c74bbc6a0cb92ed978adc",
+      "worktree_hash": "a430adc5d2348842feee98109ba3b5e75fef0289ff2c74bbc6a0cb92ed978adc"
+    },
+    {
+      "path": "references/academic-writing.md",
+      "frozen_hash": "bf4660d4d19327321446b3a0d63acf07ebe72c99aaa8ed945d1f367985650a04",
+      "worktree_hash": "bf4660d4d19327321446b3a0d63acf07ebe72c99aaa8ed945d1f367985650a04"
+    },
+    {
+      "path": "references/anti-ai-writing.md",
+      "frozen_hash": "253ef7ac1436dfd8530940f73424d606c24095e7a25fdad26684e2348200d5aa",
+      "worktree_hash": "253ef7ac1436dfd8530940f73424d606c24095e7a25fdad26684e2348200d5aa"
+    },
+    {
+      "path": "references/citation-research.md",
+      "frozen_hash": "7e59839185db5373e4ee8eac598b92fdcf9bafe8cf627ded919d483c4935a0a2",
+      "worktree_hash": "7e59839185db5373e4ee8eac598b92fdcf9bafe8cf627ded919d483c4935a0a2"
+    },
+    {
+      "path": "references/long-form-consistency.md",
+      "frozen_hash": "c0475623d91ddbd829eb8a8d08197878a5d6b0d5587f5e18320caf826f7c2530",
+      "worktree_hash": "c0475623d91ddbd829eb8a8d08197878a5d6b0d5587f5e18320caf826f7c2530"
+    },
+    {
+      "path": "scripts/citation_audit.py",
+      "frozen_hash": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "worktree_hash": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c"
+    },
+    {
+      "path": "scripts/manuscript_audit.py",
+      "frozen_hash": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "worktree_hash": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0"
+    },
+    {
+      "path": "scripts/prose_lint.py",
+      "frozen_hash": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+      "worktree_hash": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+    },
+    {
+      "path": "SKILL.md",
+      "frozen_hash": "ab2f5cad13b1ecbfb34d798ad384ac5bdfb0e1b7e51ee78072bba7af5d3a04ae",
+      "worktree_hash": "ab2f5cad13b1ecbfb34d798ad384ac5bdfb0e1b7e51ee78072bba7af5d3a04ae"
+    }
+  ],
+  "evidence_hashes_match": true,
+  "runtime_matches_last_control": true,
+  "does_not_prove": [
+    "Manuscript quality",
+    "Standards conformity",
+    "Autonomous rule loading",
+    "Marketplace publication"
+  ]
+}

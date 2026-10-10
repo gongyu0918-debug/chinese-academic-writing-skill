@@ -1,0 +1,50 @@
+[
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-J",
+    "label": "X",
+    "arm": "main",
+    "stem": "m0-J-main-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-J",
+    "label": "Y",
+    "arm": "candidate",
+    "stem": "m0-J-candidate-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-K",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m0-K-candidate-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-K",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m0-K-main-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-J",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m1-J-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-J",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m1-J-main-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-K",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m1-K-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-K",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m1-K-main-s1"
+  }
+]

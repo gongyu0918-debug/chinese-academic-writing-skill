@@ -1,0 +1,35 @@
+{
+  "baseline_commit": "718887ad7dd08b26fe3a49fcd7578633746b4dc6",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\academic-rule-format-audit\\round3-uokhp3bg",
+  "spec": {
+    "J": {
+      "leaf": "citation-research",
+      "format": true,
+      "style": false,
+      "requests": [
+        "请整理以下两条中文期刊书目，保持GB/T 7714著者—出版年制，不改成顺序编号，只交参考文献表。正文先引用李晓东，后引杨宗英。元数据按已给处理，不联网：李晓东，张庆红，叶瑾琳；气候学研究的若干理论问题；北京大学学报（自然科学版）；1999；35卷；1期；101-106页。杨宗英；电子图书馆的现实模型；中国图书馆学报；1996；22卷；2期；24-29页。不要增补未知字段，不要求元数据核验。"
+      ]
+    },
+    "K": {
+      "leaf": "citation-research",
+      "format": true,
+      "style": false,
+      "requests": [
+        "中文论文的参考文献表采用国标著者—出版年制。请只整理下面已给书目信息，不改作者、出版社和题名，也不补DOI。正文先引Chernik，再引Falout，文后条目顺序由采用的引用制式确定。Chernik B E；Introduction to library services for library technicians；Littleton, Colo.；Libraries Unlimited, Inc.；1982。Falout J, Elwood J, Hood M；Demotivation: affective states and learning outcomes；System；2009；37卷；3期；403-417页。只交可用条目。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "47b63d01a5cd86f111768c13850ba4762cc0690ff8c60c971c7db1d77d679aaf"
+}

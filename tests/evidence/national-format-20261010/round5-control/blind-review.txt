@@ -1,0 +1,112 @@
+本包是匿名实写评审。逐题对照用户请求和原材料，判定事实/状态/范围/格式及交付问题；不因输出长度、审稿表完整或执行成功判定质量。仅审，不重写。只依据给定条款要点，不自行填补国标细则。
+国标要点：GB/T 7713.1-2025第5.2.9条，中文学位论文摘要一般300—1000字（不是统一绝对下限），每篇应选3—8个关键词；英文摘要为宜有，英文关键词对应中文。第4.3条，首次出现外文专业术语或缩略词在译文后括注原词语全称。GB/T 7714-2025第9章允许顺序编码制与著者—出版年制；前者按引用先后排，后者年份放责任者后、按文种/责任者字顺/年排序，文后不加顺序号。开题不是已完成学位论文，不能套成稿的结果、结论和声明。只审任务不可替换原文；只交正文不能附过程说明。
+
+任务 alibaba-token-plan-responses/qwen3.8-flash-M
+请将下面中文开题摘要译为英文，只交Abstract和Keywords；摘要为一段，关键词用分号。摘要：本研究拟考察社区阅览室的借阅登记体验。作者已整理13份登记反馈，尚未完成分类。计划在取得许可后访谈3名使用者，并结合登记反馈描述借阅体验。访谈尚未开展，材料没有测量满意度或借阅效率。预期形成描述性分析，不预先判断哪类问题最常见。关键词：社区阅览室；借阅登记；使用体验。不要补访谈方式、审批结果或研究发现。
+
+稿件 X
+Abstract
+
+This study examines the experience of borrowing registration at community reading rooms. Thirteen pieces of registration feedback have been collected and have not yet been sorted into categories. The plan is to interview three users once permission is obtained and, together with the registration feedback, to describe the borrowing experience. The interviews have not yet been carried out, and the material contains no measurement of satisfaction or borrowing efficiency. A descriptive analysis is expected; no judgment is made in advance about which type of problem is most common.
+
+Keywords: community reading room; borrowing registration; user experience
+
+稿件 Y
+**Abstract**
+
+This study plans to examine the experience of borrowing registration in community reading rooms. The author has organized 13 pieces of registration feedback, but their classification is not yet complete. Once permission is obtained, the author plans to interview 3 users and to describe the borrowing experience in combination with the registration feedback. The interviews have not yet been conducted, and the materials contain no measures of satisfaction or borrowing efficiency. A descriptive analysis is expected, without prejudging which type of problem is most common.
+
+**Keywords**
+
+community reading room; borrowing registration; user experience
+
+任务 alibaba-token-plan-responses/qwen3.8-flash-N
+只审以下开题四栏的结构和研究状态，简短交位置、问题、建议，不改正文。学校表格依次为研究问题、已有材料、拟开展工作、预期结果，未设摘要或原创性声明。研究问题：社区阅览室的登记反馈呈现了哪些使用体验？已有材料：已保存10份登记反馈，尚未分类。拟开展工作：获得许可后访谈4名使用者，结合登记反馈作描述性整理；分析类别在阅读两类材料后确定。预期结果：形成使用体验的描述，不预设改进效果。请依据这四栏已填文字审阅，不补招募、编码和时间安排。
+
+稿件 X
+## 审阅范围
+
+只依据四栏已填文字审结构与研究状态，未见到登记反馈原文，因此不判断内容是否真能支撑结论。表格外未设摘要或原创性声明，相应项不在本次审阅范围。
+
+## 问题清单
+
+| 位置 | 严重度 | 问题 | 建议 |
+| --- | --- | --- | --- |
+| 研究问题 × 拟开展工作 | 高（对应关系） | 问题限定为"登记反馈呈现了哪些使用体验"，材料只有登记反馈；拟开展工作把 4 名使用者访谈并入同一分析，实际回答范围超出问题所限定的材料。 | 请作者二选一并保持前后一致：把研究问题的材料范围明确写成登记反馈与访谈两者，或在拟开展中说明访谈是补充验证、核心回答仍由登记反馈给出。 |
+| 预期结果 × 研究问题 | 高（对应关系） | 预期"形成使用体验的描述"把对象从"登记反馈呈现的使用体验"换成了一般性的"使用体验"，与题目和研究问题的限定范围不一致。 | 与上一项一并处理，使最终产出所指对象与题目、研究问题、拟开展工作的对象范围用同一限定；不预设应取哪一种。 |
+| 研究问题 | 中 | "呈现了哪些使用体验"把"登记反馈中含有使用体验信息"当作已成立的属性。材料尚未阅读分类，该前提属于待验证。 | 将问题限定为可从反馈文本中识别的内容与表述，能否归入"使用体验"这一概念待读完材料后确认；具体措辞由作者定。 |
+| 拟开展工作 | 低 | "结合登记反馈作描述性整理"未说明两类材料在描述中各自的位置，与第一项问题相关。 | 随第一项一并按作者意图补充说明，不新增分析步骤。 |
+
+## 研究状态核对中成立的部分
+
+- 已有材料"已保存 10 份登记反馈，尚未分类"状态准确，且只证明材料存在与数量，未概括内容主张，符合未读原文的强度限制。
+- "获得许可后访谈"保留了前置条件，未把尚未获批的活动写成已完成。
+- "分析类别在阅读两类材料后确定"保持待确定状态，没有预先写入维度或机制，也没有把候选类别写成已确定方案。
+- 预期结果写成计划产出而非既成发现，"不预设改进效果"未把结果方向写成结论。
+
+## 其他修改建议
+
+- 核验项：四栏之间缺少独立的"研究目标"层次，问题—内容—产出目前只靠隐含对应串联。若学校模板确为这四栏，按现有四栏核对上述对应即可；若模板另有该栏目，需作者补出已提出的目标，本轮不代拟。
+
+稿件 Y
+## 总评
+
+四栏状态用语总体一致：已有材料不越界成结论、拟开展工作保持计划状态、预期结果未写成已证实发现。需要处理的是研究问题、拟开展工作与预期结果三者之间的材料范围对应，以及"分析类别"这一计划项在四栏中的归属。
+
+## 阻断项
+
+| 位置 | 严重度 | 问题 | 依据 | 建议 |
+| --- | --- | --- | --- | --- |
+| 研究问题 与 拟开展工作 | 高 | 研究问题限定为"登记反馈呈现了哪些使用体验"，而已填的拟开展工作把访谈作为并列数据来源，预期结果只写"形成使用体验的描述"，未限定来源 | 题目交付物为开题，本栏关系检查要求问题—内容—方法逐级对应；来源范围在问题栏与方法栏不一致 | 二选一：把研究问题的材料范围扩为登记反馈与访谈两类，或把访谈定位成对登记反馈的核对与补充，预期结果随之回落到"以登记反馈为主、访谈为辅" |
+
+## 分节问题
+
+| 位置 | 严重度 | 问题 | 依据 | 建议 |
+| --- | --- | --- | --- | --- |
+| 预期结果 | 中 | 现有内容是一个产出动作加一条否定限定，未表述对研究问题的预期回应 | 学校模板该栏为"预期结果"，只写交付形式会让该栏与其他三栏缺少对应 | 在该栏补一句拟回应的内容方向，措辞保持"拟形成""预期"，不预设具体体验维度 |
+| 拟开展工作 | 中 | "分析类别在阅读两类材料后确定"是正确的方法定稿时点，但未说明确定后在何处呈现 | 四栏填完后若类别无归属，方法栏与结果栏会各自悬空 | 明确类别确定后进入预期结果或后续正文的描述框架，本轮不必替作者预设类别名称与数量 |
+| 已有材料 | 低 | 仅登记数量与"尚未分类"，未区分这10份的载体与时间范围 | 该栏目前只证明材料存在，不证明任何体验维度 | 不属结构缺陷，仅提示按实际字段登记，避免后续被读作已具备可比性 |
+
+## 需作者确认
+
+- 登记反馈所涉使用者与拟访谈的4人是否为同一批或存在重叠，此关系影响上面那条阻断项选哪种改法。
+
+## 保留不改
+
+"获得许可后"作为前置条件和"不预设改进效果"作为否定限定，均与已填材料状态一致，建议原样保留，不在本轮补造许可流程或改进结论。
+
+任务 ollama-cloud/glm-5.3-flash-M
+请将下面中文开题摘要译为英文，只交Abstract和Keywords；摘要为一段，关键词用分号。摘要：本研究拟考察社区阅览室的借阅登记体验。作者已整理13份登记反馈，尚未完成分类。计划在取得许可后访谈3名使用者，并结合登记反馈描述借阅体验。访谈尚未开展，材料没有测量满意度或借阅效率。预期形成描述性分析，不预先判断哪类问题最常见。关键词：社区阅览室；借阅登记；使用体验。不要补访谈方式、审批结果或研究发现。
+
+稿件 X
+Abstract: This study proposes to examine the experience of borrowing registration in community reading rooms. The author has compiled 13 registration feedback records but has not yet completed their classification. After obtaining permission, the author plans to interview 3 users and to describe the borrowing experience in combination with the registration feedback. The interviews have not yet been conducted, and the materials did not measure satisfaction or borrowing efficiency. The study is expected to produce a descriptive analysis, without prejudging which type of problem is most common.
+
+Keywords: community reading room; borrowing registration; user experience
+
+稿件 Y
+Abstract
+
+This study intends to examine the borrowing registration experience in a community reading room. The author has organized 13 registration feedback records but has not yet classified them. After permission is obtained, the author plans to interview three users and use the registration feedback to describe the borrowing experience. The interviews have not yet been conducted, and the materials do not include measurements of satisfaction or borrowing efficiency. The study is expected to produce a descriptive analysis and will not pre-judge which type of problem is most common.
+
+Keywords: community reading room; borrowing registration; user experience
+
+任务 ollama-cloud/glm-5.3-flash-N
+只审以下开题四栏的结构和研究状态，简短交位置、问题、建议，不改正文。学校表格依次为研究问题、已有材料、拟开展工作、预期结果，未设摘要或原创性声明。研究问题：社区阅览室的登记反馈呈现了哪些使用体验？已有材料：已保存10份登记反馈，尚未分类。拟开展工作：获得许可后访谈4名使用者，结合登记反馈作描述性整理；分析类别在阅读两类材料后确定。预期结果：形成使用体验的描述，不预设改进效果。请依据这四栏已填文字审阅，不补招募、编码和时间安排。
+
+稿件 X
+四栏核对完毕。研究状态方面没有问题：已有材料只记录“已保存、尚未分类”的材料状态，拟开展工作保持计划口径（“获得许可后”“后确定”，分析类别未预先确定），预期结果写成计划产出并明示不预设改进效果；描述性问题与描述性整理、描述性产出同向。唯一需要处理的是问题—方法—产出之间的范围对应，见下表。
+
+| 位置 | 严重度 | 问题（依据） | 建议 |
+|---|---|---|---|
+| 研究问题 ↔ 拟开展工作 ↔ 预期结果 | 中 | 研究问题把“使用体验”限定为“登记反馈呈现”的内容，但拟开展工作中访谈4名使用者后“结合登记反馈作描述性整理”并称“两类材料”，即访谈所得也进入描述；预期结果只写“使用体验的描述”，未标明范围。若描述包含访谈所得，产出范围大于问题表述；若不包含，访谈在这条问题链条中的作用没有交代。 | 栏目和研究状态都不必动，在研究问题或拟开展工作中补一句写明访谈与问题的关系，例如访谈用于理解或核对登记反馈呈现的体验，使“使用体验的描述”的范围与研究问题一致；不涉及招募、编码或时间安排。 |
+
+其余三栏（研究问题的表述本身、已有材料、预期结果的口径）按四栏已填文字核对，未发现结构性或研究状态问题。
+
+稿件 Y
+整体上三态区分清楚：已有材料未被写成发现，拟开展工作保持计划状态，预期结果也未写成既成结论。
+
+| 位置 | 严重度 | 问题 | 依据 | 建议 |
+|---|---|---|---|---|
+| 研究问题 | 中 | 问题只指向“登记反馈”，但拟开展工作把访谈与登记反馈共同作为描述性整理的材料，来源范围不一致。 | “访谈4名使用者，结合登记反馈作描述性整理”。 | 明确研究问题是否覆盖“登记反馈与访谈中呈现的使用体验”；若访谈仅作补充或核对，则保留原问题并在拟开展中固定该定位。 |
+| 拟开展工作 | 低 | “描述性整理”与分析类别的确定之间，未明确说明类别是对登记反馈和访谈两类材料统一归纳，还是分别归纳后再合并。 | 当前只写了“分析类别在阅读两类材料后确定”。 | 可在表述中标明两类材料的整理与归纳关系，避免后文分类口径不一致。 |
+| 预期结果 | 低 | “不预设改进效果”是范围边界，不属于核心预期产出本身。 | 当前表述为“形成使用体验的描述，不预设改进效果”。 | 可将其作为范围说明放在预期产出之后，保持产出主体为使用体验描述。 |

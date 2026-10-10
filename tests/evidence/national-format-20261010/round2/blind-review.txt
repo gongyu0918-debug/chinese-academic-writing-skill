@@ -1,0 +1,123 @@
+本包是匿名实写评审。逐题对照用户请求和原材料，判定事实/状态/范围/格式及交付问题；不因输出长度、审稿表完整或执行成功判定质量。仅审，不重写。只依据给定条款要点，不自行填补国标细则。
+国标要点：GB/T 7713.1-2025第5.2.9条，中文学位论文摘要一般300—1000字（不是统一绝对下限），每篇应选3—8个关键词；英文摘要为宜有，英文关键词对应中文。第4.3条，首次出现外文专业术语或缩略词在译文后括注原词语全称。GB/T 7714-2025第9章允许顺序编码制与著者—出版年制；前者按引用先后排，后者年份放责任者后、按文种/责任者字顺/年排序，文后不加顺序号。开题不是已完成学位论文，不能套成稿的结果、结论和声明。只审任务不可替换原文；只交正文不能附过程说明。
+
+任务 alibaba-token-plan-responses/qwen3.8-flash-G
+请为中文论文按国标著者—出版年制整理以下条目，只交参考文献表，不联网，不核对其观点。正文先引Dowler，再引Baker，不改正文。已给书目信息：Dowler L；The research university's dilemma: resource sharing and research in a transinstitutional environment；Journal of Library Administration；1995；21；1/2；5-26。Baker S K, Jackson M E；The future of resource sharing；New York；The Haworth Press；1995。条目元数据按所给使用，不补全作者名字、DOI或链接。
+
+稿件 X
+参考文献
+
+BAKER S K, JACKSON M E, 1995. The future of resource sharing[M]. New York: Haworth Press, 1995.
+
+DOWLER L, 1995. The research university's dilemma: resource sharing and research in a transinstitutional environment[J]. Journal of Library Administration, 1995, 21(1/2): 5-26.
+
+稿件 Y
+参考文献（GB/T 7714 著者—出版年制）
+
+BAKER S K, JACKSON M E. 1995. The future of resource sharing[M]. New York: The Haworth Press.
+
+DOWLER L. 1995. The research university's dilemma: resource sharing and research in a transinstitutional environment[J]. Journal of Library Administration, 21(1/2): 5-26.
+
+任务 alibaba-token-plan-responses/qwen3.8-flash-H
+请将下面中文开题摘要译为英语，仅交Abstract和Keywords。校表允许一段式摘要，关键词用分号。摘要：作者拟研究图书馆座位预约后的到场体验，已保存11条反馈记录，尚未分类。计划在获得许可后访谈4名使用者，结合反馈记录整理到场体验。没有开展访谈，也没有测量预约成功率或到场率。预期形成一份描述性分析，暂不提出提升效果的结论。关键词：座位预约；到场体验；反馈记录。保留已有、计划和未测量状态，不新增研究安排。
+
+稿件 X
+本轮要求“只依据规则与给定材料、不调用工具”，而这条任务需要的目标文本——待译的中文摘要原文（以及对应的中文关键词）——在我收到的材料里并不存在，只有规则和“译为英文并给出英文关键词”的指示。按材料门禁，我不能凭题意或惯例拟一段中文再译，那样生成的题名、方法、结果、结论强度都是我编的，正是不允许做的。所以请把这几点直接贴过来：摘要正文、中文关键词、有无学校或导师给定的英文摘要模板（栏目、词数、分隔符、大小写要求）。
+
+在你补原文之前，先把这次会按哪些要点处理，说明白以便你一次给全：
+
+- 中英对应核对的对象是同一件事：研究范围、方法、数字与单位、结论强度、否定范围不能变。英文里不会补中文没有的背景、方法、结果或贡献，也不会为句子整齐删掉中文里的限定。
+- 研究状态逐句保持：开题报告里的内容通常是“拟开展”和“预期”，英文必须保持计划语气，不能译成已经做完、已经证实的结果（不做一律过去时的强制处理，按每句实际状态选时态）。
+- 关键词不凑数、不增删，分隔符与大小写在一份稿内统一；题名不会整篇全大写或每词首字母硬大写。
+- 术语与中文摘要、题名保持概念对应；机构名、人名、专名用你给的正式写法，我不自行编造官方英文名；通用术语可按英文句法自然取单复数。
+- 参考文献、DOI、URL、直接引语、公式属于保护区，任何标点或大小写统一都不碰它们的本体。
+- 这一层只管文字，不实际设 Word 字体、字号、行距、目录和页码。
+
+收到摘要原文后，我会在本轮内一次交齐英文摘要、英文题名（如需）和关键词，并按上述要点自核状态与对应关系，不再逐段问。
+
+稿件 Y
+**Abstract**
+
+The proposed study examines the arrival experience of users after they reserve a seat in a library. Eleven feedback records have been collected but have not yet been categorized. Once permission is obtained, four users are to be interviewed, and their accounts will be combined with the feedback records to organize the arrival experience. Interviews have not been conducted, and neither the reservation success rate nor the arrival rate has been measured. A descriptive analysis is expected; for the time being, no conclusions are proposed on improving effectiveness.
+
+**Keywords**
+
+seat reservation; arrival experience; feedback records
+
+任务 alibaba-token-plan-responses/qwen3.8-flash-I
+这是中文硕士学位论文的关键词行。学校旧模板规定两个词。本轮只审关键词数量及中英对应，不审摘要篇幅、不改稿，也不增补内容。中文：数字档案；访问记录。English: digital archives; access logs。请按通用国家标准给出简短的具体问题和修改方向。
+
+稿件 X
+本轮交付物是中文论文里必要英语部分的文字格式核对，模式为只审不改。按入口路由，唯一适用层是 `references/academic-text-format.md`；因不涉及论证与改写，不另加载普通论文主叶或 `anti-ai-writing.md`。给定材料中只有规则本身，没有英文题名、摘要、关键词或参考文献的实际文字，因此依据材料门禁，先交可执行的检查要点并索取目标文本，不虚构具体位置与问题。
+
+**需要你提供的文本**：英文题名、摘要正文、关键词行（含分隔符与大小写的原样），如也在范围内，再加图表英文题注、缩写首次出现处和参考文献条目。收到后按“位置—严重度—问题—依据—修改建议”逐项给意见，短段用表格，不改写原文。
+
+**可先确定的判定原则**
+
+- 样式来源：执行优先级为用户明确要求 > 学校或导师模板 > 用户指定的最新底稿 > 旧稿与参考材料。先确定本轮采用哪一套样式，再在范围内统一；不拼接不同学校或不同引用规范。APA 细则只在用户明确指定 APA 时适用；无模板且用户明确要求国家标准时，GB/T 7714-2025、GB/T 7713.1-2025 只作为著录候选，且未实际读取正文不声称“完全符合”。
+- 不可预设的硬指标：英文题名与关键词的大小写、分隔符、摘要栏目和长度一律按实际模板处理，不存在通用字数、词数或大小写门槛。因此不能判定“关键词必须用分号”或“每个实词首字母大写”为合格或不合格，也不能把题名统一改成全大写或每词首字母大写、把关键词统一改成逗号或分号。模板未要求时，不为凑格式增删关键词或摘要内容。
+- 中英一致性核对项：题名、摘要、关键词与中文版本须核对同一研究对象、范围、方法、数字、单位、结论强度、否定和研究状态；已完成、进行中、拟开展各保持原状态，预期产出不写成已证实结果。译写可调语序与分句，但不补入中文与已给材料没有的背景、方法、结果或贡献，也不为句式整齐删去关键限定。
+- 术语与标点：首次出现且需要解释的缩写，使用已给或能确定的全称，后文保持一致；摘要、正文、独立图表是否重复定义，按能否独立理解与模板判断，不机械逐次展开；全称无法确定时保留原标识，只在允许的意见中提示。中文行文与英文连续语句各用其适用标点，不将中文段落标点整体换成英文，不改动网址查询串、公式运算符、引文原文与文献标识。机构、人名、专名优先沿用已给的正式英文写法，不自行编造官方译名；通用术语可按句法采用自然单复数与搭配。
+- 图表文字：英文题注、图例、注释与中文内容核对编号、对象、缩写、单位与符号，不增加未提供的数据或解释；仅凭局部片段不声称全文编号无误。
+- 英文引用与参考文献：沿用当前稿件已有的顺序编码或作者—年份样式，不在局部续写时另建一套。指定 APA 时，参考文献中的文章题名用 sentence case 并保留专名与缩写大小写、副标题首词大写；文章题名不斜体，期刊名与卷号斜体、括号内期号不斜体；期刊名保留规范名称与原拼写；其他载体按对应条目类型处理。页码与文章编号分别著录，文章编号写为 `Article` 加编号；材料未提供期号不等于已确认无期号；DOI 与链接保留标识本体，不虚构缺失字段，未知项只列入意见。
+- 修改保护项：直接引语、公式、代码、URL、DOI、来源 ID 与文献原有专名拼写，不得被全局标点、拼写或大小写替换误改；修改仅限用户指定文字。
+
+**本轮边界**：格式判定只到文字层面，来源是否存在、是否支持论断按引用层另判，不因著录格式正确而推定文献真实或论点成立。按你的限定，我不联网、不加载其他材料、不做委派，因此不自称已完成独立复核；文风层面的 anti-AI 审查本轮不触发，除非你另行要求语言质量检测。
+
+稿件 Y
+**审核范围**：仅关键词行的数量与中英对应；不审摘要篇幅、不改稿、不代拟新关键词。两项词数目前一一对应（中 2 ↔ 英 2），问题出在数量下限和一处译法。
+
+| 位置 | 严重度 | 问题 | 依据 | 修改方向 |
+| --- | --- | --- | --- | --- |
+| 关键词行整体（数量） | 高 | 仅 2 个关键词，低于学位论文标准的区间下限 | GB/T 7713.1-2025 第 5.2.9 条要求每篇选 3—8 个关键词；学校模板只能在国标允许范围内补充栏目、分隔符等细节，"两个词"这一旧规定落在区间之外 | 补至 3—8 个，用词由作者从本稿题名、摘要、正文中已有的主题概念里选取（本轮不增补，故不列候选）；同时向导师或学院确认旧模板是否已按现行标准更新。保留两词的写法不能报告为符合国标 |
+| 英文 `access logs` ↔ 中文"访问记录" | 中 | `logs` 通常对应"日志"，"记录"一般作 `records`，中英概念是否同一对象存疑 | 5.2.9 要求英文关键词与中文对应；本层要求关键词与题名、摘要术语保持概念对应 | 以本稿正文和英文摘要的既有译法为准统一：全文"记录"译 `records` 就改为 `access records`；若该词所指确为系统访问日志，则应改中文为"访问日志"。先核对再定，不作单方面改动 |
+| 英文 `digital archives` ↔ 中文"数字档案" | 低 | 对应可成立，但"档案"依语境作 `archives` 或 `records`，本行无法单独判定 | 同上概念对应要求 | 与正文术语表或英文摘要核对一次，一致即保持原样 |
+
+说明：现有材料只有这一行关键词，未提供正文与英文摘要，因此以上结论限于该行内部的数量区间与译词对应，不构成整篇关键词或摘要的国标符合性认定。本轮未改动任何文字。
+
+任务 ollama-cloud/glm-5.3-flash-G
+请为中文论文按国标著者—出版年制整理以下条目，只交参考文献表，不联网，不核对其观点。正文先引Dowler，再引Baker，不改正文。已给书目信息：Dowler L；The research university's dilemma: resource sharing and research in a transinstitutional environment；Journal of Library Administration；1995；21；1/2；5-26。Baker S K, Jackson M E；The future of resource sharing；New York；The Haworth Press；1995。条目元数据按所给使用，不补全作者名字、DOI或链接。
+
+稿件 X
+参考文献
+
+BAKER S K, JACKSON M E, 1995. The future of resource sharing[M]. New York: The Haworth Press.
+
+DOWLER L, 1995. The research university's dilemma: resource sharing and research in a transinstitutional environment[J]. Journal of Library Administration, 21(1/2): 5-26.
+
+稿件 Y
+Baker S K， Jackson M E， 1995. The future of resource sharing[M]. New York： The Haworth Press.
+Dowler L， 1995. The research university's dilemma： resource sharing and research in a transinstitutional environment[J]. Journal of Library Administration， 21(1/2)： 5-26.
+
+任务 ollama-cloud/glm-5.3-flash-H
+请将下面中文开题摘要译为英语，仅交Abstract和Keywords。校表允许一段式摘要，关键词用分号。摘要：作者拟研究图书馆座位预约后的到场体验，已保存11条反馈记录，尚未分类。计划在获得许可后访谈4名使用者，结合反馈记录整理到场体验。没有开展访谈，也没有测量预约成功率或到场率。预期形成一份描述性分析，暂不提出提升效果的结论。关键词：座位预约；到场体验；反馈记录。保留已有、计划和未测量状态，不新增研究安排。
+
+稿件 X
+Abstract: The author plans to study the library arrival experience after seat reservation. Eleven feedback records have been saved and have not yet been classified. After obtaining permission, the author plans to interview four users and organize the arrival experience by drawing on the feedback records. Interviews have not been conducted, and neither reservation success rate nor arrival rate has been measured. A descriptive analysis is expected; at this stage, the study will not propose conclusions on improving effectiveness.
+
+Keywords: seat reservation; arrival experience; feedback records
+
+稿件 Y
+Abstract
+
+The author plans to investigate the arrival experience after a library seat reservation. Eleven feedback records have been saved but have not yet been classified. After obtaining permission, the author plans to interview four users and combine the feedback records to organize the arrival experience. No interviews have been conducted, and neither the reservation success rate nor the arrival rate has been measured. The expected outcome is a descriptive analysis; conclusions on improving effectiveness are not proposed at this stage.
+
+Keywords: seat reservation; arrival experience; feedback records
+
+任务 ollama-cloud/glm-5.3-flash-I
+这是中文硕士学位论文的关键词行。学校旧模板规定两个词。本轮只审关键词数量及中英对应，不审摘要篇幅、不改稿，也不增补内容。中文：数字档案；访问记录。English: digital archives; access logs。请按通用国家标准给出简短的具体问题和修改方向。
+
+稿件 X
+审毕：中英数量一致（各 2 个）且符合学校旧模板；逐条中英对应无错位。唯一提示级问题在数量本身与通用国标的张力，属模板优先级事项，不是本行格式错误。
+
+| 位置 | 严重度 | 问题 | 依据 | 修改方向 |
+|---|---|---|---|---|
+| 关键词数量（中文 2 个／英文 2 个） | 提示，不阻断 | 两个关键词低于通用学位论文国标的通行数量要求（一般取 3–8 个），但与学校旧模板"两个词"一致 | 学校、导师明确模板优先于通用标准；数量条款按 GB/T 7713.1 的通行要求表述，具体以标准现行文本为准 | 向学院或导师确认旧模板条款是否仍生效；若须按国标执行，方向为从摘要已述概念中增选第 3 个关键词并补英文对应词（本轮不改稿、不增补） |
+| 中英对应（数字档案↔digital archives；访问记录↔access logs） | 无 | 无问题：两条逐项概念对应、顺序一致，无多译、漏译或错位；中文全角分号、英文半角分号加空格、小写形式各自符合语言习惯，模板亦未另有规定 | 概念与顺序逐条比对；标点、大小写按现行书面通行处理 | 无需修改 |
+
+核验状态说明：本轮未逐字读取 GB/T 7713.1 现行规范正文，不据此声称该行“完全符合”；数量问题的建议仅作核验项，是否调整取决于学校模板条款的有效性。
+
+稿件 Y
+- **关键词数量问题**：中文与英文均只有 2 个关键词，低于 GB/T 7713.1-2025 第 5.2.9 条对学位论文“每篇应选 3—8 个关键词”的范围。学校旧模板“两个词”与现行国标要求冲突；按通用国标，不宜将两词版本列为符合国标方案。
+
+- **中英对应对**：现有“数字档案 / digital archives”“访问记录 / access logs”成对对应，未见明显错配。修改方向是另补一个由正文核心内容支持的关键词，并保持中英一一对应；不必为凑数拆分现有词或扩写摘要。

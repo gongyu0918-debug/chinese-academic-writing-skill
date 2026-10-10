@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a124dc-4001-7cc0-a10e-5e179aa9e36f"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "张群, 程志杰, 王志飞. 2024. 惯性增强动力吸振器-浮置板轨道低频减振性能研究[J]. 铁道学报, 46(8): 102-111."}}
+{"type": "turn.completed", "usage": {"input_tokens": 16077, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 4362, "reasoning_output_tokens": 0}}

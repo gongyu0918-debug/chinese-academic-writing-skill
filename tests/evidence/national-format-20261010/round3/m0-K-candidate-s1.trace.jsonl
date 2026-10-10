@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a124da-2b95-7692-a72b-561b77dcc2f3"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "Chernik B E, 1982. Introduction to library services for library technicians[M]. Littleton, Colo.: Libraries Unlimited, Inc.\n\nFalout J, Elwood J, Hood M, 2009. Demotivation: affective states and learning outcomes[J]. System, 37(3): 403-417."}}
+{"type": "turn.completed", "usage": {"input_tokens": 15883, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 2261, "reasoning_output_tokens": 2180}}

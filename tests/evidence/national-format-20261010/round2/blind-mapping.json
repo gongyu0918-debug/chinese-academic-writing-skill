@@ -1,0 +1,74 @@
+[
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-G",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m0-G-candidate-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-G",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m0-G-main-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-H",
+    "label": "X",
+    "arm": "main",
+    "stem": "m0-H-main-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-H",
+    "label": "Y",
+    "arm": "candidate",
+    "stem": "m0-H-candidate-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-I",
+    "label": "X",
+    "arm": "main",
+    "stem": "m0-I-main-s1"
+  },
+  {
+    "task": "alibaba-token-plan-responses/qwen3.8-flash-I",
+    "label": "Y",
+    "arm": "candidate",
+    "stem": "m0-I-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-G",
+    "label": "X",
+    "arm": "main",
+    "stem": "m1-G-main-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-G",
+    "label": "Y",
+    "arm": "candidate",
+    "stem": "m1-G-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-H",
+    "label": "X",
+    "arm": "candidate",
+    "stem": "m1-H-candidate-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-H",
+    "label": "Y",
+    "arm": "main",
+    "stem": "m1-H-main-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-I",
+    "label": "X",
+    "arm": "main",
+    "stem": "m1-I-main-s1"
+  },
+  {
+    "task": "ollama-cloud/glm-5.3-flash-I",
+    "label": "Y",
+    "arm": "candidate",
+    "stem": "m1-I-candidate-s1"
+  }
+]

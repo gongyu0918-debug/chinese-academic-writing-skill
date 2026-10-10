@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a124da-3502-7163-a75f-461203801344"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "参考文献\n\n李晓东, 1999. 气候学研究的若干理论问题[J]. 北京大学学报（自然科学版）, 35(1): 101-106.\n\n杨宗英, 1996. 电子图书馆的现实模型[J]. 中国图书馆学报, 22(2): 24-29."}}
+{"type": "turn.completed", "usage": {"input_tokens": 15890, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 1215, "reasoning_output_tokens": 1133}}
