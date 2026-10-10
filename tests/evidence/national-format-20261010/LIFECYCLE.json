@@ -15,9 +15,9 @@
   "whole_skill_quality_pass": null,
   "final_rule_independent_audit": "incomplete; no final report returned",
   "all_review_agents_closed": true,
-  "commit": null,
-  "merge": "pending",
-  "archive": "pending",
+  "commit": "9ba4b47f95f73e9f523dcb7a929ccb27c8496713",
+  "merge": "fast-forward into main",
+  "archive": "confirmed; path absent and not listed by git worktree list",
   "untracked_or_ignored_worktree_files_before_commit": [],
   "original_standard_pdfs_location": "F:/Workspaces/chinese-academic-writing-skill/.release/national-format-20261010/sources",
   "private_cli_runtime_location": "F:/Workspaces/chinese-academic-writing-skill/.release/academic-rule-format-audit",
@@ -25,5 +25,12 @@
   "pushed": false,
   "published": false,
   "desktop_install_updated": false,
-  "historical_worktrees": "Belong to prior tasks; untouched"
+  "historical_worktrees": "Belong to prior tasks; untouched",
+  "remaining_worktree_count": 20,
+  "checked_out_evidence_hashes_match": true,
+  "manifest_verified_files": 407,
+  "merged_runtime_matches_last_control_text": true,
+  "unmerged_commits_before_archive": [],
+  "worktree_status_before_archive": "clean; no ignored or untracked files",
+  "worktree_agents_using_checkout_before_archive": []
 }
