@@ -1,0 +1,11 @@
+test_build_is_minimal_metadata_valid_and_deterministic (test_skillhub_package_builder.SkillHubPackageBuilderTests.test_build_is_minimal_metadata_valid_and_deterministic) ... ok
+test_existing_or_failed_zip_never_leaves_a_package_directory (test_skillhub_package_builder.SkillHubPackageBuilderTests.test_existing_or_failed_zip_never_leaves_a_package_directory) ... ok
+test_generated_icon_is_github_only_square_png (test_skillhub_package_builder.SkillHubPackageBuilderTests.test_generated_icon_is_github_only_square_png) ... ok
+test_invalid_version_and_existing_destination_fail_closed (test_skillhub_package_builder.SkillHubPackageBuilderTests.test_invalid_version_and_existing_destination_fail_closed) ... ok
+test_policy_rejects_traversal_absolute_and_reserved_paths (test_skillhub_package_builder.SkillHubPackageBuilderTests.test_policy_rejects_traversal_absolute_and_reserved_paths) ... ok
+test_zip_inside_package_is_rejected_without_creating_output (test_skillhub_package_builder.SkillHubPackageBuilderTests.test_zip_inside_package_is_rejected_without_creating_output) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.702s
+
+OK

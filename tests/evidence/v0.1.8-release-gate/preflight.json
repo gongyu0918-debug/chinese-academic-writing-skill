@@ -1,0 +1,18 @@
+{
+  "release_commit": "5f2f398ef26308dcae45dbdae13a9db1047c1aa7",
+  "tag_object": "06b13296561d2a72b04b9bcd07a96d07e1786d02",
+  "source_bytes_match_tag": true,
+  "zip_hash_matches_validation": true,
+  "skillhub_dry_run": {
+    "dryRun": true,
+    "slug": "chinese-academic-writing-assistant",
+    "version": "0.1.8"
+  },
+  "clawhub_dry_run": {
+    "slug": "chinese-academic-writing-assistant",
+    "version": "0.1.8",
+    "fileCount": 11,
+    "fingerprint": "3d2d1f4fdae6794c96295c489f86a4f85066adaeed62420ec46da3bc20faff2b"
+  },
+  "writing_quality_gate": false
+}

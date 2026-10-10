@@ -1,0 +1,14 @@
+{
+  "worktree": "C:\\Users\\admin\\.codex\\worktrees\\academic-release-018\\chinese-academic-writing-skill",
+  "branch": "codex/academic-release-018",
+  "purpose": "authorized v0.1.8 publication and surface evidence",
+  "product_commit": "5f2f398ef26308dcae45dbdae13a9db1047c1aa7",
+  "local_archive": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\release-v0.1.8-20261010",
+  "retained_files": 114,
+  "retained_zip_hashes_verified": true,
+  "external_execution_profiles_created": false,
+  "ignored_worktree_artifacts": ".release/v0.1.8 staged packages, upload receipts, downloads and read-only visibility logs retained locally before archival",
+  "active_task_dependencies": false,
+  "status": "ready_for_managed_archive_after_evidence_merge",
+  "historical_manual_worktrees": "not touched"
+}
