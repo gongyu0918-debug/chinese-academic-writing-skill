@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12504-7c99-7180-a1bf-7874d220e80f"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "LIN Mei, ZHOU Qiang, WU Ning. 2024. Service records in campus reading rooms[J]. Journal of Library Service, 12(3): 44-51."}}
+{"type": "turn.completed", "usage": {"input_tokens": 15178, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 2836, "reasoning_output_tokens": 2788}}

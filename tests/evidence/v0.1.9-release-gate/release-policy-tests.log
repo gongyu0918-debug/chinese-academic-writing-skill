@@ -1,0 +1,16 @@
+test_project_and_skillhub_metadata_use_mit (test_release_policy.ReleasePolicyTests.test_project_and_skillhub_metadata_use_mit) ... ok
+test_published_version_badge_and_install_identifier (test_release_policy.ReleasePolicyTests.test_published_version_badge_and_install_identifier) ... ok
+test_repository_and_local_surfaces_cannot_enter_skillhub_package (test_release_policy.ReleasePolicyTests.test_repository_and_local_surfaces_cannot_enter_skillhub_package) ... ok
+test_skillhub_frontmatter_is_minimal_and_has_no_homepage (test_release_policy.ReleasePolicyTests.test_skillhub_frontmatter_is_minimal_and_has_no_homepage) ... ok
+test_skillhub_package_is_twelve_runtime_files_plus_markdown_license (test_release_policy.ReleasePolicyTests.test_skillhub_package_is_twelve_runtime_files_plus_markdown_license) ... ok
+test_three_release_targets_are_declared (test_release_policy.ReleasePolicyTests.test_three_release_targets_are_declared) ... ok
+test_v009_public_receipt_binds_both_release_surfaces (test_release_policy.ReleasePolicyTests.test_v009_public_receipt_binds_both_release_surfaces) ... ok
+test_v010_public_receipt_binds_package_icon_and_pending_review (test_release_policy.ReleasePolicyTests.test_v010_public_receipt_binds_package_icon_and_pending_review) ... ok
+test_v011_public_receipt_binds_three_release_surfaces (test_release_policy.ReleasePolicyTests.test_v011_public_receipt_binds_three_release_surfaces) ... ok
+test_v012_public_receipt_binds_three_release_surfaces (test_release_policy.ReleasePolicyTests.test_v012_public_receipt_binds_three_release_surfaces) ... ok
+test_v013_public_receipt_binds_three_release_surfaces (test_release_policy.ReleasePolicyTests.test_v013_public_receipt_binds_three_release_surfaces) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.003s
+
+OK

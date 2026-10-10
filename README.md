@@ -1,12 +1,12 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.1.8-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.8)
+[![Version](https://img.shields.io/badge/version-0.1.9-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.9)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 中文论文写作 Skill 用于协助完成中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。它根据作者已经提供或明确授权核验的材料工作，可以构造提纲、逐段起草、修改底稿或只审不改，并在长稿和多轮续写中辅助维护和检查事实、术语、引用与研究状态的一致性。
 
-版本 0.1.8 消歧长稿修改范围：有材料依据且在用户授权范围内的问题可直接修复；涉及作者选择的未决问题先报告。沿用既有主次详略、来源门禁和回指复核规则，保留目标文本误读、状态日期失真等已知风险。详见[长稿取舍](tests/evidence/clarity-coverage-20261009/ADJUDICATION.md)和[保留问题续验](tests/evidence/gap-verification-20261010/ADJUDICATION.md)。
+版本 0.1.9 补齐中文论文中的必要英文处理，并明确适用国家标准优先、相容模板细化、规范要求与推荐项的区别。保留只审、片段和研究状态边界；实写仍存在材料误读、过审及英文表达风险，不能称为已验证的全面稳定版。详见[本版发布记录](tests/evidence/v0.1.9-release-gate/README.md)。
 
 这个 Skill 不替作者补造研究。材料不足时，它会收缩交付范围，先给出可成立的结构、研究问题或材料清单，不把常识、惯例和推测写成已经取得的证据。
 
@@ -57,7 +57,7 @@
 
 ## 安装与调用
 
-当前版本：`chinese-academic-writing-assistant@0.1.8`
+当前版本：`chinese-academic-writing-assistant@0.1.9`
 
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
 
@@ -97,17 +97,17 @@ Python 实现改动须运行相关维护测试，覆盖行为、CLI、只读与�
 
 SkillHub 封面源文件为 `assets/skillhub-icon.png`，仅在 GitHub 维护，并在平台支持的页面入口单独上传或关联；图片不进入运行包。
 
-## 国标优先规则更新（未发布）
+## 版本 0.1.9：国标优先规则
 
 学术格式以适用的现行国家标准为基线，学校、导师和期刊模板在其允许范围内细化。分别处理学位论文、学术论文、摘要与文献著录；保留“应、宜、可”和资料性示例的区别，不以某校字体表或一般摘要长度构造统一硬模板。国标优先不改变只审、局部修改、材料版本和事实状态的边界。
 
-实际修改了入口及五份reference，补清学位关键词范围、整稿外文摘要与片段界限、首次外文术语、著者—出版年制的年份移位和三名以内作者全部著录。依据与已读条款见[标准来源](tests/evidence/national-format-20261010/SOURCES.md)，实写原稿、失败与独立意见见[裁决记录](tests/evidence/national-format-20261010/ADJUDICATION.md)。模型调用和补丁检查不是整稿质量或文件版式符合性证明；没有宣布全局无回退，公共版本保持0.1.8。
+实际修改了入口及五份reference，补清学位关键词范围、整稿外文摘要与片段界限、首次外文术语、著者—出版年制的年份移位和三名以内作者全部著录。依据与已读条款见[标准来源](tests/evidence/national-format-20261010/SOURCES.md)，实写原稿、失败与独立意见见[裁决记录](tests/evidence/national-format-20261010/ADJUDICATION.md)。模型调用和补丁检查不是整稿质量或文件版式符合性证明；本次作为0.1.9发布，不宣称全局无回退或任意成稿完全合规。
 
-## 必要英语与文字格式更新（未发布）
+## 版本 0.1.9：必要英语与文字格式
 
 补齐中文稿中的英文题名、摘要、关键词、术语、英文引文/文献和图表文字。先满足适用国标，再按相容模板选择大小写、分隔符和引用样式；局部续写保留既有顺序编码或作者年份样式。保护引语、公式、URL和DOI，中英译写保留事实与研究状态。文字样式与实际Word分页分别处理，不把某校规则或APA变成通用模板。
 
-真实片段写稿暴露了单复数、引用回指、过程旁白和目标文本误读等风险；调用返回和包测试通过不证明整套规则稳定。初版、最小消歧、控制稿、独立评审及取舍见[实写记录](tests/evidence/academic-text-format-20261010/ADJUDICATION.md)和[完整规则审计](tests/evidence/academic-text-format-20261010/AUDIT.md)。当前公共发布版仍为0.1.8，开发包仅供审阅，没有发布或更新桌面安装。
+真实片段写稿暴露了单复数、引用回指、过程旁白和目标文本误读等风险；调用返回和包测试通过不证明整套规则稳定。初版、最小消歧、控制稿、独立评审及取舍见[实写记录](tests/evidence/academic-text-format-20261010/ADJUDICATION.md)和[完整规则审计](tests/evidence/academic-text-format-20261010/AUDIT.md)。上述规则纳入0.1.9，并同步三平台和桌面WorkBuddy无Hooks包；客户端安装与实际文件排版未验证。
 
 ## 开发态规则审计（未发布）
 

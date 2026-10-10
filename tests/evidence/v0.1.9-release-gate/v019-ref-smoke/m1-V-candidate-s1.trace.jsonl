@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12506-09aa-7903-aff6-fda6aacb7753"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "LIU Yu, WANG Wei, ZHANG Lu, 2023. Registration feedback in reading rooms[J]. Journal of Community Services, 9(2): 20-27."}}
+{"type": "turn.completed", "usage": {"input_tokens": 17569, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 5387, "reasoning_output_tokens": 0}}

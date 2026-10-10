@@ -1,0 +1,44 @@
+[
+  {
+    "pair": "P0-S",
+    "labels": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  },
+  {
+    "pair": "P0-T",
+    "labels": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  },
+  {
+    "pair": "P0-U",
+    "labels": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  },
+  {
+    "pair": "P1-S",
+    "labels": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  },
+  {
+    "pair": "P1-T",
+    "labels": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  },
+  {
+    "pair": "P1-U",
+    "labels": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  }
+]

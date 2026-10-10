@@ -1,0 +1,40 @@
+[
+  {
+    "agent_id": "01a124ff-e7b3-7510-9b67-5572d9fc2dc7",
+    "actual_context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "visible_messages": [],
+    "read_actions": [
+      {
+        "name": "exec_command",
+        "call_id": "call_8426133a9acb4de2b8015bdd"
+      },
+      {
+        "name": "exec_command",
+        "call_id": "call_ab1bc809fcc54bf587ec90f4"
+      }
+    ],
+    "final_report_received": false
+  },
+  {
+    "agent_id": "01a12506-2d96-7e40-8905-8dce6805bed1",
+    "actual_context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "visible_messages": [],
+    "read_actions": [
+      {
+        "name": "exec_command",
+        "call_id": "call_e529304c00644b358966b86d"
+      }
+    ],
+    "final_report_received": false
+  }
+]

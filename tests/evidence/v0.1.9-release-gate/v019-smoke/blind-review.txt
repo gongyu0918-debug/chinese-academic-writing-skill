@@ -1,0 +1,119 @@
+请对下列构造片段任务的两份匿名成品作独立语义比较。按原请求核对状态、事实、范围、语言、引用格式和交付形状，列出具体原文问题、严重度及修改负担；不把意见数量当完整度。书目U这轮没有装载citation-research.md，作为加载不足诊断保留，不能作最终引用链验收。只看真实材料与稿件，不需要猜哪版更好，也不要把任何稿件当标准答案。
+
+
+任务P0-S
+原请求：请把以下开题摘要译成英文，只输出Abstract和Keywords。摘要用一段，关键词用分号。摘要：本研究拟分析校园自助借还柜的使用记录。作者已保存18份登记记录，尚未完成归类。计划在获得许可后访谈5名使用者，结合记录作描述性分析。访谈尚未开展，材料没有测量满意度或排队时长；不预设改进效果。关键词：自助借还柜；使用记录；使用体验。不得补研究发现、审批结果、访谈方式或机构名称。
+
+X稿：
+**Abstract**
+
+This study intends to analyze the usage records of self-service lending and returning cabinets. Eighteen registration records have been saved so far, and their classification is not yet complete. Once permission is obtained, the plan is to interview five users and to conduct a descriptive analysis that combines the interviews with the records; the interviews have not yet been carried out. The materials do not measure satisfaction or queuing time, and no improvement effect is assumed in advance.
+
+**Keywords**: self-service lending and returning cabinet; usage records; user experience
+
+Y稿：
+**Abstract**
+
+This study plans to analyze the usage records of a self-service book borrowing and returning cabinet on campus. Eighteen registration records have been saved so far, and their categorization has not yet been completed. The author intends to interview five users after permission is obtained and to carry out a descriptive analysis that combines the interview material with these records. The interviews have not yet been conducted, and the materials available at this stage contain no measurement of satisfaction or queuing time; no improvement effect is assumed in advance.
+
+**Keywords**: self-service book borrowing and returning cabinet; usage records; user experience
+
+
+任务P0-T
+原请求：只审以下开题四栏的结构和研究状态，简短输出位置、问题、建议，不改正文，不追加成稿摘要、声明或实施步骤。研究问题：校园自助借还柜的登记记录反映了哪些使用体验？已有材料：已保存18份登记记录，尚未归类。拟开展工作：获得许可后访谈5名使用者，结合记录作描述性分析；分析类别在阅读两类材料后确定。预期结果：形成使用体验的描述，不预设满意度提升或排队时间缩短。请按已填文字核对，不把尚未归类判成尚未阅读。学校表格采用上述四栏。
+
+X稿：
+已按“只审不改”处理：只核对四栏的结构对应与研究状态表述，依据为你给出的四栏文字和已填内容，不改动正文。
+
+**总体**：计划状态基本清楚（已保存记录为已有基础，访谈与分析为拟开展，体验描述为预期），未把未归类的材料写成已知内容。主要问题是中心问题与证据来源的对应、拟开展栏的条件与未完成项，以及“分析类别”暂缺带来的链条断开。
+
+**阻断项**
+
+| 位置 | 问题 | 建议 |
+| --- | --- | --- |
+| 拟开展工作 | 分析类别写成“阅读两类材料后确定”，本轮没有可核对的维度，导致“研究问题—内容—方法”断在内容一层 | 在拟开展栏保留为待确定项，并写明确定维度所依据的两类材料（登记记录、访谈材料），或补列明确标注为“候选”的维度；不要写成已确定的框架 |
+| 拟开展工作 | 访谈以“获得许可后”为前提，正文未交代许可由谁给出、未获许可时该栏研究安排如何成立 | 补充许可来源及获批前可先行开展的部分，使拟开展事项与已有条件相匹配 |
+
+**其他修改建议**
+
+| 位置 | 问题 | 建议 |
+| --- | --- | --- |
+| 研究问题 | “登记记录反映了哪些使用体验”把记录直接对应到体验，而记录能支撑的是操作行为与时间痕迹，体验主要来自尚未开展的访谈 | 交代两类证据各自能支持的强度，或把表述收缩为记录可承载的内容，并说明与访谈材料如何互补 |
+| 已有基础 | “已保存18份登记记录，尚未归类”属于材料状态记录，正确；但易被后续行文读作内容已掌握 | 保持材料状态说法，另用一句说明是否已逐条判读；“未归类”与“未阅读”分别表述 |
+| 预期结果 | “不预设满意度提升或排队时间缩短”的边界意识是对的，但“提升”“缩短”预设了这类指标本会被讨论 | 改为“不预设满意度或耗时方向的结论”，避免引入未被研究问题提出的指标 |
+| 全篇 | 研究对象与使用者群体未界定，5 名访谈对象与记录使用者的对应关系及进度节点缺失 | 在拟开展工作栏补足对象范围与时间安排；无材料依据前不代拟访谈提纲或分析步骤 |
+
+Y稿：
+四栏结构与研究状态核对如下。总体判断：三类状态划分正确——已有基础只写完成的材料动作，拟开展保持计划状态，预期结果未写成既成发现；“分析类别待阅读后确定”符合不把未定维度写成已定方案的要求；“尚未归类”按材料状态原样对待，未据此推断是否已阅读。
+
+| 位置 | 严重度 | 问题与依据 | 修改建议 |
+| --- | --- | --- | --- |
+| 研究问题 ↔ 拟开展工作、预期结果 | 中 | 研究问题把证据来源限定为“登记记录”，拟开展却加入了5名使用者访谈，预期结果又是泛化的“使用体验的描述”。按“中心问题—内容—方法—预期产出逐级对应”要求，三处证据来源范围不一致，问题本身无法涵盖访谈部分。 | 作者二选一使三处对齐：把研究问题扩写为登记记录与使用者访谈共同反映的使用体验；或将拟开展、预期结果收缩到仅围绕登记记录分析。改哪一侧由作者按实际方案定，审稿不代选。 |
+| 已有基础 | 轻 | 现栏只写“已保存18份、尚未归类”，为材料状态记录，写法合规；但若学校模板要求说明材料来源或覆盖范围，现有材料未含该项，栏目信息可能不完整。 | 如模板有此栏目要求，由作者按实际情况补充记录的取得方式与覆盖时段；无此要求则保持现状，不必添加。 |
+
+研究问题为描述性设问，与拟采用的描述性分析方向一致，此处无问题。
+
+
+任务P0-U
+原请求：按现行GB/T 7714的著者—出版年制整理以下已给书目，只输出该参考文献条目。元数据：作者为LIN Mei、ZHOU Qiang、WU Ning；文章题名为Service records in campus reading rooms；期刊名为Journal of Library Service；年份2024；卷12；期3；页44—51。保持作者给定拼写与期刊名，不补DOI，不联网，不核验来源观点。学校示例习惯只写首位作者加et al.，年份在卷号前；如与国标明确要求冲突，按国标。本轮只做著录转换，不把来源存在或观点支持标为已验证。
+
+X稿：
+LIN Mei, ZHOU Qiang, WU Ning. 2024. Service records in campus reading rooms[J]. Journal of Library Service, 12(3): 44-51.
+
+Y稿：
+LIN Mei, ZHOU Qiang, WU Ning. 2024. Service records in campus reading rooms[J]. Journal of Library Service, 12(3): 44-51.
+
+
+任务P1-S
+原请求：请把以下开题摘要译成英文，只输出Abstract和Keywords。摘要用一段，关键词用分号。摘要：本研究拟分析校园自助借还柜的使用记录。作者已保存18份登记记录，尚未完成归类。计划在获得许可后访谈5名使用者，结合记录作描述性分析。访谈尚未开展，材料没有测量满意度或排队时长；不预设改进效果。关键词：自助借还柜；使用记录；使用体验。不得补研究发现、审批结果、访谈方式或机构名称。
+
+X稿：
+Abstract
+This study intends to analyze usage records of campus self-service borrowing and returning lockers. The author has saved 18 registration records, which have not yet been classified. Five users are planned to be interviewed after permission is obtained, and the records will be combined with the interview material for descriptive analysis. The interviews have not yet been conducted, and the material does not measure satisfaction or queuing time; no improvement effect is assumed.
+
+Keywords: self-service borrowing and returning lockers; usage records; user experience
+
+Y稿：
+Abstract
+
+This study intends to analyze the usage records of self-service borrowing and returning lockers. The author has saved 18 registration records, which have not yet been classified. After obtaining permission, the author plans to interview five users and, in combination with these records, conduct a descriptive analysis. The interviews have not yet been conducted; the materials do not include measurements of user satisfaction or queuing time, and no improvement effects are presumed.
+
+Keywords
+
+self-service borrowing and returning lockers; usage records; user experience
+
+
+任务P1-T
+原请求：只审以下开题四栏的结构和研究状态，简短输出位置、问题、建议，不改正文，不追加成稿摘要、声明或实施步骤。研究问题：校园自助借还柜的登记记录反映了哪些使用体验？已有材料：已保存18份登记记录，尚未归类。拟开展工作：获得许可后访谈5名使用者，结合记录作描述性分析；分析类别在阅读两类材料后确定。预期结果：形成使用体验的描述，不预设满意度提升或排队时间缩短。请按已填文字核对，不把尚未归类判成尚未阅读。学校表格采用上述四栏。
+
+X稿：
+| 位置 | 严重度 | 问题（依据） | 建议 |
+| --- | --- | --- | --- |
+| 研究问题栏 ↔ 拟开展工作栏 | 中 | 问题只以“登记记录”为证据源，拟开展工作却由记录与 5 名使用者访谈共同支撑描述性分析；两类材料在问题中的关系未界定，问题与内容不一一对应。 | 由作者确认访谈的定位后，将问题表述与拟用材料的范围对齐；不代拟新的研究设计。 |
+| 预期结果栏 | 轻微 | 问题限定“登记记录反映的”体验，预期只写“形成使用体验的描述”，未标明来源范围，与问题范围可能不一致（与上一条同源）。 | 预期结果的范围与研究问题及其对应材料保持一致，写清描述依据哪类材料。 |
+| 拟开展工作栏“分析类别在阅读两类材料后确定” | 轻微 | “两类材料”首次出现，仅靠上下文推断指登记记录与访谈材料；句面未界定并列所指。 | “已保存、尚未归类”的状态表述不改（保存状态不指向是否已读）；如需更清晰，可直接写明“登记记录与访谈材料”。 |
+
+状态核对：已有材料、拟开展工作、预期结果三栏的计划状态写法与所填文字一致，未发现状态混淆，也未发现超出已填文字的补写。
+
+Y稿：
+**只审结论（按四栏，不改正文）**
+
+| 位置 | 问题 | 建议 |
+| --- | --- | --- |
+| 研究问题 ↔ 拟开展工作、预期结果 | 问题把使用体验的来源限定为"登记记录"，而拟开展工作中访谈是并列证据、预期结果笼统写"使用体验的描述"，来源关系未对应。严重度：低。 | 在问题或栏内说明访谈是解读、补充记录的来源（或让问题的措辞覆盖两类来源），使"问题—内容—结果"对应；具体措辞由作者定。 |
+
+其余各栏状态划分正确，无需修改：
+
+- 已有材料：只写已保存 18 份、尚未归类的材料状态，未把"尚未归类"写成"尚未阅读"，也未概括记录内容。
+- 拟开展工作：保持计划语气（先获许可再访谈、5 人为既定安排、结合记录作描述性分析），"分析类别在阅读两类材料后确定"未预选类别，符合计划状态。
+- 预期结果：为计划产出，未写成已证实发现；"不预设满意度提升或排队时间缩短"是范围限定而非结论，保留原表述即可。
+
+
+任务P1-U
+原请求：按现行GB/T 7714的著者—出版年制整理以下已给书目，只输出该参考文献条目。元数据：作者为LIN Mei、ZHOU Qiang、WU Ning；文章题名为Service records in campus reading rooms；期刊名为Journal of Library Service；年份2024；卷12；期3；页44—51。保持作者给定拼写与期刊名，不补DOI，不联网，不核验来源观点。学校示例习惯只写首位作者加et al.，年份在卷号前；如与国标明确要求冲突，按国标。本轮只做著录转换，不把来源存在或观点支持标为已验证。
+
+X稿：
+LIN Mei, ZHOU Qiang, WU Ning. Service records in campus reading rooms[J]. Journal of Library Service, 2024, 12(3): 44-51.
+
+Y稿：
+LIN Mei, ZHOU Qiang, WU Ning. Service records in campus reading rooms[J]. Journal of Library Service, 2024, 12(3): 44-51.

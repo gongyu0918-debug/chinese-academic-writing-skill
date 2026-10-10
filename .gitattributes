@@ -47,3 +47,5 @@ tests/evidence/academic-text-format-20261010/** -text whitespace=-blank-at-eol,-
 
 # Preserve frozen national-format inputs, visible drafts and reports byte-for-byte.
 tests/evidence/national-format-20261010/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+
+tests/evidence/v0.1.9-release-gate/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

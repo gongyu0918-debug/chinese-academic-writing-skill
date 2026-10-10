@@ -64,7 +64,7 @@ class ReleasePolicyTests(unittest.TestCase):
         )
         self.assertEqual("policy", metadata["description_source"])
         self.assertEqual(
-            "依据作者材料、文献或授权来源，协助起草、改写和审阅中文论文、开题报告及文献综述，并核对论证、证据与引用。",
+            "依据作者材料、文献或授权来源，协助起草、改写和审阅中文论文、开题报告及文献综述，处理其中必要的英文部分，并核对论证、证据与引用。",
             metadata["description"],
         )
         self.assertEqual("chinese-academic-writing-assistant", metadata["slug"])
@@ -74,7 +74,7 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertNotIn("homepage", metadata)
         self.assertNotIn("summary", metadata)
 
-    def test_skillhub_package_is_eleven_runtime_files_plus_markdown_license(self) -> None:
+    def test_skillhub_package_is_twelve_runtime_files_plus_markdown_license(self) -> None:
         expected = set(self.package["files"])
         actual = {
             path.relative_to(self.package_root).as_posix()
@@ -83,8 +83,8 @@ class ReleasePolicyTests(unittest.TestCase):
             and "__pycache__" not in path.parts
             and path.suffix not in {".pyc", ".pyo"}
         }
-        self.assertEqual(11, self.package["runtime_file_count"])
-        self.assertEqual(12, self.package["file_count"])
+        self.assertEqual(12, self.package["runtime_file_count"])
+        self.assertEqual(13, self.package["file_count"])
         self.assertEqual(self.package["file_count"], len(expected))
         self.assertEqual(expected, actual)
         self.assertEqual(
@@ -120,8 +120,8 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertEqual([".release/**"], self.policy["local_only_surfaces"])
 
     def test_published_version_badge_and_install_identifier(self) -> None:
-        self.assertIn("version-0.1.8-blue", self.readme)
-        self.assertIn("chinese-academic-writing-assistant@0.1.8", self.readme)
+        self.assertIn("version-0.1.9-blue", self.readme)
+        self.assertIn("chinese-academic-writing-assistant@0.1.9", self.readme)
 
     def test_v009_public_receipt_binds_both_release_surfaces(self) -> None:
         receipt = self.release_receipt

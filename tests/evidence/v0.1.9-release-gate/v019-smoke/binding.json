@@ -1,0 +1,44 @@
+{
+  "baseline_commit": "5f2f398ef26308dcae45dbdae13a9db1047c1aa7",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\v019-smoke-sxlo5c9v",
+  "spec": {
+    "S": {
+      "leaf": "academic-proposal",
+      "format": true,
+      "style": false,
+      "requests": [
+        "请把以下开题摘要译成英文，只输出Abstract和Keywords。摘要用一段，关键词用分号。摘要：本研究拟分析校园自助借还柜的使用记录。作者已保存18份登记记录，尚未完成归类。计划在获得许可后访谈5名使用者，结合记录作描述性分析。访谈尚未开展，材料没有测量满意度或排队时长；不预设改进效果。关键词：自助借还柜；使用记录；使用体验。不得补研究发现、审批结果、访谈方式或机构名称。"
+      ]
+    },
+    "T": {
+      "leaf": "academic-proposal",
+      "format": true,
+      "style": false,
+      "requests": [
+        "只审以下开题四栏的结构和研究状态，简短输出位置、问题、建议，不改正文，不追加成稿摘要、声明或实施步骤。研究问题：校园自助借还柜的登记记录反映了哪些使用体验？已有材料：已保存18份登记记录，尚未归类。拟开展工作：获得许可后访谈5名使用者，结合记录作描述性分析；分析类别在阅读两类材料后确定。预期结果：形成使用体验的描述，不预设满意度提升或排队时间缩短。请按已填文字核对，不把尚未归类判成尚未阅读。学校表格采用上述四栏。"
+      ],
+      "long": false
+    },
+    "U": {
+      "leaf": "academic-writing",
+      "format": true,
+      "style": false,
+      "requests": [
+        "按现行GB/T 7714的著者—出版年制整理以下已给书目，只输出该参考文献条目。元数据：作者为LIN Mei、ZHOU Qiang、WU Ning；文章题名为Service records in campus reading rooms；期刊名为Journal of Library Service；年份2024；卷12；期3；页44—51。保持作者给定拼写与期刊名，不补DOI，不联网，不核验来源观点。学校示例习惯只写首位作者加et al.，年份在卷号前；如与国标明确要求冲突，按国标。本轮只做著录转换，不把来源存在或观点支持标为已验证。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "bbe03df475d9443bcbc7c10a8b2b6133ac888664135491f075a12d46c34de934"
+}

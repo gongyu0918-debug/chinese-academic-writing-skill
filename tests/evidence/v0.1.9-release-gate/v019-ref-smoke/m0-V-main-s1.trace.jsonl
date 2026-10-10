@@ -1,0 +1,6 @@
+{"type": "thread.started", "thread_id": "01a12506-09cc-7873-80e8-c0bc6388397d"}
+{"type": "turn.started"}
+{"type": "item.started", "item": {"id": "item_1", "type": "command_execution", "status": "in_progress", "exit_code": null}}
+{"type": "item.completed", "item": {"id": "item_1", "type": "command_execution", "status": "completed", "exit_code": 0}}
+{"type": "item.completed", "item": {"id": "item_3", "type": "agent_message", "text": "LIU Yu, WANG Wei, ZHANG Lu. Registration feedback in reading rooms[J]. Journal of Community Services, 2023, 9(2): 20-27."}}
+{"type": "turn.completed", "usage": {"input_tokens": 40544, "cached_input_tokens": 21504, "cache_write_input_tokens": 0, "output_tokens": 5265, "reasoning_output_tokens": 5143}}

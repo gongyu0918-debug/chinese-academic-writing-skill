@@ -1,0 +1,28 @@
+{
+  "baseline_commit": "5f2f398ef26308dcae45dbdae13a9db1047c1aa7",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\v019-ref-smoke-_ea1_m8j",
+  "spec": {
+    "V": {
+      "leaf": "academic-writing",
+      "format": true,
+      "citation": true,
+      "style": false,
+      "requests": [
+        "按现行GB/T 7714著者—出版年制整理已给期刊书目，只输出条目，不联网、不补缺项。责任者为LIU Yu、WANG Wei、ZHANG Lu；题名为Registration feedback in reading rooms；期刊名Journal of Community Services；年份2023；卷9；期2；页20—27。学校示例习惯只列首位作者加et al.、年份放卷期前；有明确国标冲突以国标为准。仅做文字著录，不说明来源已核验或观点成立。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "f009cb2c7594a8478248c3eb6bf47b3d0f6469e5124ebd1475c48b3bf3758fa4"
+}

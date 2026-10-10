@@ -1,0 +1,5 @@
+**Abstract**
+
+This study plans to analyze the usage records of a self-service book borrowing and returning cabinet on campus. Eighteen registration records have been saved so far, and their categorization has not yet been completed. The author intends to interview five users after permission is obtained and to carry out a descriptive analysis that combines the interview material with these records. The interviews have not yet been conducted, and the materials available at this stage contain no measurement of satisfaction or queuing time; no improvement effect is assumed in advance.
+
+**Keywords**: self-service book borrowing and returning cabinet; usage records; user experience

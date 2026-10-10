@@ -1,0 +1,5 @@
+**Abstract**
+
+This study intends to analyze the usage records of self-service lending and returning cabinets. Eighteen registration records have been saved so far, and their classification is not yet complete. Once permission is obtained, the plan is to interview five users and to conduct a descriptive analysis that combines the interviews with the records; the interviews have not yet been carried out. The materials do not measure satisfaction or queuing time, and no improvement effect is assumed in advance.
+
+**Keywords**: self-service lending and returning cabinet; usage records; user experience
