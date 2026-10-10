@@ -1,0 +1,10 @@
+[
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Item -LiteralPath 'F:\\\\Workspaces\\\\chinese-academic-writing-skill\\\\.release\\\\academic-rule-format-audit\\\\packet-R3.md' | Select-Object FullName,Length,LastWriteTime\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath 'F:\\\\Workspaces\\\\chinese-academic-writing-skill\\\\.release\\\\academic-rule-format-audit\\\\packet-R3.md' -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\", \"max_output_tokens\": 30000}"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Item .release\\\\academic-rule-format-audit\\\\packet-R1.md | Select-Object FullName,Length,LastWriteTime\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath .release\\\\academic-rule-format-audit\\\\packet-R1.md -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\", \"max_output_tokens\": 30000}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"$c = Get-Content -LiteralPath .release\\\\academic-rule-format-audit\\\\packet-R1.md -Encoding UTF8; $c.Count; $c | Select-Object -Last 6\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"$p='.release\\\\academic-rule-format-audit\\\\packet-R1.md'; $c=Get-Content -LiteralPath $p -Encoding UTF8; '--- markers ---'; $c | Select-String -SimpleMatch '执行无效原因' | ForEach-Object { $_.LineNumber.ToString() + ': ' + $_.Line.Trim() }; '--- pairings ---'; $c | Select-String -SimpleMatch '### 配对' | ForEach-Object { $_.Line.Trim() }; '--- tasks ---'; $c | Select-String -Pattern '^## 任务' | ForEach-Object { $_.Line.Trim() }; $raw=Get-Content -LiteralPath $p -Raw -Encoding UTF8; '--- dash ---'; $m=[regex]::Matches($raw,'1879(.{1})1898'); 'occurrences=' + $m.Count; $m | ForEach-Object { 'sep=U+{0:X4}' -f [int][char]$_.Groups[1].Value }; '--- counts ---'; 'article72=' + ([regex]::Matches($raw,'Article 72')).Count; 'bare72=' + ([regex]::Matches($raw,'\\\\*9\\\\*, 72\\\\.')).Count; 'r028=' + ([regex]::Matches($raw,'\\\\(r = 0\\\\.28\\\\)')).Count; '--- notes ---'; $c | Select-String -SimpleMatch '三点译法说明' | ForEach-Object { $_.Line.Trim() }; $c | Select-String -SimpleMatch '两条均按' | ForEach-Object { $_.Line.Trim() }\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\", \"max_output_tokens\": 8000}"
+  },
+  {
+    "name": "_web_run",
+    "arguments": "{\"open\": [{\"ref_id\": \"https://apastyle.apa.org/style-grammar-guidelines/references/examples/journal-article-references\"}], \"response_length\": \"long\"}"
+  }
+]

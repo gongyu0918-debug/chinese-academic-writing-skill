@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12496-3dca-7992-8b1a-cd6c12603743"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "Jerrentrup, A., Mueller, T., Glowalla, U., Herder, M., Henrichs, N., Neubauer, A., & Schaefer, J. R. (2018). Teaching medicine with the help of “Dr. House.” *PLoS ONE*, *13*(3), Article e0193972. https://doi.org/10.1371/journal.pone.0193972\n\nSchlesselmann, A. J., McNally, R. J., & Held, P. (2025). Using network analysis to characterize clinical improvement during Cognitive Processing Therapy. *Behaviour Research and Therapy*, *185*, Article 104678. https://doi.org/10.1016/j.brat.2024.104678"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16005, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 2677, "reasoning_output_tokens": 0}}

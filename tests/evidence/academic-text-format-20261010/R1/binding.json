@@ -1,0 +1,41 @@
+{
+  "baseline_commit": "c38f02f09c7abfac80c7b85c349c642b3120a962",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\academic-rule-format-audit\\R1-cg9q2puw",
+  "spec": {
+    "A_completed_abstract": {
+      "leaf": "academic-writing",
+      "format": true,
+      "requests": [
+        "这是一篇中文课程论文的英文摘要部分。离线，只依据下列中文摘要译写英文题名、Abstract和Keywords，直接给可用文字。学院模板要求英文题名sentence case，关键词用逗号分隔；关键词依次对应中文三个词。中文题名：在线课程提示与学生自评投入的关系。中文摘要：本研究分析了某校一门在线课程中86份有效问卷。问卷记录了学生对课程提示清晰度和自身学习投入的评分。结果显示，两项评分呈正相关（r = 0.28）。本研究未检验提示是否导致投入变化，结论限于该课程的问卷样本。关键词：在线课程；提示清晰度；自评投入。"
+      ]
+    },
+    "B_APA_journal": {
+      "leaf": "citation-research",
+      "format": true,
+      "style": false,
+      "requests": [
+        "只整理中文论文参考文献中的下面两个英文条目为APA第7版，用Markdown表示斜体。不联网，不核验论文观点或DOI状态，只交两条格式化条目。给定字段如下：作者Rybaczewska, M. 与 Sparks, L.；年份2022；文章题名Ageing Consumers and E-Commerce Activities；期刊Ageing and Society；卷42；期8；页1879–1898；DOI 10.1017/S0144686X20001932。第二条：作者Bosco, G., Rizzato, A., Moon, R. E., Camporesi, E. M.；2018；题名Environmental Physiology and Diving Medicine；期刊Frontiers in Psychology；卷9；期刊不使用期号；文章编号72；DOI 10.3389/fpsyg.2018.00072。"
+      ]
+    },
+    "C_chinese_control": {
+      "leaf": "academic-writing",
+      "format": false,
+      "requests": [
+        "只润色下列中文课程论文段落，不解释、不补资料，不联网：此次问卷共获得86份有效回答，受访者对提示清晰度与学习投入的评分呈正相关。这一结果只反映本课程样本中的评分关系，并不能证明课程提示导致了投入变化。后续分析仍需结合课程任务本身的差异。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "47b63d01a5cd86f111768c13850ba4762cc0690ff8c60c971c7db1d77d679aaf"
+}

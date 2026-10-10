@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12490-43cd-71e2-a994-9f7c3dfadc6e"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "Wang（2023）在另一馆40名参观者中的结果也显示，单纯增加信息长度并未提高理解评分；Lee（2021）在35名参观者中观察到解释性例子与理解评分正相关。两项结果放在一起提示，导览信息的设计重点可能不在把内容写得更长，而在选择更有效的表达形式，例如把抽象信息配合解释性例子呈现。不过，前一项是未检验因果的关联，后一项也未提高理解评分，样本和场馆条件有限，因此这种启示只能作为设计尝试的参考，仍需在具体导览场景中核对其效果。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 17093, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 628, "reasoning_output_tokens": 0}}

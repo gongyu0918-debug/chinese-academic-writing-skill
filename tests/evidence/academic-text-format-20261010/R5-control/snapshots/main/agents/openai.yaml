@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文论文写作"
+  short_description: "中文论文、开题报告与文献综述的起草、改写、审稿和证据核对"
+  default_prompt: "使用 $chinese-academic-writing-assistant，依据我提供或授权核验的材料完成中文论文写作、改写或审稿。"

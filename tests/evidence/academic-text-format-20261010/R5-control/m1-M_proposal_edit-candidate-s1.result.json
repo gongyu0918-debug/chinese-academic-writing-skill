@@ -1,0 +1,31 @@
+{
+  "model": "ollama-cloud/glm-5.3-flash",
+  "effort": "max",
+  "case": "M_proposal_edit",
+  "arm": "candidate",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [],
+  "thread_ids": [
+    "01a1249d-f48d-7501-9200-6e2f4633cd4e"
+  ],
+  "seconds": 10.01,
+  "prompt_sha256": "18a3d693eac74570be55ac48716c5b067a403d4a245be2907e4cb8c49398ae7a",
+  "draft_sha256": "29c34057b419165cf5749101f4df96f503279784e48cf31374824d65b44476a6",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/academic-proposal.md",
+    "references/anti-ai-writing.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 15785,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 829,
+      "reasoning_output_tokens": 0
+    }
+  ]
+}

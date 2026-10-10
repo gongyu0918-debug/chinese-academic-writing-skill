@@ -1,0 +1,7 @@
+Title:
+The relationship between online course prompts and students' self-reported engagement
+
+Abstract:
+This study analyzed 86 valid questionnaire responses collected in one online course at a certain institution. The questionnaires recorded students' ratings of the clarity of course prompts and of their own learning engagement. The results showed a positive correlation between the two ratings (r = 0.28). This study did not test whether the prompts caused changes in engagement, and the conclusions are limited to the questionnaire sample from this course.
+
+Keywords: online course, prompt clarity, self-reported engagement

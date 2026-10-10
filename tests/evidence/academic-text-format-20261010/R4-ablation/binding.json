@@ -1,0 +1,39 @@
+{
+  "baseline_commit": "c38f02f09c7abfac80c7b85c349c642b3120a962",
+  "arm_names": {
+    "main": "candidate-v1",
+    "candidate": "candidate-v2"
+  },
+  "purpose": "Two-detail refinement ablation on new tasks, not a main-versus-candidate round",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\academic-rule-format-audit\\R4-ablation-sm6ukmzz",
+  "spec": {
+    "J_article_identifier": {
+      "leaf": "citation-research",
+      "format": true,
+      "style": false,
+      "requests": [
+        "中文课程论文的英文参考文献要统一APA第7版。只交以下条目，Markdown表达斜体，不联网、不核验内容。给定作者Jerrentrup, A., Mueller, T., Glowalla, U., Herder, M., Henrichs, N., Neubauer, A., Schaefer, J. R.；2018；题名Teaching Medicine With the Help of “Dr. House.”；期刊PLoS ONE；卷13；期3；文章编号e0193972；DOI 10.1371/journal.pone.0193972。另一条作者Schlesselmann, A. J., McNally, R. J., Held, P.；2025；题名Using Network Analysis to Characterize Clinical Improvement During Cognitive Processing Therapy；期刊Behaviour Research and Therapy；卷185；期刊不用期号；文章编号104678；DOI 10.1016/j.brat.2024.104678。"
+      ]
+    },
+    "K_common_term_inflection": {
+      "leaf": "academic-writing",
+      "format": true,
+      "requests": [
+        "只改中文课程论文中的两行英文，不解释，不联网。给定通用术语audio guide，中文题名为“博物馆语音导览的使用经验”。中文图题为“图2-4：使用语音导览的访客人数，单位：人”。模板英文题名为sentence case，图题保持原有编号和形式。原稿：Experiences of Using Audio Guide in Museums\nFigure 2-4. Number of visitors using audio guide (minutes)。只处理文字，不添加未给图中数据。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "149b134f4b3329d6f01998538bb675fa423493d1f11331878ebf5dcd6578c51f"
+}

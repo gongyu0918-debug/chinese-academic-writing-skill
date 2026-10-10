@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1248e-c477-7783-9325-1590eebf469c"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "课程提示与实际投入的评分呈正向关联：投入越高，评分也越高。这一关联只出现在课程提示与实际投入同时变动的学习行为中，不能据此认定课程提示导致了投入增加。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14786, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 515, "reasoning_output_tokens": 471}}

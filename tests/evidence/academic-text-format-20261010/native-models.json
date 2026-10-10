@@ -1,0 +1,71 @@
+[
+  {
+    "role": "audit",
+    "agent_id": "01a12485-812d-7a12-827c-3497ed63d877",
+    "model_override": null,
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "file_found": true,
+    "file_name": "rollout-2026-10-09T23-34-51-01a12485-812d-7a12-827c-3497ed63d877.jsonl",
+    "final_sha256": "72380a161acb43328652fdb907ca02fe2b7738c66ff6beeff5c2e11d35dba51c"
+  },
+  {
+    "role": "R1",
+    "agent_id": "01a12491-c648-71e1-a5d5-fbcb9f97dec4",
+    "model_override": null,
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "file_found": true,
+    "file_name": "rollout-2026-10-09T23-48-15-01a12491-c648-71e1-a5d5-fbcb9f97dec4.jsonl",
+    "final_sha256": "7453cbb0b6096ea3895f887c88e474ebb8acd3bc459e2c5ab5c7ecd1916619b8"
+  },
+  {
+    "role": "R2",
+    "agent_id": "01a12493-800d-7281-bdf2-fc360f8e1a5c",
+    "model_override": null,
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "file_found": true,
+    "file_name": "rollout-2026-10-09T23-50-08-01a12493-800d-7281-bdf2-fc360f8e1a5c.jsonl",
+    "final_sha256": "cb86321888236be5c4deaee04170f361813af6b5b0014e35cc1a0030dd584cc6"
+  },
+  {
+    "role": "R3",
+    "agent_id": "01a12493-0c0f-7770-858a-927a7ea939c5",
+    "model_override": null,
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "file_found": true,
+    "file_name": "rollout-2026-10-09T23-49-39-01a12493-0c0f-7770-858a-927a7ea939c5.jsonl"
+  },
+  {
+    "role": "forward",
+    "agent_id": "01a12496-8715-78c2-8c13-45dbee68817f",
+    "model_override": null,
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+        "effort": "max"
+      }
+    ],
+    "file_found": true,
+    "file_name": "rollout-2026-10-09T23-53-27-01a12496-8715-78c2-8c13-45dbee68817f.jsonl",
+    "final_sha256": "0b43122158a229f3b38ee5c44f1321c612d7e14400bd3b551b95a7d50e478f6a"
+  }
+]

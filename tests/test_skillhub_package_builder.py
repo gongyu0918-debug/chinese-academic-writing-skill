@@ -85,7 +85,7 @@ class SkillHubPackageBuilderTests(unittest.TestCase):
 
             actual = sorted(path.relative_to(out1).as_posix() for path in out1.rglob("*") if path.is_file())
             self.assertEqual(expected_files, actual)
-            self.assertEqual(12, len(actual))
+            self.assertEqual(13, len(actual))
             self.assertLess(zip1.stat().st_size, 10 * 1024 * 1024)
             self.assertEqual(hashlib.sha256(zip1.read_bytes()).digest(), hashlib.sha256(zip2.read_bytes()).digest())
             with zipfile.ZipFile(zip1) as archive:

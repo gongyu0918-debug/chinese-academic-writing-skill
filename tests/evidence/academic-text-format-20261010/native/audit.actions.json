@@ -1,0 +1,62 @@
+[
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"git rev-parse HEAD; git log -1 --format='%h %s'; git status --short\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-ChildItem -LiteralPath .\\\\chinese-academic-writing-assistant -File | Select-Object Name,Length; Get-ChildItem -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references -File | Select-Object Name,Length\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath .\\\\chinese-academic-writing-assistant\\\\SKILL.md -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\", \"max_output_tokens\": 20000}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references\\\\academic-writing.md -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\", \"max_output_tokens\": 12000}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references\\\\academic-literature-review.md -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\", \"max_output_tokens\": 12000}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references\\\\academic-proposal.md -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\", \"max_output_tokens\": 12000}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references\\\\anti-ai-writing.md -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\", \"max_output_tokens\": 16000}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references\\\\citation-research.md -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\", \"max_output_tokens\": 16000}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references\\\\long-form-consistency.md -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\", \"max_output_tokens\": 16000}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"$patterns = @('不处理英文论文全文','不得代写整篇提交稿','执行优先级为','确需恢复跨章或跨轮前文状态','正文起草、修改后的质量复核','单句或单段语言任务可简化为不可变项','著录格式是否符合要求','处理两个以上已提供正文'); Select-String -LiteralPath .\\\\chinese-academic-writing-assistant\\\\SKILL.md -SimpleMatch -Pattern $patterns | ForEach-Object { \\\"{0}:{1} [{2}]\\\" -f $_.Filename, $_.LineNumber, $_.Pattern }\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"$patterns = @('富文本中的 `[1]` 设为上角标','不得声称已经完成版式处理'); Select-String -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references\\\\citation-research.md -SimpleMatch -Pattern $patterns | ForEach-Object { \\\"{0}:{1} [{2}]\\\" -f $_.Filename, $_.LineNumber, $_.Pattern }; $p2 = @('英文摘要和学校模板优先','英文题名中的符号'); Select-String -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references\\\\anti-ai-writing.md -SimpleMatch -Pattern $p2 | ForEach-Object { \\\"{0}:{1} [{2}]\\\" -f $_.Filename, $_.LineNumber, $_.Pattern }\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"$patterns = @('偏短只展开已有证据'); Select-String -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references\\\\academic-writing.md -SimpleMatch -Pattern $patterns | ForEach-Object { \\\"{0}:{1} [{2}]\\\" -f $_.Filename, $_.LineNumber, $_.Pattern }; $p2 = @('没有明确范围时不自设固定段数'); Select-String -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references\\\\long-form-consistency.md -SimpleMatch -Pattern $p2 | ForEach-Object { \\\"{0}:{1} [{2}]\\\" -f $_.Filename, $_.LineNumber, $_.Pattern }\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Select-String -LiteralPath .\\\\chinese-academic-writing-assistant\\\\SKILL.md -Pattern '两个以上|多文件合稿|排版' | ForEach-Object { \\\"{0}:{1} :: {2}\\\" -f $_.Filename, $_.LineNumber, $_.Line.Trim() }\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Select-String -LiteralPath .\\\\chinese-academic-writing-assistant\\\\references\\\\citation-research.md -Pattern '版式|上角标' | ForEach-Object { \\\"{0}:{1} :: {2}\\\" -f $_.Filename, $_.LineNumber, $_.Line.Trim() }\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"$s = @'\\n只读审计报告（中文论文写作 Skill，main c38f02f）\\n\\n覆盖与状态：已完整读取 chinese-academic-writing-assistant/SKILL.md 与 references/ 下 6 份（academic-writing、academic-proposal、academic-literature-review、anti-ai-writing、citation-research、long-form-consistency）；HEAD=c38f02f，工作区无改动，未联网、未使用记忆、未委派。未覆盖：scripts 三个脚本（prose_lint.py、citation_audit.py、manuscript_audit.py 未读未运行）、tests、.release、LICENSE 及仓库其他文件；GB/T 7714-2025、GB/T 7713.1-2025 现行性未核验；冻结的主写候选 worktree（新增 academic-text-format.md 及入口、引用样式延续）未读取，本报告不评价其处理结果。\\n\\n1）排版边界冲突（实际冲突）。位置：SKILL.md:11 排除\\\"排版\\\"、:53 要求核对\\\"著录格式\\\"；citation-research.md:35 默认 [1] 上角标且\\\"不得声称已经完成版式处理\\\"；anti-ai-writing.md:62 以标点候选为例外。触发：按模板整理著录、改上角标、修句内半角标点。风险：同一操作一边因\\\"排版\\\"被拒、一边被要求执行，或借机扩大版式改动。最小修改：把\\\"排版\\\"限定为整稿版式（页面、字体、行距、封面），注明引用标注、著录核对、标点候选在范围内。\\n\\n2）论文内英文局部成分缺处理规则（实际缺口）。位置：SKILL.md:11 只排除\\\"英文论文全文\\\"；anti-ai-writing.md:28、62 只规定英文题名符号不动、英文摘要标点优先；citation-research.md 用到中英文关键词。触发：写/润色英文题名、摘要、关键词，核对中英文摘要一致。风险：两种读法下要么拒绝、要么按中文文风规则处理英文；复核清单无对应项。最小修改：一句话界定论文内英文成分适用哪些操作（含是否复核），或明确交回宿主。\\n\\n3）\\\"不得代写整篇提交稿\\\"与课程论文支持范围歧义。位置：SKILL.md:11、:12 与《四维路由》\\\"起草交所需正文\\\"。触发：按已给材料把短课程论文从头写到尾。风险：短论文中\\\"章节起草\\\"接近整篇，可能整篇代写，或反向拒绝已声明支持的交付物。最小修改：明确\\\"整篇提交稿\\\"判定口径与课程论文起草的允许程度。\\n\\n4）长稿层加载条件不清（范围）。位置：SKILL.md:55\\\"确需恢复……、处理两个以上已提供正文、……或明确筛查……时\\\"。触发：一次给两段互不衔接文本做局部润色。风险：若\\\"确需\\\"不辖全列，两段即强制加载跨章状态，与\\\"单段或单节可免\\\"门槛不一致。最小修改：加\\\"需相互衔接或同稿一致性核对\\\"限定，并说明与豁免的关系。\\n\\n5）微小修改缺复核比例（流程门禁偏严）。位置：SKILL.md:76 与《执行与交付》第4条（起草、修改后均交独立复核）；:46 只在账本允许单句/单段简化。触发：单句语病或标点修正。风险：例句级改动触发整套结构、文风、一致性复核，成本不匹配。最小修改：设极小改动条款，只查受影响处或简化复核。\\n\\n6）篇幅判断与删减授权边界不清。位置：academic-writing.md:17\\\"偏短……偏长先删……旁白……\\\"；long-form-consistency.md:33\\\"没有明确范围时不自设……均匀篇幅\\\"；anti-ai-writing.md《保护性外扩删除式复核》须用户明确要求。触发：无字数与模板时改稿并自判\\\"偏长\\\"。风险：无授权把泛化免责声明、未测事项当\\\"旁白\\\"删除。最小修改：篇幅检查限定于用户或模板给出目标时；删减类别与删除式复核授权条件对齐。\\n\\n已判充分、未列问题：英文题名符号与英文摘要标点的保护、脚本命中不得直接改文、联网授权门槛、来源层级区分（未把用户材料一律视为待外部核验）、\\\"只处理已确认问题、无问题保持原文\\\"及删除式复核保留条件。\\n'@; $noWs = ($s -replace '\\\\s','').Length; $cjk = ([regex]::Matches($s, '[\\\\u4e00-\\\\u9fff]')).Count; \\\"NON_WS_CHARS=$noWs\\\"; \\\"CJK_CHARS=$cjk\\\"\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  }
+]

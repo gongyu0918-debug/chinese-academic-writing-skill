@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1248e-48af-73b1-9a5d-a125c5adad8b"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "Rybaczewska, M., & Sparks, L. (2022). Ageing consumers and e-commerce activities. *Ageing and Society*, *42*(8), 1879–1898. https://doi.org/10.1017/S0144686X20001932\n\nBosco, G., Rizzato, A., Moon, R. E., & Camporesi, E. M. (2018). Environmental physiology and diving medicine. *Frontiers in Psychology*, *9*, Article 72. https://doi.org/10.3389/fpsyg.2018.00072"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14988, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 1080, "reasoning_output_tokens": 0}}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12491-3b51-7361-8503-dc0e99bd2c49"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "本文使用large language model（LLM）整理已给摘要。In this step, the model receives 12 abstracts; no full text is provided.材料定位网址为https://example.org/item?id=A-1&lang=en。计算式保持为 $F_1=2PR/(P+R)$。原摘录为“Learning is situated，not isolated”。此处仅作材料整理，未测试模型准确率。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15834, "cached_input_tokens": 8192, "cache_write_input_tokens": 0, "output_tokens": 6206, "reasoning_output_tokens": 6115}}

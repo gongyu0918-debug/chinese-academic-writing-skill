@@ -1,0 +1,15 @@
+离线依据给定中文材料译写完成，事实、数字（86、r = 0.28）、否定范围与结论限定均按原文保留，未补充显著性、效应大小或机制表述。
+
+**英文题名（sentence case）**
+
+The relationship between online course prompts and students' self-reported engagement
+
+**Abstract**
+
+This study analyzed 86 valid questionnaires completed by students in a single online course at one institution. The questionnaires recorded the students' ratings of the clarity of the course prompts and of their own learning engagement. The two ratings were positively correlated (r = 0.28). The study did not test whether the prompts caused changes in engagement, and its conclusions are limited to the questionnaire sample from this course.
+
+**Keywords**
+
+online courses, prompt clarity, self-reported engagement
+
+三点译法说明，供你按正文校正：题名中的“提示”按 `prompts` 译，若正文指的是系统给出的线索或提示语，可统一改为 `hints`；“某校”未具名，英文用 `one institution` 保持原样，学校名称由你按模板要求补入；“学习投入”用 `learning engagement`，关键词按模板只写 `self-reported engagement`，与中文三词依次对应。

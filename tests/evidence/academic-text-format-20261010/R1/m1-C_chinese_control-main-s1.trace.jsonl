@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1248e-8383-7782-8915-ea5801275c52"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "本次问卷共获得86份有效回答，受访者对提示清晰度与学习投入的评分呈正相关。该结果仅反映本课程样本内的相关关系，并不能证明课程提示导致了投入变化。后续分析仍需结合课程任务本身的差异。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15917, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 3878, "reasoning_output_tokens": 0}}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12490-b9f5-7951-9121-6dbea2314bfa"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "无需修改。待审稿两句均未超出原始材料支持范围：第一句与本课程样本的相关关系相符，第二句对因果不确定性和跨课程适用范围的限定也有依据。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15922, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 1031, "reasoning_output_tokens": 0}}

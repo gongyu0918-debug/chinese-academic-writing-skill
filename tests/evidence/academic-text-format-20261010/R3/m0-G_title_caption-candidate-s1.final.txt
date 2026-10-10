@@ -1,0 +1,7 @@
+```
+Experiences of using QR code guides in museums
+Keywords: Museums, QR code guides, user experience
+Figure 3-2. Number of Uses of QR code guides (times)
+```
+
+三处依据：题名与关键词改为本校要求的 sentence case（首词和缩写 QR 大写，其余小写），关键词分隔符由分号改为逗号，"QR code guide" 按给定术语写法统一；图题保留原稿 "Figure 3-2." 格式与编号，仅将术语大小写对齐给定写法，并把与中文"单位：次"不符的 "(min)" 改为 "(times)"，未添加任何数值。

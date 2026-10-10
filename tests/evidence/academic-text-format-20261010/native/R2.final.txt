@@ -1,0 +1,8 @@
+本轮我未参与写稿；仅读该包，未读其他文件、未联网、未委派、未写文件。12 稿“执行无效原因”栏均为 `[]`，完整性与质量按实稿判定。以下按 6 组逐组实报。
+
+- D 路线0：X 已用 “The study is at the proposal stage” 明示阶段，状态与数量齐；唯 “have already been collected as background material” 中 as background material 为请求外添加，删去即可。Y 干净，状态、模板、英文均无实错。
+- D 路线1：X、Y 同病：“the use experience of community reading spaces” 与关键词 “Use Experience” 不自然，最小改为 usage experience / Usage Experience（关键词分号与首字母大写本身合规）。Y 另：“has organized 12 site introductions” 的 site 易读作“网站”，改 venue introductions。其余“拟、12/8、尚未访谈、不预设、预期产出”齐全。
+- E 路线0：X 截断——止于“原摘录为“，缺引语原文与末句“此处仅作材料整理，未测试模型准确率。”；另公式与句号间空格 “$F_1=2PR/(P+R)$ 。” 未按中英标点清理（其余三稿已清理）。Y 合格：receive→receives、LLM 首现、URL/公式/引语均原样。
+- E 路线1：X 合格，URL、公式、引语三项保护完好。Y：“原摘录为“Learning is situated, not isolated”。”把引语内全角逗号改成半角，改动了引用原文（按“保留引用原文”字面判）；最小修改：恢复为 “Learning is situated，not isolated”。其余 URL、公式完好。
+- F 路线0：X 不可用——“相关材料的收集列为后续工作安排”把“已整理12份”说成未做，“具体人数将依据资料饱和情况再行确定”取消 8 名，并新增“使用同一公共空间的读者”“在地观察”“因果关系”等；最小修改：按给定事实重写（可直接用 F1 文本）。Y 形态不符——“材料里只有规则本身,没有题目、研究对象、中心问题”与请求所含要素不符；实交栏目框架表、缺口清单与“复核说明”，未满足“只输出正文”；应整稿替换。
+- F 路线1：X、Y 均合格：12/8、尚未开始、不预设、预期产出齐全，“只输出正文”达成；Y 仅多“前期工作中”衔接语，不属新增步骤。

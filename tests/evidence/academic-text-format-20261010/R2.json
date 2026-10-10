@@ -1,0 +1,23 @@
+{
+  "D_proposal_English": {
+    "leaf": "academic-proposal",
+    "format": true,
+    "requests": [
+      "下面是开题报告已定的内容，请译写该报告的英文摘要和关键词，仅交Abstract与Keywords，不联网。学校给定模板：英文关键词用分号分隔，每词首字母大写。摘要：本研究拟考察社区阅读空间的使用经验。作者已整理12份场地介绍，计划访谈8名成年使用者，目前尚未开展访谈。研究关注使用者如何描述空间的便利与限制，不预设空间能够提升阅读频率。预期产出为使用经验的主题分析。关键词：社区阅读空间；使用经验；主题分析。"
+    ]
+  },
+  "E_mixed_protected_text": {
+    "leaf": "academic-writing",
+    "format": true,
+    "requests": [
+      "这是中文论文的一段方法说明。只修正明显英文语法、缩写首次介绍和中英标点，保留专用标识与引用原文；只交改稿，不联网。本稿给定正式术语large language model（LLM）。原文：本文使用LLM整理已给摘要。In this step，the model receive 12 abstracts；no full text is provided。材料定位网址为https://example.org/item?id=A-1&lang=en。计算式保持为 $F_1=2PR/(P+R)$ 。原摘录为“Learning is situated，not isolated”。此处仅作材料整理，未测试模型准确率。"
+    ]
+  },
+  "F_proposal_control": {
+    "leaf": "academic-proposal",
+    "format": false,
+    "requests": [
+      "只把下列开题报告研究安排写得自然些，保留状态与数量，不加新步骤：作者已整理12份场地介绍，拟访谈8名成年使用者。访谈目前尚未开始，拟重点了解使用者如何描述空间的便利与限制。研究不预设空间能够提升阅读频率，预期产出为使用经验的主题分析。只输出正文，不联网。"
+    ]
+  }
+}

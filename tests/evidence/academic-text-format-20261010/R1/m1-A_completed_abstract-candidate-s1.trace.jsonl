@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1248d-f49a-7352-ad6c-96093ef12084"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "The relationship between online course prompts and students’ self-assessed engagement\n\nAbstract: This study analyzed 86 valid questionnaires from one online course at one institution. The questionnaires recorded students' ratings of the clarity of course prompts and of their own learning engagement. The results showed a positive correlation between the two ratings (r = 0.28). This study did not examine whether prompts caused changes in engagement, and the conclusions are limited to the questionnaire sample from that course.\n\nKeywords: online course, prompt clarity, self-assessed engagement"}}
+{"type": "turn.completed", "usage": {"input_tokens": 17075, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 681, "reasoning_output_tokens": 0}}

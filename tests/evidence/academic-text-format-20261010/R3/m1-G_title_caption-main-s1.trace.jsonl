@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12490-0d0e-7d23-8721-9dd521d4dc78"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "Experiences of using QR code guides in museums  \nKeywords: Museums, QR code guides, user experience  \nFigure 3-2. Number of uses of QR code guides (times)"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15985, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 545, "reasoning_output_tokens": 0}}

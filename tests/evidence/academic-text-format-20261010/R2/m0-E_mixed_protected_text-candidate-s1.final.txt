@@ -1,0 +1,1 @@
+本文使用large language model（LLM）整理已给摘要。In this step, the model receives 12 abstracts; no full text is provided.材料定位网址为https://example.org/item?id=A-1&lang=en。计算式保持为 $F_1=2PR/(P+R)$。原摘录为“Learning is situated，not isolated”。此处仅作材料整理，未测试模型准确率。

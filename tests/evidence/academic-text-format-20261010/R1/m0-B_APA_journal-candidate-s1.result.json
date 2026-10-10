@@ -1,0 +1,31 @@
+{
+  "model": "alibaba-token-plan-responses/qwen3.8-flash",
+  "effort": "max",
+  "case": "B_APA_journal",
+  "arm": "candidate",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [],
+  "thread_ids": [
+    "01a1248e-8141-7a33-9bc2-b5a58f427ddf"
+  ],
+  "seconds": 18.95,
+  "prompt_sha256": "3dac88a9d302a9dff788fdad9853b05c1bd61f112d6ce9f9c5582ad9b6ea414a",
+  "draft_sha256": "d157a8ef9c0c1b9d432d6b9f10000a509b4a069a38e4194da2ea6ef4b4886201",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/citation-research.md",
+    "references/academic-text-format.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 14919,
+      "cached_input_tokens": 1024,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 843,
+      "reasoning_output_tokens": 586
+    }
+  ]
+}

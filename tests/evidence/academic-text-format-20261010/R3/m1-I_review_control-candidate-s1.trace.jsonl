@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12490-86ea-77f3-bc29-8a5c74d67459"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "无需修改。待审稿与原始材料一致：正相关对应 r=0.28，“不能确定因果关系”对应无干预、无因果检验，“是否适用于其他课程仍需进一步考察”对应样本只是本课程一次问卷。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16017, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 1130, "reasoning_output_tokens": 0}}

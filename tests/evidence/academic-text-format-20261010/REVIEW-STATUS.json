@@ -1,0 +1,10 @@
+{
+  "audit": "complete",
+  "R1": "complete",
+  "R2": "complete",
+  "R3": "Full packet read, no final report after repeated bounded waits; closed; not counted as complete independent review.",
+  "forward": "complete",
+  "actual_model": "alibaba-token-plan-responses/deepseek-v4.1-flash",
+  "effort": "max",
+  "main_review_scope": "All 56 CLI drafts and native forward output; independent evidence only R1/R2."
+}

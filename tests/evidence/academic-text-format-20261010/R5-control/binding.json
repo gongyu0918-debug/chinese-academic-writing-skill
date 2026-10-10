@@ -1,0 +1,40 @@
+{
+  "baseline_commit": "c38f02f09c7abfac80c7b85c349c642b3120a962",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\academic-rule-format-audit\\R5-control-4esf4gyr",
+  "spec": {
+    "L_chinese_edit": {
+      "leaf": "academic-writing",
+      "format": false,
+      "requests": [
+        "只润色这段中文课程论文，不补事实，不解释，不联网：本次整理得到33份有效阅读日志。日志记载的是学生在三次课程活动中的阅读困难，不能直接据此推断困难发生的原因。本文后续比较以日志中的具体描述为依据，不将记录条数等同于困难的严重程度。只输出改稿。"
+      ]
+    },
+    "M_proposal_edit": {
+      "leaf": "academic-proposal",
+      "format": false,
+      "requests": [
+        "只把下面开题安排写得自然些，所有状态与数量保留，不添加步骤，不联网，直接交正文：作者已经整理5份课程说明，拟访谈6名修读者。访谈尚未开始，研究拟了解修读者对作业要求的理解，未预设作业说明越长就越清晰。预期形成作业要求理解经验的主题整理。"
+      ]
+    },
+    "N_chinese_review": {
+      "leaf": "academic-writing",
+      "format": false,
+      "requests": [
+        "只审不改下列中文论文段落，只报告有依据的问题；无问题说无需修改，不联网。材料：整理了33份阅读日志，日志仅记载学生在三次课程活动中的阅读困难，未调查困难的成因。待审段：本次整理的33份阅读日志呈现了学生在三次课程活动中的阅读困难。本文只描述这些困难，不据此确定其成因。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "47b63d01a5cd86f111768c13850ba4762cc0690ff8c60c971c7db1d77d679aaf"
+}

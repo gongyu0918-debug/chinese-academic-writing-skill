@@ -1,0 +1,70 @@
+{
+  "version": "0.1.8-format.1",
+  "local_only": true,
+  "zip_sha256": "32e8e5e2567a181dd1c9e565df408f6c6a29e90187c42bbc4398e5c0054fddcb",
+  "files": [
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "6aa3fabd7184401be8c09f0e235b78ea066ccd6837929aa57b742b800856ed13"
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "7182fd4c6281db93871ce4941eb4443e2230a4e33680a3b7f99510bcf0a9d023"
+    },
+    {
+      "path": "references/academic-literature-review.md",
+      "sha256": "e6c58dd737900b87f733325f449f533a3367d2f23558fa27a1708fd5f8801c68"
+    },
+    {
+      "path": "references/academic-proposal.md",
+      "sha256": "bb346a19004028e0f6e006cc8e5e0d861ac4534ed6176dae8990f7a967be3fe7"
+    },
+    {
+      "path": "references/academic-text-format.md",
+      "sha256": "26aa2271a9a59bd137fba555f2b791dd75484f48d00284e29d939082d1eafe5e"
+    },
+    {
+      "path": "references/academic-writing.md",
+      "sha256": "1d610399f3f3d210abc3a52f95c3198314af74211ef88024e44f7df55619d07a"
+    },
+    {
+      "path": "references/anti-ai-writing.md",
+      "sha256": "e7a318294e60357d5e59018a38bd8b6629916d93f40a85dd5de2cec8fd9725f1"
+    },
+    {
+      "path": "references/citation-research.md",
+      "sha256": "51d0879c5a15598736742ed82ebc99f0de92a834f76c691d72f7e4a376935862"
+    },
+    {
+      "path": "references/long-form-consistency.md",
+      "sha256": "c0475623d91ddbd829eb8a8d08197878a5d6b0d5587f5e18320caf826f7c2530"
+    },
+    {
+      "path": "scripts/citation_audit.py",
+      "sha256": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c"
+    },
+    {
+      "path": "scripts/manuscript_audit.py",
+      "sha256": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0"
+    },
+    {
+      "path": "scripts/prose_lint.py",
+      "sha256": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "8c1cfb0ab342bcc2bcb18e7c5b33e6583aa009865956f68d3cc33584b683bf05"
+    }
+  ],
+  "tests": {
+    "command": "python -B -m unittest tests.test_skillhub_package_builder -v",
+    "passed": 6,
+    "scope": "Package whitelist, deterministic bytes, path and overwrite behavior only; not prompt quality."
+  },
+  "structure_check": {
+    "command": "bundled python -B skill-creator/scripts/quick_validate.py; py -3 -B runtime check",
+    "result": "unavailable: bundled Python lacks yaml; py launcher reports No installed Python found",
+    "claimed_pass": false,
+    "manual_scope": "Reviewed name/description frontmatter, discoverable conditional reference and final runtime diff; no prompt-string gate."
+  }
+}

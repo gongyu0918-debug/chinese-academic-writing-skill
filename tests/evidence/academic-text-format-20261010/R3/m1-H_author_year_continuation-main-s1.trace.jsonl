@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12490-6760-73f1-ad52-9b6aa80b7fcc"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "比较而言，Lee（2021）强调解释性例子与理解评分正相关，Wang（2023）则显示单纯增加信息长度并未提高理解评分。两项结果共同提示，导览信息的可理解性可能更多取决于内容能否为参观者提供清楚的解释性支撑，而不是文本总量本身。因此，博物馆导览设计可以优先考虑是否包含便于理解的信息组织方式或例子，而非默认通过扩展篇幅来提升理解效果。不过，这一判断仍需谨慎对待：Lee（2021）的研究为相关性结果，未检验因果；Wang（2023）来自另一馆的不同样本，尚不能直接推广到所有导览情境。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15998, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 634, "reasoning_output_tokens": 0}}

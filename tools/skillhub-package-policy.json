@@ -14,8 +14,8 @@
   },
   "skillhub_package": {
     "root": "chinese-academic-writing-assistant",
-    "runtime_file_count": 11,
-    "file_count": 12,
+    "runtime_file_count": 12,
+    "file_count": 13,
     "markdown_license": "LICENSE.md",
     "license_source": "LICENSE",
     "files": [
@@ -24,6 +24,7 @@
       "agents/openai.yaml",
       "references/academic-literature-review.md",
       "references/academic-proposal.md",
+      "references/academic-text-format.md",
       "references/academic-writing.md",
       "references/anti-ai-writing.md",
       "references/citation-research.md",
@@ -44,7 +45,7 @@
       ],
       "name": "chinese-academic-writing-assistant",
       "description_source": "policy",
-      "description": "依据作者材料、文献或授权来源，协助起草、改写和审阅中文论文、开题报告及文献综述，并核对论证、证据与引用。",
+      "description": "依据作者材料、文献或授权来源，协助起草、改写和审阅中文论文、开题报告及文献综述，处理其中必要的英文部分，并核对论证、证据与引用。",
       "slug": "chinese-academic-writing-assistant",
       "displayName": "中文论文写作",
       "tags": [

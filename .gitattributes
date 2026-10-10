@@ -41,3 +41,6 @@ tests/evidence/v0.1.8-release-gate/** text eol=lf
 
 # Preserve frozen competitor expansion inputs, visible outputs and review reports verbatim.
 tests/evidence/competitor-expansion-20261010/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve frozen English-format inputs, drafts, reviews and model metadata.
+tests/evidence/academic-text-format-20261010/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

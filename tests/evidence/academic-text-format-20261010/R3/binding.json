@@ -1,0 +1,40 @@
+{
+  "baseline_commit": "c38f02f09c7abfac80c7b85c349c642b3120a962",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "ollama-cloud/glm-5.3-flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\academic-rule-format-audit\\R3-8rwii760",
+  "spec": {
+    "G_title_caption": {
+      "leaf": "academic-writing",
+      "format": true,
+      "requests": [
+        "只校正以下中文论文附带英文题名、关键词和图题的英文及一致性，直接给修改后的三行。不联网，不改成英语全文。本校模板要求英文题名与关键词为sentence case，关键词逗号分隔；图题沿用原稿格式和编号。中文题名：博物馆二维码导览的使用经验；关键词：博物馆；二维码导览；使用经验；图3-2：二维码导览使用次数，单位：次，英文给定术语QR code guide。现稿：Experiences Of Using QR Code Guides In Museums\nKeywords: Museums; QR Code Guides; User Experience\nFigure 3-2. Number of Uses of QR Code Guides (min)。没有提供数据，勿添加图中数值。"
+      ]
+    },
+    "H_author_year_continuation": {
+      "leaf": "academic-writing",
+      "format": true,
+      "requests": [
+        "这是中文论文讨论节的局部续写。原稿采用作者—年份引用，本轮不要转换样式，不联网。只依据已给来源摘要写一小段比较，不另列参考文献。已给段落：对导览信息的理解并不只取决于信息长度（Lee, 2021）。来源L1（Lee, 2021）摘要：在35名博物馆参观者中，解释性例子与理解评分正相关；未检验因果。来源W1（Wang, 2023）摘要：在另一馆40名参观者中，增加信息长度未提高理解评分。续段比较两项结果对设计导览信息的启示，允许基于材料作有限分析；保持L1/W1对应的作者年份。"
+      ]
+    },
+    "I_review_control": {
+      "leaf": "academic-writing",
+      "format": false,
+      "requests": [
+        "只审不改这段论文结论，仅给有依据的问题，没问题就说无需修改，不联网。原始材料：一次课程问卷有86份有效回答，提示清晰度与自评投入评分正相关（r=0.28），没有干预、没有因果检验。待审稿：本课程样本中，提示清晰度与自评投入评分呈正相关。该结果不能确定两者的因果关系，是否适用于其他课程仍需进一步考察。"
+      ]
+    }
+  },
+  "cli_version": "codex-cli 0.162.0-alpha.2",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "47b63d01a5cd86f111768c13850ba4762cc0690ff8c60c971c7db1d77d679aaf"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"rg --files .release/academic-rule-format-audit/candidate-v2\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath \\\".release\\\\academic-rule-format-audit\\\\candidate-v2\\\\SKILL.md\\\" -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath \\\".release\\\\academic-rule-format-audit\\\\candidate-v2\\\\references\\\\academic-text-format.md\\\" -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  },
+  {
+    "name": "exec_command",
+    "arguments": "{\"cmd\": \"Get-Content -LiteralPath \\\".release\\\\academic-rule-format-audit\\\\candidate-v2\\\\references\\\\academic-writing.md\\\" -Raw -Encoding UTF8\", \"workdir\": \"F:\\\\Workspaces\\\\chinese-academic-writing-skill\"}"
+  }
+]

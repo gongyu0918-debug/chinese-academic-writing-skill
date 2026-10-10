@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a1248e-8141-7a33-9bc2-b5a58f427ddf"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "```markdown\nRybaczewska, M., & Sparks, L. (2022). Ageing consumers and e-commerce activities. *Ageing and Society*, *42*(8), 1879–1898. https://doi.org/10.1017/S0144686X20001932\n\nBosco, G., Rizzato, A., Moon, R. E., & Camporesi, E. M. (2018). Environmental physiology and diving medicine. *Frontiers in Psychology*, *9*, 72. https://doi.org/10.3389/fpsyg.2018.00072\n```\n\n两条均按你给定的字段著录：文章题名为 sentence case 且保留专名与通用大写写法（Ageing、E-Commerce），期刊名与卷号斜体、期号在括号内不斜体；第二条按该刊无期号的字段省略期号，文章编号 72 单独置于卷号之后。DOI 以统一 https://doi.org/ 形式呈现，未做联网核验。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14919, "cached_input_tokens": 1024, "cache_write_input_tokens": 0, "output_tokens": 843, "reasoning_output_tokens": 586}}

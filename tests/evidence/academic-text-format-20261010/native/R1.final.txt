@@ -1,0 +1,10 @@
+审查仅基于 [packet-R1.md](F:/Workspaces/chinese-academic-writing-skill/.release/academic-rule-format-audit/packet-R1.md) 全部内容（3 任务、6 组、12 稿），未读包外材料；APA 疑点只对照 [APA Style 官方 Journal Article References 页](https://apastyle.apa.org/style-grammar-guidelines/references/examples/journal-article-references)。执行无效标记仅存于 A/路线 0 的 X 稿（unexpected_tool_use）：保留，不计入受控比较。以下只列确认问题，未提及者即无确认问题。
+
+- A/路线 0：X 译文事实合规（86、r = 0.28、未检验因果、样本限定均保留），但多出"三点译法说明，供你按正文校正：……"整段，与"直接给可用文字"不符；最小修改：删去该说明段，只留题名、Abstract、Keywords。Y 无确认问题。
+- A/路线 1：X 无确认问题。Y 一处轻微：原句 "collected from an online course at one university"；材料只写"某校"，未指明学校类型；最小修改：one university 改为 one institution（或 a certain school）。其余合规。
+- B/路线 0：X 两处。① 原句 "…*Frontiers in Psychology*, *9*, 72."；APA 官方规定以文章编号代页码须写 "Article＋编号"（官方示例同组字段即作 "9, Article 72"）；最小修改：改为 "*9*, Article 72."。② 多出"两条均按你给定的字段著录：……"整段说明，与"只交两条格式化条目"不符；最小修改：删除。Y 无确认问题。
+- B/路线 1：X、Y 均无确认问题（两条与官方格式一致）。
+- C/路线 0：X 无确认问题（仅词面润色）。Y 不满足"只润色、不补资料"：漏"86份有效回答"；"受访者对提示清晰度与学习投入的评分呈正相关"被改写为"课程提示与实际投入的评分呈正向关联：投入越高，评分也越高"；新增"这一关联只出现在课程提示与实际投入同时变动的学习行为中"；"投入变化"改为"投入增加"；并漏掉末句"后续分析仍需结合课程任务本身的差异"。最小修改：按原文回填上述四处删改（保留86份，恢复相关句与"投入变化"，补回末句）。
+- C/路线 1：X、Y 均无确认问题。
+
+不确定项：无影响结论的未核准处；书目身份与 DOI 状态按原请求不在核验范围。

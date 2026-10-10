@@ -1,0 +1,82 @@
+[
+  {
+    "file_name": "rollout-2026-10-09T23-52-25-01a12495-973f-7513-aa6a-d272619eb08f.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a12495-973f-7513-aa6a-d272619eb08f"
+  },
+  {
+    "file_name": "rollout-2026-10-09T23-52-25-01a12495-9741-7eb1-be21-25b5b5c86bd2.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a12495-9741-7eb1-be21-25b5b5c86bd2"
+  },
+  {
+    "file_name": "rollout-2026-10-09T23-52-25-01a12495-9742-71c0-bef6-a65c19aed4b6.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a12495-9742-71c0-bef6-a65c19aed4b6"
+  },
+  {
+    "file_name": "rollout-2026-10-09T23-52-26-01a12495-9794-7513-8e37-fb542135a327.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a12495-9794-7513-8e37-fb542135a327"
+  },
+  {
+    "file_name": "rollout-2026-10-09T23-52-37-01a12495-c65c-7450-923d-9f634544607e.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a12495-c65c-7450-923d-9f634544607e"
+  },
+  {
+    "file_name": "rollout-2026-10-09T23-52-47-01a12495-ec9d-7842-90e2-f4d81d00d86b.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a12495-ec9d-7842-90e2-f4d81d00d86b"
+  },
+  {
+    "file_name": "rollout-2026-10-09T23-52-54-01a12496-07f2-73e2-a3c2-a30d5c1fa89a.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a12496-07f2-73e2-a3c2-a30d5c1fa89a"
+  },
+  {
+    "file_name": "rollout-2026-10-09T23-53-08-01a12496-3dca-7992-8b1a-cd6c12603743.jsonl",
+    "context": [
+      {
+        "model": "ollama-cloud/glm-5.3-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a12496-3dca-7992-8b1a-cd6c12603743"
+  }
+]

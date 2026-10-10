@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a12495-9794-7513-8e37-fb542135a327"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "Experiences of using audio guide in museums\nFigure 2-4: Number of visitors using audio guide, unit: persons"}}
+{"type": "turn.completed", "usage": {"input_tokens": 15657, "cached_input_tokens": 7168, "cache_write_input_tokens": 0, "output_tokens": 490, "reasoning_output_tokens": 462}}

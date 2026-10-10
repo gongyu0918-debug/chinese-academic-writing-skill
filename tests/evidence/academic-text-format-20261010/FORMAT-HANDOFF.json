@@ -1,0 +1,33 @@
+{
+  "requested_thread": "01a1219b-f6ab-7132-aef8-191095f7361d",
+  "thread_title": "更新中文公文写作 Pro",
+  "request_sent": true,
+  "response_status": "Received explicit response from the requested thread. Pro holds no academic formatting rules; local formatter is an older installed source; remote new paper rule held only as inventory metadata.",
+  "read_only_local_sources": [
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\chinese-document-formatting\\references\\papers.md",
+      "sha256": "ebd4b656640b4dc1ffb6d1123496a6d30a950c93acff2c3c1c33e822796240a3"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\chinese-document-formatting\\references\\acceptance.md",
+      "sha256": "5158374688719cd3319d916352d0ef74dffc42995ee4bf8b5c46383f919323c1"
+    }
+  ],
+  "actual_scope": "Read paper routing and paper-specific acceptance text; no engine invocation, installation, DOCX mutation or PDF inspection.",
+  "not_proven": [
+    "Current remote formatter commit parity",
+    "GB/T full-text compliance",
+    "Actual file pagination",
+    "English formatting engine support",
+    "Remote inventory hash is reported by source thread, not independently verified paper text."
+  ],
+  "thread_reported_sources": {
+    "local_runtime_commit": "5ec7918b5646ace4c066fca078aead7e2df5a58a",
+    "local_papers_sha256": "ebd4b656640b4dc1ffb6d1123496a6d30a950c93acff2c3c1c33e822796240a3",
+    "remote_inventory_commit": "d5921cd",
+    "remote_papers_bytes": 2359,
+    "remote_papers_sha256": "87dc56b0eb94eb1617da17a335776c7d14f2a24924b59f6750f9d64c2f03f309",
+    "remote_text_received": false,
+    "thread_validation_scope": "File/source/hash inspection only; Pro official-document tests are not academic tests."
+  }
+}
