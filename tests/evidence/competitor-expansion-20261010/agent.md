@@ -11,3 +11,5 @@
 首轮完成32次实际写稿（31执行有效、1工具使用无效），主审回读全部输出。四个冷审角色均已交最终报告并关闭，来源研究两角色也已关闭；保留Newton覆盖补充、各报告漏读/误报与主审不同意的结论。四候选均未准入，未把调用数、字段完整或cold reviewer的“可用”当作通过率。native-session-models核对六agent均为继承父模型的deepseek-v4.1-flash/max，不称多模型评委。writer会话逐个核对qwen3.8-flash与glm-5.3-flash/max。
 
 归档首检拒绝写入：最初捕获器只看response_item.phase=final，而该native版本的结束报告位于event_msg.task_complete.last_agent_message，造成全部报告计数为0。核对实际日志字段后补采可见结束消息，未采内部推理，未重跑写稿或改动原报告；再次核对完成模型、输入输出绑定后才写证据目录。该修复只是归档兼容，不作为规则改善。
+
+研究证据0744245已快进合入main。.gitattributes仅新增本轮证据原样保存路径，防止CRLF转换破坏哈希；合入前核对暂存字节，合入后291项留档与32份写稿绑定均相符。托管worktree已通过archive_worktree归档，目标目录和Git登记均消失，任务附件已变archived_worktree。回收前无脏改、忽略文件或未合并提交；六新增agent全部关闭。详见WORKTREE-LIFECYCLE.md。当前0.1.8产品树仍与基线一致，本轮不发布或推送。

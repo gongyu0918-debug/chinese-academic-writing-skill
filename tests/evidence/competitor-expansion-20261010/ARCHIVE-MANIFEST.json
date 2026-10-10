@@ -9,7 +9,7 @@
   "meaning": "Counts and hashes verify archive integrity only",
   "file_hashes": {
     "ADJUDICATION.md": "038a9ccc1bc8780d1ebdd4ecb2213413e47c268fa95376d9375ea51a08f8e198",
-    "agent.md": "f1ff4c5cd98e79621fbc90e65de7fd87a12c3a125edfd606102077a3b273102d",
+    "agent.md": "b028d0f0a2b033e92819a7db8d604d0aa4c0862fb75ac78e39342f0b8fe352b6",
     "agents/chinese-raw.md": "450e8e61a4008c72275de10164d7ed0dee528ebf6d32d8d5fd5416edf66047a0",
     "agents/citations-raw.md": "02f26296a2dba40370a6f10a64ca2206571b6b4419bf9bec6b9f5fccfb5926ea",
     "agents/reports-raw.md": "1af8380f8b7ba8ddf68dc82aa5b6ad57af9ab8ae56b77209ada5f9108d5ef7a0",
@@ -298,6 +298,8 @@
     "statistics-R1/snapshots/main/references/long-form-consistency.md": "c0475623d91ddbd829eb8a8d08197878a5d6b0d5587f5e18320caf826f7c2530",
     "statistics-R1/snapshots/main/SKILL.md": "ddc50022feed075ea63eed8a30eb7a11ccb4bdae77349137439236566fb93ea0",
     "statistics-rule.txt": "6318e93de8a626cb6d4b2fbb5b1d1e2ea221b03e24eb95311941c9d6a8da75bb",
-    "WORKTREE-LIFECYCLE.md": "9f58ba4d207754cd939beef890fdb8771408fddc5af964cb4ca08d3d581d8640"
-  }
+    "WORKTREE-LIFECYCLE.md": "efb3e7121d9d93651efc522ff2d06a1f58a52a43b1506893be019779bfe8e93d"
+  },
+  "initial_evidence_commit": "0744245a02e638485ebd99be6a2eb589ccfa2150",
+  "lifecycle_update": "Cleanup records updated after verified archival; original writing bindings unchanged"
 }
