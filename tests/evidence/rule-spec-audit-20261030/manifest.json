@@ -1,0 +1,77 @@
+{
+  "baseline_commit": "63a77bd9c4703b9a480387173761224278594ee6",
+  "runtime_tag": "v0.1.9",
+  "artifact_type": "audit_and_spec_only",
+  "spec_count": 42,
+  "finding_count": 15,
+  "diagnostic_tasks": 4,
+  "diagnostic_outputs": 8,
+  "local_link_targets_checked": 20,
+  "checks": {
+    "whitespace": {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    "runtime_unchanged": {
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "63a77bd9c4703b9a480387173761224278594ee6",
+        "--",
+        "chinese-academic-writing-assistant"
+      ],
+      "exit_code": 0
+    },
+    "runtime_matches_v0.1.9": {
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "v0.1.9",
+        "--",
+        "chinese-academic-writing-assistant"
+      ],
+      "exit_code": 0
+    }
+  },
+  "structural_validation_errors": [],
+  "validation_scope": "Artifact readability, IDs, links, provenance completeness and Git runtime identity only; not a writing-quality or rule-effect gate.",
+  "runtime_sha256_worktree_bytes": {
+    "chinese-academic-writing-assistant/agents/openai.yaml": "6aa3fabd7184401be8c09f0e235b78ea066ccd6837929aa57b742b800856ed13",
+    "chinese-academic-writing-assistant/LICENSE.md": "7182fd4c6281db93871ce4941eb4443e2230a4e33680a3b7f99510bcf0a9d023",
+    "chinese-academic-writing-assistant/references/academic-literature-review.md": "e6c58dd737900b87f733325f449f533a3367d2f23558fa27a1708fd5f8801c68",
+    "chinese-academic-writing-assistant/references/academic-proposal.md": "abaf47ffe54c21d7a59254258c1fe3742e98bc9f96324769ec1f7555baed4f73",
+    "chinese-academic-writing-assistant/references/academic-text-format.md": "a16a9c49d53ae885a779c302fb2457629c4ff83f464e9491bc02dbd428529739",
+    "chinese-academic-writing-assistant/references/academic-writing.md": "9d01c5ef3ce891cdfe9527792166853c24e26bf5f3d2f26bcdcbde5c09482bf6",
+    "chinese-academic-writing-assistant/references/anti-ai-writing.md": "cdf34917a03630ca41c9602723a6371c8d1771c112d058efeb7bb3338cb8774a",
+    "chinese-academic-writing-assistant/references/citation-research.md": "73a5a112c12fd0e748711f7055108584247cf514c1ecb3132351873e36a8f2f5",
+    "chinese-academic-writing-assistant/references/long-form-consistency.md": "c0475623d91ddbd829eb8a8d08197878a5d6b0d5587f5e18320caf826f7c2530",
+    "chinese-academic-writing-assistant/scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+    "chinese-academic-writing-assistant/scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+    "chinese-academic-writing-assistant/scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+    "chinese-academic-writing-assistant/SKILL.md": "edfda587c9ce77a99486f496096328748ea20fa9f693c5c99cd469ba33b22ba9"
+  },
+  "artifact_sha256_worktree_bytes": {
+    "specs/evaluation-spec.md": "1ee948f876d9d2de872d2bc8eedf6b57c866a5187af9980f990b03caae55eb6b",
+    "specs/rule-audit-20261030.md": "090b26c80e5d813942664322dcc740b96d1ef80f7bcc2e0ba56bffa3e3456d7b",
+    "specs/writing-skill-spec.md": "2c34a56d928ea38fad41317b5c45e990bf95213f390b43e7aabe1b570e2a4af4",
+    "tests/evidence/rule-spec-audit-20261030/README.md": "967a4134deb11f750ba5ba46d1327024b7163e3f83fc2516595c12161b061a64",
+    "tests/evidence/rule-spec-audit-20261030/review-notes.md": "b83e19989bcb8221c12b9bcdca6c0fc73a76c9db398c578d35510fb01c5a7048",
+    "tests/evidence/rule-spec-audit-20261030/writing-review.md": "f674a76149fbd3d3e6c6dafaadc90ed058f8be462066c63e718377145f027919",
+    "tests/evidence/rule-spec-audit-20261030/cases-and-outputs.json": "f17f4daea1a8ae2820caa39ed97ee08d7e7375e7d7d996232bee5aef2c790d1c"
+  },
+  "final_independent_review": {
+    "agent_id": "01a18e02-e4ae-73b2-b024-69c232588c4d",
+    "finding": "T4-r1 retained/rephrased platform-effect disclaimer misclassified as wholly new",
+    "resolution": "Corrected adjudication only; raw outputs and review retained"
+  },
+  "artifact_hash_exclusions": [
+    "manifest.json (self-reference)",
+    "LIFECYCLE.json (post-merge cleanup receipt)"
+  ]
+}

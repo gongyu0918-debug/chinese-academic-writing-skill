@@ -1,0 +1,17 @@
+{
+  "purpose": "Isolate the 0.1.9 rule spec, semantic audit and current-version writing diagnostics.",
+  "baseline_commit": "63a77bd9c4703b9a480387173761224278594ee6",
+  "worktree_type": "manual_git",
+  "worktree_path": "F:/Workspaces/chinese-academic-writing-skill/.release/worktrees/spec-rule-audit-20261030",
+  "branch": "codex/spec-rule-audit-20261030",
+  "reuse_check": {
+    "release-v0.1.5": "Merged, but 62 ignored files remain; preserved.",
+    "release-v0.1.4-cold-fixes": "Merged, but 128 ignored files remain; preserved.",
+    "exp-leaf-contract-relief": "Clean but contains commits not merged into current main; preserved.",
+    "reason_for_new_worktree": "No verified idle disposable worktree among the inspected candidates. No unrelated worktree was reset or removed."
+  },
+  "runtime_changes": false,
+  "release_or_push": false,
+  "phase": "validation_before_commit",
+  "cleanup_plan": "After committing and merging, verify status, unmerged commits, ignored files and active users; remove only this manual worktree and verify git worktree list."
+}
