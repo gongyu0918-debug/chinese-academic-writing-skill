@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "N3_method",
+    "N4_review_literature"
+  ],
+  "mapping": {
+    "0": {
+      "X": "candidate",
+      "Y": "main"
+    },
+    "1": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  }
+}

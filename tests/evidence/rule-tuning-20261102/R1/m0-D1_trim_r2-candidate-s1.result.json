@@ -1,0 +1,31 @@
+{
+  "model": "alibaba-token-plan-responses/qwen3.8-flash",
+  "effort": "max",
+  "case": "D1_trim_r2",
+  "arm": "candidate",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [],
+  "thread_ids": [
+    "01a19b43-c0e0-7531-9c8e-8c8a2d8fbed0"
+  ],
+  "seconds": 89.66,
+  "prompt_sha256": "adf3411fe6fe25215a474474e208144f2ce18a7bc040a35bf4c70518d54a3e4c",
+  "draft_sha256": "b8736243c3fe4ab988017d746a9079083b00eeda988fcbb4596039bfe07942be",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/academic-writing.md",
+    "references/anti-ai-writing.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 13817,
+      "cached_input_tokens": 7168,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6114,
+      "reasoning_output_tokens": 6023
+    }
+  ]
+}

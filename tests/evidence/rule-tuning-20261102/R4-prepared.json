@@ -1,0 +1,8 @@
+{
+  "candidate": "v3-c2",
+  "spec_sha256": "ede81588b11781af02ee4dd33c7acb8232462893bd0f1bdb193010a28544bbd6",
+  "anti_ai_sha256": "e09213ab3047bcecdeb781e0dcf2b15d0d21dcf5b60bcd3d3b8097a37436bd17",
+  "requests": 8,
+  "planned_calls": 32,
+  "only_runtime_delta_from_baseline": "references/anti-ai-writing.md"
+}

@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "D1_trim_r1",
+    "D1_trim_r2"
+  ],
+  "mapping": {
+    "0": {
+      "X": "main",
+      "Y": "candidate"
+    },
+    "1": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  }
+}

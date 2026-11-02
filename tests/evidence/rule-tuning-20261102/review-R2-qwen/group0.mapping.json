@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "N1_draft",
+    "N2_review"
+  ],
+  "mapping": {
+    "0": {
+      "X": "main",
+      "Y": "candidate"
+    },
+    "1": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  }
+}

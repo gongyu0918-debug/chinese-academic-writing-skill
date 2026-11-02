@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "E2_review_scope_r1",
+    "E2_review_scope_r2"
+  ],
+  "mapping": {
+    "0": {
+      "X": "candidate",
+      "Y": "main"
+    },
+    "1": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unittest": {
+    "command": "python -B -m unittest discover -s tests",
+    "tests": 166,
+    "result": "PASS",
+    "log": "unittest-full.log",
+    "initial_attempt": "33 temporary-directory sandbox permission errors and one pre-existing manifest test omission; see EXECUTION-NOTES.md."
+  },
+  "skill_structure": {
+    "command": "python -B C:/Users/admin/.codex/skills/.system/skill-creator/scripts/quick_validate.py chinese-academic-writing-assistant",
+    "result": "Skill is valid!"
+  },
+  "diff_check": "PASS",
+  "frozen_archive": {
+    "files": 656,
+    "sha256_matches": true,
+    "staged_git_blob_bytes_match": true,
+    "manifest": "ARCHIVE-MANIFEST.json"
+  },
+  "runtime": {
+    "files": 13,
+    "comparison": "byte-identical to R1 frozen main and git baseline b80559689c138d081e68aa8e6447811efe3c8113",
+    "candidate_admitted": false
+  },
+  "semantic_results": "See R1-R4 ADJUDICATION and README; no mechanical quality pass or global stability claim."
+}

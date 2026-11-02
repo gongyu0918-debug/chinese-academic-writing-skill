@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "D4_proposal_r1",
+    "D4_proposal_r2"
+  ],
+  "mapping": {
+    "0": {
+      "X": "candidate",
+      "Y": "main"
+    },
+    "1": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  }
+}

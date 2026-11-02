@@ -1,0 +1,12 @@
+{
+  "model": "alibaba-token-plan-responses/qwen3.8-flash",
+  "effort": "max",
+  "returncode": 0,
+  "prompt_sha256": "d8797f5370535e65782975abe80b52b33fbe9849954a4d4423265e543357aa09",
+  "draft_sha256": "8d0903474016ef08f809306bf7b894a8e22b7f6bcb3963892fe73314d114ed14",
+  "visible_tool_items": [],
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\rule-tuning-20261102\\review-runtime-jes9uew_",
+  "session_profile": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\rule-tuning-20261102\\review-runtime-jes9uew_\\native-profile",
+  "call_completed": true,
+  "semantic_review_completed": null
+}

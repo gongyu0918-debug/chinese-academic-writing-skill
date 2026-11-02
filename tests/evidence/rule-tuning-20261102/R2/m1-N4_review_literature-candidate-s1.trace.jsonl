@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a19b55-c5a8-7882-ab8a-2be3c41d9013"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "围绕信息理解与实际完成的差别，三项证据落在意向、过程体验与任务完成三个不同层面。S1以82人横断面问卷发现说明清晰度与自评使用意愿正相关，未跟踪实际使用。S2的55人独立访谈中，部分参与者认为说明容易理解，却因流程耗时不愿继续，作者主张理解与持续使用应分别考察。S3的40人短时操作任务中，增加示例后首次提交完成数由21变为29，指向完成数量，但未设随机对照。三者缺少实测的衔接，意向上的相关推不到完成数量，无对照的前后差异也难归因于示例，尚不能判定说明或示例对持续使用的因果作用。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 16944, "cached_input_tokens": 11264, "cache_write_input_tokens": 0, "output_tokens": 12303, "reasoning_output_tokens": 12157}}

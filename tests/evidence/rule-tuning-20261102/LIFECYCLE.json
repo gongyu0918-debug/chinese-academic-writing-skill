@@ -4,8 +4,14 @@
   "type": "manual_git",
   "branch": "codex/rule-tuning-20261102",
   "purpose": "Rule tuning candidate and controlled real-writing comparison",
-  "phase": "candidate_prepared_awaiting_external_destination_authorization",
-  "reason_retained": "Unmerged rule candidate and prepared experiments; actual writing evaluation has not started.",
+  "phase": "evaluation_complete_pending_evidence_merge_and_cleanup",
+  "reason_retained": "Preparing the completed evidence and spec update for commit; runtime restored to baseline, three frozen candidates retained in evidence.",
   "release_or_push": false,
-  "cleanup_condition": "After the authorized writing comparison, preserve evidence and merge or explicitly discard the candidate, then verify uncommitted/unmerged/ignored files and remove this worktree."
+  "cleanup_condition": "After the authorized writing comparison, preserve evidence and merge or explicitly discard the candidate, then verify uncommitted/unmerged/ignored files and remove this worktree.",
+  "user_authorization": "User directly approved Qwen/Alibaba and MiniMax for this round of writing validation and retesting, then explicitly reaffirmed permission for the isolated third-candidate tests.",
+  "writing_calls": 112,
+  "review_calls": 14,
+  "final_runtime": "13 files byte-identical to baseline b805596 / v0.1.9; candidates not admitted on current mixed evidence.",
+  "retained_local_stage": "F:/Workspaces/chinese-academic-writing-skill/.release/rule-tuning-20261102",
+  "stage_purpose": "Original isolated execution sessions and logs for provenance; visible frozen evidence is committed separately. Not a worktree, no active jobs depend on it."
 }

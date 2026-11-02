@@ -1,0 +1,322 @@
+[
+  {
+    "file_name": "rollout-2026-11-02T00-14-23-01a19b52-e306-7141-8328-7d4eda431965.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b52-e306-7141-8328-7d4eda431965"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-14-23-01a19b52-e306-7f21-a0a3-2f53578080f2.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b52-e306-7f21-a0a3-2f53578080f2"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-14-23-01a19b52-e366-7142-b1ea-e6f167940288.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b52-e366-7142-b1ea-e6f167940288"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-14-23-01a19b52-e367-7221-84b4-372e0e4f2053.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b52-e367-7221-84b4-372e0e4f2053"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-15-18-01a19b53-bade-7590-8e21-7a28c26b245a.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b53-bade-7590-8e21-7a28c26b245a"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-15-24-01a19b53-d41a-7c30-b949-386dcd51b488.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b53-d41a-7c30-b949-386dcd51b488"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-16-01-01a19b54-62f3-7782-99e4-7e9fa46d6672.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b54-62f3-7782-99e4-7e9fa46d6672"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-16-30-01a19b54-d497-7492-b394-1763cc995fe3.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b54-d497-7492-b394-1763cc995fe3"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-16-30-01a19b54-d6a2-7d50-9df1-be9b6d4748a9.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b54-d6a2-7d50-9df1-be9b6d4748a9"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-16-52-01a19b55-2a18-70d2-bd67-51d849b3148e.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b55-2a18-70d2-bd67-51d849b3148e"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-17-02-01a19b55-5088-7491-84f5-c0e2f31a894b.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b55-5088-7491-84f5-c0e2f31a894b"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-17-03-01a19b55-567b-7693-8e39-253d7b161d93.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b55-567b-7693-8e39-253d7b161d93"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-17-35-01a19b55-d239-71b2-ada8-1cbccd1e85de.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b55-d239-71b2-ada8-1cbccd1e85de"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-17-49-01a19b56-080a-7b80-96f7-75fe40b7108b.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b56-080a-7b80-96f7-75fe40b7108b"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-18-23-01a19b56-8fef-79d2-81db-739dd6424954.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b56-8fef-79d2-81db-739dd6424954"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-18-32-01a19b56-b2a6-7f62-b1b3-95bd87e09c9f.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b56-b2a6-7f62-b1b3-95bd87e09c9f"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-19-29-01a19b57-91d9-7aa2-bf98-d807d1ceae7e.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b57-91d9-7aa2-bf98-d807d1ceae7e"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-20-03-01a19b58-1515-74e0-ad7a-820767c4427d.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b58-1515-74e0-ad7a-820767c4427d"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-20-06-01a19b58-2105-7371-9647-f78d561b105f.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b58-2105-7371-9647-f78d561b105f"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-20-22-01a19b58-5d91-7db3-87ad-df8f2ad78652.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b58-5d91-7db3-87ad-df8f2ad78652"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-20-48-01a19b58-c401-78e1-881d-3a7a5cf59c5f.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b58-c401-78e1-881d-3a7a5cf59c5f"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-20-49-01a19b58-c897-7730-b1ce-955eba11e535.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b58-c897-7730-b1ce-955eba11e535"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-21-02-01a19b58-fc9f-7692-85d0-f335680dc427.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b58-fc9f-7692-85d0-f335680dc427"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-21-26-01a19b59-5ae0-7db1-94ee-4d06e3f3295c.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b59-5ae0-7db1-94ee-4d06e3f3295c"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-21-35-01a19b59-7a54-7281-84b1-1d5de7b9d4af.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b59-7a54-7281-84b1-1d5de7b9d4af"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-21-36-01a19b59-7f17-77b1-9336-c4072fb688d2.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b59-7f17-77b1-9336-c4072fb688d2"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-22-37-01a19b5a-6e7f-7fb1-99d7-3ddb4247fd5f.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b5a-6e7f-7fb1-99d7-3ddb4247fd5f"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-22-47-01a19b5a-958d-7fe3-9aaa-3f0d8de3e077.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b5a-958d-7fe3-9aaa-3f0d8de3e077"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-22-59-01a19b5a-c423-7961-a2ac-6c173dbfdcab.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b5a-c423-7961-a2ac-6c173dbfdcab"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-23-02-01a19b5a-d07d-7662-a7c5-03779adec3fd.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b5a-d07d-7662-a7c5-03779adec3fd"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-23-05-01a19b5a-dbe8-79b2-b82a-ec2aa2b2e3fb.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b5a-dbe8-79b2-b82a-ec2aa2b2e3fb"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-25-02-01a19b5c-a4bd-7010-8b7c-6ac1bcb43744.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b5c-a4bd-7010-8b7c-6ac1bcb43744"
+  }
+]

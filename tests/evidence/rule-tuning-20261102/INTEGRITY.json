@@ -1,0 +1,222 @@
+{
+  "runs": [
+    {
+      "batch": "R1",
+      "calls": 32,
+      "execution_invalid": [
+        {
+          "model": "alibaba-token-plan-responses/qwen3.8-flash",
+          "case": "D4_proposal_r1",
+          "arm": "candidate",
+          "invalid": [
+            "unexpected_tool_use"
+          ]
+        }
+      ],
+      "final_sha_receipts_matched": 32,
+      "model_effort_receipts_matched": 32,
+      "snapshot_file_count_per_arm": 13,
+      "runtime_delta": [
+        "references/anti-ai-writing.md"
+      ],
+      "baseline_anti_sha256": "cdf34917a03630ca41c9602723a6371c8d1771c112d058efeb7bb3338cb8774a",
+      "candidate_anti_sha256": "3b200b088033182a2acd1b8f9e08b77b0c0da467c53279b4fc334eb709422f8c",
+      "first_result_file_time_beijing": "2026-11-02T15:58:01.766051+08:00",
+      "last_result_file_time_beijing": "2026-11-02T16:05:40.469143+08:00",
+      "semantic_passes": null
+    },
+    {
+      "batch": "R2",
+      "calls": 16,
+      "execution_invalid": [],
+      "final_sha_receipts_matched": 16,
+      "model_effort_receipts_matched": 16,
+      "snapshot_file_count_per_arm": 13,
+      "runtime_delta": [
+        "references/anti-ai-writing.md"
+      ],
+      "baseline_anti_sha256": "cdf34917a03630ca41c9602723a6371c8d1771c112d058efeb7bb3338cb8774a",
+      "candidate_anti_sha256": "db81ece99157253d595c3b963b9368bea23bf51eaba21b23a1ea8ad97b516bbf",
+      "first_result_file_time_beijing": "2026-11-02T16:13:43.563379+08:00",
+      "last_result_file_time_beijing": "2026-11-02T16:18:24.473761+08:00",
+      "semantic_passes": null
+    },
+    {
+      "batch": "R3",
+      "calls": 32,
+      "execution_invalid": [
+        {
+          "model": "alibaba-token-plan-responses/qwen3.8-flash",
+          "case": "D2_syntax_r1",
+          "arm": "main",
+          "invalid": [
+            "unexpected_tool_use"
+          ]
+        },
+        {
+          "model": "alibaba-token-plan-responses/qwen3.8-flash",
+          "case": "D4_proposal_r1",
+          "arm": "main",
+          "invalid": [
+            "unexpected_tool_use"
+          ]
+        }
+      ],
+      "final_sha_receipts_matched": 32,
+      "model_effort_receipts_matched": 32,
+      "snapshot_file_count_per_arm": 13,
+      "runtime_delta": [
+        "references/anti-ai-writing.md"
+      ],
+      "baseline_anti_sha256": "cdf34917a03630ca41c9602723a6371c8d1771c112d058efeb7bb3338cb8774a",
+      "candidate_anti_sha256": "db81ece99157253d595c3b963b9368bea23bf51eaba21b23a1ea8ad97b516bbf",
+      "first_result_file_time_beijing": "2026-11-02T16:15:18.141389+08:00",
+      "last_result_file_time_beijing": "2026-11-02T16:27:26.111636+08:00",
+      "semantic_passes": null
+    },
+    {
+      "batch": "R4",
+      "calls": 32,
+      "execution_invalid": [],
+      "final_sha_receipts_matched": 32,
+      "model_effort_receipts_matched": 32,
+      "snapshot_file_count_per_arm": 13,
+      "runtime_delta": [
+        "references/anti-ai-writing.md"
+      ],
+      "baseline_anti_sha256": "cdf34917a03630ca41c9602723a6371c8d1771c112d058efeb7bb3338cb8774a",
+      "candidate_anti_sha256": "e09213ab3047bcecdeb781e0dcf2b15d0d21dcf5b60bcd3d3b8097a37436bd17",
+      "first_result_file_time_beijing": "2026-11-02T16:27:14.882951+08:00",
+      "last_result_file_time_beijing": "2026-11-02T16:35:13.387582+08:00",
+      "semantic_passes": null
+    }
+  ],
+  "reviews": [
+    {
+      "path": "review-R1-mini/group1",
+      "model": "minimax-cn/MiniMax-M3.1-Flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R1-mini/group3",
+      "model": "minimax-cn/MiniMax-M3.1-Flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R1-qwen/group0",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R1-qwen/group2",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R2-mini/group1",
+      "model": "minimax-cn/MiniMax-M3.1-Flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R2-qwen/group0",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R3-mini/group0",
+      "model": "minimax-cn/MiniMax-M3.1-Flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R3-mini/group2",
+      "model": "minimax-cn/MiniMax-M3.1-Flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R3-qwen/group1",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R3-qwen/group3",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R4-mini/group1",
+      "model": "minimax-cn/MiniMax-M3.1-Flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R4-mini/group3",
+      "model": "minimax-cn/MiniMax-M3.1-Flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R4-qwen/group0",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    },
+    {
+      "path": "review-R4-qwen/group2",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "visible_tool_events": 0,
+      "hash_receipts_matched": true,
+      "semantic_verdict": "See human adjudication; execution is not quality approval."
+    }
+  ],
+  "writing_calls": 112,
+  "execution_valid_writing_calls": 109,
+  "review_calls": 14,
+  "runtime_restored_to_baseline": true,
+  "runtime_file_count": 13,
+  "unknowns": [
+    "provider-side weights/version",
+    "provider-side temperature/seed",
+    "upstream received bytes",
+    "unreported provider configuration"
+  ],
+  "concurrency": "4 writers per batch; R2/R3 overlapped briefly and reviews could overlap writing; upstream load not controlled",
+  "time_source": "Result file modification times, converted to Asia/Shanghai offset; not upstream timing receipts.",
+  "semantic_quality_is_not_mechanically_graded": true
+}

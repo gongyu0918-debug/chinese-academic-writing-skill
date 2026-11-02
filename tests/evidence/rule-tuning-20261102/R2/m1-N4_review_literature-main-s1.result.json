@@ -1,0 +1,31 @@
+{
+  "model": "minimax-cn/MiniMax-M3.1-Flash",
+  "effort": "max",
+  "case": "N4_review_literature",
+  "arm": "main",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [],
+  "thread_ids": [
+    "01a19b54-8104-7cd2-8960-0ed06040b360"
+  ],
+  "seconds": 83.09,
+  "prompt_sha256": "9760002d38a9cc055ca554d7435068481bc7ba6dbb187434ff73fa88f8d95f13",
+  "draft_sha256": "3ad108e37ab8ae21c6e60df5596cd138155be8c1e171cc50f9ad10e360c6c7db",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/academic-literature-review.md",
+    "references/anti-ai-writing.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 17123,
+      "cached_input_tokens": 128,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8860,
+      "reasoning_output_tokens": 8715
+    }
+  ]
+}

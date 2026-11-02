@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a19b51-f702-7530-8bac-dc0a6306b7e0"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "三项来源对理解与完成的支持层次并不相同。S1基于82人横断面问卷，发现说明清晰度与自评使用意愿正相关，未跟踪实际使用，只能支持态度层面的关联。S2的55人独立访谈中，部分参与者认为说明容易理解，仍因流程耗时不愿继续，作者据此提出理解与持续使用应分别考察。S3的40人短时操作任务记录到增加示例后首次提交完成数由21变为29，触及实际完成，但未设随机对照，难以归因于示例本身。三者从自评关联、口述分离到行为计数，测量对象与证据强度各异，现有材料只提示理解与实际完成需分别测量，不足以推出总体因果。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 13536, "cached_input_tokens": 7168, "cache_write_input_tokens": 0, "output_tokens": 5231, "reasoning_output_tokens": 5075}}

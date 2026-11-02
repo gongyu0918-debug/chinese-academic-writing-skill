@@ -1,0 +1,31 @@
+{
+  "model": "minimax-cn/MiniMax-M3.1-Flash",
+  "effort": "max",
+  "case": "D1_trim_r2",
+  "arm": "candidate",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [],
+  "thread_ids": [
+    "01a19b58-5d91-7db3-87ad-df8f2ad78652"
+  ],
+  "seconds": 40.72,
+  "prompt_sha256": "e4b1957a76c95ce025ae0cc28d282d8cd98f6809e930cb226e9da7cac5e110da",
+  "draft_sha256": "612ebca47c399e8793469f6f5e4d5b5e305abbf063118b4c7f70129c1df4dd64",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/academic-writing.md",
+    "references/anti-ai-writing.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 17164,
+      "cached_input_tokens": 11264,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7875,
+      "reasoning_output_tokens": 7758
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{"type": "thread.started", "thread_id": "01a19b45-b577-7822-b75e-f319d61605c2"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "在展厅A的30次路线选择记录中，18次使用者走向箭头指示的右侧通道，12次选择左侧通道[R1]，多数选择与箭头方向一致。两位受访者说右侧入口的标识更容易看见，与上述方向分布相符，标识可见性可能参与了当次路线选择。这一解释限于展厅A的这组记录，材料未做跨展厅比较。记录只跟踪入口选择，未观察参观结束后的记忆保持，所得结论只涉及当次路线行为。"}}
+{"type": "turn.completed", "usage": {"input_tokens": 17195, "cached_input_tokens": 186, "cache_write_input_tokens": 0, "output_tokens": 4882, "reasoning_output_tokens": 4780}}

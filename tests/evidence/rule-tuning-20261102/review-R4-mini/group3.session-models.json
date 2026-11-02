@@ -1,0 +1,11 @@
+[
+  {
+    "session_id": "01a19b67-e756-7a82-a483-0a253aad7f87",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ]
+  }
+]

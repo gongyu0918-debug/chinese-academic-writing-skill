@@ -1,0 +1,31 @@
+{
+  "model": "alibaba-token-plan-responses/qwen3.8-flash",
+  "effort": "max",
+  "case": "N4_review_literature",
+  "arm": "candidate",
+  "stage": 1,
+  "returncode": 0,
+  "invalid": [],
+  "thread_ids": [
+    "01a19b51-f702-7530-8bac-dc0a6306b7e0"
+  ],
+  "seconds": 96.7,
+  "prompt_sha256": "1aa3704faa28c40d0ceb873295e4f9f8c1dd35e448842639cd1705a6c2d79b23",
+  "draft_sha256": "54dd7cf20b9103714b2c0874edc54c99e48ea8d392129cb44ffd4659da5e5bc2",
+  "rules_loaded_inline": [
+    "SKILL.md",
+    "references/academic-literature-review.md",
+    "references/anti-ai-writing.md"
+  ],
+  "prior_output_sha256": null,
+  "quality_pass": null,
+  "usage": [
+    {
+      "input_tokens": 13536,
+      "cached_input_tokens": 7168,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5231,
+      "reasoning_output_tokens": 5075
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "session_id": "01a19b53-5eb0-7d73-aa68-fff280a34126",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ]
+  }
+]

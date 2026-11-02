@@ -30,6 +30,7 @@ class ContextAndRuntimeTests(unittest.TestCase):
             "references/academic-writing.md",
             "references/academic-proposal.md",
             "references/academic-literature-review.md",
+            "references/academic-text-format.md",
             "references/anti-ai-writing.md",
             "references/citation-research.md",
             "references/long-form-consistency.md",

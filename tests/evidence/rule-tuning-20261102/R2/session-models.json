@@ -1,0 +1,162 @@
+[
+  {
+    "file_name": "rollout-2026-11-02T00-13-22-01a19b51-f68c-7241-9ef9-7560b8d0eaa1.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b51-f68c-7241-9ef9-7560b8d0eaa1"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-13-22-01a19b51-f702-7530-8bac-dc0a6306b7e0.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b51-f702-7530-8bac-dc0a6306b7e0"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-13-22-01a19b51-f70e-7243-88cf-fc0848fa706b.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b51-f70e-7243-88cf-fc0848fa706b"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-13-22-01a19b51-f70e-7441-b782-965cf2a5be86.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b51-f70e-7441-b782-965cf2a5be86"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-13-43-01a19b52-4966-74d0-bea0-564da3e0ab34.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b52-4966-74d0-bea0-564da3e0ab34"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-14-07-01a19b52-a542-7740-b3cc-10aad0c821bf.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b52-a542-7740-b3cc-10aad0c821bf"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-14-19-01a19b52-d63a-7480-a6f5-a5dd1efea6cd.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b52-d63a-7480-a6f5-a5dd1efea6cd"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-14-47-01a19b53-43a9-7c63-9760-02d74ce8ace4.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b53-43a9-7c63-9760-02d74ce8ace4"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-14-59-01a19b53-7028-76d1-b242-bfef794319df.jsonl",
+    "context": [
+      {
+        "model": "alibaba-token-plan-responses/qwen3.8-flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b53-7028-76d1-b242-bfef794319df"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-15-07-01a19b53-907c-7ab0-9b58-6cdcf97b889f.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b53-907c-7ab0-9b58-6cdcf97b889f"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-15-31-01a19b53-ee9f-7682-9161-5938b7303203.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b53-ee9f-7682-9161-5938b7303203"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-15-49-01a19b54-35c3-7d12-a95c-cbd6cc18983a.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b54-35c3-7d12-a95c-cbd6cc18983a"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-16-07-01a19b54-7ae9-71c3-b534-0f4b300c80e0.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b54-7ae9-71c3-b534-0f4b300c80e0"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-16-09-01a19b54-8104-7cd2-8960-0ed06040b360.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b54-8104-7cd2-8960-0ed06040b360"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-16-27-01a19b54-c743-7381-b7ce-012433a3ffce.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b54-c743-7381-b7ce-012433a3ffce"
+  },
+  {
+    "file_name": "rollout-2026-11-02T00-17-32-01a19b55-c5a8-7882-ab8a-2be3c41d9013.jsonl",
+    "context": [
+      {
+        "model": "minimax-cn/MiniMax-M3.1-Flash",
+        "effort": "max"
+      }
+    ],
+    "session_id": "01a19b55-c5a8-7882-ab8a-2be3c41d9013"
+  }
+]

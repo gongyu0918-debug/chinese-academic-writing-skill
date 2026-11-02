@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "D3_delete_control_r1",
+    "D3_delete_control_r2"
+  ],
+  "mapping": {
+    "0": {
+      "X": "main",
+      "Y": "candidate"
+    },
+    "1": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  }
+}

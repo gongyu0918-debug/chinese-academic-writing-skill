@@ -1,0 +1,12 @@
+{
+  "model": "minimax-cn/MiniMax-M3.1-Flash",
+  "effort": "max",
+  "returncode": 0,
+  "prompt_sha256": "9a35c3a6e17cfc6303e430cf7be202b68501dacd146ebe6913122abbe4ba3061",
+  "draft_sha256": "b72611c685b29f8037330957601022c26fc48a10986b44f7081120fe5e0332c5",
+  "visible_tool_items": [],
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\rule-tuning-20261102\\review-runtime-w3xnxp23",
+  "session_profile": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\rule-tuning-20261102\\review-runtime-w3xnxp23\\native-profile",
+  "call_completed": true,
+  "semantic_review_completed": null
+}
