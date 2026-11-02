@@ -1,14 +1,12 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.1.9-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.9)
+[![Version](https://img.shields.io/badge/version-0.1.10-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.10)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 中文论文写作 Skill 用于协助完成中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。它根据作者已经提供或明确授权核验的材料工作，可以构造提纲、逐段起草、修改底稿或只审不改，并在长稿和多轮续写中辅助维护和检查事实、术语、引用与研究状态的一致性。
 
-版本 0.1.9 补齐中文论文中的必要英文处理，并明确适用国家标准优先、相容模板细化、规范要求与推荐项的区别。保留只审、片段和研究状态边界；实写仍存在材料误读、过审及英文表达风险，不能称为已验证的全面稳定版。详见[本版发布记录](tests/evidence/v0.1.9-release-gate/README.md)。
-
-当前开发树另已采用局部改稿模式消歧，区分普通润色、只删和只审；该改动尚未发布，去免责效果仍有待解决的问题。详见[实际写稿与采用范围](tests/evidence/rule-attribution-20261102/README.md)。
+版本 0.1.10 明确局部片段的处理范围，区分普通润色、只删不改和只审：普通润色允许保持原意的语序调整与必要衔接修复，删除专用条件不再约束所有改稿。采用文本与双模型实写候选一致；去免责效果仍有局部残留。详见[本版发布记录](tests/evidence/v0.1.10-release-gate/README.md)。
 
 这个 Skill 不替作者补造研究。材料不足时，它会收缩交付范围，先给出可成立的结构、研究问题或材料清单，不把常识、惯例和推测写成已经取得的证据。
 
@@ -59,7 +57,7 @@
 
 ## 安装与调用
 
-已发布版本：`chinese-academic-writing-assistant@0.1.9`
+已发布版本：`chinese-academic-writing-assistant@0.1.10`
 
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
 

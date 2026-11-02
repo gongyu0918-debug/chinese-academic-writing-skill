@@ -1,0 +1,52 @@
+{
+  "version": "0.1.10",
+  "package_changes_from_019": [
+    "SKILL.md",
+    "references/anti-ai-writing.md"
+  ],
+  "unchanged_package_files_byte_identical": 11,
+  "github_before": {
+    "html_url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.9",
+    "id": 408825098,
+    "published_at": "2026-10-10T09:00:47Z",
+    "tag_name": "v0.1.9"
+  },
+  "skillhub_before": {
+    "slug": "@user_f3d82da7/chinese-academic-writing-assistant",
+    "version": "0.1.9"
+  },
+  "clawhub_before": {
+    "latest_version": "0.1.9",
+    "moderation": {
+      "isSuspicious": false,
+      "isMalwareBlocked": false,
+      "verdict": "clean",
+      "reasonCodes": [],
+      "summary": "No suspicious patterns detected.",
+      "engineVersion": "v2.4.26",
+      "updatedAt": 1791623369529,
+      "evidence": [],
+      "legacyReason": "scanner.vt.clean"
+    }
+  },
+  "skillhub_dry_run": {
+    "dryRun": true,
+    "slug": "chinese-academic-writing-assistant",
+    "version": "0.1.10"
+  },
+  "clawhub_dry_run": {
+    "ok": true,
+    "status": "would-publish",
+    "slug": "chinese-academic-writing-assistant",
+    "displayName": "中文论文写作",
+    "folder": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\release-v0.1.10-20261102\\clawhub-package",
+    "version": "0.1.10",
+    "latestVersion": "0.1.9",
+    "fileCount": 12,
+    "fingerprint": "37df1bdfae0bb724d3aa2d6043cbb2b04ac28a943140b7fd0041669e04bbdfff"
+  },
+  "package_tests_passed": 6,
+  "release_policy_tests_passed": 11,
+  "runtime_text_frozen": true,
+  "new_writing_calls": 0
+}

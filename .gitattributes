@@ -56,3 +56,4 @@ tests/evidence/rule-tuning-20261102/** -text whitespace=-blank-at-eol,-blank-at-
 
 # Preserve the targeted attribution follow-up inputs and visible outputs.
 tests/evidence/rule-attribution-20261102/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+tests/evidence/v0.1.10-release-gate/** text eol=lf

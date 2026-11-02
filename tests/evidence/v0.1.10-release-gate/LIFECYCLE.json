@@ -1,0 +1,10 @@
+{
+  "branch": "codex/release-v0.1.10",
+  "worktree": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\worktrees\\release-v0.1.10",
+  "type": "manual_git",
+  "baseline_commit": "8d8334e73d5de18826c8e6f9c1a6e96109a7150a",
+  "purpose": "Authorized three-platform v0.1.10 release of tested C2",
+  "reuse_check": "release-v0.1.5:62 ignored files; release-v0.1.4-cold-fixes:128 ignored files; exp-leaf-contract-relief:1 unmerged commit",
+  "phase": "prepared",
+  "worktree_removed": false
+}
