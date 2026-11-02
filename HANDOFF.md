@@ -163,3 +163,7 @@
 ## 0.1.9实际发布状态
 
 GitHub Release 408825098公开且下载哈希一致；SkillHub versionId 420582、ClawHub versionId k97eb7fjpr7tq6y39vcfp8nmz98g0v1s各受理一次。SkillHub公开搜索版本为0.1.8，签名未取得；ClawHub新版详情未取得，远端文件哈希尚未验证。审核状态与受理分开记录。桌面WorkBuddy0.1.9包与标签一致，未实装。 完整回执见tests/evidence/v0.1.9-release-gate/RELEASE-RECEIPT.json。发布补充实写16次，1次技术无效；两个引用对照因初轮未载引用叶仅作诊断，补叶后两候选年份格式正确但只有1完整有效配对。英语候选两次漏校园范围，保留过审及既有风险，不能称全面稳定。最终冷审和新增匿名审读未返回报告后关闭，不记独立通过。
+
+## 0.1.10实际发布状态
+
+GitHub Release 431648879已公开，附件下载哈希一致。ClawHub versionId k97as4jm5jxf0w8155mz1j8a3d8hf6m5，公开0.1.10且12个上传文件哈希一致。SkillHub versionId 483168已受理，上传时审核/内容审计/安全扫描均pending；公开索引0.1.9，0.1.10签名尚待取得。各平台只提交一次，产品标签固定5b095fd3cc152cc2c16106fb175168ba1c959368。 完整回执见tests/evidence/v0.1.10-release-gate/RELEASE-RECEIPT.json。未更新本地安装或桌面包。

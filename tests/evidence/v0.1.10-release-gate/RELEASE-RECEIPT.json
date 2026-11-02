@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "version": "0.1.10",
+  "recorded_at_beijing": "2026-11-02T23:51:59.694886+08:00",
+  "release_commit": "5b095fd3cc152cc2c16106fb175168ba1c959368",
+  "tag": {
+    "name": "v0.1.10",
+    "annotated_object": "e34bf0b9fc9b2dd744cda0f28064f99a0a269c77",
+    "dereferenced_commit": "5b095fd3cc152cc2c16106fb175168ba1c959368"
+  },
+  "package": {
+    "name": "chinese-academic-writing-assistant-0.1.10-skillhub.zip",
+    "file_count": 13,
+    "license": "MIT",
+    "license_file": "LICENSE.md",
+    "zip_sha256": "47b71b69925348bbdbb23bc1a3486a7f4fb116b3c36e40778df2f8cab7331b14",
+    "zip_size": 53120,
+    "entries": [
+      "LICENSE.md",
+      "SKILL.md",
+      "agents/openai.yaml",
+      "references/academic-literature-review.md",
+      "references/academic-proposal.md",
+      "references/academic-text-format.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md",
+      "references/citation-research.md",
+      "references/long-form-consistency.md",
+      "scripts/citation_audit.py",
+      "scripts/manuscript_audit.py",
+      "scripts/prose_lint.py"
+    ],
+    "file_sha256": {
+      "LICENSE.md": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812",
+      "SKILL.md": "a32942415cd069e86b53733e9acb4f94cdad77b2e10f430820fc435a4f5a9a11",
+      "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "references/academic-literature-review.md": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9",
+      "references/academic-proposal.md": "e8e677b36580d4ca1659a21f406314cd9344f9b113f66a7d01e33a986e13cda3",
+      "references/academic-text-format.md": "a430adc5d2348842feee98109ba3b5e75fef0289ff2c74bbc6a0cb92ed978adc",
+      "references/academic-writing.md": "bf4660d4d19327321446b3a0d63acf07ebe72c99aaa8ed945d1f367985650a04",
+      "references/anti-ai-writing.md": "728f18f8f93a6ab8de334f9f8b1dee74aec1d18b1fbbe18c09865af399edc011",
+      "references/citation-research.md": "7e59839185db5373e4ee8eac598b92fdcf9bafe8cf627ded919d483c4935a0a2",
+      "references/long-form-consistency.md": "5bd3d94f67aa5931d3f8e87e652f239bc82c752163587ead6f42d61be4bc51a6",
+      "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+    }
+  },
+  "github": {
+    "release_id": 431648879,
+    "url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.10",
+    "published_at": "2026-11-02T15:46:26Z",
+    "asset_id": 702264690,
+    "asset_url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/download/v0.1.10/chinese-academic-writing-assistant-0.1.10-skillhub.zip",
+    "asset_digest": "sha256:47b71b69925348bbdbb23bc1a3486a7f4fb116b3c36e40778df2f8cab7331b14",
+    "downloaded_asset_hash_match": true,
+    "release_create_attempts": 1,
+    "workflow_runs": {
+      "total_count": 0,
+      "workflow_runs": []
+    }
+  },
+  "skillhub": {
+    "namespace": "user_f3d82da7",
+    "slug": "chinese-academic-writing-assistant",
+    "skill_id": 98987,
+    "version_id": 483168,
+    "submitted_version": "0.1.10",
+    "publish_accepted": true,
+    "publish_attempts": 1,
+    "file_count": 13,
+    "fingerprint": "743f2e2bf976647f6a44d77e0efe4b2c6fbee7b097927d7cb1e0b3d0d8915e2a",
+    "review_status_at_upload": "pending",
+    "security_scan_status_at_upload": "pending",
+    "content_audit_status_at_upload": "pending",
+    "tags_at_upload": {
+      "academic": "0.1.10",
+      "chinese": "0.1.10",
+      "latest": "0.1.10"
+    },
+    "latest_read_only_check": {
+      "public_version": "0.1.9",
+      "signature": null,
+      "signature_error": "Error: 找不到该版本: chinese-academic-writing-assistant@0.1.10"
+    }
+  },
+  "clawhub": {
+    "owner": "gongyu0918-debug",
+    "slug": "chinese-academic-writing-assistant",
+    "version_id": "k97as4jm5jxf0w8155mz1j8a3d8hf6m5",
+    "submitted_version": "0.1.10",
+    "publish_status": "published",
+    "publish_attempts": 1,
+    "source_ref": "v0.1.10",
+    "source_commit": "5b095fd3cc152cc2c16106fb175168ba1c959368",
+    "license": "MIT-0",
+    "uploaded_file_count": 12,
+    "fingerprint": "37df1bdfae0bb724d3aa2d6043cbb2b04ac28a943140b7fd0041669e04bbdfff",
+    "local_file_sha256": {
+      "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "references/academic-literature-review.md": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9",
+      "references/academic-proposal.md": "e8e677b36580d4ca1659a21f406314cd9344f9b113f66a7d01e33a986e13cda3",
+      "references/academic-text-format.md": "a430adc5d2348842feee98109ba3b5e75fef0289ff2c74bbc6a0cb92ed978adc",
+      "references/academic-writing.md": "bf4660d4d19327321446b3a0d63acf07ebe72c99aaa8ed945d1f367985650a04",
+      "references/anti-ai-writing.md": "728f18f8f93a6ab8de334f9f8b1dee74aec1d18b1fbbe18c09865af399edc011",
+      "references/citation-research.md": "7e59839185db5373e4ee8eac598b92fdcf9bafe8cf627ded919d483c4935a0a2",
+      "references/long-form-consistency.md": "5bd3d94f67aa5931d3f8e87e652f239bc82c752163587ead6f42d61be4bc51a6",
+      "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+      "SKILL.md": "ab2f5cad13b1ecbfb34d798ad384ac5bdfb0e1b7e51ee78072bba7af5d3a04ae"
+    },
+    "latest_version_at_upload": "0.1.9",
+    "latest_read_only_check": {
+      "version": "0.1.10",
+      "latest_version": "0.1.10",
+      "moderation": {
+        "isSuspicious": false,
+        "isMalwareBlocked": false,
+        "verdict": "clean",
+        "reasonCodes": [],
+        "summary": "No suspicious patterns detected.",
+        "engineVersion": "v2.4.27",
+        "updatedAt": 1793634574172,
+        "evidence": [],
+        "legacyReason": "scanner.llm.clean"
+      },
+      "security": null,
+      "remote_file_count": 12,
+      "uploaded_file_hash_match": true,
+      "platform_generated_files": {},
+      "error": null
+    }
+  },
+  "read_only_checks": [
+    {
+      "round": 1,
+      "clawhub": {
+        "version": null,
+        "latest_version": null,
+        "moderation": null,
+        "security": null,
+        "remote_file_count": 0,
+        "uploaded_file_hash_match": false,
+        "platform_generated_files": {},
+        "error": "Version not found (reset in 25s)\nError: Version not found (reset in 25s)"
+      },
+      "skillhub": {
+        "public_version": "0.1.9",
+        "signature": null,
+        "signature_error": "Error: 找不到该版本: chinese-academic-writing-assistant@0.1.10"
+      }
+    },
+    {
+      "round": 2,
+      "clawhub": {
+        "version": "0.1.10",
+        "latest_version": "0.1.10",
+        "moderation": {
+          "isSuspicious": false,
+          "isMalwareBlocked": false,
+          "verdict": "clean",
+          "reasonCodes": [],
+          "summary": "No suspicious patterns detected.",
+          "engineVersion": "v2.4.27",
+          "updatedAt": 1793634574172,
+          "evidence": [],
+          "legacyReason": "scanner.llm.clean"
+        },
+        "security": null,
+        "remote_file_count": 12,
+        "uploaded_file_hash_match": true,
+        "platform_generated_files": {},
+        "error": null
+      },
+      "skillhub": {
+        "public_version": "0.1.9",
+        "signature": null,
+        "signature_error": "Error: 找不到该版本: chinese-academic-writing-assistant@0.1.10"
+      }
+    }
+  ],
+  "writing_evidence": [
+    "tests/evidence/rule-attribution-20261102/",
+    "tests/evidence/rule-tuning-20261102/"
+  ],
+  "writing_scope": {
+    "adopted_C2_calls": 48,
+    "distinct_C2_tasks": 5,
+    "blind_reviews": 6,
+    "new_calls_for_release": 0
+  },
+  "validation_tests": {
+    "package": 6,
+    "release_policy": 11
+  },
+  "runtime_changes": [
+    "chinese-academic-writing-assistant/references/anti-ai-writing.md"
+  ],
+  "local_install_or_desktop_update": false,
+  "stability_claim": false,
+  "notes": [
+    "Each platform was submitted once. Acceptance is separate from public propagation, review and signature.",
+    "Product tag is fixed; later evidence commits do not change its product bytes.",
+    "C2 local editing costs remain accepted; no global writing quality claim or additional rule changes at release."
+  ]
+}
