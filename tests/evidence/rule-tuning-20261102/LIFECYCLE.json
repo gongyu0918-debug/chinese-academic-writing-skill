@@ -4,8 +4,8 @@
   "type": "manual_git",
   "branch": "codex/rule-tuning-20261102",
   "purpose": "Rule tuning candidate and controlled real-writing comparison",
-  "phase": "evaluation_complete_pending_evidence_merge_and_cleanup",
-  "reason_retained": "Preparing the completed evidence and spec update for commit; runtime restored to baseline, three frozen candidates retained in evidence.",
+  "phase": "merged_and_worktree_removed",
+  "reason_retained": null,
   "release_or_push": false,
   "cleanup_condition": "After the authorized writing comparison, preserve evidence and merge or explicitly discard the candidate, then verify uncommitted/unmerged/ignored files and remove this worktree.",
   "user_authorization": "User directly approved Qwen/Alibaba and MiniMax for this round of writing validation and retesting, then explicitly reaffirmed permission for the isolated third-candidate tests.",
@@ -13,5 +13,21 @@
   "review_calls": 14,
   "final_runtime": "13 files byte-identical to baseline b805596 / v0.1.9; candidates not admitted on current mixed evidence.",
   "retained_local_stage": "F:/Workspaces/chinese-academic-writing-skill/.release/rule-tuning-20261102",
-  "stage_purpose": "Original isolated execution sessions and logs for provenance; visible frozen evidence is committed separately. Not a worktree, no active jobs depend on it."
+  "stage_purpose": "Original isolated execution sessions and logs for provenance; visible frozen evidence is committed separately. Not a worktree, no active jobs depend on it.",
+  "evidence_commit": "72bb4339cfd28454a2d019c9157a32394550daa4",
+  "merged_into": "main (fast-forward)",
+  "pre_removal": {
+    "uncommitted_files": 0,
+    "ignored_files": 0,
+    "unmerged_commits": 0,
+    "matching_active_test_processes": 0,
+    "independent_agents": "completed and closed",
+    "absolute_path_verified": true
+  },
+  "post_removal": {
+    "directory_exists": false,
+    "registered": false,
+    "method": "git worktree remove; git worktree list --porcelain; Test-Path exact target",
+    "other_worktrees": "preserved unchanged"
+  }
 }
