@@ -1,0 +1,16 @@
+{
+  "baseline_commit": "b80559689c138d081e68aa8e6447811efe3c8113",
+  "candidate": "v1",
+  "frozen_files": {
+    "SKILL.md": "edfda587c9ce77a99486f496096328748ea20fa9f693c5c99cd469ba33b22ba9",
+    "references/academic-writing.md": "9d01c5ef3ce891cdfe9527792166853c24e26bf5f3d2f26bcdcbde5c09482bf6",
+    "references/academic-proposal.md": "abaf47ffe54c21d7a59254258c1fe3742e98bc9f96324769ec1f7555baed4f73",
+    "references/academic-literature-review.md": "e6c58dd737900b87f733325f449f533a3367d2f23558fa27a1708fd5f8801c68",
+    "references/anti-ai-writing.md": "3b200b088033182a2acd1b8f9e08b77b0c0da467c53279b4fc334eb709422f8c"
+  },
+  "R1_request_hash": "42e51683ebc8b16c5e13c21aa78a98a1475efc02b43ec62bb86fb4154cbdd554",
+  "R2_holdout_hash": "4f3e6fa43c326c248eeb85d7b981d7724c8ca720b92266792a1245be02bee413",
+  "R2_prepared_before_R1_results": true,
+  "invocations_started": 0,
+  "approval_status": "Two auto-review rejections; waiting for direct destination authorization. No batch executed."
+}

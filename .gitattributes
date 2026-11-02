@@ -51,3 +51,4 @@ tests/evidence/national-format-20261010/** -text whitespace=-blank-at-eol,-blank
 tests/evidence/v0.1.9-release-gate/** -text whitespace=-blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
 specs/*.md text eol=lf
 tests/evidence/rule-spec-audit-20261030/** text eol=lf
+tests/evidence/rule-tuning-20261102/** text eol=lf

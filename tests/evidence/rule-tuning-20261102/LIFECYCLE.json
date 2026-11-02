@@ -1,0 +1,11 @@
+{
+  "baseline_commit": "b80559689c138d081e68aa8e6447811efe3c8113",
+  "worktree": "F:/Workspaces/chinese-academic-writing-skill/.release/worktrees/rule-tuning-20261102",
+  "type": "manual_git",
+  "branch": "codex/rule-tuning-20261102",
+  "purpose": "Rule tuning candidate and controlled real-writing comparison",
+  "phase": "candidate_prepared_awaiting_external_destination_authorization",
+  "reason_retained": "Unmerged rule candidate and prepared experiments; actual writing evaluation has not started.",
+  "release_or_push": false,
+  "cleanup_condition": "After the authorized writing comparison, preserve evidence and merge or explicitly discard the candidate, then verify uncommitted/unmerged/ignored files and remove this worktree."
+}
