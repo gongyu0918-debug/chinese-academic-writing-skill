@@ -1,0 +1,39 @@
+{
+  "writer_calls": 16,
+  "execution_invalid": 0,
+  "valid_pairs": 8,
+  "distinct_tasks": 2,
+  "new_task_count": 1,
+  "reviews": [
+    {
+      "directory": "review-R5-qwen",
+      "group": "group0",
+      "model": "alibaba-token-plan-responses/qwen3.8-flash",
+      "effort": "max",
+      "execution_valid": true,
+      "semantic_judgment": "See ADJUDICATION.md; completion is not correctness."
+    },
+    {
+      "directory": "review-R5-minimax",
+      "group": "group1",
+      "model": "minimax-cn/MiniMax-M3.1-Flash",
+      "effort": "max",
+      "execution_valid": true,
+      "semantic_judgment": "See ADJUDICATION.md; completion is not correctness."
+    }
+  ],
+  "snapshot_files_per_arm": 13,
+  "runtime_delta": [
+    "references/anti-ai-writing.md"
+  ],
+  "snapshots_equal_R4": true,
+  "original_E1_request_unchanged": true,
+  "prompt_and_draft_hashes_verified": 16,
+  "model_effort_receipts_verified": 16,
+  "visible_messages_match_finals": 16,
+  "prior_frozen_files_verified": 656,
+  "first_result_time_beijing": "2026-11-02T17:04:40.027390+08:00",
+  "last_result_time_beijing": "2026-11-02T17:08:10.507314+08:00",
+  "semantic_pass_count": null,
+  "boundary": "Local prompt bytes and model receipts verified; provider seed, temperature, weights and received HTTP bytes remain unknown."
+}

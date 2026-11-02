@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "E3_course_search_r1",
+    "E3_course_search_r2"
+  ],
+  "mapping": {
+    "0": {
+      "X": "candidate",
+      "Y": "main"
+    },
+    "1": {
+      "X": "main",
+      "Y": "candidate"
+    }
+  }
+}

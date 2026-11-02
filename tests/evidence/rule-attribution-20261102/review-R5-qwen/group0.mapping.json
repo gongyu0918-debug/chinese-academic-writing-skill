@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "E1_fragment_r1",
+    "E1_fragment_r2"
+  ],
+  "mapping": {
+    "0": {
+      "X": "main",
+      "Y": "candidate"
+    },
+    "1": {
+      "X": "candidate",
+      "Y": "main"
+    }
+  }
+}

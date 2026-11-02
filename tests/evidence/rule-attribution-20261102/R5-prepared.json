@@ -1,0 +1,7 @@
+{
+  "spec_sha256": "0872c61e5cf783ee82dc2f1226b1f440637cb7f60d05d85ffeaa49a25a602f4f",
+  "candidate_anti_sha256": "e09213ab3047bcecdeb781e0dcf2b15d0d21dcf5b60bcd3d3b8097a37436bd17",
+  "planned_calls": 16,
+  "unchanged_candidate_from": "R4/v3/C2",
+  "original_E1_request_unchanged": true
+}

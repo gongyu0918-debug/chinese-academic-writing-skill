@@ -1,0 +1,15 @@
+{
+  "baseline_commit": "c0c5f7224e6f9a524ce13d262300d9d056a496b0",
+  "branch": "codex/rule-attribution-20261102",
+  "worktree": "F:/Workspaces/chinese-academic-writing-skill/.release/worktrees/rule-attribution-20261102",
+  "type": "manual_git",
+  "purpose": "Reassess C2 admission against its actual diff; targeted follow-up for the E1 burden difference",
+  "reuse_check": "release-v0.1.5 has 62 ignored files; release-v0.1.4-cold-fixes has 128; exp-leaf-contract-relief has one unmerged commit; preserved",
+  "phase": "validated_pending_commit",
+  "candidate": "R4 frozen v3/C2, no new wording",
+  "release_or_push": false,
+  "decision": "adopt frozen R4 C2 for local mode clarification; E1 burden retained",
+  "validation": "16 new drafts, 2 blind reviews, 12 targeted tests, skill validation",
+  "updated_beijing": "2026-11-02T17:25:09.726200+08:00",
+  "active_writer_or_reviewer_tasks": 0
+}

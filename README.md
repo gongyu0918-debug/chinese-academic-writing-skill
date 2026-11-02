@@ -8,6 +8,8 @@
 
 版本 0.1.9 补齐中文论文中的必要英文处理，并明确适用国家标准优先、相容模板细化、规范要求与推荐项的区别。保留只审、片段和研究状态边界；实写仍存在材料误读、过审及英文表达风险，不能称为已验证的全面稳定版。详见[本版发布记录](tests/evidence/v0.1.9-release-gate/README.md)。
 
+当前开发树另已采用局部改稿模式消歧，区分普通润色、只删和只审；该改动尚未发布，去免责效果仍有待解决的问题。详见[实际写稿与采用范围](tests/evidence/rule-attribution-20261102/README.md)。
+
 这个 Skill 不替作者补造研究。材料不足时，它会收缩交付范围，先给出可成立的结构、研究问题或材料清单，不把常识、惯例和推测写成已经取得的证据。
 
 ## 项目来源与设计
@@ -57,7 +59,7 @@
 
 ## 安装与调用
 
-当前版本：`chinese-academic-writing-assistant@0.1.9`
+已发布版本：`chinese-academic-writing-assistant@0.1.9`
 
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
 
@@ -87,7 +89,7 @@ Python 实现改动须运行相关维护测试，覆盖行为、CLI、只读与�
 
 入口与全部七份 reference 的[42项行为 Spec](specs/writing-skill-spec.md)及[规则审校](specs/rule-audit-20261030.md)已建立，区分现有规则、文本歧义、实际稿件问题和未验证候选。Spec、实验及维护指令留在仓库资料层，不加载进写稿规则。该轮仅完成审计和四题八稿的同版诊断，未改0.1.9运行树，也未据小样本宣称稳定性提升。
 
-2026-11-02继续实作三版微调，并以Qwen与MiniMax完成112次写稿，109次符合执行条件。限制语组合和改稿方式单独候选都有局部改善与反向差别，新题尚未建立跨模型一致收益，因此暂不替换0.1.9运行规则；三个冻结候选、重复题、新题、原稿及评审纠偏均留存。详见[微调验证与采用结论](tests/evidence/rule-tuning-20261102/README.md)。
+2026-11-02实作三版微调并完成112次写稿后，按用户要求修正过严的整体收益门槛，追加16次针对性实写。最终仅采用C2局部消歧；E1仍有重复的外围说明和可局部修复的连接问题，不称去免责效果已稳定。共有过审、其他候选的失败和单次字段变化不再自动否决。两个模型累计128次写稿，125次符合执行条件；原稿与不同候选分别保留。详见[归因与采用结论](tests/evidence/rule-attribution-20261102/README.md)。
 
 ## 运行文件
 

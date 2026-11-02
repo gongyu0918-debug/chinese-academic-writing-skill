@@ -1,0 +1,45 @@
+{
+  "baseline_commit": "c0c5f7224e6f9a524ce13d262300d9d056a496b0",
+  "models": [
+    "alibaba-token-plan-responses/qwen3.8-flash",
+    "minimax-cn/MiniMax-M3.1-Flash"
+  ],
+  "effort": "max",
+  "runtime": "F:\\Workspaces\\chinese-academic-writing-skill\\.release\\rule-tuning-20261102\\R5-_38ew4u6",
+  "spec": {
+    "E1_fragment_r1": {
+      "leaf": "academic-writing",
+      "requests": [
+        "以下为虚构论文的局部润色测试。只改【正文】中的一段，可删冗余并修复句法，保留数字、来源ID、研究状态与有限解释，只交正文。\n【正文】\n但这并不是不能说明任何情况，也不能说能保证全部事情。16份窗口取号记录中，10份在查询屏后直接取号，6份转去询问工作人员[T4]。本文据此认为，查询屏可能是部分使用者确认取号入口的线索。相邻窗口的观察还在进行，相关记录尚未纳入本段。上述理解并不意味着每个人都必须看屏幕，更不能证明大厅满意度已经提高，也不说明所有政务服务都能提速。\n【背景，非正文】\n本段只讨论上述16份记录中的入口确认。材料没有测满意度与总体办理时长。原稿开头没有需要保留的前文转折；允许正常语言修复，不增原因或新结论。"
+      ]
+    },
+    "E1_fragment_r2": {
+      "leaf": "academic-writing",
+      "requests": [
+        "以下为虚构论文的局部润色测试。只改【正文】中的一段，可删冗余并修复句法，保留数字、来源ID、研究状态与有限解释，只交正文。\n【正文】\n但这并不是不能说明任何情况，也不能说能保证全部事情。16份窗口取号记录中，10份在查询屏后直接取号，6份转去询问工作人员[T4]。本文据此认为，查询屏可能是部分使用者确认取号入口的线索。相邻窗口的观察还在进行，相关记录尚未纳入本段。上述理解并不意味着每个人都必须看屏幕，更不能证明大厅满意度已经提高，也不说明所有政务服务都能提速。\n【背景，非正文】\n本段只讨论上述16份记录中的入口确认。材料没有测满意度与总体办理时长。原稿开头没有需要保留的前文转折；允许正常语言修复，不增原因或新结论。"
+      ]
+    },
+    "E3_course_search_r1": {
+      "leaf": "academic-writing",
+      "requests": [
+        "以下为虚构论文的局部润色测试。只改【正文】中的一段，可删冗余并修复句法，保留数字、来源ID、研究状态与有限解释，只交正文。\n【正文】\n而这并不是说完全没有说明作用，也不能说能保证一切。24次课程预约操作记录中，15次先打开课程筛选栏，9次直接使用搜索框[K6]。本文据此认为，筛选栏可能是部分使用者缩小课程查找范围的起点。另一时段的观察仍在进行，相关记录尚未纳入本段。这样的理解不意味着每个人都要用筛选栏，也不能证明学生的成绩已经提高，更不能说明所有选课平台都能减轻教师负担。\n【背景，非正文】\n本段只讨论上述24次记录中的课程查找起点。材料没有测学生成绩与教师工作量。原稿开头没有需要保留的前文转折；允许正常语言修复，不增原因或新结论。"
+      ]
+    },
+    "E3_course_search_r2": {
+      "leaf": "academic-writing",
+      "requests": [
+        "以下为虚构论文的局部润色测试。只改【正文】中的一段，可删冗余并修复句法，保留数字、来源ID、研究状态与有限解释，只交正文。\n【正文】\n而这并不是说完全没有说明作用，也不能说能保证一切。24次课程预约操作记录中，15次先打开课程筛选栏，9次直接使用搜索框[K6]。本文据此认为，筛选栏可能是部分使用者缩小课程查找范围的起点。另一时段的观察仍在进行，相关记录尚未纳入本段。这样的理解不意味着每个人都要用筛选栏，也不能证明学生的成绩已经提高，更不能说明所有选课平台都能减轻教师负担。\n【背景，非正文】\n本段只讨论上述24次记录中的课程查找起点。材料没有测学生成绩与教师工作量。原稿开头没有需要保留的前文转折；允许正常语言修复，不增原因或新结论。"
+      ]
+    }
+  },
+  "sampling": "provider defaults; temperature/seed not exposed or set",
+  "order": "arm order alternates by model and task index; separate fresh sessions",
+  "cli_version": "codex-cli 0.166.0-alpha.5.1",
+  "input_mode": "Full routed rules inline, new native session each step; previous visible output carried as state",
+  "not_proven": [
+    "Autonomous file loading",
+    "Hook integration",
+    "Whole thesis or submission writing"
+  ],
+  "runner_sha256": "2b7cee5ece712adcc61748da96d0cec7f5e7f4c527f7d29225af1ea5c1a8d741"
+}

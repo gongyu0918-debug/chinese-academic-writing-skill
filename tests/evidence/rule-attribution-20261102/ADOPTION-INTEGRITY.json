@@ -1,0 +1,13 @@
+{
+  "runtime_files": 13,
+  "runtime_matches_frozen_candidate_bytes": true,
+  "runtime_index_matches_candidate_text": true,
+  "runtime_delta": [
+    "references/anti-ai-writing.md"
+  ],
+  "frozen_working_and_staged_files": {
+    "rule-tuning-20261102": 656,
+    "rule-attribution-20261102": 113
+  },
+  "frozen_candidate_anti_sha256": "e09213ab3047bcecdeb781e0dcf2b15d0d21dcf5b60bcd3d3b8097a37436bd17"
+}

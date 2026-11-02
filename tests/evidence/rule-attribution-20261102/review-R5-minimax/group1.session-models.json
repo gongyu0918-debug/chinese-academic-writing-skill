@@ -1,0 +1,12 @@
+{
+  "thread_ids": [
+    "01a19b86-ce4f-7cb3-8674-cb3e96985a65"
+  ],
+  "contexts": [
+    {
+      "model": "minimax-cn/MiniMax-M3.1-Flash",
+      "model_provider": null,
+      "effort": "max"
+    }
+  ]
+}
