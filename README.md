@@ -61,6 +61,8 @@
 
 当前版本：`chinese-academic-writing-assistant@0.1.11`
 
+三个渠道均已公开0.1.11。GitHub附件下载哈希一致；SkillHub.cn平台签名验证通过、内容指纹匹配本地ZIP；ClawHub审核及安全结论均为clean，12个远端文件摘要逐项一致。具体状态见[发布回执](tests/evidence/v0.1.11-release-gate/RELEASE-RECEIPT.json)。
+
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
 
 通用 Agent Skills 安装器：
