@@ -1,0 +1,1 @@
+你是未参与起草的独立审阅者。只读 /Users/gongyu/Developer/skills/chinese-academic-writing-skill/tests/evidence/rule-research-20261111/blind/integration.md ，按其中原始请求和材料审阅四份实际初稿。不要读取版本映射、候选意图、其他评审或规则研究资料，不联网、不修改文件、不再派代理。请区分实质错误与可定位的局部质量问题，逐稿给出必要最小改法。不能以无事实错误替代语言质量判断，也不为省字删除必要证据和研究状态。输出简短但足以让作者执行的意见，不重写整稿。

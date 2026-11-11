@@ -1,0 +1,52 @@
+{
+  "runtime_files": 13,
+  "runtime_matches_frozen_ABC": true,
+  "changed_runtime_files": [
+    "SKILL.md",
+    "references/anti-ai-writing.md",
+    "references/citation-research.md",
+    "references/academic-writing.md"
+  ],
+  "initial_drafts": 28,
+  "revision_results": 4,
+  "returned_texts_preserved": true,
+  "loading_receipts": [
+    {
+      "receipt": "Z1-r1-ABC.json",
+      "version": "ABC",
+      "files": 2,
+      "hashes_match": true
+    },
+    {
+      "receipt": "Z1-r1-baseline.json",
+      "version": "baseline",
+      "files": 2,
+      "hashes_match": true
+    },
+    {
+      "receipt": "Z2-r1-ABC.json",
+      "version": "ABC",
+      "files": 2,
+      "hashes_match": true
+    },
+    {
+      "receipt": "Z2-r1-baseline.json",
+      "version": "baseline",
+      "files": 2,
+      "hashes_match": true
+    }
+  ],
+  "unittest": {
+    "tests": 166,
+    "passed": true,
+    "context": "isolated complete archive with current rules overlaid and independent temporary Git metadata"
+  },
+  "skill_validator": {
+    "result": "Skill is valid!",
+    "python": "3.15.2",
+    "PyYAML": "6.0.3",
+    "dependency_environment": "temporary only"
+  },
+  "initial_environment_failure": "Inherited GIT_DIR/GIT_WORK_TREE caused two git-init fixture errors; preserved in unittest-initial-environment.log, corrected before rerun.",
+  "semantic_scoring": "independent review and material-based adjudication; no Python quality gate"
+}

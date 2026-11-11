@@ -1,0 +1,1 @@
+你是未参与写作的独立语义审阅者。请只读审阅 /Users/gongyu/Developer/skills/chinese-academic-writing-skill/tests/evidence/rule-research-20261111/blind/A.md 中全部四个配对。该文件已包含完整用户请求、原始材料与匿名稿；不读取版本映射、补丁、研究报告或其他稿件，不联网不改文件不再派代理。不把评审意见写成事实认证。按文件要求逐对给出简洁、可核查的意见；没有明确问题则说明相当，不为凑差异添加问题。

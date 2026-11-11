@@ -1,6 +1,6 @@
 # 中文论文写作 HANDOFF
 
-2026-11-02用户授权将已合入C2发布为0.1.10至GitHub、ClawHub和SkillHub.cn。相对0.1.9仅ANTI-AI页的范围与操作模式消歧；沿用R4+R5实写结果，发布阶段冻结产品字节与包边界，不扩写规则。历史“未发布”指当时状态，最终受理、传播及哈希见tests/evidence/v0.1.10-release-gate/RELEASE-RECEIPT.json。本轮不更新本地安装或桌面包。
+当前产品版本为0.1.11。相对0.1.10采用限定取舍、章节职责和材料用途三个冻结原子；实写原稿及局部采用依据见tests/evidence/rule-research-20261111/。用户已授权GitHub、ClawHub和SkillHub.cn正式发布，发布阶段只处理版本元数据、包及回执，不再改动已验证规则。实际受理、传播与哈希以tests/evidence/v0.1.11-release-gate/RELEASE-RECEIPT.json为准；不更新全局技能或桌面包。下文历史“未发布”等描述仅表示当时状态。
 
 2026-11-02归因复核后采用C2：用户指出不能因与diff未建立关系的波动设过严门槛，已修正评估Spec，追加Qwen与MiniMax两路线16次写稿、2次匿名审阅，使用R4相同规则字节。仅将ANTI-AI页的目标片段及普通润色/只删/只审模式消歧纳入开发树，其余12个运行文件不变。E1在两批中候选保留外围说明8/8、基线2/8，新E3各1/4；接受一两句的局部修改负担，保留错误连接等具体问题，不称全部噪声或全局收益。R4 E2两臂均未代写，计数过审共有；单次引号/列数差异不再作整版否决。累计128次写稿、125次满足执行条件、16次匿名审阅；执行完成不等于语义全过。发布版本仍0.1.9，开发树与该标签已有差异，本轮未发布或推送。见[当前结论与验证](tests/evidence/rule-attribution-20261102/README.md)。
 
@@ -105,12 +105,10 @@
 
 ## 写稿与冷审模型规范
 
-自 2026-09-21 起，后续实验遵循中文公文项目当前模型规范，并在调用前核对实时 model catalog。旧 `MODELS.md` 和历史 evidence 只记录当轮实际路线，不因当前换模而回写。
+后续实验遵循本仓库 `AGENTS.md`：使用本机当前可用模型或宿主默认模型；需要指定时，模型、provider、推理档位和端点均可配置。宿主未开放的精确版本和采样参数记录为未知，不据代理昵称推断模型家族。
 
-- Alibaba writer：`alibaba-token-plan-responses/deepseek-v4.1-flash`、`alibaba-token-plan-responses/qwen3.8-flash`。非 Alibaba writer 仍可使用 `command-code/deepseek-deepseek-v4.1-flash`、`minimax-cn/MiniMax-M3`、`ollama-cloud/glm-5.3-flash`，按任务分散 provider。
-- Alibaba 独立冷审：`alibaba-token-plan-responses/glm-5.3`、`alibaba-token-plan-responses/qwen3.8-max`。非 Alibaba 冷审仍可使用 `ollama-cloud/kimi-k3`、`xai/grok-4.6`。
-- 新任务不再调用 `alibaba-token-plan` 或 `alibaba-token-plan-2`。不使用 Astra 作为写作或冷审子智能体，不让子代理无意继承主模型；显式指定模型和受支持的 effort，并核对实际会话元数据。
-- 外部 provider 的 Desktop 子任务若出现加密任务不可读，改用已有明文 Codex CLI 批量通路。每个候选在隔离目录读取自己的规则；正文作者和独立复核者分开上下文，保存可见稿件、意见及模型来源，不归档隐藏推理。
+- 原生子代理可继承宿主默认模型。正文作者与独立复核者使用分开的上下文，各候选使用冻结的规则和材料；保存可见请求、原稿、意见及可观测模型信息，不归档隐藏推理或鉴权配置。
+- 历史 evidence 中的模型名单、源机路径与路由只记录当轮条件，不构成本机实验要求，也不因换机或换模回写历史字节。当前规则试改与采用依据见 `tests/evidence/rule-research-20261111/`。
 - 不把“按词表没报错”“成功读了 SKILL”“模型返回了文字”当作正文质量通过；也不把冷审意见当标准答案。对照原始材料核实否定对象、状态、作者分析和真正越界，保留技术无效及不采纳意见的理由。
 
 ## 不应回流的内容

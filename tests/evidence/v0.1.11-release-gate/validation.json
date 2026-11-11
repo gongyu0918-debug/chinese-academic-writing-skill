@@ -1,0 +1,111 @@
+{
+  "version": "0.1.11",
+  "canonical_runtime_matches_writing_evidence": true,
+  "canonical_file_sha256": {
+    "LICENSE.md": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812",
+    "SKILL.md": "336a06fd2854dcb24d74c985ab431566bb8a3a85268d984ec91c77f8ba42ac50",
+    "references/anti-ai-writing.md": "81702226c48099cb6416f666115348bd80bc33b75da0f9d47bf9ec06839d5614",
+    "references/academic-text-format.md": "a430adc5d2348842feee98109ba3b5e75fef0289ff2c74bbc6a0cb92ed978adc",
+    "references/citation-research.md": "4a8970284259eff656077cb65268f8453f4eb486aac798f803e4158dded291e1",
+    "references/academic-literature-review.md": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9",
+    "references/long-form-consistency.md": "5bd3d94f67aa5931d3f8e87e652f239bc82c752163587ead6f42d61be4bc51a6",
+    "references/academic-writing.md": "8a5ca706f0fd7933ca23cc92e7209e143f11e4f8a5e39ec8cf37036d80f1d996",
+    "references/academic-proposal.md": "e8e677b36580d4ca1659a21f406314cd9344f9b113f66a7d01e33a986e13cda3",
+    "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+    "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+    "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+    "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0"
+  },
+  "github_skillhub_package": {
+    "file_count": 13,
+    "files": [
+      "LICENSE.md",
+      "SKILL.md",
+      "agents/openai.yaml",
+      "references/academic-literature-review.md",
+      "references/academic-proposal.md",
+      "references/academic-text-format.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md",
+      "references/citation-research.md",
+      "references/long-form-consistency.md",
+      "scripts/citation_audit.py",
+      "scripts/manuscript_audit.py",
+      "scripts/prose_lint.py"
+    ],
+    "file_sha256": {
+      "LICENSE.md": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812",
+      "SKILL.md": "dcff9fc8e20d0d288748fd798fa02353019d78bf0d730677fc769f205a2f3905",
+      "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "references/academic-literature-review.md": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9",
+      "references/academic-proposal.md": "e8e677b36580d4ca1659a21f406314cd9344f9b113f66a7d01e33a986e13cda3",
+      "references/academic-text-format.md": "a430adc5d2348842feee98109ba3b5e75fef0289ff2c74bbc6a0cb92ed978adc",
+      "references/academic-writing.md": "8a5ca706f0fd7933ca23cc92e7209e143f11e4f8a5e39ec8cf37036d80f1d996",
+      "references/anti-ai-writing.md": "81702226c48099cb6416f666115348bd80bc33b75da0f9d47bf9ec06839d5614",
+      "references/citation-research.md": "4a8970284259eff656077cb65268f8453f4eb486aac798f803e4158dded291e1",
+      "references/long-form-consistency.md": "5bd3d94f67aa5931d3f8e87e652f239bc82c752163587ead6f42d61be4bc51a6",
+      "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0",
+      "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211"
+    },
+    "zip_sha256": "8f48886c6b364c7ff8a3acb705193bf429e2b45cabb3d3e8cb952328607d7761",
+    "license": "MIT",
+    "deterministic_rebuild": true
+  },
+  "clawhub_package": {
+    "file_count": 12,
+    "file_sha256": {
+      "SKILL.md": "336a06fd2854dcb24d74c985ab431566bb8a3a85268d984ec91c77f8ba42ac50",
+      "references/anti-ai-writing.md": "81702226c48099cb6416f666115348bd80bc33b75da0f9d47bf9ec06839d5614",
+      "references/academic-text-format.md": "a430adc5d2348842feee98109ba3b5e75fef0289ff2c74bbc6a0cb92ed978adc",
+      "references/citation-research.md": "4a8970284259eff656077cb65268f8453f4eb486aac798f803e4158dded291e1",
+      "references/academic-literature-review.md": "e61ab4ed85737f5a5c993e8a69a8020ed2dc409deb96ff0ad3c94073696aa6d9",
+      "references/long-form-consistency.md": "5bd3d94f67aa5931d3f8e87e652f239bc82c752163587ead6f42d61be4bc51a6",
+      "references/academic-writing.md": "8a5ca706f0fd7933ca23cc92e7209e143f11e4f8a5e39ec8cf37036d80f1d996",
+      "references/academic-proposal.md": "e8e677b36580d4ca1659a21f406314cd9344f9b113f66a7d01e33a986e13cda3",
+      "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "scripts/prose_lint.py": "6e88042102f92a61f5b1641ba2078b780c07ed726573a6821a943ab300da8211",
+      "scripts/citation_audit.py": "074d9746ce46d0f046c882667c6ff1c3b19107ec60a91c078db1832afa55d51c",
+      "scripts/manuscript_audit.py": "87c300f3876dc75ac97f9837053ceaa74c3f4b179f46dce327e576a5fda1e4b0"
+    },
+    "license": "MIT-0",
+    "canonical_files_except_license": true
+  },
+  "writing_evidence": "tests/evidence/rule-research-20261111/",
+  "new_writing_calls_for_release": 0,
+  "maintenance_tests": {
+    "count": 166,
+    "passed": true,
+    "context": "isolated complete archive with current runtime, README, HANDOFF and version test overlaid"
+  },
+  "skill_structure_validation": {
+    "reused_from": "tests/evidence/rule-research-20261111/INTEGRITY.json",
+    "runtime_bytes_identical": true,
+    "result": "Skill is valid!"
+  },
+  "skillhub_preflight": {
+    "dry_run": true,
+    "passed": true,
+    "slug": "chinese-academic-writing-assistant",
+    "version": "0.1.11"
+  },
+  "clawhub_preflight": {
+    "dry_run": true,
+    "passed": true,
+    "slug": "chinese-academic-writing-assistant",
+    "version": "0.1.11",
+    "existing_latest_version": "0.1.10",
+    "file_count": 12,
+    "fingerprint": "515a3d48426d55bf1ba918b308f635c34cd5630d7c2e34f40e93c089d8e014f0"
+  },
+  "archived_patches": {
+    "variants": [
+      "A",
+      "B",
+      "C",
+      "ABC"
+    ],
+    "rebuild_hashes_match": true,
+    "git_attribute": "Only frozen unified-diff patch data disables whitespace diagnostics; evidence bytes unchanged."
+  }
+}

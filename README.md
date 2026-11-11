@@ -1,12 +1,14 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.1.10-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.10)
+[![Version](https://img.shields.io/badge/version-0.1.11-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.11)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 中文论文写作 Skill 用于协助完成中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。它根据作者已经提供或明确授权核验的材料工作，可以构造提纲、逐段起草、修改底稿或只审不改，并在长稿和多轮续写中辅助维护和检查事实、术语、引用与研究状态的一致性。
 
-版本 0.1.10 明确局部片段的处理范围，区分普通润色、只删不改和只审：普通润色允许保持原意的语序调整与必要衔接修复，删除专用条件不再约束所有改稿。采用文本与双模型实写候选一致；去免责效果仍有局部残留。详见[本版发布记录](tests/evidence/v0.1.10-release-gate/README.md)。
+版本 0.1.11 澄清材料用途与核验状态、原有引文沿用和新增来源认证的区别，具体说明章节职责，并统一先收窄实际判断再取舍必要限定的口径。四份运行规则与实写冻结组合一致，三个只读脚本保持原样。详见[本版发布记录](tests/evidence/v0.1.11-release-gate/README.md)。
+
+本版以0.1.10为基线，完成11个任务、28份初稿及4次复核后交付，按局部规则澄清采用。实写对照没有建立整体质量优于旧版的结论；原稿、独立意见和采用范围见[规则研究与实写](tests/evidence/rule-research-20261111/README.md)。
 
 这个 Skill 不替作者补造研究。材料不足时，它会收缩交付范围，先给出可成立的结构、研究问题或材料清单，不把常识、惯例和推测写成已经取得的证据。
 
@@ -57,7 +59,7 @@
 
 ## 安装与调用
 
-已发布版本：`chinese-academic-writing-assistant@0.1.10`
+当前版本：`chinese-academic-writing-assistant@0.1.11`
 
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
 
@@ -83,7 +85,7 @@ $chinese-academic-writing-assistant 请根据我提供的材料续写第三章�
 
 Markdown 规则只以真实成稿和独立语义评审验证：检查实际路由、段落范围、文风、结构、逻辑和重复，结合材料判断事实与结论强度。规则措辞、词频、加载语义和写稿优劣不设 Python 门禁；收益成立后也不补替代的字符串断言或路由解析器。
 
-Python 实现改动须运行相关维护测试，覆盖行为、CLI、只读与安全边界、性能和打包；需要整体验证时运行 `py -3 -B -m unittest discover -s tests -v`。历史证据保留原稿、评审和字节绑定。两个 `tools/check_*_outputs.py` 仅用于重放旧实验，其固定措辞、计数和判词不作为当前规则或写稿的准入条件。
+Python 实现改动须运行相关维护测试，覆盖行为、CLI、只读与安全边界、性能和打包；需要整体验证时，macOS/Linux 运行 `python3 -B -m unittest discover -s tests -v`，Windows 可用 `py -3` 替代 `python3`。全量测试依赖 Git 历史及 `tests/evidence/` 中的历史证据；稀疏检出隐藏该目录时，应恢复所需证据或在临时目录展开仓库后验证，不能把未扫描计为通过。历史证据保留原稿、评审和字节绑定。两个 `tools/check_*_outputs.py` 仅用于重放旧实验，其固定措辞、计数和判词不作为当前规则或写稿的准入条件。
 
 入口与全部七份 reference 的[42项行为 Spec](specs/writing-skill-spec.md)及[规则审校](specs/rule-audit-20261030.md)已建立，区分现有规则、文本歧义、实际稿件问题和未验证候选。Spec、实验及维护指令留在仓库资料层，不加载进写稿规则。该轮仅完成审计和四题八稿的同版诊断，未改0.1.9运行树，也未据小样本宣称稳定性提升。
 
