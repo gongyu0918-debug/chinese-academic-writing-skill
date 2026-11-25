@@ -120,8 +120,8 @@ class ReleasePolicyTests(unittest.TestCase):
         self.assertEqual([".release/**"], self.policy["local_only_surfaces"])
 
     def test_published_version_badge_and_install_identifier(self) -> None:
-        self.assertIn("version-0.2.0-blue", self.readme)
-        self.assertIn("chinese-academic-writing-assistant@0.2.0", self.readme)
+        self.assertIn("version-0.2.1-blue", self.readme)
+        self.assertIn("chinese-academic-writing-assistant@0.2.1", self.readme)
 
     def test_v009_public_receipt_binds_both_release_surfaces(self) -> None:
         receipt = self.release_receipt

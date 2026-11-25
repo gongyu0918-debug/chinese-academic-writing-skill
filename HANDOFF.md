@@ -1,6 +1,6 @@
 # 中文论文写作 HANDOFF
 
-当前产品版本为 `0.2.0`。相对 `0.1.11` 完成入口与七份 reference 的轻量/完整双轨重构、章节决策卡与跨学科论证焦点、五层文献拆解、导师意见对照台账、开题四态与国标/转引校准，并升级三个只读 Python 审计脚本（千字词频密度归一化、著者—出版年制双向匹配、`--state-file` 读取）。按用户安排，本轮发布至 GitHub、SkillHub.cn 与 ClawHub（WorkBuddy 因本月限额暂缓），不安装全局技能；实际渠道状态见 `tests/evidence/v0.2.0-release-gate/RELEASE-RECEIPT.json`。下文历史版本段落仅作当时状态记录。
+当前产品版本为 `0.2.1`。相对 `0.2.0` 完成运行时 Markdown 去防御化（去除无法执行的代写禁令、将高密度否定规则转为正向材料锚定指引）并放宽轻量模式（覆盖单段起草/润色、摘要译写、局部格式或引文核对及小范围导师意见修稿，自检即交付不派 subagent）；`v0.2.0` 仅保留为 GitHub 历史发行版。按用户安排，本轮发布至 GitHub、SkillHub.cn 与 ClawHub（WorkBuddy 因本月限额暂缓），不安装全局技能；实际渠道状态见 `tests/evidence/v0.2.1-release-gate/RELEASE-RECEIPT.json`。下文历史版本段落仅作当时状态记录。
 
 当前产品版本0.1.11历史记录：相对0.1.10采用限定取舍、章节职责和材料用途三个冻结原子；实写原稿及局部采用依据见tests/evidence/rule-research-20261111/。按用户授权向三渠道各提交一次，现均公开0.1.11：GitHub附件下载哈希一致；SkillHub.cn平台签名通过、内容指纹匹配本地ZIP；ClawHub审核及安全结论clean，12个远端文件摘要一致。实际状态以tests/evidence/v0.1.11-release-gate/RELEASE-RECEIPT.json为准；标签固定产品提交，后续仅保存回执，不重复上传。未更新全局技能或桌面包。下文历史“未发布”等描述仅表示当时状态。
 

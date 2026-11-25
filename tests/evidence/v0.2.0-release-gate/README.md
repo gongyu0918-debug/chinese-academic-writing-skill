@@ -1,7 +1,6 @@
 # v0.2.0 发布记录
 
-用户授权向 GitHub、SkillHub.cn 与 ClawHub 发布 `v0.2.0`（WorkBuddy 因本月限额暂缓）。
+`v0.2.0` 已作为 GitHub 历史发行版发布（`Release 457834932`，标签 `v0.2.0`，13 文件 MIT ZIP SHA-256 为 `b34f29ba291920378dfdeb5e413505391b26212d5f0e943d20d7b3d55c584fcd`）。
 
-- GitHub / SkillHub 使用 MIT 协议的 13 文件确定性打包产物；ClawHub 按渠道规则使用 MIT-0 元数据及不含 `LICENSE.md` 的 12 文件目录包。
+- 在向 SkillHub.cn 与 ClawHub 上传前，按用户要求暂停了这两个市场渠道的 `0.2.0` 提交，先完成去防御化与轻量模式放宽，随后直接以 `v0.2.1` 完成 GitHub、SkillHub.cn 与 ClawHub 三平台同步发布（WorkBuddy 因本月限额暂缓）。
 - 对外发布说明严格聚焦使用体验优化，不包含内部模型、评测、脚本实现或工程细节。
-- 实际平台提交状态与哈希校验见 [RELEASE-RECEIPT.json](RELEASE-RECEIPT.json)。
