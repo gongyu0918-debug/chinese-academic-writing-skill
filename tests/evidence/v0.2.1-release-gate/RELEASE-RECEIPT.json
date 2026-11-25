@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "version": "0.2.1",
+  "recorded_at_beijing": "2026-11-25T16:50:00+08:00",
+  "release_commit": "4422b0a2895ccc38d9ddef052a0c12ac356c64b7",
+  "tag": {
+    "name": "v0.2.1",
+    "annotated_object": "1e35ce5258b2d25e8466ded8e95c3c66c9a968da",
+    "dereferenced_commit": "4422b0a2895ccc38d9ddef052a0c12ac356c64b7"
+  },
+  "package": {
+    "name": "chinese-academic-writing-assistant-0.2.1-skillhub.zip",
+    "file_count": 13,
+    "runtime_file_count": 12,
+    "license": "MIT",
+    "license_file": "LICENSE.md",
+    "zip_sha256": "126895427bf8a306220278abcdd8ef46a29720aeeb45b8713c818aad158ef286",
+    "zip_size": 48830,
+    "entries": [
+      "LICENSE.md",
+      "SKILL.md",
+      "agents/openai.yaml",
+      "references/academic-literature-review.md",
+      "references/academic-proposal.md",
+      "references/academic-text-format.md",
+      "references/academic-writing.md",
+      "references/anti-ai-writing.md",
+      "references/citation-research.md",
+      "references/long-form-consistency.md",
+      "scripts/citation_audit.py",
+      "scripts/manuscript_audit.py",
+      "scripts/prose_lint.py"
+    ],
+    "file_sha256": {
+      "LICENSE.md": "c2eb3ea07e4e4a17097f8d440fc6376fb68abe4fb6dc3f80e0288449ad683812",
+      "SKILL.md": "fb60b29c1248189c21729f99f715e95acee776f64e36be84df157abcc85670a0",
+      "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "references/academic-literature-review.md": "11b735a0f89ee56572ca2001b09ad9c79aca9289d4a478f6ef07411bb1ca6961",
+      "references/academic-proposal.md": "e6893f66cbcf7c86954626a2029f7a5b907f43b9f2312c0b9737b73b87587552",
+      "references/academic-text-format.md": "114a7b9773e2f31dcff90f783ea65037be1aa6872bd286e1a052ad3503023a61",
+      "references/academic-writing.md": "1f8309acd425655ab7ab71f12598003015db01754236196bc4db19b84b2922b3",
+      "references/anti-ai-writing.md": "50337218158996271f6937551760eec676052260c3e4409a39bfe3cf8af1b091",
+      "references/citation-research.md": "9f4d20fb1af82e00b11fa2d85630d71bbf36eb3ea8a5a6eecb5e84215a5348d8",
+      "references/long-form-consistency.md": "0e8c6f50bfcfa83c0a7ec030c2aa8908065bfd5ffbe39dc7dc244f65961af7f3",
+      "scripts/citation_audit.py": "ca29639b112454c2831e161f763d567ca7da2e8127148042199c4fe5047c0598",
+      "scripts/manuscript_audit.py": "c3e6aeb41ba5403aee7297cf528f56fed22c6b5053fe8f685f92e21e8807b637",
+      "scripts/prose_lint.py": "8a6de8dd8f2f08eb95a82be67f2754d571cda08674313835f7c172de0d70dc17"
+    }
+  },
+  "github": {
+    "release_id": 457845849,
+    "url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.2.1",
+    "published_at": "2026-11-25T08:44:22Z",
+    "public": true,
+    "asset_id": 790764098,
+    "asset_url": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/download/v0.2.1/chinese-academic-writing-assistant-0.2.1-skillhub.zip",
+    "asset_digest": "sha256:126895427bf8a306220278abcdd8ef46a29720aeeb45b8713c818aad158ef286",
+    "downloaded_asset_hash_match": true,
+    "release_create_attempts": 1
+  },
+  "skillhub": {
+    "url": "https://skillhub.cn/skills/chinese-academic-writing-assistant",
+    "namespace": "user_f3d82da7",
+    "slug": "chinese-academic-writing-assistant",
+    "skill_id": 98987,
+    "version_id": 550167,
+    "submitted_version": "0.2.1",
+    "publish_accepted": true,
+    "publish_attempts": 1,
+    "file_count": 13,
+    "fingerprint_at_upload": "2965447a331933a984f56afd63f240be083162da20e76cd7dd111b34474d33ff",
+    "review_status_at_upload": "pending",
+    "security_scan_status_at_upload": "pending",
+    "content_audit_status_at_upload": "pending",
+    "tags_at_upload": {
+      "academic": "0.2.1",
+      "chinese": "0.2.1",
+      "latest": "0.2.1"
+    },
+    "latest_read_only_check": {
+      "public_search_visible_version": "0.1.11",
+      "signature_verify_status": "pending_review_version_not_found"
+    },
+    "publish_status": "pending"
+  },
+  "clawhub": {
+    "url": "https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant",
+    "owner": "gongyu0918-debug",
+    "slug": "chinese-academic-writing-assistant",
+    "version_id": "k976ympbz9b64q56vhn2wvh48d8jxw31",
+    "attempt_id": "zx7fts2ejp9cfbh35hxs1d8ht58jw21p",
+    "submitted_version": "0.2.1",
+    "publish_accepted": true,
+    "publish_status_at_upload": "pending-publication",
+    "publication_status_at_upload": "pending",
+    "publish_attempts": 1,
+    "source_repo": "https://github.com/gongyu0918-debug/chinese-academic-writing-skill",
+    "source_ref": "v0.2.1",
+    "source_commit": "4422b0a2895ccc38d9ddef052a0c12ac356c64b7",
+    "source_path": "chinese-academic-writing-assistant",
+    "license_expected": "MIT-0",
+    "uploaded_file_count": 12,
+    "fingerprint": "cd7685ee0c7cd79bb49f4f4aec074b7341fd088663094e3fea821c18f04f9c67",
+    "latest_version_at_upload": "0.1.11",
+    "latest_read_only_check": {
+      "latest_version": "0.1.11",
+      "version": "0.2.1",
+      "publication": "pending"
+    },
+    "local_file_sha256": {
+      "SKILL.md": "ad6fb356beab4f1fea1ea599fb833690863e86b2a2e9be793892a15270bd0045",
+      "agents/openai.yaml": "54e768eb6f9222d2bbd90e59b5b31c4cc5099dacd86acf312fcc679c5c1c0675",
+      "references/academic-literature-review.md": "11b735a0f89ee56572ca2001b09ad9c79aca9289d4a478f6ef07411bb1ca6961",
+      "references/academic-proposal.md": "e6893f66cbcf7c86954626a2029f7a5b907f43b9f2312c0b9737b73b87587552",
+      "references/academic-text-format.md": "114a7b9773e2f31dcff90f783ea65037be1aa6872bd286e1a052ad3503023a61",
+      "references/academic-writing.md": "1f8309acd425655ab7ab71f12598003015db01754236196bc4db19b84b2922b3",
+      "references/anti-ai-writing.md": "50337218158996271f6937551760eec676052260c3e4409a39bfe3cf8af1b091",
+      "references/citation-research.md": "9f4d20fb1af82e00b11fa2d85630d71bbf36eb3ea8a5a6eecb5e84215a5348d8",
+      "references/long-form-consistency.md": "0e8c6f50bfcfa83c0a7ec030c2aa8908065bfd5ffbe39dc7dc244f65961af7f3",
+      "scripts/citation_audit.py": "ca29639b112454c2831e161f763d567ca7da2e8127148042199c4fe5047c0598",
+      "scripts/manuscript_audit.py": "c3e6aeb41ba5403aee7297cf528f56fed22c6b5053fe8f685f92e21e8807b637",
+      "scripts/prose_lint.py": "8a6de8dd8f2f08eb95a82be67f2754d571cda08674313835f7c172de0d70dc17"
+    },
+    "publish_status": "pending"
+  },
+  "workbuddy": {
+    "status": "deferred",
+    "reason": "monthly quota"
+  },
+  "validation_tests": {
+    "maintenance": 171,
+    "passed": true
+  },
+  "local_install_or_desktop_update": false,
+  "notes": [
+    "Each platform was submitted once. Acceptance is separate from public propagation, moderation, file verification and signature.",
+    "The v0.2.1 product tag stays fixed on 4422b0a2895ccc38d9ddef052a0c12ac356c64b7; receipt commits do not move the tag.",
+    "WorkBuddy publication was deferred due to monthly quota."
+  ]
+}
