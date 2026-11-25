@@ -407,6 +407,63 @@ class CitationAuditTests(unittest.TestCase):
         self.assertIn("(1/1)", output)
         self.assertIn("structural only", output)
 
+    def test_author_year_bidirectional_mapping_for_gbt7714_and_apa(self) -> None:
+        clean_text = (
+            "已有研究考察了平台化协同机制（张三等，2020；Li & Wang, 2021）。\n"
+            "Smith（2022a）进一步分析了随访时点差异。\n"
+            "参考文献\n"
+            "张三, 李四, 2020. 平台协作机制研究[J]. 管理科学, 12(1): 1-10.\n"
+            "Li, X., & Wang, Y. (2021). Cross-level governance. Journal of Policy, 5(2), 11-20.\n"
+            "Smith, J. (2022a). Follow-up effects. Review, 9(1), 30-42."
+        )
+        clean_report = AUDIT.analyze(clean_text, mode="literature-review")
+        self.assertEqual([], clean_report["findings"])
+        self.assertEqual(3, clean_report["summary"]["listed_author_year_references"])
+        self.assertEqual(1.0, clean_report["summary"]["author_year_reference_utilization"])
+
+        mismatch_text = (
+            "已有研究表明该效应显著（张三，2020；王五，2024）。\n"
+            "参考文献\n"
+            "张三, 2020. 样本研究[J]. 学报, 1(1): 1-5.\n"
+            "赵六, 2019. 未被正文引用的文献[J]. 学报, 2(1): 6-10."
+        )
+        mismatch_report = AUDIT.analyze(mismatch_text)
+        codes = finding_codes(mismatch_report)
+        self.assertIn("missing-author-year-reference", codes)
+        self.assertIn("unused-author-year-reference", codes)
+        strict_result = subprocess.run(
+            [sys.executable, "-B", str(SCRIPT_PATH), "-", "--strict"],
+            input=mismatch_text,
+            check=False,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+        )
+        self.assertEqual(1, strict_result.returncode)
+
+    def test_author_year_edge_cases_compound_surnames_multi_year_and_mixed(self) -> None:
+        text = (
+            "相关实验由文献证实（van der Waals, 2020a, 2020b；欧阳修，2021）。\n"
+            "此外李四（2020）和王五（2021）补充了讨论，见数字条目[1]。\n"
+            "参考文献\n"
+            "[1] 甲文献，2019.\n"
+            "van der Waals, J. (2020a). Paper A.\n"
+            "van der Waals, J. (2020b). Paper B.\n"
+            "欧阳修, 2021. 古籍研究[J]. 学报, 1(1): 1-5.\n"
+            "李四. 回顾（2019）. 2020. 述评[J]. 学报, 2(1): 1-8.\n"
+            "张三, 李四, 2022. 合作研究一[J]. 学报, 3(1): 1-5.\n"
+            "张三, 王五, 2022. 合作研究二[J]. 学报, 3(2): 6-10."
+        )
+        report = AUDIT.analyze(text, mode="literature-review")
+        codes = finding_codes(report)
+        self.assertIn("missing-author-year-reference", codes)
+        self.assertIn("ambiguous-author-year-reference", codes)
+        self.assertNotIn("duplicate-author-year-reference", codes)
+        self.assertIn("unused-author-year-reference", codes)
+        missing_details = [item["detail"] for item in report["findings"] if item["code"] == "missing-author-year-reference"]
+        self.assertTrue(any("王五" in d and "2021" in d for d in missing_details))
+        self.assertFalse(any("van der waals" in d or "欧阳修" in d or "李四" in d for d in missing_details))
+
 
 if __name__ == "__main__":
     unittest.main()

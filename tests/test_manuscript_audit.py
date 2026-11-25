@@ -220,6 +220,83 @@ class ManuscriptAuditTests(unittest.TestCase):
         self.assertEqual(before_hash, after_hash)
         self.assertEqual(before_listing, after_listing)
 
+    def test_state_file_loads_term_groups_and_abbreviations_read_only(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            state = root / "paper-state.md"
+            state.write_text(
+                "# 状态包\n"
+                "- 术语组：学习分析系统 | 学习分析平台\n"
+                "- 缩写：LA, NLP\n",
+                encoding="utf-8",
+            )
+            draft = root / "ch1.md"
+            draft.write_text(
+                "LA 用于第一部分，学习分析系统与学习分析平台混用，NLP 尚未定义。\n",
+                encoding="utf-8",
+            )
+            before_state_hash = hashlib.sha256(state.read_bytes()).hexdigest()
+            result = subprocess.run(
+                [sys.executable, "-B", str(SCRIPT_PATH), str(draft), "--state-file", str(state), "--json"],
+                check=False,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+            )
+            missing = subprocess.run(
+                [sys.executable, "-B", str(SCRIPT_PATH), str(draft), "--state-file", str(root / "missing.md")],
+                check=False,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+            )
+            after_state_hash = hashlib.sha256(state.read_bytes()).hexdigest()
+        self.assertEqual(0, result.returncode, result.stderr)
+        codes = {item["code"] for item in json.loads(result.stdout)["findings"]}
+        self.assertIn("term-variant-group", codes)
+        self.assertIn("undefined-abbreviation-candidate", codes)
+        self.assertEqual(before_state_hash, after_state_hash)
+        self.assertEqual(2, missing.returncode)
+        self.assertEqual("", missing.stdout)
+
+    def test_state_file_masks_fences_handles_fullwidth_conflict_and_stdin_clash(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            state = root / "paper-state.md"
+            state.write_text(
+                "```markdown\n- 术语组：示例甲 | 示例乙\n```\n"
+                "- 术语组：甲术语｜乙术语\n"
+                "- 术语组：乙术语 | 甲术语\n"
+                "- 术语组：单一术语 | 单一术语\n",
+                encoding="utf-8",
+            )
+            draft = root / "ch1.md"
+            draft.write_text("甲术语和乙术语都有，示例甲与示例乙不该被状态示例误报。\n", encoding="utf-8")
+            result = subprocess.run(
+                [sys.executable, "-B", str(SCRIPT_PATH), str(draft), "--state-file", str(state), "--json"],
+                check=False,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+            )
+            clash = subprocess.run(
+                [sys.executable, "-B", str(SCRIPT_PATH), "-", "--state-file", "-"],
+                input="正文\n",
+                check=False,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+            )
+        self.assertEqual(0, result.returncode, result.stderr)
+        payload = json.loads(result.stdout)
+        codes = {item["code"] for item in payload["findings"]}
+        self.assertIn("term-variant-group", codes)
+        self.assertIn("conflicting-state-term-group", codes)
+        self.assertIn("invalid-state-term-group", codes)
+        self.assertFalse(any("示例甲" in item["excerpt"] for item in payload["findings"]))
+        self.assertEqual(2, clash.returncode)
+        self.assertEqual("", clash.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()

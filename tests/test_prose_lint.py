@@ -56,6 +56,29 @@ class ProseLintTests(unittest.TestCase):
         self.assertEqual("low", item.severity)
         self.assertIn("不按阈值自动换词", item.advice)
 
+    def test_frequency_scales_threshold_for_long_chapters(self) -> None:
+        filler = "本研究团队在某县调研期间收集了访谈录音、田野笔记与档案数据，逐项核对样本口径。" * 120
+        normal_long = (
+            filler
+            + "\n同时，第一组受访者说明了登记流程。\n同时，第二组受访者说明了核验流程。"
+            + "\n同时，第三组受访者说明了复核流程。\n同时，第四组受访者说明了归档流程。"
+        )
+        findings_normal = LINT.scan("long-normal.md", normal_long)
+        self.assertFalse(any(item.match == "同时" for item in findings_normal))
+
+        dense_long = filler + ("\n同时，受访者补充了同质化反馈。" * 16)
+        findings_dense = LINT.scan("long-dense.md", dense_long)
+        dense_hit = next(item for item in findings_dense if item.match == "同时")
+        self.assertEqual(16, dense_hit.count)
+        self.assertIn("次/千字", dense_hit.advice)
+
+        exact_2000 = "甲" * 1985 + "系统性" * 5
+        self.assertEqual(2000, len(exact_2000))
+        self.assertFalse(any(item.match == "系统性" for item in LINT.scan("exact-2000.md", exact_2000)))
+        over_1999 = "甲" * 1984 + "系统性" * 5
+        self.assertEqual(1999, len(over_1999))
+        self.assertTrue(any(item.match == "系统性" for item in LINT.scan("over-1999.md", over_1999)))
+
     def test_latex_body_environments_leave_residues_visible(self) -> None:
         for environment in ("document", "abstract", "enumerate", "itemize", "description"):
             for separator in ("", "\n"):

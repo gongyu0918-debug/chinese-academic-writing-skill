@@ -274,6 +274,30 @@ FREQUENCY_TERMS: dict[str, tuple[int, str]] = {
     "系统性": (5, "abstract-term"),
 }
 
+# Approximate per-1,000-character density ceilings for longer chapters so normal
+# academic connectors/terms do not trigger noisy false positives.
+FREQUENCY_DENSITY_PER_1K: dict[str, float] = {
+    "此外": 2.0,
+    "同时": 2.5,
+    "因此": 2.0,
+    "进一步": 2.0,
+    "综上所述": 1.0,
+    "需要指出的是": 1.0,
+    "值得注意的是": 1.0,
+    "本文将": 1.5,
+    "本研究": 3.0,
+    "不应": 2.0,
+    "不宜": 2.0,
+    "不能": 2.5,
+    "并非": 2.0,
+    "赋能": 1.0,
+    "协同": 2.5,
+    "路径": 3.5,
+    "框架": 3.5,
+    "范式": 2.5,
+    "系统性": 2.5,
+}
+
 DELIVERY_MODES = ("generic", "body-only", "body-with-suggestions", "review-only")
 SEVERITY_RANK = {"low": 1, "medium": 2, "high": 3}
 REFERENCE_HEADING = re.compile(r"^\s*(?:#{1,6}\s*)?参考文献\s*$")
@@ -562,7 +586,9 @@ def frequency_findings(
     line_limit: int,
 ) -> list[Finding]:
     findings: list[Finding] = []
+    visible_chars = sum(len(re.sub(r"\s+", "", line)) for line in visible[:line_limit])
     for term, (threshold, kind) in FREQUENCY_TERMS.items():
+        per_1k = FREQUENCY_DENSITY_PER_1K.get(term, float(threshold))
         positions: list[tuple[int, int]] = []
         for line_index, line in enumerate(visible[:line_limit]):
             start = 0
@@ -574,7 +600,14 @@ def frequency_findings(
                 start = column + len(term)
         if len(positions) < threshold:
             continue
+        if visible_chars >= 1000 and len(positions) * 1000 <= visible_chars * per_1k:
+            continue
         line_index, column = positions[0]
+        density_note = (
+            f"（约 {len(positions) * 1000.0 / visible_chars:.1f} 次/千字）"
+            if visible_chars >= 1000
+            else ""
+        )
         findings.append(
             Finding(
                 path=path_label,
@@ -587,7 +620,7 @@ def frequency_findings(
                 count=len(positions),
                 excerpt=excerpt(lines[line_index], column, column + len(term)),
                 advice=(
-                    f"全文可见区出现 {len(positions)} 次；结合章节功能判断是否为必要术语、"
+                    f"全文可见区出现 {len(positions)} 次{density_note}；结合章节功能判断是否为必要术语、"
                     "真实衔接或机械复现，不按阈值自动换词。"
                 ),
             )

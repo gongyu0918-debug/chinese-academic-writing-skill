@@ -1,14 +1,12 @@
 # 中文论文写作 Skill
 
-[![Version](https://img.shields.io/badge/version-0.1.11-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.1.11)
+[![Version](https://img.shields.io/badge/version-0.2.0-blue)](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases/tag/v0.2.0)
 [![SkillHub](https://img.shields.io/badge/SkillHub-chinese--academic--writing--assistant-e8590c)](https://skillhub.cn/skills/chinese-academic-writing-assistant)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 中文论文写作 Skill 用于协助完成中文本科论文、硕士学位论文、课程论文、开题报告和独立文献综述。它根据作者已经提供或明确授权核验的材料工作，可以构造提纲、逐段起草、修改底稿或只审不改，并在长稿和多轮续写中辅助维护和检查事实、术语、引用与研究状态的一致性。
 
-版本 0.1.11 澄清材料用途与核验状态、原有引文沿用和新增来源认证的区别，具体说明章节职责，并统一先收窄实际判断再取舍必要限定的口径。四份运行规则与实写冻结组合一致，三个只读脚本保持原样。详见[本版发布记录](tests/evidence/v0.1.11-release-gate/README.md)。
-
-本版以0.1.10为基线，完成11个任务、28份初稿及4次复核后交付，按局部规则澄清采用。实写对照没有建立整体质量优于旧版的结论；原稿、独立意见和采用范围见[规则研究与实写](tests/evidence/rule-research-20261111/README.md)。
+版本 0.2.0 围绕真实中文论文写作体验进行了全面优化：区分轻量修改与整节/长稿协作，让日常单段润色、摘要译写和局部核对更轻快；补充覆盖引言、综述、方法、结果、讨论与结论的章节写作指引与四大学科论证重点；独立文献综述支持按主题张力交叉综合，告别逐篇流水账；底稿修改支持按需附带「意见对照表」方便回复导师与审稿批注；完善开题四类研究状态（含“正在开展”）与二手文献转引标法；并升级本地只读辅助检查，支持长文词频密度适配、著者—出版年制（如 GB/T 7714 与 APA）双向匹配核对及状态文件术语读取。
 
 这个 Skill 不替作者补造研究。材料不足时，它会收缩交付范围，先给出可成立的结构、研究问题或材料清单，不把常识、惯例和推测写成已经取得的证据。
 
@@ -59,11 +57,11 @@
 
 ## 安装与调用
 
-当前版本：`chinese-academic-writing-assistant@0.1.11`
-
-三个渠道均已公开0.1.11。GitHub附件下载哈希一致；SkillHub.cn平台签名验证通过、内容指纹匹配本地ZIP；ClawHub审核及安全结论均为clean，12个远端文件摘要逐项一致。具体状态见[发布回执](tests/evidence/v0.1.11-release-gate/RELEASE-RECEIPT.json)。
+当前版本：`chinese-academic-writing-assistant@0.2.0`
 
 发布渠道：[GitHub Releases](https://github.com/gongyu0918-debug/chinese-academic-writing-skill/releases) · [skillhub.cn](https://skillhub.cn/skills/chinese-academic-writing-assistant) · [ClawHub](https://clawhub.ai/gongyu0918-debug/chinese-academic-writing-assistant)。GitHub 与 skillhub.cn 使用 MIT；ClawHub 按平台规则采用 MIT-0。
+
+* 0.2.0 已同步至 GitHub、SkillHub.cn 与 ClawHub（发布状态见[发布记录](tests/evidence/v0.2.0-release-gate/README.md)）。
 
 通用 Agent Skills 安装器：
 

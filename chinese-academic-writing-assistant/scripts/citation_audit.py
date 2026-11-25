@@ -32,13 +32,21 @@ NUMERIC_CITATION = re.compile(
     r"\[(\d[\d\s,，;；–—-]*)\](?!\()"
 )
 NUMERIC_REFERENCE = re.compile(r"^\s*\[(\d+)\]\s*(.+?)\s*$")
-AUTHOR_TOKEN = r"(?:[A-Z][A-Za-z'’.-]*(?:\s+(?:&|and)\s+[A-Z][A-Za-z'’.-]*)?|[\u4e00-\u9fff]{2,8}(?:等)?)"
+EN_SURNAME_PARTICLES = r"(?:(?:van|von|de|del|della|der|la|le|di|da|st\.?)\s+)*"
+EN_AUTHOR = rf"{EN_SURNAME_PARTICLES}[A-Z][A-Za-z'’.-]*"
+CN_AUTHOR = r"[\u4e00-\u9fff]{2,16}(?:等)?"
+AUTHOR_TOKEN = (
+    rf"(?:{EN_AUTHOR}(?:\s+(?:&|and)\s+{EN_AUTHOR}|\s+et\s+al\.?)?"
+    rf"|{CN_AUTHOR}(?:\s*[、与和]\s*{CN_AUTHOR})*)"
+)
+YEAR_TOKEN = r"(?:19|20)\d{2}[a-z]?"
+YEAR_LIST = rf"{YEAR_TOKEN}(?:\s*[,，、]\s*{YEAR_TOKEN})*"
 PARENTHETICAL_AUTHOR_YEAR = re.compile(
-    rf"[（(]{AUTHOR_TOKEN}\s*[,，]\s*(?:19|20)\d{{2}}[a-z]?"
-    rf"(?:\s*[;；]\s*{AUTHOR_TOKEN}\s*[,，]\s*(?:19|20)\d{{2}}[a-z]?)*[）)]"
+    rf"[（(]{AUTHOR_TOKEN}\s*[,，]\s*{YEAR_LIST}"
+    rf"(?:\s*[;；]\s*{AUTHOR_TOKEN}\s*[,，]\s*{YEAR_LIST})*[）)]"
 )
 NARRATIVE_AUTHOR_YEAR = re.compile(
-    rf"(?P<author>{AUTHOR_TOKEN})[（(](?:19|20)\d{{2}}[a-z]?[）)]"
+    rf"(?P<author>{AUTHOR_TOKEN})[（(](?P<years>{YEAR_LIST})[）)]"
 )
 GENERIC_NARRATIVE_AUTHORS = {
     "本研究",
@@ -177,6 +185,183 @@ def has_author_year_citation(text: str) -> bool:
     return bool(PARENTHETICAL_AUTHOR_YEAR.search(text) or narrative_author_year_matches(text))
 
 
+AUTHOR_YEAR_SINGLE = re.compile(
+    rf"^\s*(?P<author>{AUTHOR_TOKEN})\s*[,，]\s*(?P<years>{YEAR_LIST})\s*$"
+)
+AUTHOR_YEAR_YEAR_CAPTURE = re.compile(rf"({YEAR_TOKEN})")
+REFERENCE_AUTHOR_THEN_PAREN_YEAR = re.compile(
+    r"^(?P<authors>(?:(?![.。]\s*[\u4e00-\u9fffA-Za-z]{2,})[^（(\n]){1,100}?)\s*"
+    rf"[（(]\s*(?P<year>{YEAR_TOKEN})\s*[）)]\s*[.。]?"
+)
+REFERENCE_AUTHOR_THEN_PLAIN_YEAR = re.compile(
+    r"^(?P<authors>(?:(?![.。]\s*[\u4e00-\u9fffA-Za-z]{2,})[^(\n]){1,100}?)"
+    rf"[,，.]\s*(?P<year>{YEAR_TOKEN})\s*[.,，:：]"
+)
+REFERENCE_POST_TITLE_YEAR = re.compile(
+    rf"[.。]\s*(?P<year>{YEAR_TOKEN})\s*[.,，:：]"
+)
+REFERENCE_LEADING_AUTHORS = re.compile(
+    rf"^(?P<authors>{EN_AUTHOR}(?:\s*,\s*(?:[A-Z]\.(?:\s*[A-Z]\.)*|{EN_AUTHOR}))*(?:\s*(?:[,，]|&|and)\s*{EN_AUTHOR}(?:\s*,\s*[A-Z]\.(?:\s*[A-Z]\.)*)?)*(?:\s+et\s+al\.?)?"
+    rf"|[\u4e00-\u9fff]{{2,20}}(?:\s*[,，、与和]\s*[\u4e00-\u9fff]{{2,20}})*(?:\s*等)?)"
+)
+
+
+def normalize_author_key(raw: str) -> str:
+    cleaned = raw.strip()
+    cleaned = re.split(r"\s+(?:&|and)\s+|[,，、与和]", cleaned, maxsplit=1)[0].strip()
+    cleaned = re.sub(r"(?:等|et\s+al\.?)$", "", cleaned, flags=re.IGNORECASE).strip()
+    if re.search(r"[\u4e00-\u9fff]", cleaned):
+        return cleaned
+    return re.sub(r"\s+", " ", cleaned).lower()
+
+
+def normalize_author_signature(raw: str) -> tuple[str, ...]:
+    cleaned = re.sub(r"(?:等|et\s+al\.?)$", "", raw.strip(), flags=re.IGNORECASE).strip()
+    parts = re.split(r"\s+(?:&|and)\s+|[,，、与和]", cleaned)
+    tokens: list[str] = []
+    for part in parts:
+        token = part.strip()
+        if not token:
+            continue
+        if re.fullmatch(r"(?:[A-Z]\.\s*)+", token):
+            continue
+        if re.search(r"[\u4e00-\u9fff]", token):
+            tokens.append(token)
+        else:
+            tokens.append(re.sub(r"\s+", " ", token).lower())
+    return tuple(tokens)
+
+
+CN_NARRATIVE_PREFIX = re.compile(
+    r"^(?:此外|另外|同时|以及|还有|其中|而且|但是|然而|不过|并且|可见|表明|指出|认为|显示|"
+    r"根据|依据|按照|参照|参考|基于|结合|正如|至于|关于|对于|针对|由|据|从|在|向|对|和|与|及)+"
+)
+
+
+def strip_cn_narrative_prefix(author: str, *, after_close_paren: bool = False) -> str:
+    cleaned = author.strip()
+    if after_close_paren:
+        cleaned = re.sub(r"^(?:和|与|及|以及|还有|、)+", "", cleaned).strip()
+    candidate = CN_NARRATIVE_PREFIX.sub("", cleaned).strip()
+    if len(candidate) >= 2:
+        return candidate
+    return cleaned
+
+
+def extract_author_year_citations(text: str) -> list[tuple[int, str, str, str]]:
+    citations: list[tuple[int, str, str, str]] = []
+    for match in PARENTHETICAL_AUTHOR_YEAR.finditer(text):
+        line_no = text.count("\n", 0, match.start()) + 1
+        inner = match.group(0)[1:-1]
+        for part in re.split(r"[;；]", inner):
+            single = AUTHOR_YEAR_SINGLE.match(part)
+            if not single:
+                continue
+            author_key = normalize_author_key(single.group("author"))
+            if not author_key:
+                continue
+            for y_match in AUTHOR_YEAR_YEAR_CAPTURE.finditer(single.group("years")):
+                citations.append((line_no, author_key, y_match.group(1).lower(), part.strip()))
+    for match in narrative_author_year_matches(text):
+        line_no = text.count("\n", 0, match.start()) + 1
+        raw_author = match.group("author")
+        after_close = match.start() > 0 and text[match.start() - 1] in "）)"
+        author_key = normalize_author_key(strip_cn_narrative_prefix(raw_author, after_close_paren=after_close))
+        if not author_key:
+            continue
+        for y_match in AUTHOR_YEAR_YEAR_CAPTURE.finditer(match.group("years")):
+            citations.append((line_no, author_key, y_match.group(1).lower(), match.group(0).strip()))
+    return citations
+
+
+def _check_duplicate_dois(entries: list[tuple[str, int, str]]) -> list[Finding]:
+    findings: list[Finding] = []
+    doi_rows: dict[str, list[tuple[str, int]]] = {}
+    for label, line_no, content in entries:
+        for match in DOI.finditer(content):
+            doi = match.group(0).rstrip(".,;:，。；：)]}>").lower()
+            doi_rows.setdefault(doi, []).append((label, line_no))
+    for doi, rows in doi_rows.items():
+        if len(rows) > 1:
+            identifiers = ", ".join(label for label, _ in rows)
+            findings.append(
+                Finding(
+                    rows[0][1],
+                    "high",
+                    "reference-structure",
+                    "duplicate-doi",
+                    f"DOI {doi} 出现在 {identifiers}",
+                    doi,
+                )
+            )
+    return findings
+
+
+def author_year_reference_entries(
+    text: str, heading_line: int | None
+) -> tuple[dict[tuple[str, str], list[tuple[int, str]]], list[Finding], list[tuple[str, int, str]]]:
+    entries: dict[tuple[str, str], list[tuple[int, str]]] = {}
+    signatures: dict[tuple[str, str], list[tuple[str, ...]]] = {}
+    findings: list[Finding] = []
+    offset = heading_line or 0
+    doi_candidates: list[tuple[str, int, str]] = []
+    for index, line in enumerate(text.splitlines(), start=offset + 1):
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#") or NUMERIC_REFERENCE.match(stripped):
+            continue
+        author_raw = ""
+        year = ""
+        m_paren = REFERENCE_AUTHOR_THEN_PAREN_YEAR.match(stripped)
+        m_plain = REFERENCE_AUTHOR_THEN_PLAIN_YEAR.match(stripped)
+        if m_paren:
+            author_raw = m_paren.group("authors")
+            year = m_paren.group("year").lower()
+        elif m_plain:
+            author_raw = m_plain.group("authors")
+            year = m_plain.group("year").lower()
+        else:
+            lead = REFERENCE_LEADING_AUTHORS.match(stripped)
+            post_year = REFERENCE_POST_TITLE_YEAR.search(stripped[lead.end() :] if lead else stripped)
+            if lead and post_year:
+                author_raw = lead.group("authors")
+                year = post_year.group("year").lower()
+        if not author_raw or not year:
+            continue
+        author_key = normalize_author_key(author_raw)
+        if not author_key:
+            continue
+        sig = normalize_author_signature(author_raw)
+        key = (author_key, year)
+        existing_sigs = signatures.setdefault(key, [])
+        if sig in existing_sigs:
+            findings.append(
+                Finding(
+                    index,
+                    "high",
+                    "reference-structure",
+                    "duplicate-author-year-reference",
+                    f"著者—出版年条目 ({author_key}, {year}) 重复",
+                    stripped[:100],
+                )
+            )
+            continue
+        if existing_sigs:
+            findings.append(
+                Finding(
+                    index,
+                    "medium",
+                    "reference-structure",
+                    "ambiguous-author-year-reference",
+                    f"著者—出版年条目 ({author_key}, {year}) 存在同姓同年不同合著者，请核对正文区分",
+                    stripped[:100],
+                )
+            )
+        existing_sigs.append(sig)
+        entries.setdefault(key, []).append((index, stripped))
+        doi_candidates.append((f"{author_key} ({year})", index, stripped))
+    return entries, findings, doi_candidates
+
+
 def strip_author_year_citations(text: str) -> str:
     stripped = PARENTHETICAL_AUTHOR_YEAR.sub("", text)
 
@@ -271,6 +456,65 @@ def analyze(text: str, *, mode: str = "general", minimum_marker_coverage: float 
         line_no, content = entries[identifier]
         findings.append(Finding(line_no, "low", "citation-mapping", "unused-reference-entry", f"文后条目 [{identifier}] 未在正文编号引文中使用", content[:100]))
 
+    ay_entries: dict[tuple[str, str], list[tuple[int, str]]] = {}
+    ay_utilization: float | None = None
+    ay_doi_candidates: list[tuple[str, int, str]] = []
+    if references.strip():
+        ay_entries, ay_findings, ay_doi_candidates = author_year_reference_entries(references, heading_line)
+        findings.extend(ay_findings)
+        ay_citations = extract_author_year_citations(body)
+        if ay_entries or (not entries and ay_citations):
+            cited_keys: dict[tuple[str, str], tuple[int, str]] = {}
+            for line_no, author_key, year, raw_display in ay_citations:
+                resolved_key = (author_key, year)
+                if resolved_key not in ay_entries and re.search(r"[\u4e00-\u9fff]", author_key):
+                    suffix_matches = [
+                        ek for ek in ay_entries
+                        if ek[1] == year and author_key.endswith(ek[0]) and len(ek[0]) >= 2
+                    ]
+                    if len(suffix_matches) == 1:
+                        resolved_key = suffix_matches[0]
+                cited_keys.setdefault(resolved_key, (line_no, raw_display))
+            for key, (line_no, raw_display) in cited_keys.items():
+                if key not in ay_entries:
+                    findings.append(
+                        Finding(
+                            line_no,
+                            "high",
+                            "citation-mapping",
+                            "missing-author-year-reference",
+                            f"正文使用 ({key[0]}, {key[1]})，文后未找到对应著者—出版年条目",
+                            raw_display[:100],
+                        )
+                    )
+            for key in sorted(set(ay_entries) - set(cited_keys)):
+                for line_no, content in ay_entries[key]:
+                    findings.append(
+                        Finding(
+                            line_no,
+                            "low",
+                            "citation-mapping",
+                            "unused-author-year-reference",
+                            f"文后条目 ({key[0]}, {key[1]}) 未在正文著者—出版年引文中使用",
+                            content[:100],
+                        )
+                    )
+            if ay_entries:
+                ay_utilization = len(set(cited_keys) & set(ay_entries)) / len(ay_entries)
+    if ay_doi_candidates:
+        numeric_dois = [(f"[{identifier}]", line_no, content) for identifier, (line_no, content) in entries.items()]
+        findings.extend(_check_duplicate_dois([*numeric_dois, *ay_doi_candidates]))
+        # Deduplicate duplicate-doi findings if numeric reference_entries already emitted the exact same DOI line
+        dedup_findings: list[Finding] = []
+        seen_finding_keys: set[tuple[int, str, str]] = set()
+        for item in findings:
+            fkey = (item.line, item.code, item.excerpt)
+            if item.code == "duplicate-doi" and fkey in seen_finding_keys:
+                continue
+            seen_finding_keys.add(fkey)
+            dedup_findings.append(item)
+        findings = dedup_findings
+
     candidates: list[tuple[int, str, bool]] = []
     for line_no, sentence in sentence_rows(body):
         if not is_claim_candidate(sentence, mode):
@@ -299,6 +543,8 @@ def analyze(text: str, *, mode: str = "general", minimum_marker_coverage: float 
             "unique_numeric_citations": len(set(used)),
             "listed_numeric_references": len(entries),
             "numeric_reference_utilization": utilization,
+            "listed_author_year_references": len(ay_entries),
+            "author_year_reference_utilization": ay_utilization,
             "top_numeric_reference_share": top_share,
             "explicit_minimum_marker_coverage": minimum_marker_coverage,
         },

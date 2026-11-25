@@ -162,6 +162,65 @@ def parse_term_group(value: str) -> tuple[str, ...]:
     return terms
 
 
+STATE_TERM_GROUP = re.compile(r"^\s*(?:[-*+]\s*)?术语组\s*[:：]\s*(.+)$")
+STATE_ABBREVIATION = re.compile(r"^\s*(?:[-*+]\s*)?缩写\s*[:：]\s*(.+)$")
+
+
+def load_state_rules(
+    path_arg: str, encoding: str | None
+) -> tuple[list[tuple[str, ...]], list[str], list[Finding]]:
+    path_label, content = read_text(path_arg, encoding)
+    masked = mask_fenced_code(content)
+    term_groups: list[tuple[str, ...]] = []
+    abbreviations: list[str] = []
+    state_findings: list[Finding] = []
+    canonical_owners: dict[frozenset[str], tuple[str, int]] = {}
+    for line_no, line in enumerate(masked.splitlines(), start=1):
+        term_match = STATE_TERM_GROUP.match(line)
+        if term_match:
+            normalized_group = term_match.group(1).replace("｜", "|")
+            terms = tuple(dict.fromkeys(part.strip() for part in normalized_group.split("|") if part.strip()))
+            if len(terms) < 2:
+                state_findings.append(
+                    Finding(
+                        path_label,
+                        line_no,
+                        "low",
+                        "state-config",
+                        "invalid-state-term-group",
+                        "状态文件中的术语组至少需要两个不同术语，已忽略该行",
+                        line.strip()[:100],
+                    )
+                )
+                continue
+            group_set = frozenset(terms)
+            prev = canonical_owners.get(group_set)
+            if prev is not None and prev[0] != terms[0]:
+                state_findings.append(
+                    Finding(
+                        path_label,
+                        line_no,
+                        "medium",
+                        "state-config",
+                        "conflicting-state-term-group",
+                        f"术语组与第 {prev[1]} 行的首选规范词 {prev[0]!r} 冲突",
+                        line.strip()[:100],
+                    )
+                )
+            else:
+                canonical_owners.setdefault(group_set, (terms[0], line_no))
+            if terms not in term_groups:
+                term_groups.append(terms)
+            continue
+        abbr_match = STATE_ABBREVIATION.match(line)
+        if abbr_match:
+            for item in re.split(r"[,，|｜、;；]+", abbr_match.group(1)):
+                token = item.strip()
+                if token and token not in abbreviations:
+                    abbreviations.append(token)
+    return term_groups, abbreviations, state_findings
+
+
 def find_term_group_locations(
     documents: list[tuple[str, str]], group: tuple[str, ...]
 ) -> dict[str, list[Location]]:
@@ -322,6 +381,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("files", nargs="+", help="Text/Markdown/LaTeX/DOCX files, or '-' for stdin.")
     parser.add_argument("--term-group", action="append", type=parse_term_group, default=[], help="Terms separated by |; first term is the expected canonical form from the project state.")
     parser.add_argument("--abbreviation", action="append", default=[], help="Explicit abbreviation to check for definition order; repeat as needed.")
+    parser.add_argument("--state-file", help="Optional read-only paper-state.md file providing 术语组 and 缩写 lines.")
     parser.add_argument("--minimum-duplicate-chars", type=int, default=80)
     parser.add_argument("--encoding", help="Encoding for plain-text inputs.")
     parser.add_argument("--json", action="store_true")
@@ -332,6 +392,19 @@ def main(argv: list[str] | None = None) -> int:
 
     documents: list[tuple[str, str]] = []
     read_error = False
+    state_term_groups: list[tuple[str, ...]] = []
+    state_abbreviations: list[str] = []
+    state_findings: list[Finding] = []
+    if args.state_file:
+        if args.state_file == "-" and "-" in args.files:
+            print("ERROR: --state-file '-' cannot share stdin with input files", file=sys.stderr)
+            return 2
+        try:
+            state_term_groups, state_abbreviations, state_findings = load_state_rules(args.state_file, args.encoding)
+        except InputReadError as exc:
+            print(f"ERROR: {exc}", file=sys.stderr)
+            return 2
+
     for file_arg in args.files:
         try:
             path_label, content = read_text(file_arg, args.encoding)
@@ -341,12 +414,17 @@ def main(argv: list[str] | None = None) -> int:
             continue
         documents.append((path_label, content))
 
+    merged_term_groups = list(dict.fromkeys([*state_term_groups, *args.term_group]))
+    merged_abbreviations = list(dict.fromkeys([*state_abbreviations, *args.abbreviation]))
     report = analyze(
         documents,
-        term_groups=args.term_group,
-        abbreviations=args.abbreviation,
+        term_groups=merged_term_groups,
+        abbreviations=merged_abbreviations,
         minimum_duplicate_chars=args.minimum_duplicate_chars,
     )
+    if state_findings:
+        report["findings"] = [*(asdict(item) for item in state_findings), *report["findings"]]
+        report["summary"]["findings"] = len(report["findings"])
     if args.json:
         print(json.dumps(report, ensure_ascii=False, indent=2))
     else:
